@@ -1,0 +1,125 @@
+/* 
+  Localizable.strings
+  MiSnap
+
+  Copyright (c) 2014 Mitek Systems, Inc. All rights reserved.
+*/
+
+// Titles
+"misnap_check_front_text"               = "Check Front";
+"misnap_check_back_text"                = "Check Back";
+"misnap_license_text"                   = "License";
+"misnap_any_id_text"                    = "Any ID";
+"misnap_id_card_front_text"             = "Front of ID";
+"misnap_id_card_back_text"              = "Back of ID";
+"misnap_passport_text"                  = "Passport";
+"misnap_document_text"                  = "Document";
+
+"dialog_success"                        = "Success!";
+
+"misnap_tutorial_check"                 = "Center the check on the screen, hold still, and we will take the photo for you.";
+"misnap_tutorial_document"              = "Center the document on the screen, hold still, and we will take the photo for you.";
+
+"help_failover_license"                 = "Center the license with all four corners visible and press the snap photo button when ready.";
+"help_failover_passport"                = "Center the passport with all four corners visible and press the snap photo button when ready.";
+"help_failover_check"                   = "Center the check on a dark, well lit surface with all four corners visible and press the snap photo button when ready.";
+"help_failover_document"                = "Center the document with all four corners visible and press the snap photo button when ready.";
+"help_check"                            = "Try placing the check on a dark, well lit surface and hold still, we will take the photo for you.";
+"help_document"                         = "Try placing the document on a dark, well lit surface and hold still, we will take the photo for you.";
+"help_manual_check"                     = "Place the check on a dark, well lit surface with all four corners visible, press the snap photo button when ready";
+"help_manual_document"                  = "Place the document on a dark well lit surface with all four corners visible, press the snap photo button when ready";
+
+"help_seamless_failover"                = "We were unable to automatically capture the image. Please align to the guide and snap a photo manually";
+
+"ghost_image_remittance"                = "Center payment stub here and wait, we will take the photo for you";
+"ghost_image_remittance_manual"         = "Center payment stub here, then press the Snap Photo button when ready";
+"ghost_image_check"                     = "Center check here and wait, we will take the photo for you";
+"ghost_image_check_manual"              = "Center check here, then press the Snap Photo button when ready";
+"ghost_image_drivers_license"           = "Center driver\'s license here and wait, we will take the photo for you";
+"ghost_image_drivers_license_manual"    = "Center driver\'s license here, then press the Snap Photo button when ready";
+"ghost_image_id_card"                   = "Center ID card here and wait, we will take the photo for you";
+"ghost_image_id_card_manual"            = "Center ID card here, then press the Snap Photo button when ready";
+"ghost_image_insurance_card"            = "Center insurance card here and wait, we will take the photo for you";
+"ghost_image_insurance_card_manual"     = "Center insurance card here, then press the Snap Photo button when ready";
+"ghost_image_vin_manual"                = "Center VIN here then press the snap photo button when ready";
+"ghost_image_w2"                        = "Center W2 here and wait, we will take the photo for you";
+"ghost_image_w2_manual"                 = "Center W2 here, then press the Snap Photo button when ready";
+"ghost_image_passport"                  = "Center passport here and wait, we will take the photo for you";
+"ghost_image_passport_manual"           = "Center passport here, then press the Snap Photo button when ready";
+"ghost_image_document_landscape"        = "Center document here and wait, we will take the photo for you";
+"ghost_image_document_landscape_manual" = "Center document here, then press the Snap Photo button when ready";
+"ghost_image_document_portrait"         = "Center document here and wait, we will take the photo for you";
+"ghost_image_document_portrait_manual"  = "Center document here, then press the Snap Photo button when ready";
+
+"button_cancel"                         = "Cancel";
+"misnap_overlay_cancel_button"          = "Cancel";
+"misnap_overlay_help_button"            = "Help";
+"misnap_overlay_capture_button"         = "Capture image";
+"misnap_overlay_flash_on"               = "Flash is on";
+"misnap_overlay_flash_off"              = "Flash is off";
+"misnap_overlay_flash_auto"             = "Flash is in auto mode";
+"misnap_overlay_record"                 = "Recording";
+"misnap_torch_on"                       = "On";
+"misnap_torch_off"                      = "Off";
+
+"misnap_tutorial_do_not_show_again"     = "Don't show this screen again";
+
+// Navigation buttons
+"misnap_tutorial_cancel"                = "Cancel Capture";
+"misnap_tutorial_back"                  = "Back";
+"misnap_tutorial_continue"              = "Continue";
+"misnap_tutorial_try_again"             = "Retry Autocapture";
+"misnap_tutorial_capture_manually"      = "Capture Manually";
+
+"misnap_tutorial_check"                 = "Center the check on a dark surface, provide ample light. Align check.";
+"misnap_tutorial_id"                    = "Center the license on a dark surface, provide ample light. Align license.";
+"misnap_tutorial_passport"              = "Center the passport on a dark surface, provide ample light. Align passport.";
+"misnap_tutorial_document"              = "Center the document on a dark surface, provide ample light. Align document.";
+
+"misnap_tutorial_auto"                  = "We will take the photo for you.";
+"misnap_tutorial_manual"                = "Tap the capture button when ready.";
+
+// Hint Messages
+"misnap_status_none"                    = "";
+"misnap_status_too_much_glare"          = "Reduce glare";
+"misnap_status_not_identity_front"      = "Use front of valid identity document";
+"misnap_status_not_identity_back"       = "Use back of valid identity document";
+"misnap_status_not_passport"            = "Use passport bio page";
+"misnap_status_low_contrast"            = "Use dark background";
+"misnap_status_busy_background"         = "Use plain background";
+"misnap_status_not_check_front"         = "Use check front";
+"misnap_status_not_check_back"          = "Flip check";
+"misnap_status_document_not_found"      = "Center a document on a dark background";
+"misnap_status_not_sharp"               = "Hold steady";
+"misnap_status_too_rotated"             = "Reduce angle";
+"misnap_status_too_skewed"              = "Reduce angle";
+"misnap_status_too_far"                 = "Move closer";
+"misnap_status_too_close"               = "Move farther away";
+"misnap_status_too_dark"                = "Move to a well-lit area";
+"misnap_status_too_bright"              = "Too bright";
+"misnap_status_wrong_aspect_ratio"      = "Use dark background";
+"misnap_status_ocr_in_progress"         = "Hold steady";
+"misnap_status_good"                    = "Tap now";
+
+// Failover Reasons
+"misnap_status_too_dark_timeout"             = "Place the document in a well-lit area";
+"misnap_status_too_bright_timeout"           = "Place the document in an area with less light";
+"misnap_status_low_contrast_timeout"         = "Center a document on a dark background";
+"misnap_status_busy_background_timeout"      = "Place the document on a plain uncluttered background";
+"misnap_status_too_much_glare_timeout"       = "Avoid glare on the document";
+"misnap_status_not_identity_front_timeout"   = "Use front of valid identity document";
+"misnap_status_not_identity_back_timeout"    = "Use back of valid identity document";
+"misnap_status_not_passport_timeout"         = "Use passport bio page";
+"misnap_status_not_check_front_timeout"      = "Use front of the check with all numbers visible";
+"misnap_status_not_check_back_timeout"       = "Flip the check to scan the back";
+"misnap_status_too_skewed_timeout"           = "Hold the device directly over the document";
+"misnap_status_too_rotated_timeout"          = "Hold the device directly over the document";
+"misnap_status_too_close_timeout"            = "Move the device farther away from the document";
+"misnap_status_too_far_timeout"              = "Move the device closer to the document";
+"misnap_status_not_sharp_timeout"            = "Hold the device steady";
+"misnap_status_document_not_found_timeout"   = "Center a document on a dark background";
+"misnap_status_wrong_aspect_ratio_timeout"   = "Center a document on a dark background";
+
+"misnap_session_interruption_multiple_foreground_apps" = "Full screen is required";
+"misnap_session_interruption_microphone_in_use"        = "Microphone is in use by another application";
+"misnap_session_interruption_camera_in_use"            = "Camera is in use by another application";

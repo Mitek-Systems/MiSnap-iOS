@@ -1,0 +1,6 @@
+framework module MiSnapBarcodeScannerLight {
+  umbrella header "MiSnapBarcodeScannerLight.h"
+
+  export *
+  module * { export * }
+}

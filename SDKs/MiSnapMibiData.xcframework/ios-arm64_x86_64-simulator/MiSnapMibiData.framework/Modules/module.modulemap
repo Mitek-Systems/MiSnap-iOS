@@ -1,0 +1,6 @@
+framework module MiSnapMibiData {
+  umbrella header "MiSnapMibiData.h"
+
+  export *
+  module * { export * }
+}

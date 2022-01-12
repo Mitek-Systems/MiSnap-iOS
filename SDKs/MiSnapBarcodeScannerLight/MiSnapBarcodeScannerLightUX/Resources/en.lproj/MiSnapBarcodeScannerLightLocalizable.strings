@@ -1,0 +1,15 @@
+/* 
+  MiSnapBarcodeScannerLocalizable.strings
+  MiSnapBarcodeScanner
+
+  Copyright (c) 2015 Mitek Systems, Inc. All rights reserved.
+*/
+"misnap_barcode_overlay_cancel_button"          = "Cancel";
+
+"misnap_barcode_flash_on"                       = "Flash is on";
+"misnap_barcode_flash_off"                      = "Flash is off";
+
+/* Tutorial */
+"dialog_misnap_barcode_cancel"                  = "Cancel Capture";
+"dialog_misnap_barcode_capture"                 = "Continue";
+

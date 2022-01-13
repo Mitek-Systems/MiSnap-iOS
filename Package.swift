@@ -14,7 +14,8 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "MiSnapUX"
+            name: "MiSnapUX",
+            path: "Source"
         ),
         .binaryTarget(
             name: "MiSnap",

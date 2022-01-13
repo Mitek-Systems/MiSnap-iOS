@@ -7,50 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB01A17E278F2792005397ED /* MiSnapTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01A14D278F2791005397ED /* MiSnapTutorialViewController.swift */; };
-		EB01A17F278F2792005397ED /* MiSnapGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01A14E278F2791005397ED /* MiSnapGuideView.swift */; };
-		EB01A180278F2792005397ED /* MiSnapLocalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01A14F278F2791005397ED /* MiSnapLocalizer.swift */; };
-		EB01A181278F2792005397ED /* MiSnapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01A150278F2791005397ED /* MiSnapOverlayView.swift */; };
-		EB01A182278F2792005397ED /* MiSnapLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB01A152278F2791005397ED /* MiSnapLocalizable.strings */; };
-		EB01A183278F2792005397ED /* misnap_cancel_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A154278F2791005397ED /* misnap_cancel_icon.png */; };
-		EB01A184278F2792005397ED /* misnap_torch_off_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A155278F2791005397ED /* misnap_torch_off_icon.png */; };
-		EB01A185278F2792005397ED /* misnap_tutorial_passport_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB01A157278F2791005397ED /* misnap_tutorial_passport_portrait.jpg */; };
-		EB01A186278F2792005397ED /* misnap_tutorial_id_back_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB01A158278F2791005397ED /* misnap_tutorial_id_back_portrait.jpg */; };
-		EB01A187278F2792005397ED /* misnap_tutorial_id_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB01A159278F2791005397ED /* misnap_tutorial_id_portrait.jpg */; };
-		EB01A188278F2792005397ED /* wink_17.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A15B278F2791005397ED /* wink_17.png */; };
-		EB01A189278F2792005397ED /* wink_16.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A15C278F2791005397ED /* wink_16.png */; };
-		EB01A18A278F2792005397ED /* wink_14.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A15D278F2791005397ED /* wink_14.png */; };
-		EB01A18B278F2792005397ED /* wink_15.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A15E278F2791005397ED /* wink_15.png */; };
-		EB01A18C278F2792005397ED /* wink_11.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A15F278F2791005397ED /* wink_11.png */; };
-		EB01A18D278F2792005397ED /* wink_10.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A160278F2791005397ED /* wink_10.png */; };
-		EB01A18E278F2792005397ED /* wink_12.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A161278F2791005397ED /* wink_12.png */; };
-		EB01A18F278F2792005397ED /* wink_13.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A162278F2791005397ED /* wink_13.png */; };
-		EB01A190278F2792005397ED /* wink_22.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A163278F2791005397ED /* wink_22.png */; };
-		EB01A191278F2792005397ED /* wink_23.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A164278F2791005397ED /* wink_23.png */; };
-		EB01A192278F2792005397ED /* wink_21.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A165278F2791005397ED /* wink_21.png */; };
-		EB01A193278F2792005397ED /* wink_20.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A166278F2791005397ED /* wink_20.png */; };
-		EB01A194278F2792005397ED /* wink_24.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A167278F2791005397ED /* wink_24.png */; };
-		EB01A195278F2792005397ED /* wink_18.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A168278F2791005397ED /* wink_18.png */; };
-		EB01A196278F2792005397ED /* wink_19.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A169278F2791005397ED /* wink_19.png */; };
-		EB01A197278F2792005397ED /* wink_25.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A16A278F2792005397ED /* wink_25.png */; };
-		EB01A198278F2792005397ED /* wink_26.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A16B278F2792005397ED /* wink_26.png */; };
-		EB01A199278F2792005397ED /* misnap_checkbox_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A16C278F2792005397ED /* misnap_checkbox_unchecked.png */; };
-		EB01A19A278F2792005397ED /* misnap_tutorial_passport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB01A16D278F2792005397ED /* misnap_tutorial_passport.jpg */; };
-		EB01A19B278F2792005397ED /* misnap_tutorial_red_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A16E278F2792005397ED /* misnap_tutorial_red_arrow.png */; };
-		EB01A19C278F2792005397ED /* misnap_tutorial_id_back_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB01A16F278F2792005397ED /* misnap_tutorial_id_back_portrait_2.jpg */; };
-		EB01A19D278F2792005397ED /* misnap_help_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A170278F2792005397ED /* misnap_help_icon.png */; };
-		EB01A19E278F2792005397ED /* misnap_torch_on_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A171278F2792005397ED /* misnap_torch_on_icon.png */; };
-		EB01A19F278F2792005397ED /* misnap_tutorial_id_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB01A172278F2792005397ED /* misnap_tutorial_id_back.jpg */; };
-		EB01A1A0278F2792005397ED /* misnap_tutorial_id.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB01A174278F2792005397ED /* misnap_tutorial_id.jpg */; };
-		EB01A1A1278F2792005397ED /* misnap_checkbox_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A175278F2792005397ED /* misnap_checkbox_checked.png */; };
-		EB01A1A2278F2792005397ED /* misnap_tutorial_passport_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB01A176278F2792005397ED /* misnap_tutorial_passport_portrait_2.jpg */; };
-		EB01A1A3278F2792005397ED /* misnap_camera_shutter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB01A177278F2792005397ED /* misnap_camera_shutter_icon.png */; };
-		EB01A1A4278F2792005397ED /* misnap_tutorial_id_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB01A178278F2792005397ED /* misnap_tutorial_id_portrait_2.jpg */; };
-		EB01A1A5278F2792005397ED /* MiSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01A179278F2792005397ED /* MiSnapViewController.swift */; };
-		EB01A1A6278F2792005397ED /* MiSnapGlareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01A17A278F2792005397ED /* MiSnapGlareView.swift */; };
-		EB01A1A7278F2792005397ED /* MiSnapOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01A17B278F2792005397ED /* MiSnapOrientation.swift */; };
-		EB01A1A8278F2792005397ED /* MiSnapHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01A17C278F2792005397ED /* MiSnapHintView.swift */; };
-		EB01A1A9278F2792005397ED /* MiSnapConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01A17D278F2792005397ED /* MiSnapConfiguration.swift */; };
 		EB01A1CC278F6469005397ED /* MiSnapBarcodeScanner.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB01A1C4278F6468005397ED /* MiSnapBarcodeScanner.xcframework */; };
 		EB01A1CD278F6469005397ED /* MiSnapBarcodeScanner.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB01A1C4278F6468005397ED /* MiSnapBarcodeScanner.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB01A1CE278F6469005397ED /* MiSnapCamera.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB01A1C5278F6468005397ED /* MiSnapCamera.xcframework */; };
@@ -67,6 +23,50 @@
 		EB01A1D9278F6469005397ED /* MiSnap.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB01A1CA278F6469005397ED /* MiSnap.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB01A1DA278F6469005397ED /* MiSnapLicenseManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB01A1CB278F6469005397ED /* MiSnapLicenseManager.xcframework */; };
 		EB01A1DB278F6469005397ED /* MiSnapLicenseManager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB01A1CB278F6469005397ED /* MiSnapLicenseManager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBDCF67727906934005B14A3 /* MiSnapTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCF64627906934005B14A3 /* MiSnapTutorialViewController.swift */; };
+		EBDCF67827906934005B14A3 /* MiSnapGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCF64727906934005B14A3 /* MiSnapGuideView.swift */; };
+		EBDCF67927906934005B14A3 /* MiSnapLocalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCF64827906934005B14A3 /* MiSnapLocalizer.swift */; };
+		EBDCF67A27906934005B14A3 /* MiSnapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCF64927906934005B14A3 /* MiSnapOverlayView.swift */; };
+		EBDCF67B27906934005B14A3 /* MiSnapLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF64B27906934005B14A3 /* MiSnapLocalizable.strings */; };
+		EBDCF67C27906934005B14A3 /* misnap_cancel_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF64D27906934005B14A3 /* misnap_cancel_icon.png */; };
+		EBDCF67D27906934005B14A3 /* misnap_torch_off_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF64E27906934005B14A3 /* misnap_torch_off_icon.png */; };
+		EBDCF67E27906934005B14A3 /* misnap_tutorial_passport_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65027906934005B14A3 /* misnap_tutorial_passport_portrait.jpg */; };
+		EBDCF67F27906934005B14A3 /* misnap_tutorial_id_back_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65127906934005B14A3 /* misnap_tutorial_id_back_portrait.jpg */; };
+		EBDCF68027906934005B14A3 /* misnap_tutorial_id_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65227906934005B14A3 /* misnap_tutorial_id_portrait.jpg */; };
+		EBDCF68127906934005B14A3 /* wink_17.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65427906934005B14A3 /* wink_17.png */; };
+		EBDCF68227906934005B14A3 /* wink_16.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65527906934005B14A3 /* wink_16.png */; };
+		EBDCF68327906934005B14A3 /* wink_14.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65627906934005B14A3 /* wink_14.png */; };
+		EBDCF68427906934005B14A3 /* wink_15.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65727906934005B14A3 /* wink_15.png */; };
+		EBDCF68527906934005B14A3 /* wink_11.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65827906934005B14A3 /* wink_11.png */; };
+		EBDCF68627906934005B14A3 /* wink_10.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65927906934005B14A3 /* wink_10.png */; };
+		EBDCF68727906934005B14A3 /* wink_12.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65A27906934005B14A3 /* wink_12.png */; };
+		EBDCF68827906934005B14A3 /* wink_13.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65B27906934005B14A3 /* wink_13.png */; };
+		EBDCF68927906934005B14A3 /* wink_22.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65C27906934005B14A3 /* wink_22.png */; };
+		EBDCF68A27906934005B14A3 /* wink_23.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65D27906934005B14A3 /* wink_23.png */; };
+		EBDCF68B27906934005B14A3 /* wink_21.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65E27906934005B14A3 /* wink_21.png */; };
+		EBDCF68C27906934005B14A3 /* wink_20.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF65F27906934005B14A3 /* wink_20.png */; };
+		EBDCF68D27906934005B14A3 /* wink_24.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66027906934005B14A3 /* wink_24.png */; };
+		EBDCF68E27906934005B14A3 /* wink_18.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66127906934005B14A3 /* wink_18.png */; };
+		EBDCF68F27906934005B14A3 /* wink_19.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66227906934005B14A3 /* wink_19.png */; };
+		EBDCF69027906934005B14A3 /* wink_25.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66327906934005B14A3 /* wink_25.png */; };
+		EBDCF69127906934005B14A3 /* wink_26.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66427906934005B14A3 /* wink_26.png */; };
+		EBDCF69227906934005B14A3 /* misnap_checkbox_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66527906934005B14A3 /* misnap_checkbox_unchecked.png */; };
+		EBDCF69327906934005B14A3 /* misnap_tutorial_passport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66627906934005B14A3 /* misnap_tutorial_passport.jpg */; };
+		EBDCF69427906934005B14A3 /* misnap_tutorial_red_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66727906934005B14A3 /* misnap_tutorial_red_arrow.png */; };
+		EBDCF69527906934005B14A3 /* misnap_tutorial_id_back_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66827906934005B14A3 /* misnap_tutorial_id_back_portrait_2.jpg */; };
+		EBDCF69627906934005B14A3 /* misnap_help_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66927906934005B14A3 /* misnap_help_icon.png */; };
+		EBDCF69727906934005B14A3 /* misnap_torch_on_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66A27906934005B14A3 /* misnap_torch_on_icon.png */; };
+		EBDCF69827906934005B14A3 /* misnap_tutorial_id_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66B27906934005B14A3 /* misnap_tutorial_id_back.jpg */; };
+		EBDCF69927906934005B14A3 /* misnap_tutorial_id.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66D27906934005B14A3 /* misnap_tutorial_id.jpg */; };
+		EBDCF69A27906934005B14A3 /* misnap_checkbox_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66E27906934005B14A3 /* misnap_checkbox_checked.png */; };
+		EBDCF69B27906934005B14A3 /* misnap_tutorial_passport_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF66F27906934005B14A3 /* misnap_tutorial_passport_portrait_2.jpg */; };
+		EBDCF69C27906934005B14A3 /* misnap_camera_shutter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF67027906934005B14A3 /* misnap_camera_shutter_icon.png */; };
+		EBDCF69D27906934005B14A3 /* misnap_tutorial_id_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBDCF67127906934005B14A3 /* misnap_tutorial_id_portrait_2.jpg */; };
+		EBDCF69E27906934005B14A3 /* MiSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCF67227906934005B14A3 /* MiSnapViewController.swift */; };
+		EBDCF69F27906934005B14A3 /* MiSnapGlareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCF67327906934005B14A3 /* MiSnapGlareView.swift */; };
+		EBDCF6A027906934005B14A3 /* MiSnapOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCF67427906934005B14A3 /* MiSnapOrientation.swift */; };
+		EBDCF6A127906934005B14A3 /* MiSnapHintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCF67527906934005B14A3 /* MiSnapHintView.swift */; };
+		EBDCF6A227906934005B14A3 /* MiSnapConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCF67627906934005B14A3 /* MiSnapConfiguration.swift */; };
 		EBE27EEA278E1712005D27C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE27EE9278E1712005D27C2 /* AppDelegate.swift */; };
 		EBE27EEC278E1712005D27C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE27EEB278E1712005D27C2 /* SceneDelegate.swift */; };
 		EBE27EEE278E1712005D27C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE27EED278E1712005D27C2 /* ViewController.swift */; };
@@ -97,52 +97,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		EB01A14D278F2791005397ED /* MiSnapTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapTutorialViewController.swift; sourceTree = "<group>"; };
-		EB01A14E278F2791005397ED /* MiSnapGuideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapGuideView.swift; sourceTree = "<group>"; };
-		EB01A14F278F2791005397ED /* MiSnapLocalizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapLocalizer.swift; sourceTree = "<group>"; };
-		EB01A150278F2791005397ED /* MiSnapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapOverlayView.swift; sourceTree = "<group>"; };
-		EB01A153278F2791005397ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
-		EB01A154278F2791005397ED /* misnap_cancel_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_cancel_icon.png; sourceTree = "<group>"; };
-		EB01A155278F2791005397ED /* misnap_torch_off_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_torch_off_icon.png; sourceTree = "<group>"; };
-		EB01A156278F2791005397ED /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
-		EB01A157278F2791005397ED /* misnap_tutorial_passport_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport_portrait.jpg; sourceTree = "<group>"; };
-		EB01A158278F2791005397ED /* misnap_tutorial_id_back_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_back_portrait.jpg; sourceTree = "<group>"; };
-		EB01A159278F2791005397ED /* misnap_tutorial_id_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_portrait.jpg; sourceTree = "<group>"; };
-		EB01A15B278F2791005397ED /* wink_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_17.png; sourceTree = "<group>"; };
-		EB01A15C278F2791005397ED /* wink_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_16.png; sourceTree = "<group>"; };
-		EB01A15D278F2791005397ED /* wink_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_14.png; sourceTree = "<group>"; };
-		EB01A15E278F2791005397ED /* wink_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_15.png; sourceTree = "<group>"; };
-		EB01A15F278F2791005397ED /* wink_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_11.png; sourceTree = "<group>"; };
-		EB01A160278F2791005397ED /* wink_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_10.png; sourceTree = "<group>"; };
-		EB01A161278F2791005397ED /* wink_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_12.png; sourceTree = "<group>"; };
-		EB01A162278F2791005397ED /* wink_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_13.png; sourceTree = "<group>"; };
-		EB01A163278F2791005397ED /* wink_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_22.png; sourceTree = "<group>"; };
-		EB01A164278F2791005397ED /* wink_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_23.png; sourceTree = "<group>"; };
-		EB01A165278F2791005397ED /* wink_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_21.png; sourceTree = "<group>"; };
-		EB01A166278F2791005397ED /* wink_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_20.png; sourceTree = "<group>"; };
-		EB01A167278F2791005397ED /* wink_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_24.png; sourceTree = "<group>"; };
-		EB01A168278F2791005397ED /* wink_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_18.png; sourceTree = "<group>"; };
-		EB01A169278F2791005397ED /* wink_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_19.png; sourceTree = "<group>"; };
-		EB01A16A278F2792005397ED /* wink_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_25.png; sourceTree = "<group>"; };
-		EB01A16B278F2792005397ED /* wink_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_26.png; sourceTree = "<group>"; };
-		EB01A16C278F2792005397ED /* misnap_checkbox_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_checkbox_unchecked.png; sourceTree = "<group>"; };
-		EB01A16D278F2792005397ED /* misnap_tutorial_passport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport.jpg; sourceTree = "<group>"; };
-		EB01A16E278F2792005397ED /* misnap_tutorial_red_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_tutorial_red_arrow.png; sourceTree = "<group>"; };
-		EB01A16F278F2792005397ED /* misnap_tutorial_id_back_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_back_portrait_2.jpg; sourceTree = "<group>"; };
-		EB01A170278F2792005397ED /* misnap_help_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_help_icon.png; sourceTree = "<group>"; };
-		EB01A171278F2792005397ED /* misnap_torch_on_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_torch_on_icon.png; sourceTree = "<group>"; };
-		EB01A172278F2792005397ED /* misnap_tutorial_id_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_back.jpg; sourceTree = "<group>"; };
-		EB01A173278F2792005397ED /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
-		EB01A174278F2792005397ED /* misnap_tutorial_id.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id.jpg; sourceTree = "<group>"; };
-		EB01A175278F2792005397ED /* misnap_checkbox_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_checkbox_checked.png; sourceTree = "<group>"; };
-		EB01A176278F2792005397ED /* misnap_tutorial_passport_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport_portrait_2.jpg; sourceTree = "<group>"; };
-		EB01A177278F2792005397ED /* misnap_camera_shutter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_camera_shutter_icon.png; sourceTree = "<group>"; };
-		EB01A178278F2792005397ED /* misnap_tutorial_id_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_portrait_2.jpg; sourceTree = "<group>"; };
-		EB01A179278F2792005397ED /* MiSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapViewController.swift; sourceTree = "<group>"; };
-		EB01A17A278F2792005397ED /* MiSnapGlareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapGlareView.swift; sourceTree = "<group>"; };
-		EB01A17B278F2792005397ED /* MiSnapOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapOrientation.swift; sourceTree = "<group>"; };
-		EB01A17C278F2792005397ED /* MiSnapHintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapHintView.swift; sourceTree = "<group>"; };
-		EB01A17D278F2792005397ED /* MiSnapConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapConfiguration.swift; sourceTree = "<group>"; };
 		EB01A1C4278F6468005397ED /* MiSnapBarcodeScanner.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MiSnapBarcodeScanner.xcframework; path = SDKs/MiSnapBarcodeScanner.xcframework; sourceTree = "<group>"; };
 		EB01A1C5278F6468005397ED /* MiSnapCamera.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MiSnapCamera.xcframework; path = SDKs/MiSnapCamera.xcframework; sourceTree = "<group>"; };
 		EB01A1C6278F6468005397ED /* MiSnapBarcodeScannerLight.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MiSnapBarcodeScannerLight.xcframework; path = SDKs/MiSnapBarcodeScannerLight.xcframework; sourceTree = "<group>"; };
@@ -151,6 +105,52 @@
 		EB01A1C9278F6469005397ED /* MiSnapScience.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MiSnapScience.xcframework; path = SDKs/MiSnapScience.xcframework; sourceTree = "<group>"; };
 		EB01A1CA278F6469005397ED /* MiSnap.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MiSnap.xcframework; path = SDKs/MiSnap.xcframework; sourceTree = "<group>"; };
 		EB01A1CB278F6469005397ED /* MiSnapLicenseManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MiSnapLicenseManager.xcframework; path = SDKs/MiSnapLicenseManager.xcframework; sourceTree = "<group>"; };
+		EBDCF64627906934005B14A3 /* MiSnapTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapTutorialViewController.swift; sourceTree = "<group>"; };
+		EBDCF64727906934005B14A3 /* MiSnapGuideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapGuideView.swift; sourceTree = "<group>"; };
+		EBDCF64827906934005B14A3 /* MiSnapLocalizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapLocalizer.swift; sourceTree = "<group>"; };
+		EBDCF64927906934005B14A3 /* MiSnapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapOverlayView.swift; sourceTree = "<group>"; };
+		EBDCF64C27906934005B14A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
+		EBDCF64D27906934005B14A3 /* misnap_cancel_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_cancel_icon.png; sourceTree = "<group>"; };
+		EBDCF64E27906934005B14A3 /* misnap_torch_off_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_torch_off_icon.png; sourceTree = "<group>"; };
+		EBDCF64F27906934005B14A3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
+		EBDCF65027906934005B14A3 /* misnap_tutorial_passport_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport_portrait.jpg; sourceTree = "<group>"; };
+		EBDCF65127906934005B14A3 /* misnap_tutorial_id_back_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_back_portrait.jpg; sourceTree = "<group>"; };
+		EBDCF65227906934005B14A3 /* misnap_tutorial_id_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_portrait.jpg; sourceTree = "<group>"; };
+		EBDCF65427906934005B14A3 /* wink_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_17.png; sourceTree = "<group>"; };
+		EBDCF65527906934005B14A3 /* wink_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_16.png; sourceTree = "<group>"; };
+		EBDCF65627906934005B14A3 /* wink_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_14.png; sourceTree = "<group>"; };
+		EBDCF65727906934005B14A3 /* wink_15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_15.png; sourceTree = "<group>"; };
+		EBDCF65827906934005B14A3 /* wink_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_11.png; sourceTree = "<group>"; };
+		EBDCF65927906934005B14A3 /* wink_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_10.png; sourceTree = "<group>"; };
+		EBDCF65A27906934005B14A3 /* wink_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_12.png; sourceTree = "<group>"; };
+		EBDCF65B27906934005B14A3 /* wink_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_13.png; sourceTree = "<group>"; };
+		EBDCF65C27906934005B14A3 /* wink_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_22.png; sourceTree = "<group>"; };
+		EBDCF65D27906934005B14A3 /* wink_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_23.png; sourceTree = "<group>"; };
+		EBDCF65E27906934005B14A3 /* wink_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_21.png; sourceTree = "<group>"; };
+		EBDCF65F27906934005B14A3 /* wink_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_20.png; sourceTree = "<group>"; };
+		EBDCF66027906934005B14A3 /* wink_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_24.png; sourceTree = "<group>"; };
+		EBDCF66127906934005B14A3 /* wink_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_18.png; sourceTree = "<group>"; };
+		EBDCF66227906934005B14A3 /* wink_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_19.png; sourceTree = "<group>"; };
+		EBDCF66327906934005B14A3 /* wink_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_25.png; sourceTree = "<group>"; };
+		EBDCF66427906934005B14A3 /* wink_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wink_26.png; sourceTree = "<group>"; };
+		EBDCF66527906934005B14A3 /* misnap_checkbox_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_checkbox_unchecked.png; sourceTree = "<group>"; };
+		EBDCF66627906934005B14A3 /* misnap_tutorial_passport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport.jpg; sourceTree = "<group>"; };
+		EBDCF66727906934005B14A3 /* misnap_tutorial_red_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_tutorial_red_arrow.png; sourceTree = "<group>"; };
+		EBDCF66827906934005B14A3 /* misnap_tutorial_id_back_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_back_portrait_2.jpg; sourceTree = "<group>"; };
+		EBDCF66927906934005B14A3 /* misnap_help_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_help_icon.png; sourceTree = "<group>"; };
+		EBDCF66A27906934005B14A3 /* misnap_torch_on_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_torch_on_icon.png; sourceTree = "<group>"; };
+		EBDCF66B27906934005B14A3 /* misnap_tutorial_id_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_back.jpg; sourceTree = "<group>"; };
+		EBDCF66C27906934005B14A3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
+		EBDCF66D27906934005B14A3 /* misnap_tutorial_id.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id.jpg; sourceTree = "<group>"; };
+		EBDCF66E27906934005B14A3 /* misnap_checkbox_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_checkbox_checked.png; sourceTree = "<group>"; };
+		EBDCF66F27906934005B14A3 /* misnap_tutorial_passport_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport_portrait_2.jpg; sourceTree = "<group>"; };
+		EBDCF67027906934005B14A3 /* misnap_camera_shutter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_camera_shutter_icon.png; sourceTree = "<group>"; };
+		EBDCF67127906934005B14A3 /* misnap_tutorial_id_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_portrait_2.jpg; sourceTree = "<group>"; };
+		EBDCF67227906934005B14A3 /* MiSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapViewController.swift; sourceTree = "<group>"; };
+		EBDCF67327906934005B14A3 /* MiSnapGlareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapGlareView.swift; sourceTree = "<group>"; };
+		EBDCF67427906934005B14A3 /* MiSnapOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapOrientation.swift; sourceTree = "<group>"; };
+		EBDCF67527906934005B14A3 /* MiSnapHintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapHintView.swift; sourceTree = "<group>"; };
+		EBDCF67627906934005B14A3 /* MiSnapConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapConfiguration.swift; sourceTree = "<group>"; };
 		EBE27EE6278E1712005D27C2 /* MiSnapSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiSnapSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE27EE9278E1712005D27C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE27EEB278E1712005D27C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,73 +208,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		EB01A14C278F2791005397ED /* MiSnapUX */ = {
-			isa = PBXGroup;
-			children = (
-				EB01A14F278F2791005397ED /* MiSnapLocalizer.swift */,
-				EB01A17B278F2792005397ED /* MiSnapOrientation.swift */,
-				EB01A17D278F2792005397ED /* MiSnapConfiguration.swift */,
-				EB01A14D278F2791005397ED /* MiSnapTutorialViewController.swift */,
-				EB01A17A278F2792005397ED /* MiSnapGlareView.swift */,
-				EB01A17C278F2792005397ED /* MiSnapHintView.swift */,
-				EB01A14E278F2791005397ED /* MiSnapGuideView.swift */,
-				EB01A150278F2791005397ED /* MiSnapOverlayView.swift */,
-				EB01A179278F2792005397ED /* MiSnapViewController.swift */,
-				EB01A151278F2791005397ED /* Resources */,
-			);
-			path = MiSnapUX;
-			sourceTree = "<group>";
-		};
-		EB01A151278F2791005397ED /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				EB01A152278F2791005397ED /* MiSnapLocalizable.strings */,
-				EB01A154278F2791005397ED /* misnap_cancel_icon.png */,
-				EB01A155278F2791005397ED /* misnap_torch_off_icon.png */,
-				EB01A157278F2791005397ED /* misnap_tutorial_passport_portrait.jpg */,
-				EB01A158278F2791005397ED /* misnap_tutorial_id_back_portrait.jpg */,
-				EB01A159278F2791005397ED /* misnap_tutorial_id_portrait.jpg */,
-				EB01A15A278F2791005397ED /* wink */,
-				EB01A16C278F2792005397ED /* misnap_checkbox_unchecked.png */,
-				EB01A16D278F2792005397ED /* misnap_tutorial_passport.jpg */,
-				EB01A16E278F2792005397ED /* misnap_tutorial_red_arrow.png */,
-				EB01A16F278F2792005397ED /* misnap_tutorial_id_back_portrait_2.jpg */,
-				EB01A170278F2792005397ED /* misnap_help_icon.png */,
-				EB01A171278F2792005397ED /* misnap_torch_on_icon.png */,
-				EB01A172278F2792005397ED /* misnap_tutorial_id_back.jpg */,
-				EB01A174278F2792005397ED /* misnap_tutorial_id.jpg */,
-				EB01A175278F2792005397ED /* misnap_checkbox_checked.png */,
-				EB01A176278F2792005397ED /* misnap_tutorial_passport_portrait_2.jpg */,
-				EB01A177278F2792005397ED /* misnap_camera_shutter_icon.png */,
-				EB01A178278F2792005397ED /* misnap_tutorial_id_portrait_2.jpg */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		EB01A15A278F2791005397ED /* wink */ = {
-			isa = PBXGroup;
-			children = (
-				EB01A15B278F2791005397ED /* wink_17.png */,
-				EB01A15C278F2791005397ED /* wink_16.png */,
-				EB01A15D278F2791005397ED /* wink_14.png */,
-				EB01A15E278F2791005397ED /* wink_15.png */,
-				EB01A15F278F2791005397ED /* wink_11.png */,
-				EB01A160278F2791005397ED /* wink_10.png */,
-				EB01A161278F2791005397ED /* wink_12.png */,
-				EB01A162278F2791005397ED /* wink_13.png */,
-				EB01A163278F2791005397ED /* wink_22.png */,
-				EB01A164278F2791005397ED /* wink_23.png */,
-				EB01A165278F2791005397ED /* wink_21.png */,
-				EB01A166278F2791005397ED /* wink_20.png */,
-				EB01A167278F2791005397ED /* wink_24.png */,
-				EB01A168278F2791005397ED /* wink_18.png */,
-				EB01A169278F2791005397ED /* wink_19.png */,
-				EB01A16A278F2792005397ED /* wink_25.png */,
-				EB01A16B278F2792005397ED /* wink_26.png */,
-			);
-			path = wink;
-			sourceTree = "<group>";
-		};
 		EB01A1AA278F2822005397ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,10 +223,78 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EBDCF64527906934005B14A3 /* MiSnapUX */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCF64627906934005B14A3 /* MiSnapTutorialViewController.swift */,
+				EBDCF64727906934005B14A3 /* MiSnapGuideView.swift */,
+				EBDCF64827906934005B14A3 /* MiSnapLocalizer.swift */,
+				EBDCF64927906934005B14A3 /* MiSnapOverlayView.swift */,
+				EBDCF64A27906934005B14A3 /* Resources */,
+				EBDCF67227906934005B14A3 /* MiSnapViewController.swift */,
+				EBDCF67327906934005B14A3 /* MiSnapGlareView.swift */,
+				EBDCF67427906934005B14A3 /* MiSnapOrientation.swift */,
+				EBDCF67527906934005B14A3 /* MiSnapHintView.swift */,
+				EBDCF67627906934005B14A3 /* MiSnapConfiguration.swift */,
+			);
+			name = MiSnapUX;
+			path = Sources/MiSnapUX;
+			sourceTree = "<group>";
+		};
+		EBDCF64A27906934005B14A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCF64B27906934005B14A3 /* MiSnapLocalizable.strings */,
+				EBDCF64D27906934005B14A3 /* misnap_cancel_icon.png */,
+				EBDCF64E27906934005B14A3 /* misnap_torch_off_icon.png */,
+				EBDCF65027906934005B14A3 /* misnap_tutorial_passport_portrait.jpg */,
+				EBDCF65127906934005B14A3 /* misnap_tutorial_id_back_portrait.jpg */,
+				EBDCF65227906934005B14A3 /* misnap_tutorial_id_portrait.jpg */,
+				EBDCF65327906934005B14A3 /* wink */,
+				EBDCF66527906934005B14A3 /* misnap_checkbox_unchecked.png */,
+				EBDCF66627906934005B14A3 /* misnap_tutorial_passport.jpg */,
+				EBDCF66727906934005B14A3 /* misnap_tutorial_red_arrow.png */,
+				EBDCF66827906934005B14A3 /* misnap_tutorial_id_back_portrait_2.jpg */,
+				EBDCF66927906934005B14A3 /* misnap_help_icon.png */,
+				EBDCF66A27906934005B14A3 /* misnap_torch_on_icon.png */,
+				EBDCF66B27906934005B14A3 /* misnap_tutorial_id_back.jpg */,
+				EBDCF66D27906934005B14A3 /* misnap_tutorial_id.jpg */,
+				EBDCF66E27906934005B14A3 /* misnap_checkbox_checked.png */,
+				EBDCF66F27906934005B14A3 /* misnap_tutorial_passport_portrait_2.jpg */,
+				EBDCF67027906934005B14A3 /* misnap_camera_shutter_icon.png */,
+				EBDCF67127906934005B14A3 /* misnap_tutorial_id_portrait_2.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EBDCF65327906934005B14A3 /* wink */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCF65427906934005B14A3 /* wink_17.png */,
+				EBDCF65527906934005B14A3 /* wink_16.png */,
+				EBDCF65627906934005B14A3 /* wink_14.png */,
+				EBDCF65727906934005B14A3 /* wink_15.png */,
+				EBDCF65827906934005B14A3 /* wink_11.png */,
+				EBDCF65927906934005B14A3 /* wink_10.png */,
+				EBDCF65A27906934005B14A3 /* wink_12.png */,
+				EBDCF65B27906934005B14A3 /* wink_13.png */,
+				EBDCF65C27906934005B14A3 /* wink_22.png */,
+				EBDCF65D27906934005B14A3 /* wink_23.png */,
+				EBDCF65E27906934005B14A3 /* wink_21.png */,
+				EBDCF65F27906934005B14A3 /* wink_20.png */,
+				EBDCF66027906934005B14A3 /* wink_24.png */,
+				EBDCF66127906934005B14A3 /* wink_18.png */,
+				EBDCF66227906934005B14A3 /* wink_19.png */,
+				EBDCF66327906934005B14A3 /* wink_25.png */,
+				EBDCF66427906934005B14A3 /* wink_26.png */,
+			);
+			path = wink;
+			sourceTree = "<group>";
+		};
 		EBE27EDD278E1712005D27C2 = {
 			isa = PBXGroup;
 			children = (
-				EB01A14C278F2791005397ED /* MiSnapUX */,
+				EBDCF64527906934005B14A3 /* MiSnapUX */,
 				EBE27EE8278E1712005D27C2 /* MiSnapSampleApp */,
 				EBE27EE7278E1712005D27C2 /* Products */,
 				EB01A1AA278F2822005397ED /* Frameworks */,
@@ -379,44 +380,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB01A1A3278F2792005397ED /* misnap_camera_shutter_icon.png in Resources */,
-				EB01A19F278F2792005397ED /* misnap_tutorial_id_back.jpg in Resources */,
-				EB01A194278F2792005397ED /* wink_24.png in Resources */,
-				EB01A188278F2792005397ED /* wink_17.png in Resources */,
+				EBDCF69C27906934005B14A3 /* misnap_camera_shutter_icon.png in Resources */,
+				EBDCF69827906934005B14A3 /* misnap_tutorial_id_back.jpg in Resources */,
+				EBDCF68D27906934005B14A3 /* wink_24.png in Resources */,
+				EBDCF68127906934005B14A3 /* wink_17.png in Resources */,
 				EBE27EF6278E1714005D27C2 /* LaunchScreen.storyboard in Resources */,
-				EB01A190278F2792005397ED /* wink_22.png in Resources */,
-				EB01A18D278F2792005397ED /* wink_10.png in Resources */,
-				EB01A19A278F2792005397ED /* misnap_tutorial_passport.jpg in Resources */,
-				EB01A18F278F2792005397ED /* wink_13.png in Resources */,
-				EB01A1A1278F2792005397ED /* misnap_checkbox_checked.png in Resources */,
-				EB01A187278F2792005397ED /* misnap_tutorial_id_portrait.jpg in Resources */,
-				EB01A185278F2792005397ED /* misnap_tutorial_passport_portrait.jpg in Resources */,
-				EB01A196278F2792005397ED /* wink_19.png in Resources */,
-				EB01A189278F2792005397ED /* wink_16.png in Resources */,
-				EB01A197278F2792005397ED /* wink_25.png in Resources */,
-				EB01A193278F2792005397ED /* wink_20.png in Resources */,
-				EB01A184278F2792005397ED /* misnap_torch_off_icon.png in Resources */,
-				EB01A195278F2792005397ED /* wink_18.png in Resources */,
-				EB01A192278F2792005397ED /* wink_21.png in Resources */,
-				EB01A199278F2792005397ED /* misnap_checkbox_unchecked.png in Resources */,
-				EB01A19B278F2792005397ED /* misnap_tutorial_red_arrow.png in Resources */,
+				EBDCF68927906934005B14A3 /* wink_22.png in Resources */,
+				EBDCF68627906934005B14A3 /* wink_10.png in Resources */,
+				EBDCF69327906934005B14A3 /* misnap_tutorial_passport.jpg in Resources */,
+				EBDCF68827906934005B14A3 /* wink_13.png in Resources */,
+				EBDCF69A27906934005B14A3 /* misnap_checkbox_checked.png in Resources */,
+				EBDCF68027906934005B14A3 /* misnap_tutorial_id_portrait.jpg in Resources */,
+				EBDCF67E27906934005B14A3 /* misnap_tutorial_passport_portrait.jpg in Resources */,
+				EBDCF68F27906934005B14A3 /* wink_19.png in Resources */,
+				EBDCF68227906934005B14A3 /* wink_16.png in Resources */,
+				EBDCF69027906934005B14A3 /* wink_25.png in Resources */,
+				EBDCF68C27906934005B14A3 /* wink_20.png in Resources */,
+				EBDCF67D27906934005B14A3 /* misnap_torch_off_icon.png in Resources */,
+				EBDCF68E27906934005B14A3 /* wink_18.png in Resources */,
+				EBDCF68B27906934005B14A3 /* wink_21.png in Resources */,
+				EBDCF69227906934005B14A3 /* misnap_checkbox_unchecked.png in Resources */,
+				EBDCF69427906934005B14A3 /* misnap_tutorial_red_arrow.png in Resources */,
 				EBE27EF3278E1714005D27C2 /* Assets.xcassets in Resources */,
-				EB01A198278F2792005397ED /* wink_26.png in Resources */,
+				EBDCF69127906934005B14A3 /* wink_26.png in Resources */,
 				EBE27EF1278E1712005D27C2 /* Main.storyboard in Resources */,
-				EB01A18E278F2792005397ED /* wink_12.png in Resources */,
-				EB01A19E278F2792005397ED /* misnap_torch_on_icon.png in Resources */,
-				EB01A1A0278F2792005397ED /* misnap_tutorial_id.jpg in Resources */,
-				EB01A182278F2792005397ED /* MiSnapLocalizable.strings in Resources */,
-				EB01A186278F2792005397ED /* misnap_tutorial_id_back_portrait.jpg in Resources */,
-				EB01A191278F2792005397ED /* wink_23.png in Resources */,
-				EB01A1A2278F2792005397ED /* misnap_tutorial_passport_portrait_2.jpg in Resources */,
-				EB01A18C278F2792005397ED /* wink_11.png in Resources */,
-				EB01A183278F2792005397ED /* misnap_cancel_icon.png in Resources */,
-				EB01A18A278F2792005397ED /* wink_14.png in Resources */,
-				EB01A19D278F2792005397ED /* misnap_help_icon.png in Resources */,
-				EB01A18B278F2792005397ED /* wink_15.png in Resources */,
-				EB01A1A4278F2792005397ED /* misnap_tutorial_id_portrait_2.jpg in Resources */,
-				EB01A19C278F2792005397ED /* misnap_tutorial_id_back_portrait_2.jpg in Resources */,
+				EBDCF68727906934005B14A3 /* wink_12.png in Resources */,
+				EBDCF69727906934005B14A3 /* misnap_torch_on_icon.png in Resources */,
+				EBDCF69927906934005B14A3 /* misnap_tutorial_id.jpg in Resources */,
+				EBDCF67B27906934005B14A3 /* MiSnapLocalizable.strings in Resources */,
+				EBDCF67F27906934005B14A3 /* misnap_tutorial_id_back_portrait.jpg in Resources */,
+				EBDCF68A27906934005B14A3 /* wink_23.png in Resources */,
+				EBDCF69B27906934005B14A3 /* misnap_tutorial_passport_portrait_2.jpg in Resources */,
+				EBDCF68527906934005B14A3 /* wink_11.png in Resources */,
+				EBDCF67C27906934005B14A3 /* misnap_cancel_icon.png in Resources */,
+				EBDCF68327906934005B14A3 /* wink_14.png in Resources */,
+				EBDCF69627906934005B14A3 /* misnap_help_icon.png in Resources */,
+				EBDCF68427906934005B14A3 /* wink_15.png in Resources */,
+				EBDCF69D27906934005B14A3 /* misnap_tutorial_id_portrait_2.jpg in Resources */,
+				EBDCF69527906934005B14A3 /* misnap_tutorial_id_back_portrait_2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,17 +428,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB01A1A7278F2792005397ED /* MiSnapOrientation.swift in Sources */,
-				EB01A1A8278F2792005397ED /* MiSnapHintView.swift in Sources */,
-				EB01A17E278F2792005397ED /* MiSnapTutorialViewController.swift in Sources */,
+				EBDCF6A027906934005B14A3 /* MiSnapOrientation.swift in Sources */,
+				EBDCF6A127906934005B14A3 /* MiSnapHintView.swift in Sources */,
+				EBDCF67727906934005B14A3 /* MiSnapTutorialViewController.swift in Sources */,
 				EBE27EEE278E1712005D27C2 /* ViewController.swift in Sources */,
-				EB01A181278F2792005397ED /* MiSnapOverlayView.swift in Sources */,
-				EB01A17F278F2792005397ED /* MiSnapGuideView.swift in Sources */,
-				EB01A1A5278F2792005397ED /* MiSnapViewController.swift in Sources */,
-				EB01A180278F2792005397ED /* MiSnapLocalizer.swift in Sources */,
-				EB01A1A9278F2792005397ED /* MiSnapConfiguration.swift in Sources */,
+				EBDCF67A27906934005B14A3 /* MiSnapOverlayView.swift in Sources */,
+				EBDCF67827906934005B14A3 /* MiSnapGuideView.swift in Sources */,
+				EBDCF69E27906934005B14A3 /* MiSnapViewController.swift in Sources */,
+				EBDCF67927906934005B14A3 /* MiSnapLocalizer.swift in Sources */,
+				EBDCF6A227906934005B14A3 /* MiSnapConfiguration.swift in Sources */,
 				EBE27EEA278E1712005D27C2 /* AppDelegate.swift in Sources */,
-				EB01A1A6278F2792005397ED /* MiSnapGlareView.swift in Sources */,
+				EBDCF69F27906934005B14A3 /* MiSnapGlareView.swift in Sources */,
 				EBE27EEC278E1712005D27C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,12 +446,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EB01A152278F2791005397ED /* MiSnapLocalizable.strings */ = {
+		EBDCF64B27906934005B14A3 /* MiSnapLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EB01A153278F2791005397ED /* en */,
-				EB01A156278F2791005397ED /* es */,
-				EB01A173278F2792005397ED /* fr */,
+				EBDCF64C27906934005B14A3 /* en */,
+				EBDCF64F27906934005B14A3 /* es */,
+				EBDCF66C27906934005B14A3 /* fr */,
 			);
 			name = MiSnapLocalizable.strings;
 			sourceTree = "<group>";

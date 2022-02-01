@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "MiSnap",
-            targets: [MiSnap","MiSnapCamera","MiSnapScience","MobileFlow","MiSnapMibiData","MiSnapBarcodeScanner","MiSnapBarcodeScannerLight"]
+            targets: ["MiSnap","MiSnapCamera","MiSnapScience","MobileFlow","MiSnapMibiData","MiSnapBarcodeScanner","MiSnapBarcodeScannerLight"]
             ),
     ],
     targets: [

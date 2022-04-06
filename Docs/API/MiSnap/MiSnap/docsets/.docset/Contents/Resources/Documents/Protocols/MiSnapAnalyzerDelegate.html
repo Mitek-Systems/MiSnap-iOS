@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapAnalyzerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Protocol/MiSnapAnalyzerDelegate" class="dashAnchor"></a>
+
+    <a title="MiSnapAnalyzerDelegate Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapAnalyzerDelegate Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnap.html">MiSnap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapAnalyzer.html">MiSnapAnalyzer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCameraParameters.html">MiSnapCameraParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapImageUtilities.html">MiSnapImageUtilities</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapLicenseManager.html">MiSnapLicenseManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapParameters.html">MiSnapParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapResult.html">MiSnapResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapScienceClassificationResult.html">MiSnapScienceClassificationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapScienceExtractionResult.html">MiSnapScienceExtractionResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapScienceIQAResult.html">MiSnapScienceIQAResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapScienceMrz.html">MiSnapScienceMrz</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapScienceParameters.html">MiSnapScienceParameters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/IQAFailure.html">IQAFailure</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCameraBarcodeType.html">MiSnapCameraBarcodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCameraTorchMode.html">MiSnapCameraTorchMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLicenseFeature.html">MiSnapLicenseFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLicenseStatus.html">MiSnapLicenseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapMode.html">MiSnapMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapResultCode.html">MiSnapResultCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceBarcodeType.html">MiSnapScienceBarcodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceClassificationDocumentType.html">MiSnapScienceClassificationDocumentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceDocumentCategory.html">MiSnapScienceDocumentCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceDocumentType.html">MiSnapScienceDocumentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceExpirationStatus.html">MiSnapScienceExpirationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceGeoRegion.html">MiSnapScienceGeoRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceIdBackMode.html">MiSnapScienceIdBackMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceOrientationMode.html">MiSnapScienceOrientationMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapStatus.html">MiSnapStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapTutorialMode.html">MiSnapTutorialMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapAnalyzerDelegate.html">MiSnapAnalyzerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapAnalyzerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MiSnapAnalyzerDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Defines an interface for delegates of <code><a href="../Classes/MiSnapAnalyzer.html">MiSnapAnalyzer</a></code> to receive frame result</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MiSnapAnalyzerDelegate(im)miSnapAnalyzerLicenseStatus:"></a>
+                    <a name="//apple_ref/objc/Method/-miSnapAnalyzerLicenseStatus:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MiSnapAnalyzerDelegate(im)miSnapAnalyzerLicenseStatus:">-miSnapAnalyzerLicenseStatus:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback only when license status is anything but valid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">miSnapAnalyzerLicenseStatus</span><span class="p">:(</span><span class="n"><a href="../Enums/MiSnapLicenseStatus.html">MiSnapLicenseStatus</a></span><span class="p">)</span><span class="nv">status</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MiSnapAnalyzerDelegate(im)miSnapAnalyzerSuccess:"></a>
+                    <a name="//apple_ref/objc/Method/-miSnapAnalyzerSuccess:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MiSnapAnalyzerDelegate(im)miSnapAnalyzerSuccess:">-miSnapAnalyzerSuccess:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback in one of the following cases:</p>
+
+<ul>
+<li>a frame passes Image Quality Analysis (IQA) check in <code>MiSnapModeAuto</code></li>
+<li>a user manually triggers image acqusition</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">miSnapAnalyzerSuccess</span><span class="p">:(</span><span class="n"><a href="../Classes/MiSnapResult.html">MiSnapResult</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">result</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MiSnapAnalyzerDelegate(im)miSnapAnalyzerFrameResult:"></a>
+                    <a name="//apple_ref/objc/Method/-miSnapAnalyzerFrameResult:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MiSnapAnalyzerDelegate(im)miSnapAnalyzerFrameResult:">-miSnapAnalyzerFrameResult:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback in <code>MiSnapModeAuto</code> when a frame analysis is completed
+and it was determined that a given frame didn&rsquo;t pass IQA checks</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">miSnapAnalyzerFrameResult</span><span class="p">:(</span><span class="n"><a href="../Classes/MiSnapResult.html">MiSnapResult</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">result</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MiSnapAnalyzerDelegate(im)miSnapAnalyzerCancelled:"></a>
+                    <a name="//apple_ref/objc/Method/-miSnapAnalyzerCancelled:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MiSnapAnalyzerDelegate(im)miSnapAnalyzerCancelled:">-miSnapAnalyzerCancelled:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback whenever a user cancels a session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">miSnapAnalyzerCancelled</span><span class="p">:(</span><span class="n"><a href="../Classes/MiSnapResult.html">MiSnapResult</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">result</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MiSnapAnalyzerDelegate(im)miSnapAnalyzerException:"></a>
+                    <a name="//apple_ref/objc/Method/-miSnapAnalyzerException:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MiSnapAnalyzerDelegate(im)miSnapAnalyzerException:">-miSnapAnalyzerException:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback whenever an exception is occured while perfroming an image analysis</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">miSnapAnalyzerException</span><span class="p">:(</span><span class="n">NSException</span> <span class="o">*</span><span class="p">)</span><span class="nv">exception</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

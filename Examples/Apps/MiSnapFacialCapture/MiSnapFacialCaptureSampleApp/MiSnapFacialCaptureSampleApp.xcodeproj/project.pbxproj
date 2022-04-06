@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		421FB60F27EB5F5E00F451FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FB60E27EB5F5E00F451FF /* AppDelegate.swift */; };
+		421FB61127EB5F5E00F451FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FB61027EB5F5E00F451FF /* SceneDelegate.swift */; };
+		421FB61327EB5F5E00F451FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FB61227EB5F5E00F451FF /* ViewController.swift */; };
+		421FB61627EB5F5E00F451FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421FB61427EB5F5E00F451FF /* Main.storyboard */; };
+		421FB61827EB5F6100F451FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421FB61727EB5F6100F451FF /* Assets.xcassets */; };
+		421FB61B27EB5F6100F451FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421FB61927EB5F6100F451FF /* LaunchScreen.storyboard */; };
+		42A004B727EBAEDC002A598D /* MiSnapFacialCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 42A004B627EBAEDC002A598D /* MiSnapFacialCapture */; };
+		42A004B927EBAEDC002A598D /* MiSnapFacialCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 42A004B827EBAEDC002A598D /* MiSnapFacialCaptureUX */; };
+		42FF921A27EB723E00E8DD51 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FF921927EB723E00E8DD51 /* ResultViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42FF924E27EB9A0700E8DD51 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		421FB60B27EB5F5E00F451FF /* MiSnapFacialCaptureSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiSnapFacialCaptureSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		421FB60E27EB5F5E00F451FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		421FB61027EB5F5E00F451FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		421FB61227EB5F5E00F451FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		421FB61527EB5F5E00F451FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		421FB61727EB5F6100F451FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		421FB61A27EB5F6100F451FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		421FB61C27EB5F6100F451FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42FF921927EB723E00E8DD51 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		421FB60827EB5F5E00F451FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A004B927EBAEDC002A598D /* MiSnapFacialCaptureUX in Frameworks */,
+				42A004B727EBAEDC002A598D /* MiSnapFacialCapture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		421FB60227EB5F5E00F451FF = {
+			isa = PBXGroup;
+			children = (
+				421FB60D27EB5F5E00F451FF /* MiSnapFacialCaptureSampleApp */,
+				421FB60C27EB5F5E00F451FF /* Products */,
+				42FF922F27EB943300E8DD51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		421FB60C27EB5F5E00F451FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				421FB60B27EB5F5E00F451FF /* MiSnapFacialCaptureSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		421FB60D27EB5F5E00F451FF /* MiSnapFacialCaptureSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				421FB62627EB5FA600F451FF /* Models */,
+				421FB62527EB5FA100F451FF /* Views */,
+				421FB62427EB5F9B00F451FF /* Controllers */,
+				421FB62327EB5F9300F451FF /* Resources */,
+				421FB62227EB5F7400F451FF /* Supporting_Files */,
+			);
+			path = MiSnapFacialCaptureSampleApp;
+			sourceTree = "<group>";
+		};
+		421FB62227EB5F7400F451FF /* Supporting_Files */ = {
+			isa = PBXGroup;
+			children = (
+				421FB61C27EB5F6100F451FF /* Info.plist */,
+			);
+			name = Supporting_Files;
+			sourceTree = "<group>";
+		};
+		421FB62327EB5F9300F451FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				421FB61727EB5F6100F451FF /* Assets.xcassets */,
+				421FB61427EB5F5E00F451FF /* Main.storyboard */,
+				421FB61927EB5F6100F451FF /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		421FB62427EB5F9B00F451FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				421FB60E27EB5F5E00F451FF /* AppDelegate.swift */,
+				421FB61027EB5F5E00F451FF /* SceneDelegate.swift */,
+				421FB61227EB5F5E00F451FF /* ViewController.swift */,
+				42FF921927EB723E00E8DD51 /* ResultViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		421FB62527EB5FA100F451FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		421FB62627EB5FA600F451FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		42FF922F27EB943300E8DD51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		421FB60A27EB5F5E00F451FF /* MiSnapFacialCaptureSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 421FB61F27EB5F6100F451FF /* Build configuration list for PBXNativeTarget "MiSnapFacialCaptureSampleApp" */;
+			buildPhases = (
+				421FB60727EB5F5E00F451FF /* Sources */,
+				421FB60827EB5F5E00F451FF /* Frameworks */,
+				421FB60927EB5F5E00F451FF /* Resources */,
+				42FF924E27EB9A0700E8DD51 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiSnapFacialCaptureSampleApp;
+			packageProductDependencies = (
+				42A004B627EBAEDC002A598D /* MiSnapFacialCapture */,
+				42A004B827EBAEDC002A598D /* MiSnapFacialCaptureUX */,
+			);
+			productName = MiSnapFacialCaptureSampleApp;
+			productReference = 421FB60B27EB5F5E00F451FF /* MiSnapFacialCaptureSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		421FB60327EB5F5E00F451FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					421FB60A27EB5F5E00F451FF = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 421FB60627EB5F5E00F451FF /* Build configuration list for PBXProject "MiSnapFacialCaptureSampleApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 421FB60227EB5F5E00F451FF;
+			packageReferences = (
+				42A004B527EBAEDC002A598D /* XCRemoteSwiftPackageReference "MiSnap-iOS" */,
+			);
+			productRefGroup = 421FB60C27EB5F5E00F451FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				421FB60A27EB5F5E00F451FF /* MiSnapFacialCaptureSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		421FB60927EB5F5E00F451FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421FB61B27EB5F6100F451FF /* LaunchScreen.storyboard in Resources */,
+				421FB61827EB5F6100F451FF /* Assets.xcassets in Resources */,
+				421FB61627EB5F5E00F451FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		421FB60727EB5F5E00F451FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421FB61327EB5F5E00F451FF /* ViewController.swift in Sources */,
+				421FB60F27EB5F5E00F451FF /* AppDelegate.swift in Sources */,
+				421FB61127EB5F5E00F451FF /* SceneDelegate.swift in Sources */,
+				42FF921A27EB723E00E8DD51 /* ResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		421FB61427EB5F5E00F451FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				421FB61527EB5F5E00F451FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		421FB61927EB5F6100F451FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				421FB61A27EB5F6100F451FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		421FB61D27EB5F6100F451FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		421FB61E27EB5F6100F451FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		421FB62027EB5F6100F451FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiSnapFacialCaptureSampleApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to Camera to take selfies";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to Microphone to record audio during selfie capture session per regulation";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0.b1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteksystems.MiSnapFacialCaptureSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		421FB62127EB5F6100F451FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiSnapFacialCaptureSampleApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to Camera to take selfies";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to Microphone to record audio during selfie capture session per regulation";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0.b1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteksystems.MiSnapFacialCaptureSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		421FB60627EB5F5E00F451FF /* Build configuration list for PBXProject "MiSnapFacialCaptureSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421FB61D27EB5F6100F451FF /* Debug */,
+				421FB61E27EB5F6100F451FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		421FB61F27EB5F6100F451FF /* Build configuration list for PBXNativeTarget "MiSnapFacialCaptureSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421FB62027EB5F6100F451FF /* Debug */,
+				421FB62127EB5F6100F451FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42A004B527EBAEDC002A598D /* XCRemoteSwiftPackageReference "MiSnap-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42A004B627EBAEDC002A598D /* MiSnapFacialCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42A004B527EBAEDC002A598D /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapFacialCapture;
+		};
+		42A004B827EBAEDC002A598D /* MiSnapFacialCaptureUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42A004B527EBAEDC002A598D /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapFacialCaptureUX;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 421FB60327EB5F5E00F451FF /* Project object */;
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapCameraDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Protocol/MiSnapCameraDelegate" class="dashAnchor"></a>
+
+    <a title="MiSnapCameraDelegate Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapCameraDelegate Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCamera.html">MiSnapCamera</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCameraParameters.html">MiSnapCameraParameters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCameraBarcodeType.html">MiSnapCameraBarcodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCameraTorchMode.html">MiSnapCameraTorchMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapCameraDelegate.html">MiSnapCameraDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapCameraDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MiSnapCameraDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Defines an interface for delegates of <code><a href="../Classes/MiSnapCamera.html">MiSnapCamera</a></code> to receive callbacks</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MiSnapCameraDelegate(im)didReceiveSampleBuffer:"></a>
+                    <a name="//apple_ref/objc/Method/-didReceiveSampleBuffer:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MiSnapCameraDelegate(im)didReceiveSampleBuffer:">-didReceiveSampleBuffer:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this message whenever the output captures and outputs a new video frame, decoding or re-encoding it as specified by its videoSettings property. Delegates can use the provided video frame in conjunction with other APIs for further processing. This method is called periodically, so it must be efficient to prevent capture performance problems, including dropped frames.</p>
+<pre class="highlight objective_c"><code><span class="n">Clients</span> <span class="n">that</span> <span class="n">need</span> <span class="n">to</span> <span class="n">reference</span> <span class="n">the</span> <span class="n">CMSampleBuffer</span> <span class="n">object</span> <span class="n">outside</span> <span class="n">of</span> <span class="n">the</span> <span class="n">scope</span> <span class="n">of</span> <span class="n">this</span> <span class="n">method</span> <span class="n">must</span> <span class="n">CFRetain</span> <span class="n">it</span> <span class="n">and</span> <span class="n">then</span> <span class="n">CFRelease</span> <span class="n">it</span> <span class="n">when</span> <span class="n">they</span> <span class="n">are</span> <span class="n">finished</span> <span class="n">with</span> <span class="n">it</span><span class="p">.</span>
+</code></pre>
+
+<p>Note that to maintain optimal performance, some sample buffers directly reference pools of memory that may need to be reused by the device system and other capture inputs. This is frequently the case for uncompressed device native capture where memory blocks are copied as little as possible. If multiple sample buffers reference such pools of memory for too long, inputs will no longer be able to copy new samples into memory and those samples will be dropped. If your application is causing samples to be dropped by retaining the provided CMSampleBuffer objects for too long, but it needs access to the sample data for a long period of time, consider copying the data into a new buffer and then calling CFRelease on the sample buffer if it was previously retained so that the memory it references can be reused.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didReceiveSampleBuffer</span><span class="p">:(</span><span class="n">CMSampleBufferRef</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">sampleBuffer</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A CMSampleBuffer object containing the video frame data and additional information about the frame, such as its format and presentation time.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MiSnapCameraDelegate(im)didDropSampleBuffer:"></a>
+                    <a name="//apple_ref/objc/Method/-didDropSampleBuffer:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MiSnapCameraDelegate(im)didDropSampleBuffer:">-didDropSampleBuffer:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this message whenever a video frame is dropped. This method is called once for each dropped frame. The CMSampleBuffer object passed to this delegate method will contain metadata about the dropped video frame, such as its duration and presentation time stamp, but will contain no actual video data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didDropSampleBuffer</span><span class="p">:(</span><span class="n">CMSampleBufferRef</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="nv">sampleBuffer</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A CMSampleBuffer object containing metadata such as duration and presentation time stamp but no actual video data</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MiSnapCameraDelegate(im)didFinishConfiguringSession"></a>
+                    <a name="//apple_ref/objc/Method/-didFinishConfiguringSession" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MiSnapCameraDelegate(im)didFinishConfiguringSession">-didFinishConfiguringSession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this message after <code><a href="../Classes/MiSnapCamera.html">MiSnapCamera</a></code> is configured and ready to be used</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didFinishConfiguringSession</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MiSnapCameraDelegate(im)didDecodeBarcode:"></a>
+                    <a name="//apple_ref/objc/Method/-didDecodeBarcode:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MiSnapCameraDelegate(im)didDecodeBarcode:">-didDecodeBarcode:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this message whenever a PDF417 Data is decoded. This method is called once for each frame where a barcode is decoded. The <code>NSString</code> object passed to this delegate method will contain PDF417 decoded string.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p><code>scanBarcode</code> property of <code><a href="../Classes/MiSnapCamera.html">MiSnapCamera</a></code> should be set to TRUE to enable decoding barcodes</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didDecodeBarcode</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">decodedBarcodeString</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>decodedBarcodeString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An <code>NSString</code> object containing PDF417 decoded string</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MiSnapCameraDelegate(im)didFinishRecordingVideo:"></a>
+                    <a name="//apple_ref/objc/Method/-didFinishRecordingVideo:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MiSnapCameraDelegate(im)didFinishRecordingVideo:">-didFinishRecordingVideo:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this message whenever a video is recorded. The NSData object passed to this delegate method contains recorded video.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p><code>recordVideo</code> property of <code><a href="../Classes/MiSnapCameraParameters.html">MiSnapCameraParameters</a></code> should be set to TRUE to enable recording videos</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didFinishRecordingVideo</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">videoData</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A NSData object that represents a recorded video</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,423 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapAssetManager
+@_exported import MiSnapAssetManager
+import Swift
+import UIKit
+import _Concurrency
+@_inheritsConvenienceInitializers @objc public class MiSnapGlareViewConfiguration : ObjectiveC.NSObject {
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var borderColor: UIKit.UIColor
+  @objc public var borderWidth: CoreGraphics.CGFloat
+  @objc public var cornerRadius: CoreGraphics.CGFloat
+  @objc public var minSize: CoreGraphics.CGFloat
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapGlareView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapGlareViewConfiguration? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public func animate(with glareBoundingBox: CoreGraphics.CGRect)
+  @objc deinit
+}
+@objc public enum MiSnapAssetStyle : Swift.Int {
+  case fill = 0
+  case stroke = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum MiSnapViewState : Swift.Int {
+  case enabled = 0
+  case disabled = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapViewConfiguration : ObjectiveC.NSObject {
+  @objc public var style: MiSnapAssetStyle
+  @objc public var size: CoreGraphics.CGSize
+  @objc public var shadowColor: UIKit.UIColor
+  @objc public var shadowOffset: CoreGraphics.CGSize
+  public var shadowRadius: CoreGraphics.CGFloat?
+  @objc public var shadowOpacity: CoreGraphics.CGFloat
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapStatelessViewConfiguration : MiSnapViewConfiguration {
+  @objc public var image: UIKit.UIImage?
+  @objc public var color: UIKit.UIColor
+  @objc public var cutoutFillColor: UIKit.UIColor?
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapStatefulViewConfiguration : MiSnapViewConfiguration {
+  @objc public var state: MiSnapViewState
+  @objc public var imageEnabled: UIKit.UIImage?
+  @objc public var imageDisabled: UIKit.UIImage?
+  @objc public var colorEnabled: UIKit.UIColor
+  @objc public var colorDisabled: UIKit.UIColor
+  @objc public var cutoutFillColorEnabled: UIKit.UIColor?
+  @objc public var cutoutFillColorDisabled: UIKit.UIColor?
+  @objc override dynamic public init()
+  @objc public init(for state: MiSnapViewState)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapViewConfiguration? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapStatelessView : MiSnapView {
+  @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapStatelessViewConfiguration? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapStatefulView : MiSnapView {
+  @objc @_Concurrency.MainActor(unsafe) public var state: MiSnapViewState {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapStatefulViewConfiguration? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapHelpViewConfiguration : MiSnapStatelessViewConfiguration {
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapHelpView : MiSnapStatelessView {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapHelpViewConfiguration? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapRecordingIndicatorViewConfiguration : ObjectiveC.NSObject {
+  public var textColor: UIKit.UIColor
+  public var dotColor: UIKit.UIColor
+  public var backgroundColor: UIKit.UIColor
+  public var alpha: CoreGraphics.CGFloat
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapRecordingIndicatorView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapRecordingIndicatorViewConfiguration? = nil, text: Swift.String)
+  @objc deinit
+}
+@objc public enum MiSnapFacialCaptureCountdownStyle : Swift.Int {
+  case simple = 0
+  case pulsate = 1
+  case infinity = 2
+  case burndUp = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureCountdownViewConfiguration : ObjectiveC.NSObject {
+  @objc public var style: MiSnapFacialCaptureCountdownStyle
+  @objc public var size: CoreGraphics.CGSize
+  @objc public var textAlpha: CoreGraphics.CGFloat
+  @objc public var textColor: UIKit.UIColor
+  @objc public var fontSize: CoreGraphics.CGFloat
+  @objc public var burnupAlpha: CoreGraphics.CGFloat
+  @objc public var burnupColor: UIKit.UIColor
+  @objc public var burnupLineWidth: CoreGraphics.CGFloat
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapFacialCaptureCountdownView : UIKit.UILabel {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapFacialCaptureCountdownViewConfiguration? = nil, countdownTime: Swift.Double, frame: CoreGraphics.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) public func update(with value: Swift.Int)
+  @objc deinit
+}
+extension CoreGraphics.CGSize {
+  public func scaled(by scale: CoreGraphics.CGFloat) -> CoreGraphics.CGSize
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureGuideConfiguration : ObjectiveC.NSObject {
+  @objc public var vignette: MiSnapFacialCaptureVignetteConfiguration
+  @objc public var outline: MiSnapFacialCaptureOutlineConfiguration
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum MiSnapFacialCaptureVignetteStyle : Swift.Int {
+  case none = 0
+  case blur = 1
+  case semitransparent = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureVignetteConfiguration : ObjectiveC.NSObject {
+  @objc public var style: MiSnapFacialCaptureVignetteStyle
+  @objc public var blurStyle: UIKit.UIBlurEffect.Style
+  @objc public var color: UIKit.UIColor
+  @objc public var alpha: CoreGraphics.CGFloat
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum MiSnapFacialCaptureOutlineColorStyle : Swift.Int {
+  case dynamic = 0
+  case fixed = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum MiSnapFacialCaptureOutlineState : Swift.Int {
+  case bad = 0
+  case good = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureOutlineConfiguration : ObjectiveC.NSObject {
+  @objc public var colorStyle: MiSnapFacialCaptureOutlineColorStyle
+  @objc public var width: CoreGraphics.CGFloat
+  @objc public var color: UIKit.UIColor
+  @objc public var colorGood: UIKit.UIColor
+  @objc public var colorBad: UIKit.UIColor
+  @objc public var alpha: Swift.CFloat
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapFacialCaptureGuideView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var outlineRect: CoreGraphics.CGRect {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var state: MiSnapFacialCaptureOutlineState {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapFacialCaptureGuideConfiguration? = nil, fill: CoreGraphics.CGFloat, frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapSuccessCheckmarkViewConfiguration : MiSnapStatelessViewConfiguration {
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapSuccessCheckmarkView : MiSnapStatelessView {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapSuccessCheckmarkViewConfiguration? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapCameraShutterViewConfiguration : MiSnapStatelessViewConfiguration {
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCameraShutterView : MiSnapStatelessView {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapCameraShutterViewConfiguration? = nil)
+  @objc deinit
+}
+@objc public enum MiSnapHintStyle : Swift.Int {
+  case semitransparent = 0
+  case blur = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapHintViewConfiguration : ObjectiveC.NSObject {
+  @objc public var style: MiSnapHintStyle
+  @objc public var blurStyle: UIKit.UIBlurEffect.Style
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var borderColor: UIKit.UIColor
+  @objc public var borderWidth: CoreGraphics.CGFloat
+  @objc public var size: CoreGraphics.CGSize
+  @objc public var cornerRadius: CoreGraphics.CGFloat
+  @objc public var textColor: UIKit.UIColor
+  @objc public var font: UIKit.UIFont
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapHintView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapHintViewConfiguration? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public func animate(with hintMessage: Swift.String)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapCancelViewConfiguration : MiSnapStatelessViewConfiguration {
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCancelView : MiSnapStatelessView {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapCancelViewConfiguration? = nil)
+  @objc deinit
+}
+@objc public enum MiSnapGuideDocumentType : Swift.Int {
+  case none = 0
+  case anyId = 1
+  case passport = 2
+  case idFront = 3
+  case idBack = 4
+  case checkFront = 5
+  case checkBack = 6
+  case generic = 7
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum MiSnapGuideOrientationMode : Swift.Int {
+  case unknown = 0
+  case deviceLandscapeGuideLandscape = 1
+  case devicePortraitGuidePortrait = 2
+  case devicePortraitGuideLandscape = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapGuideViewConfiguration : ObjectiveC.NSObject {
+  @objc public var vignette: MiSnapVignetteConfiguration
+  @objc public var outline: MiSnapDocumentOutlineConfiguration
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum MiSnapVignetteStyle : Swift.Int {
+  case none = 0
+  case blur = 1
+  case semitransparent = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVignetteConfiguration : ObjectiveC.NSObject {
+  @objc public var style: MiSnapVignetteStyle
+  @objc public var color: UIKit.UIColor
+  @objc public var alpha: CoreGraphics.CGFloat
+  @objc public var blurStyle: UIKit.UIBlurEffect.Style
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum MiSnapGuideAlignment : Swift.Int {
+  case center = 0
+  case top = 1
+  case bottom = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapDocumentOutlineConfiguration : ObjectiveC.NSObject {
+  @objc public var alignment: MiSnapGuideAlignment
+  @objc public var alpha: CoreGraphics.CGFloat
+  @objc public var mainBorderColor: UIKit.UIColor
+  @objc public var secondaryBorderColor: UIKit.UIColor
+  @objc public var mainBorderWidth: CoreGraphics.CGFloat
+  @objc public var secondaryBorderWidth: CoreGraphics.CGFloat
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapGuideView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var outlineRect: CoreGraphics.CGRect {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public init(for documentType: MiSnapGuideDocumentType, configuration: MiSnapGuideViewConfiguration? = nil, orientationMode: MiSnapGuideOrientationMode, portraitFill: CoreGraphics.CGFloat, landscapeFill: CoreGraphics.CGFloat, orientation: UIKit.UIInterfaceOrientation, frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) public func update(_ orientation: UIKit.UIInterfaceOrientation)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapTorchViewConfiguration : MiSnapStatefulViewConfiguration {
+  @objc override dynamic public init()
+  @objc override public init(for state: MiSnapViewState)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapTorchView : MiSnapStatefulView {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapTorchViewConfiguration? = nil)
+  @objc deinit
+}
+extension MiSnapAssetStyle : Swift.Equatable {}
+extension MiSnapAssetStyle : Swift.Hashable {}
+extension MiSnapAssetStyle : Swift.RawRepresentable {}
+extension MiSnapViewState : Swift.Equatable {}
+extension MiSnapViewState : Swift.Hashable {}
+extension MiSnapViewState : Swift.RawRepresentable {}
+extension MiSnapFacialCaptureCountdownStyle : Swift.Equatable {}
+extension MiSnapFacialCaptureCountdownStyle : Swift.Hashable {}
+extension MiSnapFacialCaptureCountdownStyle : Swift.RawRepresentable {}
+extension MiSnapFacialCaptureVignetteStyle : Swift.Equatable {}
+extension MiSnapFacialCaptureVignetteStyle : Swift.Hashable {}
+extension MiSnapFacialCaptureVignetteStyle : Swift.RawRepresentable {}
+extension MiSnapFacialCaptureOutlineColorStyle : Swift.Equatable {}
+extension MiSnapFacialCaptureOutlineColorStyle : Swift.Hashable {}
+extension MiSnapFacialCaptureOutlineColorStyle : Swift.RawRepresentable {}
+extension MiSnapFacialCaptureOutlineState : Swift.Equatable {}
+extension MiSnapFacialCaptureOutlineState : Swift.Hashable {}
+extension MiSnapFacialCaptureOutlineState : Swift.RawRepresentable {}
+extension MiSnapHintStyle : Swift.Equatable {}
+extension MiSnapHintStyle : Swift.Hashable {}
+extension MiSnapHintStyle : Swift.RawRepresentable {}
+extension MiSnapGuideDocumentType : Swift.Equatable {}
+extension MiSnapGuideDocumentType : Swift.Hashable {}
+extension MiSnapGuideDocumentType : Swift.RawRepresentable {}
+extension MiSnapGuideOrientationMode : Swift.Equatable {}
+extension MiSnapGuideOrientationMode : Swift.Hashable {}
+extension MiSnapGuideOrientationMode : Swift.RawRepresentable {}
+extension MiSnapVignetteStyle : Swift.Equatable {}
+extension MiSnapVignetteStyle : Swift.Hashable {}
+extension MiSnapVignetteStyle : Swift.RawRepresentable {}
+extension MiSnapGuideAlignment : Swift.Equatable {}
+extension MiSnapGuideAlignment : Swift.Hashable {}
+extension MiSnapGuideAlignment : Swift.RawRepresentable {}

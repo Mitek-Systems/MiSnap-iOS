@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapCameraParameters Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/MiSnapCameraParameters" class="dashAnchor"></a>
+
+    <a title="MiSnapCameraParameters Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapCameraParameters Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCamera.html">MiSnapCamera</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCameraParameters.html">MiSnapCameraParameters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCameraBarcodeType.html">MiSnapCameraBarcodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCameraTorchMode.html">MiSnapCameraTorchMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapCameraDelegate.html">MiSnapCameraDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapCameraParameters</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">MiSnapCameraParameters</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Camera specific parameters</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)preset"></a>
+                    <a name="//apple_ref/objc/Property/preset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)preset">preset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the preset of the camera session.</p>
+
+<p>Default: AVCaptureSessionPreset1920x1080</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">AVCaptureSessionPreset</span> <span class="n">_Nonnull</span> <span class="n">preset</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)pixelBufferFormat"></a>
+                    <a name="//apple_ref/objc/Property/pixelBufferFormat" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)pixelBufferFormat">pixelBufferFormat</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the pixel buffer format of the camera session</p>
+
+<p>Default: kCVPixelFormatType_32BGRA</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">pixelBufferFormat</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)position"></a>
+                    <a name="//apple_ref/objc/Property/position" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)position">position</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the camera position</p>
+
+<p>Default: AVCaptureDevicePositionBack</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">AVCaptureDevicePosition</span> <span class="n">position</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)torchMode"></a>
+                    <a name="//apple_ref/objc/Property/torchMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)torchMode">torchMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Torch mode</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <code><a href="../Enums/MiSnapCameraTorchMode.html">MiSnapCameraTorchMode</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/MiSnapCameraTorchMode.html">MiSnapCameraTorchMode</a></span> <span class="n">torchMode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)recordVideo"></a>
+                    <a name="//apple_ref/objc/Property/recordVideo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)recordVideo">recordVideo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When set to TRUE a video recording of a session (no sound) is returned. When set to FALSE a session is not recorded</p>
+
+<p>Default: FALSE.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">recordVideo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)recordAudio"></a>
+                    <a name="//apple_ref/objc/Property/recordAudio" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)recordAudio">recordAudio</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When set to TRUE and recordVideo set to TRUE a video recording of a session with sound is returned. When set to FALSE audio is not recorded</p>
+
+<p>Default: FALSE.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">recordAudio</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)videoQuality"></a>
+                    <a name="//apple_ref/objc/Property/videoQuality" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)videoQuality">videoQuality</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies relative quality of a recorded video</p>
+
+<p>Range: [10, 100]</p>
+
+<p>10 - video is recorded with a minimum supported bitrate (the smallest size with a decent quality)</p>
+
+<p>100 - video is recorded with a highest supported bitrate (the biggest size with the best quality)</p>
+
+<p>Default: 10</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">videoQuality</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)showRecordingUI"></a>
+                    <a name="//apple_ref/objc/Property/showRecordingUI" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)showRecordingUI">showRecordingUI</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Show recording UI</p>
+
+<p>Values: 0, 1</p>
+
+<p>Key: kMiSnapShowRecordingUI</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only used  when <code><a href="../Classes/MiSnapCameraParameters.html#/c:objc(cs)MiSnapCameraParameters(py)recordVideo">recordVideo</a></code> parameter is <code>TRUE</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showRecordingUI</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)scanBarcode"></a>
+                    <a name="//apple_ref/objc/Property/scanBarcode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)scanBarcode">scanBarcode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether a camera should be configured to scan barcodes</p>
+
+<p>Default: FALSE.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    It&rsquo;s recommended to override to TRUE if your app supports
+only AAMVA PDF417 barcodes (US and Canada driver licenses)
+as there&rsquo;s a defect in Apple&rsquo;s API where non-English alphabet characters
+are decoded inacurately (e.g. Spanish and other international DLs)
+
+</div>
+
+<p>When overridden to TRUE only PDF417 barcode is being detected by default
+but list of supported barcodes can be modified by overriding <code><a href="../Classes/MiSnapCameraParameters.html#/c:objc(cs)MiSnapCameraParameters(py)supportedBarcodeTypes">supportedBarcodeTypes</a></code> property</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">scanBarcode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)supportedBarcodeTypes"></a>
+                    <a name="//apple_ref/objc/Property/supportedBarcodeTypes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)supportedBarcodeTypes">supportedBarcodeTypes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of <code><a href="../Enums/MiSnapCameraBarcodeType.html">MiSnapCameraBarcodeType</a></code> a camera should scan for</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">supportedBarcodeTypes</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(im)toDictionary"></a>
+                    <a name="//apple_ref/objc/Method/-toDictionary" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(im)toDictionary">-toDictionary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">toDictionary</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Dictionary of parameters</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

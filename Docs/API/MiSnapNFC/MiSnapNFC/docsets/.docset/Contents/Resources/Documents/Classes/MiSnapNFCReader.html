@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapNFCReader Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/MiSnapNFCReader" class="dashAnchor"></a>
+
+    <a title="MiSnapNFCReader Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapNFCReader Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFC.html">MiSnapNFC</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCAssetLocationConfiguration.html">MiSnapNFCAssetLocationConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCChipLocator.html">MiSnapNFCChipLocator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCLocalizationConfiguration.html">MiSnapNFCLocalizationConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCReader.html">MiSnapNFCReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCResourceLocator.html">MiSnapNFCResourceLocator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCResourceLocatorConfiguration.html">MiSnapNFCResourceLocatorConfiguration</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapNFCChipLocation.html">MiSnapNFCChipLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapNFCDocumentType.html">MiSnapNFCDocumentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapNFCInvalidationReason.html">MiSnapNFCInvalidationReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapNFCKey.html">MiSnapNFCKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapNFCLogLevel.html">MiSnapNFCLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapNFCTagError.html">MiSnapNFCTagError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapNFCReader</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOS</span> <span class="mi">13</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">MiSnapNFCReader</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MiSnapNFCReader</span><span class="p">:</span> <span class="kt">NFCTagReaderSessionDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Chip reader</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC8logLevel7timeoutAcA0ab6NFCLogF0O_Sdtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(logLevel:timeout:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC8logLevel7timeoutAcA0ab6NFCLogF0O_Sdtcfc">init(logLevel:<wbr>timeout:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns NFC reader</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">logLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapNFCLogLevel.html">MiSnapNFCLogLevel</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">info</span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="mf">15.0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC3set12documentTypeyAA0ab11NFCDocumentG0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/set(documentType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC3set12documentTypeyAA0ab11NFCDocumentG0O_tF">set(documentType:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a document type</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">documentType</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapNFCDocumentType.html">MiSnapNFCDocumentType</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC3set7timeoutySd_tF"></a>
+                    <a name="//apple_ref/swift/Method/set(timeout:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC3set7timeoutySd_tF">set(timeout:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a timeout interval</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC9logModule8withName7versionySS_SStF"></a>
+                    <a name="//apple_ref/swift/Method/logModule(withName:version:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC9logModule8withName7versionySS_SStF">logModule(withName:<wbr>version:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logs module with its name and version in MIBI</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">logModule</span><span class="p">(</span><span class="n">withName</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC4read14documentNumber11dateOfBirth0hI6Expiry3mrz6skipCA9completedySS_S3SSbySDySSypGSg_AA0aB11NFCTagErrorOSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/read(documentNumber:dateOfBirth:dateOfExpiry:mrz:skipCA:completed:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC4read14documentNumber11dateOfBirth0hI6Expiry3mrz6skipCA9completedySS_S3SSbySDySSypGSg_AA0aB11NFCTagErrorOSgtctF">read(documentNumber:<wbr>dateOfBirth:<wbr>dateOfExpiry:<wbr>mrz:<wbr>skipCA:<wbr>completed:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts NFC chip reading session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">read</span><span class="p">(</span><span class="nv">documentNumber</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">dateOfBirth</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">dateOfExpiry</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">mrz</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">skipCA</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">completed</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?,</span> <span class="kt"><a href="../Enums/MiSnapNFCTagError.html">MiSnapNFCTagError</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC4stopyyF"></a>
+                    <a name="//apple_ref/swift/Method/stop()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC4stopyyF">stop()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops NFC chip reading session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stop</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/NFCTagReaderSessionDelegate"></a>
+                <a name="//apple_ref/swift/Section/NFCTagReaderSessionDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/NFCTagReaderSessionDelegate"></a>
+                  <h3 class="section-name"><span>NFCTagReaderSessionDelegate</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC31tagReaderSessionDidBecomeActiveyySo06NFCTagfG0CF"></a>
+                    <a name="//apple_ref/swift/Method/tagReaderSessionDidBecomeActive(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC31tagReaderSessionDidBecomeActiveyySo06NFCTagfG0CF">tagReaderSessionDidBecomeActive(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets called when the NFC reader session has become active</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s delegate. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagReaderSessionDidBecomeActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">NFCTagReaderSession</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC16tagReaderSession_22didInvalidateWithErrorySo06NFCTagfG0C_s0K0_ptF"></a>
+                    <a name="//apple_ref/swift/Method/tagReaderSession(_:didInvalidateWithError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC16tagReaderSession_22didInvalidateWithErrorySo06NFCTagfG0C_s0K0_ptF">tagReaderSession(_:<wbr>didInvalidateWithError:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets called when a session becomes invalid</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s delegate. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagReaderSession</span><span class="p">(</span><span class="n">_</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">NFCTagReaderSession</span><span class="p">,</span> <span class="n">didInvalidateWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC16tagReaderSession_9didDetectySo06NFCTagfG0C_Say04CoreC00J0OGtF"></a>
+                    <a name="//apple_ref/swift/Method/tagReaderSession(_:didDetect:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC16tagReaderSession_9didDetectySo06NFCTagfG0C_Say04CoreC00J0OGtF">tagReaderSession(_:<wbr>didDetect:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets called when the reader detects NFC tag(s) in the polling sequence</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s delegate. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagReaderSession</span><span class="p">(</span><span class="n">_</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">NFCTagReaderSession</span><span class="p">,</span> <span class="n">didDetect</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">NFCTag</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/MiSnapViewController" class="dashAnchor"></a>
+
+    <a title="MiSnapViewController Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapViewController Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapConfiguration.html">MiSnapConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapLocalizationConfiguration.html">MiSnapLocalizationConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapUX.html">MiSnapUX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapUxParameters.html">MiSnapUxParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapViewController.html">MiSnapViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapReviewMode.html">MiSnapReviewMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapUxTutorialMode.html">MiSnapUxTutorialMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapTutorialViewControllerDelegate.html">MiSnapTutorialViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapViewControllerDelegate.html">MiSnapViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">MiSnapViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MiSnapViewController</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MiSnapTutorialViewControllerDelegate.html">MiSnapTutorialViewControllerDelegate</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MiSnapViewController</span><span class="p">:</span> <span class="kt">MiSnapCameraDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MiSnapViewController</span><span class="p">:</span> <span class="kt">MiSnapAnalyzerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>A view controller that controls an invoked session</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapViewController(py)configuration"></a>
+                    <a name="//apple_ref/swift/Property/configuration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapViewController(py)configuration">configuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A configuration a session was initialized with</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapConfiguration.html">MiSnapConfiguration</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)initWith:delegate:"></a>
+                    <a name="//apple_ref/swift/Method/init(with:delegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)initWith:delegate:">init(with:<wbr>delegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns view controller with a given configuration and sets a delegate that&rsquo;ll be receiving callbacks</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">with</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapConfiguration.html">MiSnapConfiguration</a></span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MiSnapViewControllerDelegate.html">MiSnapViewControllerDelegate</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called after the view has been loaded.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)viewWillAppear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillAppear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)viewWillAppear:">viewWillAppear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the view is about to made visible</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)viewWillTransitionToSize:withTransitionCoordinator:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillTransition(to:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)viewWillTransitionToSize:withTransitionCoordinator:">viewWillTransition(to:<wbr>with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the view&rsquo;s size is changed by its parent</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillTransition</span><span class="p">(</span><span class="n">to</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="n">with</span> <span class="nv">coordinator</span><span class="p">:</span> <span class="kt">UIViewControllerTransitionCoordinator</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)viewWillDisappear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillDisappear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)viewWillDisappear:">viewWillDisappear(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the view is dismissed, covered or otherwise hidden</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapViewController(py)prefersStatusBarHidden"></a>
+                    <a name="//apple_ref/swift/Property/prefersStatusBarHidden" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapViewController(py)prefersStatusBarHidden">prefersStatusBarHidden</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether a status bar should be hidden</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s property. Do not override it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">prefersStatusBarHidden</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapViewController(py)shouldAutorotate"></a>
+                    <a name="//apple_ref/swift/Property/shouldAutorotate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapViewController(py)shouldAutorotate">shouldAutorotate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether a view can rotate</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s property. Do not override it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">shouldAutorotate</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapViewController(py)supportedInterfaceOrientations"></a>
+                    <a name="//apple_ref/swift/Property/supportedInterfaceOrientations" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapViewController(py)supportedInterfaceOrientations">supportedInterfaceOrientations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns orientations supported by the view controller</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s property. Do not override it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">supportedInterfaceOrientations</span><span class="p">:</span> <span class="kt">UIInterfaceOrientationMask</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)presentViewController:animated:completion:"></a>
+                    <a name="//apple_ref/swift/Method/present(_:animated:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)presentViewController:animated:completion:">present(_:<wbr>animated:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presents another view controller</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">present</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewControllerToPresent</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="n">animated</span> <span class="nv">flag</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20functions"></a>
+                <a name="//apple_ref/swift/Section/Public functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Public%20functions"></a>
+                  <h3 class="section-name"><span>Public functions</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)setWithDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/set(delegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)setWithDelegate:">set(delegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a delegate that&rsquo;ll be receiving callbacks</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MiSnapViewControllerDelegate.html">MiSnapViewControllerDelegate</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)pauseAnalysis"></a>
+                    <a name="//apple_ref/swift/Method/pauseAnalysis()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)pauseAnalysis">pauseAnalysis()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pauses analysis</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">pauseAnalysis</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)resumeAnalysis"></a>
+                    <a name="//apple_ref/swift/Method/resumeAnalysis()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)resumeAnalysis">resumeAnalysis()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resumes analysis</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">resumeAnalysis</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(cm)miSnapVersion"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(cm)miSnapVersion">miSnapVersion()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns MiSnap version</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">miSnapVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(cm)miSnapScienceVersion"></a>
+                    <a name="//apple_ref/swift/Method/miSnapScienceVersion()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(cm)miSnapScienceVersion">miSnapScienceVersion()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns MiSnapScience version</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">miSnapScienceVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)checkCameraPermissionWithHandler:"></a>
+                    <a name="//apple_ref/swift/Method/checkCameraPermission(handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)checkCameraPermissionWithHandler:">checkCameraPermission(handler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks a camera permission and asynchronously returns a result</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">checkCameraPermission</span><span class="p">(</span><span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)checkMicrophonePermissionWithHandler:"></a>
+                    <a name="//apple_ref/swift/Method/checkMicrophonePermission(handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)checkMicrophonePermissionWithHandler:">checkMicrophonePermission(handler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks a microphone permission and asynchronously returns a result</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">checkMicrophonePermission</span><span class="p">(</span><span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)hasMinDiskSpace:"></a>
+                    <a name="//apple_ref/swift/Method/hasMinDiskSpace(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)hasMinDiskSpace:">hasMinDiskSpace(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks if a device has a given space in MB</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">hasMinDiskSpace</span><span class="p">(</span><span class="n">_</span> <span class="nv">minDiskSpace</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/MiSnapTutorialViewControllerDelegate%20callbacks"></a>
+                <a name="//apple_ref/swift/Section/MiSnapTutorialViewControllerDelegate callbacks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/MiSnapTutorialViewControllerDelegate%20callbacks"></a>
+                  <h3 class="section-name"><span>MiSnapTutorialViewControllerDelegate callbacks</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)tutorialContinueButtonActionFor:"></a>
+                    <a name="//apple_ref/swift/Method/tutorialContinueButtonAction(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)tutorialContinueButtonActionFor:">tutorialContinueButtonAction(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a tutorial view controller&rsquo;s continue button is pressed</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tutorialContinueButtonAction</span><span class="p">(</span><span class="k">for</span> <span class="nv">tutorialMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapUxTutorialMode.html">MiSnapUxTutorialMode</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)tutorialRetryButtonAction"></a>
+                    <a name="//apple_ref/swift/Method/tutorialRetryButtonAction()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)tutorialRetryButtonAction">tutorialRetryButtonAction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a tutorial view controller&rsquo;s retry button is pressed</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tutorialRetryButtonAction</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)tutorialCancelButtonAction"></a>
+                    <a name="//apple_ref/swift/Method/tutorialCancelButtonAction()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)tutorialCancelButtonAction">tutorialCancelButtonAction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a tutorial view controller&rsquo;s cancel button is pressed</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tutorialCancelButtonAction</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/MiSnapCameraDelegate%20callbacks"></a>
+                <a name="//apple_ref/swift/Section/MiSnapCameraDelegate callbacks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/MiSnapCameraDelegate%20callbacks"></a>
+                  <h3 class="section-name"><span>MiSnapCameraDelegate callbacks</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)didReceiveSampleBuffer:"></a>
+                    <a name="//apple_ref/swift/Method/didReceive(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)didReceiveSampleBuffer:">didReceive(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a camera received a sample buffer</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didReceive</span><span class="p">(</span><span class="n">_</span> <span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)didDecodeBarcode:"></a>
+                    <a name="//apple_ref/swift/Method/didDecodeBarcode(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)didDecodeBarcode:">didDecodeBarcode(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a camera received a decoded barcode string</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didDecodeBarcode</span><span class="p">(</span><span class="n">_</span> <span class="nv">decodedBarcodeString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)didFinishRecordingVideo:"></a>
+                    <a name="//apple_ref/swift/Method/didFinishRecordingVideo(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)didFinishRecordingVideo:">didFinishRecordingVideo(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a camera finished recording a video</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didFinishRecordingVideo</span><span class="p">(</span><span class="n">_</span> <span class="nv">videoData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)didFinishConfiguringSession"></a>
+                    <a name="//apple_ref/swift/Method/didFinishConfiguringSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)didFinishConfiguringSession">didFinishConfiguringSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a camera is configured and ready to be started</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didFinishConfiguringSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/MiSnapAnalyzerDelegate%20callbacks"></a>
+                <a name="//apple_ref/swift/Section/MiSnapAnalyzerDelegate callbacks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/MiSnapAnalyzerDelegate%20callbacks"></a>
+                  <h3 class="section-name"><span>MiSnapAnalyzerDelegate callbacks</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)miSnapAnalyzerLicenseStatus:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapAnalyzerLicenseStatus(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)miSnapAnalyzerLicenseStatus:">miSnapAnalyzerLicenseStatus(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an analyzer detects an invalid license</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapAnalyzerLicenseStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">MiSnapLicenseStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)miSnapAnalyzerSuccess:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapAnalyzerSuccess(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)miSnapAnalyzerSuccess:">miSnapAnalyzerSuccess(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an analyzer detects a frame that passes all Image Quality Analysis checks</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapAnalyzerSuccess</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapResult</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)miSnapAnalyzerFrameResult:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapAnalyzerFrameResult(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)miSnapAnalyzerFrameResult:">miSnapAnalyzerFrameResult(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an analyzer finishes Image Quality Analysis of the current frame</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapAnalyzerFrameResult</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapResult</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)miSnapAnalyzerCancelled:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapAnalyzerCancelled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)miSnapAnalyzerCancelled:">miSnapAnalyzerCancelled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an analyzer is cancelled</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapAnalyzerCancelled</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapResult</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)miSnapAnalyzerException:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapAnalyzerException(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)miSnapAnalyzerException:">miSnapAnalyzerException(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called whenever an analyzer catches an exception</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapAnalyzerException</span><span class="p">(</span><span class="n">_</span> <span class="nv">exception</span><span class="p">:</span> <span class="kt">NSException</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

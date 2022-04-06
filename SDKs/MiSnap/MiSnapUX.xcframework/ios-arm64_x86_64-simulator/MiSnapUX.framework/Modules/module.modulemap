@@ -1,0 +1,11 @@
+framework module MiSnapUX {
+  umbrella header "MiSnapUX.h"
+
+  export *
+  module * { export * }
+}
+
+module MiSnapUX.Swift {
+    header "MiSnapUX-Swift.h"
+    requires objc
+}

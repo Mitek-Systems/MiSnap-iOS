@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapImageUtilities Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/MiSnapImageUtilities" class="dashAnchor"></a>
+
+    <a title="MiSnapImageUtilities Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapImageUtilities Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnap.html">MiSnap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapAnalyzer.html">MiSnapAnalyzer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCameraParameters.html">MiSnapCameraParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapImageUtilities.html">MiSnapImageUtilities</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapLicenseManager.html">MiSnapLicenseManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapParameters.html">MiSnapParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapResult.html">MiSnapResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapScienceClassificationResult.html">MiSnapScienceClassificationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapScienceExtractionResult.html">MiSnapScienceExtractionResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapScienceIQAResult.html">MiSnapScienceIQAResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapScienceMrz.html">MiSnapScienceMrz</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapScienceParameters.html">MiSnapScienceParameters</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/IQAFailure.html">IQAFailure</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCameraBarcodeType.html">MiSnapCameraBarcodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCameraTorchMode.html">MiSnapCameraTorchMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLicenseFeature.html">MiSnapLicenseFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLicenseStatus.html">MiSnapLicenseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapMode.html">MiSnapMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapResultCode.html">MiSnapResultCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceBarcodeType.html">MiSnapScienceBarcodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceClassificationDocumentType.html">MiSnapScienceClassificationDocumentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceDocumentCategory.html">MiSnapScienceDocumentCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceDocumentType.html">MiSnapScienceDocumentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceExpirationStatus.html">MiSnapScienceExpirationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceGeoRegion.html">MiSnapScienceGeoRegion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceIdBackMode.html">MiSnapScienceIdBackMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceOrientationMode.html">MiSnapScienceOrientationMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapStatus.html">MiSnapStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapTutorialMode.html">MiSnapTutorialMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapAnalyzerDelegate.html">MiSnapAnalyzerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapImageUtilities</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">MiSnapImageUtilities</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Image utilities</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapImageUtilities(cm)rotateCGImage:byRadians:"></a>
+                    <a name="//apple_ref/objc/Method/+rotateCGImage:byRadians:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapImageUtilities(cm)rotateCGImage:byRadians:">+rotateCGImage:<wbr>byRadians:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rotates a CGImageRef by a specified number of radians.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">CGImageRef</span><span class="p">)</span><span class="nf">rotateCGImage</span><span class="p">:(</span><span class="n">CGImageRef</span><span class="p">)</span><span class="nv">image</span> <span class="nf">byRadians</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">radians</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Source image to rotate</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>radians</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Rotation amount must be 0, PI/2, PI, -PI/2</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new CGImageRef that contains the rotated image</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapImageUtilities(cm)rotateUIImage:byRadians:"></a>
+                    <a name="//apple_ref/objc/Method/+rotateUIImage:byRadians:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapImageUtilities(cm)rotateUIImage:byRadians:">+rotateUIImage:<wbr>byRadians:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rotates a UIImage by a specified number of radians.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nf">rotateUIImage</span><span class="p">:(</span><span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">image</span> <span class="nf">byRadians</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">radians</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Source image to rotate</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>radians</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Rotation amount must be 0, PI/2, PI, -PI/2</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new UIImage that contains the rotated image</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapImageUtilities(cm)sampleBufferFromCGImage:"></a>
+                    <a name="//apple_ref/objc/Method/+sampleBufferFromCGImage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapImageUtilities(cm)sampleBufferFromCGImage:">+sampleBufferFromCGImage:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the sampleBuffer of an image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">CMSampleBufferRef</span><span class="p">)</span><span class="nf">sampleBufferFromCGImage</span><span class="p">:(</span><span class="n">CGImageRef</span><span class="p">)</span><span class="nv">image</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Source image in 32-bit ARGB format.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CMSampleBufferRef containing the image data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapImageUtilities(cm)sampleBufferFromImage:"></a>
+                    <a name="//apple_ref/objc/Method/+sampleBufferFromImage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapImageUtilities(cm)sampleBufferFromImage:">+sampleBufferFromImage:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the sampleBuffer of an image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">CMSampleBufferRef</span><span class="p">)</span><span class="nf">sampleBufferFromImage</span><span class="p">:(</span><span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">image</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Source image in 32-bit ARGB format.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CMSampleBufferRef containing the image data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapImageUtilities(cm)imageFromSampleBuffer:withDeviceOrientation:"></a>
+                    <a name="//apple_ref/objc/Method/+imageFromSampleBuffer:withDeviceOrientation:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapImageUtilities(cm)imageFromSampleBuffer:withDeviceOrientation:">+imageFromSampleBuffer:<wbr>withDeviceOrientation:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a UIImage from sampleBuffer data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nf">imageFromSampleBuffer</span><span class="p">:(</span><span class="n">CMSampleBufferRef</span><span class="p">)</span><span class="nv">sampleBuffer</span>
+             <span class="nf">withDeviceOrientation</span><span class="p">:(</span><span class="n">UIDeviceOrientation</span><span class="p">)</span><span class="nv">deviceOrientation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Source data of an image</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceOrientation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UIDeviceOrientation of sampleBuffer</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A UIImage representing the image data</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapImageUtilities(cm)imageFromSampleBuffer:"></a>
+                    <a name="//apple_ref/objc/Method/+imageFromSampleBuffer:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapImageUtilities(cm)imageFromSampleBuffer:">+imageFromSampleBuffer:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a UIImage from sampleBuffer data with UIDeviceOrientationUnknown</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nf">imageFromSampleBuffer</span><span class="p">:(</span><span class="n">CMSampleBufferRef</span><span class="p">)</span><span class="nv">sampleBuffer</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Source data of an image</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A UIImage representing the image data</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapImageUtilities(cm)imageFromUIImage:withOrientation:"></a>
+                    <a name="//apple_ref/objc/Method/+imageFromUIImage:withOrientation:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapImageUtilities(cm)imageFromUIImage:withOrientation:">+imageFromUIImage:<wbr>withOrientation:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a rotated UIImage from UIImage</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nf">imageFromUIImage</span><span class="p">:(</span><span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">image</span>
+              <span class="nf">withOrientation</span><span class="p">:(</span><span class="n">UIInterfaceOrientation</span><span class="p">)</span><span class="nv">orientation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Original image</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>orientation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UIInterfaceOrientation of application</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A UIImage representing the image data</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapImageUtilities(cm)imageFromSampleBuffer:adjustedForOrientation:"></a>
+                    <a name="//apple_ref/objc/Method/+imageFromSampleBuffer:adjustedForOrientation:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapImageUtilities(cm)imageFromSampleBuffer:adjustedForOrientation:">+imageFromSampleBuffer:<wbr>adjustedForOrientation:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a UIImage from sampleBuffer data adjusted for orientation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nf">imageFromSampleBuffer</span><span class="p">:(</span><span class="n">CMSampleBufferRef</span><span class="p">)</span><span class="nv">sampleBuffer</span>
+            <span class="nf">adjustedForOrientation</span><span class="p">:(</span><span class="n">UIInterfaceOrientation</span><span class="p">)</span><span class="nv">orientation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Source data of an image</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>UIImage representing the image data</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapImageUtilities(cm)pixelBufferFromCGImage:"></a>
+                    <a name="//apple_ref/objc/Method/+pixelBufferFromCGImage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapImageUtilities(cm)pixelBufferFromCGImage:">+pixelBufferFromCGImage:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the raw pixel buffer of an image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">CVImageBufferRef</span><span class="p">)</span><span class="nf">pixelBufferFromCGImage</span><span class="p">:(</span><span class="n">CGImageRef</span><span class="p">)</span><span class="nv">image</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Source image in 32-bit ARGB format.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CVImageBufferRef (aka CVPixelBufferRef) containing the image data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapImageUtilities(cm)copyPixelBuffer:"></a>
+                    <a name="//apple_ref/objc/Method/+copyPixelBuffer:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapImageUtilities(cm)copyPixelBuffer:">+copyPixelBuffer:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a deep copy of a pixel buffer of an image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">CVPixelBufferRef</span><span class="p">)</span><span class="nf">copyPixelBuffer</span><span class="p">:(</span><span class="n">CVPixelBufferRef</span><span class="p">)</span><span class="nv">pixelBuffer</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pixelBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Source image in 32-bit ARGB format.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CVImageBufferRef (aka CVPixelBufferRef) containing a deep copy of a pixel buffer of an image.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapImageUtilities(cm)copySampleBuffer:"></a>
+                    <a name="//apple_ref/objc/Method/+copySampleBuffer:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapImageUtilities(cm)copySampleBuffer:">+copySampleBuffer:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a deep copy of a sample buffer of an image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">CMSampleBufferRef</span><span class="p">)</span><span class="nf">copySampleBuffer</span><span class="p">:(</span><span class="n">CMSampleBufferRef</span><span class="p">)</span><span class="nv">sampleBuffer</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a sample buffer to copy.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CMSampleBufferRef containing a deep copy of a sample buffer of an image.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

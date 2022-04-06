@@ -1,0 +1,68 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapNFCUX
+import AudioToolbox
+import MiSnapLicenseManager
+import MiSnapNFC
+@_exported import MiSnapNFCUX
+import Swift
+import UIKit
+import _Concurrency
+@objc public protocol MiSnapNFCViewControllerDelegate {
+  @objc func miSnapNfcLicenseStatus(_ status: MiSnapLicenseStatus)
+  @objc func miSnapNfcSuccess(_ result: [Swift.String : Any])
+  @objc func miSnapNfcCancelled(_ result: [Swift.String : Any])
+  @objc func miSnapNfcSkipped(_ result: [Swift.String : Any])
+  @objc optional func miSnapNfcShouldBeDismissed()
+}
+@_hasMissingDesignatedInitializers @available(iOS 13, *)
+@objc @_Concurrency.MainActor(unsafe) public class MiSnapNFCViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: MiSnapNFCViewControllerDelegate?
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapNFCConfiguration, delegate: MiSnapNFCViewControllerDelegate)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapNFCInputs : ObjectiveC.NSObject {
+  @objc public var documentNumber: Swift.String
+  @objc public var dateOfBirth: Swift.String
+  @objc public var dateOfExpiry: Swift.String
+  @objc public var mrzString: Swift.String
+  @objc public var documentType: MiSnapNFCDocumentType
+  @objc public var chipLocation: MiSnapNFCChipLocation
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapNFCConfiguration : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func withInputs(completion: (MiSnapNFCInputs) -> ()) -> MiSnapNFCConfiguration
+  @objc public func withCustomUxParameters(completion: (MiSnapNFCUxParameters) -> ()) -> MiSnapNFCConfiguration
+  @objc public func withCustomLocalization(completion: (MiSnapNFCLocalizationConfiguration) -> ()) -> MiSnapNFCConfiguration
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapNFCUxParameters : ObjectiveC.NSObject {
+  @objc public var timeout: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var skipCA: Swift.Bool
+  @objc public var autoDismiss: Swift.Bool
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}

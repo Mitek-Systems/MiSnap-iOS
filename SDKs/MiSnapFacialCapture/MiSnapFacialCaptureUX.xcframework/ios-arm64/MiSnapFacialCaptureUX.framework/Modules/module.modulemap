@@ -1,0 +1,11 @@
+framework module MiSnapFacialCaptureUX {
+  umbrella header "MiSnapFacialCaptureUX.h"
+
+  export *
+  module * { export * }
+}
+
+module MiSnapFacialCaptureUX.Swift {
+    header "MiSnapFacialCaptureUX-Swift.h"
+    requires objc
+}

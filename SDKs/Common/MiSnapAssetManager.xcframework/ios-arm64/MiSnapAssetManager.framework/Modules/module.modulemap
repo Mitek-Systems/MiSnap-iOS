@@ -1,0 +1,11 @@
+framework module MiSnapAssetManager {
+  umbrella header "MiSnapAssetManager.h"
+
+  export *
+  module * { export * }
+}
+
+module MiSnapAssetManager.Swift {
+    header "MiSnapAssetManager-Swift.h"
+    requires objc
+}

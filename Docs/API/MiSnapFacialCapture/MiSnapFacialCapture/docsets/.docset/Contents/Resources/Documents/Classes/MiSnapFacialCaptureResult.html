@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapFacialCaptureResult Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/MiSnapFacialCaptureResult" class="dashAnchor"></a>
+
+    <a title="MiSnapFacialCaptureResult Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapFacialCaptureResult Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCapture.html">MiSnapFacialCapture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureAnalyzer.html">MiSnapFacialCaptureAnalyzer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureCamera.html">MiSnapFacialCaptureCamera</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureCameraParameters.html">MiSnapFacialCaptureCameraParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureParameters.html">MiSnapFacialCaptureParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureResult.html">MiSnapFacialCaptureResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapLicenseManager.html">MiSnapLicenseManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureMode.html">MiSnapFacialCaptureMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureResultCode.html">MiSnapFacialCaptureResultCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureSmileStatus.html">MiSnapFacialCaptureSmileStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureStatus.html">MiSnapFacialCaptureStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureTuturialMode.html">MiSnapFacialCaptureTuturialMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLicenseFeature.html">MiSnapLicenseFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLicenseStatus.html">MiSnapLicenseStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapFacialCaptureAnalyzerDelegate.html">MiSnapFacialCaptureAnalyzerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapFacialCaptureCameraDelegate.html">MiSnapFacialCaptureCameraDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapFacialCaptureResult</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">MiSnapFacialCaptureResult</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MiSnapFacialCaptureResult</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>MiSnapFacialCaptureResults is a class that defines an interface for results returned by the SDK</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)highestPriorityStatus"></a>
+                    <a name="//apple_ref/objc/Property/highestPriorityStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)highestPriorityStatus">highestPriorityStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The highest priority status for the current frame</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Priority order is based on <code><a href="../Enums/MiSnapFacialCaptureStatus.html">MiSnapFacialCaptureStatus</a></code> enum
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/MiSnapFacialCaptureStatus.html">MiSnapFacialCaptureStatus</a></span> <span class="n">highestPriorityStatus</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">highestPriorityStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapFacialCaptureStatus.html">MiSnapFacialCaptureStatus</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)orderedStatuses"></a>
+                    <a name="//apple_ref/objc/Property/orderedStatuses" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)orderedStatuses">orderedStatuses</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of ordered statuses for the current frame</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Priority order is based on <code><a href="../Enums/MiSnapFacialCaptureStatus.html">MiSnapFacialCaptureStatus</a></code> enum
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">orderedStatuses</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">orderedStatuses</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)faceRect"></a>
+                    <a name="//apple_ref/objc/Property/faceRect" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)faceRect">faceRect</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code>CGRect</code> rectangle of a face</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">CGRect</span> <span class="n">faceRect</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">faceRect</span><span class="p">:</span> <span class="kt">CGRect</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)faceContourPoints"></a>
+                    <a name="//apple_ref/objc/Property/faceContourPoints" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)faceContourPoints">faceContourPoints</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of face countour points</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">faceContourPoints</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">faceContourPoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)noseCrestPoints"></a>
+                    <a name="//apple_ref/objc/Property/noseCrestPoints" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)noseCrestPoints">noseCrestPoints</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of nose crest points</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">noseCrestPoints</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">noseCrestPoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)nosePoints"></a>
+                    <a name="//apple_ref/objc/Property/nosePoints" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)nosePoints">nosePoints</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of nose points</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">nosePoints</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">nosePoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)leftEyePoints"></a>
+                    <a name="//apple_ref/objc/Property/leftEyePoints" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)leftEyePoints">leftEyePoints</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of left eye points</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">leftEyePoints</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">leftEyePoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)rightEyePoints"></a>
+                    <a name="//apple_ref/objc/Property/rightEyePoints" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)rightEyePoints">rightEyePoints</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of right eye points</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">rightEyePoints</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rightEyePoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)innerLipsPoints"></a>
+                    <a name="//apple_ref/objc/Property/innerLipsPoints" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)innerLipsPoints">innerLipsPoints</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of inner lip points</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">innerLipsPoints</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">innerLipsPoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)outerLipsPoints"></a>
+                    <a name="//apple_ref/objc/Property/outerLipsPoints" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)outerLipsPoints">outerLipsPoints</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of outer lip points</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">outerLipsPoints</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">outerLipsPoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)image"></a>
+                    <a name="//apple_ref/objc/Property/image" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)image">image</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An image that was selected based on environmental thresholds defined in <code><a href="../Classes/MiSnapFacialCaptureParameters.html">MiSnapFacialCaptureParameters</a></code> in <code>MiSnapFacialCaptureModeAuto</code> or the frame that was manually selected by a user in <code>MiSnapFacialCaptureModeManual</code></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    It&rsquo;s <code>nil</code> if the current frame doesn&rsquo;t meet environmental thresholds defined in <code><a href="../Classes/MiSnapFacialCaptureParameters.html">MiSnapFacialCaptureParameters</a></code> in <code>MiSnapFacialCaptureModeAuto</code> or not yet selected by a user in <code>MiSnapFacialCaptureModeManual</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">UIImage</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">image</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)encodedImage"></a>
+                    <a name="//apple_ref/objc/Property/encodedImage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)encodedImage">encodedImage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A base64 encoded representation of an <code><a href="../Classes/MiSnapFacialCaptureResult.html#/c:objc(cs)MiSnapFacialCaptureResult(py)image">image</a></code></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    it&rsquo;s <code>nil</code> if the <code><a href="../Classes/MiSnapFacialCaptureResult.html#/c:objc(cs)MiSnapFacialCaptureResult(py)image">image</a></code> is nil
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">encodedImage</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">encodedImage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)mibiDataString"></a>
+                    <a name="//apple_ref/objc/Property/mibiDataString" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)mibiDataString">mibiDataString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A MIBI Data string that has analytics for the session</p>
+
+<p>-Note: It&rsquo;s <code>nil</code> unitl a frame is acquired</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">mibiDataString</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mibiDataString</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)resultCode"></a>
+                    <a name="//apple_ref/objc/Property/resultCode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)resultCode">resultCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A result code of a session</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <code>MiSnapFacialCaptureResult</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/MiSnapFacialCaptureResultCode.html">MiSnapFacialCaptureResultCode</a></span> <span class="n">resultCode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">resultCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapFacialCaptureResultCode.html">MiSnapFacialCaptureResultCode</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(cm)localizeKeyFrom:"></a>
+                    <a name="//apple_ref/objc/Method/+localizeKeyFrom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(cm)localizeKeyFrom:">+localizeKeyFrom:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nf">localizeKeyFrom</span><span class="p">:(</span><span class="n"><a href="../Enums/MiSnapFacialCaptureStatus.html">MiSnapFacialCaptureStatus</a></span><span class="p">)</span><span class="nv">status</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">localizeKey</span><span class="p">(</span><span class="n">from</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapFacialCaptureStatus.html">MiSnapFacialCaptureStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A localiize key that can be used by UX to query Localizable.strings file to get a localized string</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(cm)codeFromStatus:"></a>
+                    <a name="//apple_ref/objc/Method/+codeFromStatus:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(cm)codeFromStatus:">+codeFromStatus:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A convenience method for getting a string code representation of <code><a href="../Enums/MiSnapFacialCaptureStatus.html">MiSnapFacialCaptureStatus</a></code> value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nf">codeFromStatus</span><span class="p">:(</span><span class="n"><a href="../Enums/MiSnapFacialCaptureStatus.html">MiSnapFacialCaptureStatus</a></span><span class="p">)</span><span class="nv">status</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">code</span><span class="p">(</span><span class="n">from</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapFacialCaptureStatus.html">MiSnapFacialCaptureStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(cm)stringFrom:"></a>
+                    <a name="//apple_ref/objc/Method/+stringFrom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(cm)stringFrom:">+stringFrom:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nf">stringFrom</span><span class="p">:(</span><span class="n"><a href="../Enums/MiSnapFacialCaptureResultCode.html">MiSnapFacialCaptureResultCode</a></span><span class="p">)</span><span class="nv">resultCode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="n">from</span> <span class="nv">resultCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapFacialCaptureResultCode.html">MiSnapFacialCaptureResultCode</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resultCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Result code to get string representation of</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A result code in <code>NSString</code> format</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

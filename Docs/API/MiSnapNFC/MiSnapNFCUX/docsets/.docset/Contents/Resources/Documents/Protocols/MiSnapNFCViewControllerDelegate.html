@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapNFCViewControllerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/MiSnapNFCViewControllerDelegate" class="dashAnchor"></a>
+
+    <a title="MiSnapNFCViewControllerDelegate Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapNFCViewControllerDelegate Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCConfiguration.html">MiSnapNFCConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCInputs.html">MiSnapNFCInputs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCUX.html">MiSnapNFCUX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCUxParameters.html">MiSnapNFCUxParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCViewController.html">MiSnapNFCViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapNFCViewControllerDelegate.html">MiSnapNFCViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapNFCViewControllerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MiSnapNFCViewControllerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Defines an interface for delegates of <code><a href="../Classes/MiSnapNFCViewController.html">MiSnapNFCViewController</a></code> to receive callbacks</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcLicenseStatus:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapNfcLicenseStatus(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcLicenseStatus:">miSnapNfcLicenseStatus(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback only when license status is anything but valid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapNfcLicenseStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">MiSnapLicenseStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcSuccess:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapNfcSuccess(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcSuccess:">miSnapNfcSuccess(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when a chip was successfully read</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapNfcSuccess</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcCancelled:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapNfcCancelled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcCancelled:">miSnapNfcCancelled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when a  user cancels a session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapNfcCancelled</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcSkipped:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapNfcSkipped(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcSkipped:">miSnapNfcSkipped(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when a  user skips a session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapNfcSkipped</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcShouldBeDismissed"></a>
+                    <a name="//apple_ref/swift/Method/miSnapNfcShouldBeDismissed()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcShouldBeDismissed">miSnapNfcShouldBeDismissed()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when a session is completed and ready to be dissmised and <code>autoDismiss</code> is overridden to <code>false</code> in <code><a href="../Classes/MiSnapNFCUxParameters.html">MiSnapNFCUxParameters</a></code></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    It&rsquo;s optional
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">miSnapNfcShouldBeDismissed</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

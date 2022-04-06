@@ -1,0 +1,11 @@
+framework module MiSnapNFC {
+  umbrella header "MiSnapNFC.h"
+
+  export *
+  module * { export * }
+}
+
+module MiSnapNFC.Swift {
+    header "MiSnapNFC-Swift.h"
+    requires objc
+}

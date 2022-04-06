@@ -1,0 +1,205 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapNFC
+import CommonCrypto
+import CoreNFC
+import CryptoKit
+import CryptoTokenKit
+import Foundation
+import MiSnapLicenseManager
+import MiSnapMibiData
+@_exported import MiSnapNFC
+import Swift
+import UIKit
+import _Concurrency
+public enum MiSnapNFCTagError : Swift.Error, Swift.Equatable {
+  case responseError(Swift.String)
+  case invalidTag
+  case authenticationFailed
+  case connectionNotEstablished
+  case connectionLost
+  case invalidResponse
+  case unexpectedError
+  case nfcNotSupported
+  case noConnectedTag
+  case d087Malformed
+  case invalidResponseChecksum
+  case missingMandatoryFields
+  case cannotDecodeASN1Length
+  case invalidASN1Value
+  case unableToProtectAPDU
+  case unableToUnprotectAPDU
+  case unableToCreateAPDU
+  case unsupportedDataGroup
+  case dataGroupNotRead
+  case unknownTag(Swift.String)
+  case unknownImageFormat
+  case notImplemented
+  case fileNotFound
+  case paceInfoAbsent
+  case unknownOid
+  case unknownParameterId
+  case caNotSupported
+  case pollingRestarted
+  case invalidLicense(MiSnapLicenseStatus)
+  public static func == (a: MiSnapNFCTagError, b: MiSnapNFCTagError) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers public class MiSnapNFCResourceLocatorConfiguration : ObjectiveC.NSObject {
+  public var localization: MiSnapNFCLocalizationConfiguration
+  public var assetLocation: MiSnapNFCAssetLocationConfiguration
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MiSnapNFCLocalizationConfiguration : ObjectiveC.NSObject {
+  public var bundle: Foundation.Bundle
+  public var stringsName: Swift.String
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MiSnapNFCAssetLocationConfiguration : ObjectiveC.NSObject {
+  public var bundle: Foundation.Bundle
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MiSnapNFCResourceLocator {
+  public class var shared: MiSnapNFCResourceLocator {
+    get
+  }
+  public class func destroyShared()
+  public func set(configuration: MiSnapNFCResourceLocatorConfiguration)
+  public func localizedString(forKey key: Swift.String) -> Swift.String
+  public func image(named name: Swift.String, type: Swift.String) -> UIKit.UIImage?
+  @objc deinit
+}
+extension Foundation.NSNotification.Name {
+  public static let DidInvalidateNFCTagReaderSession: Foundation.Notification.Name
+  public static let DidDetectNFCTag: Foundation.Notification.Name
+}
+@objc public enum MiSnapNFCDocumentType : Swift.Int {
+  case none = 0
+  case passport = 1
+  case id = 2
+  case dl = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum MiSnapNFCInvalidationReason : Swift.String {
+  case cancelled
+  case timeout
+  case error
+  case success
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @available(iOS 13, *)
+public class MiSnapNFCReader : ObjectiveC.NSObject {
+  public init(logLevel: MiSnapNFCLogLevel = .info, timeout: Foundation.TimeInterval = 15.0)
+  public func set(documentType: MiSnapNFCDocumentType)
+  public func set(timeout: Foundation.TimeInterval)
+  public func logModule(withName name: Swift.String, version: Swift.String)
+  public func read(documentNumber: Swift.String = "", dateOfBirth: Swift.String = "", dateOfExpiry: Swift.String = "", mrz: Swift.String = "", skipCA: Swift.Bool = false, completed: @escaping ([Swift.String : Any]?, MiSnapNFCTagError?) -> Swift.Void)
+  public func stop()
+  @objc deinit
+}
+@available(iOS 13, *)
+extension MiSnapNFCReader : CoreNFC.NFCTagReaderSessionDelegate {
+  public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: Swift.Error)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didDetect tags: [CoreNFC.NFCTag])
+}
+@objc public enum MiSnapNFCChipLocation : Swift.Int {
+  case noChip = 0
+  case front = 1
+  case back = 2
+  case unknown = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@objc public class MiSnapNFCChipLocator : ObjectiveC.NSObject {
+  @objc public class func chipLocation(mrzString: Swift.String, dateOfBirth: Swift.String, dateOfExpiry: Swift.String) -> MiSnapNFCChipLocation
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum MiSnapNFCKey {
+  public static let documentType: Swift.String
+  public static let documentTypeCode: Swift.String
+  public static let personalNumber: Swift.String
+  public static let documentNumber: Swift.String
+  public static let givenName: Swift.String
+  public static let surname: Swift.String
+  public static let issuingAuthority: Swift.String
+  public static let issuingCountry: Swift.String
+  public static let documentIssueDate: Swift.String
+  public static let documentExpiryDate: Swift.String
+  public static let dateOfBirth: Swift.String
+  public static let placeOfBirth: Swift.String
+  public static let sex: Swift.String
+  public static let address: Swift.String
+  public static let telephone: Swift.String
+  public static let profession: Swift.String
+  public static let title: Swift.String
+  public static let personalSummary: Swift.String
+  public static let otherTravelDocNumbers: Swift.String
+  public static let custodyInformation: Swift.String
+  public static let nationality: Swift.String
+  public static let licenseClasses: Swift.String
+  public static let licenseClass: Swift.String
+  public static let licenseClassIssueDate: Swift.String
+  public static let licenseClassExpiryDate: Swift.String
+  public static let MRZ: Swift.String
+  public static let readDataGroups: Swift.String
+  public static let faceImage: Swift.String
+  public static let encodedFaceImage: Swift.String
+  public static let signatureImage: Swift.String
+  public static let authenticationInputs: Swift.String
+  public static let authenticationOutputs: Swift.String
+  public static let invalidationReason: Swift.String
+  public static let mibi: Swift.String
+}
+public enum MiSnapNFCLogLevel : Swift.Int {
+  case verbose
+  case debug
+  case info
+  case warning
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+precedencegroup ExponentiationPrecedence {
+  associativity: left
+  higherThan: MultiplicationPrecedence
+  lowerThan: BitwiseShiftPrecedence
+}
+infix operator ** : ExponentiationPrecedence
+extension MiSnapNFCDocumentType : Swift.Equatable {}
+extension MiSnapNFCDocumentType : Swift.Hashable {}
+extension MiSnapNFCDocumentType : Swift.RawRepresentable {}
+extension MiSnapNFCInvalidationReason : Swift.Equatable {}
+extension MiSnapNFCInvalidationReason : Swift.Hashable {}
+extension MiSnapNFCInvalidationReason : Swift.RawRepresentable {}
+extension MiSnapNFCChipLocation : Swift.Equatable {}
+extension MiSnapNFCChipLocation : Swift.Hashable {}
+extension MiSnapNFCChipLocation : Swift.RawRepresentable {}
+extension MiSnapNFCLogLevel : Swift.Equatable {}
+extension MiSnapNFCLogLevel : Swift.Hashable {}
+extension MiSnapNFCLogLevel : Swift.RawRepresentable {}

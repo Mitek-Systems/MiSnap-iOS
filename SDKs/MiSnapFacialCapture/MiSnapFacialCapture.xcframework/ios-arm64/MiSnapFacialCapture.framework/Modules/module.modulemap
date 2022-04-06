@@ -1,0 +1,6 @@
+framework module MiSnapFacialCapture {
+  umbrella header "MiSnapFacialCapture.h"
+
+  export *
+  module * { export * }
+}

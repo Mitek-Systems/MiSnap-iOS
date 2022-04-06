@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapFacialCaptureCamera Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/MiSnapFacialCaptureCamera" class="dashAnchor"></a>
+
+    <a title="MiSnapFacialCaptureCamera Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapFacialCaptureCamera Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCapture.html">MiSnapFacialCapture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureAnalyzer.html">MiSnapFacialCaptureAnalyzer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureCamera.html">MiSnapFacialCaptureCamera</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureCameraParameters.html">MiSnapFacialCaptureCameraParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureParameters.html">MiSnapFacialCaptureParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureResult.html">MiSnapFacialCaptureResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapLicenseManager.html">MiSnapLicenseManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureMode.html">MiSnapFacialCaptureMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureResultCode.html">MiSnapFacialCaptureResultCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureSmileStatus.html">MiSnapFacialCaptureSmileStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureStatus.html">MiSnapFacialCaptureStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureTuturialMode.html">MiSnapFacialCaptureTuturialMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLicenseFeature.html">MiSnapLicenseFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLicenseStatus.html">MiSnapLicenseStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapFacialCaptureAnalyzerDelegate.html">MiSnapFacialCaptureAnalyzerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapFacialCaptureCameraDelegate.html">MiSnapFacialCaptureCameraDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapFacialCaptureCamera</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">MiSnapFacialCaptureCamera</span> <span class="p">:</span> <span class="nc">UIView</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MiSnapFacialCaptureCamera</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                </div>
+              </div>
+            <p>MiSnapFacialCaptureCamera is a class that defines an interface for a camera that implements an AVCaptureSession.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(py)delegate"></a>
+                    <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The delegate that implements the <code><a href="../Protocols/MiSnapFacialCaptureCameraDelegate.html">MiSnapFacialCaptureCameraDelegate</a></code> and that will receive the required protocol methods from <code>MiSnapFacialCaptureCamera</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/MiSnapFacialCaptureCameraDelegate.html">MiSnapFacialCaptureCameraDelegate</a></span><span class="o">&gt;</span> <span class="n">_Nullable</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MiSnapFacialCaptureCameraDelegate.html">MiSnapFacialCaptureCameraDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(py)configured"></a>
+                    <a name="//apple_ref/objc/Property/configured" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(py)configured">configured</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>TRUE</code> indicates that camera doesn&rsquo;t require configuration. <code>FALSE</code> indicates that camera hasn&rsquo;t been configured yet</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">getter</span><span class="o">=</span><span class="n">isConfigured</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">configured</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isConfigured</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(py)resolution"></a>
+                    <a name="//apple_ref/objc/Property/resolution" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(py)resolution">resolution</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The resolution (<code>CGSize</code>) of <code>MiSnapFacialCaptureCamera</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="n">CGSize</span> <span class="n">resolution</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">resolution</span><span class="p">:</span> <span class="kt">CGSize</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(py)analyzeRGBVideo"></a>
+                    <a name="//apple_ref/objc/Property/analyzeRGBVideo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(py)analyzeRGBVideo">analyzeRGBVideo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When set to <code>TRUE</code> runs session with RGBA images. When set to <code>FALSE</code> runs session with Gray images.</p>
+
+<p>Default: <code>TRUE</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">analyzeRGBVideo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">analyzeRGBVideo</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(py)detectPDF417"></a>
+                    <a name="//apple_ref/objc/Property/detectPDF417" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(py)detectPDF417">detectPDF417</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When set to <code>TRUE</code> enables barcode scanning capabilities. When set to <code>FALSE</code> barcode scanning capabilities are disabled.</p>
+
+<p>Default: <code>FALSE</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">detectPDF417</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">detectPDF417</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(py)parameters"></a>
+                    <a name="//apple_ref/objc/Property/parameters" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(py)parameters">parameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An object that configures camera specific parameters</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/MiSnapFacialCaptureCameraParameters.html">MiSnapFacialCaptureCameraParameters</a></span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">parameters</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapFacialCaptureCameraParameters.html">MiSnapFacialCaptureCameraParameters</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)initWithPreset:format:position:frame:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithPreset:format:position:frame:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)initWithPreset:format:position:frame:">-initWithPreset:<wbr>format:<wbr>position:<wbr>frame:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an instance of <code>MiSnapFacialCaptureCamera</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nf">initWithPreset</span><span class="p">:</span>
+                              <span class="p">(</span><span class="n">AVCaptureSessionPreset</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">sessionPreset</span>
+                                  <span class="nf">format</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">pixelBufferFormat</span>
+                                <span class="nf">position</span><span class="p">:(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">position</span>
+                                   <span class="nf">frame</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">?(</span><span class="n">preset</span> <span class="nv">sessionPreset</span><span class="p">:</span> <span class="kt">AVCaptureSession</span><span class="o">.</span><span class="kt">Preset</span><span class="p">?,</span> <span class="n">format</span> <span class="nv">pixelBufferFormat</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">position</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">,</span> <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionPreset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>AVCaptureSessionPreset</code> to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pixelBufferFormat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>kCVPixelFormatType</code> to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>position</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>AVCaptureDevicePosition</code> to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the frame for the <code>MiSnapFacialCaptureCamera</code> view</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an instance of <code>MiSnapFacialCaptureCamera</code> that is initialized and ready to start</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)initWithPreset:format:position:orientation:frame:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithPreset:format:position:orientation:frame:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)initWithPreset:format:position:orientation:frame:">-initWithPreset:<wbr>format:<wbr>position:<wbr>orientation:<wbr>frame:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an instance of <code>MiSnapFacialCaptureCamera</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nullable</span><span class="p">)</span>
+    <span class="nf">initWithPreset</span><span class="p">:(</span><span class="n">AVCaptureSessionPreset</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">sessionPreset</span>
+            <span class="nf">format</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">pixelBufferFormat</span>
+          <span class="nf">position</span><span class="p">:(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">position</span>
+       <span class="nf">orientation</span><span class="p">:(</span><span class="n">UIInterfaceOrientation</span><span class="p">)</span><span class="nv">cameraOrientation</span>
+             <span class="nf">frame</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">?(</span><span class="n">preset</span> <span class="nv">sessionPreset</span><span class="p">:</span> <span class="kt">AVCaptureSession</span><span class="o">.</span><span class="kt">Preset</span><span class="p">?,</span> <span class="n">format</span> <span class="nv">pixelBufferFormat</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">position</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">,</span> <span class="n">orientation</span> <span class="nv">cameraOrientation</span><span class="p">:</span> <span class="kt">UIInterfaceOrientation</span><span class="p">,</span> <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionPreset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>AVCaptureSessionPreset</code> to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pixelBufferFormat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>kCVPixelFormatType</code> to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>position</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>AVCaptureDevicePosition</code> to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cameraOrientation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>UIInterfaceOrientation</code> of <code>MiSnapFacialCaptureCamera</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the frame for the <code>MiSnapFacialCaptureCamera</code> view</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an instance of <code>MiSnapFacialCaptureCamera</code> that is initialized and ready to start</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)initWithDesiredResolution:format:position:frame:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithDesiredResolution:format:position:frame:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)initWithDesiredResolution:format:position:frame:">-initWithDesiredResolution:<wbr>format:<wbr>position:<wbr>frame:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an instance of MiSnapSDKCamera</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nf">initWithDesiredResolution</span><span class="p">:(</span><span class="n">CGSize</span><span class="p">)</span><span class="nv">desiredResolution</span>
+                                             <span class="nf">format</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">pixelBufferFormat</span>
+                                           <span class="nf">position</span><span class="p">:</span>
+                                               <span class="p">(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">position</span>
+                                              <span class="nf">frame</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">?(</span><span class="nv">desiredResolution</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">,</span> <span class="n">format</span> <span class="nv">pixelBufferFormat</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">position</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">,</span> <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>desiredResolution</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the desired resolution (<code>CGSize</code>) for the <code>MiSnapFacialCaptureCamera</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pixelBufferFormat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>kCVPixelFormatType</code> to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>position</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>AVCaptureDevicePosition</code> to use</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the frame for the <code>MiSnapFacialCaptureCamera</code>  view</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an instance of <code>MiSnapFacialCaptureCamera</code> that is initialized and ready to start</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)setPreset:format:"></a>
+                    <a name="//apple_ref/objc/Method/-setPreset:format:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)setPreset:format:">-setPreset:<wbr>format:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a session preset and pixel buffer format</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPreset</span><span class="p">:(</span><span class="n">AVCaptureSessionPreset</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">sessionPreset</span>
+           <span class="nf">format</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">pixelBufferFormat</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setPreset</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionPreset</span><span class="p">:</span> <span class="kt">AVCaptureSession</span><span class="o">.</span><span class="kt">Preset</span><span class="p">?,</span> <span class="n">format</span> <span class="nv">pixelBufferFormat</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionPreset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>AVCaptureSessionPreset</code> to set</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pixelBufferFormat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>kCVPixelFormatType</code> to set</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)setPreset:format:position:"></a>
+                    <a name="//apple_ref/objc/Method/-setPreset:format:position:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)setPreset:format:position:">-setPreset:<wbr>format:<wbr>position:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets a session preset, pixel buffer format and device position</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPreset</span><span class="p">:(</span><span class="n">AVCaptureSessionPreset</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">sessionPreset</span>
+           <span class="nf">format</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">pixelBufferFormat</span>
+         <span class="nf">position</span><span class="p">:(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">devicePosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setPreset</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionPreset</span><span class="p">:</span> <span class="kt">AVCaptureSession</span><span class="o">.</span><span class="kt">Preset</span><span class="p">?,</span> <span class="n">format</span> <span class="nv">pixelBufferFormat</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">position</span> <span class="nv">devicePosition</span><span class="p">:</span> <span class="kt">AVCaptureDevice</span><span class="o">.</span><span class="kt">Position</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionPreset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>AVCaptureSessionPreset</code> to set</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pixelBufferFormat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>kCVPixelFormatType</code> to set</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>devicePosition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>AVCaptureDevicePosition</code> to set</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)updatePreviewLayer:"></a>
+                    <a name="//apple_ref/objc/Method/-updatePreviewLayer:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)updatePreviewLayer:">-updatePreviewLayer:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the preview layer with a <code>UIInterfaceOrientation</code> deviceOrientation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updatePreviewLayer</span><span class="p">:(</span><span class="n">UIInterfaceOrientation</span><span class="p">)</span><span class="nv">deviceOrientation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updatePreviewLayer</span><span class="p">(</span><span class="n">_</span> <span class="nv">deviceOrientation</span><span class="p">:</span> <span class="kt">UIInterfaceOrientation</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceOrientation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the <code>UIInterfaceOrientation</code> to set for the preview layer</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(cm)checkCameraPermission:"></a>
+                    <a name="//apple_ref/objc/Method/+checkCameraPermission:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(cm)checkCameraPermission:">+checkCameraPermission:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks the camera permission</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">checkCameraPermission</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span><span class="nv">handler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">checkPermission</span><span class="p">(</span><span class="n">_</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(cm)checkMicrophonePermission:"></a>
+                    <a name="//apple_ref/objc/Method/+checkMicrophonePermission:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(cm)checkMicrophonePermission:">+checkMicrophonePermission:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks the microphone permission</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">checkMicrophonePermission</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span><span class="nv">handler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">checkMicrophonePermission</span><span class="p">(</span><span class="n">_</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)start"></a>
+                    <a name="//apple_ref/objc/Method/-start" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)start">-start</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts the camera to begin callbacks from the <code><a href="../Protocols/MiSnapFacialCaptureCameraDelegate.html">MiSnapFacialCaptureCameraDelegate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">start</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">start</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)stop"></a>
+                    <a name="//apple_ref/objc/Method/-stop" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)stop">-stop</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops the camera and callbacks from the <code><a href="../Protocols/MiSnapFacialCaptureCameraDelegate.html">MiSnapFacialCaptureCameraDelegate</a></code>.</p>
+
+<p>The camera can start again from the stopped state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stop</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">stop</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)shutdown"></a>
+                    <a name="//apple_ref/objc/Method/-shutdown" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)shutdown">-shutdown</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shutdown the camera. To continue use, the camera must be initialized again.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">shutdown</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">shutdown</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)discardRecording"></a>
+                    <a name="//apple_ref/objc/Method/-discardRecording" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)discardRecording">-discardRecording</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Discards a video recording if it exists on cancel or timeout events</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">discardRecording</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">discardRecording</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)isTorchOn"></a>
+                    <a name="//apple_ref/objc/Method/-isTorchOn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)isTorchOn">-isTorchOn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check if the status of the torch</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isTorchOn</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isTorchOn</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a <code>BOOL</code> indicating the torch is either <code>ON</code> or <code>OFF</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)turnTorchOn"></a>
+                    <a name="//apple_ref/objc/Method/-turnTorchOn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)turnTorchOn">-turnTorchOn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Change the status of the torch to <code>ON</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">turnTorchOn</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">turnTorchOn</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a <code>BOOL</code> indicating the torch status changed to ON</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)turnTorchOff"></a>
+                    <a name="//apple_ref/objc/Method/-turnTorchOff" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)turnTorchOff">-turnTorchOff</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Change the status of the torch to <code>OFF</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">turnTorchOff</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">turnTorchOff</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a <code>BOOL</code> indicating the torch status changed to <code>OFF</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)hasTorch"></a>
+                    <a name="//apple_ref/objc/Method/-hasTorch" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)hasTorch">-hasTorch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check that the device has a torch</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">hasTorch</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hasTorch</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a <code>BOOL</code> indicating the device has a torch or not</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

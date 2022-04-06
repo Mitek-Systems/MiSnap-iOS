@@ -1,0 +1,126 @@
+# Integration Guide
+
+:warning: MiSnap 5.x has breaking API changes therefore to migrate from 3.x and 4.x series, remove all old MiSnap references from your project.
+
+## 1. Obtain the SDK(s)
+MiSnap 5.x is distributed through CocoaPods and Swift Package Manager. For detailed installation instructions refer to:
+* [CocoaPods installation guide](https://guides.cocoapods.org/using/using-cocoapods.html)
+* [Swift Package Manager installation guide](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app)
+
+### SDK and UX/UI
+It is Mitek's recommended option to integrate both SDK and UX/UI which is highly customizable. Customization was drastically improved comparing to 3.x and 4.x.
+
+#### CocoaPods
+
+Include the following in your Podfile
+
+```Ruby
+pod 'MiSnap', '5.0.0.b1'
+pod 'MiSnapUX', '5.0.0.b1'
+```
+#### Swift Package Manager
+
+Add the following repository url:
+
+`https://github.com/Mitek-Systems/MiSnap-iOS.git`
+
+then check `MiSnap` and `MiSnapUX` checkboxes in a list of Package Products.
+
+### SDK only
+
+If you plan only using SDK and building your own UX/UI:
+
+:warning: Use this [starter custom view controller](../../../Examples/Snippets/MiSnap/CustomViewController.swift) to make sure all components are integrated the right way.
+
+#### CocoaPods
+
+Include the following in your Podfile
+
+```Ruby
+pod 'MiSnap', '5.0.0.b1'
+```
+#### Swift Package Manager
+
+Add the following repository url:
+
+`https://github.com/Mitek-Systems/MiSnap-iOS.git`
+
+then check `MiSnap` checkbox in a list of Package Products.
+
+## 2. Add license key to your project
+
+In your project's `AppDelegate`:
+
+2.1. Import licensing SDK:
+```Swift
+import MiSnapLicenseManager
+```
+2.2. Set the license key in `application(_ :, didFinishLaunchingWithOptions:)`
+
+```Swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    MiSnapLicenseManager.shared().setLicenseKey("your-license-key-here")
+    return true
+}
+```
+
+## 3. Add required keys to your project's Info.plist
+
+3.1. `Privacy - Camera Usage Description` with a reasonable description on why your app needs access to a camera.
+
+3.2. `Privacy - Microphone Usage Description` with a reasonable description on why your app needs access to a microphone, in case a video recording with audio is required.
+
+## 4. Setup and launch MiSnapViewController (optional)
+
+When both `MiSnap` and `MiSnapUX` are integrated:
+
+4.1. Add necessary imports
+```Swift
+import MiSnapUX
+import MiSnap
+import MiSnapLicenseManager
+```
+4.2. Configure and present MiSnapViewController:
+```Swift
+let configuration = MiSnapConfiguration(for: documentType)
+misnapVC = MiSnapViewController(with: configuration, delegate: self)
+// Present view controller here
+```
+where,
+
+`documentType` is of `MiSnapScienceDocumentType` type. Refer to [MiSnap API doc](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/MiSnap/MiSnap/Enums/MiSnapScienceDocumentType.html) for all available options.
+
+`configuration` is a configuration for a default UX/UI. If you'd like to customize it, refer to [MiSnap Customization Guide](customization_guide.md).
+
+4.3. Implement required callbacks to conform to `MiSnapViewControllerDelegate`
+
+```Swift
+// Note, it will only be sent if `MiSnapLicenseStatus` is anything but `.valid`
+func miSnapLicenseStatus(_ status: MiSnapLicenseStatus) {
+    // Handle a license status here
+}
+
+func miSnapSuccess(_ result: MiSnapResult) {
+    // Handle successful session results here
+}
+
+func miSnapCancelled(_ result: MiSnapResult) {
+    // Handle cancelled session results here 
+}
+
+func miSnapException(_ exception: NSException) {
+    // Handle exception that was caught by the SDK here
+}
+```
+Implement the following optional callback if `recordVideo` of `MiSnapCameraParameters` is overridden to `true`:
+```Swift
+func miSnapDidFinishRecordingVideo(_ videoData: Data?) {
+    // Handle recorded video data here
+}
+```
+Note, if `autoDismiss` of `MiSnapUXParameters` is overridden to `false`, a parent view controller that presented `MiSnapViewController` is responsible for dismissing it. Implement the following optional callback to achieve this:
+```Swift
+func miSnapShouldBeDismissed() {
+    // Dismiss MiSnapViewController here
+}
+```

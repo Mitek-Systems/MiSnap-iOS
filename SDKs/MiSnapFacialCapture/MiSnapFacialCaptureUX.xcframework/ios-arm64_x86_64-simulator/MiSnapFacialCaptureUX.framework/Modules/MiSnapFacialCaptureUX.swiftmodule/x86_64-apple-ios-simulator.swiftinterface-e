@@ -1,0 +1,170 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapFacialCaptureUX
+import MiSnapAssetManager
+import MiSnapFacialCapture
+@_exported import MiSnapFacialCaptureUX
+import Swift
+import UIKit
+import _Concurrency
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MiSnapFacialCaptureLocalizationConfiguration : ObjectiveC.NSObject {
+  @objc public var bundle: Foundation.Bundle
+  @objc public var stringsName: Swift.String
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum MiSnapFaceCaptureActivityType : Swift.Int {
+  case enrollment = 0
+  case verifiication = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum MiSnapFacialCaptureReviewMode : Swift.Int {
+  case manualOnly = 0
+  case autoAndManual = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MiSnapFacialCaptureUXParameters : ObjectiveC.NSObject {
+  @objc public var type: MiSnapFaceCaptureActivityType
+  @objc public var showIntroductoryInstructionScreen: Swift.Bool
+  @objc public var showTimeoutScreen: Swift.Bool
+  @objc public var showHelpScreen: Swift.Bool
+  @objc public var showReviewScreen: Swift.Bool
+  @objc public var reviewMode: MiSnapFacialCaptureReviewMode
+  @objc public var seamlessFailover: Swift.Bool
+  @objc public var playShutterShound: Swift.Bool
+  @objc public var autoDismiss: Swift.Bool
+  @objc public var accessibilityEnabled: Swift.Bool
+  @objc public var terminationDelay: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var timeout: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public init(for type: MiSnapFaceCaptureActivityType)
+  @objc public var dictionary: [Swift.String : Swift.String] {
+    @objc get
+  }
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public protocol MiSnapFacialCaptureTutorialViewControllerDelegate {
+  @objc func tutorialCancelButtonAction()
+  @objc optional func tutorialRetryButtonAction()
+  @objc func tutorialContinueButtonAction(for tutorialMode: MiSnapFacialCaptureTuturialMode)
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureConfiguration : ObjectiveC.NSObject {
+  @objc public var parameters: MiSnapFacialCaptureParameters
+  @objc public var uxParameters: MiSnapFacialCaptureUXParameters
+  @objc public var guide: MiSnapAssetManager.MiSnapFacialCaptureGuideConfiguration {
+    get
+  }
+  @objc public var cancel: MiSnapAssetManager.MiSnapCancelViewConfiguration {
+    get
+  }
+  @objc public var help: MiSnapAssetManager.MiSnapHelpViewConfiguration {
+    get
+  }
+  @objc public var cameraShutter: MiSnapAssetManager.MiSnapCameraShutterViewConfiguration {
+    get
+  }
+  @objc public var countdown: MiSnapAssetManager.MiSnapFacialCaptureCountdownViewConfiguration {
+    get
+  }
+  @objc public var recordingIndicator: MiSnapAssetManager.MiSnapRecordingIndicatorViewConfiguration {
+    get
+  }
+  @objc public var successCheckmark: MiSnapAssetManager.MiSnapSuccessCheckmarkViewConfiguration {
+    get
+  }
+  @objc public func withCustomParameters(completion: (MiSnapFacialCaptureParameters) -> ()) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomUxParameters(completion: (MiSnapFacialCaptureUXParameters) -> ()) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomGuide(completion: (MiSnapAssetManager.MiSnapFacialCaptureGuideConfiguration) -> ()) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomCancel(completion: (MiSnapAssetManager.MiSnapCancelViewConfiguration) -> ()) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomHelp(completion: (MiSnapAssetManager.MiSnapHelpViewConfiguration) -> ()) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomCameraShutter(completion: (MiSnapAssetManager.MiSnapCameraShutterViewConfiguration) -> ()) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomCountdown(completion: (MiSnapAssetManager.MiSnapFacialCaptureCountdownViewConfiguration) -> ()) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomRecordingIndicator(completion: (MiSnapAssetManager.MiSnapRecordingIndicatorViewConfiguration) -> ()) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomSuccessCheckmark(completion: (MiSnapAssetManager.MiSnapSuccessCheckmarkViewConfiguration) -> ()) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomLocalization(completion: (MiSnapFacialCaptureLocalizationConfiguration) -> ()) -> MiSnapFacialCaptureConfiguration
+  @objc convenience public init(with parameters: MiSnapFacialCaptureParameters? = nil, uxParameters: MiSnapFacialCaptureUXParameters? = nil)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol MiSnapFacialCaptureViewControllerDelegate {
+  @objc func miSnapFacialCaptureLicenseStatus(_ status: MiSnapLicenseStatus)
+  @objc func miSnapFacialCaptureSuccess(_ result: MiSnapFacialCaptureResult)
+  @objc func miSnapFacialCaptureCancelled(_ result: MiSnapFacialCaptureResult)
+  @objc optional func miSnapFacialCaptureHelpAction()
+  @objc optional func miSnapFacialCaptureTimeoutAction()
+  @objc optional func miSnapFacialCaptureDidFinishRecordingVideo(_ videoData: Foundation.Data?)
+  @objc optional func miSnapFacialCaptureShouldBeDismissed()
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapFacialCaptureViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) public var configuration: MiSnapFacialCaptureConfiguration {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapFacialCaptureConfiguration, delegate: MiSnapFacialCaptureViewControllerDelegate)
+  @objc @_Concurrency.MainActor(unsafe) public func update(_ uxParameters: MiSnapFacialCaptureUXParameters? = nil, _ parameters: MiSnapFacialCaptureParameters? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public func shutdown()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @objc deinit
+}
+extension MiSnapFacialCaptureViewController : MiSnapFacialCaptureAnalyzerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapFacialCaptureAnalyzerLicenseStatus(_ status: MiSnapLicenseStatus)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapFacialCaptureAnalyzerError(_ result: MiSnapFacialCaptureResult!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapFacialCaptureAnalyzerSuccess(_ result: MiSnapFacialCaptureResult!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapFacialCaptureAnalyzerCancelled(_ result: MiSnapFacialCaptureResult!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapFacialCaptureAnalyzerManualOnly()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapFacialCaptureAnalyzerStartCountdown()
+}
+extension MiSnapFacialCaptureViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func presentVC(_ vc: UIKit.UIViewController)
+}
+extension MiSnapFacialCaptureViewController : MiSnapFacialCaptureTutorialViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tutorialCancelButtonAction()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tutorialContinueButtonAction(for tutorialMode: MiSnapFacialCaptureTuturialMode)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tutorialRetryButtonAction()
+}
+extension MiSnapFacialCaptureViewController : MiSnapFacialCaptureCameraDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func didFinishConfiguringSession()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func didReceive(_ sampleBuffer: CoreMedia.CMSampleBuffer?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func didFinishRecordingVideo(_ videoData: Foundation.Data?)
+}
+extension MiSnapFacialCaptureViewController {
+  @_Concurrency.MainActor(unsafe) public func checkCameraPermission(handler: @escaping (Swift.Bool) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
+}
+extension MiSnapFaceCaptureActivityType : Swift.Equatable {}
+extension MiSnapFaceCaptureActivityType : Swift.Hashable {}
+extension MiSnapFaceCaptureActivityType : Swift.RawRepresentable {}
+extension MiSnapFacialCaptureReviewMode : Swift.Equatable {}
+extension MiSnapFacialCaptureReviewMode : Swift.Hashable {}
+extension MiSnapFacialCaptureReviewMode : Swift.RawRepresentable {}

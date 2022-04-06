@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapFacialCaptureViewControllerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/MiSnapFacialCaptureViewControllerDelegate" class="dashAnchor"></a>
+
+    <a title="MiSnapFacialCaptureViewControllerDelegate Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapFacialCaptureViewControllerDelegate Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureConfiguration.html">MiSnapFacialCaptureConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureLocalizationConfiguration.html">MiSnapFacialCaptureLocalizationConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureUX.html">MiSnapFacialCaptureUX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureUXParameters.html">MiSnapFacialCaptureUXParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureViewController.html">MiSnapFacialCaptureViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFaceCaptureActivityType.html">MiSnapFaceCaptureActivityType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapFacialCaptureReviewMode.html">MiSnapFacialCaptureReviewMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapFacialCaptureTutorialViewControllerDelegate.html">MiSnapFacialCaptureTutorialViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapFacialCaptureViewControllerDelegate.html">MiSnapFacialCaptureViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapFacialCaptureViewControllerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MiSnapFacialCaptureViewControllerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Defines an interface for delegates of <code><a href="../Classes/MiSnapFacialCaptureViewController.html">MiSnapFacialCaptureViewController</a></code> to receive callbacks</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureLicenseStatus:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapFacialCaptureLicenseStatus(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureLicenseStatus:">miSnapFacialCaptureLicenseStatus(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback only when license status is anything but valid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapFacialCaptureLicenseStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">MiSnapLicenseStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureSuccess:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapFacialCaptureSuccess(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureSuccess:">miSnapFacialCaptureSuccess(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback in one of the following cases:</p>
+
+<ul>
+<li>a frame passes Image Quality Analysis (IQA) check in <code>MiSnapFacialCaptureModeAuto</code></li>
+<li>a user manually triggers image acqusition</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapFacialCaptureSuccess</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapFacialCaptureResult</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureCancelled:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapFacialCaptureCancelled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureCancelled:">miSnapFacialCaptureCancelled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback whenever a user cancels a session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapFacialCaptureCancelled</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapFacialCaptureResult</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureHelpAction"></a>
+                    <a name="//apple_ref/swift/Method/miSnapFacialCaptureHelpAction()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureHelpAction">miSnapFacialCaptureHelpAction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when a user presses help button and <code>showHelpScreen</code> is overridden to <code>false</code> in <code>MiSnapUxParameters</code></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    It&rsquo;s optional
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">miSnapFacialCaptureHelpAction</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureTimeoutAction"></a>
+                    <a name="//apple_ref/swift/Method/miSnapFacialCaptureTimeoutAction()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureTimeoutAction">miSnapFacialCaptureTimeoutAction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when a session times out and <code>showTimeoutScreen</code> is overridden to <code>false</code> in <code>MiSnapUxParameters</code></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    It&rsquo;s optional
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">miSnapFacialCaptureTimeoutAction</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureDidFinishRecordingVideo:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapFacialCaptureDidFinishRecordingVideo(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureDidFinishRecordingVideo:">miSnapFacialCaptureDidFinishRecordingVideo(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when a camera finishes recording a video when <code>recordVideo</code> is overridden to <code>true</code> in <code>MiSnapCameraParameters</code></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    It&rsquo;s optional
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">miSnapFacialCaptureDidFinishRecordingVideo</span><span class="p">(</span><span class="n">_</span> <span class="nv">videoData</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureShouldBeDismissed"></a>
+                    <a name="//apple_ref/swift/Method/miSnapFacialCaptureShouldBeDismissed()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureShouldBeDismissed">miSnapFacialCaptureShouldBeDismissed()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when a session is completed and ready to be dissmised and <code>autoDismiss</code> is overridden to <code>false</code> in <code>MiSnapUxParameters</code></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    It&rsquo;s optional
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">miSnapFacialCaptureShouldBeDismissed</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

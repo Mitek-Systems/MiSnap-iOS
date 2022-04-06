@@ -1,0 +1,11 @@
+framework module MiSnapNFCUX {
+  umbrella header "MiSnapNFCUX.h"
+
+  export *
+  module * { export * }
+}
+
+module MiSnapNFCUX.Swift {
+    header "MiSnapNFCUX-Swift.h"
+    requires objc
+}

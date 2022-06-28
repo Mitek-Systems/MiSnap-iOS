@@ -54,6 +54,7 @@ extension ViewController {
         let mrzString = getValue(for: .mrzString)
                 
         let chipLocation = MiSnapNFCChipLocator.chipLocation(mrzString: mrzString,
+                                                             documentNumber: documentNumber,
                                                              dateOfBirth: dateOfBirth,
                                                              dateOfExpiry: dateOfExpiry)
 

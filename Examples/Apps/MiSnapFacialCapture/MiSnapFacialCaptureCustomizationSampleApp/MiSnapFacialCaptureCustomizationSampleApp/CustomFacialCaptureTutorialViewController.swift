@@ -13,14 +13,14 @@ import MiSnapFacialCapture
  Custom UI should be added in the dedicated extension below
  */
 class CustomFacialCaptureTutorialViewController: UIViewController {
-    private let mode: MiSnapFacialCaptureTuturialMode
+    private let mode: MiSnapFacialCaptureTutorialMode
     private weak var delegate: MiSnapFacialCaptureTutorialViewControllerDelegate?
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(for mode: MiSnapFacialCaptureTuturialMode, delegate: MiSnapFacialCaptureTutorialViewControllerDelegate) {
+    init(for mode: MiSnapFacialCaptureTutorialMode, delegate: MiSnapFacialCaptureTutorialViewControllerDelegate) {
         self.mode = mode
         self.delegate = delegate
         super.init(nibName: nil, bundle: nil)

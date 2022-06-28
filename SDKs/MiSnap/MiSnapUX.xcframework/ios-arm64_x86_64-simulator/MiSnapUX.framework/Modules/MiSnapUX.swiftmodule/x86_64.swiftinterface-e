@@ -26,6 +26,28 @@ import _Concurrency
   @objc optional func tutorialRetryButtonAction()
   @objc func tutorialCancelButtonAction()
 }
+@_inheritsConvenienceInitializers @objc public class MiSnapTutorialViewControllerConfiguration : ObjectiveC.NSObject {
+  @objc public var instruction: MiSnapTutorialViewControllerInstructionConfiguration
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum MiSnapTutorialType : Swift.Int {
+  case defaultType = 0
+  case passportQr = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class MiSnapTutorialViewControllerInstructionConfiguration : ObjectiveC.NSObject {
+  @objc public var type: MiSnapTutorialType {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public enum MiSnapReviewMode : Swift.Int, Swift.Codable {
   case manualOnly = 0
   case autoAndManual = 1
@@ -103,20 +125,24 @@ import _Concurrency
   @objc public var successCheckmark: MiSnapAssetManager.MiSnapSuccessCheckmarkViewConfiguration {
     get
   }
+  @objc public var tutorial: MiSnapTutorialViewControllerConfiguration {
+    get
+  }
   @objc override dynamic public init()
   @objc public init(for documentType: MiSnapScienceDocumentType)
-  @objc public func withCustomParameters(completion: (MiSnapParameters) -> ()) -> MiSnapConfiguration
-  @objc public func withCustomUxParameters(completion: (MiSnapUxParameters) -> ()) -> MiSnapConfiguration
-  @objc public func withCustomGuide(completion: (MiSnapAssetManager.MiSnapGuideViewConfiguration) -> ()) -> MiSnapConfiguration
-  @objc public func withCustomHint(completion: (MiSnapAssetManager.MiSnapHintViewConfiguration) -> ()) -> MiSnapConfiguration
-  @objc public func withCustomGlare(completion: (MiSnapAssetManager.MiSnapGlareViewConfiguration) -> ()) -> MiSnapConfiguration
-  @objc public func withCustomCancel(completion: (MiSnapAssetManager.MiSnapCancelViewConfiguration) -> ()) -> MiSnapConfiguration
-  @objc public func withCustomHelp(completion: (MiSnapAssetManager.MiSnapHelpViewConfiguration) -> ()) -> MiSnapConfiguration
-  @objc public func withCustomTorch(completion: (MiSnapAssetManager.MiSnapTorchViewConfiguration) -> ()) -> MiSnapConfiguration
-  @objc public func withCustomCameraShutter(completion: (MiSnapAssetManager.MiSnapCameraShutterViewConfiguration) -> ()) -> MiSnapConfiguration
-  @objc public func withCustomRecordingIndicator(completion: (MiSnapAssetManager.MiSnapRecordingIndicatorViewConfiguration) -> ()) -> MiSnapConfiguration
-  @objc public func withCustomSuccessCheckmark(completion: (MiSnapAssetManager.MiSnapSuccessCheckmarkViewConfiguration) -> ()) -> MiSnapConfiguration
-  @objc public func withCustomLocalization(completion: (MiSnapLocalizationConfiguration) -> ()) -> MiSnapConfiguration
+  @objc public func withCustomParameters(completion: (MiSnapParameters) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomUxParameters(completion: (MiSnapUxParameters) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomGuide(completion: (MiSnapAssetManager.MiSnapGuideViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomHint(completion: (MiSnapAssetManager.MiSnapHintViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomGlare(completion: (MiSnapAssetManager.MiSnapGlareViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomCancel(completion: (MiSnapAssetManager.MiSnapCancelViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomHelp(completion: (MiSnapAssetManager.MiSnapHelpViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomTorch(completion: (MiSnapAssetManager.MiSnapTorchViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomCameraShutter(completion: (MiSnapAssetManager.MiSnapCameraShutterViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomRecordingIndicator(completion: (MiSnapAssetManager.MiSnapRecordingIndicatorViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomSuccessCheckmark(completion: (MiSnapAssetManager.MiSnapSuccessCheckmarkViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomLocalization(completion: (MiSnapLocalizationConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomInstruction(completion: (MiSnapTutorialViewControllerInstructionConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func applying(_ template: MiSnapConfiguration) -> MiSnapConfiguration
   @objc public init(with parameters: MiSnapParameters, uxParameters: MiSnapUxParameters? = nil)
   @objc override dynamic public var description: Swift.String {
@@ -170,8 +196,8 @@ extension MiSnapViewController {
   @objc @_Concurrency.MainActor(unsafe) dynamic public func resumeAnalysis()
   @objc @_Concurrency.MainActor(unsafe) public static func miSnapVersion() -> Swift.String
   @objc @_Concurrency.MainActor(unsafe) public static func miSnapScienceVersion() -> Swift.String
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func checkCameraPermission(handler: @escaping (Swift.Bool) -> ())
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> ())
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func checkCameraPermission(handler: @escaping (Swift.Bool) -> Swift.Void)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
 }
 extension MiSnapViewController : MiSnapTutorialViewControllerDelegate {
@@ -195,6 +221,9 @@ extension MiSnapViewController : MiSnapAnalyzerDelegate {
 extension MiSnapUxTutorialMode : Swift.Equatable {}
 extension MiSnapUxTutorialMode : Swift.Hashable {}
 extension MiSnapUxTutorialMode : Swift.RawRepresentable {}
+extension MiSnapTutorialType : Swift.Equatable {}
+extension MiSnapTutorialType : Swift.Hashable {}
+extension MiSnapTutorialType : Swift.RawRepresentable {}
 extension MiSnapReviewMode : Swift.Equatable {}
 extension MiSnapReviewMode : Swift.Hashable {}
 extension MiSnapReviewMode : Swift.RawRepresentable {}

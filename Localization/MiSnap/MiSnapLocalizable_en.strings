@@ -12,6 +12,7 @@
 "ID Back"                               = "Back of ID";
 "DL Front"                              = "Front of License";
 "DL Back"                               = "Back of License";
+"QR Code"                               = "QR Code";
 "Check Front"                           = "Check Front";
 "Check Back"                            = "Check Back";
 "Generic"                               = "Document";
@@ -20,6 +21,7 @@
 
 "misnap_tutorial_check"                 = "Center the check on the screen, hold still, and we will take the photo for you.";
 "misnap_tutorial_document"              = "Center the document on the screen, hold still, and we will take the photo for you.";
+"misnap_tutorial_qr"                    = "Flip bio page to scan QR code";
 
 "help_failover_license"                 = "Center the license with all four corners visible and press the snap photo button when ready.";
 "help_failover_passport"                = "Center the passport with all four corners visible and press the snap photo button when ready.";

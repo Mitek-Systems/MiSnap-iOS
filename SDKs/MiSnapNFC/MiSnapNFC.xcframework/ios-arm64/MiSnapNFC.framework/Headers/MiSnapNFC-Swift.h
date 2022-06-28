@@ -235,7 +235,7 @@ typedef SWIFT_ENUM(NSInteger, MiSnapNFCChipLocation, open) {
 SWIFT_CLASS("_TtC9MiSnapNFC20MiSnapNFCChipLocator") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface MiSnapNFCChipLocator : NSObject
 /// Determines <code>MiSnapNFCChipLocation</code> based on MRZ, date of birth and document expiration date
-+ (enum MiSnapNFCChipLocation)chipLocationWithMrzString:(NSString * _Nonnull)mrzString dateOfBirth:(NSString * _Nonnull)dateOfBirth dateOfExpiry:(NSString * _Nonnull)dateOfExpiry SWIFT_WARN_UNUSED_RESULT;
++ (enum MiSnapNFCChipLocation)chipLocationWithMrzString:(NSString * _Nonnull)mrzString documentNumber:(NSString * _Nonnull)documentNumber dateOfBirth:(NSString * _Nonnull)dateOfBirth dateOfExpiry:(NSString * _Nonnull)dateOfExpiry SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

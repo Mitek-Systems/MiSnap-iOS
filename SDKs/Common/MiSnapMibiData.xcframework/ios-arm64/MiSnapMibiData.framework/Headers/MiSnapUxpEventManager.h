@@ -141,41 +141,49 @@ typedef NS_ENUM(NSInteger, MiSnapUxpEvent) {
      */
     MiSnapUxpEventSmile,
     /**
-     NFC error
+     Verbose error
      */
-    MiSnapUxpEventNfcError,
+    MiSnapUxpEventErrorVerbose,
     /**
-     NFC success
+     Verbose success
      */
-    MiSnapUxpEventNfcSuccess,
+    MiSnapUxpEventSuccessVerbose,
     /**
-     NFC timeout
+     Verbose timeout
      */
-    MiSnapUxpEventNfcTimeout,
+    MiSnapUxpEventTimeoutVerbose,
     /**
-     NFC start
+     Verbose start
      */
-    MiSnapUxpEventNfcStart,
+    MiSnapUxpEventStartVerbose,
     /**
-     NFC read
+     Verbose read
      */
-    MiSnapUxpEventNfcRead,
+    MiSnapUxpEventReadVerbose,
     /**
-     NFC unknown tag
+     Verbose unknown tag
      */
-    MiSnapUxpEventNfcUnknownTag,
+    MiSnapUxpEventUnknownTagVerbose,
     /**
-     NFC PACE support
+     Verbose PACE support
      */
-    MiSnapUxpEventNfcPaceSupport,
+    MiSnapUxpEventPaceSupportVerbose,
     /**
-     NFC access mechanism
+     Verbose Chip Authentication support
      */
-    MiSnapUxpEventNfcAccessMechanism,
+    MiSnapUxpEventCASupportVerbose,
     /**
-     NFC session is cancelled
+     Verbose Active Authentication support
      */
-    MiSnapUxpEventNfcCancel,
+    MiSnapUxpEventAASupportVerbose,
+    /**
+     Verbose access mechanism
+     */
+    MiSnapUxpEventAccessMechanismVerbose,
+    /**
+     Verbose session is cancelled
+     */
+    MiSnapUxpEventCancelVerbose,
     /**
      A session is cancelled
      */
@@ -316,5 +324,9 @@ typedef NS_ENUM(NSInteger, MiSnapUxpEvent) {
 UXP events added during the session
  */
 @property (nonatomic, readonly) NSArray<NSDictionary *> * _Nonnull events;
+/**
+A total session duration
+ */
+@property (nonatomic, readonly) NSInteger totalDuration;
 
 @end

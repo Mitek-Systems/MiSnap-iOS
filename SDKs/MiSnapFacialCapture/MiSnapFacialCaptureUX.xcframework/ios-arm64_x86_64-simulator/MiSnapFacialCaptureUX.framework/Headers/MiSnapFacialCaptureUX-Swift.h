@@ -316,7 +316,7 @@ SWIFT_PROTOCOL("_TtP21MiSnapFacialCaptureUX49MiSnapFacialCaptureTutorialViewCont
 - (void)tutorialRetryButtonAction;
 @required
 /// A continue button for a specified <code>tutoriaMode</code> is pressed
-- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTuturialMode)tutorialMode;
+- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
 @end
 
 @class NSNumber;
@@ -346,6 +346,8 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX31MiSnapFacialCaptureUXParameters")
 ///   </li>
 /// </ul>
 @property (nonatomic) enum MiSnapFacialCaptureReviewMode reviewMode;
+/// Indicates whether landmarks show be displayed for debugging purposes
+@property (nonatomic) BOOL showLandmarks;
 /// Indicates whether a session should seamlessly failover to Manual instead of presenting a Timeour/Failover screen
 @property (nonatomic) BOOL seamlessFailover;
 /// Indicates whether a shutter sound should be played upon a successful image acquistion
@@ -448,7 +450,7 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 /// Called when a tutorial view controller’s continue button is pressed
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTuturialMode)tutorialMode;
+- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
 /// Called when a tutorial view controller’s retry button is pressed
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
@@ -854,7 +856,7 @@ SWIFT_PROTOCOL("_TtP21MiSnapFacialCaptureUX49MiSnapFacialCaptureTutorialViewCont
 - (void)tutorialRetryButtonAction;
 @required
 /// A continue button for a specified <code>tutoriaMode</code> is pressed
-- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTuturialMode)tutorialMode;
+- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
 @end
 
 @class NSNumber;
@@ -884,6 +886,8 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX31MiSnapFacialCaptureUXParameters")
 ///   </li>
 /// </ul>
 @property (nonatomic) enum MiSnapFacialCaptureReviewMode reviewMode;
+/// Indicates whether landmarks show be displayed for debugging purposes
+@property (nonatomic) BOOL showLandmarks;
 /// Indicates whether a session should seamlessly failover to Manual instead of presenting a Timeour/Failover screen
 @property (nonatomic) BOOL seamlessFailover;
 /// Indicates whether a shutter sound should be played upon a successful image acquistion
@@ -986,7 +990,7 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 /// Called when a tutorial view controller’s continue button is pressed
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTuturialMode)tutorialMode;
+- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
 /// Called when a tutorial view controller’s retry button is pressed
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.

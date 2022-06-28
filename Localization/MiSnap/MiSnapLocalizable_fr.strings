@@ -12,6 +12,7 @@
 "ID Back"                               = "Verso de la pièce d'identité";
 "DL Front"                              = "Recto du permis";
 "DL Back"                               = "Dos de permis";
+"QR Code"                               = "Code QR";
 "Check Front"                           = "Recto de l’image";
 "Check Back"                            = "Verso de l’image";
 "Generic"                               = "Document";
@@ -20,6 +21,7 @@
 
 "misnap_tutorial_check"                 = "Centrez le chèque sur l\'écran. Ne le bougez plus, nous allons prendre la photo pour vous.";
 "misnap_tutorial_document"              = "Centrez le document sur l\'écran. Ne le bougez plus, nous allons prendre la photo pour vous.";
+"misnap_tutorial_qr"                    = "Retournez la page bio pour scanner le code QR";
 
 "help_failover_license"                 = "Centrez le permis de conduire de sorte que les 4 coins soient visibles. Lorsque vous êtes prêt, appuyez sur le bouton de Déclic.";
 "help_failover_passport"                = "Centrez le passeport de sorte que les 4 coins soient visibles. Lorsque vous êtes prêt, appuyez sur le bouton de Déclic.";

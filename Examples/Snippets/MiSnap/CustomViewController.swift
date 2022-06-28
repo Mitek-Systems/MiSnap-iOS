@@ -96,7 +96,7 @@ extension CustomViewController {
      Call this function to check camera permission after an instance
      of this view controller is initialized but before it's presented
      */
-    @objc public func checkCameraPermission(handler: @escaping (Bool) -> ()) {
+    @objc public func checkCameraPermission(handler: @escaping (Bool) -> Void) {
         MiSnapCamera.checkPermission(handler)
     }
     
@@ -104,7 +104,7 @@ extension CustomViewController {
      Call this function to check microphone permission (if required) after an
      instance of this view controller is initialized but before it's presented
      */
-    @objc public func checkMicrophonePermission(handler: @escaping (Bool) -> ()) {
+    @objc public func checkMicrophonePermission(handler: @escaping (Bool) -> Void) {
         MiSnapCamera.checkMicrophonePermission(handler)
     }
 }

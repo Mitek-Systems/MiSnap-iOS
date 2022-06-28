@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, MiSnapBarcodeScannerType) {
+    MiSnapBarcodeScannerTypePDF417              = 0,
+    MiSnapBarcodeScannerTypeQR                  = 1,
+    MiSnapBarcodeScannerTypeAztec               = 2,
+    MiSnapBarcodeScannerTypeCode39              = 3,
+    MiSnapBarcodeScannerTypeCode93              = 4,
+    MiSnapBarcodeScannerTypeCode128             = 5,
+    MiSnapBarcodeScannerTypeInterleaved2of5     = 6
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MiSnapBarcodeScannerResult : NSObject
@@ -40,6 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSString * _Nullable weight;
 @property (nonatomic, readonly) NSString * _Nullable hairColor;
 @property (nonatomic, readonly) NSString * _Nullable organDonor;
+
+@property (nonatomic, readonly) MiSnapBarcodeScannerType type;
 
 @end
 

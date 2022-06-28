@@ -86,7 +86,7 @@ typedef NS_ENUM(NSInteger, MiSnapLicenseStatus) {
      */
     MiSnapLicenseStatusValid                    = 1,
     /**
-     License is tempered with
+     License is tampered with
      */
     MiSnapLicenseStatusNotValid                 = 2,
     /**
@@ -94,21 +94,25 @@ typedef NS_ENUM(NSInteger, MiSnapLicenseStatus) {
      */
     MiSnapLicenseStatusExpired                  = 3,
     /**
+     License is valid but disabled
+     */
+    MiSnapLicenseStatusDisabled                 = 4,
+    /**
      License is valid but an application bundle identifier is not supported
      */
-    MiSnapLicenseStatusNotValidAppId            = 4,
+    MiSnapLicenseStatusNotValidAppId            = 5,
     /**
      License is valid but iOS platform is not licensed
      */
-    MiSnapLicenseStatusPlatformNotSupported     = 5,
+    MiSnapLicenseStatusPlatformNotSupported     = 6,
     /**
      License is valid but a given feature is not supported
      */
-    MiSnapLicenseStatusFeatureNotSupported      = 6
+    MiSnapLicenseStatusFeatureNotSupported      = 7
 };
 
 /**
- Verifies validity of a license key
+ Verifies a license key validity and controls features access
  */
 @interface MiSnapLicenseManager : NSObject
 /**
@@ -128,9 +132,9 @@ typedef NS_ENUM(NSInteger, MiSnapLicenseStatus) {
  */
 @property (nonatomic, readonly) MiSnapLicenseStatus status;
 /**
- Sets a license key
+ Sets a Base64 license key
  */
-- (void)setLicenseKey:(NSString * _Nullable)licenseKey;
+- (void)setLicenseKey:(NSString * _Nullable)base64LicenseKey;
 /**
  Returns whether a given feature is supported by a license key
  */

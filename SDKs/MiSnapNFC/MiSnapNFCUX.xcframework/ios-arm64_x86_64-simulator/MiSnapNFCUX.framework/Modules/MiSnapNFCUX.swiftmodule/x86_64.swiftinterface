@@ -45,9 +45,9 @@ import _Concurrency
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapNFCConfiguration : ObjectiveC.NSObject {
   @objc override dynamic public init()
-  @objc public func withInputs(completion: (MiSnapNFCInputs) -> ()) -> MiSnapNFCConfiguration
-  @objc public func withCustomUxParameters(completion: (MiSnapNFCUxParameters) -> ()) -> MiSnapNFCConfiguration
-  @objc public func withCustomLocalization(completion: (MiSnapNFCLocalizationConfiguration) -> ()) -> MiSnapNFCConfiguration
+  @objc public func withInputs(completion: (MiSnapNFCInputs) -> Swift.Void) -> MiSnapNFCConfiguration
+  @objc public func withCustomUxParameters(completion: (MiSnapNFCUxParameters) -> Swift.Void) -> MiSnapNFCConfiguration
+  @objc public func withCustomLocalization(completion: (MiSnapNFCLocalizationConfiguration) -> Swift.Void) -> MiSnapNFCConfiguration
   @objc override dynamic public var description: Swift.String {
     @objc get
   }

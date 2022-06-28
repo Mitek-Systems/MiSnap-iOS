@@ -15,6 +15,7 @@
 * [Devices Tested](#devices-tested)
 * [Known Issues](#known-issues)
 * [Frequently Asked Questions (FAQs)](#frequently-asked-questions-faqs)
+* [Third-Party Licensing Info](#third-party-licensing-info)
 
 - - -
 
@@ -79,17 +80,20 @@ Refer to [Integration Guides](#integration-guides) for setting the license key i
 
 <center>
 
-| Component               | Size, MB                          |
-| :---------------------- | :-------------------------------: |
-| MiSnap                  |  TODO                             |
-| MiSnapUX                |  TODO                             |
-| NFC                     |  TODO                             |
-| NFCUX                   |  TODO                             |
-| FacialCapture           |  TODO                             |
-| FacialCaptureUX         |  TODO                             |
+| Component                        | Compressed, MB | Uncompressed, MB |
+| :------------------------------- | :------------: | :--------------: |
+| MiSnap                           |  1.20          |  3.10            |
+| MiSnap + MiSnapUX                |  1.90          |  4.40            |
+| NFC                              |  0.41          |  1.10            |
+| NFC + NFCUX                      |  0.68          |  1.50            |
+| FacialCapture                    |  0.13          |  0.47            |
+| FacialCapture + FacialCaptureUX  |  0.44          |  1.20            |
 
 </center>
-Sizes are taken from "App Thinning Size Report.txt" of an Xcode distribution package for the latest iOS version for compressed size which is the download size of the app on AppStore.
+
+Sizes are taken from "App Thinning Size Report.txt" of an Xcode distribution package for the latest iOS version where `compressed` is your app download size increase, and `uncompressed` size is equivalent to the size increase of your app once installed on the device. 
+
+In most cases you should be interested in `compressed` size since this is the size increase to your installable on AppStore that has network limitations depending on the size.
 
 Refer to "Create the App Size Report" section of [this article](https://developer.apple.com/documentation/xcode/reducing-your-app-s-size#Create-the-App-Size-Report) for more details.
 
@@ -119,7 +123,24 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 - - -
 
 # Known Issues
+* MiSnap
+    * Check back sometimes can be erroneously acquired when Check Front document type is invoked
+* MiSnapNFC
+    * Some iPhone 7 devices fail NFC reading of eDriving License regardless of an iOS version
+* MiSnapFacialCapture
+    * On iPhone 7 and earlier, the hint messages take a few seconds to begin appearing. During this time the message label will be blank
 
 - - -
 
 # Frequently Asked Questions (FAQs)
+* [MiSnap](Docs/Guides/MiSnap/faq.md)
+* [MiSnapNFC](Docs/Guides/MiSnapNFC/faq.md)
+* [MiSnapFacialCapture](Docs/Guides/MiSnapFacialCapture/faq.md)
+
+- - -
+
+# Third-Party Licensing Info
+* MiSnap (no third-party dependencies)
+* [MiSnapNFC](Docs/Guides/MiSnapNFC/3rd_party_licensing_info.md)
+* MiSnapFacialCapture (no third-party dependencies)
+

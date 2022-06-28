@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapNFC-Swift.h</key>
 		<data>
-		lR2BUkMer8aAXX91LXXL0v7mB/Q=
+		2i6nWT++j10a8djSLKJ/Ok9R+7w=
 		</data>
 		<key>Headers/MiSnapNFC.h</key>
 		<data>
@@ -18,27 +18,27 @@
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		dUPB+MMg/SWytQRs1rc7A0WCIZQ=
+		VYLFGQuVnTgEqiiTOC66QrdDhgA=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		vkT3ix268NFd0XwTt3whmjmeD40=
+		Xfvlqoq9RZj5p9FzijhIGagZ4cw=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kPSe7SXqndo4tp7+1ZfXpyJmW+s=
+		I1uYbTHZ8uvghGqAbC07XqlQ4rM=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		dUPB+MMg/SWytQRs1rc7A0WCIZQ=
+		VYLFGQuVnTgEqiiTOC66QrdDhgA=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		vkT3ix268NFd0XwTt3whmjmeD40=
+		Xfvlqoq9RZj5p9FzijhIGagZ4cw=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		kPSe7SXqndo4tp7+1ZfXpyJmW+s=
+		I1uYbTHZ8uvghGqAbC07XqlQ4rM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>geos</key>
 		<data>
-		vD4r8D8JNSLB2NXzYA2wBc1I2FY=
+		762CRrNWyWLX5RliukLcC6eds10=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0PKWl2zey2AJdwIAq7DMbBl6icCPsk5wHbNpHl6mUX8=
+			Hv/oKjuPcENMqLFyhugoiKiXqF0GijZjPBK1DuDXOFw=
 			</data>
 		</dict>
 		<key>Headers/MiSnapNFC.h</key>
@@ -69,42 +69,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hgepU+ngCiNBKiKEU5nzS++2YSI9/8Hdrsr1VMOp5ps=
+			7IuKh0cxZxt2tcEUqBSczW9axYsvwU0KRFnn+QK9YFg=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BXu2u+l1Unbl6eXuUz4BowlNk/9wswsY3SXTIaYWi3A=
+			n+DUsyHIz6veRHImmut7GBLmq81S3AUMfFtQQ9YNS3I=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			33EV4CCBlciTu+Of0jzOyWZZ2xVdaQy+5F+Ikc2y5JA=
+			5h0fieraBsfnbYh086qhcedMZ5ehVECXJygnQ1QgZkE=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hgepU+ngCiNBKiKEU5nzS++2YSI9/8Hdrsr1VMOp5ps=
+			7IuKh0cxZxt2tcEUqBSczW9axYsvwU0KRFnn+QK9YFg=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BXu2u+l1Unbl6eXuUz4BowlNk/9wswsY3SXTIaYWi3A=
+			n+DUsyHIz6veRHImmut7GBLmq81S3AUMfFtQQ9YNS3I=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			33EV4CCBlciTu+Of0jzOyWZZ2xVdaQy+5F+Ikc2y5JA=
+			5h0fieraBsfnbYh086qhcedMZ5ehVECXJygnQ1QgZkE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9plduiOsMMqulVWPeS2+C/mQj6Oteckg+n/FRCyccPQ=
+			Kpc0Ylg2qNIlV/yBwU1QfKFRzle0FmKGl/FtfPdBjoE=
 			</data>
 		</dict>
 	</dict>

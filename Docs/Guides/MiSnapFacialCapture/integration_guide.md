@@ -7,6 +7,8 @@ MiSnapFacialCapture 5.x is distributed through CocoaPods and Swift Package Manag
 * [CocoaPods installation guide](https://guides.cocoapods.org/using/using-cocoapods.html)
 * [Swift Package Manager installation guide](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app)
 
+It's highly recommended to use one of these distribution managers but manual integration is still supported.
+
 ### SDK and UX/UI
 It is Mitek's recommended option to integrated both SDK and UX/UI which is highly customizable.
 
@@ -15,8 +17,8 @@ It is Mitek's recommended option to integrated both SDK and UX/UI which is highl
 Include the following in your Podfile
 
 ```Ruby
-pod 'MiSnapFacialCapture', '5.0.0.b1'
-pod 'MiSnapFacialCaptureUX', '5.0.0.b1'
+pod 'MiSnapFacialCapture'
+pod 'MiSnapFacialCaptureUX'
 ```
 #### Swift Package Manager
 
@@ -25,6 +27,23 @@ Add the following repository url:
 `https://github.com/Mitek-Systems/MiSnap-iOS.git`
 
 then check `MiSnapFacialCapture` and `MiSnapFacialCaptureUX` checkboxes in a list of Package Products.
+
+#### Manual integration
+
+From [Common](../../../SDKs/Common) copy:
+* MiSnapLicenseManager.xcframework
+* MiSnapMibiData.xcframework
+* MiSnapAssetManager.xcframework
+
+From [MiSnapFacialCapture](../../../SDKs/MiSnapFacialCapture) copy:
+* MiSnapFacialCapture.xcframework
+* MiSnapFacialCaptureUX.xcframework
+
+Add all copied artifacts to your Xcode project under "Frameworks, Libraries, and Embedded Content". 
+
+Make sure `Embed & Sign` is chosen as Embed option.
+
+Set valid path(s) to copied artifacts in `Framework Search Paths` under `Build Settings` tab.
 
 ### SDK only
 
@@ -37,7 +56,7 @@ If you plan only using SDK and building your own UX/UI:
 Include the following in your Podfile
 
 ```Ruby
-pod 'MiSnapFacialCapture', '5.0.0.b1'
+pod 'MiSnapFacialCapture'
 ```
 #### Swift Package Manager
 
@@ -46,6 +65,21 @@ Add the following repository url:
 `https://github.com/Mitek-Systems/MiSnap-iOS.git`
 
 then check `MiSnapFacialCapture` checkbox in a list of Package Products.
+
+#### Manual integration
+
+From [Common](../../../SDKs/Common) copy:
+* MiSnapLicenseManager.xcframework
+* MiSnapMibiData.xcframework
+
+From [MiSnapFacialCapture](../../../SDKs/MiSnapFacialCapture) copy:
+* MiSnapFacialCapture.xcframework
+
+Add all copied artifacts to your Xcode project under "Frameworks, Libraries, and Embedded Content". 
+
+Make sure `Embed & Sign` is chosen as Embed option.
+
+Set valid path(s) to copied artifacts in `Framework Search Paths` under `Build Settings` tab.
 
 ## 2. Add license key to your project
 

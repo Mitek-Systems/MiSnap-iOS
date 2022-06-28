@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MiSnapScience/MiSnapScienceParameters.h>
 
 /**
  Expiration status
@@ -24,6 +25,20 @@ typedef NS_ENUM(NSInteger, MiSnapScienceExpirationStatus) {
      A document has expired
      */
     MiSnapScienceExpirationStatusExpired
+};
+
+/**
+ Additional step
+ */
+typedef NS_ENUM(NSInteger, MiSnapScienceAdditionalStep) {
+    /**
+     Additional step is not set
+     */
+    MiSnapScienceAdditionalStepNone = 0,
+    /**
+     QR code in NLD passport issued after 2021-08-30
+     */
+    MiSnapScienceAdditionalStepPassportQr
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -206,7 +221,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) MiSnapScienceExpirationStatus expirationStatus;
 /**
- A string representation of an `expirationStatus`
+ A string representation of `expirationStatus`
  */
 @property (nonatomic, readonly) NSString * _Nonnull expirationStatusString;
 /**
@@ -218,6 +233,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) NSString * _Nullable barcodeString;
 /**
+ A barcode type
+ */
+@property (nonatomic, readonly) MiSnapScienceBarcodeType barcodeType;
+/**
+ A string representation of `barcodeType`
+ */
+@property (nonatomic, readonly) NSString * _Nonnull barcodeTypeString;
+/**
  An MRZ string
  */
 @property (nonatomic, readonly) NSString * _Nullable mrzString;
@@ -225,6 +248,14 @@ NS_ASSUME_NONNULL_BEGIN
  Unique strings extracted by OCR engine
  */
 @property (nonatomic, readonly) NSArray * _Nullable uniqueOcrStrings;
+/**
+ Additional steps that should be presented as a result of finishing the current session
+ */
+@property (nonatomic, readonly) MiSnapScienceAdditionalStep additionalStep;
+/**
+ A string representation of `additionalStep`
+ */
+@property (nonatomic, readonly) NSString * _Nonnull additionalStepString;
 /**
  A string representation of `MiSnapScienceExtractionResult`
  */

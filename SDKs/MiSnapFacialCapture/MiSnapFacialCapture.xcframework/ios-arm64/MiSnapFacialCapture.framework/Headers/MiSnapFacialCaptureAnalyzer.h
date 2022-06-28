@@ -95,7 +95,7 @@ MiSnapFacialCaptureAnalyzer is a class that defines an interface for controlling
  Pause the frame analysis for one of the tutorial modes. The analyzer can resume again from the paused state.
  @param tutorialMode `MiSnapFacialCaptureTuturialMode`
 */
-- (void)pauseFor:(MiSnapFacialCaptureTuturialMode)tutorialMode;
+- (void)pauseFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
 /**
  Starts the frame analysis or resumes if it was paused
 */

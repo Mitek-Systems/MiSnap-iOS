@@ -94,7 +94,7 @@ extension Foundation.NSNotification.Name {
   }
 }
 public enum MiSnapNFCInvalidationReason : Swift.String {
-  case cancelled
+  case cancel
   case timeout
   case error
   case success
@@ -133,7 +133,7 @@ extension MiSnapNFCReader : CoreNFC.NFCTagReaderSessionDelegate {
 }
 @_inheritsConvenienceInitializers @available(iOS 13.0, *)
 @objc public class MiSnapNFCChipLocator : ObjectiveC.NSObject {
-  @objc public class func chipLocation(mrzString: Swift.String, dateOfBirth: Swift.String, dateOfExpiry: Swift.String) -> MiSnapNFCChipLocation
+  @objc public class func chipLocation(mrzString: Swift.String, documentNumber: Swift.String, dateOfBirth: Swift.String, dateOfExpiry: Swift.String) -> MiSnapNFCChipLocation
   @objc override dynamic public init()
   @objc deinit
 }

@@ -36,27 +36,27 @@ typedef NS_ENUM(NSInteger, MiSnapFacialCaptureMode) {
 /**
  Tutorial mode
  */
-typedef NS_ENUM(NSInteger, MiSnapFacialCaptureTuturialMode) {
+typedef NS_ENUM(NSInteger, MiSnapFacialCaptureTutorialMode) {
     /**
      Tutorial mode is not set
      */
-    MiSnapFacialCaptureTuturialModeNone = 0,
+    MiSnapFacialCaptureTutorialModeNone = 0,
     /**
      Tutorial that's presented before a session is started
      */
-    MiSnapFacialCaptureTuturialModeInstruction,
+    MiSnapFacialCaptureTutorialModeInstruction,
     /**
      Tutorial that's presented when a user presses "Help" button
      */
-    MiSnapFacialCaptureTuturialModeHelp,
+    MiSnapFacialCaptureTutorialModeHelp,
     /**
      Tutorial that's presented upon a timeout in `MiSnapFacialCaptureModeAuto`
      */
-    MiSnapFacialCaptureTuturialModeTimeout,
+    MiSnapFacialCaptureTutorialModeTimeout,
     /**
      Tutorial that's presented to a user to visually inspect an image
      */
-    MiSnapFacialCaptureTuturialModeReview
+    MiSnapFacialCaptureTutorialModeReview
 };
 /**
 MiSnapFacialCaptureParameters is a class that defines an interface for controlling a frame acquisition thresholds.
@@ -169,12 +169,6 @@ MiSnapFacialCaptureParameters is a class that defines an interface for controlli
  Default: 0
  */
 @property (nonatomic, readwrite) NSTimeInterval analysisDelayTime;
-/**
- Indicates whether an overlay should display detected face landmarks for debugging purposes
- 
- Default: `FALSE`
- */
-@property (nonatomic, readwrite) BOOL highlightLandmarks;
 /**
  An object that configures camera specific parameters
  */

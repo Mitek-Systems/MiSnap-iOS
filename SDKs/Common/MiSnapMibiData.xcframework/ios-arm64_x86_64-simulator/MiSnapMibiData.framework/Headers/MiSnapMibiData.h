@@ -48,11 +48,15 @@ typedef NS_ENUM(NSInteger, MiSnapMibiDataElement) {
     /**
      Platfrom
      */
-    MiSnapMibiDataElementPlatfrom,
+    MiSnapMibiDataElementPlatform,
     /**
      OS
      */
     MiSnapMibiDataElementOS,
+    /**
+     ID
+     */
+    MiSnapMibiDataElementID,
     /**
      Modules
      */
@@ -65,6 +69,18 @@ typedef NS_ENUM(NSInteger, MiSnapMibiDataElement) {
      Version
      */
     MiSnapMibiDataElementVersion,
+    /**
+     License
+     */
+    MiSnapMibiDataElementLicense,
+    /**
+     GPO
+     */
+    MiSnapMibiDataElementGPO,
+    /**
+     ExpiryDate
+     */
+    MiSnapMibiDataElementExpiryDate,
     /**
      Parameters
      */
@@ -124,7 +140,11 @@ typedef NS_ENUM(NSInteger, MiSnapMibiDataElement) {
  */
 - (void)setModuleWithName:(NSString * _Nonnull)name version:(NSString * _Nonnull)version;
 /**
- Sets session info
+ Sets session info with an option to reset previous session infos
+ */
+- (void)setSessionInfo:(NSDictionary * _Nonnull)dictionary resetOld:(BOOL)resetOld;
+/**
+ Sets session info without resetting previous session infos
  */
 - (void)setSessionInfo:(NSDictionary * _Nonnull)dictionary;
 /**
@@ -163,6 +183,10 @@ typedef NS_ENUM(NSInteger, MiSnapMibiDataElement) {
  @return string that represents base64 encoded image data
  */
 - (NSString * _Nullable)base64Encoding:(NSData * _Nonnull)input;
+/**
+ Returns string value for a given `MiSnapMibiDataElement`
+ */
++ (NSString * _Nonnull)stringFromMibiDataElement:(MiSnapMibiDataElement)element;
 
 @end
 

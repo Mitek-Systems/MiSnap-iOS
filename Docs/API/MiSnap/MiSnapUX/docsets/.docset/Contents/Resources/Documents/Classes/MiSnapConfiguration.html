@@ -54,6 +54,12 @@
                 <a class="nav-group-task-link" href="../Classes/MiSnapLocalizationConfiguration.html">MiSnapLocalizationConfiguration</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapTutorialViewControllerConfiguration.html">MiSnapTutorialViewControllerConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapTutorialViewControllerInstructionConfiguration.html">MiSnapTutorialViewControllerInstructionConfiguration</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapUX.html">MiSnapUX</a>
               </li>
               <li class="nav-group-task">
@@ -69,6 +75,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapReviewMode.html">MiSnapReviewMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapTutorialType.html">MiSnapTutorialType</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapUxTutorialMode.html">MiSnapUxTutorialMode</a>
@@ -421,6 +430,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(py)tutorial"></a>
+                    <a name="//apple_ref/swift/Property/tutorial" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(py)tutorial">tutorial</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tutorial configuration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">tutorial</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapTutorialViewControllerConfiguration.html">MiSnapTutorialViewControllerConfiguration</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)init"></a>
                     <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)init">init()</a>
@@ -503,7 +540,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomParameters</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapParameters</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomParameters</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapParameters</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -531,7 +568,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomUxParameters</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/MiSnapUxParameters.html">MiSnapUxParameters</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomUxParameters</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/MiSnapUxParameters.html">MiSnapUxParameters</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -559,7 +596,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomGuide</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapGuideViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomGuide</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapGuideViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -587,7 +624,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomHint</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapHintViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomHint</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapHintViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -615,7 +652,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomGlare</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapGlareViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomGlare</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapGlareViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -643,7 +680,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomCancel</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapCancelViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomCancel</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapCancelViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -671,7 +708,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomHelp</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapHelpViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomHelp</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapHelpViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -699,7 +736,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomTorch</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapTorchViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomTorch</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapTorchViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -727,7 +764,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomCameraShutter</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapCameraShutterViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomCameraShutter</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapCameraShutterViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -755,7 +792,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomRecordingIndicator</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapRecordingIndicatorViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomRecordingIndicator</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapRecordingIndicatorViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -783,7 +820,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomSuccessCheckmark</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapSuccessCheckmarkViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomSuccessCheckmark</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapSuccessCheckmarkViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -811,7 +848,35 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomLocalization</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/MiSnapLocalizationConfiguration.html">MiSnapLocalizationConfiguration</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomLocalization</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/MiSnapLocalizationConfiguration.html">MiSnapLocalizationConfiguration</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomInstructionWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/withCustomInstruction(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomInstructionWithCompletion:">withCustomInstruction(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience function for tutorial instruction type customization</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomInstruction</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/MiSnapTutorialViewControllerInstructionConfiguration.html">MiSnapTutorialViewControllerInstructionConfiguration</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>

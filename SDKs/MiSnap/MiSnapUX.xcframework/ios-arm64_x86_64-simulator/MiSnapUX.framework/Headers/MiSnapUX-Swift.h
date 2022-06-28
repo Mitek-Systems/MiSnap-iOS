@@ -227,7 +227,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class MiSnapCameraShutterViewConfiguration;
 @class MiSnapRecordingIndicatorViewConfiguration;
 @class MiSnapSuccessCheckmarkViewConfiguration;
+@class MiSnapTutorialViewControllerConfiguration;
 @class MiSnapLocalizationConfiguration;
+@class MiSnapTutorialViewControllerInstructionConfiguration;
 @class NSString;
 
 /// A session  configuration
@@ -255,6 +257,8 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 @property (nonatomic, readonly, strong) MiSnapRecordingIndicatorViewConfiguration * _Nonnull recordingIndicator;
 /// Success checkmark view configuration
 @property (nonatomic, readonly, strong) MiSnapSuccessCheckmarkViewConfiguration * _Nonnull successCheckmark;
+/// Tutorial configuration
+@property (nonatomic, readonly, strong) MiSnapTutorialViewControllerConfiguration * _Nonnull tutorial;
 /// Creates and returns configuration object with default UX configuration.
 /// <ul>
 ///   <li>
@@ -293,6 +297,8 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 - (MiSnapConfiguration * _Nonnull)withCustomSuccessCheckmarkWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessCheckmarkViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for tutorial instruction type customization
+- (MiSnapConfiguration * _Nonnull)withCustomInstructionWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapTutorialViewControllerInstructionConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for applying UX customization
 - (MiSnapConfiguration * _Nonnull)applying:(MiSnapConfiguration * _Nonnull)template_ SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for initializing a configuration with given SDK and UX parameters
@@ -324,6 +330,23 @@ typedef SWIFT_ENUM(NSInteger, MiSnapReviewMode, open) {
   MiSnapReviewModeAutoAndManual = 1,
 };
 
+/// Tutorial type
+typedef SWIFT_ENUM(NSInteger, MiSnapTutorialType, open) {
+/// Default tutorial
+  MiSnapTutorialTypeDefaultType = 0,
+/// Passport QR tutorial
+  MiSnapTutorialTypePassportQr = 1,
+};
+
+
+/// Tutorial view controller configuration
+SWIFT_CLASS("_TtC8MiSnapUX41MiSnapTutorialViewControllerConfiguration")
+@interface MiSnapTutorialViewControllerConfiguration : NSObject
+/// Tutorial instruction configuration
+@property (nonatomic, strong) MiSnapTutorialViewControllerInstructionConfiguration * _Nonnull instruction;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 enum MiSnapUxTutorialMode : NSInteger;
 
 /// Defines an interface for delegates of <code>MiSnapTutorialViewController</code> to receive callbacks
@@ -337,6 +360,16 @@ SWIFT_PROTOCOL("_TtP8MiSnapUX36MiSnapTutorialViewControllerDelegate_")
 @required
 /// A cancel button is pressed
 - (void)tutorialCancelButtonAction;
+@end
+
+
+/// Tutorial instruction configuration
+SWIFT_CLASS("_TtC8MiSnapUX52MiSnapTutorialViewControllerInstructionConfiguration")
+@interface MiSnapTutorialViewControllerInstructionConfiguration : NSObject
+/// Tutorial type
+@property (nonatomic) enum MiSnapTutorialType type;
+/// Default initializer
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSNumber;
@@ -456,6 +489,7 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 
 
 
+
 @interface MiSnapViewController (SWIFT_EXTENSION(MiSnapUX)) <MiSnapTutorialViewControllerDelegate>
 /// Called when a tutorial view controller’s continue button is pressed
 /// note:
@@ -491,7 +525,6 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 /// Only exposed due to public status of parent’s function. Do not call it.
 - (void)didFinishConfiguringSession;
 @end
-
 
 @class MiSnapResult;
 @class NSException;
@@ -817,7 +850,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class MiSnapCameraShutterViewConfiguration;
 @class MiSnapRecordingIndicatorViewConfiguration;
 @class MiSnapSuccessCheckmarkViewConfiguration;
+@class MiSnapTutorialViewControllerConfiguration;
 @class MiSnapLocalizationConfiguration;
+@class MiSnapTutorialViewControllerInstructionConfiguration;
 @class NSString;
 
 /// A session  configuration
@@ -845,6 +880,8 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 @property (nonatomic, readonly, strong) MiSnapRecordingIndicatorViewConfiguration * _Nonnull recordingIndicator;
 /// Success checkmark view configuration
 @property (nonatomic, readonly, strong) MiSnapSuccessCheckmarkViewConfiguration * _Nonnull successCheckmark;
+/// Tutorial configuration
+@property (nonatomic, readonly, strong) MiSnapTutorialViewControllerConfiguration * _Nonnull tutorial;
 /// Creates and returns configuration object with default UX configuration.
 /// <ul>
 ///   <li>
@@ -883,6 +920,8 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 - (MiSnapConfiguration * _Nonnull)withCustomSuccessCheckmarkWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessCheckmarkViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for tutorial instruction type customization
+- (MiSnapConfiguration * _Nonnull)withCustomInstructionWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapTutorialViewControllerInstructionConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for applying UX customization
 - (MiSnapConfiguration * _Nonnull)applying:(MiSnapConfiguration * _Nonnull)template_ SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for initializing a configuration with given SDK and UX parameters
@@ -914,6 +953,23 @@ typedef SWIFT_ENUM(NSInteger, MiSnapReviewMode, open) {
   MiSnapReviewModeAutoAndManual = 1,
 };
 
+/// Tutorial type
+typedef SWIFT_ENUM(NSInteger, MiSnapTutorialType, open) {
+/// Default tutorial
+  MiSnapTutorialTypeDefaultType = 0,
+/// Passport QR tutorial
+  MiSnapTutorialTypePassportQr = 1,
+};
+
+
+/// Tutorial view controller configuration
+SWIFT_CLASS("_TtC8MiSnapUX41MiSnapTutorialViewControllerConfiguration")
+@interface MiSnapTutorialViewControllerConfiguration : NSObject
+/// Tutorial instruction configuration
+@property (nonatomic, strong) MiSnapTutorialViewControllerInstructionConfiguration * _Nonnull instruction;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 enum MiSnapUxTutorialMode : NSInteger;
 
 /// Defines an interface for delegates of <code>MiSnapTutorialViewController</code> to receive callbacks
@@ -927,6 +983,16 @@ SWIFT_PROTOCOL("_TtP8MiSnapUX36MiSnapTutorialViewControllerDelegate_")
 @required
 /// A cancel button is pressed
 - (void)tutorialCancelButtonAction;
+@end
+
+
+/// Tutorial instruction configuration
+SWIFT_CLASS("_TtC8MiSnapUX52MiSnapTutorialViewControllerInstructionConfiguration")
+@interface MiSnapTutorialViewControllerInstructionConfiguration : NSObject
+/// Tutorial type
+@property (nonatomic) enum MiSnapTutorialType type;
+/// Default initializer
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSNumber;
@@ -1046,6 +1112,7 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 
 
 
+
 @interface MiSnapViewController (SWIFT_EXTENSION(MiSnapUX)) <MiSnapTutorialViewControllerDelegate>
 /// Called when a tutorial view controller’s continue button is pressed
 /// note:
@@ -1081,7 +1148,6 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 /// Only exposed due to public status of parent’s function. Do not call it.
 - (void)didFinishConfiguringSession;
 @end
-
 
 @class MiSnapResult;
 @class NSException;

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapUX-Swift.h</key>
 		<data>
-		EDvPxasc+dD0PKTF0oU+XCyLHps=
+		JBoxkT4OJuK4RwQUEu4bli6vasg=
 		</data>
 		<key>Headers/MiSnapUX.h</key>
 		<data>
@@ -18,51 +18,51 @@
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		E1tyFFR4+aAWPGjU+NFd3nh5Ggo=
+		yBPxxb3nNVZ5ekGQxOhjAxOorFY=
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gAAgQkJtctipkZuj4UHNSvBna60=
+		MOWC6pUzT4px7sOocW71c9yFxFk=
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Uua2BHCuXSsAJNKsJ100aoJwPEw=
+		BuPWK55mEMka75/1dwgwNweMmwY=
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		E1tyFFR4+aAWPGjU+NFd3nh5Ggo=
+		yBPxxb3nNVZ5ekGQxOhjAxOorFY=
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		gAAgQkJtctipkZuj4UHNSvBna60=
+		MOWC6pUzT4px7sOocW71c9yFxFk=
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Uua2BHCuXSsAJNKsJ100aoJwPEw=
+		BuPWK55mEMka75/1dwgwNweMmwY=
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		wlrjV9ZNH6Saogrr/IMWAge3ESw=
+		W4HAcXqBkJBFXS4N/bb5gGsCuYY=
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qFtROkbzXtmdGyxe/GYFJvwhArA=
+		G8dABFAIpyc7JSJ5YnR1q4awW5U=
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9Epqd9yWG5wRmz6cDX/bIqz8sPI=
+		IXyrIZeQVf+T+u2wa4B83S+Oc4A=
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		wlrjV9ZNH6Saogrr/IMWAge3ESw=
+		W4HAcXqBkJBFXS4N/bb5gGsCuYY=
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		qFtROkbzXtmdGyxe/GYFJvwhArA=
+		G8dABFAIpyc7JSJ5YnR1q4awW5U=
 		</data>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		9Epqd9yWG5wRmz6cDX/bIqz8sPI=
+		IXyrIZeQVf+T+u2wa4B83S+Oc4A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,7 +72,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5pN8yKZlro1cV6LEY+UOawcrnWY=
+			XUvy4z7/wpEliGVEZXcmxy4ONjM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1CyyasjtxVrzJlzcp/PXLETAc0I=
+			DjeTRUiBUgv7G7TADONwJS4PAak=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8LTe92w4YqIL3qXE0xF7BSeoGIQ=
+			VBq8mLuZjW4AgpzGT4v6i/refig=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -139,6 +139,18 @@
 		<data>
 		QYgnwelQIUrEDoadhBiirAlSwZE=
 		</data>
+		<key>misnap_tutorial_passport_qr.jpg</key>
+		<data>
+		GKw+6XcXs9QTobrDEe08OnOAL58=
+		</data>
+		<key>misnap_tutorial_passport_qr_portrait.jpg</key>
+		<data>
+		jBSG7yS17LQWgR48omW/TQZMsgs=
+		</data>
+		<key>misnap_tutorial_passport_qr_portrait_2.jpg</key>
+		<data>
+		kMWCmmEyL19wmKrf2lj1PgLbtPk=
+		</data>
 		<key>misnap_tutorial_red_arrow.png</key>
 		<data>
 		6RLAKRQcJB5Qd+rLV9/WI2T8FRg=
@@ -150,7 +162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			97i3gMdSBL30JYBaL88rWTVZrQrM3JFJBh3u7xdzrXA=
+			DCiVJgR/DwVELgC1YDyT0Lqyp9lLDW51jpEmeoj63XU=
 			</data>
 		</dict>
 		<key>Headers/MiSnapUX.h</key>
@@ -164,84 +176,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e8m+Ai/Yq3MLmflE1I+9xq5jq/n/poAJaRDcxfiodrM=
+			JVSa0tIOgc4QE8ThhJAmz5o5SboF3Mj57qIKd4Jj1iE=
 			</data>
 		</dict>
 		<key>Modules/MiSnapUX.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3sOLB5sSots1Nmh7jXTsDVmBMllv2XNbxkyIMlDl32o=
+			loEUms8WUBraFhPr69IvXXMf509qR3nGYmd2rz2nXi8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapUX.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sLekU22DgVM7gO6Yy+f34xwJyI9RmQvkEGRg9XZ0LNs=
+			llzM0RNWHM9P0CiF0Gn6gbBz2Ysa37n2JTvYe1uNKrs=
 			</data>
 		</dict>
 		<key>Modules/MiSnapUX.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e8m+Ai/Yq3MLmflE1I+9xq5jq/n/poAJaRDcxfiodrM=
+			JVSa0tIOgc4QE8ThhJAmz5o5SboF3Mj57qIKd4Jj1iE=
 			</data>
 		</dict>
 		<key>Modules/MiSnapUX.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3sOLB5sSots1Nmh7jXTsDVmBMllv2XNbxkyIMlDl32o=
+			loEUms8WUBraFhPr69IvXXMf509qR3nGYmd2rz2nXi8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapUX.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sLekU22DgVM7gO6Yy+f34xwJyI9RmQvkEGRg9XZ0LNs=
+			llzM0RNWHM9P0CiF0Gn6gbBz2Ysa37n2JTvYe1uNKrs=
 			</data>
 		</dict>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SkDp1w7NLfSMgwLwIhKgGg5CbesnDXq/8gsCwlWIz7w=
+			xuo0qI/7bGuWjKKCwU4RBsgOw0f6eR2O1VaUHf7w0qg=
 			</data>
 		</dict>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VWEtoBtepVuGlHQw2CSFDAx7sP0N6BOb1QcAdz9i+ZM=
+			JX45BI5gY3EvlXCi378ONjNHvt4yCUJDyf7BwvWysnw=
 			</data>
 		</dict>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KKSj0B04JQ1/deJpoeT5PjDQ5JFml34D08AdxtIH8DQ=
+			g6emawfMWWY3Obeny3N9br+B2VZ0f6jIs/hdURVT4tY=
 			</data>
 		</dict>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SkDp1w7NLfSMgwLwIhKgGg5CbesnDXq/8gsCwlWIz7w=
+			xuo0qI/7bGuWjKKCwU4RBsgOw0f6eR2O1VaUHf7w0qg=
 			</data>
 		</dict>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VWEtoBtepVuGlHQw2CSFDAx7sP0N6BOb1QcAdz9i+ZM=
+			JX45BI5gY3EvlXCi378ONjNHvt4yCUJDyf7BwvWysnw=
 			</data>
 		</dict>
 		<key>Modules/MiSnapUX.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KKSj0B04JQ1/deJpoeT5PjDQ5JFml34D08AdxtIH8DQ=
+			g6emawfMWWY3Obeny3N9br+B2VZ0f6jIs/hdURVT4tY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -255,7 +267,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zy3Oy9zyxQGZW6B7cOsjcY9JLoCqiK3ruMyv1Yg4lqA=
+			txh73WCREghOZW1XW4B3r2ZpzqoCm91h4bhHzrQelCg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -264,7 +276,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2GuQj+Sm5sfCsRDRifJ9KZmrX6GNPOUhijKuwkZ6N2Y=
+			3faZBEzUa/lyFm3DWeble6+PvuamnYEEBRAKSwJXvus=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -273,7 +285,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nin+k9YrqbHCNNi8p+bar2NbFWT1cw+vA50LfGg4/KI=
+			Fs7we9fCNwvXRON2YEWju7V2J2PULkaF8VSRt+QKP90=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -353,6 +365,27 @@
 			<key>hash2</key>
 			<data>
 			og968pLUUZ/FyuMeVBqALbkzP7VexO7ANjtbpeskRlo=
+			</data>
+		</dict>
+		<key>misnap_tutorial_passport_qr.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Av4UdgTGZnMM0rdUu5Csuo5B8LkWFOwrlQtXNm5hl20=
+			</data>
+		</dict>
+		<key>misnap_tutorial_passport_qr_portrait.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Y5XZCNO+IJACxolHGvNIUW7hAPDp/E5PHp/J1J04QW4=
+			</data>
+		</dict>
+		<key>misnap_tutorial_passport_qr_portrait_2.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GQnz+cym1yO8iRcmSBjerMi3ykujY6WkAMMiK5FLpRE=
 			</data>
 		</dict>
 		<key>misnap_tutorial_red_arrow.png</key>

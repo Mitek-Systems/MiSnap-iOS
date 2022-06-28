@@ -77,6 +77,9 @@
                 <a class="nav-group-task-link" href="../Enums/IQAFailure.html">IQAFailure</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapScienceAdditionalStep.html">MiSnapScienceAdditionalStep</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapScienceBarcodeType.html">MiSnapScienceBarcodeType</a>
               </li>
               <li class="nav-group-task">
@@ -1197,7 +1200,7 @@ See <code><a href="../Enums/MiSnapScienceExpirationStatus.html">MiSnapScienceExp
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A string representation of an <code><a href="../Classes/MiSnapScienceExtractionResult.html#/c:objc(cs)MiSnapScienceExtractionResult(py)expirationStatus">expirationStatus</a></code></p>
+                        <p>A string representation of <code><a href="../Classes/MiSnapScienceExtractionResult.html#/c:objc(cs)MiSnapScienceExtractionResult(py)expirationStatus">expirationStatus</a></code></p>
 
                       </div>
                       <div class="declaration">
@@ -1268,6 +1271,60 @@ See <code><a href="../Enums/MiSnapScienceExpirationStatus.html">MiSnapScienceExp
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)MiSnapScienceExtractionResult(py)barcodeType"></a>
+                    <a name="//apple_ref/objc/Property/barcodeType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapScienceExtractionResult(py)barcodeType">barcodeType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A barcode type</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/MiSnapScienceBarcodeType.html">MiSnapScienceBarcodeType</a></span> <span class="n">barcodeType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapScienceExtractionResult(py)barcodeTypeString"></a>
+                    <a name="//apple_ref/objc/Property/barcodeTypeString" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapScienceExtractionResult(py)barcodeTypeString">barcodeTypeString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A string representation of <code><a href="../Classes/MiSnapScienceExtractionResult.html#/c:objc(cs)MiSnapScienceExtractionResult(py)barcodeType">barcodeType</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">barcodeTypeString</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)MiSnapScienceExtractionResult(py)mrzString"></a>
                     <a name="//apple_ref/objc/Property/mrzString" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)MiSnapScienceExtractionResult(py)mrzString">mrzString</a>
@@ -1313,6 +1370,60 @@ See <code><a href="../Enums/MiSnapScienceExpirationStatus.html">MiSnapScienceExp
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">uniqueOcrStrings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapScienceExtractionResult(py)additionalStep"></a>
+                    <a name="//apple_ref/objc/Property/additionalStep" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapScienceExtractionResult(py)additionalStep">additionalStep</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Additional steps that should be presented as a result of finishing the current session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/MiSnapScienceAdditionalStep.html">MiSnapScienceAdditionalStep</a></span> <span class="n">additionalStep</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapScienceExtractionResult(py)additionalStepString"></a>
+                    <a name="//apple_ref/objc/Property/additionalStepString" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapScienceExtractionResult(py)additionalStepString">additionalStepString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A string representation of <code><a href="../Classes/MiSnapScienceExtractionResult.html#/c:objc(cs)MiSnapScienceExtractionResult(py)additionalStep">additionalStep</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">additionalStepString</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>

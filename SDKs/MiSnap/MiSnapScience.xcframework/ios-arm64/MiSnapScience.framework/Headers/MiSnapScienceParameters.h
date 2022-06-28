@@ -290,6 +290,12 @@ typedef NS_ENUM(NSInteger, MiSnapScienceGeoRegion) {
  */
 @property (nonatomic, readwrite) MiSnapScienceGeoRegion geoRegion;
 /**
+ Indicate whether On-Device Classification should be done when licensed
+ 
+ Default: TRUE
+ */
+@property (nonatomic, readwrite) BOOL odcEnabled;
+/**
  String code for `MiSnapScienceDocumentType`
  */
 + (NSString * _Nonnull)documentTypeCodeFrom:(MiSnapScienceDocumentType)documentType;

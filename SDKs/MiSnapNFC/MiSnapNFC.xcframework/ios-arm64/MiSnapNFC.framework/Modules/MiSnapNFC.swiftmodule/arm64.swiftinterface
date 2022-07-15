@@ -108,6 +108,7 @@ public enum MiSnapNFCInvalidationReason : Swift.String {
 public class MiSnapNFCReader : ObjectiveC.NSObject {
   public init(logLevel: MiSnapNFCLogLevel = .info, timeout: Foundation.TimeInterval = 15.0)
   public func set(documentType: MiSnapNFCDocumentType)
+  public func set(logLevel: MiSnapNFCLogLevel)
   public func set(timeout: Foundation.TimeInterval)
   public func logModule(withName name: Swift.String, version: Swift.String)
   public func read(documentNumber: Swift.String = "", dateOfBirth: Swift.String = "", dateOfExpiry: Swift.String = "", mrz: Swift.String = "", skipCA: Swift.Bool = false, completed: @escaping ([Swift.String : Any]?, MiSnapNFCTagError?) -> Swift.Void)
@@ -172,13 +173,14 @@ public enum MiSnapNFCKey {
   public static let authenticationOutputs: Swift.String
   public static let invalidationReason: Swift.String
   public static let mibi: Swift.String
+  public static let requestDictionary: Swift.String
 }
-public enum MiSnapNFCLogLevel : Swift.Int {
-  case verbose
-  case debug
-  case info
-  case warning
-  case error
+@objc public enum MiSnapNFCLogLevel : Swift.Int {
+  case verbose = 0
+  case debug = 1
+  case info = 2
+  case warning = 3
+  case error = 4
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

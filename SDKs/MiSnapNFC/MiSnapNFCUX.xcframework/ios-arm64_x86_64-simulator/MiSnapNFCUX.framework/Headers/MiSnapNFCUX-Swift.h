@@ -274,6 +274,8 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX21MiSnapNFCUxParameters")
 /// will be dismissed by a presenting view controller
 /// Default: <code>true</code>
 @property (nonatomic) BOOL autoDismiss;
+/// Log level
+@property (nonatomic) enum MiSnapNFCLogLevel logLevel;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -614,6 +616,8 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX21MiSnapNFCUxParameters")
 /// will be dismissed by a presenting view controller
 /// Default: <code>true</code>
 @property (nonatomic) BOOL autoDismiss;
+/// Log level
+@property (nonatomic) enum MiSnapNFCLogLevel logLevel;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

@@ -147,7 +147,9 @@
     The value is automatically set to TRUE if either of below cases is TRUE:
 
 </div><ul>
-<li>a ODC feature is not supported in the license</li>
+<li>an ODC feature is not supported in the license</li>
+<li>an ODC feature is disabled in parameters</li>
+<li>a device hardware is not capable of performing ODC</li>
 <li>a device running iOS older than 13</li>
 <li>a deposit document type (check front or back) is invoked</li>
 </ul>
@@ -217,6 +219,33 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">documentTypeString</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapScienceClassificationResult(py)supported"></a>
+                    <a name="//apple_ref/objc/Property/supported" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapScienceClassificationResult(py)supported">supported</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether ODC is supported</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">supported</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>

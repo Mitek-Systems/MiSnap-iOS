@@ -261,6 +261,20 @@ SWIFT_CLASS("_TtC9MiSnapNFC34MiSnapNFCLocalizationConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
+/// Log level
+typedef SWIFT_ENUM(NSInteger, MiSnapNFCLogLevel, open) {
+/// Verbose
+  MiSnapNFCLogLevelVerbose = 0,
+/// Debug
+  MiSnapNFCLogLevelDebug = 1,
+/// Info
+  MiSnapNFCLogLevelInfo = 2,
+/// Warning
+  MiSnapNFCLogLevelWarning = 3,
+/// Error
+  MiSnapNFCLogLevelError = 4,
+};
+
 
 /// Chip reader
 SWIFT_CLASS("_TtC9MiSnapNFC15MiSnapNFCReader") SWIFT_AVAILABILITY(ios,introduced=13)

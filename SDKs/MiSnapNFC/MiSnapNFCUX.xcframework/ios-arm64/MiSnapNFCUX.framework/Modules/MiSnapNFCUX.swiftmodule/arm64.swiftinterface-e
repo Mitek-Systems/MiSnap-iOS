@@ -60,6 +60,7 @@ import _Concurrency
   }
   @objc public var skipCA: Swift.Bool
   @objc public var autoDismiss: Swift.Bool
+  @objc public var logLevel: MiSnapNFCLogLevel
   @objc override dynamic public var description: Swift.String {
     @objc get
   }

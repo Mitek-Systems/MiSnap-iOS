@@ -90,7 +90,9 @@ NS_ASSUME_NONNULL_BEGIN
  Indicates whether SDK is done with classification step.
  
  @note The value is automatically set to TRUE if either of below cases is TRUE:
- - a ODC feature is not supported in the license
+ - an ODC feature is not supported in the license
+ - an ODC feature is disabled in parameters
+ - a device hardware is not capable of performing ODC
  - a device running iOS older than 13
  - a deposit document type (check front or back) is invoked
  */
@@ -105,6 +107,10 @@ NS_ASSUME_NONNULL_BEGIN
  A string representation of a document type
  */
 @property (nonatomic, readonly) NSString * _Nonnull documentTypeString;
+/**
+ Indicates whether ODC is supported
+ */
+@property (nonatomic, readonly) BOOL supported;
 
 @end
 

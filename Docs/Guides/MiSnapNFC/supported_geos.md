@@ -17,7 +17,6 @@
 | Austria (AUT)            	| Passport         	|
 | Belgium (BEL)            	| Passport         	|
 |                          	| ID               	|
-|                          	| Drivers License  	|
 |                          	| Residence Permit 	|
 | Brazil (BRA)             	| Passport         	|
 | Bulgaria (BGR)           	| Passport         	|
@@ -43,7 +42,6 @@
 |                          	| Passport Card    	|
 | Italy (ITA)              	| Passport         	|
 |                          	| ID               	|
-|                          	| Drivers License  	|
 |                          	| Residence Permit 	|
 | Latvia (LVA)             	| Passport         	|
 |                          	| ID               	|
@@ -74,7 +72,6 @@
 |                          	| Residence Permit 	|
 | Switzerland (CHE)        	| Passport         	|
 | Turkey (TUR)             	| Passport         	|
-| Ukraine (UKR)            	| Passport         	|
 | United Kingdom (UK)      	| Passport         	|
 |                          	| Residence Permit 	|
 | United States (US)       	| Passport         	|
@@ -91,6 +88,7 @@
 |------------------------------	|------------------	|
 | Austria (AUT)                	| Residence Permit 	|
 | Albania (ALB)                	| Passport         	|
+|                              	| ID               	|
 | Algeria (DZA)                	| Passport         	|
 | Argentina (ARG)              	| Passport         	|
 | Azerbaijan (AZE)             	| Passport         	|
@@ -99,7 +97,6 @@
 | Belarus (BLR)                	| Passport         	|
 |                              	| ID               	|
 | Bosnia and Herzegovina (BIH) 	| Passport         	|
-|                              	| ID               	|
 | Botswana (BWA)               	| Passport         	|
 | Bulgaria (BGR)               	| Residence Permit 	|
 | Cameroon (CMR)               	| Passport         	|
@@ -114,16 +111,18 @@
 |                              	| Residence Permit 	|
 | Denmark (DNK)                	| Residence Permit 	|
 | Ecuador (ECU)                	| Passport         	|
+|                              	| ID               	|
 | Estonia (EST)                	| Passport         	|
 | Finland (FIN)                	| ID               	|
 |                              	| Residence Permit 	|
 | Gabon (GAB)                  	| Passport         	|
-|                              	| ID               	|
 | Georgia (GEO)                	| Passport         	|
+|                              	| ID               	|
 | Greece (GRC)                 	| Residence Permit 	|
 | Hungary (HUN)                	| Residence Permit 	|
 | Indonesia (IDN)              	| Passport         	|
 | Iran (IRN)                   	| Passport         	|
+| Japan (JPN)                   | Passport       	|
 | Kazakhstan (KAZ)             	| Passport         	|
 | Korea (Republic of) (KOR)    	| Passport         	|
 | Kosovo (RKS)                 	| Passport         	|
@@ -134,9 +133,9 @@
 | Lebanon (LBN)                	| Passport         	|
 | Liechtenstein (LIE)          	| Passport         	|
 | Luxembourg (LUX)             	| ID               	|
-|                              	| Residence Permit 	|
 | Malaysia (MYS)               	| Passport         	|
 | Maldives (MDV)               	| Passport         	|
+|                           	| Passport Card   	|
 | Malta (MLT)                  	| Passport         	|
 | Mexico (MEX)                 	| Passport         	|
 | Moldova (MDA)                	| Passport         	|
@@ -153,7 +152,6 @@
 | Panama (PAN)                 	| ID               	|
 | Paraguay (PRY)               	| Passport         	|
 | Peru (PER)                   	| Passport         	|
-|                              	| ID               	|
 | Qatar (QAT)                  	| Passport         	|
 | Rwanda (RWA)                 	| Passport         	|
 | Saint Kitts and Nevis (KNA)  	| Passport         	|

@@ -21,8 +21,6 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NFCReaderUsageDescription</key>
-	<string>This app needs access to NFC antenna to read your electronic documents</string>
 	<key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
 	<array>
 		<string>A0000002471001</string>

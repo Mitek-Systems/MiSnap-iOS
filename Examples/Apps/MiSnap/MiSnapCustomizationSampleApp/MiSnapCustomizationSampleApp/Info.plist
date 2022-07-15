@@ -21,9 +21,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>This app needs access to Camera to take pictures of your document</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>This app needs access to Microphone to record audio during document capture session per regulation</string>
 </dict>
 </plist>

@@ -60,4 +60,6 @@
 "misnap_nfc_sdk_error_more_than_one_tag" = "Se encontró mas de un Chip. Por favor muestre solo 1 chip.";
 "misnap_nfc_sdk_error_invalid_tag" = "Chip inválido";
 "misnap_nfc_sdk_error_connection_not_established" = "Error de Conexión. Por favor intente de nuevo";
+"misnap_nfc_sdk_error_system_resource_unavailable" = "Lo sentimos, hubo un error del sistema.\nReinicie su dispositivo y reinicie el flujo";
+"misnap_nfc_sdk_error_system_error" = "Lo sentimos, hubo un error del sistema.\nVuelva a intentarlo y reinicie un dispositivo si el error persiste";
 "misnap_nfc_sdk_error_unknown" = "Error desconocido";

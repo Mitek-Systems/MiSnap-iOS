@@ -226,6 +226,22 @@ extension CoreGraphics.CGSize {
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapFacialCaptureGuideConfiguration? = nil, fill: CoreGraphics.CGFloat, frame: CoreGraphics.CGRect)
   @objc deinit
 }
+@objc public enum MiSnapVoiceCaptureButtonStyle : Swift.Int {
+  case fill
+  case stroke
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapVoiceCaptureButton : UIKit.UIButton {
+  @objc @_Concurrency.MainActor(unsafe) public init(withTitle title: Swift.String, style: MiSnapVoiceCaptureButtonStyle, frame: CoreGraphics.CGRect)
+  @objc deinit
+}
+extension MiSnapVoiceCaptureButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+}
 @_inheritsConvenienceInitializers @objc public class MiSnapSuccessCheckmarkViewConfiguration : MiSnapStatelessViewConfiguration {
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
@@ -246,6 +262,74 @@ extension CoreGraphics.CGSize {
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCameraShutterView : MiSnapStatelessView {
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapCameraShutterViewConfiguration? = nil)
+  @objc deinit
+}
+@objc public enum MiSnapVoiceCaptureViewStatus : Swift.Int {
+  case success
+  case failure
+  case neutral
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureStatusViewConfiguration : ObjectiveC.NSObject {
+  @objc public var image: UIKit.UIImage?
+  @objc public var color: UIKit.UIColor
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureSuccessViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration {
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureFailureViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration {
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureNeutralViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration {
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureStatusViewsConfiguration : ObjectiveC.NSObject {
+  @objc public var status: MiSnapVoiceCaptureViewStatus
+  @objc public var diameter: CoreGraphics.CGFloat
+  @objc public var lineWidth: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc public var lineCap: QuartzCore.CAShapeLayerLineCap
+  @objc public var animationColor: UIKit.UIColor
+  @objc public var animationTime: CoreGraphics.CGFloat
+  @objc public var success: MiSnapVoiceCaptureSuccessViewConfiguration
+  @objc public var failure: MiSnapVoiceCaptureFailureViewConfiguration
+  @objc public var neutral: MiSnapVoiceCaptureNeutralViewConfiguration
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc public init(for status: MiSnapVoiceCaptureViewStatus)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapVoiceCaptureStatusView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapVoiceCaptureStatusViewsConfiguration? = nil, for step: Swift.Int? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public func update(for status: MiSnapVoiceCaptureViewStatus)
+  @objc @_Concurrency.MainActor(unsafe) public func startAnimation()
+  @objc @_Concurrency.MainActor(unsafe) public func removeAnimation()
   @objc deinit
 }
 @objc public enum MiSnapHintStyle : Swift.Int {
@@ -406,6 +490,12 @@ extension MiSnapFacialCaptureOutlineColorStyle : Swift.RawRepresentable {}
 extension MiSnapFacialCaptureOutlineState : Swift.Equatable {}
 extension MiSnapFacialCaptureOutlineState : Swift.Hashable {}
 extension MiSnapFacialCaptureOutlineState : Swift.RawRepresentable {}
+extension MiSnapVoiceCaptureButtonStyle : Swift.Equatable {}
+extension MiSnapVoiceCaptureButtonStyle : Swift.Hashable {}
+extension MiSnapVoiceCaptureButtonStyle : Swift.RawRepresentable {}
+extension MiSnapVoiceCaptureViewStatus : Swift.Equatable {}
+extension MiSnapVoiceCaptureViewStatus : Swift.Hashable {}
+extension MiSnapVoiceCaptureViewStatus : Swift.RawRepresentable {}
 extension MiSnapHintStyle : Swift.Equatable {}
 extension MiSnapHintStyle : Swift.Hashable {}
 extension MiSnapHintStyle : Swift.RawRepresentable {}

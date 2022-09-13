@@ -181,6 +181,10 @@ typedef NS_ENUM(NSInteger, MiSnapUxpEvent) {
      */
     MiSnapUxpEventAccessMechanismVerbose,
     /**
+     Verbose data is discarded
+     */
+    MiSnapUxpEventDiscardVerbose,
+    /**
      Verbose session is cancelled
      */
     MiSnapUxpEventCancelVerbose,

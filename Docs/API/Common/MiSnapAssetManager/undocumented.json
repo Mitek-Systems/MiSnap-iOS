@@ -1,6 +1,145 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureButton.swift",
+      "line": 10,
+      "symbol": "MiSnapVoiceCaptureButtonStyle",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureButton.swift",
+      "line": 11,
+      "symbol": "MiSnapVoiceCaptureButtonStyle.fill",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureButton.swift",
+      "line": 12,
+      "symbol": "MiSnapVoiceCaptureButtonStyle.stroke",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureButton.swift",
+      "line": 15,
+      "symbol": "MiSnapVoiceCaptureButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureButton.swift",
+      "line": 22,
+      "symbol": "MiSnapVoiceCaptureButton.init(withTitle:style:frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureButton.swift",
+      "line": 37,
+      "symbol": "MiSnapVoiceCaptureButton",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureButton.swift",
+      "line": 46,
+      "symbol": "MiSnapVoiceCaptureButton.traitCollectionDidChange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 10,
+      "symbol": "MiSnapVoiceCaptureViewStatus",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 11,
+      "symbol": "MiSnapVoiceCaptureViewStatus.success",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 12,
+      "symbol": "MiSnapVoiceCaptureViewStatus.failure",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 13,
+      "symbol": "MiSnapVoiceCaptureViewStatus.neutral",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 16,
+      "symbol": "MiSnapVoiceCaptureStatusViewConfiguration",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 44,
+      "symbol": "MiSnapVoiceCaptureSuccessViewConfiguration",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 63,
+      "symbol": "MiSnapVoiceCaptureFailureViewConfiguration",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 82,
+      "symbol": "MiSnapVoiceCaptureNeutralViewConfiguration",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 101,
+      "symbol": "MiSnapVoiceCaptureStatusViewsConfiguration",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 181,
+      "symbol": "MiSnapVoiceCaptureStatusView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 231,
+      "symbol": "MiSnapVoiceCaptureStatusView.update(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 312,
+      "symbol": "MiSnapVoiceCaptureStatusView.startAnimation()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapVoiceCaptureStatusView.swift",
+      "line": 406,
+      "symbol": "MiSnapVoiceCaptureStatusView.removeAnimation()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/stsuprenko/MobileVerify/Tools"
 }

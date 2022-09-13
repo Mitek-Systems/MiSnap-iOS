@@ -36,11 +36,15 @@ public enum MiSnapNFCTagError : Swift.Error, Swift.Equatable {
   case unknownImageFormat
   case notImplemented
   case fileNotFound
+  case wrongLength
+  case securityConditionNotSatisfied
   case paceInfoAbsent
   case unknownOid
   case unknownParameterId
   case caNotSupported
   case pollingRestarted
+  case systemResourceUnavailable
+  case systemError
   case invalidLicense(MiSnapLicenseStatus)
   public static func == (a: MiSnapNFCTagError, b: MiSnapNFCTagError) -> Swift.Bool
 }

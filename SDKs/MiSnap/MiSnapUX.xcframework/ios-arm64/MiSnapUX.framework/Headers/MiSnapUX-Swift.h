@@ -563,11 +563,11 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 /// Returns MiSnapScience version
 + (NSString * _Nonnull)miSnapScienceVersion SWIFT_WARN_UNUSED_RESULT;
 /// Checks a camera permission and asynchronously returns a result
-- (void)checkCameraPermissionWithHandler:(void (^ _Nonnull)(BOOL))handler;
++ (void)checkCameraPermissionWithHandler:(void (^ _Nonnull)(BOOL))handler;
 /// Checks a microphone permission and asynchronously returns a result
-- (void)checkMicrophonePermissionWithHandler:(void (^ _Nonnull)(BOOL))handler;
++ (void)checkMicrophonePermissionWithHandler:(void (^ _Nonnull)(BOOL))handler;
 /// Checks if a device has a given space in MB
-- (BOOL)hasMinDiskSpace:(NSInteger)minDiskSpace SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)hasMinDiskSpace:(NSInteger)minDiskSpace SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

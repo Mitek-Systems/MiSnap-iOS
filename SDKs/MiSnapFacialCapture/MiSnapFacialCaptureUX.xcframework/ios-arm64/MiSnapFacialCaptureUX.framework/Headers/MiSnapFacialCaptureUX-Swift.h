@@ -217,7 +217,7 @@ typedef SWIFT_ENUM(NSInteger, MiSnapFaceCaptureActivityType, open) {
 /// Enrollment
   MiSnapFaceCaptureActivityTypeEnrollment = 0,
 /// Verification
-  MiSnapFaceCaptureActivityTypeVerifiication = 1,
+  MiSnapFaceCaptureActivityTypeVerification = 1,
 };
 
 @class MiSnapFacialCaptureParameters;

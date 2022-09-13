@@ -1,0 +1,9 @@
+framework module VoiceSdk {
+    
+    header "common.h"
+    header "core.h"
+    header "signal.h"
+    header "speech.h"
+    header "speech_summary.h"
+    export *
+}

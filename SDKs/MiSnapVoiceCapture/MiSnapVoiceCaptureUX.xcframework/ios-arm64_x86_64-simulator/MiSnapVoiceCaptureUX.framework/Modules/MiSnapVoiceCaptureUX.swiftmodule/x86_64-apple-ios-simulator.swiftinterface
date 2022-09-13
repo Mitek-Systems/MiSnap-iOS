@@ -1,0 +1,79 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapVoiceCaptureUX
+import MiSnapAssetManager
+import MiSnapVoiceCapture
+@_exported import MiSnapVoiceCaptureUX
+import Swift
+import UIKit
+import _Concurrency
+@objc public class MiSnapVoiceCaptureConfiguration : ObjectiveC.NSObject {
+  @objc public var parameters: MiSnapVoiceCaptureParameters
+  @objc public var uxParameters: MiSnapVoiceCaptureUXParameters
+  @objc public var statusViews: MiSnapVoiceCaptureStatusViewsConfiguration
+  @objc public init(for activity: MiSnapVoiceCaptureActivity, phrase: Swift.String? = nil)
+  @objc public func withCustomParameters(completion: (MiSnapVoiceCaptureParameters) -> Swift.Void) -> MiSnapVoiceCaptureConfiguration
+  @objc public func withCustomUxParameters(completion: (MiSnapVoiceCaptureUXParameters) -> Swift.Void) -> MiSnapVoiceCaptureConfiguration
+  @objc public func withCustomStatusViewsConfiguration(completion: (MiSnapVoiceCaptureStatusViewsConfiguration) -> Swift.Void) -> MiSnapVoiceCaptureConfiguration
+  @objc public func withCustomLocalization(completion: (MiSnapVoiceCaptureLocalizationConfiguration) -> Swift.Void) -> MiSnapVoiceCaptureConfiguration
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public class MiSnapVoiceCaptureUXParameters : ObjectiveC.NSObject {
+  @objc public var showIntroductoryInstructionScreen: Swift.Bool
+  @objc public var autoDismiss: Swift.Bool
+  @objc public var accessibilityEnabled: Swift.Bool
+  @objc public var samplesCount: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc public var phrase: Swift.String? {
+    get
+  }
+  @objc public init(for activity: MiSnapVoiceCaptureActivity, phrase: Swift.String? = nil)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public protocol MiSnapVoiceCaptureViewControllerDelegate {
+  @objc func miSnapVoiceCaptureLicenseStatus(_ status: MiSnapLicenseStatus)
+  @objc func miSnapVoiceCaptureDidSelectPhrase(_ phrase: Swift.String)
+  @objc func miSnapVoiceCaptureSuccess(_ results: [MiSnapVoiceCaptureResult], for type: MiSnapVoiceCaptureActivity)
+  @objc func miSnapVoiceCaptureCancelled(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureError(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureShouldBeDismissed()
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapVoiceCaptureViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) public var configuration: MiSnapVoiceCaptureConfiguration {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapVoiceCaptureConfiguration, delegate: MiSnapVoiceCaptureViewControllerDelegate)
+  @objc @_Concurrency.MainActor(unsafe) public static func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> Swift.Void)
+  @objc @_Concurrency.MainActor(unsafe) public func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @objc deinit
+}
+extension MiSnapVoiceCaptureViewController : MiSnapVoiceCaptureRecorderDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderSuccess(_ result: MiSnapVoiceCaptureResult)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderFailure(_ result: MiSnapVoiceCaptureResult)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderError(_ result: MiSnapVoiceCaptureResult)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderCancel(_ result: MiSnapVoiceCaptureResult)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderLicenseStatus(_ status: MiSnapLicenseStatus)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderSpeechLength(_ speechLength: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderInterruption(_ type: AVFAudio.AVAudioSession.InterruptionType)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MiSnapVoiceCaptureLocalizationConfiguration : ObjectiveC.NSObject {
+  @objc public var bundle: Foundation.Bundle
+  @objc public var stringsName: Swift.String
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}

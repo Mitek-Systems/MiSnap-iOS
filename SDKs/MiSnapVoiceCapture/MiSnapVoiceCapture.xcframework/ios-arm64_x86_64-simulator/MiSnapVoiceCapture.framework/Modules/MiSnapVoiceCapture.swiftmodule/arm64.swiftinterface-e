@@ -1,0 +1,90 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapVoiceCapture
+import AVFoundation
+import MiSnapLicenseManager
+import MiSnapMibiData
+@_exported import MiSnapVoiceCapture
+import Swift
+import UIKit
+import _Concurrency
+@objc public enum MiSnapVoiceCaptureStatus : Swift.Int {
+  case none = 0
+  case tooNoisy = 1
+  case tooShort = 2
+  case good = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureResult : ObjectiveC.NSObject {
+  @objc public var data: Foundation.Data? {
+    get
+  }
+  @objc public var status: MiSnapVoiceCaptureStatus {
+    get
+  }
+  @objc public var speechLength: Swift.Float {
+    get
+  }
+  @objc public var snr: Swift.Float {
+    get
+  }
+  @objc public var mibiString: Swift.String? {
+    get
+  }
+  @objc public var error: Foundation.NSError? {
+    get
+  }
+  @objc override dynamic public init()
+  @objc public static func stringFromStatus(_ status: MiSnapVoiceCaptureStatus) -> Swift.String
+  @objc deinit
+}
+@objc public protocol MiSnapVoiceCaptureRecorderDelegate {
+  @objc func miSnapVoiceCaptureRecorderSuccess(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureRecorderFailure(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureRecorderCancel(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureRecorderError(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureRecorderSpeechLength(_ speechLength: Swift.Int)
+  @objc func miSnapVoiceCaptureRecorderInterruption(_ type: AVFAudio.AVAudioSession.InterruptionType)
+  @objc func miSnapVoiceCaptureRecorderLicenseStatus(_ status: MiSnapLicenseStatus)
+}
+@objc public class MiSnapVoiceCaptureRecorder : ObjectiveC.NSObject {
+  @objc public init(with parameters: MiSnapVoiceCaptureParameters, delegate: MiSnapVoiceCaptureRecorderDelegate)
+  @objc public func record()
+  @objc public func cancel()
+  @objc public func shutdown()
+  @objc public func logModule(named name: Swift.String, version: Swift.String)
+  @objc deinit
+}
+@objc public enum MiSnapVoiceCaptureActivity : Swift.Int {
+  case enrollment = 0
+  case verification = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class MiSnapVoiceCaptureParameters : ObjectiveC.NSObject {
+  @objc public var activity: MiSnapVoiceCaptureActivity {
+    get
+  }
+  @objc public var speechLengthMin: Swift.Float
+  @objc public var silenceLengthMax: Swift.Float
+  @objc public var snrMin: Swift.Float
+  @objc public var dictionary: [Swift.String : Swift.String] {
+    @objc get
+  }
+  @objc public init(for activity: MiSnapVoiceCaptureActivity)
+  @objc public static func string(from activity: MiSnapVoiceCaptureActivity) -> Swift.String
+  @objc deinit
+}
+extension MiSnapVoiceCaptureStatus : Swift.Equatable {}
+extension MiSnapVoiceCaptureStatus : Swift.Hashable {}
+extension MiSnapVoiceCaptureStatus : Swift.RawRepresentable {}
+extension MiSnapVoiceCaptureActivity : Swift.Equatable {}
+extension MiSnapVoiceCaptureActivity : Swift.Hashable {}
+extension MiSnapVoiceCaptureActivity : Swift.RawRepresentable {}

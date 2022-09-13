@@ -116,13 +116,8 @@
             <h1>MiSnapLicenseManager</h1>
               <div class="declaration">
                 <div class="language">
-                  <p class="aside-title">Objective-C</p>
+                  
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">MiSnapLicenseManager</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
-
-                </div>
-                <div class="language">
-                  <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MiSnapLicenseManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -158,11 +153,6 @@
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nonnull</span><span class="p">)</span><span class="n">shared</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">shared</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
-
-                        </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
@@ -192,11 +182,6 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">destroySharedInstance</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">destroySharedInstance</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -231,11 +216,6 @@
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n"><a href="../Enums/MiSnapLicenseStatus.html">MiSnapLicenseStatus</a></span> <span class="n">status</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapLicenseStatus.html">MiSnapLicenseStatus</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -261,11 +241,6 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setLicenseKey</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">base64LicenseKey</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setLicenseKey</span><span class="p">(</span><span class="n">_</span> <span class="nv">base64LicenseKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -295,11 +270,6 @@
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">featureSupported</span><span class="p">:(</span><span class="n"><a href="../Enums/MiSnapLicenseFeature.html">MiSnapLicenseFeature</a></span><span class="p">)</span><span class="nv">feature</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">featureSupported</span><span class="p">(</span><span class="n">_</span> <span class="nv">feature</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapLicenseFeature.html">MiSnapLicenseFeature</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -327,11 +297,6 @@
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nf">stringFromStatus</span><span class="p">:(</span><span class="n"><a href="../Enums/MiSnapLicenseStatus.html">MiSnapLicenseStatus</a></span><span class="p">)</span><span class="nv">status</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="n">from</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapLicenseStatus.html">MiSnapLicenseStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -357,11 +322,6 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="n">version</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">version</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>

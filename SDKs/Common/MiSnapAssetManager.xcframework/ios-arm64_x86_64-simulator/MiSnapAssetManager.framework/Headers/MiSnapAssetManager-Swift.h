@@ -192,6 +192,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import ObjectiveC;
+@import QuartzCore;
 @import UIKit;
 #endif
 
@@ -880,6 +881,120 @@ typedef SWIFT_ENUM(NSInteger, MiSnapVignetteStyle, open) {
   MiSnapVignetteStyleBlur = 1,
 /// Semitransparent
   MiSnapVignetteStyleSemitransparent = 2,
+};
+
+enum MiSnapVoiceCaptureButtonStyle : NSInteger;
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapVoiceCaptureButton")
+@interface MiSnapVoiceCaptureButton : UIButton
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title style:(enum MiSnapVoiceCaptureButtonStyle)style frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+@class UITraitCollection;
+
+@interface MiSnapVoiceCaptureButton (SWIFT_EXTENSION(MiSnapAssetManager))
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureButtonStyle, open) {
+  MiSnapVoiceCaptureButtonStyleFill = 0,
+  MiSnapVoiceCaptureButtonStyleStroke = 1,
+};
+
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager41MiSnapVoiceCaptureStatusViewConfiguration")
+@interface MiSnapVoiceCaptureStatusViewConfiguration : NSObject
+/// A custom image that should be used instead of a drawn view
+@property (nonatomic, strong) UIImage * _Nullable image;
+/// Color
+@property (nonatomic, strong) UIColor * _Nonnull color;
+/// Background color
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureFailureViewConfiguration")
+@interface MiSnapVoiceCaptureFailureViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration
+/// Creates and returns <code>MiSnapVoiceCaptureFailureViewConfiguration</code> with default values
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureNeutralViewConfiguration")
+@interface MiSnapVoiceCaptureNeutralViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration
+/// Creates and returns <code>MiSnapVoiceCaptureNeutralViewConfiguration</code> with default values
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+enum MiSnapVoiceCaptureViewStatus : NSInteger;
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapVoiceCaptureStatusView")
+@interface MiSnapVoiceCaptureStatusView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)updateFor:(enum MiSnapVoiceCaptureViewStatus)status;
+- (void)startAnimation;
+- (void)removeAnimation;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+@class MiSnapVoiceCaptureSuccessViewConfiguration;
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureStatusViewsConfiguration")
+@interface MiSnapVoiceCaptureStatusViewsConfiguration : NSObject
+/// Status
+/// <ul>
+///   <li>
+///     See: <code>MiSnapVoiceCaptureStatus</code>
+///   </li>
+/// </ul>
+@property (nonatomic) enum MiSnapVoiceCaptureViewStatus status;
+/// Size
+@property (nonatomic) CGFloat diameter;
+/// Line width
+@property (nonatomic) CGFloat lineWidth;
+/// Line cap
+@property (nonatomic) CAShapeLayerLineCap _Nonnull lineCap;
+/// Animation color
+@property (nonatomic, strong) UIColor * _Nonnull animationColor;
+/// Animation time
+@property (nonatomic) CGFloat animationTime;
+/// Success configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureSuccessViewConfiguration * _Nonnull success;
+/// Failure configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureFailureViewConfiguration * _Nonnull failure;
+/// Neutral configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureNeutralViewConfiguration * _Nonnull neutral;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Creates and returns configuration with default values
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Creates and returns configuration for a given <code>MiSnapViewState</code>
+- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureViewStatus)status OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureSuccessViewConfiguration")
+@interface MiSnapVoiceCaptureSuccessViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration
+/// Creates and returns <code>MiSnapVoiceCaptureSuccessViewConfiguration</code> with default values
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureViewStatus, open) {
+  MiSnapVoiceCaptureViewStatusSuccess = 0,
+  MiSnapVoiceCaptureViewStatusFailure = 1,
+  MiSnapVoiceCaptureViewStatusNeutral = 2,
 };
 
 
@@ -1082,6 +1197,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import ObjectiveC;
+@import QuartzCore;
 @import UIKit;
 #endif
 
@@ -1770,6 +1886,120 @@ typedef SWIFT_ENUM(NSInteger, MiSnapVignetteStyle, open) {
   MiSnapVignetteStyleBlur = 1,
 /// Semitransparent
   MiSnapVignetteStyleSemitransparent = 2,
+};
+
+enum MiSnapVoiceCaptureButtonStyle : NSInteger;
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapVoiceCaptureButton")
+@interface MiSnapVoiceCaptureButton : UIButton
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title style:(enum MiSnapVoiceCaptureButtonStyle)style frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+@class UITraitCollection;
+
+@interface MiSnapVoiceCaptureButton (SWIFT_EXTENSION(MiSnapAssetManager))
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureButtonStyle, open) {
+  MiSnapVoiceCaptureButtonStyleFill = 0,
+  MiSnapVoiceCaptureButtonStyleStroke = 1,
+};
+
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager41MiSnapVoiceCaptureStatusViewConfiguration")
+@interface MiSnapVoiceCaptureStatusViewConfiguration : NSObject
+/// A custom image that should be used instead of a drawn view
+@property (nonatomic, strong) UIImage * _Nullable image;
+/// Color
+@property (nonatomic, strong) UIColor * _Nonnull color;
+/// Background color
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureFailureViewConfiguration")
+@interface MiSnapVoiceCaptureFailureViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration
+/// Creates and returns <code>MiSnapVoiceCaptureFailureViewConfiguration</code> with default values
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureNeutralViewConfiguration")
+@interface MiSnapVoiceCaptureNeutralViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration
+/// Creates and returns <code>MiSnapVoiceCaptureNeutralViewConfiguration</code> with default values
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+enum MiSnapVoiceCaptureViewStatus : NSInteger;
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapVoiceCaptureStatusView")
+@interface MiSnapVoiceCaptureStatusView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)updateFor:(enum MiSnapVoiceCaptureViewStatus)status;
+- (void)startAnimation;
+- (void)removeAnimation;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+@class MiSnapVoiceCaptureSuccessViewConfiguration;
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureStatusViewsConfiguration")
+@interface MiSnapVoiceCaptureStatusViewsConfiguration : NSObject
+/// Status
+/// <ul>
+///   <li>
+///     See: <code>MiSnapVoiceCaptureStatus</code>
+///   </li>
+/// </ul>
+@property (nonatomic) enum MiSnapVoiceCaptureViewStatus status;
+/// Size
+@property (nonatomic) CGFloat diameter;
+/// Line width
+@property (nonatomic) CGFloat lineWidth;
+/// Line cap
+@property (nonatomic) CAShapeLayerLineCap _Nonnull lineCap;
+/// Animation color
+@property (nonatomic, strong) UIColor * _Nonnull animationColor;
+/// Animation time
+@property (nonatomic) CGFloat animationTime;
+/// Success configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureSuccessViewConfiguration * _Nonnull success;
+/// Failure configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureFailureViewConfiguration * _Nonnull failure;
+/// Neutral configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureNeutralViewConfiguration * _Nonnull neutral;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Creates and returns configuration with default values
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Creates and returns configuration for a given <code>MiSnapViewState</code>
+- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureViewStatus)status OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureSuccessViewConfiguration")
+@interface MiSnapVoiceCaptureSuccessViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration
+/// Creates and returns <code>MiSnapVoiceCaptureSuccessViewConfiguration</code> with default values
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureViewStatus, open) {
+  MiSnapVoiceCaptureViewStatusSuccess = 0,
+  MiSnapVoiceCaptureViewStatusFailure = 1,
+  MiSnapVoiceCaptureViewStatusNeutral = 2,
 };
 
 

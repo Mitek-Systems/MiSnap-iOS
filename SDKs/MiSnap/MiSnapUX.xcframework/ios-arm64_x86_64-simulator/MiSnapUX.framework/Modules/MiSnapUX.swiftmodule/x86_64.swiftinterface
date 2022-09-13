@@ -196,9 +196,9 @@ extension MiSnapViewController {
   @objc @_Concurrency.MainActor(unsafe) dynamic public func resumeAnalysis()
   @objc @_Concurrency.MainActor(unsafe) public static func miSnapVersion() -> Swift.String
   @objc @_Concurrency.MainActor(unsafe) public static func miSnapScienceVersion() -> Swift.String
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func checkCameraPermission(handler: @escaping (Swift.Bool) -> Swift.Void)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> Swift.Void)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static func checkCameraPermission(handler: @escaping (Swift.Bool) -> Swift.Void)
+  @objc @_Concurrency.MainActor(unsafe) public static func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> Swift.Void)
+  @objc @_Concurrency.MainActor(unsafe) public static func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
 }
 extension MiSnapViewController : MiSnapTutorialViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func tutorialContinueButtonAction(for tutorialMode: MiSnapUxTutorialMode)

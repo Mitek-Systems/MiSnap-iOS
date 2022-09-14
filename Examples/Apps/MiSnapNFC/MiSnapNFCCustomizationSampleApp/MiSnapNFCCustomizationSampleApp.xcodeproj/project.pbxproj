@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		426BDBD327F1EDB20058B665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426BDBD227F1EDB20058B665 /* AppDelegate.swift */; };
+		426BDBD527F1EDB20058B665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426BDBD427F1EDB20058B665 /* SceneDelegate.swift */; };
+		426BDBD727F1EDB20058B665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426BDBD627F1EDB20058B665 /* ViewController.swift */; };
+		426BDBDA27F1EDB20058B665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426BDBD827F1EDB20058B665 /* Main.storyboard */; };
+		426BDBDC27F1EDB40058B665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426BDBDB27F1EDB40058B665 /* Assets.xcassets */; };
+		426BDBDF27F1EDB40058B665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426BDBDD27F1EDB40058B665 /* LaunchScreen.storyboard */; };
+		426BDBEF27F1EF080058B665 /* MiSnapNFC in Frameworks */ = {isa = PBXBuildFile; productRef = 426BDBEE27F1EF080058B665 /* MiSnapNFC */; };
+		426BDBF127F1EF080058B665 /* MiSnapNFCUX in Frameworks */ = {isa = PBXBuildFile; productRef = 426BDBF027F1EF080058B665 /* MiSnapNFCUX */; };
+		426BDBF327F1EF260058B665 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426BDBF227F1EF260058B665 /* ResultViewController.swift */; };
+		426BDBF527F1EF4B0058B665 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426BDBF427F1EF4B0058B665 /* Utils.swift */; };
+		426BDBF827F1F04C0058B665 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 426BDBFA27F1F04C0058B665 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		426BDBCF27F1EDB20058B665 /* MiSnapNFCCustomizationSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiSnapNFCCustomizationSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		426BDBD227F1EDB20058B665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		426BDBD427F1EDB20058B665 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		426BDBD627F1EDB20058B665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		426BDBD927F1EDB20058B665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		426BDBDB27F1EDB40058B665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		426BDBDE27F1EDB40058B665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		426BDBE027F1EDB40058B665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		426BDBEC27F1EEC40058B665 /* MiSnapNFCCustomizationSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiSnapNFCCustomizationSampleApp.entitlements; sourceTree = "<group>"; };
+		426BDBF227F1EF260058B665 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		426BDBF427F1EF4B0058B665 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		426BDBF927F1F04C0058B665 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		426BDBFB27F1F05D0058B665 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		426BDBCC27F1EDB20058B665 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426BDBEF27F1EF080058B665 /* MiSnapNFC in Frameworks */,
+				426BDBF127F1EF080058B665 /* MiSnapNFCUX in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		426BDBC627F1EDB20058B665 = {
+			isa = PBXGroup;
+			children = (
+				426BDBD127F1EDB20058B665 /* MiSnapNFCCustomizationSampleApp */,
+				426BDBD027F1EDB20058B665 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		426BDBD027F1EDB20058B665 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				426BDBCF27F1EDB20058B665 /* MiSnapNFCCustomizationSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		426BDBD127F1EDB20058B665 /* MiSnapNFCCustomizationSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				426BDBEB27F1EE140058B665 /* Models */,
+				426BDBEA27F1EE0F0058B665 /* Views */,
+				426BDBE927F1EE070058B665 /* Controllers */,
+				426BDBE827F1EE010058B665 /* Resources */,
+				426BDBE727F1EDF80058B665 /* Supporting_Files */,
+			);
+			path = MiSnapNFCCustomizationSampleApp;
+			sourceTree = "<group>";
+		};
+		426BDBE727F1EDF80058B665 /* Supporting_Files */ = {
+			isa = PBXGroup;
+			children = (
+				426BDBE027F1EDB40058B665 /* Info.plist */,
+				426BDBEC27F1EEC40058B665 /* MiSnapNFCCustomizationSampleApp.entitlements */,
+			);
+			name = Supporting_Files;
+			sourceTree = "<group>";
+		};
+		426BDBE827F1EE010058B665 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				426BDBFA27F1F04C0058B665 /* Localizable.strings */,
+				426BDBDB27F1EDB40058B665 /* Assets.xcassets */,
+				426BDBD827F1EDB20058B665 /* Main.storyboard */,
+				426BDBDD27F1EDB40058B665 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		426BDBE927F1EE070058B665 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				426BDBD227F1EDB20058B665 /* AppDelegate.swift */,
+				426BDBD427F1EDB20058B665 /* SceneDelegate.swift */,
+				426BDBD627F1EDB20058B665 /* ViewController.swift */,
+				426BDBF227F1EF260058B665 /* ResultViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		426BDBEA27F1EE0F0058B665 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		426BDBEB27F1EE140058B665 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				426BDBF427F1EF4B0058B665 /* Utils.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		426BDBCE27F1EDB20058B665 /* MiSnapNFCCustomizationSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 426BDBE327F1EDB40058B665 /* Build configuration list for PBXNativeTarget "MiSnapNFCCustomizationSampleApp" */;
+			buildPhases = (
+				426BDBCB27F1EDB20058B665 /* Sources */,
+				426BDBCC27F1EDB20058B665 /* Frameworks */,
+				426BDBCD27F1EDB20058B665 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiSnapNFCCustomizationSampleApp;
+			packageProductDependencies = (
+				426BDBEE27F1EF080058B665 /* MiSnapNFC */,
+				426BDBF027F1EF080058B665 /* MiSnapNFCUX */,
+			);
+			productName = MiSnapNFCCustomizationSampleApp;
+			productReference = 426BDBCF27F1EDB20058B665 /* MiSnapNFCCustomizationSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		426BDBC727F1EDB20058B665 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					426BDBCE27F1EDB20058B665 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 426BDBCA27F1EDB20058B665 /* Build configuration list for PBXProject "MiSnapNFCCustomizationSampleApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = 426BDBC627F1EDB20058B665;
+			packageReferences = (
+				426BDBED27F1EF080058B665 /* XCRemoteSwiftPackageReference "MiSnap-iOS" */,
+			);
+			productRefGroup = 426BDBD027F1EDB20058B665 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				426BDBCE27F1EDB20058B665 /* MiSnapNFCCustomizationSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		426BDBCD27F1EDB20058B665 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426BDBDF27F1EDB40058B665 /* LaunchScreen.storyboard in Resources */,
+				426BDBF827F1F04C0058B665 /* Localizable.strings in Resources */,
+				426BDBDC27F1EDB40058B665 /* Assets.xcassets in Resources */,
+				426BDBDA27F1EDB20058B665 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		426BDBCB27F1EDB20058B665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426BDBF527F1EF4B0058B665 /* Utils.swift in Sources */,
+				426BDBD727F1EDB20058B665 /* ViewController.swift in Sources */,
+				426BDBD327F1EDB20058B665 /* AppDelegate.swift in Sources */,
+				426BDBD527F1EDB20058B665 /* SceneDelegate.swift in Sources */,
+				426BDBF327F1EF260058B665 /* ResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		426BDBD827F1EDB20058B665 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426BDBD927F1EDB20058B665 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		426BDBDD27F1EDB40058B665 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426BDBDE27F1EDB40058B665 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		426BDBFA27F1F04C0058B665 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426BDBF927F1F04C0058B665 /* en */,
+				426BDBFB27F1F05D0058B665 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		426BDBE127F1EDB40058B665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		426BDBE227F1EDB40058B665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		426BDBE427F1EDB40058B665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MiSnapNFCCustomizationSampleApp/MiSnapNFCCustomizationSampleApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiSnapNFCCustomizationSampleApp/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "This app needs access to NFC antenna to read your electronic documents";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteksystems.MiSnapNFCCustomizationSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		426BDBE527F1EDB40058B665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MiSnapNFCCustomizationSampleApp/MiSnapNFCCustomizationSampleApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiSnapNFCCustomizationSampleApp/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "This app needs access to NFC antenna to read your electronic documents";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteksystems.MiSnapNFCCustomizationSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		426BDBCA27F1EDB20058B665 /* Build configuration list for PBXProject "MiSnapNFCCustomizationSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426BDBE127F1EDB40058B665 /* Debug */,
+				426BDBE227F1EDB40058B665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		426BDBE327F1EDB40058B665 /* Build configuration list for PBXNativeTarget "MiSnapNFCCustomizationSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426BDBE427F1EDB40058B665 /* Debug */,
+				426BDBE527F1EDB40058B665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		426BDBED27F1EF080058B665 /* XCRemoteSwiftPackageReference "MiSnap-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
+			requirement = {
+				kind = revision;
+				revision = 96b066db91e369a09e2c04d3b932feec264b2546;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		426BDBEE27F1EF080058B665 /* MiSnapNFC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 426BDBED27F1EF080058B665 /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapNFC;
+		};
+		426BDBF027F1EF080058B665 /* MiSnapNFCUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 426BDBED27F1EF080058B665 /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapNFCUX;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 426BDBC727F1EDB20058B665 /* Project object */;
+}

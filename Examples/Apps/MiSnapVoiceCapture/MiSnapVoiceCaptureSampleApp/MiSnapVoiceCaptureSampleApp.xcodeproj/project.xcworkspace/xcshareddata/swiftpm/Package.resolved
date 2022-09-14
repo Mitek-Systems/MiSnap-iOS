@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MiSnap",
+        "repositoryURL": "https://github.com/Mitek-Systems/MiSnap-iOS.git",
+        "state": {
+          "branch": "feature/5.1.0.a1",
+          "revision": "6eaa6c2f46f89b3c493bb6bd5a4b035cce6f99d6",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -12,7 +12,7 @@ import MiSnapLicenseManager
 
 class ViewController: UIViewController {
     private var misnapVoiceCaptureVC: MiSnapVoiceCaptureViewController?
-    private var result: MiSnapVoiceCaptureResult?
+    private var results: [MiSnapVoiceCaptureResult]?
     
     private var resultVC: ResultViewController?
     
@@ -24,11 +24,11 @@ class ViewController: UIViewController {
         
         configureSubviews()
         
-        if let result = result {
-            resultVC = ResultViewController(with: result)
+        if let results = results {
+            resultVC = ResultViewController(with: results)
             guard let resultVC = resultVC else { return }
             present(resultVC, animated: true)
-            self.result = nil
+            self.results = nil
         }
     }
     
@@ -49,6 +49,14 @@ extension ViewController {
         
         presentMiSnapVoiceCapture(misnapVoiceCaptureVC)
     }
+    
+    @objc private func verificationButtonAction() {
+        guard let phrase = UserDefaults.standard.object(forKey: "phrase") as? String else { return }
+        let configuration = MiSnapVoiceCaptureConfiguration(for: .verification, phrase: phrase)
+        misnapVoiceCaptureVC = MiSnapVoiceCaptureViewController(with: configuration, delegate: self)
+        
+        presentMiSnapVoiceCapture(misnapVoiceCaptureVC)
+    }
 }
 
 // MARK: MiSnapVoiceCaptureViewControllerDelegate callbacks
@@ -63,12 +71,16 @@ extension ViewController: MiSnapVoiceCaptureViewControllerDelegate {
         // It's highly recommended not only store the phrase in UserDefaults but also in a database on a server side
         // to be able to retrieve it if a user switches a device or re-installs the app
         // Note, this exact phrase will need to be passed in  a configuration for a Verification session
+        
+        UserDefaults.standard.set(phrase, forKey: "phrase")
+        UserDefaults.standard.synchronize()
     }
 
     func miSnapVoiceCaptureSuccess(_ results: [MiSnapVoiceCaptureResult], for type: MiSnapVoiceCaptureActivity) {
         // Handle successful session results here for a configured activity type (Enrollment, Verification)
         // For Enrollment, `results` will always contain 3 `MiSnapVoiceCaptureResult`s
         // For Verification, `results` will always contain 1 `MiSnapVoiceCaptureResult`
+        self.results = results
     }
 
     func miSnapVoiceCaptureCancelled(_ result: MiSnapVoiceCaptureResult) {
@@ -85,12 +97,18 @@ extension ViewController: MiSnapVoiceCaptureViewControllerDelegate {
 // MARK: Views configurations
 extension ViewController {
     private func configureSubviews() {
-        if let _ = view.viewWithTag(1) { return }
+        if let _ = view.viewWithTag(1) { return manageVerifyButton() }
         
         let enrollmentButton = configureButton(withTitle: "Enroll", selector: #selector(enrollmentButtonAction))
         enrollmentButton.tag = 1
         
         view.addSubview(enrollmentButton)
+        
+        let verificationButton = configureButton(withTitle: "Verify", selector: #selector(verificationButtonAction))
+        verificationButton.tag = 2
+        
+        view.addSubview(verificationButton)
+        manageVerifyButton()
                 
         let appNameLabel = configureLabel(withText: "MiSnapVoiceCapture\nSampleApp", numberOfLines: 2)
         let misnapUxVersionLabel = configureLabel(withText: "MiSnapVoiceCaptureUX \(MiSnapVoiceCaptureUX.version())", fontSize: 17)
@@ -102,7 +120,10 @@ extension ViewController {
         
         NSLayoutConstraint.activate([
             enrollmentButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            enrollmentButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            enrollmentButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -50),
+            
+            verificationButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            verificationButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 50),
             
             appNameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             appNameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -115,13 +136,25 @@ extension ViewController {
         ])
     }
     
+    private func manageVerifyButton() {
+        guard let verificationButton = view.viewWithTag(2) as? UIButton else { return }
+        
+        if let _ = UserDefaults.standard.object(forKey: "phrase") as? String {
+            verificationButton.alpha = 1.0
+            verificationButton.isEnabled = true
+        } else {
+            verificationButton.alpha = 0.4
+            verificationButton.isEnabled = false
+        }
+    }
+    
     private func configureButton(withTitle title: String, selector: Selector) -> UIButton {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 40))
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle(title, for: .normal)
         button.setTitleColor(.systemBlue, for: .normal)
         button.setTitleColor(.systemBlue.withAlphaComponent(0.4), for: .highlighted)
-        button.titleLabel?.font = .systemFont(ofSize: 19.0, weight: .bold)
+        button.titleLabel?.font = .systemFont(ofSize: 25.0, weight: .bold)
         
         button.addTarget(self, action: selector, for: .touchUpInside)
         

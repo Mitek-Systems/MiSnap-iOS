@@ -16,6 +16,7 @@
 		4284E52C28D2558F00031A25 /* MiSnapVoiceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 4284E52B28D2558F00031A25 /* MiSnapVoiceCapture */; };
 		4284E52E28D2558F00031A25 /* MiSnapVoiceCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 4284E52D28D2558F00031A25 /* MiSnapVoiceCaptureUX */; };
 		4284E53028D2564400031A25 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4284E52F28D2564400031A25 /* ResultViewController.swift */; };
+		4284E53228D25F4F00031A25 /* RecordingPlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4284E53128D25F4F00031A25 /* RecordingPlaybackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4284E51D28D254F800031A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4284E51F28D254F800031A25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4284E52F28D2564400031A25 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		4284E53128D25F4F00031A25 /* RecordingPlaybackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingPlaybackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		4284E52828D2551D00031A25 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4284E53128D25F4F00031A25 /* RecordingPlaybackView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				4284E51628D254F600031A25 /* ViewController.swift in Sources */,
 				4284E51228D254F600031A25 /* AppDelegate.swift in Sources */,
 				4284E51428D254F600031A25 /* SceneDelegate.swift in Sources */,
+				4284E53228D25F4F00031A25 /* RecordingPlaybackView.swift in Sources */,
 				4284E53028D2564400031A25 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

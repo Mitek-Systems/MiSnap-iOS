@@ -8,16 +8,25 @@
 import UIKit
 import MiSnapVoiceCapture
 
+extension Data {
+    func size(_ unit: ByteCountFormatter.Units) -> String {
+        let bcf = ByteCountFormatter()
+        bcf.allowedUnits = [unit]
+        bcf.countStyle = .file
+        return bcf.string(fromByteCount: Int64(self.count))
+    }
+}
+
 class ResultViewController: UIViewController {
-    private var result: MiSnapVoiceCaptureResult?
+    private var results: [MiSnapVoiceCaptureResult]?
     private var configured: Bool = false
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(with result: MiSnapVoiceCaptureResult) {
-        self.result = result
+    init(with results: [MiSnapVoiceCaptureResult]) {
+        self.results = results
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .fullScreen
         modalTransitionStyle = .crossDissolve
@@ -41,6 +50,10 @@ class ResultViewController: UIViewController {
         return true
     }
     
+    public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
     deinit {
         print("\(NSStringFromClass(type(of: self))) is deinitialized")
     }
@@ -49,7 +62,7 @@ class ResultViewController: UIViewController {
 // MARK: Private views configurations functions
 extension ResultViewController {
     private func configureSubviews() {
-        guard let result = result, !configured else { return }
+        guard let results = results, !configured else { return }
         configured = true
         
         let backButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
@@ -60,104 +73,182 @@ extension ResultViewController {
         backButton.backgroundColor = .clear
         backButton.addTarget(self, action: #selector(backButtonAction), for: .touchUpInside)
         
-        //let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
-        //imageView.translatesAutoresizingMaskIntoConstraints = false
-        //imageView.image = result.image
-        //imageView.contentMode = .scaleAspectFit
-        //imageView.backgroundColor = .clear
-        //
-        //if result.highestPriorityStatus != .good {
-        //    imageView.layer.borderWidth = 3.0
-        //    imageView.layer.borderColor = UIColor.orange.cgColor
-        //}
-        //
-        //let imageViewTap = UITapGestureRecognizer(target: self, action: #selector(imageViewTapAction))
-        //imageViewTap.numberOfTapsRequired = 1
-        //imageView.isUserInteractionEnabled = true
-        //imageView.addGestureRecognizer(imageViewTap)
-        //
-        //let highestPriorityStatusLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        //highestPriorityStatusLabel.translatesAutoresizingMaskIntoConstraints = false
-        //var localizedText = MiSnapFacialCaptureResult.localizeKey(from: result.highestPriorityStatus)
-        //
-        //var attributes = [
-        //    NSAttributedString.Key.foregroundColor: UIColor.orange,
-        //    NSAttributedString.Key.font:            UIFont.systemFont(ofSize: 20.0, weight: .bold)
-        //]
-        //
-        //if result.highestPriorityStatus == .good {
-        //    localizedText = "Good"
-        //
-        //    attributes = [
-        //        NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.2784313725, green: 0.6039215686, blue: 0.3725490196, alpha: 1),
-        //        NSAttributedString.Key.font:            UIFont.systemFont(ofSize: 20.0, weight: .bold)
-        //    ]
-        //}
-        //
-        //localizedText = "Status: \(localizedText)"
-        //
-        //let attributedText = NSMutableAttributedString.init(string: localizedText, attributes: attributes)
-        //let statusRange = NSString(string: localizedText).range(of: "Status: ")
-        //var textColor: UIColor = .black
-        //if #available(iOS 13.0, *) {
-        //    textColor = .label
-        //}
-        //attributes = [
-        //    NSAttributedString.Key.foregroundColor: textColor,
-        //    NSAttributedString.Key.font:            UIFont.systemFont(ofSize: 20.0, weight: .bold)
-        //]
-        //
-        //attributedText.setAttributes(attributes, range: statusRange)
-        //
-        //highestPriorityStatusLabel.attributedText = attributedText
-        //highestPriorityStatusLabel.textAlignment = .center
-        //
-        //let mibiTextView = UITextView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
-        //mibiTextView.translatesAutoresizingMaskIntoConstraints = false
-        //mibiTextView.backgroundColor = .clear
-        //mibiTextView.textColor = textColor
-        //mibiTextView.isScrollEnabled = true
-        //mibiTextView.isEditable = false
-        //mibiTextView.isSelectable = false
-        //mibiTextView.bounces = false
-        //mibiTextView.showsVerticalScrollIndicator = false
-        //mibiTextView.showsHorizontalScrollIndicator = false
-        //mibiTextView.text = result.mibiDataString
-        //mibiTextView.font = .systemFont(ofSize: 16)
-        //mibiTextView.textContainer.lineBreakMode = .byCharWrapping
+        let audioPreviewView = configureAudioPreviewView(with: results)
+        let audioInfoView = configureAudioInfoView(with: results)
         
         view.addSubview(backButton)
-        //view.addSubview(imageView)
-        //view.addSubview(highestPriorityStatusLabel)
-        //view.addSubview(mibiTextView)
-        //
-        //let imageRelativeHeight: CGFloat = 0.35
-        //var ar: CGFloat = 1.0
-        //if let image = result.image, image.size.width > 0, image.size.height > 0 {
-        //    ar = image.size.width / image.size.height
-        //}
+        view.addSubview(audioPreviewView)
+        view.addSubview(audioInfoView)
         
         NSLayoutConstraint.activate([
             backButton.leftAnchor.constraint(equalTo: view.leftAnchor),
             backButton.topAnchor.constraint(equalTo: view.topAnchor),
             backButton.widthAnchor.constraint(equalToConstant: 100),
             backButton.heightAnchor.constraint(equalToConstant: 60),
-        //
-        //    imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-        //    imageView.widthAnchor.constraint(equalToConstant: view.frame.size.height * imageRelativeHeight * ar),
-        //    imageView.heightAnchor.constraint(equalToConstant: view.frame.size.height * imageRelativeHeight),
-        //    imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        //
-        //    highestPriorityStatusLabel.leftAnchor.constraint(equalTo: view.leftAnchor),
-        //    highestPriorityStatusLabel.rightAnchor.constraint(equalTo: view.rightAnchor),
-        //    highestPriorityStatusLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor),
-        //    highestPriorityStatusLabel.heightAnchor.constraint(equalToConstant: 40),
-        //
-        //    mibiTextView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        //    mibiTextView.topAnchor.constraint(equalTo: highestPriorityStatusLabel.bottomAnchor, constant: 10),
-        //    mibiTextView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.95),
-        //    mibiTextView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            
+            audioPreviewView.topAnchor.constraint(equalTo: backButton.bottomAnchor, constant: 10),
+            audioPreviewView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            audioInfoView.topAnchor.constraint(equalTo: audioPreviewView.bottomAnchor, constant: 10),
+            audioInfoView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            audioInfoView.widthAnchor.constraint(equalToConstant: audioInfoView.frame.width),
+            audioInfoView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
+    }
+    
+    private func configureAudioPreviewView(with results: [MiSnapVoiceCaptureResult]) -> UIView {
+        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width * 0.95, height: view.frame.height * 0.20))
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.tag = 1
+        let spacing: CGFloat = 10
+        
+        var width: CGFloat = 0.0
+        var currentView: UIView?
+        
+        for (idx, result) in results.enumerated() {
+            guard let data = result.data else { continue }
+            let recordingPlaybackView = RecordingPlaybackView(with: data, index: idx + 1, rect: CGRect(x: 0,
+                                                                                                       y: 0,
+                                                                                                       width: containerView.frame.width / CGFloat(results.count < 3 ? 3 : results.count),
+                                                                                                       height: containerView.frame.height))
+            containerView.addSubview(recordingPlaybackView)
+            
+            let xAnchor: NSLayoutXAxisAnchor
+            var offset: CGFloat = 0.0
+            if let currentView = currentView {
+                xAnchor = currentView.rightAnchor
+                offset = spacing
+            } else {
+                xAnchor = containerView.leftAnchor
+            }
+            
+            NSLayoutConstraint.activate([
+                recordingPlaybackView.leftAnchor.constraint(equalTo: xAnchor, constant: offset),
+                recordingPlaybackView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
+                recordingPlaybackView.widthAnchor.constraint(equalToConstant: recordingPlaybackView.frame.width - spacing),
+                recordingPlaybackView.heightAnchor.constraint(equalToConstant: recordingPlaybackView.frame.height),
+            ])
+            
+            currentView = recordingPlaybackView
+            width += recordingPlaybackView.frame.width - spacing
+        }
+        
+        width += CGFloat(results.count - 1) * spacing
+        
+        NSLayoutConstraint.activate([
+            containerView.widthAnchor.constraint(equalToConstant: width),
+            containerView.heightAnchor.constraint(equalToConstant: containerView.frame.height),
+        ])
+        
+        return containerView
+    }
+    
+    private func configureAudioInfoView(with results: [MiSnapVoiceCaptureResult]) -> UIView {
+        let containerView = UIScrollView(frame: CGRect(x: 0, y: 0, width: view.frame.width * 0.95, height: view.frame.height * 0.8))
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.showsHorizontalScrollIndicator = false
+        containerView.showsVerticalScrollIndicator = false
+        containerView.bounces = false
+        
+        let spacing: CGFloat = 10
+        
+        var currentView: UIView?
+        var height: CGFloat = 0.0
+        
+        for (idx, result) in results.enumerated() {
+            let headerView = configureInfoView(withTitle: "Recording \(idx + 1)", fontWeight: .bold)
+            containerView.addSubview(headerView)
+            
+            let dataSizeView = configureInfoView(withTitle: "Data size", value: (result.data ?? Data()).size(.useKB))
+            containerView.addSubview(dataSizeView)
+            
+            let speechLengthView = configureInfoView(withTitle: "Speech Length", value: String(format: "%.0f ms", result.speechLength))
+            containerView.addSubview(speechLengthView)
+            
+            let snrView = configureInfoView(withTitle: "Signal-to-Noise Ratio", value: String(format: "%.2f dB", result.snr))
+            containerView.addSubview(snrView)
+            
+            let yAnchor: NSLayoutYAxisAnchor
+            var offset = 0.0
+            if let currentView = currentView {
+                yAnchor = currentView.bottomAnchor
+                offset = spacing * 3
+            } else {
+                yAnchor = containerView.topAnchor
+            }
+            
+            NSLayoutConstraint.activate([
+                headerView.topAnchor.constraint(equalTo: yAnchor, constant: offset),
+                headerView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+                
+                dataSizeView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: spacing),
+                dataSizeView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+                
+                speechLengthView.topAnchor.constraint(equalTo: dataSizeView.bottomAnchor, constant: spacing),
+                speechLengthView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+                
+                snrView.topAnchor.constraint(equalTo: speechLengthView.bottomAnchor, constant: spacing),
+                snrView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor)
+            ])
+            
+            height += headerView.frame.height + dataSizeView.frame.height + speechLengthView.frame.height + snrView.frame.height + 3 * spacing
+            currentView = snrView
+        }
+        
+        height += CGFloat(results.count - 1) * spacing * 3
+                
+        containerView.contentSize = CGSize(width: containerView.frame.width, height: height)
+        
+        return containerView
+    }
+    
+    private func configureInfoView(withTitle title: String, fontWeight: UIFont.Weight = .thin, value: String? = nil) -> UIView {
+        let minHeight: CGFloat = 30.0
+        
+        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width * 0.95, height: view.frame.height * 0.65))
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let labelTitle = UILabel(frame: containerView.frame)
+        labelTitle.translatesAutoresizingMaskIntoConstraints = false
+        labelTitle.text = title
+        labelTitle.textAlignment = .center
+        labelTitle.font = .systemFont(ofSize: 17.0, weight: fontWeight)
+        labelTitle.numberOfLines = 0
+        if let value = value {
+            labelTitle.textAlignment = .left
+            labelTitle.frame = CGRect(x: 0, y: 0, width: view.frame.width * 0.75, height: view.frame.height * 0.65)
+            
+            let labelValue = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width * 0.2, height: view.frame.height * 0.65))
+            labelValue.translatesAutoresizingMaskIntoConstraints = false
+            labelValue.text = value
+            labelValue.textAlignment = .right
+            labelValue.font = .systemFont(ofSize: 17.0, weight: fontWeight)
+            labelValue.sizeToFit()
+            containerView.addSubview(labelValue)
+            
+            NSLayoutConstraint.activate([
+                labelValue.widthAnchor.constraint(equalToConstant: labelValue.frame.width),
+                labelValue.heightAnchor.constraint(equalToConstant: labelValue.frame.height > minHeight ? labelValue.frame.height : minHeight),
+                labelValue.topAnchor.constraint(equalTo: containerView.topAnchor),
+                labelValue.rightAnchor.constraint(equalTo: containerView.rightAnchor)
+            ])
+        }
+        labelTitle.sizeToFit()
+        containerView.addSubview(labelTitle)
+        
+        containerView.frame = CGRect(x: 0, y: 0, width: containerView.frame.width, height: labelTitle.frame.height > minHeight ? labelTitle.frame.height : minHeight)
+        
+        NSLayoutConstraint.activate([
+            containerView.widthAnchor.constraint(equalToConstant: containerView.frame.width),
+            containerView.heightAnchor.constraint(equalToConstant: containerView.frame.height),
+            
+            labelTitle.widthAnchor.constraint(equalToConstant: labelTitle.frame.width),
+            labelTitle.heightAnchor.constraint(equalToConstant: labelTitle.frame.height > minHeight ? labelTitle.frame.height : minHeight),
+            labelTitle.topAnchor.constraint(equalTo: containerView.topAnchor),
+            labelTitle.leftAnchor.constraint(equalTo: containerView.leftAnchor)
+        ])
+        
+        return containerView
     }
     
     @objc private func backButtonAction() {

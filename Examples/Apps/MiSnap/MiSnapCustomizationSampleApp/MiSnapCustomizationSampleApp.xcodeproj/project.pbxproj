@@ -452,7 +452,7 @@
 			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
 			requirement = {
 				kind = revision;
-				revision = 96b066db91e369a09e2c04d3b932feec264b2546;
+				revision = c908ed45c8e9b6ea5c80bad8c5cc6889345dfaa8;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

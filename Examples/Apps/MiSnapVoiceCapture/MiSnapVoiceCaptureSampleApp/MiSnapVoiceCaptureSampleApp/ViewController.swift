@@ -90,8 +90,6 @@ extension ViewController: MiSnapVoiceCaptureViewControllerDelegate {
     func miSnapVoiceCaptureError(_ result: MiSnapVoiceCaptureResult) {
         // Handle an SDK error here
     }
-    
-    func miSnapVoiceCaptureShouldBeDismissed() {}
 }
 
 // MARK: Views configurations

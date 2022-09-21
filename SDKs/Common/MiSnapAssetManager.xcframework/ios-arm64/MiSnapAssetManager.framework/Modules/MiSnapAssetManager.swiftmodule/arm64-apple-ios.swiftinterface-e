@@ -328,8 +328,6 @@ extension MiSnapAssetManager.MiSnapVoiceCaptureButton {
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapVoiceCaptureStatusView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapAssetManager.MiSnapVoiceCaptureStatusViewsConfiguration? = nil, for step: Swift.Int? = nil)
   @objc @_Concurrency.MainActor(unsafe) public func update(for status: MiSnapAssetManager.MiSnapVoiceCaptureViewStatus)
-  @objc @_Concurrency.MainActor(unsafe) public func startAnimation()
-  @objc @_Concurrency.MainActor(unsafe) public func removeAnimation()
   @objc deinit
 }
 @objc public enum MiSnapHintStyle : Swift.Int {

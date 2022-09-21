@@ -7,7 +7,7 @@
 
 #define VOICESDK_PROJECT_VERSION "3.7.2"
 #define VOICESDK_COMPONENTS      "core media"
-#define VOICESDK_GIT_INFO        "HEAD cc02de76 "
+#define VOICESDK_GIT_INFO        "HEAD b8ead2dd "
 
 namespace voicesdk {
 

@@ -941,8 +941,6 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapVoiceCaptureStatusView")
 @interface MiSnapVoiceCaptureStatusView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)updateFor:(enum MiSnapVoiceCaptureViewStatus)status;
-- (void)startAnimation;
-- (void)removeAnimation;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -1946,8 +1944,6 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapVoiceCaptureStatusView")
 @interface MiSnapVoiceCaptureStatusView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)updateFor:(enum MiSnapVoiceCaptureViewStatus)status;
-- (void)startAnimation;
-- (void)removeAnimation;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 

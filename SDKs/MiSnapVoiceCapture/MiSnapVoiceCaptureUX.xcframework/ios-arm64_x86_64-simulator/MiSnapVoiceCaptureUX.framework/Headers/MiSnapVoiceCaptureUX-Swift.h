@@ -289,6 +289,7 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 - (BOOL)hasMinDiskSpace:(NSInteger)minDiskSpace SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
@@ -318,6 +319,7 @@ SWIFT_PROTOCOL("_TtP20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureViewControllerDele
 - (void)miSnapVoiceCaptureSuccess:(NSArray<MiSnapVoiceCaptureResult *> * _Nonnull)results for:(enum MiSnapVoiceCaptureActivity)type;
 - (void)miSnapVoiceCaptureCancelled:(MiSnapVoiceCaptureResult * _Nonnull)result;
 - (void)miSnapVoiceCaptureError:(MiSnapVoiceCaptureResult * _Nonnull)result;
+@optional
 - (void)miSnapVoiceCaptureShouldBeDismissed;
 @end
 
@@ -617,6 +619,7 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 - (BOOL)hasMinDiskSpace:(NSInteger)minDiskSpace SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
+@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
@@ -646,6 +649,7 @@ SWIFT_PROTOCOL("_TtP20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureViewControllerDele
 - (void)miSnapVoiceCaptureSuccess:(NSArray<MiSnapVoiceCaptureResult *> * _Nonnull)results for:(enum MiSnapVoiceCaptureActivity)type;
 - (void)miSnapVoiceCaptureCancelled:(MiSnapVoiceCaptureResult * _Nonnull)result;
 - (void)miSnapVoiceCaptureError:(MiSnapVoiceCaptureResult * _Nonnull)result;
+@optional
 - (void)miSnapVoiceCaptureShouldBeDismissed;
 @end
 

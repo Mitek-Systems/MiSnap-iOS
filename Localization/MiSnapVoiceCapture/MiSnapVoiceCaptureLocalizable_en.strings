@@ -26,8 +26,9 @@
 // Errors
 "misnap_voice_capture_ux_failure"                               = "Sorry, we cannot use this recording.\nFor best results:";
 "misnap_voice_capture_ux_not_quiet"                             = "Record in a quiet area";
-"misnap_voice_capture_ux_too_far"                               = "Hold the bottom of the device near your mouth when saying the phrase";
+"misnap_voice_capture_ux_too_far"                               = "Hold the phone close to your mouth";
 "misnap_voice_capture_ux_too_short"                             = "Don't take long pauses between words but don't speak too fast";
+"misnap_voice_capture_ux_external_mic"                          = "Do not use headsets or earbuds";
 
 // Buttons
 "misnap_voice_capture_ux_button_cancel"                         = "Cancel";

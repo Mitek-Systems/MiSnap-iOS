@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapVoiceCaptureUX-Swift.h</key>
 		<data>
-		ky7bag8fVivYg61jY19JTTq1Tfg=
+		3zhZkOREftYd6R7UuUYffgDglL8=
 		</data>
 		<key>Headers/MiSnapVoiceCaptureUX.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2EBPK3WvHV782r01vFNEaYvUVXU=
+		OiFurVgyY+lqHZt6Lc0ScXj4Hbs=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VQ46H1xjZQc8GrRLqsGjBljN1hA=
+		Lsb/JsqaWK/kMIkg+EoV4ExC38I=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		2EBPK3WvHV782r01vFNEaYvUVXU=
+		OiFurVgyY+lqHZt6Lc0ScXj4Hbs=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		VQ46H1xjZQc8GrRLqsGjBljN1hA=
+		Lsb/JsqaWK/kMIkg+EoV4ExC38I=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AH63/zBnJCJI9lk9lezl7FJL3js=
+		L0ZHqp8uRgMVweE11OlMJHRlTC8=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QIIgjJPjJR0HqlDhTm2uc8dUZ3E=
+		ahFJAqRsBtXW9KJMK57ueT/AoE4=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		AH63/zBnJCJI9lk9lezl7FJL3js=
+		L0ZHqp8uRgMVweE11OlMJHRlTC8=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		QIIgjJPjJR0HqlDhTm2uc8dUZ3E=
+		ahFJAqRsBtXW9KJMK57ueT/AoE4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,7 +72,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5ty+GDCQU45Dkz8X1/3y+ICsAD0=
+			IMokvXnhUiD2IVOUPTq1G6xwglY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -86,9 +86,9 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fancy_image.png</key>
+		<key>misnap_facial_capture_instruction_distance.png</key>
 		<data>
-		ZX/hA2mUgWk3ciuKSkYHqExg50U=
+		SM91b+ERD8kQNut/oKF/FR3T7Wo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5qsNn6wV/zwMRwPx7NYfPFv9iwtm+svTHe10C+wQMfQ=
+			PoL6RAlWsiGOJMWU1WajcyOCEtCE/o2U3VZUMlQcfjs=
 			</data>
 		</dict>
 		<key>Headers/MiSnapVoiceCaptureUX.h</key>
@@ -118,14 +118,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nk2PyLWk/c9lBIZgzpWHaLSD8gG9eC7dEDAazUZ8UWw=
+			fPXeO0sFw6rdmcvtRS7EszmI+z1++X6iKp/MogzgIm0=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aFrCG7x8tB/MhkR2Wb95OLvx76/l4zCU1YNIEk/BTuo=
+			Q5cHkdeLZJYRe/qHNSxyN+PZ5zxwrOSve3kaWfvTi/8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64.swiftdoc</key>
@@ -139,14 +139,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nk2PyLWk/c9lBIZgzpWHaLSD8gG9eC7dEDAazUZ8UWw=
+			fPXeO0sFw6rdmcvtRS7EszmI+z1++X6iKp/MogzgIm0=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aFrCG7x8tB/MhkR2Wb95OLvx76/l4zCU1YNIEk/BTuo=
+			Q5cHkdeLZJYRe/qHNSxyN+PZ5zxwrOSve3kaWfvTi/8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -160,14 +160,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B/I+YpXQkSW3ZM02t1/iA77nDcAbg9Ls+Bu+0horDco=
+			lblNkKDb5Y1GQTCLFBDywV5AzGYgNuYAdYZMshQp5UA=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A2R4A+zczX0XlEAeAQZA/70ec/6s+FD0roCTO2X9Eao=
+			Qh8mKV78iOnmP15octzUL41C6DmrGw/iMnZeBdrxjYY=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/x86_64.swiftdoc</key>
@@ -181,14 +181,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B/I+YpXQkSW3ZM02t1/iA77nDcAbg9Ls+Bu+0horDco=
+			lblNkKDb5Y1GQTCLFBDywV5AzGYgNuYAdYZMshQp5UA=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A2R4A+zczX0XlEAeAQZA/70ec/6s+FD0roCTO2X9Eao=
+			Qh8mKV78iOnmP15octzUL41C6DmrGw/iMnZeBdrxjYY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -202,7 +202,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iW+0Ct5uZxO79tgtvh7JuxKVeejl7UYA+4aor2/2GhE=
+			/tURpJww6IpT9rynW8B+2HFs/dVI2Xgvr8iqDtQhZVo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -216,11 +216,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>fancy_image.png</key>
+		<key>misnap_facial_capture_instruction_distance.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MBVtewgY0RVdEWsx6ZYy+pHaQAzwZgXaWIuMq0l86Q8=
+			fYSyuRqmPcBdIWVtSe/jiE8Qedx3qGrOvqD22M0SDDE=
 			</data>
 		</dict>
 	</dict>

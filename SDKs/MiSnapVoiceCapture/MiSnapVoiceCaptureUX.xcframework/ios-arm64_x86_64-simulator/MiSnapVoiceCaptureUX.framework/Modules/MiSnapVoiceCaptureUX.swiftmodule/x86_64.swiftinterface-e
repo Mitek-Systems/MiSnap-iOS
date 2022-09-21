@@ -44,7 +44,7 @@ import _Concurrency
   @objc func miSnapVoiceCaptureSuccess(_ results: [MiSnapVoiceCaptureResult], for type: MiSnapVoiceCaptureActivity)
   @objc func miSnapVoiceCaptureCancelled(_ result: MiSnapVoiceCaptureResult)
   @objc func miSnapVoiceCaptureError(_ result: MiSnapVoiceCaptureResult)
-  @objc func miSnapVoiceCaptureShouldBeDismissed()
+  @objc optional func miSnapVoiceCaptureShouldBeDismissed()
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapVoiceCaptureViewController : UIKit.UIViewController {
   @objc @_Concurrency.MainActor(unsafe) public var configuration: MiSnapVoiceCaptureConfiguration {
@@ -55,6 +55,9 @@ import _Concurrency
   @objc @_Concurrency.MainActor(unsafe) public func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @_Concurrency.MainActor(unsafe) @objc get
   }

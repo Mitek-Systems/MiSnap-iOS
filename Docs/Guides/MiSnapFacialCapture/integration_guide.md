@@ -148,7 +148,7 @@ func miSnapFacialCaptureDidFinishRecordingVideo(_ videoData: Data?) {
 ```
 Note, if `autoDismiss` of `MiSnapFacialCaptureUXParameters` is overridden to `false`, a parent view controller that presented `MiSnapFacialCaptureViewController` is responsible for dismissing it. Implement the following optional callback to achive this:
 ```Swift
-func miSnapShouldBeDismissed() {
+func miSnapFacialCaptureShouldBeDismissed() {
     // Dismiss MiSnapFacialCaptureViewController here
 }
 ```

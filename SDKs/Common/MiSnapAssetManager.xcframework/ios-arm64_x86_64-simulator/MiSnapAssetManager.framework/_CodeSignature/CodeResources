@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapAssetManager-Swift.h</key>
 		<data>
-		OcOjwBYiJXokT1+2FfDgFAp7vwI=
+		+bQSiFInr8hK9qYL8bbYbKentGY=
 		</data>
 		<key>Headers/MiSnapAssetManager.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		b6kfIU0mvLfMk4lwE//nwKwqQC0=
+		1jGZb0KBX1PGEeD4wNWJxMbcms8=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ANFp5HfMoCyXGaKfs3XVV+TgBgM=
+		3DdmUjBzf/J5rZTF2BfCAy938b0=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		b6kfIU0mvLfMk4lwE//nwKwqQC0=
+		1jGZb0KBX1PGEeD4wNWJxMbcms8=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ANFp5HfMoCyXGaKfs3XVV+TgBgM=
+		3DdmUjBzf/J5rZTF2BfCAy938b0=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5Jc5kDQyjWs3FWaJjrc/2wOC9Tc=
+		Sm8N4yD0pZtC58VOU98RlQ0C+kA=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V1HfKiMnrNUVtU2BuJAaBP5uUQE=
+		/GvFJ165OXLeK9LgWiRC0twTnZo=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		5Jc5kDQyjWs3FWaJjrc/2wOC9Tc=
+		Sm8N4yD0pZtC58VOU98RlQ0C+kA=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		V1HfKiMnrNUVtU2BuJAaBP5uUQE=
+		/GvFJ165OXLeK9LgWiRC0twTnZo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8bseKK0v9o7XoMYr/11HFDnKhwCNHoJtyqWRI0rqt6s=
+			pjUM4TZbVcYzy8gbsFvNni1frBQvZusmBP/NblS8na4=
 			</data>
 		</dict>
 		<key>Headers/MiSnapAssetManager.h</key>
@@ -96,14 +96,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			34mxxRtpYX7No/EvKEMc9FbcDp0EVydbuZhw8W8paPg=
+			ftrYBMqh966KFV4qgBz6s6IBU0KPzQsW8q7k24Evpd8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RZtmIayk3zmCCWur47iq9BzxvybNDehDPiQjd/y7D4k=
+			27Msnb5/AYSkHjUJebKUi7FsmPEig4EX+eTtn3wl/j8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64.swiftdoc</key>
@@ -117,14 +117,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			34mxxRtpYX7No/EvKEMc9FbcDp0EVydbuZhw8W8paPg=
+			ftrYBMqh966KFV4qgBz6s6IBU0KPzQsW8q7k24Evpd8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RZtmIayk3zmCCWur47iq9BzxvybNDehDPiQjd/y7D4k=
+			27Msnb5/AYSkHjUJebKUi7FsmPEig4EX+eTtn3wl/j8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -138,14 +138,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PjfPqNNaQbmQkeM+X+hOuqfa223846y4E0ZMIOO0Rko=
+			OQjIcB0TpaqeNeZxY27cA/cl3Y6HxR2CqBqkDd6M5Nc=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RIzp6oKzam7+63dqa5f32CLrzP7ilTdjWHKXegDy3Wc=
+			RS8sGqUg4cGB3WLsso8htO4ghE6mRrkdebQiaDvRDYQ=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64.swiftdoc</key>
@@ -159,14 +159,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PjfPqNNaQbmQkeM+X+hOuqfa223846y4E0ZMIOO0Rko=
+			OQjIcB0TpaqeNeZxY27cA/cl3Y6HxR2CqBqkDd6M5Nc=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RIzp6oKzam7+63dqa5f32CLrzP7ilTdjWHKXegDy3Wc=
+			RS8sGqUg4cGB3WLsso8htO4ghE6mRrkdebQiaDvRDYQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

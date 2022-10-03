@@ -54,7 +54,7 @@ Supported formats:
 * Wildcard identifiers (e.g. `com.company.*`) will be valid for all applications which bundle ids start with "com.company"
 * Multiple identifiers (e.g. `com.company.AppName1, com.company.AppName2` or `com.company.*, com.anotherCompany.*`) will be valid for applications with specified bundle ids and wild card identifiers.
 
-To obtain a license key, contact support@miteksystems.com and provide your application(s) bundle identifier(s).
+To obtain a license key, please contact your Mitek Solutions Provider or select the “Contact Support“ icon from the https://mitek.service-now.com/csm splash page
 
 Refer to [Integration Guides](#integration-guides) for setting the license key in your application.
 

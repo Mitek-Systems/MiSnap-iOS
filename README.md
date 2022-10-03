@@ -54,7 +54,7 @@ Supported formats:
 * Wildcard identifiers (e.g. `com.company.*`) will be valid for all applications which bundle ids start with "com.company"
 * Multiple identifiers (e.g. `com.company.AppName1, com.company.AppName2` or `com.company.*, com.anotherCompany.*`) will be valid for applications with specified bundle ids and wild card identifiers.
 
-To obtain a license key, contact support@miteksystems.com and provide your application(s) bundle identifier(s).
+To obtain a license key, please contact your Mitek Solutions Provider or select the “Contact Support“ icon from the https://mitek.service-now.com/csm splash page
 
 Refer to [Integration Guides](#integration-guides) for setting the license key in your application.
 
@@ -103,20 +103,50 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 
 <center>
 
-| Device                        | Version |
-| :-----:                       | :-----: |
-| iPhone 12                     |         |
-| iPhone 12 mini                |         |
-| iPhone 12 Pro Max             |         |
-| iPhone 11                     |         |
-| iPhone Xs Max                 |         |
-| iPhone 8                      |         |
-| iPhone 7                      |         |
-| iPhone 6s Plus                |         |
-| iPhone SE (2nd generation)    |         |
-| iPad Air                      |         |
-| iPad mini (5th generation)    |         |
-| iPad Pro 2                    |         |
+| Device                        | Version      |
+| :-----:                       | :-----:      |
+| iPhone 13 Pro Max             | 15.5         |
+|                               | 15.0.2       |
+| iPhone 13                     | 16 beta 2    |
+| iPhone 13 Mini                | 15.0         |
+| iPhone 12 Pro Max             | 14.7.1       |
+| iPhone 12                     | 15.5         |
+|                               | 14.1         |
+| iPhone 12 Mini                | 14.2         |
+| iPhone 11 Pro                 | 15.5         |
+|                               | 15.2         |
+|                               | 13.5.1       |
+| iPhone 11                     | 15.5         |
+|                               | 15.0         |
+| iPhone Xs Max                 | 13.3.1       |
+| iPhone Xs                     | 15.5         |
+| iPhone Xr                     | 15.5         |
+| iPhone X                      | 15.5         |
+| iPhone 8 Plus                 | 15.5         |
+| iPhone 8                      | 15.5         |
+|                               | 13.1.3       |
+| iPhone 7 Plus                 | 15.5         |
+|                               | 15.0.1       |
+| iPhone 7                      | 15.4.1       |
+|                               | 15.3         |
+|                               | 15.0         |
+|                               | 14.4         |
+|                               | 13.1.1       |
+| iPhone 6s Plus                | 15.5         |
+|                               | 11.4.1       |
+| iPhone 6s                     | 15.5         |
+|                               | 15.0.1       |
+| iPhone SE (2nd gen)           | 15.5         |
+|                               | 14.8         |
+|                               | 14.0         |
+| iPhone SE (1st gen)           | 15.5         |
+|                               | 13.5.1       |
+| iPhone 5s                     | 12.5.5       |
+| iPhone 5c                     | 10.3.3       |
+| iPad Pro (2nd gen)            | 13.1         |
+| iPad Pro                      | 12.3         |
+| iPad mini 3                   | 12.4.3       |
+| iPad Air                      | 10.2.1       |
 
 </center>
 

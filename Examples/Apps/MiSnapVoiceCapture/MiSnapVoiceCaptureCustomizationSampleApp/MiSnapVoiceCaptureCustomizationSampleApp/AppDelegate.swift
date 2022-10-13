@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MiSnapVoiceCaptureSampleApp
+//  MiSnapVoiceCaptureCustomizationSampleApp
 //
-//  Created by Mitek Engineering on 9/14/22.
+//  Created by Mitek Engineering on on 10/13/22.
 //
 
 import UIKit

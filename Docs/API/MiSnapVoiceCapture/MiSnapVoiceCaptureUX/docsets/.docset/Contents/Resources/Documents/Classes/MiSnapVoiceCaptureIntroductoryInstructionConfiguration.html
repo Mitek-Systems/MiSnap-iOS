@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MiSnapVoiceCaptureViewControllerDelegate Protocol Reference</title>
+    <title>MiSnapVoiceCaptureIntroductoryInstructionConfiguration Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Protocol/MiSnapVoiceCaptureViewControllerDelegate" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/MiSnapVoiceCaptureIntroductoryInstructionConfiguration" class="dashAnchor"></a>
 
-    <a title="MiSnapVoiceCaptureViewControllerDelegate Protocol Reference"></a>
+    <a title="MiSnapVoiceCaptureIntroductoryInstructionConfiguration Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -38,7 +38,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" alt=""/>
-      MiSnapVoiceCaptureViewControllerDelegate Protocol Reference
+      MiSnapVoiceCaptureIntroductoryInstructionConfiguration Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -87,16 +87,16 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>MiSnapVoiceCaptureViewControllerDelegate</h1>
+            <h1>MiSnapVoiceCaptureIntroductoryInstructionConfiguration</h1>
               <div class="declaration">
                 <div class="language">
                   
                   <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MiSnapVoiceCaptureViewControllerDelegate</span></code></pre>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">MiSnapVoiceCaptureIntroductoryInstructionConfiguration</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Defines an interface for delegates of <code><a href="../Classes/MiSnapVoiceCaptureViewController.html">MiSnapVoiceCaptureViewController</a></code> to receive recording result</p>
+            <p>A tutorial screen configuration</p>
 
           </div>
         </section>
@@ -108,9 +108,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureLicenseStatus:"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureLicenseStatus(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureLicenseStatus:">miSnapVoiceCaptureLicenseStatus(_:<wbr>)</a>
+                    <a name="/c:@M@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureIntroductoryInstructionConfiguration(py)image"></a>
+                    <a name="//apple_ref/swift/Property/image" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureIntroductoryInstructionConfiguration(py)image">image</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -118,7 +118,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Delegates receive this callback only when license status is anything but valid</p>
+                        <p>Image at the top</p>
 
                       </div>
                       <div class="declaration">
@@ -126,7 +126,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureLicenseStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">MiSnapLicenseStatus</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -136,9 +136,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureDidSelectPhrase:"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureDidSelectPhrase(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureDidSelectPhrase:">miSnapVoiceCaptureDidSelectPhrase(_:<wbr>)</a>
+                    <a name="/c:@M@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureIntroductoryInstructionConfiguration(py)instruction"></a>
+                    <a name="//apple_ref/swift/Property/instruction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureIntroductoryInstructionConfiguration(py)instruction">instruction</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -146,7 +146,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Delegates receive this callback when a user selects a phrase on a Phrase selection screen</p>
+                        <p>Configuration for instructions presented underneath an image</p>
 
                       </div>
                       <div class="declaration">
@@ -154,7 +154,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureDidSelectPhrase</span><span class="p">(</span><span class="n">_</span> <span class="nv">phrase</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">instruction</span><span class="p">:</span> <span class="kt">MiSnapLabelConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -164,9 +164,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureSuccess:for:"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureSuccess(_:for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureSuccess:for:">miSnapVoiceCaptureSuccess(_:<wbr>for:<wbr>)</a>
+                    <a name="/c:@M@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureIntroductoryInstructionConfiguration(py)button"></a>
+                    <a name="//apple_ref/swift/Property/button" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureIntroductoryInstructionConfiguration(py)button">button</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -174,7 +174,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Delegates receive this callback when all voice sample are successfully recorded for a given flow</p>
+                        <p>Configuration for a button at the bottom</p>
 
                       </div>
                       <div class="declaration">
@@ -182,7 +182,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureSuccess</span><span class="p">(</span><span class="n">_</span> <span class="nv">results</span><span class="p">:</span> <span class="p">[</span><span class="kt">MiSnapVoiceCaptureResult</span><span class="p">],</span> <span class="k">for</span> <span class="nv">flow</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureFlow</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">button</span><span class="p">:</span> <span class="kt">MiSnapLabelConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -192,9 +192,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureCancelled:"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureCancelled(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureCancelled:">miSnapVoiceCaptureCancelled(_:<wbr>)</a>
+                    <a name="/c:@M@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureIntroductoryInstructionConfiguration(im)init"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureIntroductoryInstructionConfiguration(im)init">init()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -202,7 +202,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Delegates receive this callback whenever a user cancels a session</p>
+                        <p>Creates and returns tutorial configuration</p>
 
                       </div>
                       <div class="declaration">
@@ -210,7 +210,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureCancelled</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureResult</span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -220,9 +220,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureError:"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureError(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureError:">miSnapVoiceCaptureError(_:<wbr>)</a>
+                    <a name="/c:@M@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureIntroductoryInstructionConfiguration(py)description"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureIntroductoryInstructionConfiguration(py)description">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -230,7 +230,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Delegates receive this callback when an internal SDK error occurs</p>
+                        <p>Description</p>
 
                       </div>
                       <div class="declaration">
@@ -238,40 +238,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureError</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureResult</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureShouldBeDismissed"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureShouldBeDismissed()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureShouldBeDismissed">miSnapVoiceCaptureShouldBeDismissed()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Delegates receive this callback when a session is completed and ready to be dissmised and <code>autoDismiss</code> is overridden to <code>false</code> in <code><a href="../Classes/MiSnapVoiceCaptureUXParameters.html">MiSnapVoiceCaptureUXParameters</a></code></p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    It&rsquo;s optional
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureShouldBeDismissed</span><span class="p">()</span></code></pre>
+<span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

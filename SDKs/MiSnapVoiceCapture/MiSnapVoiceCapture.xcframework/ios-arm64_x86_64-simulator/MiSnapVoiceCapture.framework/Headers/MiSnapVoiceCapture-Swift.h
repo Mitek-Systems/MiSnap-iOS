@@ -191,7 +191,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import AVFAudio;
-@import Foundation;
 @import MiSnapLicenseManager;
 @import ObjectiveC;
 #endif
@@ -211,35 +210,59 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureActivity, open) {
-  MiSnapVoiceCaptureActivityEnrollment = 0,
-  MiSnapVoiceCaptureActivityVerification = 1,
+/// Flow
+typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureFlow, open) {
+/// Enrollment
+  MiSnapVoiceCaptureFlowEnrollment = 0,
+/// Verification
+  MiSnapVoiceCaptureFlowVerification = 1,
 };
 
 @class NSNumber;
 @class NSString;
 
+/// Parameters used during voice recording process
 SWIFT_CLASS("_TtC18MiSnapVoiceCapture28MiSnapVoiceCaptureParameters")
 @interface MiSnapVoiceCaptureParameters : NSObject
-@property (nonatomic, readonly) enum MiSnapVoiceCaptureActivity activity;
+/// Flow
+@property (nonatomic, readonly) enum MiSnapVoiceCaptureFlow flow;
+/// Minimum speech length (ms) for a recording to be considered successful.
+/// Default: 750
+/// Note, it’s not recommended to change this value without consulting with Mitek representative.
 @property (nonatomic) float speechLengthMin;
+/// Maximum silence length (ms) before a session is automatically stopped.
+/// Default: 300
+/// Note, it’s not recommended to change this value without consulting with Mitek representative
 @property (nonatomic) float silenceLengthMax;
+/// Minimum SNR (Signal-to-Noise Ratio, dB) for a recording to be considered successful.
+/// Default: enrollment: 7, verification: 3
+/// Note, it’s not recommended to change this value without consulting with Mitek representative
 @property (nonatomic) float snrMin;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dictionary;
-- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureActivity)activity OBJC_DESIGNATED_INITIALIZER;
-+ (NSString * _Nonnull)stringFrom:(enum MiSnapVoiceCaptureActivity)activity SWIFT_WARN_UNUSED_RESULT;
+/// Initializes default parameters for a given <code>MiSnapVoiceCaptureFlow</code> flow
+- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureFlow)flow OBJC_DESIGNATED_INITIALIZER;
+/// String from <code>MiSnapVoiceCaptureFlow</code>
++ (NSString * _Nonnull)stringFrom:(enum MiSnapVoiceCaptureFlow)flow SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol MiSnapVoiceCaptureRecorderDelegate;
 
+/// Voice recorder
 SWIFT_CLASS("_TtC18MiSnapVoiceCapture26MiSnapVoiceCaptureRecorder")
 @interface MiSnapVoiceCaptureRecorder : NSObject
+/// Initializes a recorderr with parameters and delegate will accept recording results
 - (nonnull instancetype)initWith:(MiSnapVoiceCaptureParameters * _Nonnull)parameters delegate:(id <MiSnapVoiceCaptureRecorderDelegate> _Nonnull)delegate OBJC_DESIGNATED_INITIALIZER;
+/// Starts recording
+/// note:
+/// recording stops automatically after a user pronounced a phrase
 - (void)record;
+/// Cancels recording
 - (void)cancel;
+/// Shuts a recorder down.
+/// This should be called at the end of the session to de-initialize all internal objects to prevent memory leaks.
 - (void)shutdown;
+/// Logs a module and its version
 - (void)logModuleWithNamed:(NSString * _Nonnull)name version:(NSString * _Nonnull)version;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -251,37 +274,59 @@ SWIFT_CLASS("_TtC18MiSnapVoiceCapture26MiSnapVoiceCaptureRecorder")
 
 @class MiSnapVoiceCaptureResult;
 
+/// Defines an interface for delegates of <code>MiSnapVoiceCaptureRecorder</code> to receive recording result
 SWIFT_PROTOCOL("_TtP18MiSnapVoiceCapture34MiSnapVoiceCaptureRecorderDelegate_")
 @protocol MiSnapVoiceCaptureRecorderDelegate
-- (void)miSnapVoiceCaptureRecorderSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderError:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderSpeechLength:(NSInteger)speechLength;
-- (void)miSnapVoiceCaptureRecorderInterruption:(enum AVAudioSessionInterruptionType)type;
+/// Delegates receive this callback only when license status is anything but valid
 - (void)miSnapVoiceCaptureRecorderLicenseStatus:(MiSnapLicenseStatus)status;
+/// Delegates receive this callback when a recording passes all quality checks
+- (void)miSnapVoiceCaptureRecorderSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback when a recording failed a quality check
+- (void)miSnapVoiceCaptureRecorderFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback whenever a user cancels a session
+- (void)miSnapVoiceCaptureRecorderCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback when an internal SDK error occurs
+- (void)miSnapVoiceCaptureRecorderError:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback every time a live voice sample is processed
+- (void)miSnapVoiceCaptureRecorderSpeechLength:(NSInteger)speechLength;
+/// Delegates receive this callback when a recording was interrupted
+- (void)miSnapVoiceCaptureRecorderInterruption:(enum AVAudioSessionInterruptionType)type;
 @end
 
 @class NSData;
 enum MiSnapVoiceCaptureStatus : NSInteger;
 @class NSError;
 
+/// Voice recording result
 SWIFT_CLASS("_TtC18MiSnapVoiceCapture24MiSnapVoiceCaptureResult")
 @interface MiSnapVoiceCaptureResult : NSObject
+/// Data representation of a recorded .wav file
 @property (nonatomic, readonly, copy) NSData * _Nullable data;
+/// Status
 @property (nonatomic, readonly) enum MiSnapVoiceCaptureStatus status;
+/// Speech length, ms
 @property (nonatomic, readonly) float speechLength;
+/// SNR (Signal-to-Noise Ratio), dB
 @property (nonatomic, readonly) float snr;
+/// MIBI string
 @property (nonatomic, readonly, copy) NSString * _Nullable mibiString;
+/// SDK error
 @property (nonatomic, readonly, strong) NSError * _Nullable error;
+/// Initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// String from <code>MiSnapVoiceCaptureStatus</code>
 + (NSString * _Nonnull)stringFromStatus:(enum MiSnapVoiceCaptureStatus)status SWIFT_WARN_UNUSED_RESULT;
 @end
 
+/// Status
 typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureStatus, open) {
+/// None
   MiSnapVoiceCaptureStatusNone = 0,
+/// Too noisy
   MiSnapVoiceCaptureStatusTooNoisy = 1,
+/// Too short
   MiSnapVoiceCaptureStatusTooShort = 2,
+/// Good
   MiSnapVoiceCaptureStatusGood = 3,
 };
 
@@ -483,7 +528,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import AVFAudio;
-@import Foundation;
 @import MiSnapLicenseManager;
 @import ObjectiveC;
 #endif
@@ -503,35 +547,59 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureActivity, open) {
-  MiSnapVoiceCaptureActivityEnrollment = 0,
-  MiSnapVoiceCaptureActivityVerification = 1,
+/// Flow
+typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureFlow, open) {
+/// Enrollment
+  MiSnapVoiceCaptureFlowEnrollment = 0,
+/// Verification
+  MiSnapVoiceCaptureFlowVerification = 1,
 };
 
 @class NSNumber;
 @class NSString;
 
+/// Parameters used during voice recording process
 SWIFT_CLASS("_TtC18MiSnapVoiceCapture28MiSnapVoiceCaptureParameters")
 @interface MiSnapVoiceCaptureParameters : NSObject
-@property (nonatomic, readonly) enum MiSnapVoiceCaptureActivity activity;
+/// Flow
+@property (nonatomic, readonly) enum MiSnapVoiceCaptureFlow flow;
+/// Minimum speech length (ms) for a recording to be considered successful.
+/// Default: 750
+/// Note, it’s not recommended to change this value without consulting with Mitek representative.
 @property (nonatomic) float speechLengthMin;
+/// Maximum silence length (ms) before a session is automatically stopped.
+/// Default: 300
+/// Note, it’s not recommended to change this value without consulting with Mitek representative
 @property (nonatomic) float silenceLengthMax;
+/// Minimum SNR (Signal-to-Noise Ratio, dB) for a recording to be considered successful.
+/// Default: enrollment: 7, verification: 3
+/// Note, it’s not recommended to change this value without consulting with Mitek representative
 @property (nonatomic) float snrMin;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dictionary;
-- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureActivity)activity OBJC_DESIGNATED_INITIALIZER;
-+ (NSString * _Nonnull)stringFrom:(enum MiSnapVoiceCaptureActivity)activity SWIFT_WARN_UNUSED_RESULT;
+/// Initializes default parameters for a given <code>MiSnapVoiceCaptureFlow</code> flow
+- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureFlow)flow OBJC_DESIGNATED_INITIALIZER;
+/// String from <code>MiSnapVoiceCaptureFlow</code>
++ (NSString * _Nonnull)stringFrom:(enum MiSnapVoiceCaptureFlow)flow SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol MiSnapVoiceCaptureRecorderDelegate;
 
+/// Voice recorder
 SWIFT_CLASS("_TtC18MiSnapVoiceCapture26MiSnapVoiceCaptureRecorder")
 @interface MiSnapVoiceCaptureRecorder : NSObject
+/// Initializes a recorderr with parameters and delegate will accept recording results
 - (nonnull instancetype)initWith:(MiSnapVoiceCaptureParameters * _Nonnull)parameters delegate:(id <MiSnapVoiceCaptureRecorderDelegate> _Nonnull)delegate OBJC_DESIGNATED_INITIALIZER;
+/// Starts recording
+/// note:
+/// recording stops automatically after a user pronounced a phrase
 - (void)record;
+/// Cancels recording
 - (void)cancel;
+/// Shuts a recorder down.
+/// This should be called at the end of the session to de-initialize all internal objects to prevent memory leaks.
 - (void)shutdown;
+/// Logs a module and its version
 - (void)logModuleWithNamed:(NSString * _Nonnull)name version:(NSString * _Nonnull)version;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -543,37 +611,59 @@ SWIFT_CLASS("_TtC18MiSnapVoiceCapture26MiSnapVoiceCaptureRecorder")
 
 @class MiSnapVoiceCaptureResult;
 
+/// Defines an interface for delegates of <code>MiSnapVoiceCaptureRecorder</code> to receive recording result
 SWIFT_PROTOCOL("_TtP18MiSnapVoiceCapture34MiSnapVoiceCaptureRecorderDelegate_")
 @protocol MiSnapVoiceCaptureRecorderDelegate
-- (void)miSnapVoiceCaptureRecorderSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderError:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderSpeechLength:(NSInteger)speechLength;
-- (void)miSnapVoiceCaptureRecorderInterruption:(enum AVAudioSessionInterruptionType)type;
+/// Delegates receive this callback only when license status is anything but valid
 - (void)miSnapVoiceCaptureRecorderLicenseStatus:(MiSnapLicenseStatus)status;
+/// Delegates receive this callback when a recording passes all quality checks
+- (void)miSnapVoiceCaptureRecorderSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback when a recording failed a quality check
+- (void)miSnapVoiceCaptureRecorderFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback whenever a user cancels a session
+- (void)miSnapVoiceCaptureRecorderCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback when an internal SDK error occurs
+- (void)miSnapVoiceCaptureRecorderError:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback every time a live voice sample is processed
+- (void)miSnapVoiceCaptureRecorderSpeechLength:(NSInteger)speechLength;
+/// Delegates receive this callback when a recording was interrupted
+- (void)miSnapVoiceCaptureRecorderInterruption:(enum AVAudioSessionInterruptionType)type;
 @end
 
 @class NSData;
 enum MiSnapVoiceCaptureStatus : NSInteger;
 @class NSError;
 
+/// Voice recording result
 SWIFT_CLASS("_TtC18MiSnapVoiceCapture24MiSnapVoiceCaptureResult")
 @interface MiSnapVoiceCaptureResult : NSObject
+/// Data representation of a recorded .wav file
 @property (nonatomic, readonly, copy) NSData * _Nullable data;
+/// Status
 @property (nonatomic, readonly) enum MiSnapVoiceCaptureStatus status;
+/// Speech length, ms
 @property (nonatomic, readonly) float speechLength;
+/// SNR (Signal-to-Noise Ratio), dB
 @property (nonatomic, readonly) float snr;
+/// MIBI string
 @property (nonatomic, readonly, copy) NSString * _Nullable mibiString;
+/// SDK error
 @property (nonatomic, readonly, strong) NSError * _Nullable error;
+/// Initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// String from <code>MiSnapVoiceCaptureStatus</code>
 + (NSString * _Nonnull)stringFromStatus:(enum MiSnapVoiceCaptureStatus)status SWIFT_WARN_UNUSED_RESULT;
 @end
 
+/// Status
 typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureStatus, open) {
+/// None
   MiSnapVoiceCaptureStatusNone = 0,
+/// Too noisy
   MiSnapVoiceCaptureStatusTooNoisy = 1,
+/// Too short
   MiSnapVoiceCaptureStatusTooShort = 2,
+/// Good
   MiSnapVoiceCaptureStatusGood = 3,
 };
 

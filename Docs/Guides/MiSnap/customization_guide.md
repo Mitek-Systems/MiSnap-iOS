@@ -2,6 +2,8 @@
 
 :warning: This guide is only applicable if you've integrated `MiSnapUX`. Use this [starter custom view controller](../../../Examples/Snippets/MiSnap/CustomViewController.swift) when building your own UX/UI.
 
+Please refer to [MiSnapCustomizationSampleApp](../../../Examples/Apps/MiSnap/MiSnapCustomizationSampleApp) as a working customization example.
+
 ## Table of Contents
 * [Overview](#overview)
 * [UX Parameters](#ux-parameters)
@@ -27,7 +29,7 @@
 
 # Overview
 
-In general, there are 2 types of customization are available - UX/UI and SDK parameters customization.
+In general, there are 2 types of customization available - UX/UI and SDK parameters customization.
 
 To customize UX/UI, a template configuration is created and all necessary customizations are chained one after another.
 
@@ -55,7 +57,7 @@ let configuration = MiSnapConfiguration(for: documentType)
     }
     .applying(template)
 
-misnap = MiSnapViewController(with: configuration, delegate: self)
+misnapVC = MiSnapViewController(with: configuration, delegate: self)
 ```
 where,
 
@@ -77,7 +79,7 @@ For all available UX Parameters customization options see this [API reference](h
 
 # Localization
 
-Copy localization key-value pairs for a given language from [Localization](../../../Localization/MiSnap) `(TODO)` folder and paste them into your Localizable.strings file.
+Copy localization key-value pairs for a given language from [Localization](../../../Localization/MiSnap) folder and paste them into your Localizable.strings file.
 
 Create a template configuration (if it doesn't exist) and chain `.withCustomLocalization`. Refer to a snippet below.
 
@@ -327,6 +329,9 @@ let configuration = MiSnapConfiguration(for: documentType)
 ```
 
 ## Other
+
+:warning: It's not recommended to customize other SDK parameters without consulting with Mitek representative.
+
 For other SDK parameters customization options refer to this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/MiSnap/MiSnap/Classes/MiSnapParameters.html).
 
 

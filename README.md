@@ -54,7 +54,7 @@ Supported formats:
 * Wildcard identifiers (e.g. `com.company.*`) will be valid for all applications which bundle ids start with "com.company"
 * Multiple identifiers (e.g. `com.company.AppName1, com.company.AppName2` or `com.company.*, com.anotherCompany.*`) will be valid for applications with specified bundle ids and wild card identifiers.
 
-To obtain a license key, please contact your Mitek Solutions Provider or select the “Contact Support“ icon from the https://mitek.service-now.com/csm splash page.
+To obtain a license key, please contact your Mitek Solutions Provider or select the "Contact Support" icon from the https://mitek.service-now.com/csm splash page.
 
 Refer to [Integration Guides](#integration-guides) for setting the license key in your application.
 
@@ -65,6 +65,7 @@ Refer to [Integration Guides](#integration-guides) for setting the license key i
 * [MiSnap](Docs/Guides/MiSnap/integration_guide.md)
 * [MiSnapNFC](Docs/Guides/MiSnapNFC/integration_guide.md)
 * [MiSnapFacialCapture](Docs/Guides/MiSnapFacialCapture/integration_guide.md)
+* [MiSnapVoiceCapture](Docs/Guides/MiSnapVoiceCapture/integration_guide.md)
 
 - - -
 
@@ -73,6 +74,7 @@ Refer to [Integration Guides](#integration-guides) for setting the license key i
 * [MiSnap](Docs/Guides/MiSnap/customization_guide.md)
 * [MiSnapNFC](Docs/Guides/MiSnapNFC/customization_guide.md)
 * [MiSnapFacialCapture](Docs/Guides/MiSnapFacialCapture/customization_guide.md)
+* [MiSnapVoiceCapture](Docs/Guides/MiSnapVoiceCapture/customization_guide.md)
 
 - - -
 
@@ -88,6 +90,8 @@ Refer to [Integration Guides](#integration-guides) for setting the license key i
 | NFC + NFCUX                      |  0.68          |  1.50            |
 | FacialCapture                    |  0.13          |  0.47            |
 | FacialCapture + FacialCaptureUX  |  0.44          |  1.20            |
+| VoiceCapture                     |  0.86          |  2.20            |
+| VoiceCapture + VoiceCaptureUX    |  1.10          |  2.90            |
 
 </center>
 
@@ -159,6 +163,8 @@ Refer to "Create the App Size Report" section of [this article](https://develope
     * Some iPhone 7 devices fail NFC reading of eDriving License regardless of an iOS version
 * MiSnapFacialCapture
     * On iPhone 7 and earlier, the hint messages take a few seconds to begin appearing. During this time the message label will be blank
+* MiSnapVoiceCapture
+    * None
 
 - - -
 
@@ -166,6 +172,7 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 * [MiSnap](Docs/Guides/MiSnap/faq.md)
 * [MiSnapNFC](Docs/Guides/MiSnapNFC/faq.md)
 * [MiSnapFacialCapture](Docs/Guides/MiSnapFacialCapture/faq.md)
+* [MiSnapVoiceCapture](Docs/Guides/MiSnapVoiceCapture/faq.md)
 
 - - -
 
@@ -173,4 +180,5 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 * MiSnap (no third-party dependencies)
 * [MiSnapNFC](Docs/Guides/MiSnapNFC/3rd_party_licensing_info.md)
 * MiSnapFacialCapture (no third-party dependencies)
+* MiSnapVoiceCapture (no third-party dependencies)
 

@@ -1,5 +1,7 @@
 # Integration Guide
 
+[MiSnapVoiceCaptureSampleApp](../../../Examples/Apps/MiSnapVoiceCapture/MiSnapVoiceCaptureSampleApp) was created by following steps below. Please refer to this project as a working example.
+
 ## 1. Obtain the SDK(s)
 MiSnapVoiceCapture 5.x is distributed through CocoaPods and Swift Package Manager. For detailed installation instructions refer to:
 * [CocoaPods installation guide](https://guides.cocoapods.org/using/using-cocoapods.html)

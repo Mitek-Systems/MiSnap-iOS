@@ -2,6 +2,8 @@
 
 :warning: MiSnap 5.x has breaking API changes therefore to migrate from 3.x and 4.x series, remove all old MiSnap references from your project.
 
+[MiSnapSampleApp](../../../Examples/Apps/MiSnap/MiSnapSampleApp) was created by following steps below. Please refer to this project as a working example.
+
 ## 1. Obtain the SDK(s)
 MiSnap 5.x is distributed through CocoaPods and Swift Package Manager. For detailed installation instructions refer to:
 * [CocoaPods installation guide](https://guides.cocoapods.org/using/using-cocoapods.html)

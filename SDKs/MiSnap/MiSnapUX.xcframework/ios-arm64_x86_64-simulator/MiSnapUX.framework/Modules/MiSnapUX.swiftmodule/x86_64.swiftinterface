@@ -107,6 +107,9 @@ import _Concurrency
   @objc public var glare: MiSnapGlareViewConfiguration {
     get
   }
+  @objc public var documentLabel: MiSnapLabelConfiguration {
+    get
+  }
   @objc public var cancel: MiSnapCancelViewConfiguration {
     get
   }
@@ -135,6 +138,7 @@ import _Concurrency
   @objc public func withCustomGuide(completion: (MiSnapGuideViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomHint(completion: (MiSnapHintViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomGlare(completion: (MiSnapGlareViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomDocumentLabel(completion: (MiSnapLabelConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomCancel(completion: (MiSnapCancelViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomHelp(completion: (MiSnapHelpViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomTorch(completion: (MiSnapTorchViewConfiguration) -> Swift.Void) -> MiSnapConfiguration

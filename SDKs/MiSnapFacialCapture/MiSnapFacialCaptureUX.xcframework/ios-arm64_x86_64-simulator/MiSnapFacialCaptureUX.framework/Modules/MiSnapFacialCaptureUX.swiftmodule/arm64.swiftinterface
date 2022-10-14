@@ -15,7 +15,7 @@ import _Concurrency
   }
   @objc deinit
 }
-@objc public enum MiSnapFaceCaptureActivityType : Swift.Int {
+@objc public enum MiSnapFaceCaptureFlow : Swift.Int {
   case enrollment = 0
   case verification = 1
   public init?(rawValue: Swift.Int)
@@ -34,7 +34,7 @@ import _Concurrency
   }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MiSnapFacialCaptureUXParameters : ObjectiveC.NSObject {
-  @objc public var type: MiSnapFaceCaptureActivityType
+  @objc public var flow: MiSnapFaceCaptureFlow
   @objc public var showIntroductoryInstructionScreen: Swift.Bool
   @objc public var showTimeoutScreen: Swift.Bool
   @objc public var showHelpScreen: Swift.Bool
@@ -53,7 +53,7 @@ import _Concurrency
     @objc get
     @objc set
   }
-  @objc public init(for type: MiSnapFaceCaptureActivityType)
+  @objc public init(for flow: MiSnapFaceCaptureFlow)
   @objc public var dictionary: [Swift.String : Swift.String] {
     @objc get
   }
@@ -71,6 +71,9 @@ import _Concurrency
   @objc public var parameters: MiSnapFacialCaptureParameters
   @objc public var uxParameters: MiSnapFacialCaptureUXParameters
   @objc public var guide: MiSnapFacialCaptureGuideConfiguration {
+    get
+  }
+  @objc public var hint: MiSnapLabelConfiguration {
     get
   }
   @objc public var cancel: MiSnapCancelViewConfiguration {
@@ -94,6 +97,7 @@ import _Concurrency
   @objc public func withCustomParameters(completion: (MiSnapFacialCaptureParameters) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc public func withCustomUxParameters(completion: (MiSnapFacialCaptureUXParameters) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc public func withCustomGuide(completion: (MiSnapFacialCaptureGuideConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomHint(completion: (MiSnapLabelConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc public func withCustomCancel(completion: (MiSnapCancelViewConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc public func withCustomHelp(completion: (MiSnapHelpViewConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc public func withCustomCameraShutter(completion: (MiSnapCameraShutterViewConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
@@ -101,11 +105,11 @@ import _Concurrency
   @objc public func withCustomRecordingIndicator(completion: (MiSnapRecordingIndicatorViewConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc public func withCustomSuccessCheckmark(completion: (MiSnapSuccessCheckmarkViewConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc public func withCustomLocalization(completion: (MiSnapFacialCaptureLocalizationConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
+  @objc override dynamic public init()
   @objc convenience public init(with parameters: MiSnapFacialCaptureParameters? = nil, uxParameters: MiSnapFacialCaptureUXParameters? = nil)
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol MiSnapFacialCaptureViewControllerDelegate {
@@ -163,9 +167,9 @@ extension MiSnapFacialCaptureViewController {
   @_Concurrency.MainActor(unsafe) public static func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> Swift.Void)
   @_Concurrency.MainActor(unsafe) public static func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
 }
-extension MiSnapFaceCaptureActivityType : Swift.Equatable {}
-extension MiSnapFaceCaptureActivityType : Swift.Hashable {}
-extension MiSnapFaceCaptureActivityType : Swift.RawRepresentable {}
+extension MiSnapFaceCaptureFlow : Swift.Equatable {}
+extension MiSnapFaceCaptureFlow : Swift.Hashable {}
+extension MiSnapFaceCaptureFlow : Swift.RawRepresentable {}
 extension MiSnapFacialCaptureReviewMode : Swift.Equatable {}
 extension MiSnapFacialCaptureReviewMode : Swift.Hashable {}
 extension MiSnapFacialCaptureReviewMode : Swift.RawRepresentable {}

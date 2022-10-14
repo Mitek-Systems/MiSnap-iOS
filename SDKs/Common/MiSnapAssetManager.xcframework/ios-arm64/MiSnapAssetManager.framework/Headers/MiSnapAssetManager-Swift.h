@@ -725,6 +725,108 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager27MiSnapHintViewConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class MiSnapLabelConfiguration;
+
+/// MiSnap label
+SWIFT_CLASS("_TtC18MiSnapAssetManager11MiSnapLabel")
+@interface MiSnapLabel : UILabel
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// Creates and returns a label with a given text configuration
+- (nonnull instancetype)initWithText:(NSString * _Nonnull)withText configuration:(MiSnapLabelConfiguration * _Nonnull)configuration in:(CGRect)parentFrame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+@class UITraitCollection;
+
+@interface MiSnapLabel (SWIFT_EXTENSION(MiSnapAssetManager))
+/// Called when the environment’s traits change.
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+@end
+
+
+/// MiSnap label configuration
+SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapLabelConfiguration")
+@interface MiSnapLabelConfiguration : NSObject
+/// Size
+/// Default: <code>.zero</code>
+/// note:
+/// when <code>width</code> and/or <code>height</code> are in range <code>0.0001...0.9999</code> then its value is used as a multiplier for its parent’s <code>width</code> and/or <code>height</code>. Otherwise, <code>width</code> and <code>height</code> are nominal values in pixels
+@property (nonatomic) CGSize size;
+/// Font
+/// Default: system font of size 19.0 and regular font weight
+@property (nonatomic, strong) UIFont * _Nonnull font;
+/// Text alignment
+/// Default: <code>.center</code>
+@property (nonatomic) NSTextAlignment textAlignment;
+/// Text color
+/// Default: <code>.label</code> for iOS >= 13 and <code>.black</code> for iOS < 13
+/// Used in both Light and Dark modes if <code>colorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nonnull color;
+/// Text color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable colorDarkMode;
+/// Background color
+/// Default: <code>.clear</code>
+/// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Background color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
+/// Number of lines
+/// Default: <code>0</code>
+@property (nonatomic) NSInteger numberOfLines;
+/// Line break mode
+/// Default: <code>.byTruncatingTail</code>
+@property (nonatomic) NSLineBreakMode lineBreakMode;
+/// Corner radius
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat cornerRadius;
+/// Indicates whether corners should be rounded
+/// Default: <code>false</code>
+/// When overridden to <code>true</code> value of <code>cornerRadius</code> is ignored
+@property (nonatomic) BOOL roundCorners;
+/// Border width
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat borderWidth;
+/// Border color
+/// Default: <code>.clear</code>
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+/// Shadow color
+/// Default: <code>.clear</code>
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+/// Shadow offset
+/// Default: <code>.zero</code>
+@property (nonatomic) CGSize shadowOffset;
+/// Shadow radius
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat shadowRadius;
+/// Shadow radius
+/// Default: <code>0.0</code>
+@property (nonatomic) float shadowOpacity;
+/// Indicates whether should be clipped to bounds
+/// Default: <code>false</code>
+@property (nonatomic) BOOL clipsToBounds;
+/// Indicates whether a label should fit to its text size
+/// Default: <code>false</code>
+@property (nonatomic) BOOL sizeToFit;
+/// Width padding that should be added to a width when <code>sizeToFit</code> is overridden to <code>true</code>
+/// Range: <code>0.0...1.0</code>
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat widthPadding;
+/// Height padding that should be added to a height when <code>sizeToFit</code> is overridden to <code>true</code>
+/// Range: <code>0.0...1.0</code>
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat heightPadding;
+/// Creates and returns configuration with default values
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
 @class MiSnapRecordingIndicatorViewConfiguration;
 
 /// Recording indicator view
@@ -881,41 +983,33 @@ typedef SWIFT_ENUM(NSInteger, MiSnapVignetteStyle, open) {
   MiSnapVignetteStyleSemitransparent = 2,
 };
 
-enum MiSnapVoiceCaptureButtonStyle : NSInteger;
 
-SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapVoiceCaptureButton")
-@interface MiSnapVoiceCaptureButton : UIButton
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title style:(enum MiSnapVoiceCaptureButtonStyle)style frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
-
-@class UITraitCollection;
-
-@interface MiSnapVoiceCaptureButton (SWIFT_EXTENSION(MiSnapAssetManager))
-- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
-@end
-
-typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureButtonStyle, open) {
-  MiSnapVoiceCaptureButtonStyleFill = 0,
-  MiSnapVoiceCaptureButtonStyleStroke = 1,
-};
-
-
+/// Status view configuration
 SWIFT_CLASS("_TtC18MiSnapAssetManager41MiSnapVoiceCaptureStatusViewConfiguration")
 @interface MiSnapVoiceCaptureStatusViewConfiguration : NSObject
+/// Size
+@property (nonatomic) CGFloat diameter;
 /// A custom image that should be used instead of a drawn view
 @property (nonatomic, strong) UIImage * _Nullable image;
 /// Color
 @property (nonatomic, strong) UIColor * _Nonnull color;
 /// Background color
 @property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Animation color
+@property (nonatomic, strong) UIColor * _Nonnull animationColor;
+/// Animation time
+@property (nonatomic) CGFloat animationTime;
+/// Line width
+@property (nonatomic) CGFloat lineWidth;
+/// Line cap
+@property (nonatomic) CAShapeLayerLineCap _Nonnull lineCap;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+/// Failure view configuration
 SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureFailureViewConfiguration")
 @interface MiSnapVoiceCaptureFailureViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration
 /// Creates and returns <code>MiSnapVoiceCaptureFailureViewConfiguration</code> with default values
@@ -925,6 +1019,7 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureFailureViewConfiguratio
 @end
 
 
+/// Neutral view configuration
 SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureNeutralViewConfiguration")
 @interface MiSnapVoiceCaptureNeutralViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration
 /// Creates and returns <code>MiSnapVoiceCaptureNeutralViewConfiguration</code> with default values
@@ -935,50 +1030,24 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureNeutralViewConfiguratio
 
 enum MiSnapVoiceCaptureViewStatus : NSInteger;
 
+/// Status view
 SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapVoiceCaptureStatusView")
 @interface MiSnapVoiceCaptureStatusView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// Diameter
+@property (nonatomic, readonly) CGFloat diameter;
+/// Animation color
+@property (nonatomic, readonly, strong) UIColor * _Nonnull animationColor;
+/// Animation time
+@property (nonatomic, readonly) CGFloat animationTime;
+/// Updates for a given status
 - (void)updateFor:(enum MiSnapVoiceCaptureViewStatus)status;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 
-@class MiSnapVoiceCaptureSuccessViewConfiguration;
 
-SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureStatusViewsConfiguration")
-@interface MiSnapVoiceCaptureStatusViewsConfiguration : NSObject
-/// Status
-/// <ul>
-///   <li>
-///     See: <code>MiSnapVoiceCaptureStatus</code>
-///   </li>
-/// </ul>
-@property (nonatomic) enum MiSnapVoiceCaptureViewStatus status;
-/// Size
-@property (nonatomic) CGFloat diameter;
-/// Line width
-@property (nonatomic) CGFloat lineWidth;
-/// Line cap
-@property (nonatomic) CAShapeLayerLineCap _Nonnull lineCap;
-/// Animation color
-@property (nonatomic, strong) UIColor * _Nonnull animationColor;
-/// Animation time
-@property (nonatomic) CGFloat animationTime;
-/// Success configuration
-@property (nonatomic, strong) MiSnapVoiceCaptureSuccessViewConfiguration * _Nonnull success;
-/// Failure configuration
-@property (nonatomic, strong) MiSnapVoiceCaptureFailureViewConfiguration * _Nonnull failure;
-/// Neutral configuration
-@property (nonatomic, strong) MiSnapVoiceCaptureNeutralViewConfiguration * _Nonnull neutral;
-/// Description
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-/// Creates and returns configuration with default values
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-/// Creates and returns configuration for a given <code>MiSnapViewState</code>
-- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureViewStatus)status OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
+/// Success view configuration
 SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureSuccessViewConfiguration")
 @interface MiSnapVoiceCaptureSuccessViewConfiguration : MiSnapVoiceCaptureStatusViewConfiguration
 /// Creates and returns <code>MiSnapVoiceCaptureSuccessViewConfiguration</code> with default values
@@ -987,10 +1056,14 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureSuccessViewConfiguratio
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
+/// A view status
 typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureViewStatus, open) {
-  MiSnapVoiceCaptureViewStatusSuccess = 0,
-  MiSnapVoiceCaptureViewStatusFailure = 1,
-  MiSnapVoiceCaptureViewStatusNeutral = 2,
+/// Neutral
+  MiSnapVoiceCaptureViewStatusNeutral = 0,
+/// Success
+  MiSnapVoiceCaptureViewStatusSuccess = 1,
+/// Failure
+  MiSnapVoiceCaptureViewStatusFailure = 2,
 };
 
 

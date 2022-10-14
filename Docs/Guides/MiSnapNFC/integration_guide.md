@@ -2,6 +2,8 @@
 
 :warning: MiSnapNFC 5.x has breaking API changes therefore to migrate from 1.x series, remove all old MiSnap references from your project.
 
+[MiSnapNFCSampleApp](../../../Examples/Apps/MiSnapNFC/MiSnapNFCSampleApp) was created by following steps below. Please refer to this project as a working example.
+
 ## 1. Obtain the SDK(s)
 MiSnapNFC 5.x is distributed through CocoaPods and Swift Package Manager. For detailed installation instructions refer to:
 * [CocoaPods installation guide](https://guides.cocoapods.org/using/using-cocoapods.html)

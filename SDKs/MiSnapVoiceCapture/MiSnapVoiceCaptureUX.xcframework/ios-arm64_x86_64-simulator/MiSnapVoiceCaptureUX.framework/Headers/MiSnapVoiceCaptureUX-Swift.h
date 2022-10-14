@@ -215,7 +215,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class MiSnapVoiceCaptureParameters;
 @class MiSnapVoiceCaptureUXParameters;
-@class MiSnapVoiceCaptureStatusViewsConfiguration;
+@class MiSnapVoiceCapturePhraseSelectionConfiguration;
+@class MiSnapVoiceCaptureIntroductoryInstructionConfiguration;
+@class MiSnapVoiceCaptureRecordingConfiguration;
 @class NSString;
 @class MiSnapVoiceCaptureLocalizationConfiguration;
 
@@ -223,25 +225,51 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX31MiSnapVoiceCaptureConfiguration")
 @interface MiSnapVoiceCaptureConfiguration : NSObject
 /// SDK parameters
-@property (nonatomic, strong) MiSnapVoiceCaptureParameters * _Nonnull parameters;
+@property (nonatomic, readonly, strong) MiSnapVoiceCaptureParameters * _Nonnull parameters;
 /// UX parameters
-@property (nonatomic, strong) MiSnapVoiceCaptureUXParameters * _Nonnull uxParameters;
-/// Status views configuration
-@property (nonatomic, strong) MiSnapVoiceCaptureStatusViewsConfiguration * _Nonnull statusViews;
+@property (nonatomic, readonly, strong) MiSnapVoiceCaptureUXParameters * _Nonnull uxParameters;
+/// Phrase selection screen
+@property (nonatomic, readonly, strong) MiSnapVoiceCapturePhraseSelectionConfiguration * _Nonnull phraseSelection;
+/// Tutorial screen
+@property (nonatomic, readonly, strong) MiSnapVoiceCaptureIntroductoryInstructionConfiguration * _Nonnull introductoryInstruction;
+/// Recording screen
+@property (nonatomic, readonly, strong) MiSnapVoiceCaptureRecordingConfiguration * _Nonnull recording;
 /// Creates and returns default configuration for a provided activity type
-- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureActivity)activity phrase:(NSString * _Nullable)phrase OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureFlow)flow phrase:(NSString * _Nullable)phrase OBJC_DESIGNATED_INITIALIZER;
 /// Convenience function for SDK parameters customization
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for UX parameters customization
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomUxParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureUXParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
-/// Convenience function for status views customization
-- (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomStatusViewsConfigurationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureStatusViewsConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Phrase selection screen customization
+- (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomPhraseSelectionWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCapturePhraseSelectionConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Tutorial screen customization
+- (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomIntroductoryInstructionWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureIntroductoryInstructionConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Recording screen customization
+- (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomRecordingWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureRecordingConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Description of <code>MiSnapVoiceCaptureConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIImage;
+@class MiSnapLabelConfiguration;
+
+/// A tutorial screen configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX54MiSnapVoiceCaptureIntroductoryInstructionConfiguration")
+@interface MiSnapVoiceCaptureIntroductoryInstructionConfiguration : NSObject
+/// Image at the top
+@property (nonatomic, strong) UIImage * _Nullable image;
+/// Configuration for instructions presented underneath an image
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull instruction;
+/// Configuration for a button at the bottom
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull button;
+/// Creates and returns tutorial configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 @class NSBundle;
@@ -259,17 +287,72 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX43MiSnapVoiceCaptureLocalizationConfigura
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
+
+/// A phrase selection screen  configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX46MiSnapVoiceCapturePhraseSelectionConfiguration")
+@interface MiSnapVoiceCapturePhraseSelectionConfiguration : NSObject
+/// Configuration for a message at the top
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Configuration for a phase in a list
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull phrase;
+/// Configuration for a button at the bottom
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull button;
+/// Creates and returns a phrase selection configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+@class MiSnapVoiceCaptureNeutralViewConfiguration;
+@class MiSnapVoiceCaptureSuccessViewConfiguration;
+@class MiSnapVoiceCaptureFailureViewConfiguration;
+
+/// A recording screen configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureRecordingConfiguration")
+@interface MiSnapVoiceCaptureRecordingConfiguration : NSObject
+/// Configuration for Cancel button at the top
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
+/// Neutral view configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureNeutralViewConfiguration * _Nonnull neutral;
+/// Success view configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureSuccessViewConfiguration * _Nonnull success;
+/// Failure view configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureFailureViewConfiguration * _Nonnull failure;
+/// Configuration for a message that’s located above the prase
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Configuration for a phrase
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull phrase;
+/// Configuration for a failure message
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureMessage;
+/// Configuration for Failure acknowledgment button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureAcknowledgment;
+/// Creates and returns tutorial configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
 @class NSNumber;
 
+/// UX parameters used during voice recording process
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX30MiSnapVoiceCaptureUXParameters")
 @interface MiSnapVoiceCaptureUXParameters : NSObject
 /// Indicates whether an introductory instruction screen should be presented
+/// Default: <code>true</code>
 @property (nonatomic) BOOL showIntroductoryInstructionScreen;
+/// Indicates whether MiSnapVoiceCaptureViewController should be automatically dismissed or
+/// will be dismissed by a presenting view controller
+/// Default: <code>true</code>
 @property (nonatomic) BOOL autoDismiss;
-@property (nonatomic) BOOL accessibilityEnabled;
-@property (nonatomic) NSInteger samplesCount;
+/// A phrase to be used in a flow
 @property (nonatomic, readonly, copy) NSString * _Nullable phrase;
-- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureActivity)activity phrase:(NSString * _Nullable)phrase OBJC_DESIGNATED_INITIALIZER;
+/// Initializes parameters for a flow (see <code>MiSnapVoiceCaptureFlow</code>) with an optional phrase
+/// note:
+/// a <code>phrase</code> is required for <code>verification</code> flow. A crash will occur if it’s not provided.
+/// note:
+/// a <code>phrase</code> is optional for <code>enrollment</code> flow. When phrase is not provided a Phrase selection screen is presented to a user (recommended).
+/// If a phrase is provided then Phrase selection screen is skipped (not recommended).
+- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureFlow)flow phrase:(NSString * _Nullable)phrase OBJC_DESIGNATED_INITIALIZER;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -279,17 +362,33 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX30MiSnapVoiceCaptureUXParameters")
 @class NSCoder;
 @protocol MiSnapVoiceCaptureViewControllerDelegate;
 
+/// A view controller that controls an invoked session
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 @interface MiSnapVoiceCaptureViewController : UIViewController
 /// A configuration a session was initialized with
 @property (nonatomic, readonly, strong) MiSnapVoiceCaptureConfiguration * _Nonnull configuration;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// Initializes a view controller with parameters and a delegate
 - (nonnull instancetype)initWith:(MiSnapVoiceCaptureConfiguration * _Nonnull)configuration delegate:(id <MiSnapVoiceCaptureViewControllerDelegate> _Nonnull)delegate OBJC_DESIGNATED_INITIALIZER;
+/// Checks a microphone permission and asynchronously returns a result
 + (void)checkMicrophonePermissionWithHandler:(void (^ _Nonnull)(BOOL))handler;
+/// Checks if a device has a given space in MB
 - (BOOL)hasMinDiskSpace:(NSInteger)minDiskSpace SWIFT_WARN_UNUSED_RESULT;
+/// Called after the view has been loaded.
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
 - (void)viewDidLoad;
+/// Called when the view is about to made visible
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
 - (void)viewWillAppear:(BOOL)animated;
+/// Indicates whether a status bar should be hidden
+/// note:
+/// Only exposed due to public status of parent’s property. Do not override it.
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+/// Returns orientations supported by the view controller
+/// note:
+/// Only exposed due to public status of parent’s property. Do not override it.
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
@@ -301,25 +400,55 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 @class MiSnapVoiceCaptureResult;
 
 @interface MiSnapVoiceCaptureViewController (SWIFT_EXTENSION(MiSnapVoiceCaptureUX)) <MiSnapVoiceCaptureRecorderDelegate>
-- (void)miSnapVoiceCaptureRecorderSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderError:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when an analyzer detects an invalid license
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
 - (void)miSnapVoiceCaptureRecorderLicenseStatus:(MiSnapLicenseStatus)status;
+/// Called when a recording passes all quality checks
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureRecorderSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when a recording failed a quality check
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureRecorderFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when an internal SDK error occurs
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureRecorderError:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called whenever a user cancels a session
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureRecorderCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called every time a live voice sample is processed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
 - (void)miSnapVoiceCaptureRecorderSpeechLength:(NSInteger)speechLength;
+/// Called when a recording was interrupted
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
 - (void)miSnapVoiceCaptureRecorderInterruption:(enum AVAudioSessionInterruptionType)type;
 @end
 
 
 
+/// Defines an interface for delegates of <code>MiSnapVoiceCaptureViewController</code> to receive recording result
 SWIFT_PROTOCOL("_TtP20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureViewControllerDelegate_")
 @protocol MiSnapVoiceCaptureViewControllerDelegate
+/// Delegates receive this callback only when license status is anything but valid
 - (void)miSnapVoiceCaptureLicenseStatus:(MiSnapLicenseStatus)status;
+/// Delegates receive this callback when a user selects a phrase on a Phrase selection screen
 - (void)miSnapVoiceCaptureDidSelectPhrase:(NSString * _Nonnull)phrase;
-- (void)miSnapVoiceCaptureSuccess:(NSArray<MiSnapVoiceCaptureResult *> * _Nonnull)results for:(enum MiSnapVoiceCaptureActivity)type;
+/// Delegates receive this callback when all voice sample are successfully recorded for a given flow
+- (void)miSnapVoiceCaptureSuccess:(NSArray<MiSnapVoiceCaptureResult *> * _Nonnull)results for:(enum MiSnapVoiceCaptureFlow)flow;
+/// Delegates receive this callback whenever a user cancels a session
 - (void)miSnapVoiceCaptureCancelled:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback when an internal SDK error occurs
 - (void)miSnapVoiceCaptureError:(MiSnapVoiceCaptureResult * _Nonnull)result;
 @optional
+/// Delegates receive this callback when a session is completed and ready to be dissmised and <code>autoDismiss</code> is overridden to <code>false</code> in <code>MiSnapVoiceCaptureUXParameters</code>
+/// note:
+/// It’s optional
 - (void)miSnapVoiceCaptureShouldBeDismissed;
 @end
 
@@ -545,7 +674,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class MiSnapVoiceCaptureParameters;
 @class MiSnapVoiceCaptureUXParameters;
-@class MiSnapVoiceCaptureStatusViewsConfiguration;
+@class MiSnapVoiceCapturePhraseSelectionConfiguration;
+@class MiSnapVoiceCaptureIntroductoryInstructionConfiguration;
+@class MiSnapVoiceCaptureRecordingConfiguration;
 @class NSString;
 @class MiSnapVoiceCaptureLocalizationConfiguration;
 
@@ -553,25 +684,51 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX31MiSnapVoiceCaptureConfiguration")
 @interface MiSnapVoiceCaptureConfiguration : NSObject
 /// SDK parameters
-@property (nonatomic, strong) MiSnapVoiceCaptureParameters * _Nonnull parameters;
+@property (nonatomic, readonly, strong) MiSnapVoiceCaptureParameters * _Nonnull parameters;
 /// UX parameters
-@property (nonatomic, strong) MiSnapVoiceCaptureUXParameters * _Nonnull uxParameters;
-/// Status views configuration
-@property (nonatomic, strong) MiSnapVoiceCaptureStatusViewsConfiguration * _Nonnull statusViews;
+@property (nonatomic, readonly, strong) MiSnapVoiceCaptureUXParameters * _Nonnull uxParameters;
+/// Phrase selection screen
+@property (nonatomic, readonly, strong) MiSnapVoiceCapturePhraseSelectionConfiguration * _Nonnull phraseSelection;
+/// Tutorial screen
+@property (nonatomic, readonly, strong) MiSnapVoiceCaptureIntroductoryInstructionConfiguration * _Nonnull introductoryInstruction;
+/// Recording screen
+@property (nonatomic, readonly, strong) MiSnapVoiceCaptureRecordingConfiguration * _Nonnull recording;
 /// Creates and returns default configuration for a provided activity type
-- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureActivity)activity phrase:(NSString * _Nullable)phrase OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureFlow)flow phrase:(NSString * _Nullable)phrase OBJC_DESIGNATED_INITIALIZER;
 /// Convenience function for SDK parameters customization
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for UX parameters customization
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomUxParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureUXParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
-/// Convenience function for status views customization
-- (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomStatusViewsConfigurationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureStatusViewsConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Phrase selection screen customization
+- (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomPhraseSelectionWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCapturePhraseSelectionConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Tutorial screen customization
+- (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomIntroductoryInstructionWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureIntroductoryInstructionConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Recording screen customization
+- (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomRecordingWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureRecordingConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Description of <code>MiSnapVoiceCaptureConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIImage;
+@class MiSnapLabelConfiguration;
+
+/// A tutorial screen configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX54MiSnapVoiceCaptureIntroductoryInstructionConfiguration")
+@interface MiSnapVoiceCaptureIntroductoryInstructionConfiguration : NSObject
+/// Image at the top
+@property (nonatomic, strong) UIImage * _Nullable image;
+/// Configuration for instructions presented underneath an image
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull instruction;
+/// Configuration for a button at the bottom
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull button;
+/// Creates and returns tutorial configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 @class NSBundle;
@@ -589,17 +746,72 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX43MiSnapVoiceCaptureLocalizationConfigura
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
+
+/// A phrase selection screen  configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX46MiSnapVoiceCapturePhraseSelectionConfiguration")
+@interface MiSnapVoiceCapturePhraseSelectionConfiguration : NSObject
+/// Configuration for a message at the top
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Configuration for a phase in a list
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull phrase;
+/// Configuration for a button at the bottom
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull button;
+/// Creates and returns a phrase selection configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+@class MiSnapVoiceCaptureNeutralViewConfiguration;
+@class MiSnapVoiceCaptureSuccessViewConfiguration;
+@class MiSnapVoiceCaptureFailureViewConfiguration;
+
+/// A recording screen configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureRecordingConfiguration")
+@interface MiSnapVoiceCaptureRecordingConfiguration : NSObject
+/// Configuration for Cancel button at the top
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
+/// Neutral view configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureNeutralViewConfiguration * _Nonnull neutral;
+/// Success view configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureSuccessViewConfiguration * _Nonnull success;
+/// Failure view configuration
+@property (nonatomic, strong) MiSnapVoiceCaptureFailureViewConfiguration * _Nonnull failure;
+/// Configuration for a message that’s located above the prase
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Configuration for a phrase
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull phrase;
+/// Configuration for a failure message
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureMessage;
+/// Configuration for Failure acknowledgment button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureAcknowledgment;
+/// Creates and returns tutorial configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
 @class NSNumber;
 
+/// UX parameters used during voice recording process
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX30MiSnapVoiceCaptureUXParameters")
 @interface MiSnapVoiceCaptureUXParameters : NSObject
 /// Indicates whether an introductory instruction screen should be presented
+/// Default: <code>true</code>
 @property (nonatomic) BOOL showIntroductoryInstructionScreen;
+/// Indicates whether MiSnapVoiceCaptureViewController should be automatically dismissed or
+/// will be dismissed by a presenting view controller
+/// Default: <code>true</code>
 @property (nonatomic) BOOL autoDismiss;
-@property (nonatomic) BOOL accessibilityEnabled;
-@property (nonatomic) NSInteger samplesCount;
+/// A phrase to be used in a flow
 @property (nonatomic, readonly, copy) NSString * _Nullable phrase;
-- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureActivity)activity phrase:(NSString * _Nullable)phrase OBJC_DESIGNATED_INITIALIZER;
+/// Initializes parameters for a flow (see <code>MiSnapVoiceCaptureFlow</code>) with an optional phrase
+/// note:
+/// a <code>phrase</code> is required for <code>verification</code> flow. A crash will occur if it’s not provided.
+/// note:
+/// a <code>phrase</code> is optional for <code>enrollment</code> flow. When phrase is not provided a Phrase selection screen is presented to a user (recommended).
+/// If a phrase is provided then Phrase selection screen is skipped (not recommended).
+- (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureFlow)flow phrase:(NSString * _Nullable)phrase OBJC_DESIGNATED_INITIALIZER;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -609,17 +821,33 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX30MiSnapVoiceCaptureUXParameters")
 @class NSCoder;
 @protocol MiSnapVoiceCaptureViewControllerDelegate;
 
+/// A view controller that controls an invoked session
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 @interface MiSnapVoiceCaptureViewController : UIViewController
 /// A configuration a session was initialized with
 @property (nonatomic, readonly, strong) MiSnapVoiceCaptureConfiguration * _Nonnull configuration;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// Initializes a view controller with parameters and a delegate
 - (nonnull instancetype)initWith:(MiSnapVoiceCaptureConfiguration * _Nonnull)configuration delegate:(id <MiSnapVoiceCaptureViewControllerDelegate> _Nonnull)delegate OBJC_DESIGNATED_INITIALIZER;
+/// Checks a microphone permission and asynchronously returns a result
 + (void)checkMicrophonePermissionWithHandler:(void (^ _Nonnull)(BOOL))handler;
+/// Checks if a device has a given space in MB
 - (BOOL)hasMinDiskSpace:(NSInteger)minDiskSpace SWIFT_WARN_UNUSED_RESULT;
+/// Called after the view has been loaded.
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
 - (void)viewDidLoad;
+/// Called when the view is about to made visible
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
 - (void)viewWillAppear:(BOOL)animated;
+/// Indicates whether a status bar should be hidden
+/// note:
+/// Only exposed due to public status of parent’s property. Do not override it.
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
+/// Returns orientations supported by the view controller
+/// note:
+/// Only exposed due to public status of parent’s property. Do not override it.
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
@@ -631,25 +859,55 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 @class MiSnapVoiceCaptureResult;
 
 @interface MiSnapVoiceCaptureViewController (SWIFT_EXTENSION(MiSnapVoiceCaptureUX)) <MiSnapVoiceCaptureRecorderDelegate>
-- (void)miSnapVoiceCaptureRecorderSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderError:(MiSnapVoiceCaptureResult * _Nonnull)result;
-- (void)miSnapVoiceCaptureRecorderCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when an analyzer detects an invalid license
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
 - (void)miSnapVoiceCaptureRecorderLicenseStatus:(MiSnapLicenseStatus)status;
+/// Called when a recording passes all quality checks
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureRecorderSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when a recording failed a quality check
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureRecorderFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when an internal SDK error occurs
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureRecorderError:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called whenever a user cancels a session
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureRecorderCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called every time a live voice sample is processed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
 - (void)miSnapVoiceCaptureRecorderSpeechLength:(NSInteger)speechLength;
+/// Called when a recording was interrupted
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
 - (void)miSnapVoiceCaptureRecorderInterruption:(enum AVAudioSessionInterruptionType)type;
 @end
 
 
 
+/// Defines an interface for delegates of <code>MiSnapVoiceCaptureViewController</code> to receive recording result
 SWIFT_PROTOCOL("_TtP20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureViewControllerDelegate_")
 @protocol MiSnapVoiceCaptureViewControllerDelegate
+/// Delegates receive this callback only when license status is anything but valid
 - (void)miSnapVoiceCaptureLicenseStatus:(MiSnapLicenseStatus)status;
+/// Delegates receive this callback when a user selects a phrase on a Phrase selection screen
 - (void)miSnapVoiceCaptureDidSelectPhrase:(NSString * _Nonnull)phrase;
-- (void)miSnapVoiceCaptureSuccess:(NSArray<MiSnapVoiceCaptureResult *> * _Nonnull)results for:(enum MiSnapVoiceCaptureActivity)type;
+/// Delegates receive this callback when all voice sample are successfully recorded for a given flow
+- (void)miSnapVoiceCaptureSuccess:(NSArray<MiSnapVoiceCaptureResult *> * _Nonnull)results for:(enum MiSnapVoiceCaptureFlow)flow;
+/// Delegates receive this callback whenever a user cancels a session
 - (void)miSnapVoiceCaptureCancelled:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback when an internal SDK error occurs
 - (void)miSnapVoiceCaptureError:(MiSnapVoiceCaptureResult * _Nonnull)result;
 @optional
+/// Delegates receive this callback when a session is completed and ready to be dissmised and <code>autoDismiss</code> is overridden to <code>false</code> in <code>MiSnapVoiceCaptureUXParameters</code>
+/// note:
+/// It’s optional
 - (void)miSnapVoiceCaptureShouldBeDismissed;
 @end
 

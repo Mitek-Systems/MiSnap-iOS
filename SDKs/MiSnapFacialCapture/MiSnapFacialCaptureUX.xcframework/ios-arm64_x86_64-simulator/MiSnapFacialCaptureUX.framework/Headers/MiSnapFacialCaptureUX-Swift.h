@@ -214,17 +214,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-/// Activity type
-typedef SWIFT_ENUM(NSInteger, MiSnapFaceCaptureActivityType, open) {
+/// Flow
+typedef SWIFT_ENUM(NSInteger, MiSnapFaceCaptureFlow, open) {
 /// Enrollment
-  MiSnapFaceCaptureActivityTypeEnrollment = 0,
+  MiSnapFaceCaptureFlowEnrollment = 0,
 /// Verification
-  MiSnapFaceCaptureActivityTypeVerification = 1,
+  MiSnapFaceCaptureFlowVerification = 1,
 };
 
 @class MiSnapFacialCaptureParameters;
 @class MiSnapFacialCaptureUXParameters;
 @class MiSnapFacialCaptureGuideConfiguration;
+@class MiSnapLabelConfiguration;
 @class MiSnapCancelViewConfiguration;
 @class MiSnapHelpViewConfiguration;
 @class MiSnapCameraShutterViewConfiguration;
@@ -243,6 +244,8 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 @property (nonatomic, strong) MiSnapFacialCaptureUXParameters * _Nonnull uxParameters;
 /// Guide view configuration
 @property (nonatomic, readonly, strong) MiSnapFacialCaptureGuideConfiguration * _Nonnull guide;
+/// Hint label configuration
+@property (nonatomic, readonly, strong) MiSnapLabelConfiguration * _Nonnull hint;
 /// Cancel button configuration
 @property (nonatomic, readonly, strong) MiSnapCancelViewConfiguration * _Nonnull cancel;
 /// Help button configuration
@@ -261,6 +264,8 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomUxParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureUXParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Guide view customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomGuideWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureGuideConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Hint label customization
+- (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomHintWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapLabelConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Cancel button customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomCancelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapCancelViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Help button customization
@@ -275,11 +280,12 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomSuccessCheckmarkWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessCheckmarkViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Creates and returns configuration object with default UX configuration.
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Convenience function for initializing a configuration with given SDK and UX parameters
 - (nonnull instancetype)initWith:(MiSnapFacialCaptureParameters * _Nullable)parameters uxParameters:(MiSnapFacialCaptureUXParameters * _Nullable)uxParameters;
 /// Description of <code>MiSnapFacialCaptureConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSBundle;
@@ -324,13 +330,13 @@ SWIFT_PROTOCOL("_TtP21MiSnapFacialCaptureUX49MiSnapFacialCaptureTutorialViewCont
 /// UX parameters used during the selfie acquisition process
 SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX31MiSnapFacialCaptureUXParameters")
 @interface MiSnapFacialCaptureUXParameters : NSObject
-/// Activity type
+/// Flow
 /// <ul>
 ///   <li>
-///     See: <code>MiSnapFaceCaptureActivityType</code>
+///     See: <code>MiSnapFaceCaptureFlow</code>
 ///   </li>
 /// </ul>
-@property (nonatomic) enum MiSnapFaceCaptureActivityType type;
+@property (nonatomic) enum MiSnapFaceCaptureFlow flow;
 /// Indicates whether an introductory instruction screen should be presented
 @property (nonatomic) BOOL showIntroductoryInstructionScreen;
 /// Indicates whether a timeout screen should be presented
@@ -352,7 +358,7 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX31MiSnapFacialCaptureUXParameters")
 @property (nonatomic) BOOL seamlessFailover;
 /// Indicates whether a shutter sound should be played upon a successful image acquistion
 @property (nonatomic) BOOL playShutterShound;
-/// Indicates whether MiSnapViewController should be automatically dismissed or
+/// Indicates whether MiSnapFacialCaptureViewController should be automatically dismissed or
 /// will be dismissed by a presenting view controller
 @property (nonatomic) BOOL autoDismiss;
 /// Indicates whether accessibility is enabled
@@ -367,8 +373,8 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX31MiSnapFacialCaptureUXParameters")
 @property (nonatomic) NSTimeInterval timeout;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Creates and returns default UX parameters for a provided activity type
-- (nonnull instancetype)initFor:(enum MiSnapFaceCaptureActivityType)type OBJC_DESIGNATED_INITIALIZER;
+/// Creates and returns default UX parameters for a provided flow
+- (nonnull instancetype)initFor:(enum MiSnapFaceCaptureFlow)flow OBJC_DESIGNATED_INITIALIZER;
 /// UX parameters dictionary representation
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dictionary;
 /// Description of <code>MiSnapFacialCaptureUXParameters</code>
@@ -754,17 +760,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-/// Activity type
-typedef SWIFT_ENUM(NSInteger, MiSnapFaceCaptureActivityType, open) {
+/// Flow
+typedef SWIFT_ENUM(NSInteger, MiSnapFaceCaptureFlow, open) {
 /// Enrollment
-  MiSnapFaceCaptureActivityTypeEnrollment = 0,
+  MiSnapFaceCaptureFlowEnrollment = 0,
 /// Verification
-  MiSnapFaceCaptureActivityTypeVerification = 1,
+  MiSnapFaceCaptureFlowVerification = 1,
 };
 
 @class MiSnapFacialCaptureParameters;
 @class MiSnapFacialCaptureUXParameters;
 @class MiSnapFacialCaptureGuideConfiguration;
+@class MiSnapLabelConfiguration;
 @class MiSnapCancelViewConfiguration;
 @class MiSnapHelpViewConfiguration;
 @class MiSnapCameraShutterViewConfiguration;
@@ -783,6 +790,8 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 @property (nonatomic, strong) MiSnapFacialCaptureUXParameters * _Nonnull uxParameters;
 /// Guide view configuration
 @property (nonatomic, readonly, strong) MiSnapFacialCaptureGuideConfiguration * _Nonnull guide;
+/// Hint label configuration
+@property (nonatomic, readonly, strong) MiSnapLabelConfiguration * _Nonnull hint;
 /// Cancel button configuration
 @property (nonatomic, readonly, strong) MiSnapCancelViewConfiguration * _Nonnull cancel;
 /// Help button configuration
@@ -801,6 +810,8 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomUxParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureUXParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Guide view customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomGuideWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureGuideConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Hint label customization
+- (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomHintWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapLabelConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Cancel button customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomCancelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapCancelViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Help button customization
@@ -815,11 +826,12 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomSuccessCheckmarkWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessCheckmarkViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Creates and returns configuration object with default UX configuration.
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Convenience function for initializing a configuration with given SDK and UX parameters
 - (nonnull instancetype)initWith:(MiSnapFacialCaptureParameters * _Nullable)parameters uxParameters:(MiSnapFacialCaptureUXParameters * _Nullable)uxParameters;
 /// Description of <code>MiSnapFacialCaptureConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSBundle;
@@ -864,13 +876,13 @@ SWIFT_PROTOCOL("_TtP21MiSnapFacialCaptureUX49MiSnapFacialCaptureTutorialViewCont
 /// UX parameters used during the selfie acquisition process
 SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX31MiSnapFacialCaptureUXParameters")
 @interface MiSnapFacialCaptureUXParameters : NSObject
-/// Activity type
+/// Flow
 /// <ul>
 ///   <li>
-///     See: <code>MiSnapFaceCaptureActivityType</code>
+///     See: <code>MiSnapFaceCaptureFlow</code>
 ///   </li>
 /// </ul>
-@property (nonatomic) enum MiSnapFaceCaptureActivityType type;
+@property (nonatomic) enum MiSnapFaceCaptureFlow flow;
 /// Indicates whether an introductory instruction screen should be presented
 @property (nonatomic) BOOL showIntroductoryInstructionScreen;
 /// Indicates whether a timeout screen should be presented
@@ -892,7 +904,7 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX31MiSnapFacialCaptureUXParameters")
 @property (nonatomic) BOOL seamlessFailover;
 /// Indicates whether a shutter sound should be played upon a successful image acquistion
 @property (nonatomic) BOOL playShutterShound;
-/// Indicates whether MiSnapViewController should be automatically dismissed or
+/// Indicates whether MiSnapFacialCaptureViewController should be automatically dismissed or
 /// will be dismissed by a presenting view controller
 @property (nonatomic) BOOL autoDismiss;
 /// Indicates whether accessibility is enabled
@@ -907,8 +919,8 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX31MiSnapFacialCaptureUXParameters")
 @property (nonatomic) NSTimeInterval timeout;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Creates and returns default UX parameters for a provided activity type
-- (nonnull instancetype)initFor:(enum MiSnapFaceCaptureActivityType)type OBJC_DESIGNATED_INITIALIZER;
+/// Creates and returns default UX parameters for a provided flow
+- (nonnull instancetype)initFor:(enum MiSnapFaceCaptureFlow)flow OBJC_DESIGNATED_INITIALIZER;
 /// UX parameters dictionary representation
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dictionary;
 /// Description of <code>MiSnapFacialCaptureUXParameters</code>

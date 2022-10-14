@@ -221,6 +221,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class MiSnapGuideViewConfiguration;
 @class MiSnapHintViewConfiguration;
 @class MiSnapGlareViewConfiguration;
+@class MiSnapLabelConfiguration;
 @class MiSnapCancelViewConfiguration;
 @class MiSnapHelpViewConfiguration;
 @class MiSnapTorchViewConfiguration;
@@ -245,6 +246,8 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 @property (nonatomic, readonly, strong) MiSnapHintViewConfiguration * _Nonnull hint;
 /// Glare view configuration
 @property (nonatomic, readonly, strong) MiSnapGlareViewConfiguration * _Nonnull glare;
+/// Document label configuration
+@property (nonatomic, readonly, strong) MiSnapLabelConfiguration * _Nonnull documentLabel;
 /// Cancel button configuration
 @property (nonatomic, readonly, strong) MiSnapCancelViewConfiguration * _Nonnull cancel;
 /// Help button configuration
@@ -283,6 +286,8 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 - (MiSnapConfiguration * _Nonnull)withCustomHintWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapHintViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Glare view customization
 - (MiSnapConfiguration * _Nonnull)withCustomGlareWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapGlareViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Document label customization
+- (MiSnapConfiguration * _Nonnull)withCustomDocumentLabelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapLabelConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Cancel button customization
 - (MiSnapConfiguration * _Nonnull)withCustomCancelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapCancelViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Help button customization
@@ -844,6 +849,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class MiSnapGuideViewConfiguration;
 @class MiSnapHintViewConfiguration;
 @class MiSnapGlareViewConfiguration;
+@class MiSnapLabelConfiguration;
 @class MiSnapCancelViewConfiguration;
 @class MiSnapHelpViewConfiguration;
 @class MiSnapTorchViewConfiguration;
@@ -868,6 +874,8 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 @property (nonatomic, readonly, strong) MiSnapHintViewConfiguration * _Nonnull hint;
 /// Glare view configuration
 @property (nonatomic, readonly, strong) MiSnapGlareViewConfiguration * _Nonnull glare;
+/// Document label configuration
+@property (nonatomic, readonly, strong) MiSnapLabelConfiguration * _Nonnull documentLabel;
 /// Cancel button configuration
 @property (nonatomic, readonly, strong) MiSnapCancelViewConfiguration * _Nonnull cancel;
 /// Help button configuration
@@ -906,6 +914,8 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 - (MiSnapConfiguration * _Nonnull)withCustomHintWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapHintViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Glare view customization
 - (MiSnapConfiguration * _Nonnull)withCustomGlareWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapGlareViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Document label customization
+- (MiSnapConfiguration * _Nonnull)withCustomDocumentLabelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapLabelConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Cancel button customization
 - (MiSnapConfiguration * _Nonnull)withCustomCancelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapCancelViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Help button customization

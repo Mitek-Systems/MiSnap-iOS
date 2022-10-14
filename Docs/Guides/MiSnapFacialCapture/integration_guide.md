@@ -2,6 +2,8 @@
 
 :warning: MiSnapFacialCapture 5.x has breaking API changes therefore to migrate from 3.x series, remove all old MiSnapFacialCapture references from your project.
 
+[MiSnapFacialCaptureSampleApp](../../../Examples/Apps/MiSnapFacialCapture/MiSnapFacialCaptureSampleApp) was created by following steps below. Please refer to this project as a working example.
+
 ## 1. Obtain the SDK(s)
 MiSnapFacialCapture 5.x is distributed through CocoaPods and Swift Package Manager. For detailed installation instructions refer to:
 * [CocoaPods installation guide](https://guides.cocoapods.org/using/using-cocoapods.html)

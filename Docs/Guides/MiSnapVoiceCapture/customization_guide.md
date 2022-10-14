@@ -1,43 +1,35 @@
-# TODO: This is MiSnapFacialCapture customization guide. Update for MiSnapVoiceCapture
+Please refer to [MiSnapVoiceCaptureCustomizationSampleApp](../../../Examples/Apps/MiSnapVoiceCapture/MiSnapVoiceCaptureCustomizationSampleApp) as a working customization example.
 
 # Customization Guide
 
-:warning: This guide is only applicable if you've integrated `MiSnapFacialCaptureUX`. Use this [starter custom view controller](../../../Examples/Snippets/MiSnapFacialCapture/CustomFacialCaptureViewController.swift) when building your own UX/UI.
+:warning: This guide is only applicable if you've integrated `MiSnapVoiceCaptureUX`. Use this `[TODO] starter custom view controller` when building your own UX/UI.
 
 ## Table of Contents
 * [Overview](#overview)
 * [UX Parameters](#ux-parameters)
 * [Localization](#localization)
+* [Phrase Selection Screen](#phrase-selection-screen)
 * [Introductory Instruction Screen](#introductory-instruction-screen)
-* [Review Screen](#review-screen)
-* [Help and Timeout Screens](#help-and-timeout-screens)
-* [Capture Screen](#capture-screen)
-    * [Cancel Button](#cancel-button)
-    * [Help Button](#help-button)
-    * [Camera Shutter (Manual) Button](#manual-button)
-    * [Countdown View](#countdown-view)
-    * [Guide View](#guide-view)
-    * [Recording Indicator](#recording-indicator)
-    * [Success Checkmark View](#success-view)
+* [Recording Screen](#review-screen)
 * [Parameters](#parameters)
-    * [Enable Smile](#enable-smile)
-    * [Video Recording](#video-recording)
-    * [Other](#other)
 
 # Overview
 
-In general, there are 2 types of customization are available - UX/UI and SDK parameters customization.
+In general, there are 2 types of customization available - UX/UI and SDK parameters customization.
 
 All necessary customizations are chained one after another.
 
-Once desired customization is achieved, a configuration is passed to a `MiSnapFacialCaptureViewController`.
+Once desired customization is achieved, a configuration is passed to a `MiSnapVoiceCaptureViewController`.
 
-Example below demonstrates this concept on a high level.
+Example below demonstrates this concept on a high level for Enrollment flow but is applicable to Verification flow too.
 
 ```Swift
-let configuration = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
     .withCustomParameters { parameters in
         // SDK parameters customization here
+    }
+    .withCustomUxParameters { uxParameters in
+        // UX parameters customization here
     }
     .withCustomUxObject... { uxObject in
         // uxObject customization here
@@ -46,233 +38,154 @@ let configuration = MiSnapFacialCaptureConfiguration()
         // uxObjectN customization here
     }
 
-facialCapture = MiSnapFacialCaptureViewController(with: configuration, delegate: self)
+misnapVoiceCaptureVC = MiSnapVoiceCaptureViewController(with: configuration, delegate: self)
 ```
 
 # UX Parameters
 Create a configuration (if it doesn't exist) and chain `.withCustomUxParameters`. Refer to a snippet below.
 
 ```Swift
-let configuration = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
     .withCustomUxParameters { uxParameters in
-        uxParameters.timeout = 25.0
+        uxParameters.autoDismiss = false
         // Other UX Parameters customizations
     }
 ```
-For all available UX Parameters customization options see this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/MiSnapFacialCapture/MiSnapFacialCaptureUX/Classes/MiSnapFacialCaptureUXParameters.html).
+For all available UX Parameters customization options see this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/5.1.0.b1/Docs/API/MiSnapVoiceCapture/MiSnapVoiceCaptureUX/Classes/MiSnapVoiceCaptureUXParameters.html).
 
 # Localization
 
-Copy localization key-value pairs for a given language from [Localization](../../../Localization/MiSnapFacialCapture) `(TODO)` folder and paste them into your Localizable.strings file.
+Copy localization key-value pairs for a given language from [Localization](../../../Localization/MiSnapVoiceCapture) folder and paste them into your Localizable.strings file.
 
 Create a template configuration (if it doesn't exist) and chain `.withCustomLocalization`. Refer to a snippet below.
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
     .withCustomLocalization { localization in
         localization.bundle = // Your bundle where localization files are located
         localization.stringsName = // Your localization file name
     }
 ```
 
-# Introductory Instruction Screen
+# Phrase Selection Screen
 
-By default, an introductory instruction screen is presented.
+There are 3 customizable elements on this screen:
+* `message` - a message at the top
+* `phrase` - a phrase in a list (UIPickerView)
+* `button` - a button at the bottom
 
-If you prefer to use your own introductory instruction screen or would like not to show it at all (not recommended) use the following snippet:
+Create a template configuration (if it doesn't exist) and chain `.withCustomPhraseSelection`. Refer to a snippet below.
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
+    .withCustomPhraseSelection { phraseSelection in
+        phraseSelection.message.font = // Your font
+        // Other message customizations
+        
+        phraseSelection.phrase.font = // Your font
+        // Other phrase customizations
+        
+        phraseSelection.button.backgroundColor = // Your background color
+        // Other button customizations
+    }
+```
+
+All 3 elements are of `MiSnapLabelConfiguration` type. For all available customization options see this [API reference](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/5.1.0.b1/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapLabelConfiguration.html).
+
+# Introductory Instruction Screen
+
+By default, an introductory instruction screen is presented for Enrollment flow only.
+
+If you would like not to show it (not recommended) use the following snippet:
+
+```Swift
+let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
     .withCustomUxParameters { uxParameters in
         uxParameters.showIntroductoryInstructionScreen = false
     }
 ```
 
-# Review Screen
-
-By default, a review screen is presented only after a session is completed in Manual mode. If you'd like to present it for both Auto and Manual sessions use the following snippet:
-
-```Swift
-let template = MiSnapFacialCaptureConfiguration()
-    .withCustomUxParameters { uxParameters in
-        uxParameters.reviewMode = .autoAndManual
-    }
-```
-
-If you prefer to use your own review screen or would like not to show it at all (not recommended) use the following snippet:
+There are 3 customizable elements on this screen:
+* `image` - an image at the top
+* `instruction` - instruction text that's underneath the image
+* `button` - a button at the bottom
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
-    .withCustomUxParameters { uxParameters in
-        uxParameters.showReviewScreen = false
-    }
-```
-
-# Help and Timeout Screens
-
-A default Help screen is presented when a user presses Help button and a default Timeout screen is presented when an Auto session times out. If you'd like to present your own custom Help and/or Timeout screen(s) follow these steps:
-
-### 1. Create custom Help and/or Timeout screen(s)
-Use this [starter custom view controller](../../../Examples/Snippets/MiSnapFacialCapture/CustomFacialCaptureTutorialViewController.swift).
-
-### 2. Disable default Help and/or Timeout screen(s)
-
-```Swift
-let template = MiSnapFacialCaptureConfiguration()
-    .withCustomUxParameters { uxParameters in
-        uxParameters.showHelpScreen = false
-        uxParameters.showTimeoutScreen = false
-    }
-```
-### 3. Present custom Help and/or Timeout screen(s)
-
-After disabling a default Help and/or Timeout screen(s) subscribe to `MiSnapFacialCaptureViewControllerDelegate`'s optional callbacks `miSnapFacialCaptureHelpAction()` and/or `miSnapFacialCaptureTimeoutAction()` respectively and present your custom screen(s).
-
-```Swift
-func miSnapFacialCaptureHelpAction() {
-    guard let misnapFacialCaptureVC = misnapFacialCaptureVC else { return }
-
-    let helpVC = CustomFacialCaptureTutorialViewController(for: .help, delegate: faceVC)
-    faceVC.presentVC(helpVC)
-}
-
-func miSnapFacialCaptureTimeoutAction() {
-    guard let misnapFacialCaptureVC = misnapFacialCaptureVC else { return }
-
-    let timeoutVC = CustomFacialCaptureTutorialViewController(for: .timeout, delegate: faceVC)
-    faceVC.presentVC(timeoutVC)
-}
-```
-
-# Capture Screen
-
-## Cancel Button
-
-Create a configuration (if it doesn't exist) and chain `.withCustomCancel`. Refer to a snippet below:
-
-```Swift
-let template = MiSnapFacialCaptureConfiguration()
-    .withCustomCancel { cancel in
-        cancel.color = .lightGray
-        // Other Cancel button customizations
-    }
-```
-For all available Cancel button customization options see this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapCancelViewConfiguration.html).
-
-## Help Button
-
-Create a configuration (if it doesn't exist) and chain `.withCustomHelp`. Refer to a snippet below:
-
-```Swift
-let template = MiSnapFacialCaptureConfiguration()
-    .withCustomHelp { help in
-        help.color = .lightGray
-        // Other Help button customizations
-    }
-```
-For all available Help button customization options see this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapHelpViewConfiguration.html).
-
-## Camera Shutter (Manual) Button
-
-Create a template configuration (if it doesn't exist) and chain `.withCustomCameraShutter`. Refer to a snippet below:
-
-```Swift
-let template = MiSnapFacialCaptureConfiguration()
-    .withCustomCameraShutter { cameraShutter in
-        cameraShutter.color = .lightGray
-        // Other Camera shutter button customizations
-    }
-```
-For all available Camera shutter button customization options see this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapCameraShutterViewConfiguration.html).
-
-## Countdown View
-
-Create a template configuration (if it doesn't exist) and chain `.withCustomCountdown`. Refer to a snippet below:
-
-```Swift
-let configuration = MiSnapFacialCaptureConfiguration()
-    .withCustomCountdown { countdown in
-        countdown.size = countdown.size.scaled(by: 1.25)
-        // Other Countdown view customizations
-    }
-```
-
-For all available Countdown view customization options see this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapFacialCaptureCountdownViewConfiguration.html).
-
-## Guide View
-
-Create a configuration (if it doesn't exist) and chain `.withCustomGuide`. Refer to a snippet below:
-
-```Swift
-let template = MiSnapFacialCaptureConfiguration()
-    .withCustomGuide { guide in
-        guide.vignette.style = .blur
-        guide.vignette.alpha = 0.9
-        // Other Guide vignette view customizations
+let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
+    .withCustomIntroductoryInstruction { introductoryInstruction in
+        introductoryInstruction.image = // Your image
         
-        guide.outline.alpha = 0.9
-        // Other Guide outline view customizations
+        introductoryInstruction.instruction.font = // Your font
+        // Other instruction customizations
+        
+        introductoryInstruction.button.backgroundColor = // Your background color
+        // Other button customizations
     }
 ```
-For all available Guide vignette view customization options see this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapFacialCaptureVignetteConfiguration.html).
 
-For all available Guide outline view customization options see this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapFacialCaptureOutlineConfiguration.html).
+`instruction` and `button` are of `MiSnapLabelConfiguration` type. For all available customization options see this [API reference](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/5.1.0.b1/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapLabelConfiguration.html).
 
-## Recording Indicator View
+# Recording Screen
 
-Create a configuration (if it doesn't exist) and chain `.withCustomRecordingIndicator`. Refer to a snippet below:
+There are 8 customizable elements on this screen:
+* `cancel` - a Cancel button at the top
+* `neutral` - a neutral status view
+* `success` - a success status view
+* `failure` - a falure status view
+* `message` - a message that's above the phrase
+* `phrase` - a phrase
+* `failureMessage` - a message presented to a user when recording is not of sufficient quality
+* `failureAcknowledgment` - a button to acknowledge a failure message
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
-    .withCustomRecordingIndicator { recordingIndicator in
-        recordingIndicator.backgroundColor = .lightGray.withAlphaComponent(0.5)
-        // Other Recording Indicator view customizations
+let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
+    .withCustomRecording { recording in
+        recording.neutral.color = // Your color
+        recording.neutral.backgroundColor = // Your background color
+        // Other neutral customizations
+        
+        recording.success.color = // Your color
+        recording.success.backgroundColor = // Your background color
+        // Other success customizations
+        
+        recording.failure.color = // Your color
+        recording.failure.backgroundColor = // Your background color
+        // Other failure customizations
+        
+        recording.cancel.backgroundColor = // Your background color
+        // Other cancel customizations
+        
+        recording.message.font = // Your font
+        // Other message customizations
+        
+        recording.phrase.font = // Your font
+        recording.phrase.color = // Your color
+        recording.phrase.backgroundColor = // Your background color
+        // Other phrase customizations
+        
+        recording.failureMessage.font = // Your font
+        // Other failureMessage customizations
+        
+        recording.failureAcknowledgment.backgroundColor = // Your background color
+        // Other failureAcknowledgment customizations
     }
 ```
-For all available Recording Indicator view customization options see this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapRecordingIndicatorViewConfiguration.html).
 
-## Success Checkmark View
+`neutral`, `success` and `failure` inherit from `MiSnapVoiceCaptureStatusViewConfiguration`. For all available customization options see this [API reference](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/5.1.0.b1/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapVoiceCaptureStatusViewConfiguration.html).
 
-Create a configuration (if it doesn't exist) and chain `.withCustomSuccessCheckmark`. Refer to a snippet below:
-
-```Swift
-let template = MiSnapFacialCaptureConfiguration()
-    .withCustomSuccessCheckmark { successCheckmark in
-        successCheckmark.color = .systemGreen
-        // Other Success Checkmark view customizations
-    }
-```
-For all available Success Checkmark view customization options see this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapSuccessCheckmarkViewConfiguration.html).
+`cancel`, `message`, `phrase`, `failureMessage`, `failureAcknowledgment` are of `MiSnapLabelConfiguration` type. For all available customization options see this [API reference](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/5.1.0.b1/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapLabelConfiguration.html).
 
 # Parameters
 
-## Enable Smile
+:warning: It's not recommended to customize SDK parameters without consulting with Mitek representative.
 
-By default the SDK is using a countdown trigger to acquire a selfie. A countdown view is displayed when a frame passes all Image Quality Analysis (IQA) checks. Countdown stops if any IQA error occurs. A selfie is acquired when time is counted down. 
-
-If you'd like to acquire a selfie on a smile trigger instead refer to a snippet below:
+For all SDK parameters customization options refer to this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/5.1.0.b1/Docs/API/MiSnapVoiceCapture/MiSnapVoiceCapture/Classes/MiSnapVoiceCaptureParameters.html).
 
 ```Swift
-let configuration = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
     .withCustomParameters { parameters in
-        parameters.selectOnSmile = true
+        parameters.speechLengthMin = // Your value
     }
 ```
-
-## Video recording
-Create a configuration (if it doesn't exist) and chain `.withCustomParameters`. Refer to a snippet below:
-
-```Swift
-let configuration = MiSnapConfiguration(for: documentType)
-    .withCustomParameters { parameters in
-        parameters.camera.recordVideo = true
-
-        // Optionally, enable video recording with audio if required
-        parameters.camera.recordAudio = true 
-    }
-```
-
-## Other
-For other SDK parameters customization options refer to this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/MiSnapFacialCapture/MiSnapFacialCapture/Classes/MiSnapFacialCaptureParameters.html).
 
 

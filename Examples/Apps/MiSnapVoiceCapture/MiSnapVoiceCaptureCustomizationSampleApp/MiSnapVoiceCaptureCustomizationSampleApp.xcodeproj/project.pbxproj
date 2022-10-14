@@ -17,6 +17,7 @@
 		4217A78C28F8892A0031B527 /* MiSnapVoiceCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 4217A78B28F8892A0031B527 /* MiSnapVoiceCaptureUX */; };
 		4217A79328F88BB20031B527 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4217A79228F88BB20031B527 /* ResultViewController.swift */; };
 		4217A79528F88BC20031B527 /* RecordingPlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4217A79428F88BC20031B527 /* RecordingPlaybackView.swift */; };
+		42B53A4E28F9EA9B00353F6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42B53A4C28F9EA9B00353F6A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		4217A78228F888900031B527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4217A79228F88BB20031B527 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		4217A79428F88BC20031B527 /* RecordingPlaybackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingPlaybackView.swift; sourceTree = "<group>"; };
+		42B53A4D28F9EA9B00353F6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		42B53A4F28F9EAA100353F6A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		4217A78E28F8893A0031B527 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				42B53A4C28F9EA9B00353F6A /* Localizable.strings */,
 				4217A77D28F888900031B527 /* Assets.xcassets */,
 				4217A77A28F8888D0031B527 /* Main.storyboard */,
 				4217A77F28F888900031B527 /* LaunchScreen.storyboard */,
@@ -163,6 +167,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 4217A76828F8888D0031B527;
 			packageReferences = (
@@ -183,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4217A78128F888900031B527 /* LaunchScreen.storyboard in Resources */,
+				42B53A4E28F9EA9B00353F6A /* Localizable.strings in Resources */,
 				4217A77E28F888900031B527 /* Assets.xcassets in Resources */,
 				4217A77C28F8888D0031B527 /* Main.storyboard in Resources */,
 			);
@@ -220,6 +226,15 @@
 				4217A78028F888900031B527 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		42B53A4C28F9EA9B00353F6A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42B53A4D28F9EA9B00353F6A /* en */,
+				42B53A4F28F9EAA100353F6A /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -423,7 +438,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
 			requirement = {
-				branch = feature/5.1.0.a1;
+				branch = feature/5.1.0.b1;
 				kind = branch;
 			};
 		};

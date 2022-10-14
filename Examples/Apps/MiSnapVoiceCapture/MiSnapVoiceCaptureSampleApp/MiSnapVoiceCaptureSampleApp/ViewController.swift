@@ -76,10 +76,10 @@ extension ViewController: MiSnapVoiceCaptureViewControllerDelegate {
         UserDefaults.standard.synchronize()
     }
 
-    func miSnapVoiceCaptureSuccess(_ results: [MiSnapVoiceCaptureResult], for type: MiSnapVoiceCaptureActivity) {
-        // Handle successful session results here for a configured activity type (Enrollment, Verification)
-        // For Enrollment, `results` will always contain 3 `MiSnapVoiceCaptureResult`s
-        // For Verification, `results` will always contain 1 `MiSnapVoiceCaptureResult`
+    func miSnapVoiceCaptureSuccess(_ results: [MiSnapVoiceCaptureResult], for flow: MiSnapVoiceCaptureFlow) {
+        // Handle successful session results here for a configured flow (Enrollment, Verification)
+        // For Enrollment, `results` is always an array with 3 `MiSnapVoiceCaptureResult`s
+        // For Verification, `results` is always an array with 1 `MiSnapVoiceCaptureResult`
         self.results = results
     }
 

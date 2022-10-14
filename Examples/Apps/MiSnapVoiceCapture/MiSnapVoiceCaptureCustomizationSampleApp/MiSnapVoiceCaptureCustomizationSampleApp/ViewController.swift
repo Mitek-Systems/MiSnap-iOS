@@ -16,6 +16,51 @@ class ViewController: UIViewController {
     
     private var resultVC: ResultViewController?
     
+    private let template = MiSnapVoiceCaptureConfiguration()
+        .withCustomUxParameters { uxParameters in
+            uxParameters.autoDismiss = false
+        }
+        .withCustomPhraseSelection { phraseSelection in
+            phraseSelection.message.color = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+            
+            phraseSelection.phrase.font = .systemFont(ofSize: 21.0, weight: .bold)
+            
+            phraseSelection.button.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        }
+        .withCustomIntroductoryInstruction { introductoryInstruction in
+            introductoryInstruction.instruction.font = .systemFont(ofSize: 29, weight: .thin)
+            
+            introductoryInstruction.button.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        }
+        .withCustomRecording { recording in
+            recording.success.color = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
+            recording.success.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            
+            recording.neutral.color = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            recording.neutral.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+            
+            recording.failure.color = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            recording.failure.backgroundColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
+            
+            recording.cancel.color = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+            recording.cancel.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            recording.cancel.colorDarkMode = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            recording.cancel.backgroundColorDarkMode = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+            
+            recording.message.color = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+            
+            recording.phrase.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+            recording.phrase.backgroundColorDarkMode = nil
+            
+            recording.failureMessage.font = .systemFont(ofSize: 22, weight: .bold)
+            
+            recording.failureAcknowledgment.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        }
+        .withCustomLocalization { localization in
+            localization.bundle = Bundle.main
+            localization.stringsName = "Localizable"
+        }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -44,7 +89,7 @@ class ViewController: UIViewController {
 // MARK: Invoking MiSnapVoiceCapture
 extension ViewController {
     @objc private func enrollmentButtonAction() {
-        let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
+        let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment).applying(template)
         misnapVoiceCaptureVC = MiSnapVoiceCaptureViewController(with: configuration, delegate: self)
         
         presentMiSnapVoiceCapture(misnapVoiceCaptureVC)
@@ -52,7 +97,7 @@ extension ViewController {
     
     @objc private func verificationButtonAction() {
         guard let phrase = UserDefaults.standard.object(forKey: "phrase") as? String else { return }
-        let configuration = MiSnapVoiceCaptureConfiguration(for: .verification, phrase: phrase)
+        let configuration = MiSnapVoiceCaptureConfiguration(for: .verification, phrase: phrase).applying(template)
         misnapVoiceCaptureVC = MiSnapVoiceCaptureViewController(with: configuration, delegate: self)
         
         presentMiSnapVoiceCapture(misnapVoiceCaptureVC)
@@ -75,11 +120,11 @@ extension ViewController: MiSnapVoiceCaptureViewControllerDelegate {
         UserDefaults.standard.set(phrase, forKey: "phrase")
         UserDefaults.standard.synchronize()
     }
-
-    func miSnapVoiceCaptureSuccess(_ results: [MiSnapVoiceCaptureResult], for type: MiSnapVoiceCaptureActivity) {
-        // Handle successful session results here for a configured activity type (Enrollment, Verification)
-        // For Enrollment, `results` will always contain 3 `MiSnapVoiceCaptureResult`s
-        // For Verification, `results` will always contain 1 `MiSnapVoiceCaptureResult`
+    
+    func miSnapVoiceCaptureSuccess(_ results: [MiSnapVoiceCaptureResult], for flow: MiSnapVoiceCaptureFlow) {
+        // Handle successful session results here for a configured flow (Enrollment, Verification)
+        // For Enrollment, `results` is always an array with 3 `MiSnapVoiceCaptureResult`s
+        // For Verification, `results` is always an array with 1 `MiSnapVoiceCaptureResult`
         self.results = results
     }
 
@@ -89,6 +134,10 @@ extension ViewController: MiSnapVoiceCaptureViewControllerDelegate {
 
     func miSnapVoiceCaptureError(_ result: MiSnapVoiceCaptureResult) {
         // Handle an SDK error here
+    }
+    
+    func miSnapVoiceCaptureShouldBeDismissed() {
+        misnapVoiceCaptureVC?.dismiss(animated: true)
     }
 }
 

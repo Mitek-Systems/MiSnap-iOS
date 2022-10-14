@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapVoiceCaptureRecorderDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/MiSnapVoiceCaptureRecorderDelegate" class="dashAnchor"></a>
+
+    <a title="MiSnapVoiceCaptureRecorderDelegate Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapVoiceCaptureRecorderDelegate Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCapture.html">MiSnapVoiceCapture</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCaptureParameters.html">MiSnapVoiceCaptureParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCaptureRecorder.html">MiSnapVoiceCaptureRecorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCaptureResult.html">MiSnapVoiceCaptureResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapVoiceCaptureFlow.html">MiSnapVoiceCaptureFlow</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapVoiceCaptureStatus.html">MiSnapVoiceCaptureStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapVoiceCaptureRecorderDelegate.html">MiSnapVoiceCaptureRecorderDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapVoiceCaptureRecorderDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MiSnapVoiceCaptureRecorderDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Defines an interface for delegates of <code><a href="../Classes/MiSnapVoiceCaptureRecorder.html">MiSnapVoiceCaptureRecorder</a></code> to receive recording result</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderLicenseStatus:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderLicenseStatus(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderLicenseStatus:">miSnapVoiceCaptureRecorderLicenseStatus(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback only when license status is anything but valid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderLicenseStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">MiSnapLicenseStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderSuccess:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderSuccess(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderSuccess:">miSnapVoiceCaptureRecorderSuccess(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when a recording passes all quality checks</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderSuccess</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapVoiceCaptureResult.html">MiSnapVoiceCaptureResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderFailure:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderFailure(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderFailure:">miSnapVoiceCaptureRecorderFailure(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when a recording failed a quality check</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderFailure</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapVoiceCaptureResult.html">MiSnapVoiceCaptureResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderCancel:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderCancel(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderCancel:">miSnapVoiceCaptureRecorderCancel(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback whenever a user cancels a session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderCancel</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapVoiceCaptureResult.html">MiSnapVoiceCaptureResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderError:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderError(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderError:">miSnapVoiceCaptureRecorderError(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when an internal SDK error occurs</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderError</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapVoiceCaptureResult.html">MiSnapVoiceCaptureResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderSpeechLength:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderSpeechLength(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderSpeechLength:">miSnapVoiceCaptureRecorderSpeechLength(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback every time a live voice sample is processed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderSpeechLength</span><span class="p">(</span><span class="n">_</span> <span class="nv">speechLength</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderInterruption:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderInterruption(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureRecorderDelegate(im)miSnapVoiceCaptureRecorderInterruption:">miSnapVoiceCaptureRecorderInterruption(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegates receive this callback when a recording was interrupted</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderInterruption</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">AVAudioSession</span><span class="o">.</span><span class="kt">InterruptionType</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

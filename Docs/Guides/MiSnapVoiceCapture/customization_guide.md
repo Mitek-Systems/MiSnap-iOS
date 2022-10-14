@@ -17,17 +17,18 @@ Please refer to [MiSnapVoiceCaptureCustomizationSampleApp](../../../Examples/App
 
 In general, there are 2 types of customization available - UX/UI and SDK parameters customization.
 
-All necessary customizations are chained one after another.
+To customize UX/UI, a template configuration is created and all necessary customizations are chained one after another.
+
+To customize SDK parameters, a configuration for a specific document type is created and then its SDK parameters can be customized then the UX template configuration is applied.
+
+Note, the same customized template can and should be re-used across Enrollment and Verification flows.
 
 Once desired customization is achieved, a configuration is passed to a `MiSnapVoiceCaptureViewController`.
 
-Example below demonstrates this concept on a high level for Enrollment flow but is applicable to Verification flow too.
+Example below demonstrates this concept on a high level. 
 
 ```Swift
-let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
-    .withCustomParameters { parameters in
-        // SDK parameters customization here
-    }
+let template = MiSnapVoiceCaptureConfiguration()
     .withCustomUxParameters { uxParameters in
         // UX parameters customization here
     }
@@ -38,6 +39,12 @@ let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
         // uxObjectN customization here
     }
 
+let configuration = MiSnapConfiguration(for: flow)
+    .withCustomParameters { parameters in
+        // SDK parameters customization here
+    }
+    .applying(template)
+
 misnapVoiceCaptureVC = MiSnapVoiceCaptureViewController(with: configuration, delegate: self)
 ```
 
@@ -45,7 +52,7 @@ misnapVoiceCaptureVC = MiSnapVoiceCaptureViewController(with: configuration, del
 Create a configuration (if it doesn't exist) and chain `.withCustomUxParameters`. Refer to a snippet below.
 
 ```Swift
-let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
+let template = MiSnapVoiceCaptureConfiguration(for: .enrollment)
     .withCustomUxParameters { uxParameters in
         uxParameters.autoDismiss = false
         // Other UX Parameters customizations
@@ -60,7 +67,7 @@ Copy localization key-value pairs for a given language from [Localization](../..
 Create a template configuration (if it doesn't exist) and chain `.withCustomLocalization`. Refer to a snippet below.
 
 ```Swift
-let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
+let template = MiSnapVoiceCaptureConfiguration()
     .withCustomLocalization { localization in
         localization.bundle = // Your bundle where localization files are located
         localization.stringsName = // Your localization file name
@@ -77,7 +84,7 @@ There are 3 customizable elements on this screen:
 Create a template configuration (if it doesn't exist) and chain `.withCustomPhraseSelection`. Refer to a snippet below.
 
 ```Swift
-let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
+let template = MiSnapVoiceCaptureConfiguration()
     .withCustomPhraseSelection { phraseSelection in
         phraseSelection.message.font = // Your font
         // Other message customizations
@@ -99,7 +106,7 @@ By default, an introductory instruction screen is presented for Enrollment flow 
 If you would like not to show it (not recommended) use the following snippet:
 
 ```Swift
-let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
+let template = MiSnapVoiceCaptureConfiguration()
     .withCustomUxParameters { uxParameters in
         uxParameters.showIntroductoryInstructionScreen = false
     }
@@ -111,7 +118,7 @@ There are 3 customizable elements on this screen:
 * `button` - a button at the bottom
 
 ```Swift
-let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
+let template = MiSnapVoiceCaptureConfiguration()
     .withCustomIntroductoryInstruction { introductoryInstruction in
         introductoryInstruction.image = // Your image
         
@@ -138,7 +145,7 @@ There are 8 customizable elements on this screen:
 * `failureAcknowledgment` - a button to acknowledge a failure message
 
 ```Swift
-let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
+let template = MiSnapVoiceCaptureConfiguration()
     .withCustomRecording { recording in
         recording.neutral.color = // Your color
         recording.neutral.backgroundColor = // Your background color

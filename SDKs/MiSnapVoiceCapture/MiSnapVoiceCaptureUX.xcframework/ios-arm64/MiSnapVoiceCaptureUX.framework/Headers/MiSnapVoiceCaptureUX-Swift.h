@@ -232,7 +232,9 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX31MiSnapVoiceCaptureConfiguration")
 @property (nonatomic, readonly, strong) MiSnapVoiceCaptureIntroductoryInstructionConfiguration * _Nonnull introductoryInstruction;
 /// Recording screen
 @property (nonatomic, readonly, strong) MiSnapVoiceCaptureRecordingConfiguration * _Nonnull recording;
-/// Creates and returns default configuration for a provided activity type
+/// Creates and returns configuration object with default UX configuration.
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Creates and returns default configuration for a given flow
 - (nonnull instancetype)initFor:(enum MiSnapVoiceCaptureFlow)flow phrase:(NSString * _Nullable)phrase OBJC_DESIGNATED_INITIALIZER;
 /// Convenience function for SDK parameters customization
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
@@ -246,10 +248,10 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX31MiSnapVoiceCaptureConfiguration")
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomRecordingWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureRecordingConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for applying UX customization
+- (MiSnapVoiceCaptureConfiguration * _Nonnull)applying:(MiSnapVoiceCaptureConfiguration * _Nonnull)template_ SWIFT_WARN_UNUSED_RESULT;
 /// Description of <code>MiSnapVoiceCaptureConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIImage;

@@ -33,11 +33,11 @@ class ViewController: UIViewController {
             introductoryInstruction.button.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         }
         .withCustomRecording { recording in
-            recording.success.color = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
-            recording.success.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            recording.success.color = .systemBlue
+            recording.success.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
             
             recording.neutral.color = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-            recording.neutral.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+            recording.neutral.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
             
             recording.failure.color = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
             recording.failure.backgroundColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
@@ -89,7 +89,11 @@ class ViewController: UIViewController {
 // MARK: Invoking MiSnapVoiceCapture
 extension ViewController {
     @objc private func enrollmentButtonAction() {
-        let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment).applying(template)
+        let configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
+            .withCustomParameters { parameters in
+                parameters.snrMin = 7.1
+            }
+            .applying(template)
         misnapVoiceCaptureVC = MiSnapVoiceCaptureViewController(with: configuration, delegate: self)
         
         presentMiSnapVoiceCapture(misnapVoiceCaptureVC)
@@ -97,7 +101,11 @@ extension ViewController {
     
     @objc private func verificationButtonAction() {
         guard let phrase = UserDefaults.standard.object(forKey: "phrase") as? String else { return }
-        let configuration = MiSnapVoiceCaptureConfiguration(for: .verification, phrase: phrase).applying(template)
+        let configuration = MiSnapVoiceCaptureConfiguration(for: .verification, phrase: phrase)
+            .withCustomParameters { parameters in
+                parameters.snrMin = 3.1
+            }
+            .applying(template)
         misnapVoiceCaptureVC = MiSnapVoiceCaptureViewController(with: configuration, delegate: self)
         
         presentMiSnapVoiceCapture(misnapVoiceCaptureVC)

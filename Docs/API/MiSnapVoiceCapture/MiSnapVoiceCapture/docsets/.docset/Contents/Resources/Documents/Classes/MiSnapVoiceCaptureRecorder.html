@@ -51,6 +51,9 @@
                 <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCapture.html">MiSnapVoiceCapture</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCaptureAnalyzer.html">MiSnapVoiceCaptureAnalyzer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapVoiceCaptureParameters.html">MiSnapVoiceCaptureParameters</a>
               </li>
               <li class="nav-group-task">
@@ -65,6 +68,9 @@
             <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapVoiceCaptureAnalyzerInterruptionReason.html">MiSnapVoiceCaptureAnalyzerInterruptionReason</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapVoiceCaptureFlow.html">MiSnapVoiceCaptureFlow</a>
               </li>
               <li class="nav-group-task">
@@ -75,6 +81,9 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/MiSnapVoiceCaptureAnalyzerDelegate.html">MiSnapVoiceCaptureAnalyzerDelegate</a>
+              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/MiSnapVoiceCaptureRecorderDelegate.html">MiSnapVoiceCaptureRecorderDelegate</a>
               </li>
@@ -107,9 +116,37 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)initWith:delegate:"></a>
-                    <a name="//apple_ref/swift/Method/init(with:delegate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)initWith:delegate:">init(with:<wbr>delegate:<wbr>)</a>
+                    <a name="/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(py)sampleRate"></a>
+                    <a name="//apple_ref/swift/Property/sampleRate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(py)sampleRate">sampleRate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A sample rate a recorder is initialized with</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">sampleRate</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)initWith:"></a>
+                    <a name="//apple_ref/swift/Method/init(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)initWith:">init(with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -125,7 +162,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapVoiceCaptureParameters.html">MiSnapVoiceCaptureParameters</a></span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MiSnapVoiceCaptureRecorderDelegate.html">MiSnapVoiceCaptureRecorderDelegate</a></span><span class="p">)</span></code></pre>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">with</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/MiSnapVoiceCaptureRecorderDelegate.html">MiSnapVoiceCaptureRecorderDelegate</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -135,9 +172,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)record"></a>
-                    <a name="//apple_ref/swift/Method/record()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)record">record()</a>
+                    <a name="/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)start"></a>
+                    <a name="//apple_ref/swift/Method/start()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)start">start()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -145,12 +182,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Starts recording</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Note:recording stops automatically after a user pronounced a phrase
-
-</div>
+                        <p>Starts recording if it&rsquo;s not started yet or discards the current one and restarts a new one</p>
 
                       </div>
                       <div class="declaration">
@@ -158,7 +190,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">record</span><span class="p">()</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">start</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -168,9 +200,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)cancel"></a>
-                    <a name="//apple_ref/swift/Method/cancel()" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)cancel">cancel()</a>
+                    <a name="/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)stopWithSpeechStart:"></a>
+                    <a name="//apple_ref/swift/Method/stop(withSpeechStart:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)stopWithSpeechStart:">stop(withSpeechStart:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -178,7 +210,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Cancels recording</p>
+                        <p>Stops recording and optionally trims it when non-0 speech start (ms) is provided</p>
 
                       </div>
                       <div class="declaration">
@@ -186,7 +218,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">cancel</span><span class="p">()</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">stop</span><span class="p">(</span><span class="n">withSpeechStart</span> <span class="nv">speechStart</span><span class="p">:</span> <span class="kt">Float</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -206,9 +238,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Shuts a recorder down.</p>
-
-<p>This should be called at the end of the session to de-initialize all internal objects to prevent memory leaks.</p>
+                        <p>Shuts down</p>
 
                       </div>
                       <div class="declaration">
@@ -217,34 +247,6 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">shutdown</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)logModuleWithNamed:version:"></a>
-                    <a name="//apple_ref/swift/Method/logModule(named:version:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureRecorder(im)logModuleWithNamed:version:">logModule(named:<wbr>version:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Logs a module and its version</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">logModule</span><span class="p">(</span><span class="n">named</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

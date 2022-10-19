@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  Do not use it without consulting with Mitek representative.
  
- Use `MiSnapVoiceCaptureRecorder` instead
+ Use `MiSnapVoiceCaptureAnalyzer` in combination with `MiSnapVoiceCaptureRecorder` instead
  */
 @interface MiSnapVoiceCaptureEngine : NSObject
 /**

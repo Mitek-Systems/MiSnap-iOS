@@ -2,7 +2,7 @@ Please refer to [MiSnapVoiceCaptureCustomizationSampleApp](../../../Examples/App
 
 # Customization Guide
 
-:warning: This guide is only applicable if you've integrated `MiSnapVoiceCaptureUX`. Use this `[TODO] starter custom view controller` when building your own UX/UI.
+:warning: This guide is only applicable if you've integrated `MiSnapVoiceCaptureUX`.
 
 ## Table of Contents
 * [Overview](#overview)

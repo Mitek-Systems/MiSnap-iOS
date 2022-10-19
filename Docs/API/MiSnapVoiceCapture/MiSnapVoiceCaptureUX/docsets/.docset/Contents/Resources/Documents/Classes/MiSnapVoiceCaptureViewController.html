@@ -94,6 +94,7 @@
                   <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="kt">MiSnapVoiceCaptureViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MiSnapVoiceCaptureViewController</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureRecorderDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MiSnapVoiceCaptureViewController</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureAnalyzerDelegate</span></code></pre>
 
                 </div>
               </div>
@@ -362,9 +363,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderLicenseStatus:"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderLicenseStatus(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderLicenseStatus:">miSnapVoiceCaptureRecorderLicenseStatus(_:<wbr>)</a>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderDidStart"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderDidStart()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderDidStart">miSnapVoiceCaptureRecorderDidStart()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -372,7 +373,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Called when an analyzer detects an invalid license</p>
+                        <p>Called when a recorder is started</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     Only exposed due to public status of parent&rsquo;s function. Do not call it.
@@ -384,7 +385,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderLicenseStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">MiSnapLicenseStatus</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderDidStart</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -394,9 +395,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderSuccess:"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderSuccess(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderSuccess:">miSnapVoiceCaptureRecorderSuccess(_:<wbr>)</a>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderDidOutput:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderDidOutput(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderDidOutput:">miSnapVoiceCaptureRecorderDidOutput(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -404,7 +405,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Called when a recording passes all quality checks</p>
+                        <p>Called when a recorder outputs a real-time voice data for processing</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     Only exposed due to public status of parent&rsquo;s function. Do not call it.
@@ -416,7 +417,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderSuccess</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureResult</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderDidOutput</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -426,9 +427,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderFailure:"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderFailure(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderFailure:">miSnapVoiceCaptureRecorderFailure(_:<wbr>)</a>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderDidStop:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderDidStop(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderDidStop:">miSnapVoiceCaptureRecorderDidStop(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -436,7 +437,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Called when a recording failed a quality check</p>
+                        <p>Called when a recorder is stopped and returns URL to a recorded .wav file</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     Only exposed due to public status of parent&rsquo;s function. Do not call it.
@@ -448,7 +449,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderFailure</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureResult</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderDidStop</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -468,6 +469,275 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
+                        <p>Called when an error occurred during recording</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderInterruptionStarted:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderInterruptionStarted(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderInterruptionStarted:">miSnapVoiceCaptureRecorderInterruptionStarted(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a recorder is interrupted</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderInterruptionStarted</span><span class="p">(</span><span class="n">_</span> <span class="nv">reason</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureAnalyzerInterruptionReason</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderInterruptionEnded"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderInterruptionEnded()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderInterruptionEnded">miSnapVoiceCaptureRecorderInterruptionEnded()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a recorder interruption has ended</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderInterruptionEnded</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/MiSnapVoiceCaptureAnalyzerDelegate%20callbacks"></a>
+                <a name="//apple_ref/swift/Section/MiSnapVoiceCaptureAnalyzerDelegate callbacks" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/MiSnapVoiceCaptureAnalyzerDelegate%20callbacks"></a>
+                  <h3 class="section-name"><span>MiSnapVoiceCaptureAnalyzerDelegate callbacks</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerLicenseStatus:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureAnalyzerLicenseStatus(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerLicenseStatus:">miSnapVoiceCaptureAnalyzerLicenseStatus(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an analyzer detects an invalid license</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureAnalyzerLicenseStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">MiSnapLicenseStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerDidStart"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureAnalyzerDidStart()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerDidStart">miSnapVoiceCaptureAnalyzerDidStart()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an analyzer is started</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureAnalyzerDidStart</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerDidStop:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureAnalyzerDidStop(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerDidStop:">miSnapVoiceCaptureAnalyzerDidStop(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an analyzer is stopped</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureAnalyzerDidStop</span><span class="p">(</span><span class="n">_</span> <span class="nv">speechStart</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerSuccess:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureAnalyzerSuccess(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerSuccess:">miSnapVoiceCaptureAnalyzerSuccess(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a recording passes all quality checks</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureAnalyzerSuccess</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureResult</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerFailure:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureAnalyzerFailure(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerFailure:">miSnapVoiceCaptureAnalyzerFailure(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when a recording failed a quality check</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Only exposed due to public status of parent&rsquo;s function. Do not call it.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureAnalyzerFailure</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureResult</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerError:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureAnalyzerError(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerError:">miSnapVoiceCaptureAnalyzerError(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
                         <p>Called when an internal SDK error occurs</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
@@ -480,7 +750,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderError</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureResult</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureAnalyzerError</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureResult</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -490,9 +760,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderCancel:"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderCancel(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderCancel:">miSnapVoiceCaptureRecorderCancel(_:<wbr>)</a>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerCancel:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureAnalyzerCancel(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerCancel:">miSnapVoiceCaptureAnalyzerCancel(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -512,7 +782,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderCancel</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureResult</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureAnalyzerCancel</span><span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">MiSnapVoiceCaptureResult</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -522,9 +792,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderSpeechLength:"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderSpeechLength(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderSpeechLength:">miSnapVoiceCaptureRecorderSpeechLength(_:<wbr>)</a>
+                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerSpeechLength:"></a>
+                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureAnalyzerSpeechLength(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureAnalyzerSpeechLength:">miSnapVoiceCaptureAnalyzerSpeechLength(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -532,7 +802,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Called every time a live voice sample is processed</p>
+                        <p>Called every time a real-time voice data is processed with a speech length detected in the current recording</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
     Only exposed due to public status of parent&rsquo;s function. Do not call it.
@@ -544,39 +814,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderSpeechLength</span><span class="p">(</span><span class="n">_</span> <span class="nv">speechLength</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderInterruption:"></a>
-                    <a name="//apple_ref/swift/Method/miSnapVoiceCaptureRecorderInterruption(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureRecorderInterruption:">miSnapVoiceCaptureRecorderInterruption(_:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Called when a recording was interrupted</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Only exposed due to public status of parent&rsquo;s function. Do not call it.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureRecorderInterruption</span><span class="p">(</span><span class="n">_</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">AVAudioSession</span><span class="o">.</span><span class="kt">InterruptionType</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">miSnapVoiceCaptureAnalyzerSpeechLength</span><span class="p">(</span><span class="n">_</span> <span class="nv">speechLength</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

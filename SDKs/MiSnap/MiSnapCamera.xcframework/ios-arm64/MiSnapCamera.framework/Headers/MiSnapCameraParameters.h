@@ -141,6 +141,20 @@ typedef NS_ENUM(NSInteger, MiSnapCameraTorchMode) {
  */
 @property (nonatomic, readwrite) NSArray * _Nonnull supportedBarcodeTypes;
 /**
+ Locked focus dictionary
+ 
+ where,
+ 
+ key is a device model (e.g. iPhone15,3)
+ 
+ value is a locked focus float value in a range [0.0, 1.0]
+ 
+ Default: nil
+ 
+ - Note, it's not recommended to set this property without consulting with Mitek representative
+ */
+@property (nonatomic) NSDictionary * _Nullable lockedFocusDictionary;
+/**
  @return Dictionary of parameters
  */
 - (NSDictionary *)toDictionary;

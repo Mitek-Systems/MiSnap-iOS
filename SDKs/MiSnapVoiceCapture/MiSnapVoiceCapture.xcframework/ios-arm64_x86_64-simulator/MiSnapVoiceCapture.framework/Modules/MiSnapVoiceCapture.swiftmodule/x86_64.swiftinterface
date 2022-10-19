@@ -42,18 +42,36 @@ import _Concurrency
   @objc public static func stringFromStatus(_ status: MiSnapVoiceCaptureStatus) -> Swift.String
   @objc deinit
 }
-@objc public protocol MiSnapVoiceCaptureRecorderDelegate {
-  @objc func miSnapVoiceCaptureRecorderLicenseStatus(_ status: MiSnapLicenseStatus)
-  @objc func miSnapVoiceCaptureRecorderSuccess(_ result: MiSnapVoiceCaptureResult)
-  @objc func miSnapVoiceCaptureRecorderFailure(_ result: MiSnapVoiceCaptureResult)
-  @objc func miSnapVoiceCaptureRecorderCancel(_ result: MiSnapVoiceCaptureResult)
-  @objc func miSnapVoiceCaptureRecorderError(_ result: MiSnapVoiceCaptureResult)
-  @objc func miSnapVoiceCaptureRecorderSpeechLength(_ speechLength: Swift.Int)
-  @objc func miSnapVoiceCaptureRecorderInterruption(_ type: AVFAudio.AVAudioSession.InterruptionType)
+@objc public enum MiSnapVoiceCaptureAnalyzerInterruptionReason : Swift.Int {
+  case none
+  case notActive
+  case noise
+  case voiceOver
+  case micInUseByAnotherClient
+  case mediaReset
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
-@objc public class MiSnapVoiceCaptureRecorder : ObjectiveC.NSObject {
-  @objc public init(with parameters: MiSnapVoiceCaptureParameters, delegate: MiSnapVoiceCaptureRecorderDelegate)
-  @objc public func record()
+@objc public protocol MiSnapVoiceCaptureAnalyzerDelegate {
+  @objc func miSnapVoiceCaptureAnalyzerLicenseStatus(_ status: MiSnapLicenseStatus)
+  @objc func miSnapVoiceCaptureAnalyzerDidStart()
+  @objc func miSnapVoiceCaptureAnalyzerDidStop(_ speechStart: Swift.Float)
+  @objc func miSnapVoiceCaptureAnalyzerSuccess(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureAnalyzerFailure(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureAnalyzerCancel(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureAnalyzerError(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureAnalyzerSpeechLength(_ speechLength: Swift.Int)
+}
+@objc public class MiSnapVoiceCaptureAnalyzer : ObjectiveC.NSObject {
+  @objc public init(with parameters: MiSnapVoiceCaptureParameters, delegate: MiSnapVoiceCaptureAnalyzerDelegate, sampleRate: Swift.Int32)
+  @objc public func start()
+  @objc public func discard(for reason: MiSnapVoiceCaptureAnalyzerInterruptionReason, restart: Swift.Bool = false)
+  @objc public func analyze(realTimeData data: Foundation.Data)
+  @objc public func analyze(fileAt url: Foundation.URL)
+  @objc public func didReceiveError(_ error: Foundation.NSError)
   @objc public func cancel()
   @objc public func shutdown()
   @objc public func logModule(named name: Swift.String, version: Swift.String)
@@ -79,9 +97,30 @@ import _Concurrency
   @objc public static func string(from flow: MiSnapVoiceCaptureFlow) -> Swift.String
   @objc deinit
 }
+@objc public protocol MiSnapVoiceCaptureRecorderDelegate {
+  @objc func miSnapVoiceCaptureRecorderDidStart()
+  @objc func miSnapVoiceCaptureRecorderDidOutput(_ data: Foundation.Data)
+  @objc func miSnapVoiceCaptureRecorderDidStop(_ url: Foundation.URL)
+  @objc func miSnapVoiceCaptureRecorderError(_ error: Foundation.NSError)
+  @objc func miSnapVoiceCaptureRecorderInterruptionStarted(_ reason: MiSnapVoiceCaptureAnalyzerInterruptionReason)
+  @objc func miSnapVoiceCaptureRecorderInterruptionEnded()
+}
+@objc public class MiSnapVoiceCaptureRecorder : ObjectiveC.NSObject {
+  @objc public var sampleRate: Swift.Int32 {
+    get
+  }
+  @objc public init(with delegate: MiSnapVoiceCaptureRecorderDelegate)
+  @objc public func start()
+  @objc public func stop(withSpeechStart speechStart: Swift.Float = 0.0)
+  @objc public func shutdown()
+  @objc deinit
+}
 extension MiSnapVoiceCaptureStatus : Swift.Equatable {}
 extension MiSnapVoiceCaptureStatus : Swift.Hashable {}
 extension MiSnapVoiceCaptureStatus : Swift.RawRepresentable {}
+extension MiSnapVoiceCaptureAnalyzerInterruptionReason : Swift.Equatable {}
+extension MiSnapVoiceCaptureAnalyzerInterruptionReason : Swift.Hashable {}
+extension MiSnapVoiceCaptureAnalyzerInterruptionReason : Swift.RawRepresentable {}
 extension MiSnapVoiceCaptureFlow : Swift.Equatable {}
 extension MiSnapVoiceCaptureFlow : Swift.Hashable {}
 extension MiSnapVoiceCaptureFlow : Swift.RawRepresentable {}

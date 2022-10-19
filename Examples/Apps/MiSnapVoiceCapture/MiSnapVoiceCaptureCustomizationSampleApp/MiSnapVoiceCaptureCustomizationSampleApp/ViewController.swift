@@ -36,7 +36,7 @@ class ViewController: UIViewController {
             recording.success.color = .systemBlue
             recording.success.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
             
-            recording.neutral.color = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            recording.neutral.color = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             recording.neutral.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
             
             recording.failure.color = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)

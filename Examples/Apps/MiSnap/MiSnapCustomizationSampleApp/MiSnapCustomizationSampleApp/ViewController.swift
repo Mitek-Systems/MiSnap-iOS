@@ -306,12 +306,12 @@ extension ViewController {
         guard let misnap = misnap else { return }
         
         let minDiskSpace: Int = 20
-        if misnap.configuration.parameters.camera.recordVideo && !misnap.hasMinDiskSpace(minDiskSpace) {
+        if misnap.configuration.parameters.camera.recordVideo && !MiSnapViewController.hasMinDiskSpace(minDiskSpace) {
             presentAlert(withTitle: "Not Enough Space", message: "Please, delete old/unused files to have at least \(minDiskSpace) MB of free space")
             return
         }
         
-        misnap.checkCameraPermission { granted in
+        MiSnapViewController.checkCameraPermission { granted in
             if !granted {
                 var message = "Camera permission is required to capture your documents."
                 if misnap.configuration.parameters.camera.recordVideo {
@@ -323,7 +323,7 @@ extension ViewController {
             }
             
             if misnap.configuration.parameters.camera.recordVideo && misnap.configuration.parameters.camera.recordAudio {
-                misnap.checkMicrophonePermission { granted in
+                MiSnapViewController.checkMicrophonePermission { granted in
                     if !granted {
                         let message = "Microphone permission is required to record audio as required by a country regulation."
                         self.presentPermissionAlert(withTitle: "Microphone Permission Denied", message: message)

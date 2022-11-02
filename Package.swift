@@ -39,7 +39,7 @@ let package = Package(
         ),
         .library(
             name: "MiSnapNFCUX",
-            targets: ["MiSnapNFCUX"]
+            targets: ["MiSnapNFCUX","MiSnapAssetManager"]
         )
     ],
     targets: [

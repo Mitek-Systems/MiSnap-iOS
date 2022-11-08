@@ -33,7 +33,7 @@ class MiPassResultViewController: ResultViewController {
     override func handleResults() {
         logVoiceResults(result.voice)
         
-        guard MitekPlatform.shared.hasValidMiPassConfiguration && AppSettings.shared.mode == .online else {
+        guard MitekPlatform.shared.hasValidMiPassConfiguration else {
             return configureSubviews()
         }
         

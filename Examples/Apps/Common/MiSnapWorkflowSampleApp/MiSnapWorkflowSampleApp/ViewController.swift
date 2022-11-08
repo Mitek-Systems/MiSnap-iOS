@@ -515,11 +515,7 @@ extension ViewController {
     private func configureVersionLabel() -> UILabel {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width * 0.9, height: 40))
         label.translatesAutoresizingMaskIntoConstraints = false
-        if let buildNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String {
-            label.text = "\(MiSnap.version()) (\(buildNumber))"
-        } else {
-            label.text = "\(MiSnap.version())"
-        }
+        label.text = "\(MiSnap.version())"
         label.textAlignment = .center
         label.textColor = #colorLiteral(red: 0.6041179916, green: 0.6041179916, blue: 0.6041179916, alpha: 1)
         label.numberOfLines = 2
@@ -531,28 +527,7 @@ extension ViewController {
         ])
         label.isUserInteractionEnabled = true
         
-        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(versionLabelDoubleTapAction))
-        doubleTap.numberOfTapsRequired = 2
-        label.addGestureRecognizer(doubleTap)
-        
         return label
-    }
-    
-    @objc private func versionLabelDoubleTapAction() {
-        let appSettingsView = AppSettingsView(frame: view.frame)
-        view.addSubview(appSettingsView)
-        
-        NSLayoutConstraint.activate([
-            appSettingsView.topAnchor.constraint(equalTo: view.topAnchor),
-            appSettingsView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            appSettingsView.leftAnchor.constraint(equalTo: view.leftAnchor),
-            appSettingsView.rightAnchor.constraint(equalTo: view.rightAnchor)
-        ])
-        
-        appSettingsView.alpha = 0.0
-        UIView.animate(withDuration: 0.5, delay: 0.0, options: .curveLinear) {
-            appSettingsView.alpha = 1.0
-        }
     }
     
     @discardableResult private func licenseValid(_ status: MiSnapLicenseStatus) -> Bool {

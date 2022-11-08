@@ -15,7 +15,7 @@ class MobileVerifyResultViewController: ResultViewController {
     private var serverResult: MobileVerifyResult?
     
     override func handleResults() {
-        guard MitekPlatform.shared.hasValidMobileVerifyConfiguration && AppSettings.shared.mode == .online else {
+        guard MitekPlatform.shared.hasValidMobileVerifyConfiguration else {
             return configureSubviews()
         }
         

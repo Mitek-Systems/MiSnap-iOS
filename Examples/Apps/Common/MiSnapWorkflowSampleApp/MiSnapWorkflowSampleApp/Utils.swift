@@ -36,10 +36,10 @@ enum SDK: String, Equatable, CaseIterable {
 }
 
 enum NFCField: String, Equatable, CaseIterable {
-    case documentNumber = "documentNumber"
-    case dateOfBirth = "dateOfBirth"
-    case dateOfExpiry = "dateOfExpiry"
-    case mrzString = "mrzString"
+    case documentNumber
+    case dateOfBirth
+    case dateOfExpiry
+    case mrzString
     
     var placeholder: String {
         switch self {

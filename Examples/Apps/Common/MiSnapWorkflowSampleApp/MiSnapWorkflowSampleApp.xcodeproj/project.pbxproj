@@ -3,14 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42A8A6B42913EC8200CE54AD /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6B22913EC8100CE54AD /* AppSettingsView.swift */; };
 		42A8A6B52913EC8200CE54AD /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6B32913EC8100CE54AD /* CustomSegmentedControl.swift */; };
-		42A8A6B72913ECD800CE54AD /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6B62913ECD800CE54AD /* AppSettings.swift */; };
-		42A8A6B92913ED4300CE54AD /* AssetSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6B82913ED4300CE54AD /* AssetSaver.swift */; };
 		42A8A6BB2913EFC700CE54AD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6BA2913EFC700CE54AD /* Utils.swift */; };
 		42A8A6C62913FB8200CE54AD /* MiPassEnrollmentInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6C52913FB8100CE54AD /* MiPassEnrollmentInput.swift */; };
 		42A8A6E9291539CC00CE54AD /* MiPassResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6E8291539CC00CE54AD /* MiPassResultViewController.swift */; };
@@ -104,10 +101,7 @@
 		426D27C02864D5BA00D0AACD /* MiSnapNFCUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapNFCUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426D27C12864D5BA00D0AACD /* MiSnapScience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapScience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426D27C22864D5BA00D0AACD /* MiSnapUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42A8A6B22913EC8100CE54AD /* AppSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
 		42A8A6B32913EC8100CE54AD /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
-		42A8A6B62913ECD800CE54AD /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
-		42A8A6B82913ED4300CE54AD /* AssetSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetSaver.swift; sourceTree = "<group>"; };
 		42A8A6BA2913EFC700CE54AD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		42A8A6C52913FB8100CE54AD /* MiPassEnrollmentInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiPassEnrollmentInput.swift; sourceTree = "<group>"; };
 		42A8A6CD2914013E00CE54AD /* MiSnapVoiceCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapVoiceCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,8 +224,6 @@
 		42A8A6C22913FB5300CE54AD /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				42A8A6B62913ECD800CE54AD /* AppSettings.swift */,
-				42A8A6B82913ED4300CE54AD /* AssetSaver.swift */,
 				42A8A6BA2913EFC700CE54AD /* Utils.swift */,
 			);
 			name = Common;
@@ -274,7 +266,6 @@
 		42A8A6CC2913FEE700CE54AD /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				42A8A6B22913EC8100CE54AD /* AppSettingsView.swift */,
 				42A8A6B32913EC8100CE54AD /* CustomSegmentedControl.swift */,
 				42EE319627FF484000D27B02 /* InfoView.swift */,
 				42EE319D27FF484000D27B02 /* JudgementView.swift */,
@@ -436,7 +427,7 @@
 				42ED46F4238C0C8300740A77 /* Sources */,
 				42ED46F5238C0C8300740A77 /* Frameworks */,
 				42ED46F6238C0C8300740A77 /* Resources */,
-				429ACFF826B2D70000AA5869 /* ShellScript */,
+				429ACFF826B2D70000AA5869 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -509,8 +500,9 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		429ACFF826B2D70000AA5869 /* ShellScript */ = {
+		429ACFF826B2D70000AA5869 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -518,6 +510,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Run SwiftLint";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -536,10 +529,8 @@
 				42EE31AE27FF484000D27B02 /* JudgementView.swift in Sources */,
 				42A8A6F829153C1D00CE54AD /* RecordingPlaybackView.swift in Sources */,
 				42A8A77E291A829F00CE54AD /* MiPassRequest.swift in Sources */,
-				42A8A6B72913ECD800CE54AD /* AppSettings.swift in Sources */,
 				42A8A6EE29153AA300CE54AD /* MiPassResult.swift in Sources */,
 				42A8A6F329153B6900CE54AD /* MiPassResultView.swift in Sources */,
-				42A8A6B92913ED4300CE54AD /* AssetSaver.swift in Sources */,
 				42EE31AA27FF484000D27B02 /* MobileVerifyResultView.swift in Sources */,
 				42A8A6B52913EC8200CE54AD /* CustomSegmentedControl.swift in Sources */,
 				42EE31B027FF484000D27B02 /* LoadingView.swift in Sources */,
@@ -558,7 +549,6 @@
 				42A8A77F291A829F00CE54AD /* MiSnapWorkflowViewControllerFactory.swift in Sources */,
 				42A8A77B291A829F00CE54AD /* MitekPlatformTokenManager.swift in Sources */,
 				42A8A6BB2913EFC700CE54AD /* Utils.swift in Sources */,
-				42A8A6B42913EC8200CE54AD /* AppSettingsView.swift in Sources */,
 				42EE31A927FF484000D27B02 /* InfoView.swift in Sources */,
 				42EE31A727FF484000D27B02 /* MobileVerifyResultViewController.swift in Sources */,
 			);
@@ -711,16 +701,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MiSnapWorkflowSampleApp/MiSnapWorkflowSampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_POSTPROCESSING = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/../../MiSnap/MobileFlow",
-					"$(PROJECT_DIR)/../../MiSnapBiometrics/VoiceSdk",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MiSnapWorkflowSampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -743,15 +729,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MiSnapWorkflowSampleApp/MiSnapWorkflowSampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEPLOYMENT_POSTPROCESSING = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/../../MiSnap/MobileFlow",
-					"$(PROJECT_DIR)/../../MiSnapBiometrics/VoiceSdk",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MiSnapWorkflowSampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

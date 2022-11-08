@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42A8A6B42913EC8200CE54AD /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6B22913EC8100CE54AD /* AppSettingsView.swift */; };
+		42A8A6B52913EC8200CE54AD /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6B32913EC8100CE54AD /* CustomSegmentedControl.swift */; };
+		42A8A6B72913ECD800CE54AD /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6B62913ECD800CE54AD /* AppSettings.swift */; };
+		42A8A6B92913ED4300CE54AD /* AssetSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6B82913ED4300CE54AD /* AssetSaver.swift */; };
+		42A8A6BB2913EFC700CE54AD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6BA2913EFC700CE54AD /* Utils.swift */; };
+		42A8A6C62913FB8200CE54AD /* MiPassEnrollmentInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6C52913FB8100CE54AD /* MiPassEnrollmentInput.swift */; };
+		42A8A6E9291539CC00CE54AD /* MiPassResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6E8291539CC00CE54AD /* MiPassResultViewController.swift */; };
+		42A8A6EE29153AA300CE54AD /* MiPassResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6ED29153AA200CE54AD /* MiPassResult.swift */; };
+		42A8A6F329153B6900CE54AD /* MiPassResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6F229153B6900CE54AD /* MiPassResultView.swift */; };
+		42A8A6F829153C1D00CE54AD /* RecordingPlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A6F729153C1D00CE54AD /* RecordingPlaybackView.swift */; };
+		42A8A70529158A6800CE54AD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A70429158A6800CE54AD /* ResultViewController.swift */; };
+		42A8A77B291A829F00CE54AD /* MitekPlatformTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A772291A829C00CE54AD /* MitekPlatformTokenManager.swift */; };
+		42A8A77C291A829F00CE54AD /* MitekPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A773291A829C00CE54AD /* MitekPlatform.swift */; };
+		42A8A77D291A829F00CE54AD /* MobileVerifyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A775291A829D00CE54AD /* MobileVerifyRequest.swift */; };
+		42A8A77E291A829F00CE54AD /* MiPassRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A776291A829D00CE54AD /* MiPassRequest.swift */; };
+		42A8A77F291A829F00CE54AD /* MiSnapWorkflowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A778291A829E00CE54AD /* MiSnapWorkflowViewControllerFactory.swift */; };
+		42A8A780291A829F00CE54AD /* MiSnapWorkflowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A779291A829E00CE54AD /* MiSnapWorkflowController.swift */; };
+		42A8A781291A829F00CE54AD /* MiSnapWorkflowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A77A291A829E00CE54AD /* MiSnapWorkflowViewController.swift */; };
+		42A8A784291A85CE00CE54AD /* MiSnap in Frameworks */ = {isa = PBXBuildFile; productRef = 42A8A783291A85CE00CE54AD /* MiSnap */; };
+		42A8A786291A85CE00CE54AD /* MiSnapFacialCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 42A8A785291A85CE00CE54AD /* MiSnapFacialCapture */; };
+		42A8A788291A85CE00CE54AD /* MiSnapFacialCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 42A8A787291A85CE00CE54AD /* MiSnapFacialCaptureUX */; };
+		42A8A78A291A85CE00CE54AD /* MiSnapNFC in Frameworks */ = {isa = PBXBuildFile; productRef = 42A8A789291A85CE00CE54AD /* MiSnapNFC */; };
+		42A8A78C291A85CE00CE54AD /* MiSnapNFCUX in Frameworks */ = {isa = PBXBuildFile; productRef = 42A8A78B291A85CE00CE54AD /* MiSnapNFCUX */; };
+		42A8A78E291A85CE00CE54AD /* MiSnapUX in Frameworks */ = {isa = PBXBuildFile; productRef = 42A8A78D291A85CE00CE54AD /* MiSnapUX */; };
+		42A8A790291A85CE00CE54AD /* MiSnapVoiceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 42A8A78F291A85CE00CE54AD /* MiSnapVoiceCapture */; };
+		42A8A792291A85CE00CE54AD /* MiSnapVoiceCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 42A8A791291A85CE00CE54AD /* MiSnapVoiceCaptureUX */; };
+		42EE31A527FF484000D27B02 /* MobileVerifyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE319227FF484000D27B02 /* MobileVerifyResult.swift */; };
+		42EE31A627FF484000D27B02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE319327FF484000D27B02 /* ViewController.swift */; };
+		42EE31A727FF484000D27B02 /* MobileVerifyResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE319427FF484000D27B02 /* MobileVerifyResultViewController.swift */; };
+		42EE31A927FF484000D27B02 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE319627FF484000D27B02 /* InfoView.swift */; };
+		42EE31AA27FF484000D27B02 /* MobileVerifyResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE319727FF484000D27B02 /* MobileVerifyResultView.swift */; };
+		42EE31AB27FF484000D27B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EE319827FF484000D27B02 /* Assets.xcassets */; };
+		42EE31AC27FF484000D27B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EE319927FF484000D27B02 /* LaunchScreen.storyboard */; };
+		42EE31AD27FF484000D27B02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EE319B27FF484000D27B02 /* Main.storyboard */; };
+		42EE31AE27FF484000D27B02 /* JudgementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE319D27FF484000D27B02 /* JudgementView.swift */; };
+		42EE31AF27FF484000D27B02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE319E27FF484000D27B02 /* AppDelegate.swift */; };
+		42EE31B027FF484000D27B02 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE319F27FF484000D27B02 /* LoadingView.swift */; };
+		42EE31B127FF484000D27B02 /* ResultLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE31A027FF484000D27B02 /* ResultLabel.swift */; };
+		42EE31B327FF484000D27B02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE31A227FF484000D27B02 /* SceneDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4208715324C8DE1100469BD2 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = SDKs/AppCenter/AppCenterAnalytics.framework; sourceTree = "<group>"; };
+		4208715424C8DE1100469BD2 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = SDKs/AppCenter/AppCenter.framework; sourceTree = "<group>"; };
+		4208715524C8DE1100469BD2 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = SDKs/AppCenter/AppCenterCrashes.framework; sourceTree = "<group>"; };
+		4220EC2A28A29D76005E38F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		4220EC2C28A29DA8005E38F0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		4220EC2E28A29DB0005E38F0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		426D27442864D4FA00D0AACD /* MiSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27452864D4FA00D0AACD /* MiSnapAssetManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapAssetManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27462864D4FA00D0AACD /* MiSnapBarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapBarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27472864D4FA00D0AACD /* MiSnapCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27482864D4FA00D0AACD /* MiSnapFacialCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapFacialCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27492864D4FA00D0AACD /* MiSnapFacialCaptureUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapFacialCaptureUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D274A2864D4FA00D0AACD /* MiSnapLicenseManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapLicenseManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D274B2864D4FA00D0AACD /* MiSnapMibiData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapMibiData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D274C2864D4FA00D0AACD /* MiSnapNFC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapNFC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D274D2864D4FA00D0AACD /* MiSnapNFCUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapNFCUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D274E2864D4FA00D0AACD /* MiSnapScience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapScience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D274F2864D4FA00D0AACD /* MiSnapUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27682864D51200D0AACD /* MobileFlow.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobileFlow.xcframework; path = ../../MiSnap/MobileFlow/MobileFlow.xcframework; sourceTree = "<group>"; };
+		426D276B2864D58200D0AACD /* MiSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D276C2864D58200D0AACD /* MiSnapAssetManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapAssetManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D276D2864D58200D0AACD /* MiSnapBarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapBarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D276E2864D58200D0AACD /* MiSnapCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D276F2864D58200D0AACD /* MiSnapFacialCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapFacialCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27702864D58200D0AACD /* MiSnapFacialCaptureUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapFacialCaptureUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27712864D58200D0AACD /* MiSnapLicenseManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapLicenseManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27722864D58200D0AACD /* MiSnapMibiData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapMibiData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27732864D58200D0AACD /* MiSnapNFC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapNFC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27742864D58200D0AACD /* MiSnapNFCUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapNFCUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27752864D58200D0AACD /* MiSnapScience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapScience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27762864D58200D0AACD /* MiSnapUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27912864D5A200D0AACD /* MiSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27922864D5A200D0AACD /* MiSnapAssetManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapAssetManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27932864D5A200D0AACD /* MiSnapBarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapBarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27942864D5A200D0AACD /* MiSnapCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27952864D5A200D0AACD /* MiSnapFacialCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapFacialCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27962864D5A200D0AACD /* MiSnapFacialCaptureUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapFacialCaptureUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27972864D5A200D0AACD /* MiSnapLicenseManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapLicenseManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27982864D5A200D0AACD /* MiSnapMibiData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapMibiData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27992864D5A200D0AACD /* MiSnapNFC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapNFC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D279A2864D5A200D0AACD /* MiSnapNFCUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapNFCUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D279B2864D5A200D0AACD /* MiSnapScience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapScience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D279C2864D5A200D0AACD /* MiSnapUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27B72864D5BA00D0AACD /* MiSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27B82864D5BA00D0AACD /* MiSnapAssetManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapAssetManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27B92864D5BA00D0AACD /* MiSnapBarcodeScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapBarcodeScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27BA2864D5BA00D0AACD /* MiSnapCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27BB2864D5BA00D0AACD /* MiSnapFacialCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapFacialCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27BC2864D5BA00D0AACD /* MiSnapFacialCaptureUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapFacialCaptureUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27BD2864D5BA00D0AACD /* MiSnapLicenseManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapLicenseManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27BE2864D5BA00D0AACD /* MiSnapMibiData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapMibiData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27BF2864D5BA00D0AACD /* MiSnapNFC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapNFC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27C02864D5BA00D0AACD /* MiSnapNFCUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapNFCUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27C12864D5BA00D0AACD /* MiSnapScience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapScience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D27C22864D5BA00D0AACD /* MiSnapUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A8A6B22913EC8100CE54AD /* AppSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
+		42A8A6B32913EC8100CE54AD /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		42A8A6B62913ECD800CE54AD /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		42A8A6B82913ED4300CE54AD /* AssetSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetSaver.swift; sourceTree = "<group>"; };
+		42A8A6BA2913EFC700CE54AD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		42A8A6C52913FB8100CE54AD /* MiPassEnrollmentInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiPassEnrollmentInput.swift; sourceTree = "<group>"; };
+		42A8A6CD2914013E00CE54AD /* MiSnapVoiceCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapVoiceCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A8A6CE2914013E00CE54AD /* MiSnapVoiceCaptureUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapVoiceCaptureUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A8A6D32914020A00CE54AD /* VoiceSdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = VoiceSdk.xcframework; path = ../../MiSnapBiometrics/VoiceSdk/VoiceSdk.xcframework; sourceTree = "<group>"; };
+		42A8A6E8291539CC00CE54AD /* MiPassResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiPassResultViewController.swift; sourceTree = "<group>"; };
+		42A8A6ED29153AA200CE54AD /* MiPassResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiPassResult.swift; sourceTree = "<group>"; };
+		42A8A6F229153B6900CE54AD /* MiPassResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiPassResultView.swift; sourceTree = "<group>"; };
+		42A8A6F729153C1D00CE54AD /* RecordingPlaybackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingPlaybackView.swift; sourceTree = "<group>"; };
+		42A8A70429158A6800CE54AD /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		42A8A772291A829C00CE54AD /* MitekPlatformTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MitekPlatformTokenManager.swift; sourceTree = "<group>"; };
+		42A8A773291A829C00CE54AD /* MitekPlatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MitekPlatform.swift; sourceTree = "<group>"; };
+		42A8A775291A829D00CE54AD /* MobileVerifyRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileVerifyRequest.swift; sourceTree = "<group>"; };
+		42A8A776291A829D00CE54AD /* MiPassRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiPassRequest.swift; sourceTree = "<group>"; };
+		42A8A778291A829E00CE54AD /* MiSnapWorkflowViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapWorkflowViewControllerFactory.swift; sourceTree = "<group>"; };
+		42A8A779291A829E00CE54AD /* MiSnapWorkflowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapWorkflowController.swift; sourceTree = "<group>"; };
+		42A8A77A291A829E00CE54AD /* MiSnapWorkflowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapWorkflowViewController.swift; sourceTree = "<group>"; };
+		42ED46F8238C0C8300740A77 /* MiSnapWorkflowSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiSnapWorkflowSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EE319227FF484000D27B02 /* MobileVerifyResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileVerifyResult.swift; sourceTree = "<group>"; };
+		42EE319327FF484000D27B02 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42EE319427FF484000D27B02 /* MobileVerifyResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileVerifyResultViewController.swift; sourceTree = "<group>"; };
+		42EE319527FF484000D27B02 /* Usability EU.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Usability EU.plist"; sourceTree = "<group>"; };
+		42EE319627FF484000D27B02 /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		42EE319727FF484000D27B02 /* MobileVerifyResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileVerifyResultView.swift; sourceTree = "<group>"; };
+		42EE319827FF484000D27B02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42EE319A27FF484000D27B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42EE319C27FF484000D27B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42EE319D27FF484000D27B02 /* JudgementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JudgementView.swift; sourceTree = "<group>"; };
+		42EE319E27FF484000D27B02 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42EE319F27FF484000D27B02 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		42EE31A027FF484000D27B02 /* ResultLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultLabel.swift; sourceTree = "<group>"; };
+		42EE31A127FF484000D27B02 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EE31A227FF484000D27B02 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		42EE31A327FF484000D27B02 /* Beta EU.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Beta EU.plist"; sourceTree = "<group>"; };
+		42EE31A427FF484000D27B02 /* Sandbox EU.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sandbox EU.plist"; sourceTree = "<group>"; };
+		42EE31B627FF488800D27B02 /* MiSnapWorkflowSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiSnapWorkflowSampleApp.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42ED46F5238C0C8300740A77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A8A78A291A85CE00CE54AD /* MiSnapNFC in Frameworks */,
+				42A8A784291A85CE00CE54AD /* MiSnap in Frameworks */,
+				42A8A788291A85CE00CE54AD /* MiSnapFacialCaptureUX in Frameworks */,
+				42A8A792291A85CE00CE54AD /* MiSnapVoiceCaptureUX in Frameworks */,
+				42A8A786291A85CE00CE54AD /* MiSnapFacialCapture in Frameworks */,
+				42A8A78C291A85CE00CE54AD /* MiSnapNFCUX in Frameworks */,
+				42A8A790291A85CE00CE54AD /* MiSnapVoiceCapture in Frameworks */,
+				42A8A78E291A85CE00CE54AD /* MiSnapUX in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		429E863A238CBB19003EB9A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A6D32914020A00CE54AD /* VoiceSdk.xcframework */,
+				42A8A6CD2914013E00CE54AD /* MiSnapVoiceCapture.framework */,
+				42A8A6CE2914013E00CE54AD /* MiSnapVoiceCaptureUX.framework */,
+				426D27B72864D5BA00D0AACD /* MiSnap.framework */,
+				426D27B82864D5BA00D0AACD /* MiSnapAssetManager.framework */,
+				426D27B92864D5BA00D0AACD /* MiSnapBarcodeScanner.framework */,
+				426D27BA2864D5BA00D0AACD /* MiSnapCamera.framework */,
+				426D27BB2864D5BA00D0AACD /* MiSnapFacialCapture.framework */,
+				426D27BC2864D5BA00D0AACD /* MiSnapFacialCaptureUX.framework */,
+				426D27BD2864D5BA00D0AACD /* MiSnapLicenseManager.framework */,
+				426D27BE2864D5BA00D0AACD /* MiSnapMibiData.framework */,
+				426D27BF2864D5BA00D0AACD /* MiSnapNFC.framework */,
+				426D27C02864D5BA00D0AACD /* MiSnapNFCUX.framework */,
+				426D27C12864D5BA00D0AACD /* MiSnapScience.framework */,
+				426D27C22864D5BA00D0AACD /* MiSnapUX.framework */,
+				426D27912864D5A200D0AACD /* MiSnap.framework */,
+				426D27922864D5A200D0AACD /* MiSnapAssetManager.framework */,
+				426D27932864D5A200D0AACD /* MiSnapBarcodeScanner.framework */,
+				426D27942864D5A200D0AACD /* MiSnapCamera.framework */,
+				426D27952864D5A200D0AACD /* MiSnapFacialCapture.framework */,
+				426D27962864D5A200D0AACD /* MiSnapFacialCaptureUX.framework */,
+				426D27972864D5A200D0AACD /* MiSnapLicenseManager.framework */,
+				426D27982864D5A200D0AACD /* MiSnapMibiData.framework */,
+				426D27992864D5A200D0AACD /* MiSnapNFC.framework */,
+				426D279A2864D5A200D0AACD /* MiSnapNFCUX.framework */,
+				426D279B2864D5A200D0AACD /* MiSnapScience.framework */,
+				426D279C2864D5A200D0AACD /* MiSnapUX.framework */,
+				426D276B2864D58200D0AACD /* MiSnap.framework */,
+				426D276C2864D58200D0AACD /* MiSnapAssetManager.framework */,
+				426D276D2864D58200D0AACD /* MiSnapBarcodeScanner.framework */,
+				426D276E2864D58200D0AACD /* MiSnapCamera.framework */,
+				426D276F2864D58200D0AACD /* MiSnapFacialCapture.framework */,
+				426D27702864D58200D0AACD /* MiSnapFacialCaptureUX.framework */,
+				426D27712864D58200D0AACD /* MiSnapLicenseManager.framework */,
+				426D27722864D58200D0AACD /* MiSnapMibiData.framework */,
+				426D27732864D58200D0AACD /* MiSnapNFC.framework */,
+				426D27742864D58200D0AACD /* MiSnapNFCUX.framework */,
+				426D27752864D58200D0AACD /* MiSnapScience.framework */,
+				426D27762864D58200D0AACD /* MiSnapUX.framework */,
+				426D27682864D51200D0AACD /* MobileFlow.xcframework */,
+				426D27442864D4FA00D0AACD /* MiSnap.framework */,
+				426D27452864D4FA00D0AACD /* MiSnapAssetManager.framework */,
+				426D27462864D4FA00D0AACD /* MiSnapBarcodeScanner.framework */,
+				426D27472864D4FA00D0AACD /* MiSnapCamera.framework */,
+				426D27482864D4FA00D0AACD /* MiSnapFacialCapture.framework */,
+				426D27492864D4FA00D0AACD /* MiSnapFacialCaptureUX.framework */,
+				426D274A2864D4FA00D0AACD /* MiSnapLicenseManager.framework */,
+				426D274B2864D4FA00D0AACD /* MiSnapMibiData.framework */,
+				426D274C2864D4FA00D0AACD /* MiSnapNFC.framework */,
+				426D274D2864D4FA00D0AACD /* MiSnapNFCUX.framework */,
+				426D274E2864D4FA00D0AACD /* MiSnapScience.framework */,
+				426D274F2864D4FA00D0AACD /* MiSnapUX.framework */,
+				4208715424C8DE1100469BD2 /* AppCenter.framework */,
+				4208715324C8DE1100469BD2 /* AppCenterAnalytics.framework */,
+				4208715524C8DE1100469BD2 /* AppCenterCrashes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42A8A6C22913FB5300CE54AD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A6B62913ECD800CE54AD /* AppSettings.swift */,
+				42A8A6B82913ED4300CE54AD /* AssetSaver.swift */,
+				42A8A6BA2913EFC700CE54AD /* Utils.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		42A8A6C32913FB5800CE54AD /* MobileVerify */ = {
+			isa = PBXGroup;
+			children = (
+				42EE319227FF484000D27B02 /* MobileVerifyResult.swift */,
+			);
+			name = MobileVerify;
+			sourceTree = "<group>";
+		};
+		42A8A6C42913FB6000CE54AD /* MiPass */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A6ED29153AA200CE54AD /* MiPassResult.swift */,
+				42A8A6C52913FB8100CE54AD /* MiPassEnrollmentInput.swift */,
+			);
+			name = MiPass;
+			sourceTree = "<group>";
+		};
+		42A8A6CA2913FEDA00CE54AD /* MiPass */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A6F229153B6900CE54AD /* MiPassResultView.swift */,
+				42A8A6F729153C1D00CE54AD /* RecordingPlaybackView.swift */,
+			);
+			name = MiPass;
+			sourceTree = "<group>";
+		};
+		42A8A6CB2913FEE000CE54AD /* MobileVerify */ = {
+			isa = PBXGroup;
+			children = (
+				42EE319727FF484000D27B02 /* MobileVerifyResultView.swift */,
+			);
+			name = MobileVerify;
+			sourceTree = "<group>";
+		};
+		42A8A6CC2913FEE700CE54AD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A6B22913EC8100CE54AD /* AppSettingsView.swift */,
+				42A8A6B32913EC8100CE54AD /* CustomSegmentedControl.swift */,
+				42EE319627FF484000D27B02 /* InfoView.swift */,
+				42EE319D27FF484000D27B02 /* JudgementView.swift */,
+				42EE319F27FF484000D27B02 /* LoadingView.swift */,
+				42EE31A027FF484000D27B02 /* ResultLabel.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		42A8A6FC29153CFD00CE54AD /* MiPass */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A6E8291539CC00CE54AD /* MiPassResultViewController.swift */,
+			);
+			name = MiPass;
+			sourceTree = "<group>";
+		};
+		42A8A6FD29153D0500CE54AD /* MobileVerify */ = {
+			isa = PBXGroup;
+			children = (
+				42EE319427FF484000D27B02 /* MobileVerifyResultViewController.swift */,
+			);
+			name = MobileVerify;
+			sourceTree = "<group>";
+		};
+		42A8A6FE29153D0B00CE54AD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				42EE319E27FF484000D27B02 /* AppDelegate.swift */,
+				42EE31A227FF484000D27B02 /* SceneDelegate.swift */,
+				42EE319327FF484000D27B02 /* ViewController.swift */,
+				42A8A70429158A6800CE54AD /* ResultViewController.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		42A8A771291A829C00CE54AD /* MitekPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A772291A829C00CE54AD /* MitekPlatformTokenManager.swift */,
+				42A8A773291A829C00CE54AD /* MitekPlatform.swift */,
+			);
+			name = MitekPlatform;
+			path = ../../../../SDKs/Common/MitekPlatform;
+			sourceTree = "<group>";
+		};
+		42A8A774291A829D00CE54AD /* MitekRequest */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A775291A829D00CE54AD /* MobileVerifyRequest.swift */,
+				42A8A776291A829D00CE54AD /* MiPassRequest.swift */,
+			);
+			name = MitekRequest;
+			path = ../../../../SDKs/Common/MitekRequest;
+			sourceTree = "<group>";
+		};
+		42A8A777291A829E00CE54AD /* MiSnapWorkflow */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A778291A829E00CE54AD /* MiSnapWorkflowViewControllerFactory.swift */,
+				42A8A779291A829E00CE54AD /* MiSnapWorkflowController.swift */,
+				42A8A77A291A829E00CE54AD /* MiSnapWorkflowViewController.swift */,
+			);
+			name = MiSnapWorkflow;
+			path = ../../../../SDKs/Common/MiSnapWorkflow;
+			sourceTree = "<group>";
+		};
+		42ED46EF238C0C8300740A77 = {
+			isa = PBXGroup;
+			children = (
+				42A8A771291A829C00CE54AD /* MitekPlatform */,
+				42A8A774291A829D00CE54AD /* MitekRequest */,
+				42A8A777291A829E00CE54AD /* MiSnapWorkflow */,
+				42EE319127FF484000D27B02 /* MiSnapWorkflowSampleApp */,
+				42ED46F9238C0C8300740A77 /* Products */,
+				429E863A238CBB19003EB9A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42ED46F9238C0C8300740A77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42ED46F8238C0C8300740A77 /* MiSnapWorkflowSampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42EE319127FF484000D27B02 /* MiSnapWorkflowSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				42EE31DC27FF49B900D27B02 /* Models */,
+				42EE31DB27FF49B200D27B02 /* Views */,
+				42EE31DA27FF49AB00D27B02 /* Controllers */,
+				42EE31D927FF49A400D27B02 /* Resources */,
+				42EE31D827FF498D00D27B02 /* Supporting_Files */,
+			);
+			path = MiSnapWorkflowSampleApp;
+			sourceTree = "<group>";
+		};
+		42EE31D827FF498D00D27B02 /* Supporting_Files */ = {
+			isa = PBXGroup;
+			children = (
+				42EE31B627FF488800D27B02 /* MiSnapWorkflowSampleApp.entitlements */,
+				42EE31A127FF484000D27B02 /* Info.plist */,
+				42EE31A427FF484000D27B02 /* Sandbox EU.plist */,
+				42EE31A327FF484000D27B02 /* Beta EU.plist */,
+				42EE319527FF484000D27B02 /* Usability EU.plist */,
+			);
+			name = Supporting_Files;
+			sourceTree = "<group>";
+		};
+		42EE31D927FF49A400D27B02 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42EE319827FF484000D27B02 /* Assets.xcassets */,
+				42EE319927FF484000D27B02 /* LaunchScreen.storyboard */,
+				42EE319B27FF484000D27B02 /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		42EE31DA27FF49AB00D27B02 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A6FE29153D0B00CE54AD /* Common */,
+				42A8A6FD29153D0500CE54AD /* MobileVerify */,
+				42A8A6FC29153CFD00CE54AD /* MiPass */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		42EE31DB27FF49B200D27B02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A6CC2913FEE700CE54AD /* Common */,
+				42A8A6CB2913FEE000CE54AD /* MobileVerify */,
+				42A8A6CA2913FEDA00CE54AD /* MiPass */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		42EE31DC27FF49B900D27B02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42A8A6C22913FB5300CE54AD /* Common */,
+				42A8A6C32913FB5800CE54AD /* MobileVerify */,
+				42A8A6C42913FB6000CE54AD /* MiPass */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42ED46F7238C0C8300740A77 /* MiSnapWorkflowSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42ED4722238C0C8600740A77 /* Build configuration list for PBXNativeTarget "MiSnapWorkflowSampleApp" */;
+			buildPhases = (
+				42ED46F4238C0C8300740A77 /* Sources */,
+				42ED46F5238C0C8300740A77 /* Frameworks */,
+				42ED46F6238C0C8300740A77 /* Resources */,
+				429ACFF826B2D70000AA5869 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiSnapWorkflowSampleApp;
+			packageProductDependencies = (
+				42A8A783291A85CE00CE54AD /* MiSnap */,
+				42A8A785291A85CE00CE54AD /* MiSnapFacialCapture */,
+				42A8A787291A85CE00CE54AD /* MiSnapFacialCaptureUX */,
+				42A8A789291A85CE00CE54AD /* MiSnapNFC */,
+				42A8A78B291A85CE00CE54AD /* MiSnapNFCUX */,
+				42A8A78D291A85CE00CE54AD /* MiSnapUX */,
+				42A8A78F291A85CE00CE54AD /* MiSnapVoiceCapture */,
+				42A8A791291A85CE00CE54AD /* MiSnapVoiceCaptureUX */,
+			);
+			productName = NFCPOC;
+			productReference = 42ED46F8238C0C8300740A77 /* MiSnapWorkflowSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42ED46F0238C0C8300740A77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Mitek Systems Inc.";
+				TargetAttributes = {
+					42ED46F7238C0C8300740A77 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 42ED46F3238C0C8300740A77 /* Build configuration list for PBXProject "MiSnapWorkflowSampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+				fr,
+			);
+			mainGroup = 42ED46EF238C0C8300740A77;
+			packageReferences = (
+				42A8A782291A85CE00CE54AD /* XCRemoteSwiftPackageReference "MiSnap-iOS" */,
+			);
+			productRefGroup = 42ED46F9238C0C8300740A77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42ED46F7238C0C8300740A77 /* MiSnapWorkflowSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42ED46F6238C0C8300740A77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE31AC27FF484000D27B02 /* LaunchScreen.storyboard in Resources */,
+				42EE31AB27FF484000D27B02 /* Assets.xcassets in Resources */,
+				42EE31AD27FF484000D27B02 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		429ACFF826B2D70000AA5869 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42ED46F4238C0C8300740A77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EE31AE27FF484000D27B02 /* JudgementView.swift in Sources */,
+				42A8A6F829153C1D00CE54AD /* RecordingPlaybackView.swift in Sources */,
+				42A8A77E291A829F00CE54AD /* MiPassRequest.swift in Sources */,
+				42A8A6B72913ECD800CE54AD /* AppSettings.swift in Sources */,
+				42A8A6EE29153AA300CE54AD /* MiPassResult.swift in Sources */,
+				42A8A6F329153B6900CE54AD /* MiPassResultView.swift in Sources */,
+				42A8A6B92913ED4300CE54AD /* AssetSaver.swift in Sources */,
+				42EE31AA27FF484000D27B02 /* MobileVerifyResultView.swift in Sources */,
+				42A8A6B52913EC8200CE54AD /* CustomSegmentedControl.swift in Sources */,
+				42EE31B027FF484000D27B02 /* LoadingView.swift in Sources */,
+				42A8A6E9291539CC00CE54AD /* MiPassResultViewController.swift in Sources */,
+				42A8A77C291A829F00CE54AD /* MitekPlatform.swift in Sources */,
+				42EE31B327FF484000D27B02 /* SceneDelegate.swift in Sources */,
+				42EE31A527FF484000D27B02 /* MobileVerifyResult.swift in Sources */,
+				42EE31AF27FF484000D27B02 /* AppDelegate.swift in Sources */,
+				42EE31A627FF484000D27B02 /* ViewController.swift in Sources */,
+				42A8A780291A829F00CE54AD /* MiSnapWorkflowController.swift in Sources */,
+				42A8A6C62913FB8200CE54AD /* MiPassEnrollmentInput.swift in Sources */,
+				42EE31B127FF484000D27B02 /* ResultLabel.swift in Sources */,
+				42A8A781291A829F00CE54AD /* MiSnapWorkflowViewController.swift in Sources */,
+				42A8A70529158A6800CE54AD /* ResultViewController.swift in Sources */,
+				42A8A77D291A829F00CE54AD /* MobileVerifyRequest.swift in Sources */,
+				42A8A77F291A829F00CE54AD /* MiSnapWorkflowViewControllerFactory.swift in Sources */,
+				42A8A77B291A829F00CE54AD /* MitekPlatformTokenManager.swift in Sources */,
+				42A8A6BB2913EFC700CE54AD /* Utils.swift in Sources */,
+				42A8A6B42913EC8200CE54AD /* AppSettingsView.swift in Sources */,
+				42EE31A927FF484000D27B02 /* InfoView.swift in Sources */,
+				42EE31A727FF484000D27B02 /* MobileVerifyResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42EE319927FF484000D27B02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EE319A27FF484000D27B02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		42EE319B27FF484000D27B02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EE319C27FF484000D27B02 /* Base */,
+				4220EC2A28A29D76005E38F0 /* en */,
+				4220EC2C28A29DA8005E38F0 /* fr */,
+				4220EC2E28A29DB0005E38F0 /* es */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42ED4720238C0C8600740A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42ED4721238C0C8600740A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42ED4723238C0C8600740A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MiSnapWorkflowSampleApp/MiSnapWorkflowSampleApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../MiSnap/MobileFlow",
+					"$(PROJECT_DIR)/../../MiSnapBiometrics/VoiceSdk",
+				);
+				INFOPLIST_FILE = MiSnapWorkflowSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteksystems.MiSnapWorkflowSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		42ED4724238C0C8600740A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MiSnapWorkflowSampleApp/MiSnapWorkflowSampleApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../MiSnap/MobileFlow",
+					"$(PROJECT_DIR)/../../MiSnapBiometrics/VoiceSdk",
+				);
+				INFOPLIST_FILE = MiSnapWorkflowSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 5.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteksystems.MiSnapWorkflowSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42ED46F3238C0C8300740A77 /* Build configuration list for PBXProject "MiSnapWorkflowSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42ED4720238C0C8600740A77 /* Debug */,
+				42ED4721238C0C8600740A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42ED4722238C0C8600740A77 /* Build configuration list for PBXNativeTarget "MiSnapWorkflowSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42ED4723238C0C8600740A77 /* Debug */,
+				42ED4724238C0C8600740A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42A8A782291A85CE00CE54AD /* XCRemoteSwiftPackageReference "MiSnap-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
+			requirement = {
+				branch = feature/5.1.0;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42A8A783291A85CE00CE54AD /* MiSnap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42A8A782291A85CE00CE54AD /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnap;
+		};
+		42A8A785291A85CE00CE54AD /* MiSnapFacialCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42A8A782291A85CE00CE54AD /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapFacialCapture;
+		};
+		42A8A787291A85CE00CE54AD /* MiSnapFacialCaptureUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42A8A782291A85CE00CE54AD /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapFacialCaptureUX;
+		};
+		42A8A789291A85CE00CE54AD /* MiSnapNFC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42A8A782291A85CE00CE54AD /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapNFC;
+		};
+		42A8A78B291A85CE00CE54AD /* MiSnapNFCUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42A8A782291A85CE00CE54AD /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapNFCUX;
+		};
+		42A8A78D291A85CE00CE54AD /* MiSnapUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42A8A782291A85CE00CE54AD /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapUX;
+		};
+		42A8A78F291A85CE00CE54AD /* MiSnapVoiceCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42A8A782291A85CE00CE54AD /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapVoiceCapture;
+		};
+		42A8A791291A85CE00CE54AD /* MiSnapVoiceCaptureUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42A8A782291A85CE00CE54AD /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapVoiceCaptureUX;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 42ED46F0238C0C8300740A77 /* Project object */;
+}

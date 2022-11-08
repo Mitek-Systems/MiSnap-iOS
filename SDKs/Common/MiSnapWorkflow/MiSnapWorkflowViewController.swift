@@ -43,6 +43,9 @@ extension MiSnapWorkflowViewControllerDelegate {
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
     func miSnapWorkflowNfcSkipped(_ result: [String : Any]) {}
     #endif
+    #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
+    func miSnapWorkflowDidSelectPhrase(_ phrase: String) {}
+    #endif
 }
 
 class MiSnapWorkflowViewController: UIViewController {

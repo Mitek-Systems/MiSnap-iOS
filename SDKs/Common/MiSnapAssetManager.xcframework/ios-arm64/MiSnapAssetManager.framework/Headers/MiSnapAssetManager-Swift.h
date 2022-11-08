@@ -755,7 +755,7 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapLabelConfiguration")
 /// when <code>width</code> and/or <code>height</code> are in range <code>0.0001...0.9999</code> then its value is used as a multiplier for its parent’s <code>width</code> and/or <code>height</code>. Otherwise, <code>width</code> and <code>height</code> are nominal values in pixels
 @property (nonatomic) CGSize size;
 /// Font
-/// Default: system font of size 19.0 and regular font weight
+/// Default: system font of size 18.0 and regular font weight
 @property (nonatomic, strong) UIFont * _Nonnull font;
 /// Text alignment
 /// Default: <code>.center</code>

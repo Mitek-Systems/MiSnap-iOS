@@ -208,32 +208,19 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class MiSnapVoiceCaptureParameters;
-@protocol MiSnapVoiceCaptureAnalyzerDelegate;
-@class NSNumber;
-enum MiSnapVoiceCaptureAnalyzerInterruptionReason : NSInteger;
-@class NSData;
-@class NSURL;
-@class NSError;
+@protocol MiSnapVoiceCaptureControllerDelegate;
 @class NSString;
 
-/// Voice analyzer
-SWIFT_CLASS("_TtC18MiSnapVoiceCapture26MiSnapVoiceCaptureAnalyzer")
-@interface MiSnapVoiceCaptureAnalyzer : NSObject
-/// Initializes an analyzer with parameters, delegate that will accept recording results and sample rate
-- (nonnull instancetype)initWith:(MiSnapVoiceCaptureParameters * _Nonnull)parameters delegate:(id <MiSnapVoiceCaptureAnalyzerDelegate> _Nonnull)delegate sampleRate:(int32_t)sampleRate OBJC_DESIGNATED_INITIALIZER;
-/// Starts analysis
+/// Voice capture controller
+SWIFT_CLASS("_TtC18MiSnapVoiceCapture28MiSnapVoiceCaptureController")
+@interface MiSnapVoiceCaptureController : NSObject
+/// Initializes a controller with parameters and a delegate that will accept recording results
+- (nonnull instancetype)initWith:(MiSnapVoiceCaptureParameters * _Nonnull)parameters delegate:(id <MiSnapVoiceCaptureControllerDelegate> _Nonnull)delegate OBJC_DESIGNATED_INITIALIZER;
+/// Starts session
 - (void)start;
-/// Discards the current analysis and restarts
-- (void)discardFor:(enum MiSnapVoiceCaptureAnalyzerInterruptionReason)reason restart:(BOOL)restart;
-/// Analyzes real-time data
-- (void)analyzeWithRealTimeData:(NSData * _Nonnull)data;
-/// Analyzes a recorded .wav file at a given url
-- (void)analyzeWithFileAt:(NSURL * _Nonnull)url;
-/// Handles recorder error
-- (void)didReceiveError:(NSError * _Nonnull)error;
-/// Cancels recording
+/// Cancels session
 - (void)cancel;
-/// Shuts an analyzer down.
+/// Shuts a session down.
 /// This should be called at the end of the session to de-initialize all internal objects to prevent memory leaks.
 - (void)shutdown;
 /// Logs a module and its version
@@ -244,43 +231,50 @@ SWIFT_CLASS("_TtC18MiSnapVoiceCapture26MiSnapVoiceCaptureAnalyzer")
 
 
 
-@class MiSnapVoiceCaptureResult;
 
-/// Defines an interface for delegates of <code>MiSnapVoiceCaptureAnalyzer</code> to receive recording result
-SWIFT_PROTOCOL("_TtP18MiSnapVoiceCapture34MiSnapVoiceCaptureAnalyzerDelegate_")
-@protocol MiSnapVoiceCaptureAnalyzerDelegate
+
+@class MiSnapVoiceCaptureResult;
+enum MiSnapVoiceCaptureControllerInterruptionReason : NSInteger;
+@class NSNumber;
+
+/// Defines an interface for delegates of <code>MiSnapVoiceCaptureController</code>
+SWIFT_PROTOCOL("_TtP18MiSnapVoiceCapture36MiSnapVoiceCaptureControllerDelegate_")
+@protocol MiSnapVoiceCaptureControllerDelegate
 /// Delegates receive this callback only when license status is anything but valid
-- (void)miSnapVoiceCaptureAnalyzerLicenseStatus:(MiSnapLicenseStatus)status;
-/// Delegates receive this callback when an anlyzer is started
-- (void)miSnapVoiceCaptureAnalyzerDidStart;
-/// Delegates receive this callback when a recorder is stopped
-- (void)miSnapVoiceCaptureAnalyzerDidStop:(float)speechStart;
+- (void)miSnapVoiceCaptureControllerLicenseStatus:(MiSnapLicenseStatus)status;
+/// Delegates receive this callback when a controller is started
+- (void)miSnapVoiceCaptureControllerDidStart;
 /// Delegates receive this callback when a recording passes all quality checks
-- (void)miSnapVoiceCaptureAnalyzerSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
+- (void)miSnapVoiceCaptureControllerSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
 /// Delegates receive this callback when a recording failed a quality check
-- (void)miSnapVoiceCaptureAnalyzerFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
-/// Delegates receive this callback whenever a user cancels a session
-- (void)miSnapVoiceCaptureAnalyzerCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+- (void)miSnapVoiceCaptureControllerFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
 /// Delegates receive this callback when an internal SDK error occurs
-- (void)miSnapVoiceCaptureAnalyzerError:(MiSnapVoiceCaptureResult * _Nonnull)result;
+- (void)miSnapVoiceCaptureControllerError:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback whenever a user cancels a session
+- (void)miSnapVoiceCaptureControllerCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Delegates receive this callback when a controller is interrupted for a particular reason
+- (void)miSnapVoiceCaptureControllerInterruptionStarted:(enum MiSnapVoiceCaptureControllerInterruptionReason)reason;
+/// Delegates receive this callback when a controller interruption has ended
+- (void)miSnapVoiceCaptureControllerInterruptionEnded;
+@optional
 /// Delegates receive this callback every time a real-time voice data is processed
-- (void)miSnapVoiceCaptureAnalyzerSpeechLength:(NSInteger)speechLength;
+- (void)miSnapVoiceCaptureControllerSpeechLength:(NSInteger)speechLength;
 @end
 
-/// Discard reason
-typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureAnalyzerInterruptionReason, open) {
+/// Interruption reason
+typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureControllerInterruptionReason, open) {
 /// Discard reason is not set
-  MiSnapVoiceCaptureAnalyzerInterruptionReasonNone = 0,
+  MiSnapVoiceCaptureControllerInterruptionReasonNone = 0,
 /// Not active (e.g. entered background)
-  MiSnapVoiceCaptureAnalyzerInterruptionReasonNotActive = 1,
+  MiSnapVoiceCaptureControllerInterruptionReasonNotActive = 1,
 /// Noise
-  MiSnapVoiceCaptureAnalyzerInterruptionReasonNoise = 2,
+  MiSnapVoiceCaptureControllerInterruptionReasonNoise = 2,
 /// VoiceOver
-  MiSnapVoiceCaptureAnalyzerInterruptionReasonVoiceOver = 3,
-/// Interruption
-  MiSnapVoiceCaptureAnalyzerInterruptionReasonMicInUseByAnotherClient = 4,
+  MiSnapVoiceCaptureControllerInterruptionReasonVoiceOver = 3,
+/// Microphone is in use by another application
+  MiSnapVoiceCaptureControllerInterruptionReasonMicInUseByAnotherClient = 4,
 /// Media was reset
-  MiSnapVoiceCaptureAnalyzerInterruptionReasonMediaReset = 5,
+  MiSnapVoiceCaptureControllerInterruptionReasonMediaReset = 5,
 };
 
 /// Flow
@@ -317,46 +311,9 @@ SWIFT_CLASS("_TtC18MiSnapVoiceCapture28MiSnapVoiceCaptureParameters")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@protocol MiSnapVoiceCaptureRecorderDelegate;
-
-SWIFT_CLASS("_TtC18MiSnapVoiceCapture26MiSnapVoiceCaptureRecorder")
-@interface MiSnapVoiceCaptureRecorder : NSObject
-/// A sample rate a recorder is initialized with
-@property (nonatomic, readonly) int32_t sampleRate;
-/// Initializes a recorderr with parameters and delegate will accept recording results
-- (nonnull instancetype)initWith:(id <MiSnapVoiceCaptureRecorderDelegate> _Nonnull)delegate OBJC_DESIGNATED_INITIALIZER;
-/// Starts recording if it’s not started yet or discards the current one and restarts a new one
-- (void)start;
-/// Stops recording and optionally trims it when non-0 speech start (ms) is provided
-- (void)stopWithSpeechStart:(float)speechStart;
-/// Shuts down
-- (void)shutdown;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
-
-
-/// Defines an interface for delegates of <code>MiSnapVoiceCaptureRecorder</code>
-SWIFT_PROTOCOL("_TtP18MiSnapVoiceCapture34MiSnapVoiceCaptureRecorderDelegate_")
-@protocol MiSnapVoiceCaptureRecorderDelegate
-/// Delegates receive this callback when a recorder is started
-- (void)miSnapVoiceCaptureRecorderDidStart;
-/// Delegates receive this callback when a recorder outputs real-time voice data for processing
-- (void)miSnapVoiceCaptureRecorderDidOutput:(NSData * _Nonnull)data;
-/// Delegates receive this callback when a recorder is stopped
-- (void)miSnapVoiceCaptureRecorderDidStop:(NSURL * _Nonnull)url;
-/// Delegates receive this callback when an internal SDK error occurs
-- (void)miSnapVoiceCaptureRecorderError:(NSError * _Nonnull)error;
-/// Delegates receive this callback when a recorder is interrupted for a particular reason
-- (void)miSnapVoiceCaptureRecorderInterruptionStarted:(enum MiSnapVoiceCaptureAnalyzerInterruptionReason)reason;
-/// Delegates receive this callback when a recorder interruption has ended
-- (void)miSnapVoiceCaptureRecorderInterruptionEnded;
-@end
-
+@class NSData;
 enum MiSnapVoiceCaptureStatus : NSInteger;
+@class NSError;
 
 /// Voice recording result
 SWIFT_CLASS("_TtC18MiSnapVoiceCapture24MiSnapVoiceCaptureResult")
@@ -375,6 +332,8 @@ SWIFT_CLASS("_TtC18MiSnapVoiceCapture24MiSnapVoiceCaptureResult")
 @property (nonatomic, readonly, strong) NSError * _Nullable error;
 /// Initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Initializes result with error
+- (nonnull instancetype)initWith:(NSError * _Nonnull)error OBJC_DESIGNATED_INITIALIZER;
 /// String from <code>MiSnapVoiceCaptureStatus</code>
 + (NSString * _Nonnull)stringFromStatus:(enum MiSnapVoiceCaptureStatus)status SWIFT_WARN_UNUSED_RESULT;
 @end

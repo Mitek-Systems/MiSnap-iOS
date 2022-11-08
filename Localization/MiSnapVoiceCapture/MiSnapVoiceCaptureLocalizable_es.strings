@@ -6,11 +6,11 @@
 */
 
 // Phrases
-"misnap_voice_capture_ux_phrase_1"                              = "(ES)Go back to the drawing board";
-"misnap_voice_capture_ux_phrase_2"                              = "(ES)Actions speak louder than words";
-"misnap_voice_capture_ux_phrase_3"                              = "(ES)Make a long story short";
-"misnap_voice_capture_ux_phrase_4"                              = "(ES)Time flies when you're having fun";
-"misnap_voice_capture_ux_phrase_5"                              = "(ES)The best of both worlds";
+"misnap_voice_capture_ux_phrase_1"                              = "Hay que hacer bien sin mirar a quién";
+"misnap_voice_capture_ux_phrase_2"                              = "Quien vive con compañía vive con alegría";
+"misnap_voice_capture_ux_phrase_3"                              = "Si puedes soñarlo puedes hacerlo";
+"misnap_voice_capture_ux_phrase_4"                              = "Poco a poco se anda lejos";
+"misnap_voice_capture_ux_phrase_5"                              = "Nunca es tarde si la dicha es buena";
 "misnap_voice_capture_ux_phrase_6"                              = "";
 "misnap_voice_capture_ux_phrase_7"                              = "";
 "misnap_voice_capture_ux_phrase_8"                              = "";
@@ -18,24 +18,24 @@
 "misnap_voice_capture_ux_phrase_10"                             = "";
 
 // Hints
-"misnap_voice_capture_ux_choose_phrase"                         = "(ES)Choose a password phrase";
-"misnap_voice_capture_ux_say_phrase"                            = "(ES)Say phrase";
-"misnap_voice_capture_ux_repeat_phrase"                         = "(ES)Repeat phrase";
-"misnap_voice_capture_ux_repeat_phrase_one_more_time"           = "(ES)Repeat phrase one more time";
+"misnap_voice_capture_ux_choose_phrase"                         = "Elija una frase clave";
+"misnap_voice_capture_ux_say_phrase"                            = "Diga la frase";
+"misnap_voice_capture_ux_repeat_phrase"                         = "Repita la frase";
+"misnap_voice_capture_ux_repeat_phrase_one_more_time"           = "Repita la frase una vez más";
 
 // Errors
-"misnap_voice_capture_ux_failure"                               = "(ES)Sorry, we cannot use this recording.\nFor best results:";
-"misnap_voice_capture_ux_not_quiet"                             = "(ES)Record in a quiet area";
-"misnap_voice_capture_ux_too_far"                               = "(ES)Hold the phone close to your mouth";
-"misnap_voice_capture_ux_too_short"                             = "(ES)Don't take long pauses between words but don't speak too fast";
-"misnap_voice_capture_ux_external_mic"                          = "(ES)Do not use headsets or earbuds";
-"misnap_voice_capture_ux_microphone_in_use"                     = "(ES)Microphone is in use by another application";
+"misnap_voice_capture_ux_failure"                               = "Lo sentimos, no podemos usar esta grabación.\nPara mejores resultados:";
+"misnap_voice_capture_ux_not_quiet"                             = "Grabe en un área tranquila";
+"misnap_voice_capture_ux_too_far"                               = "Sosténga el teléfono cerca de su boca";
+"misnap_voice_capture_ux_too_short"                             = "No haga pausas largas entre palabras pero tampoco hable muy rápido.";
+"misnap_voice_capture_ux_external_mic"                          = "No utilice audífonos o auriculares de diadema";
+"misnap_voice_capture_ux_microphone_in_use"                     = "El micrófono está en uso por otra aplicación";
 
 // Buttons
 "misnap_voice_capture_ux_button_cancel"                         = "Cancelar";
 "misnap_voice_capture_ux_button_continue"                       = "Continuar";
-"misnap_voice_capture_ux_button_record"                         = "(ES)Start Recording";
-"misnap_voice_capture_ux_button_acknowledge"                    = "(ES)Got it";
+"misnap_voice_capture_ux_button_record"                         = "Empezar a Grabar";
+"misnap_voice_capture_ux_button_acknowledge"                    = "Entiendo";
 
 // Success
-"misnap_voice_capture_ux_success"                               = "(ES)Success";
+"misnap_voice_capture_ux_success"                               = "Éxito";

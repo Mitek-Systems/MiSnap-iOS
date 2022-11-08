@@ -255,18 +255,30 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX31MiSnapVoiceCaptureConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
-@class UIImage;
 @class MiSnapLabelConfiguration;
 
-/// A tutorial screen configuration
+/// An introductory instruction screen buttons configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX61MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration")
+@interface MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration : NSObject
+/// Configuration for a Start recording button at the bottom
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed;
+/// Creates and returns a phrase selection configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+@class UIImage;
+
+/// An introductory instruction screen configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX54MiSnapVoiceCaptureIntroductoryInstructionConfiguration")
 @interface MiSnapVoiceCaptureIntroductoryInstructionConfiguration : NSObject
 /// Image at the top
 @property (nonatomic, strong) UIImage * _Nullable image;
 /// Configuration for instructions presented underneath an image
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull instruction;
-/// Configuration for a button at the bottom
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull button;
+/// Configuration for buttons
+@property (nonatomic, strong) MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration * _Nonnull buttons;
 /// Creates and returns tutorial configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -289,6 +301,18 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX43MiSnapVoiceCaptureLocalizationConfigura
 @end
 
 
+/// A phrase selection buttons configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX53MiSnapVoiceCapturePhraseSelectionButtonsConfiguration")
+@interface MiSnapVoiceCapturePhraseSelectionButtonsConfiguration : NSObject
+/// Configuration for a Continue button at the bottom
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed;
+/// Creates and returns a phrase selection configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
 /// A phrase selection screen  configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX46MiSnapVoiceCapturePhraseSelectionConfiguration")
 @interface MiSnapVoiceCapturePhraseSelectionConfiguration : NSObject
@@ -296,8 +320,22 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX46MiSnapVoiceCapturePhraseSelectionConfig
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
 /// Configuration for a phase in a list
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull phrase;
-/// Configuration for a button at the bottom
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull button;
+/// Configuration for buttons
+@property (nonatomic, strong) MiSnapVoiceCapturePhraseSelectionButtonsConfiguration * _Nonnull buttons;
+/// Creates and returns a phrase selection configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+/// A recording screen buttons configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX47MiSnapVoiceCaptureRecordingButtonsConfiguration")
+@interface MiSnapVoiceCaptureRecordingButtonsConfiguration : NSObject
+/// Configuration for Cancel button at the top
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
+/// Configuration for Failure acknowledgment button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureAcknowledgment;
 /// Creates and returns a phrase selection configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -311,8 +349,6 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX46MiSnapVoiceCapturePhraseSelectionConfig
 /// A recording screen configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureRecordingConfiguration")
 @interface MiSnapVoiceCaptureRecordingConfiguration : NSObject
-/// Configuration for Cancel button at the top
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
 /// Neutral view configuration
 @property (nonatomic, strong) MiSnapVoiceCaptureNeutralViewConfiguration * _Nonnull neutral;
 /// Success view configuration
@@ -325,8 +361,8 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureRecordingConfiguratio
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull phrase;
 /// Configuration for a failure message
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureMessage;
-/// Configuration for Failure acknowledgment button
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureAcknowledgment;
+/// Configuration for buttons
+@property (nonatomic, strong) MiSnapVoiceCaptureRecordingButtonsConfiguration * _Nonnull buttons;
 /// Creates and returns tutorial configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -398,72 +434,45 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 
 
 
-@class NSData;
-@class NSURL;
-@class NSError;
-
-@interface MiSnapVoiceCaptureViewController (SWIFT_EXTENSION(MiSnapVoiceCaptureUX)) <MiSnapVoiceCaptureRecorderDelegate>
-/// Called when a recorder is started
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderDidStart;
-/// Called when a recorder outputs a real-time voice data for processing
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderDidOutput:(NSData * _Nonnull)data;
-/// Called when a recorder is stopped and returns URL to a recorded .wav file
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderDidStop:(NSURL * _Nonnull)url;
-/// Called when an error occurred during recording
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderError:(NSError * _Nonnull)error;
-/// Called when a recorder is interrupted
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderInterruptionStarted:(enum MiSnapVoiceCaptureAnalyzerInterruptionReason)reason;
-/// Called when a recorder interruption has ended
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderInterruptionEnded;
-@end
-
 @class MiSnapVoiceCaptureResult;
 
-@interface MiSnapVoiceCaptureViewController (SWIFT_EXTENSION(MiSnapVoiceCaptureUX)) <MiSnapVoiceCaptureAnalyzerDelegate>
-/// Called when an analyzer detects an invalid license
+@interface MiSnapVoiceCaptureViewController (SWIFT_EXTENSION(MiSnapVoiceCaptureUX)) <MiSnapVoiceCaptureControllerDelegate>
+/// Called when license status is anything but valid
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerLicenseStatus:(MiSnapLicenseStatus)status;
-/// Called when an analyzer is started
+- (void)miSnapVoiceCaptureControllerLicenseStatus:(MiSnapLicenseStatus)status;
+/// Called when a controller is started
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerDidStart;
-/// Called when an analyzer is stopped
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerDidStop:(float)speechStart;
+- (void)miSnapVoiceCaptureControllerDidStart;
 /// Called when a recording passes all quality checks
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
-/// Called when a recording failed a quality check
+- (void)miSnapVoiceCaptureControllerSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when a session is cancelled by a user
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
-/// Called when an internal SDK error occurs
+- (void)miSnapVoiceCaptureControllerFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when an SDK error occurs
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerError:(MiSnapVoiceCaptureResult * _Nonnull)result;
-/// Called whenever a user cancels a session
+- (void)miSnapVoiceCaptureControllerError:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when a session is cancelled by a user
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+- (void)miSnapVoiceCaptureControllerCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when a controller is interrupted
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureControllerInterruptionStarted:(enum MiSnapVoiceCaptureControllerInterruptionReason)reason;
+/// Called when a controller interruption has ended
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureControllerInterruptionEnded;
 /// Called every time a real-time voice data is processed with a speech length detected in the current recording
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerSpeechLength:(NSInteger)speechLength;
+- (void)miSnapVoiceCaptureControllerSpeechLength:(NSInteger)speechLength;
 @end
 
 
@@ -750,18 +759,30 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX31MiSnapVoiceCaptureConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
-@class UIImage;
 @class MiSnapLabelConfiguration;
 
-/// A tutorial screen configuration
+/// An introductory instruction screen buttons configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX61MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration")
+@interface MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration : NSObject
+/// Configuration for a Start recording button at the bottom
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed;
+/// Creates and returns a phrase selection configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+@class UIImage;
+
+/// An introductory instruction screen configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX54MiSnapVoiceCaptureIntroductoryInstructionConfiguration")
 @interface MiSnapVoiceCaptureIntroductoryInstructionConfiguration : NSObject
 /// Image at the top
 @property (nonatomic, strong) UIImage * _Nullable image;
 /// Configuration for instructions presented underneath an image
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull instruction;
-/// Configuration for a button at the bottom
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull button;
+/// Configuration for buttons
+@property (nonatomic, strong) MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration * _Nonnull buttons;
 /// Creates and returns tutorial configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -784,6 +805,18 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX43MiSnapVoiceCaptureLocalizationConfigura
 @end
 
 
+/// A phrase selection buttons configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX53MiSnapVoiceCapturePhraseSelectionButtonsConfiguration")
+@interface MiSnapVoiceCapturePhraseSelectionButtonsConfiguration : NSObject
+/// Configuration for a Continue button at the bottom
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed;
+/// Creates and returns a phrase selection configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
 /// A phrase selection screen  configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX46MiSnapVoiceCapturePhraseSelectionConfiguration")
 @interface MiSnapVoiceCapturePhraseSelectionConfiguration : NSObject
@@ -791,8 +824,22 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX46MiSnapVoiceCapturePhraseSelectionConfig
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
 /// Configuration for a phase in a list
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull phrase;
-/// Configuration for a button at the bottom
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull button;
+/// Configuration for buttons
+@property (nonatomic, strong) MiSnapVoiceCapturePhraseSelectionButtonsConfiguration * _Nonnull buttons;
+/// Creates and returns a phrase selection configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+/// A recording screen buttons configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX47MiSnapVoiceCaptureRecordingButtonsConfiguration")
+@interface MiSnapVoiceCaptureRecordingButtonsConfiguration : NSObject
+/// Configuration for Cancel button at the top
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
+/// Configuration for Failure acknowledgment button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureAcknowledgment;
 /// Creates and returns a phrase selection configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -806,8 +853,6 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX46MiSnapVoiceCapturePhraseSelectionConfig
 /// A recording screen configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureRecordingConfiguration")
 @interface MiSnapVoiceCaptureRecordingConfiguration : NSObject
-/// Configuration for Cancel button at the top
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
 /// Neutral view configuration
 @property (nonatomic, strong) MiSnapVoiceCaptureNeutralViewConfiguration * _Nonnull neutral;
 /// Success view configuration
@@ -820,8 +865,8 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureRecordingConfiguratio
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull phrase;
 /// Configuration for a failure message
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureMessage;
-/// Configuration for Failure acknowledgment button
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureAcknowledgment;
+/// Configuration for buttons
+@property (nonatomic, strong) MiSnapVoiceCaptureRecordingButtonsConfiguration * _Nonnull buttons;
 /// Creates and returns tutorial configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -893,72 +938,45 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 
 
 
-@class NSData;
-@class NSURL;
-@class NSError;
-
-@interface MiSnapVoiceCaptureViewController (SWIFT_EXTENSION(MiSnapVoiceCaptureUX)) <MiSnapVoiceCaptureRecorderDelegate>
-/// Called when a recorder is started
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderDidStart;
-/// Called when a recorder outputs a real-time voice data for processing
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderDidOutput:(NSData * _Nonnull)data;
-/// Called when a recorder is stopped and returns URL to a recorded .wav file
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderDidStop:(NSURL * _Nonnull)url;
-/// Called when an error occurred during recording
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderError:(NSError * _Nonnull)error;
-/// Called when a recorder is interrupted
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderInterruptionStarted:(enum MiSnapVoiceCaptureAnalyzerInterruptionReason)reason;
-/// Called when a recorder interruption has ended
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureRecorderInterruptionEnded;
-@end
-
 @class MiSnapVoiceCaptureResult;
 
-@interface MiSnapVoiceCaptureViewController (SWIFT_EXTENSION(MiSnapVoiceCaptureUX)) <MiSnapVoiceCaptureAnalyzerDelegate>
-/// Called when an analyzer detects an invalid license
+@interface MiSnapVoiceCaptureViewController (SWIFT_EXTENSION(MiSnapVoiceCaptureUX)) <MiSnapVoiceCaptureControllerDelegate>
+/// Called when license status is anything but valid
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerLicenseStatus:(MiSnapLicenseStatus)status;
-/// Called when an analyzer is started
+- (void)miSnapVoiceCaptureControllerLicenseStatus:(MiSnapLicenseStatus)status;
+/// Called when a controller is started
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerDidStart;
-/// Called when an analyzer is stopped
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerDidStop:(float)speechStart;
+- (void)miSnapVoiceCaptureControllerDidStart;
 /// Called when a recording passes all quality checks
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
-/// Called when a recording failed a quality check
+- (void)miSnapVoiceCaptureControllerSuccess:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when a session is cancelled by a user
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
-/// Called when an internal SDK error occurs
+- (void)miSnapVoiceCaptureControllerFailure:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when an SDK error occurs
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerError:(MiSnapVoiceCaptureResult * _Nonnull)result;
-/// Called whenever a user cancels a session
+- (void)miSnapVoiceCaptureControllerError:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when a session is cancelled by a user
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+- (void)miSnapVoiceCaptureControllerCancel:(MiSnapVoiceCaptureResult * _Nonnull)result;
+/// Called when a controller is interrupted
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureControllerInterruptionStarted:(enum MiSnapVoiceCaptureControllerInterruptionReason)reason;
+/// Called when a controller interruption has ended
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)miSnapVoiceCaptureControllerInterruptionEnded;
 /// Called every time a real-time voice data is processed with a speech length detected in the current recording
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureAnalyzerSpeechLength:(NSInteger)speechLength;
+- (void)miSnapVoiceCaptureControllerSpeechLength:(NSInteger)speechLength;
 @end
 
 

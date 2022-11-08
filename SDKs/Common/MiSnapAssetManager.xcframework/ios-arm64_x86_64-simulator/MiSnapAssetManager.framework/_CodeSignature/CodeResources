@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapAssetManager-Swift.h</key>
 		<data>
-		ywOYLzgCf2Xx6o6czKu00GAnfbU=
+		lR6Er29TB0tcr6zusU25kdPNRKQ=
 		</data>
 		<key>Headers/MiSnapAssetManager.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9e+DJodO/hJa2qMfLPI23AoCaj4=
+		1T+or94IkJY/9cZtoIGsB7Rn/tQ=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8jw0Qm7pDEv9PnnsAdM44RNav/I=
+		UYsJJeh97R1GRS13G77Ha6R6gho=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		9e+DJodO/hJa2qMfLPI23AoCaj4=
+		1T+or94IkJY/9cZtoIGsB7Rn/tQ=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		8jw0Qm7pDEv9PnnsAdM44RNav/I=
+		UYsJJeh97R1GRS13G77Ha6R6gho=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9BZ+UU7PQf3TMCdkShv1AMtfS5k=
+		HGxnAhO5z/k7KiCowZPkUexNxQs=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CAP35z+7xIZH0+P8lYf3b2u43n8=
+		fBgyS/UJbURnTny9Cj0YwxPxvTM=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		9BZ+UU7PQf3TMCdkShv1AMtfS5k=
+		HGxnAhO5z/k7KiCowZPkUexNxQs=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		CAP35z+7xIZH0+P8lYf3b2u43n8=
+		fBgyS/UJbURnTny9Cj0YwxPxvTM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tsn/5xoBjUmz+ZoR2hos0bQ2FEjS1Uep4yF+eZqAbQ8=
+			8/WIi2kN9orYohBDxUICDE/qLsaTPyZDk/mkSSX3rjU=
 			</data>
 		</dict>
 		<key>Headers/MiSnapAssetManager.h</key>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wAl/l6R8k4HWv6/LCUMX6L+75c7F2tTZS4pgr7YZ+go=
+			3s1wLdwubX1H/jMdL6DJS8Cft7dgDIPLrBCh5CYzvC8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -103,14 +103,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fsi4nGtLhuD0PfLnB9pa3A1HVlOQICcfWliZFsvw3xI=
+			jDZ7BpSkOhAjelD3IuDQy6/GgzDOW9r/GGe5LrxaBJ0=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wAl/l6R8k4HWv6/LCUMX6L+75c7F2tTZS4pgr7YZ+go=
+			3s1wLdwubX1H/jMdL6DJS8Cft7dgDIPLrBCh5CYzvC8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64.swiftinterface</key>
@@ -124,14 +124,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fsi4nGtLhuD0PfLnB9pa3A1HVlOQICcfWliZFsvw3xI=
+			jDZ7BpSkOhAjelD3IuDQy6/GgzDOW9r/GGe5LrxaBJ0=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LN2KmtPnRT/9fgcv5lkW8iI0YY2qmlhwYQQGPHewFi8=
+			KHDUOdRi0OJoSMzTRkX7RGdviaJOciyXX+mwl4BGNqM=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
@@ -145,14 +145,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aS649J7YiXz89zoXSuVOJXnQE1rXNNFvfj9QW+wtEno=
+			90ySagwrPWqvsGcKQb5WlcRRlhy0mU9XlpapKX01QT0=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LN2KmtPnRT/9fgcv5lkW8iI0YY2qmlhwYQQGPHewFi8=
+			KHDUOdRi0OJoSMzTRkX7RGdviaJOciyXX+mwl4BGNqM=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64.swiftinterface</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aS649J7YiXz89zoXSuVOJXnQE1rXNNFvfj9QW+wtEno=
+			90ySagwrPWqvsGcKQb5WlcRRlhy0mU9XlpapKX01QT0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -37,10 +37,26 @@ import _Concurrency
   }
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCapturePhraseSelectionButtonsConfiguration : ObjectiveC.NSObject {
+  @objc public var proceed: MiSnapLabelConfiguration
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCapturePhraseSelectionConfiguration : ObjectiveC.NSObject {
   @objc public var message: MiSnapLabelConfiguration
   @objc public var phrase: MiSnapLabelConfiguration
-  @objc public var button: MiSnapLabelConfiguration
+  @objc public var buttons: MiSnapVoiceCapturePhraseSelectionButtonsConfiguration
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration : ObjectiveC.NSObject {
+  @objc public var proceed: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -50,7 +66,16 @@ import _Concurrency
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureIntroductoryInstructionConfiguration : ObjectiveC.NSObject {
   @objc public var image: UIKit.UIImage?
   @objc public var instruction: MiSnapLabelConfiguration
-  @objc public var button: MiSnapLabelConfiguration
+  @objc public var buttons: MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureRecordingButtonsConfiguration : ObjectiveC.NSObject {
+  @objc public var cancel: MiSnapLabelConfiguration
+  @objc public var failureAcknowledgment: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -58,14 +83,13 @@ import _Concurrency
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureRecordingConfiguration : ObjectiveC.NSObject {
-  @objc public var cancel: MiSnapLabelConfiguration
   @objc public var neutral: MiSnapVoiceCaptureNeutralViewConfiguration
   @objc public var success: MiSnapVoiceCaptureSuccessViewConfiguration
   @objc public var failure: MiSnapVoiceCaptureFailureViewConfiguration
   @objc public var message: MiSnapLabelConfiguration
   @objc public var phrase: MiSnapLabelConfiguration
   @objc public var failureMessage: MiSnapLabelConfiguration
-  @objc public var failureAcknowledgment: MiSnapLabelConfiguration
+  @objc public var buttons: MiSnapVoiceCaptureRecordingButtonsConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -109,23 +133,16 @@ import _Concurrency
   }
   @objc deinit
 }
-extension MiSnapVoiceCaptureViewController : MiSnapVoiceCaptureRecorderDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderDidStart()
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderDidOutput(_ data: Foundation.Data)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderDidStop(_ url: Foundation.URL)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderError(_ error: Foundation.NSError)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderInterruptionStarted(_ reason: MiSnapVoiceCaptureAnalyzerInterruptionReason)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureRecorderInterruptionEnded()
-}
-extension MiSnapVoiceCaptureViewController : MiSnapVoiceCaptureAnalyzerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureAnalyzerLicenseStatus(_ status: MiSnapLicenseStatus)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureAnalyzerDidStart()
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureAnalyzerDidStop(_ speechStart: Swift.Float)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureAnalyzerSuccess(_ result: MiSnapVoiceCaptureResult)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureAnalyzerFailure(_ result: MiSnapVoiceCaptureResult)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureAnalyzerError(_ result: MiSnapVoiceCaptureResult)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureAnalyzerCancel(_ result: MiSnapVoiceCaptureResult)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureAnalyzerSpeechLength(_ speechLength: Swift.Int)
+extension MiSnapVoiceCaptureViewController : MiSnapVoiceCaptureControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerLicenseStatus(_ status: MiSnapLicenseStatus)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerDidStart()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerSuccess(_ result: MiSnapVoiceCaptureResult)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerFailure(_ result: MiSnapVoiceCaptureResult)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerError(_ result: MiSnapVoiceCaptureResult)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerCancel(_ result: MiSnapVoiceCaptureResult)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerInterruptionStarted(_ reason: MiSnapVoiceCaptureControllerInterruptionReason)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerInterruptionEnded()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerSpeechLength(_ speechLength: Swift.Int)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MiSnapVoiceCaptureLocalizationConfiguration : ObjectiveC.NSObject {
   @objc public var bundle: Foundation.Bundle

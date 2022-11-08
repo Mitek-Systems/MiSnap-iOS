@@ -215,6 +215,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class MiSnapNFCInputs;
 @class MiSnapNFCUxParameters;
 @class MiSnapNFCLocalizationConfiguration;
+@class MiSnapNFCScanConfiguration;
 @class NSString;
 
 /// A session  configuration
@@ -233,6 +234,8 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX22MiSnapNFCConfiguration")
 - (MiSnapNFCConfiguration * _Nonnull)withCustomUxParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCUxParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapNFCConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for scan screen customization
+- (MiSnapNFCConfiguration * _Nonnull)withCustomScanWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCScanConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Description of <code>MiSnapNFCConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
@@ -255,6 +258,35 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX15MiSnapNFCInputs")
 @property (nonatomic) enum MiSnapNFCChipLocation chipLocation;
 /// Description of <code>MiSnapNFCInputs</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIColor;
+@class MiSnapLabelConfiguration;
+
+/// A scan screen buttons configuration
+SWIFT_CLASS("_TtC11MiSnapNFCUX33MiSnapNFCScanButtonsConfiguration")
+@interface MiSnapNFCScanButtonsConfiguration : NSObject
+/// Bar color
+@property (nonatomic, strong) UIColor * _Nonnull barColor;
+/// Configuration for start button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed;
+/// Configuration for Cancel button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
+/// Configuration for Skip button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull skip;
+/// Creates and returns tutorial configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+/// A scan screen configuration
+SWIFT_CLASS("_TtC11MiSnapNFCUX26MiSnapNFCScanConfiguration")
+@interface MiSnapNFCScanConfiguration : NSObject
+/// Scan screen buttons configuration
+@property (nonatomic, strong) MiSnapNFCScanButtonsConfiguration * _Nonnull buttons;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -557,6 +589,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class MiSnapNFCInputs;
 @class MiSnapNFCUxParameters;
 @class MiSnapNFCLocalizationConfiguration;
+@class MiSnapNFCScanConfiguration;
 @class NSString;
 
 /// A session  configuration
@@ -575,6 +608,8 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX22MiSnapNFCConfiguration")
 - (MiSnapNFCConfiguration * _Nonnull)withCustomUxParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCUxParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapNFCConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for scan screen customization
+- (MiSnapNFCConfiguration * _Nonnull)withCustomScanWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCScanConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Description of <code>MiSnapNFCConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
@@ -597,6 +632,35 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX15MiSnapNFCInputs")
 @property (nonatomic) enum MiSnapNFCChipLocation chipLocation;
 /// Description of <code>MiSnapNFCInputs</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIColor;
+@class MiSnapLabelConfiguration;
+
+/// A scan screen buttons configuration
+SWIFT_CLASS("_TtC11MiSnapNFCUX33MiSnapNFCScanButtonsConfiguration")
+@interface MiSnapNFCScanButtonsConfiguration : NSObject
+/// Bar color
+@property (nonatomic, strong) UIColor * _Nonnull barColor;
+/// Configuration for start button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed;
+/// Configuration for Cancel button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
+/// Configuration for Skip button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull skip;
+/// Creates and returns tutorial configuration
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+/// A scan screen configuration
+SWIFT_CLASS("_TtC11MiSnapNFCUX26MiSnapNFCScanConfiguration")
+@interface MiSnapNFCScanConfiguration : NSObject
+/// Scan screen buttons configuration
+@property (nonatomic, strong) MiSnapNFCScanButtonsConfiguration * _Nonnull buttons;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

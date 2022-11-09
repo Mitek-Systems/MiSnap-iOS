@@ -37,9 +37,7 @@ class ResultViewController: UIViewController {
         
         var backgroundColor: UIColor = .white
         if #available(iOS 13.0, *) {
-            if traitCollection.userInterfaceStyle == .dark {
-                backgroundColor = .black
-            }
+            backgroundColor = .systemBackground
         }
         view.backgroundColor = backgroundColor
         

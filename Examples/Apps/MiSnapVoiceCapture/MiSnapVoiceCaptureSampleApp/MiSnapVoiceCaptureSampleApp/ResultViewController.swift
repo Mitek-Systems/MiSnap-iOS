@@ -105,10 +105,10 @@ extension ResultViewController {
         
         for (idx, result) in results.enumerated() {
             guard let data = result.data else { continue }
-            let recordingPlaybackView = RecordingPlaybackView(with: data, index: idx + 1, rect: CGRect(x: 0,
-                                                                                                       y: 0,
-                                                                                                       width: containerView.frame.width / CGFloat(results.count < 3 ? 3 : results.count),
-                                                                                                       height: containerView.frame.height))
+            let recordingPlaybackView = RecordingPlaybackView(with: data, index: idx + 1, frame: CGRect(x: 0,
+                                                                                                        y: 0,
+                                                                                                        width: containerView.frame.width / CGFloat(results.count < 3 ? 3 : results.count),
+                                                                                                        height: containerView.frame.height))
             containerView.addSubview(recordingPlaybackView)
             
             let xAnchor: NSLayoutXAxisAnchor

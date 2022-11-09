@@ -1,6 +1,6 @@
 //
-//  RecordingView.swift
-//  MiSnapBiometricsSampleApp
+//  RecordingPlaybackView.swift
+//  MiSnapWorkflowSampleApp
 //
 //  Created by Mitek Engineering on 8/3/21.
 //
@@ -17,14 +17,14 @@ class RecordingPlaybackView: UIView {
     
     private var playing: Bool = false
     
-    private var player = AVAudioPlayer()
+    private var player: AVAudioPlayer?
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public init(with data: Data, index: Int, rect: CGRect) {
-        super.init(frame: rect)
+    public init(with data: Data, index: Int, frame: CGRect) {
+        super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = #colorLiteral(red: 0.868627451, green: 0.868627451, blue: 0.868627451, alpha: 1)
         
@@ -71,7 +71,7 @@ extension RecordingPlaybackView {
         
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: 30))
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "recording \(index)"
+        label.text = index > 1 ? "recording \(index)" : "recording"
         label.font = .systemFont(ofSize: 16, weight: .light)
         label.textAlignment = .center
         label.numberOfLines = 2
@@ -82,6 +82,8 @@ extension RecordingPlaybackView {
         addSubview(label)
         
         NSLayoutConstraint.activate([
+            heightAnchor.constraint(equalToConstant: frame.height),
+            
             controlView.widthAnchor.constraint(equalToConstant: controlView.frame.width),
             controlView.heightAnchor.constraint(equalToConstant: controlView.frame.height),
             controlView.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -141,6 +143,8 @@ extension RecordingPlaybackView {
     }
     
     private func configure(for playing: Bool) {
+        guard let player = player else { return }
+        
         let controlAnimation = CABasicAnimation(keyPath: "path")
         controlAnimation.duration = 0.35
         controlAnimation.repeatCount = 0
@@ -191,8 +195,9 @@ extension RecordingPlaybackView: AVAudioPlayerDelegate {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
 
-            player = try AVAudioPlayer(data: data)
+            guard let player = try? AVAudioPlayer(data: data) else { return }
             player.delegate = self
+            self.player = player
         } catch {
             print("Couldn't configure player")
         }

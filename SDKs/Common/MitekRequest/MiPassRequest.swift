@@ -30,20 +30,20 @@ public enum MobileVerifyMiPassRequestError: Error {
     }
 }
 
-public enum MobileVerifyMiPassActivity: String {
+public enum MobileVerifyMiPassFlow: String {
     case enrollment
     case verification
 }
 
 class MiPassRequest: NSObject {
-    private let activity: MobileVerifyMiPassActivity
+    private let flow: MobileVerifyMiPassFlow
     private(set) var customerReferenceId: String = ""
     private(set) var enrollmentId: String = ""
     private(set) var voiceSamples: [Data] = []
     private(set) var selfieImageEncoded: String = ""
     
-    public init(for activity: MobileVerifyMiPassActivity) {
-        self.activity = activity
+    public init(for flow: MobileVerifyMiPassFlow) {
+        self.flow = flow
         super.init()
     }
     
@@ -69,7 +69,7 @@ class MiPassRequest: NSObject {
     
     public var errors: [MobileVerifyMiPassRequestError]? {
         var errors: [MobileVerifyMiPassRequestError] = []
-        switch activity {
+        switch flow {
         case .enrollment:
             if !voiceSamples.isEmpty && voiceSamples.count != 3 {
                 errors.append(.notEnoughVoiceFeaturesForEnrollment)
@@ -106,7 +106,7 @@ class MiPassRequest: NSObject {
             dictionary["enrollmentId"] = enrollmentId
         }
         
-        switch activity {
+        switch flow {
         case .enrollment:
             if !voiceSamples.isEmpty {
                 dictionary["voiceFeatures"] = voiceSamples.map { ["data" : $0.base64EncodedString()] }

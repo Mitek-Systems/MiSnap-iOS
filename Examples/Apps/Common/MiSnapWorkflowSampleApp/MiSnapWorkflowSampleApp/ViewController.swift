@@ -132,17 +132,28 @@ class ViewController: UIViewController, CustomSegmentedControlDelegate {
 
 // MARK: MiSnapWorkflowViewControllerDelegate callbacks
 extension ViewController: MiSnapWorkflowViewControllerDelegate {
+    // Note, it will only be sent if `MiSnapLicenseStatus` is anything but `.valid`
     func miSnapWorkflowLicenseStatus(_ status: MiSnapLicenseStatus) {
-        // Handle an invalid license status here
+        // Handle a license status
         licenseStatus = status
     }
     
     func miSnapWorkflowDidSelectPhrase(_ phrase: String) {
-        // Handle a phrase selected by a user here when workflow is configured for Voice enrollment
+        /*
+        Handle a phrase selected by a user in an Enrollment flow.
+        
+        It's highly recommended not only store the phrase in UserDefaults but also in a database on a server side to be able to retrieve it if a user switches a device or re-installs the app.
+        
+        For security purposes you might even cosider storing the phrase on a server side only and retrieve it for each verification.
+        
+        Note, this exact phrase will need to be passed in a configuration for a Verification flow.
+        */
         self.phrase = phrase
     }
     
     func miSnapWorkflowSuccess(_ result: MiSnapWorkflowResult) {
+        // Handle results for all SDKs after workflow successfully finished
+        
         // Uncomment code block below to access result
         //if let idFront = result.idFront {
         //    // Handle `idFront` result here
@@ -219,18 +230,19 @@ extension ViewController: MiSnapWorkflowViewControllerDelegate {
     }
     
     func miSnapWorkflowError(_ result: MiSnapWorkflowResult) {
-        // Handle an SDK error here
+        // Handle a result for the SDKs where error occurred
         if let voice = result.voice, !voice.isEmpty {
             self.error = voice[0].error
         }
     }
     
     func miSnapWorkflowCancelled(_ result: MiSnapWorkflowResult) {
-        // Handle a MiSnapWorkflow cancelled by a user event here
+        // Handle a result for an SDK that was active when a user cancelled the whole workflow
     }
             
     // Uncomment an optional callback below to get result for a step as it's completed
     //func miSnapWorkflowIntermediate(_ result: Any, step: MiSnapWorkflowStep) {
+    //    // Handle a result for a completed step here
     //    switch step {
     //    case .idFront:
     //        if let idFrontResult = result as? MiSnapResult {
@@ -267,7 +279,11 @@ extension ViewController: MiSnapWorkflowViewControllerDelegate {
 }
 
 // !!! ============= !!! ============= !!! ============= !!! ============= !!! ============= !!!
+// !!! ============= !!! ============= !!! ============= !!! ============= !!! ============= !!!
+// !!! ============= !!! ============= !!! ============= !!! ============= !!! ============= !!!
 // MARK: Code below is for sample app's UI. Ignore it since it's not applicable to your app.
+// !!! ============= !!! ============= !!! ============= !!! ============= !!! ============= !!!
+// !!! ============= !!! ============= !!! ============= !!! ============= !!! ============= !!!
 // !!! ============= !!! ============= !!! ============= !!! ============= !!! ============= !!!
 
 // MARK: Private view configurations

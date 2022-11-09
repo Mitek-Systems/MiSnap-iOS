@@ -100,8 +100,8 @@ class MiSnapWorkflowViewControllerFactory {
     #endif
     
     #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
-    func buildMiSnapVoiceCaptureVC(for activity: MiSnapWorkflowActivity, phrase: String?, delegate: MiSnapVoiceCaptureViewControllerDelegate) -> MiSnapVoiceCaptureViewController {
-        let configuration = MiSnapVoiceCaptureConfiguration(for: voiceFlow(from: activity), phrase: phrase)
+    func buildMiSnapVoiceCaptureVC(for flow: MiSnapWorkflowFlow, phrase: String?, delegate: MiSnapVoiceCaptureViewControllerDelegate) -> MiSnapVoiceCaptureViewController {
+        let configuration = MiSnapVoiceCaptureConfiguration(for: voiceFlow(from: flow), phrase: phrase)
             .withCustomUxParameters { uxParameters in
                 uxParameters.autoDismiss = false
             }
@@ -109,8 +109,8 @@ class MiSnapWorkflowViewControllerFactory {
         return voiceCaptureVC
     }
     
-    private func voiceFlow(from activity: MiSnapWorkflowActivity) -> MiSnapVoiceCaptureFlow {
-        switch activity {
+    private func voiceFlow(from flow: MiSnapWorkflowFlow) -> MiSnapVoiceCaptureFlow {
+        switch flow {
         case .enrollment:
             return .enrollment
         case .verification, .authentication:

@@ -159,7 +159,7 @@ extension MiPassResultView {
             return addNotification(withText: "Summary is not available in offline mode")
         }
         
-        addJudgement(withTitle: "Overall \(result.activity == .enrollment ? "Enrollment" : "Verification")", judgment: serverResult.judgement)
+        addJudgement(withTitle: "Overall \(result.flow == .enrollment ? "Enrollment" : "Verification")", judgment: serverResult.judgement)
         if let voiceJudgement = serverResult.voiceJudgement {
             addJudgement(withTitle: "Voice", judgment: voiceJudgement)
         }

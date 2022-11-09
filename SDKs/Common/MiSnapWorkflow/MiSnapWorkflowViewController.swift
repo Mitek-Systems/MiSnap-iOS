@@ -77,14 +77,14 @@ class MiSnapWorkflowViewController: UIViewController {
         controller?.nextStep()
     }
     
-    init(for activity: MiSnapWorkflowActivity, with steps:[MiSnapWorkflowStep], delegate: MiSnapWorkflowViewControllerDelegate, phrase: String? = nil) {
+    init(for flow: MiSnapWorkflowFlow, with steps:[MiSnapWorkflowStep], delegate: MiSnapWorkflowViewControllerDelegate, phrase: String? = nil) {
         self.delegate = delegate
         
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .fullScreen
         modalTransitionStyle = .crossDissolve
         
-        controller = MiSnapWorkflowController(for: activity, with: steps, delegate: self, phrase: phrase)
+        controller = MiSnapWorkflowController(for: flow, with: steps, delegate: self, phrase: phrase)
         controller?.nextStep()
     }
     

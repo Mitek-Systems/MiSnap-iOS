@@ -120,19 +120,28 @@ extension ViewController: MiSnapVoiceCaptureViewControllerDelegate {
     }
 
     func miSnapVoiceCaptureDidSelectPhrase(_ phrase: String) {
-        // Handle a phrase selected by a user
-        // It's highly recommended not only store the phrase in UserDefaults but also in a database on a server side
-        // to be able to retrieve it if a user switches a device or re-installs the app
-        // Note, this exact phrase will need to be passed in  a configuration for a Verification session
+        /*
+        Handle a phrase selected by a user in an Enrollment flow.
+        
+        It's highly recommended not only store the phrase in UserDefaults but also in a database on a server side to be able to retrieve it if a user switches a device or re-installs the app.
+        
+        For security purposes you might even cosider storing the phrase on a server side only and retrieve it for each verification.
+        
+        Note, this exact phrase will need to be passed in a configuration for a Verification flow.
+        */
         
         UserDefaults.standard.set(phrase, forKey: "phrase")
         UserDefaults.standard.synchronize()
     }
     
     func miSnapVoiceCaptureSuccess(_ results: [MiSnapVoiceCaptureResult], for flow: MiSnapVoiceCaptureFlow) {
-        // Handle successful session results here for a configured flow (Enrollment, Verification)
-        // For Enrollment, `results` is always an array with 3 `MiSnapVoiceCaptureResult`s
-        // For Verification, `results` is always an array with 1 `MiSnapVoiceCaptureResult`
+        /*
+         Handle successful session results here for a configured flow (Enrollment, Verification)
+         
+         For Enrollment, `results` is always an array with 3 `MiSnapVoiceCaptureResult`s
+         
+         For Verification, `results` is always an array with one `MiSnapVoiceCaptureResult`
+        */
         self.results = results
     }
 

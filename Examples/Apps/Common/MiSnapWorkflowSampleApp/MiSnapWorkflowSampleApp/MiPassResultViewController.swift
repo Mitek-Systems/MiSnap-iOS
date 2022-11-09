@@ -41,7 +41,7 @@ class MiPassResultViewController: ResultViewController {
         guard let serverResult = serverResult else { return }
         serverResult.startTimer()
         
-        switch result.activity {
+        switch result.flow {
         case .enrollment:
             switch enrollmentModification {
             case .newOrUpdateExisting:
@@ -255,7 +255,7 @@ extension MiPassResultViewController {
             }
         }
         
-        if result.activity == .enrollment {
+        if result.flow == .enrollment {
             print("Voice Enrolled: \(String(describing: serverResult.voiceEnrolled))")
             print("Face Enrolled: \(String(describing: serverResult.faceEnrolled))")
         }

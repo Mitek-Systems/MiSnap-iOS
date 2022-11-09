@@ -45,7 +45,7 @@ enum MiSnapWorkflowStep : String, Equatable {
     #endif
 }
 
-enum MiSnapWorkflowActivity: Int {
+enum MiSnapWorkflowFlow: Int {
     case authentication
     case enrollment
     case verification
@@ -93,7 +93,7 @@ class MiSnapWorkflowResult: NSObject {
     #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
     var voice: [MiSnapVoiceCaptureResult]?
     #endif
-    var activity: MiSnapWorkflowActivity = .authentication
+    var flow: MiSnapWorkflowFlow = .authentication
     
     internal func reset() {
         #if canImport(MiSnapUX) && canImport(MiSnap)
@@ -116,7 +116,7 @@ class MiSnapWorkflowResult: NSObject {
 
 class MiSnapWorkflowController: NSObject {
     public weak var delegate: MiSnapWorkflowControllerDelegate?
-    private var activity: MiSnapWorkflowActivity = .authentication
+    private var flow: MiSnapWorkflowFlow = .authentication
     private var phrase: String?
     
     private var result = MiSnapWorkflowResult()
@@ -149,12 +149,12 @@ class MiSnapWorkflowController: NSObject {
     public init(with steps:[MiSnapWorkflowStep], delegate: MiSnapWorkflowControllerDelegate) {
         self.mutableSteps = steps
         self.delegate = delegate
-        self.result.activity = activity
+        self.result.flow = flow
     }
     
-    public init(for activity: MiSnapWorkflowActivity, with steps:[MiSnapWorkflowStep], delegate: MiSnapWorkflowControllerDelegate, phrase: String? = nil) {
-        self.activity = activity
-        self.result.activity = activity
+    public init(for flow: MiSnapWorkflowFlow, with steps:[MiSnapWorkflowStep], delegate: MiSnapWorkflowControllerDelegate, phrase: String? = nil) {
+        self.flow = flow
+        self.result.flow = flow
         self.mutableSteps = steps
         self.delegate = delegate
         self.phrase = phrase
@@ -202,7 +202,7 @@ class MiSnapWorkflowController: NSObject {
         #endif
         #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
         case .voice:
-            viewController = controllerFactory.buildMiSnapVoiceCaptureVC(for: activity, phrase: phrase, delegate: self)
+            viewController = controllerFactory.buildMiSnapVoiceCaptureVC(for: flow, phrase: phrase, delegate: self)
         #endif
         default:
             fatalError("Could not build a desired view controller")

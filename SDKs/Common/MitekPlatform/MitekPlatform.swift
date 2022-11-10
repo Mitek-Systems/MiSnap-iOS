@@ -2,7 +2,7 @@
 //  MitekPlatform.swift
 //  MitekPlatform
 //
-//  Created by Mitek Engineering on 7/20/20.
+//  Created by Stas Tsuprenko on 7/20/20.
 //  Copyright © 2020 Mitek Systems Inc. All rights reserved.
 //
 
@@ -11,55 +11,93 @@ import Foundation
 internal enum MitekPlatformError: Error {
     case error(String)
 }
-
+/**
+ Mitek platform configuration
+ */
 public class MitekPlatformConfiguration: NSObject {
     private(set) var mobileVerify = MobileVerifyConfiguration()
     private(set) var miPass = MiPassConfiguration()
     
     private(set) var clientId: String = ""
     private(set) var clientSecret: String = ""
-    
+    /**
+     Default initializer
+     */
     public override init() {
         super.init()
     }
-    
+    /**
+     Initializes configuration with credentials
+     */
     public init(withClientId clientId: String, clientSecret: String) {
         self.clientId = clientId
         self.clientSecret = clientSecret
         super.init()
     }
-    
+    /**
+     Convenience function for MobileVerify configuration
+     */
     public func withMobileVerifyConfiguration(completion: (MobileVerifyConfiguration) -> Void) -> MitekPlatformConfiguration {
         completion(mobileVerify)
         return self
     }
-    
+    /**
+     Convenience function for MiPass configuration
+     */
     public func withMiPassConfiguration(completion: (MiPassConfiguration) -> Void) -> MitekPlatformConfiguration {
         completion(miPass)
         return self
     }
 }
-
+/**
+ MobileVerify configuration
+ */
 public class MobileVerifyConfiguration: NSObject {
+    /**
+     Token URL
+     */
     public var tokenUrl: String = ""
+    /**
+     URL
+     */
     public var url: String = ""
+    /**
+     Scote
+     */
     public var scope: String = ""
-    
+    /**
+     Default initalizer
+     */
     public override init() {
         super.init()
     }
 }
-
+/**
+ MiPass configuration
+ */
 public class MiPassConfiguration: NSObject {
+    /**
+     Token URL
+     */
     public var tokenUrl: String = ""
+    /**
+     Base URL
+     */
     public var baseUrl: String = ""
+    /**
+     Scope
+     */
     public var scope: String = ""
-    
+    /**
+     Default initializer
+     */
     public override init() {
         super.init()
     }
 }
-
+/**
+ Mitek platform
+ */
 public class MitekPlatform: NSObject {
     private static var sharedInstance: MitekPlatform?
     
@@ -68,7 +106,9 @@ public class MitekPlatform: NSObject {
     private var dataTask: URLSessionDataTask?
     private var mobileVerifyTokenManager = MitekPlatformTokenManager()
     private var miPassTokenManager = MitekPlatformTokenManager()
-    
+    /**
+     Indicates whether a valid MobileVerify configuration was set
+     */
     var hasValidMobileVerifyConfiguration: Bool {
         if !hasValidCredentials {
             return false
@@ -83,7 +123,9 @@ public class MitekPlatform: NSObject {
         }
         return true
     }
-    
+    /**
+     Indicates whether a valid MiPass configuration was set
+     */
     var hasValidMiPassConfiguration: Bool {
         if !hasValidCredentials {
             return false
@@ -98,7 +140,9 @@ public class MitekPlatform: NSObject {
         }
         return true
     }
-    
+    /**
+     Indicates whether valid credentials were set
+     */
     private var hasValidCredentials: Bool {
         if configuration.clientId.isEmpty ||
             configuration.clientId.contains("your_") ||
@@ -135,19 +179,25 @@ public class MitekPlatform: NSObject {
             print("wasn't able to write file \"\(filename)\"")
         }
     }
-    
+    /**
+     Destroys shared instance
+     */
     public class func destroyShared() {
         if let sharedInstance = self.sharedInstance {
             sharedInstance.cancel()
             self.sharedInstance = nil
         }
     }
-    
+    /**
+     Cancels any requests in progress
+     */
     public func cancel() {
         self.dataTask?.cancel()
         URLSession.shared.invalidateAndCancel()
     }
-    
+    /**
+     Sets a Mitek platform configuration
+     */
     public func set(configuration: MitekPlatformConfiguration) {
         self.configuration = configuration
         mobileVerifyTokenManager.set(url: configuration.mobileVerify.tokenUrl,
@@ -159,7 +209,9 @@ public class MitekPlatform: NSObject {
                                secret: configuration.clientSecret,
                                scope: configuration.miPass.scope)
     }
-    
+    /**
+     Authenticates an Identity document (MobileVerify)
+     */
     public func authenticate(_ requestDictionary: [String : Any], completed: @escaping ([String: Any]?, Error?) -> Void) {
         guard !configuration.mobileVerify.url.isEmpty else { fatalError("[MitekPlatform] Url is not set") }
         guard let url = URL(string: configuration.mobileVerify.url) else {
@@ -195,7 +247,9 @@ public class MitekPlatform: NSObject {
             completed(nil, error)
         }
     }
-    
+    /**
+     Enrolls  Face and/or Voice (MiPass)
+     */
     public func enroll(_ requestDictionary: [String : Any], completed: @escaping ([String: Any]?, Error?) -> Void) {
         guard !configuration.miPass.baseUrl.isEmpty else { fatalError("[MitekPlatform] Url is not set") }
         guard let url = URL(string: configuration.miPass.baseUrl + "/enroll") else {
@@ -231,7 +285,9 @@ public class MitekPlatform: NSObject {
             completed(nil, error)
         }
     }
-    
+    /**
+     Verifies  Face and/or Voice against an Enrolled ones (MiPass)
+     */
     public func verify(_ requestDictionary: [String : Any], completed: @escaping ([String: Any]?, Error?) -> Void) {
         guard !configuration.miPass.baseUrl.isEmpty else { fatalError("[MitekPlatform] Url is not set") }
         guard let url = URL(string: configuration.miPass.baseUrl + "/verify") else {
@@ -267,7 +323,9 @@ public class MitekPlatform: NSObject {
             completed(nil, error)
         }
     }
-    
+    /**
+     Deletes enrolled  Face and/or Voice (MiPass)
+     */
     public func deleteEnrollment(withId id: String, completed: @escaping ([String: Any]?, Error?) -> Void) {
         guard !configuration.miPass.baseUrl.isEmpty else { fatalError("[MitekPlatform] MiPass url is not set") }
         guard let url = URL(string: configuration.miPass.baseUrl + "/enroll/" + id) else {

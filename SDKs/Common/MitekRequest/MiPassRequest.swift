@@ -2,18 +2,38 @@
 //  MiPassRequest.swift
 //  MitekRequest
 //
-//  Created by Mitek Engineering on 9/9/22.
+//  Created by Stas Tsuprenko on 9/9/22.
 //
 
 import UIKit
 
-public enum MobileVerifyMiPassRequestError: Error {
+/**
+ MiPass request error
+ */
+public enum MiPassRequestError: Error {
+    /**
+     Not enough  voice features for Enrollment
+     */
     case notEnoughVoiceFeaturesForEnrollment
+    /**
+     Too many voice features for Verification
+     */
     case tooManyVoiceFeaturesForVerification
+    /**
+     Enrollment ID is not set for Verification
+     */
     case enrollmentIdNotSetForVerification
+    /**
+     Required data is not set for Enrollment
+     */
     case requiredDataNotSetForEnrollment
+    /**
+     Required data is not set for Verification
+     */
     case requiredDataNotSetForVerification
-    
+    /**
+     Description
+     */
     var description: String {
         switch self {
         case .notEnoughVoiceFeaturesForEnrollment:
@@ -29,46 +49,70 @@ public enum MobileVerifyMiPassRequestError: Error {
         }
     }
 }
-
+/**
+ MiPass flow
+ */
 public enum MobileVerifyMiPassFlow: String {
+    /**
+     Enrollment
+     */
     case enrollment
+    /**
+     Verification
+     */
     case verification
 }
-
+/**
+ MiPass request
+ */
 class MiPassRequest: NSObject {
     private let flow: MobileVerifyMiPassFlow
     private(set) var customerReferenceId: String = ""
     private(set) var enrollmentId: String = ""
     private(set) var voiceSamples: [Data] = []
     private(set) var selfieImageEncoded: String = ""
-    
+    /**
+     Initializes with for a given flow
+     */
     public init(for flow: MobileVerifyMiPassFlow) {
         self.flow = flow
         super.init()
     }
-    
+    /**
+     Adds an optional customer reference ID
+     */
     public func addCustomerReferenceId(_ customerReferenceId: String) {
         self.customerReferenceId = customerReferenceId
     }
-    
+    /**
+     Adds an Enrollment ID
+     */
     public func addEnrollmentId(_ enrollmentId: String) {
         self.enrollmentId = enrollmentId
     }
-    
+    /**
+     Adds a voice feature for Verification
+     */
     public func addVoiceFeature(_ voiceSample: Data) {
         self.voiceSamples = [voiceSample]
     }
-    
+    /**
+     Adds voice features for Enrollment
+     */
     public func addVoiceFeatures(_ voiceSamples: [Data]) {
         self.voiceSamples = voiceSamples
     }
-    
+    /**
+     Adds encoded selfie image
+     */
     public func addEncodedSelfieImage(_ selfieImageEncoded: String) {
         self.selfieImageEncoded = selfieImageEncoded
     }
-    
-    public var errors: [MobileVerifyMiPassRequestError]? {
-        var errors: [MobileVerifyMiPassRequestError] = []
+    /**
+     Errors in the request
+     */
+    public var errors: [MiPassRequestError]? {
+        var errors: [MiPassRequestError] = []
         switch flow {
         case .enrollment:
             if !voiceSamples.isEmpty && voiceSamples.count != 3 {
@@ -93,7 +137,9 @@ class MiPassRequest: NSObject {
         }
         return errors
     }
-    
+    /**
+     MiPass request dictionary that can be serialized to JSON data for URLRequest httpBody
+     */
     public var dictionary: [String : Any]? {
         if let _ = errors { return nil }
         var dictionary: [String : Any] = [:]

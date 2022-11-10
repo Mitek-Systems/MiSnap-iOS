@@ -2,7 +2,7 @@
 //  MiSnapScienceResults.h
 //  MiSnapScience
 //
-//  Created by Mitek Engineering on 10/14/2020.
+//  Created by Stas Tsuprenko on 10/14/2020.
 //  Copyright © 2020 Mitek Systems Inc. All rights reserved.
 //
 

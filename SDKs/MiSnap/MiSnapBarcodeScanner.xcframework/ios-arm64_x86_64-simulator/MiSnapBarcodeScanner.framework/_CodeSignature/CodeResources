@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/MiSnapBarcodeScanner.h</key>
 		<data>
-		NQWskhRkWOyf96tKi1FGz12Pe30=
+		M9iicCgqCzBgYU0wuOmbmf4SkrM=
 		</data>
 		<key>Headers/MiSnapBarcodeScannerAnalyzer.h</key>
 		<data>
-		G2DXKyjCkrYJmEFNc3uykAjI8xA=
+		rO/FSiBqed90TMuhGwtLFkoeU7A=
 		</data>
 		<key>Headers/MiSnapBarcodeScannerResult.h</key>
 		<data>
-		GoNKYD7zFiSdYaj8MRQlY5vCyjk=
+		e30ldrANfZBHSxX0sseYOxp+AaU=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -31,21 +31,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iJD7MO4pnJkOcNMXWG9m/JkhziW/Di2NKmuEfzQmZrM=
+			MJF8sUGmOxjtY4qm5Qcb3mGHasvYNh+spP+owtnZdZ0=
 			</data>
 		</dict>
 		<key>Headers/MiSnapBarcodeScannerAnalyzer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VLW/52MwAPRloylYuVNmaIsUqHjQyvatNVgbLASxLRI=
+			JFD6vuSyeY1T+FCi7BxxtItGu/WSHDmx/HFIOi7c11g=
 			</data>
 		</dict>
 		<key>Headers/MiSnapBarcodeScannerResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+UX6MEguIPlfCYhzlICFDcytABszJCWh9MtEDJ8tXoY=
+			Ip3yfI0XhoWGYZhZuMysJJZXLTIbs1uz+QV38Px65aI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

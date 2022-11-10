@@ -2,7 +2,7 @@
 //  MiSnapWorkflowViewControllerFactory.swift
 //  MiSnapWorkflow
 //
-//  Created by Mitek Engineering on 11/25/19.
+//  Created by Stas Tsuprenko on 11/25/19.
 //  Copyright © 2019 Mitek Systems Inc. All rights reserved.
 //
 
@@ -23,9 +23,14 @@ import MiSnapFacialCapture
 import MiSnapVoiceCaptureUX
 import MiSnapVoiceCapture
 #endif
-
+/**
+ Workflow view controller factory
+ */
 class MiSnapWorkflowViewControllerFactory {
     #if canImport(MiSnapUX) && canImport(MiSnap)
+    /**
+     Builds MiSnap view controller
+     */
     func buildMiSnapVC(for step: MiSnapWorkflowStep, delegate: MiSnapViewControllerDelegate) -> MiSnapViewController {
         let template = MiSnapConfiguration()
             .withCustomUxParameters { uxParameters in
@@ -67,9 +72,18 @@ class MiSnapWorkflowViewControllerFactory {
     #endif
     
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
+    /**
+     Builds MiSnapNFC view controller
+     */
     @available(iOS 13, *)
     // swiftlint:disable:next function_parameter_count
-    func buildMiSnapNFCVC(mrzString: String, documentNumber: String, dateOfBirth: String, dateOfExpiry: String, documentType: MiSnapNFCDocumentType, chipLocation: MiSnapNFCChipLocation, delegate: MiSnapNFCViewControllerDelegate) -> MiSnapNFCViewController {
+    func buildMiSnapNFCVC(mrzString: String,
+                          documentNumber: String,
+                          dateOfBirth: String,
+                          dateOfExpiry: String,
+                          documentType: MiSnapNFCDocumentType,
+                          chipLocation: MiSnapNFCChipLocation,
+                          delegate: MiSnapNFCViewControllerDelegate) -> MiSnapNFCViewController {
         let configuration = MiSnapNFCConfiguration()
             .withInputs { inputs in
                 inputs.documentNumber = documentNumber
@@ -89,6 +103,9 @@ class MiSnapWorkflowViewControllerFactory {
     #endif
     
     #if canImport(MiSnapFacialCaptureUX) && canImport(MiSnapFacialCapture)
+    /**
+     Builds MiSnapFacialCapture view controller
+     */
     func buildMiSnapFacialCaptureVC(delegate: MiSnapFacialCaptureViewControllerDelegate) -> MiSnapFacialCaptureViewController {
         let configuration = MiSnapFacialCaptureConfiguration()
             .withCustomUxParameters { uxParameters in
@@ -100,6 +117,9 @@ class MiSnapWorkflowViewControllerFactory {
     #endif
     
     #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
+    /**
+     Builds MiSnapVoiceCapture view controller
+     */
     func buildMiSnapVoiceCaptureVC(for flow: MiSnapWorkflowFlow, phrase: String?, delegate: MiSnapVoiceCaptureViewControllerDelegate) -> MiSnapVoiceCaptureViewController {
         let configuration = MiSnapVoiceCaptureConfiguration(for: voiceFlow(from: flow), phrase: phrase)
             .withCustomUxParameters { uxParameters in
@@ -118,7 +138,9 @@ class MiSnapWorkflowViewControllerFactory {
         }
     }
     #endif
-    
+    /**
+     Supported orientation for a given step
+     */
     func supportedOrientationFor(step: MiSnapWorkflowStep) -> UIInterfaceOrientationMask {
         switch step {
         #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)

@@ -2,7 +2,7 @@
 //  MobileVerifyRequest.swift
 //  MitekRequest
 //
-//  Created by Mitek Engineering on 6/29/22.
+//  Created by Stas Tsuprenko on 6/29/22.
 //  Copyright © 2022 Mitek Systems Inc. All rights reserved.
 //
 
@@ -10,20 +10,61 @@
 
 import UIKit
 
+/**
+ MobileVerify request error
+ */
 public enum MobileVerifyRequestError: Error {
+    /**
+     Front evidence is not set
+     */
     case frontEvidenceNotSet
+    /**
+     Front evidence data is not set
+     */
     case frontEvidenceDataNotSet
+    /**
+     Back evidence data is not set
+     */
     case backEvidenceDataNotSet
+    /**
+     Selfie evidence is not set
+     */
     case selfieEvidenceNotSet
+    /**
+     Selfie evidence data is not set
+     */
     case selfieEvidenceDataNotSet
+    /**
+     Selfie verifications are not enabled
+     */
     case selfieVerificationsNotEnabled
+    /**
+     Invalid selfie verifications combination
+     */
     case invalidSelfieVerificationsCombination
+    /**
+     Required inputs for NFC evidence are missing
+     */
     case nfcEvidenceRequiredInputsMissing
+    /**
+     Invalid format for data group in NFC evidence
+     */
     case nfcEvidenceDataGroupsInvalidFormat
+    /**
+     Required inputs for Active Authentication are missing in NFC evidence
+     */
     case nfcActiveAuthEvidenceRequiredInputsMissing
+    /**
+     Empty QR code
+     */
     case emptyQrCode
+    /**
+     Empty PDF417
+     */
     case emptyPdf417
-    
+    /**
+     Description
+     */
     var description: String {
         switch self {
         case .frontEvidenceNotSet:
@@ -53,12 +94,25 @@ public enum MobileVerifyRequestError: Error {
         }
     }
 }
-
+/**
+ MobileVerify NFC data format
+ */
 public enum MobileVerifyRequestNfcDataFormat: String, Equatable {
+    /**
+     NFC data format is not set
+     */
     case unknown
+    /**
+     ICAO
+     */
     case icao
+    /**
+     eDL
+     */
     case dl
-
+    /**
+     String value
+     */
     var stringValue: String {
         switch self {
         case .unknown:  return "unknown"
@@ -66,7 +120,9 @@ public enum MobileVerifyRequestNfcDataFormat: String, Equatable {
         case .dl:       return "eu_edl"
         }
     }
-    
+    /**
+     NFC data format from String
+     */
     public static func from(_ string: String) -> MobileVerifyRequestNfcDataFormat {
         switch string {
         case "icao_9303":   return .icao
@@ -75,12 +131,25 @@ public enum MobileVerifyRequestNfcDataFormat: String, Equatable {
         }
     }
 }
-
+/**
+ MobileVerify response image type
+ */
 public enum MobileVerifyRequestResponseImageType: String, Equatable {
+    /**
+     Cropped portrait
+     */
     case croppedPortrait
+    /**
+     Cropped signature
+     */
     case croppedSignature
+    /**
+     Cropped document
+     */
     case croppedDocument
-
+    /**
+     String value
+     */
     var stringValue: String {
         switch self {
         case .croppedPortrait:      return "CroppedPortrait"
@@ -89,13 +158,29 @@ public enum MobileVerifyRequestResponseImageType: String, Equatable {
         }
     }
 }
-
+/**
+ MobileVerify verificiation
+ */
 public enum MobileVerifyRequestVerification: String, Equatable {
+    /**
+     Face comparison
+     */
     case faceComparison
+    /**
+     Face liveness
+     */
     case faceLiveness
+    /**
+     Face blocklist
+     */
     case faceBlocklist
+    /**
+     Data signal AAMVA
+     */
     case dataSignalAAMVA
-    
+    /**
+     String value
+     */
     var stringValue: String {
         switch self {
         case .faceComparison:   return "faceComparison"
@@ -159,11 +244,15 @@ private class MobileVerifyRequestEvidenceIdDocumentNfc: NSObject {
         return nfcEvidence
     }
 }
-
+/**
+ MobileVerify Selfie biometric evidence
+ */
 public class MobileVerifyRequestEvidenceBiometricSelfie: NSObject {
     var data: String = ""
 }
-
+/**
+ MobileVerify request
+ */
 public class MobileVerifyRequest: NSObject {
     private var dossierMetadata = MobileVerifyRequestDossierMetadata()
     private var frontEvidence = MobileVerifyRequestEvidenceIdDocumentFront()
@@ -180,29 +269,40 @@ public class MobileVerifyRequest: NSObject {
     private var selfieEvidenceSet: Bool = false
     private var verificationsSet: Bool = false
 
+    /**
+     Default initializer
+     */
     override init() {
         super.init()
     }
-    
+    /**
+     Adds optional dossier metadata
+     */
     public func addDossierMetadata(withCustomerReferenceId customerReferenceId: String) {
         dossierMetadataSet = true
         dossierMetadata.customerReferenceId = customerReferenceId
     }
-    
+    /**
+     Adds front evidence
+     */
     public func addFrontEvidence(withData data: String, qrCode: String? = nil, customerReferenceId: String? = nil) {
         frontEvidenceSet = true
         frontEvidence.data = data
         frontEvidence.customerReferenceId = customerReferenceId
         frontEvidence.qrCode = qrCode
     }
-    
+    /**
+     Adds back evidence
+     */
     public func addBackEvidence(withData data: String, pdf417: String? = nil, customerReferenceId: String? = nil) {
         backEvidenceSet = true
         backEvidence.data = data
         backEvidence.customerReferenceId = customerReferenceId
         backEvidence.pdf417 = pdf417
     }
-    
+    /**
+     Adds NFC evidence from individual properties (pre-5.x)
+     */
     public func addNfcEvidence(withSod sod: String,
                                com: String,
                                dataFormat: MobileVerifyRequestNfcDataFormat,
@@ -219,17 +319,23 @@ public class MobileVerifyRequest: NSObject {
         nfcEvidence.chipAuthOutput = chipAuthOutput
         nfcEvidence.activeAuthInput = activeAuthInput
     }
-    
+    /**
+     Adds NFC evidence from NFC request dictionary (5.x and onward)
+     */
     public func addNfcEvidence(from nfcRequestDictionary: [String : Any]) {
         nfcEvidenceSet = true
         nfcEvidence = MobileVerifyRequestEvidenceIdDocumentNfc.from(nfcRequestDictionary)
     }
-    
+    /**
+     Adds selfie evidence
+     */
     public func addSelfieEvidence(withData data: String) {
         selfieEvidenceSet = true
         selfieEvidence.data = data
     }
-    
+    /**
+     Adds verifications
+     */
     public func addVerifications(_ verifications: [MobileVerifyRequestVerification]) {
         verificationsSet = true
         for verification in verifications {
@@ -238,7 +344,9 @@ public class MobileVerifyRequest: NSObject {
             }
         }
     }
-    
+    /**
+     Adds response images
+     */
     public func addResponseImages(_ responseImages: [MobileVerifyRequestResponseImageType]) {
         for responseImage in responseImages {
             if !self.responseImages.contains(responseImage) {
@@ -246,7 +354,9 @@ public class MobileVerifyRequest: NSObject {
             }
         }
     }
-    
+    /**
+     Errors in the request
+     */
     public var errors: [MobileVerifyRequestError]? {
         var errors: [MobileVerifyRequestError] = []
         if frontEvidenceSet {
@@ -306,7 +416,9 @@ public class MobileVerifyRequest: NSObject {
         }
         return errors
     }
-    
+    /**
+     MobileVerify request dictionary that can be serialized to JSON data for URLRequest httpBody
+     */
     public var dictionary: [String : Any]? {
         if let _ = errors { return nil }
         var dictionary: [String : Any] = [:]

@@ -383,7 +383,7 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX30MiSnapVoiceCaptureUXParameters")
 @property (nonatomic, readonly, copy) NSString * _Nullable phrase;
 /// Initializes parameters for a flow (see <code>MiSnapVoiceCaptureFlow</code>) with an optional phrase
 /// note:
-/// a <code>phrase</code> is required for <code>verification</code> flow. A crash will occur if it’s not provided.
+/// a <code>phrase</code> is required for <code>verification</code> flow. A <code>miSnapVoiceCaptureError(_:)</code> callback is returned if it’s not provided.
 /// note:
 /// a <code>phrase</code> is optional for <code>enrollment</code> flow. When phrase is not provided a Phrase selection screen is presented to a user (recommended).
 /// If a phrase is provided then Phrase selection screen is skipped (not recommended).
@@ -408,7 +408,7 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 /// Checks a microphone permission and asynchronously returns a result
 + (void)checkMicrophonePermissionWithHandler:(void (^ _Nonnull)(BOOL))handler;
 /// Checks if a device has a given space in MB
-- (BOOL)hasMinDiskSpace:(NSInteger)minDiskSpace SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)hasMinDiskSpace:(NSInteger)minDiskSpace SWIFT_WARN_UNUSED_RESULT;
 /// Called after the view has been loaded.
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.

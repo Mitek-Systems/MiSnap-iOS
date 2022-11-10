@@ -11,6 +11,7 @@
 * [License Key](#license-key)
 * [Integration Guides](#integration-guides)
 * [Customization Guides](#customization-guides)
+* [Workflow](#workflow)
 * [SDKs Sizes](#sdks-sizes)
 * [Devices Tested](#devices-tested)
 * [Known Issues](#known-issues)
@@ -21,7 +22,7 @@
 
 # Release Notes
 
-See [here](https://github.com/Mitek-Systems/MiSnap-iOS/releases)
+See [here](https://github.com/Mitek-Systems/MiSnap-iOS/releases).
 
 - - -
 
@@ -78,6 +79,20 @@ Refer to [Integration Guides](#integration-guides) for setting the license key i
 
 - - -
 
+# Workflow
+
+`MiSnapWorkflow` is a utility that ties any combination of Mitek SDKs together allowing integrators to get up and running with very little effort.
+
+Benefits for integrators:
+* Faster deployment to production since there's no need in writing complex custom logic for tying Mitek SDKs together and managing transitions between them
+* Faster resolution of issues (if any) since Mitek support team doesn't need to debug your custom workflow
+
+For afore-mentioned reasons it is Mitek's preferred way of building workflows.
+
+See [this guide](Docs/Guides/Common/workflow.md) for `MiSnapWorkflow` integration and customization details.
+
+- - -
+
 # SDKs Sizes
 
 <center>
@@ -107,50 +122,55 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 
 <center>
 
-| Device                        | Version      |
-| :-----:                       | :-----:      |
-| iPhone 13 Pro Max             | 15.5         |
-|                               | 15.0.2       |
-| iPhone 13                     | 16 beta 2    |
-| iPhone 13 Mini                | 15.0         |
-| iPhone 12 Pro Max             | 14.7.1       |
-| iPhone 12                     | 15.5         |
-|                               | 14.1         |
-| iPhone 12 Mini                | 14.2         |
-| iPhone 11 Pro                 | 15.5         |
-|                               | 15.2         |
-|                               | 13.5.1       |
-| iPhone 11                     | 15.5         |
-|                               | 15.0         |
-| iPhone Xs Max                 | 13.3.1       |
-| iPhone Xs                     | 15.5         |
-| iPhone Xr                     | 15.5         |
-| iPhone X                      | 15.5         |
-| iPhone 8 Plus                 | 15.5         |
-| iPhone 8                      | 15.5         |
-|                               | 13.1.3       |
-| iPhone 7 Plus                 | 15.5         |
-|                               | 15.0.1       |
-| iPhone 7                      | 15.4.1       |
-|                               | 15.3         |
-|                               | 15.0         |
-|                               | 14.4         |
-|                               | 13.1.1       |
-| iPhone 6s Plus                | 15.5         |
-|                               | 11.4.1       |
-| iPhone 6s                     | 15.5         |
-|                               | 15.0.1       |
-| iPhone SE (2nd gen)           | 15.5         |
-|                               | 14.8         |
-|                               | 14.0         |
-| iPhone SE (1st gen)           | 15.5         |
-|                               | 13.5.1       |
-| iPhone 5s                     | 12.5.5       |
-| iPhone 5c                     | 10.3.3       |
-| iPad Pro (2nd gen)            | 13.1         |
-| iPad Pro                      | 12.3         |
-| iPad mini 3                   | 12.4.3       |
-| iPad Air                      | 10.2.1       |
+| Device                           | Version      |
+| :-----:                          | :-----:      |
+| iPhone 14 Pro Max                | 16.1         |
+| iPhone 14 Plus                   | 16.0.1       |
+| iPhone SE (3rd gen)              | 16.1         |
+| iPhone 13 Pro Max                | 16.1         |
+| iPhone 13                        | 16.1         |
+|                                  | 16.0.2       |
+| iPhone 13 mini                   | 16.1         |
+|                                  | 15.0         |
+| iPhone 12 Pro Max                | 16.1         |
+|                                  | 16.0         |
+| iPhone 12                        | 16.1         |
+|                                  | 15.5         |
+|                                  | 14.1         |
+| iPhone 12 mini                   | 16.2         |
+|                                  | 14.2         |
+| iPhone SE (2nd gen)              | 16.1         |
+|                                  | 15.6.1       |
+|                                  | 14.0         |
+| iPhone 11 Pro                    | 13.5.1       |
+| iPhone 11                        | 16.1         |
+| iPhone Xs Max                    | 16.0.3       |
+|                                  | 13.3.1       |
+| iPhone Xr                        | 16.0.3       |
+|                                  | 15.7         |
+| iPhone X                         | 15.6.1       |
+| iPhone 8                         | 16.1         |
+|                                  | 15.6.1       |
+|                                  | 13.1.3       |
+| iPhone 7 Plus                    | 15.6.1       |
+|                                  | 14.4         |
+| iPhone 7                         | 15.6         |
+|                                  | 15.3         |
+|                                  | 15.0         |
+| iPhone 6s Plus                   | 11.4.1       |
+| iPhone 6s                        | 15.7         |
+|                                  | 15.6.1       |
+| iPhone 6                         | 12.5.5       |
+| iPad Pro  (12.9-inch) (2nd gen)  | 16.1         |
+| iPad Pro  (12.9-inch)            | 13.1         |
+| iPad Pro  (10.5-inch)            | 16.1         |
+| iPad (9th gen)                   | 16.1         |
+|                                  | 15.6         |
+| iPad Air (4th gen)               | 16.1         |
+| iPad Air                         | 16.1         |
+|                                  | 12.5.5       |
+| iPad mini 5                      | 15.7         |
+| iPad mini 3                      | 12.4.3       |
 
 </center>
 
@@ -169,6 +189,7 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 - - -
 
 # Frequently Asked Questions (FAQs)
+* [Common](Docs/Guides/Common/faq.md)
 * [MiSnap](Docs/Guides/MiSnap/faq.md)
 * [MiSnapNFC](Docs/Guides/MiSnapNFC/faq.md)
 * [MiSnapFacialCapture](Docs/Guides/MiSnapFacialCapture/faq.md)

@@ -50,7 +50,7 @@ Set valid path(s) to copied artifacts in `Framework Search Paths` under `Build S
 
 If you plan only using SDK and building your own UX/UI:
 
-TODO:warning: Use this [starter custom view controller](../../../Examples/Snippets/MiSnapVoiceCapture/CustomVoiceCaptureViewController.swift) to make sure all components are integrated the right way.
+:warning: Use this [starter custom view controller](../../../Examples/Snippets/MiSnapVoiceCapture/CustomVoiceCaptureViewController.swift) to make sure all components are integrated the right way.
 
 #### CocoaPods
 
@@ -154,6 +154,8 @@ where,
 
 `phrase` is the exact phrase used for Enrollment
 
+:warning: a `phrase` is required for `verification` flow. A `miSnapVoiceCaptureError(_:)` callback is returned if it's not provided.
+
 4.3. Implement required callbacks to conform to `MiSnapVoiceCaptureViewControllerDelegate`
 
 ```Swift
@@ -163,10 +165,15 @@ func miSnapVoiceCaptureLicenseStatus(_ status: MiSnapLicenseStatus) {
 }
 
 func miSnapVoiceCaptureDidSelectPhrase(_ phrase: String) {
-    // Handle a phrase selected by a user
-    // It's highly recommended not only store the phrase in UserDefaults but also in a database on a server side 
-    // to be able to retrieve it if a user switches a device or re-installs the app
-    // Note, this exact phrase will need to be passed in  a configuration for a Verification session
+    /*
+    Handle a phrase selected by a user in an Enrollment flow.
+    
+    It's highly recommended not only store the phrase in UserDefaults but also in a database on a server side to be able to retrieve it if a user switches a device or re-installs the app.
+    
+    For security purposes you might even cosider storing the phrase on a server side only and retrieve it for each verification.
+    
+    Note, this exact phrase will need to be passed in a configuration for a Verification flow.
+    */
 }
 
 func miSnapVoiceCaptureSuccess(_ results: [MiSnapVoiceCaptureResult], for type: MiSnapVoiceCaptureActivity) {

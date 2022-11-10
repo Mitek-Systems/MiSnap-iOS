@@ -2,7 +2,7 @@
 //  MiSnapWorkflowViewController.swift
 //  MiSnapWorkflow
 //
-//  Created by Mitek Engineering on 11/25/19.
+//  Created by Stas Tsuprenko on 11/25/19.
 //  Copyright © 2019 Mitek Systems Inc. All rights reserved.
 //
 
@@ -17,23 +17,42 @@ import MiSnapFacialCaptureUX
 #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
 import MiSnapVoiceCaptureUX
 #endif
-
+/**
+ Defines an interface for delegates of `MiSnapWorkflowViewControllerDelegate` to receive callbacks
+ */
 protocol MiSnapWorkflowViewControllerDelegate: NSObject {
+    /**
+     Delegates receive this callback only when license status is anything but valid
+     */
     func miSnapWorkflowLicenseStatus(_ status: MiSnapLicenseStatus)
-    
+    /**
+     Delegates receive this callback when the workflow was successfully completed and the final result is available
+     */
     func miSnapWorkflowSuccess(_ result: MiSnapWorkflowResult)
-     
-    func miSnapWorkflowCancelled(_ result: MiSnapWorkflowResult)
-    
-    func miSnapWorkflowError(_ result: MiSnapWorkflowResult)
-        
+    /**
+     Delegates receive this callback after each completed step (optional)
+     */
     func miSnapWorkflowIntermediate(_ result: Any, step: MiSnapWorkflowStep)
+    /**
+     Delegates receive this callback when a user cancels a flow on any step
+     */
+    func miSnapWorkflowCancelled(_ result: MiSnapWorkflowResult)
+    /**
+     Delegates receive this callback when an error occurs in any SDK
+     */
+    func miSnapWorkflowError(_ result: MiSnapWorkflowResult)
     
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
+    /**
+     Delegates receive this callback when an NFC step is skipped by a user (optional)
+     */
     func miSnapWorkflowNfcSkipped(_ result: [String : Any])
     #endif
     
     #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
+    /**
+     Delegates receive this callback when a use has chosen a phrase in an Enrollment flow
+     */
     func miSnapWorkflowDidSelectPhrase(_ phrase: String)
     #endif
 }
@@ -47,7 +66,9 @@ extension MiSnapWorkflowViewControllerDelegate {
     func miSnapWorkflowDidSelectPhrase(_ phrase: String) {}
     #endif
 }
-
+/**
+ Workflow view controller
+ */
 class MiSnapWorkflowViewController: UIViewController {
     private weak var delegate: MiSnapWorkflowViewControllerDelegate?
     private var containerView: UIView = UIView()
@@ -65,7 +86,9 @@ class MiSnapWorkflowViewController: UIViewController {
             _ = self.supportedInterfaceOrientations
         }
     }
-    
+    /**
+     Initializes a view controller for MobileVerify
+     */
     init(with steps:[MiSnapWorkflowStep], delegate: MiSnapWorkflowViewControllerDelegate) {
         self.delegate = delegate
         
@@ -76,7 +99,9 @@ class MiSnapWorkflowViewController: UIViewController {
         controller = MiSnapWorkflowController(with: steps, delegate: self)
         controller?.nextStep()
     }
-    
+    /**
+     Initializes a view controller for MiPass
+     */
     init(for flow: MiSnapWorkflowFlow, with steps:[MiSnapWorkflowStep], delegate: MiSnapWorkflowViewControllerDelegate, phrase: String? = nil) {
         self.delegate = delegate
         
@@ -87,7 +112,9 @@ class MiSnapWorkflowViewController: UIViewController {
         controller = MiSnapWorkflowController(for: flow, with: steps, delegate: self, phrase: phrase)
         controller?.nextStep()
     }
-    
+    /**
+     Static helper to check camera permission
+     */
     public static func checkCameraPermission(handler: @escaping (Bool) -> Void) {
         #if canImport(MiSnapUX) && canImport(MiSnap)
         MiSnapViewController.checkCameraPermission(handler: handler)
@@ -95,7 +122,9 @@ class MiSnapWorkflowViewController: UIViewController {
         MiSnapFacialCaptureViewController.checkCameraPermission(handler: handler)
         #endif
     }
-    
+    /**
+     Static helper to check microphone permission
+     */
     public static func checkMicrophonePermission(handler: @escaping (Bool) -> Void) {
         #if canImport(MiSnapUX) && canImport(MiSnap)
         MiSnapViewController.checkMicrophonePermission(handler: handler)
@@ -105,7 +134,9 @@ class MiSnapWorkflowViewController: UIViewController {
         MiSnapVoiceCaptureViewController.checkMicrophonePermission(handler: handler)
         #endif
     }
-    
+    /**
+     Static helper to check min disk space
+     */
     public static func hasMinDiskSpace(_ minDiskSpace: Int) -> Bool {
         guard let documentsDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first else { return false }
         

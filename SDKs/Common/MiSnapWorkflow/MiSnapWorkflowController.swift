@@ -2,7 +2,7 @@
 //  MiSnapWorkflowController.swift
 //  MiSnapWorkflow
 //
-//  Created by Mitek Engineering on 11/25/19.
+//  Created by Stas Tsuprenko on 11/25/19.
 //  Copyright © 2019 Mitek Systems Inc. All rights reserved.
 //
 
@@ -25,76 +25,167 @@ import MiSnapVoiceCaptureUX
 import MiSnapVoiceCapture
 #endif
 
+/**
+ Workflow step
+ */
 enum MiSnapWorkflowStep : String, Equatable {
+    /**
+     Not set
+     */
     case none = "None"
     #if canImport(MiSnapUX) && canImport(MiSnap)
+    /**
+     Any identity document (ID/DL/RP Front or Back, Passport)
+     */
     case anyId = "Any_ID"
+    /**
+     ID/DL/RP Front
+     */
     case idFront = "ID_Front"
+    /**
+     ID/DL/RP Back
+     */
     case idBack = "ID_Back"
+    /**
+     Passport
+     */
     case passport = "Passport"
+    /**
+     Passport QR
+     */
     case passportQr = "Passport_QR"
     #endif
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
+    /**
+     NFC
+     */
     case nfc = "NFC"
     #endif
     #if canImport(MiSnapFacialCaptureUX) && canImport(MiSnapFacialCapture)
+    /**
+     Face
+     */
     case face = "Face"
     #endif
     #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
+    /**
+     Voice
+     */
     case voice = "Voice"
     #endif
 }
-
+/**
+ Flow
+ */
 enum MiSnapWorkflowFlow: Int {
+    /**
+     Authentication (MobileVerify)
+     */
     case authentication
+    /**
+     Enrollment (MiPass)
+     */
     case enrollment
+    /**
+     Verification (MiPass)
+     */
     case verification
 }
-
+/**
+ Defines an interface for delegates of `MiSnapWorkflowControllerDelegate` to receive callbacks
+ */
 protocol MiSnapWorkflowControllerDelegate: NSObject {
+    /**
+     Delegates receive this callback only when license status is anything but valid
+     */
     func miSnapWorkflowControllerLicenseStatus(_ status: MiSnapLicenseStatus)
-    
+    /**
+     Delegates receive this callback when there's a view controller for a given step should be presented
+     */
     func miSnapWorkflowControllerPresent(_ vc: UIViewController!, supportedOrientation: UIInterfaceOrientationMask, step: MiSnapWorkflowStep)
-        
+    /**
+     Delegates receive this callback when all steps are successfully presented and the final result is available
+     */
     func miSnapWorkflowControllerDidFinishPresentingSteps(_ result: MiSnapWorkflowResult)
-    
+    /**
+     Delegates receive this callback after each completed step
+     */
     func miSnapWorkflowControllerIntermediate(_ result: Any, step: MiSnapWorkflowStep)
-    
+    /**
+     Delegates receive this callback when a user cancels a flow on any step
+     */
     func miSnapWorkflowControllerCancelled(_ result: MiSnapWorkflowResult)
-    
+    /**
+     Delegates receive this callback when an error occurs in any SDK
+     */
     func miSnapWorkflowControllerError(_ result: MiSnapWorkflowResult)
     
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
+    /**
+     Delegates receive this callback when an NFC step is skipped by a user
+     */
     func miSnapWorkflowControllerNfcSkipped(_ result: [String : Any])
     #endif
     
     #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
+    /**
+     Delegates receive this callback when a use has chosen a phrase in an Enrollment flow
+     */
     func miSnapWorkflowControllerDidSelectPhrase(_ phrase: String)
     #endif
 }
 
 extension MiSnapWorkflowControllerDelegate {
     func miSnapWorkflowControllerIntermediate(_ result: Any, step: MiSnapWorkflowStep) {}
+    func miSnapWorkflowControllerNfcSkipped(_ result: [String : Any]) {}
 }
-
+/**
+ Workflow result
+ */
 class MiSnapWorkflowResult: NSObject {
     #if canImport(MiSnapUX) && canImport(MiSnap)
+    /**
+     ID/DL/RP Front result
+     */
     var idFront: MiSnapResult?
+    /**
+     ID/DL/RP Back result
+     */
     var idBack: MiSnapResult?
+    /**
+     Passport result
+     */
     var passport: MiSnapResult?
+    /**
+     Passport QR result
+     */
     var passportQr: MiSnapResult?
     #endif
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
+    /**
+     NFC result
+     */
     var nfc: [String : Any]?
     #endif
     #if canImport(MiSnapFacialCaptureUX) && canImport(MiSnapFacialCapture)
+    /**
+     Face result
+     */
     var face: MiSnapFacialCaptureResult?
     #endif
     #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
+    /**
+     Voice result
+     */
     var voice: [MiSnapVoiceCaptureResult]?
     #endif
+    /**
+     Flow
+     */
     var flow: MiSnapWorkflowFlow = .authentication
-    
+    /**
+     Resets existing results
+     */
     internal func reset() {
         #if canImport(MiSnapUX) && canImport(MiSnap)
         idFront = nil
@@ -113,8 +204,13 @@ class MiSnapWorkflowResult: NSObject {
         #endif
     }
 }
-
+/**
+ Workflow controller
+ */
 class MiSnapWorkflowController: NSObject {
+    /**
+     Delegate
+     */
     public weak var delegate: MiSnapWorkflowControllerDelegate?
     private var flow: MiSnapWorkflowFlow = .authentication
     private var phrase: String?
@@ -145,13 +241,17 @@ class MiSnapWorkflowController: NSObject {
     private lazy var viewController: UIViewController? = {
         return UIViewController.init()
     }()
-    
+    /**
+     Initializes a controller for MobileVerify
+     */
     public init(with steps:[MiSnapWorkflowStep], delegate: MiSnapWorkflowControllerDelegate) {
         self.mutableSteps = steps
         self.delegate = delegate
         self.result.flow = flow
     }
-    
+    /**
+     Initializes a controller for MiPass
+     */
     public init(for flow: MiSnapWorkflowFlow, with steps:[MiSnapWorkflowStep], delegate: MiSnapWorkflowControllerDelegate, phrase: String? = nil) {
         self.flow = flow
         self.result.flow = flow
@@ -159,7 +259,9 @@ class MiSnapWorkflowController: NSObject {
         self.delegate = delegate
         self.phrase = phrase
     }
-    
+    /**
+     Presents the next step
+     */
     public func nextStep() {
         if let licenseStatus = licenseStatus {
             delegate?.miSnapWorkflowControllerLicenseStatus(licenseStatus)

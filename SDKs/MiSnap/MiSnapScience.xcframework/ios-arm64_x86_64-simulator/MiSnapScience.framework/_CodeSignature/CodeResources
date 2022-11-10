@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapScience.h</key>
 		<data>
-		MZIVNLu988G+hjxBSt8bfePWKKo=
+		ZMpNczMAEqoSOCrmBSglz/69i/k=
 		</data>
 		<key>Headers/MiSnapScienceClassificationResult.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/MiSnapScienceExtractionResult.h</key>
 		<data>
-		qYnKp7JdHUns25AjGSv0XF41RMo=
+		3l/9RblXi0YTg3iss4wHv+i4MYw=
 		</data>
 		<key>Headers/MiSnapScienceIQAResult.h</key>
 		<data>
@@ -22,15 +22,15 @@
 		</data>
 		<key>Headers/MiSnapScienceMrz.h</key>
 		<data>
-		TXlDseVjMeYhcox6hzSW5+IoJLE=
+		OkGP31VF3phOyKbJs8ks1rG5Qiw=
 		</data>
 		<key>Headers/MiSnapScienceParameters.h</key>
 		<data>
-		r56oU+MkDdd5h2dFWsDNJKVr2gU=
+		eLmco6HtZKMjCbpi08acsi4yBvU=
 		</data>
 		<key>Headers/MiSnapScienceResult.h</key>
 		<data>
-		ZGMKBBXWUFe78Gj/iezjp+ju2xY=
+		acrZLyYPkmoaimjAyhWQFRDJ44c=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fgz+PfTW0IpMZcVAmQWJ+UBxa73y1/nwmD8hLWnvAP4=
+			84Cm0zeapBCfTluN4uJPgtGxkAeAIDrwVuP/M9HSTYk=
 			</data>
 		</dict>
 		<key>Headers/MiSnapScienceClassificationResult.h</key>
@@ -65,7 +65,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DHirSXhwfUAqz9A3q2cLare+y9/9QFMmYBMmLEODQZw=
+			wYUNnZcA52BDsXPk81tNf+p+U7Knex0KXQYxQt7O4Kk=
 			</data>
 		</dict>
 		<key>Headers/MiSnapScienceIQAResult.h</key>
@@ -79,21 +79,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vYI4dFy29+wSqMsSVHkSWoEepMq4wIo9hjiQ0By/hkw=
+			G1JokNQAeT6Q+Yt9LTfmQQ2OkgZ1M4XGkILUKyZXQzY=
 			</data>
 		</dict>
 		<key>Headers/MiSnapScienceParameters.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XgL/akiB5G2RBqzHypaE9a39G5U+YwV2jKN6cePLb+I=
+			+jWXdHCc1fcD0pzFOERMbmBzDMY5hev5yC+10wXyCkY=
 			</data>
 		</dict>
 		<key>Headers/MiSnapScienceResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			am8+gvq5IkppTg9NnCsdh+ZeVkvfLexft5LCpuW9qgQ=
+			1+RHmIRYtENXKGc4qKxt2YHDbLpXFn2Cib7cVrO9mUE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -122,7 +122,7 @@ import _Concurrency
   }
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapVoiceCaptureConfiguration, delegate: MiSnapVoiceCaptureViewControllerDelegate)
   @objc @_Concurrency.MainActor(unsafe) public static func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> Swift.Void)
-  @objc @_Concurrency.MainActor(unsafe) public func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {

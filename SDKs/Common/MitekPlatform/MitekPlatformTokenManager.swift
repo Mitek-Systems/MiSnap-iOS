@@ -2,12 +2,14 @@
 //  MitekPlatformTokenManager.swift
 //  MitekPlatform
 //
-//  Created by Mitek Engineering on 7/20/20.
+//  Created by Stas Tsuprenko on 7/20/20.
 //  Copyright © 2020 Mitek Systems Inc. All rights reserved.
 //
 
 import UIKit
-
+/**
+ Mitek platform token manager
+ */
 public class MitekPlatformTokenManager {
     private var url: String = ""
     private var id: String = ""
@@ -19,14 +21,18 @@ public class MitekPlatformTokenManager {
     private var dataTask: URLSessionDataTask?
     
     private var tokenExpirationTimer: Timer?
-    
+    /**
+     Sets info necessary for gettign a token
+     */
     public func set(url: String, id: String, secret: String, scope: String) {
         self.url = url
         self.id = id
         self.secret = secret
         self.scope = scope
     }
-    
+    /**
+     Gets a token
+     */
     public func getToken(completed: @escaping (String?, Error?) -> Void) {
         if let token = token {
             completed(token, nil)
@@ -107,5 +113,4 @@ public class MitekPlatformTokenManager {
         
         self.token = nil
     }
-    
 }

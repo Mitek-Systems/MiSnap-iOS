@@ -25,12 +25,12 @@ class ViewController: UIViewController {
             
             phraseSelection.phrase.font = .systemFont(ofSize: 21.0, weight: .bold)
             
-            phraseSelection.button.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+            phraseSelection.buttons.proceed.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         }
         .withCustomIntroductoryInstruction { introductoryInstruction in
             introductoryInstruction.instruction.font = .systemFont(ofSize: 29, weight: .thin)
             
-            introductoryInstruction.button.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+            introductoryInstruction.buttons.proceed.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         }
         .withCustomRecording { recording in
             recording.success.color = .systemBlue
@@ -42,10 +42,10 @@ class ViewController: UIViewController {
             recording.failure.color = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
             recording.failure.backgroundColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)
             
-            recording.cancel.color = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-            recording.cancel.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-            recording.cancel.colorDarkMode = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-            recording.cancel.backgroundColorDarkMode = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+            recording.buttons.cancel.color = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+            recording.buttons.cancel.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            recording.buttons.cancel.colorDarkMode = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            recording.buttons.cancel.backgroundColorDarkMode = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
             
             recording.message.color = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
             
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
             
             recording.failureMessage.font = .systemFont(ofSize: 22, weight: .bold)
             
-            recording.failureAcknowledgment.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+            recording.buttons.failureAcknowledgment.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         }
         .withCustomLocalization { localization in
             localization.bundle = Bundle.main
@@ -274,7 +274,7 @@ extension ViewController {
         guard let misnapVoiceCaptureVC = misnapVoiceCaptureVC else { return }
                                 
         let minDiskSpace: Int = 20
-        if !misnapVoiceCaptureVC.hasMinDiskSpace(minDiskSpace) {
+        if !MiSnapVoiceCaptureViewController.hasMinDiskSpace(minDiskSpace) {
             presentAlert(withTitle: "Not Enough Space", message: "Please, delete old/unused files to have at least \(minDiskSpace) MB of free space")
             return
         }

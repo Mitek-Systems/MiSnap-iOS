@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        MiSnapLicenseManager.shared().setLicenseKey("your-license-key-here")
+        MiSnapLicenseManager.shared().setLicenseKey("your_license_key_here")
         print(MiSnapLicenseManager.shared().description)
         return true
     }

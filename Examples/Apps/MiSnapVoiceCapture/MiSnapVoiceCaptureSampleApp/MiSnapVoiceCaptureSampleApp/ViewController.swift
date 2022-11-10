@@ -217,7 +217,7 @@ extension ViewController {
         guard let misnapVoiceCaptureVC = misnapVoiceCaptureVC else { return }
                                 
         let minDiskSpace: Int = 20
-        if !misnapVoiceCaptureVC.hasMinDiskSpace(minDiskSpace) {
+        if !MiSnapVoiceCaptureViewController.hasMinDiskSpace(minDiskSpace) {
             presentAlert(withTitle: "Not Enough Space", message: "Please, delete old/unused files to have at least \(minDiskSpace) MB of free space")
             return
         }

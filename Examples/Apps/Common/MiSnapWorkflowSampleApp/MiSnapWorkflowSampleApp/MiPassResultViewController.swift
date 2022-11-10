@@ -34,6 +34,7 @@ class MiPassResultViewController: ResultViewController {
         logVoiceResults(result.voice)
         
         guard MitekPlatform.shared.hasValidMiPassConfiguration else {
+            handleEnrollmentFrontEndResult()
             return configureSubviews()
         }
         
@@ -156,6 +157,19 @@ extension MiPassResultViewController {
         }
         enrollmentInput.enrollmentId = serverResult.enrollmentId
         enrollmentInput.phrase = phrase
+    }
+    
+    private func handleEnrollmentFrontEndResult() {
+        if enrollmentModification == .deleteExistingAndReenroll {
+            enrollmentInput.reset()
+        }
+        enrollmentInput.phrase = phrase
+        if let _ = result.voice {
+            enrollmentInput.voiceEnrolled = true
+        }
+        if let _ = result.face {
+            enrollmentInput.faceEnrolled = true
+        }
     }
     
     private func handleVerification() {

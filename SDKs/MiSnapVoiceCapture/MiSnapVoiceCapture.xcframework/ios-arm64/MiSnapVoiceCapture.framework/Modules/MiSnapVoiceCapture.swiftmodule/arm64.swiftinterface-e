@@ -1,0 +1,109 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapVoiceCapture
+import AVFoundation
+import MiSnapLicenseManager
+import MiSnapMibiData
+@_exported import MiSnapVoiceCapture
+import Swift
+import UIKit
+import _Concurrency
+@objc public enum MiSnapVoiceCaptureStatus : Swift.Int {
+  case none = 0
+  case tooNoisy = 1
+  case tooShort = 2
+  case good = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureResult : ObjectiveC.NSObject {
+  @objc public var data: Foundation.Data? {
+    get
+  }
+  @objc public var status: MiSnapVoiceCaptureStatus {
+    get
+  }
+  @objc public var speechLength: Swift.Float {
+    get
+  }
+  @objc public var snr: Swift.Float {
+    get
+  }
+  @objc public var mibiString: Swift.String? {
+    get
+  }
+  @objc public var error: Foundation.NSError? {
+    get
+  }
+  @objc override dynamic public init()
+  @objc public init(with error: Foundation.NSError)
+  @objc public static func stringFromStatus(_ status: MiSnapVoiceCaptureStatus) -> Swift.String
+  @objc deinit
+}
+@objc public enum MiSnapVoiceCaptureFlow : Swift.Int {
+  case enrollment = 0
+  case verification = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class MiSnapVoiceCaptureParameters : ObjectiveC.NSObject {
+  @objc public var flow: MiSnapVoiceCaptureFlow {
+    get
+  }
+  @objc public var speechLengthMin: Swift.Float
+  @objc public var silenceLengthMax: Swift.Float
+  @objc public var snrMin: Swift.Float
+  @objc public init(for flow: MiSnapVoiceCaptureFlow)
+  @objc public static func string(from flow: MiSnapVoiceCaptureFlow) -> Swift.String
+  @objc deinit
+}
+@objc public enum MiSnapVoiceCaptureControllerInterruptionReason : Swift.Int {
+  case none
+  case notActive
+  case noise
+  case voiceOver
+  case micInUseByAnotherClient
+  case mediaReset
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol MiSnapVoiceCaptureControllerDelegate {
+  @objc func miSnapVoiceCaptureControllerLicenseStatus(_ status: MiSnapLicenseStatus)
+  @objc func miSnapVoiceCaptureControllerDidStart()
+  @objc func miSnapVoiceCaptureControllerSuccess(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureControllerFailure(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureControllerError(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureControllerCancel(_ result: MiSnapVoiceCaptureResult)
+  @objc func miSnapVoiceCaptureControllerInterruptionStarted(_ reason: MiSnapVoiceCaptureControllerInterruptionReason)
+  @objc func miSnapVoiceCaptureControllerInterruptionEnded()
+  @objc optional func miSnapVoiceCaptureControllerSpeechLength(_ speechLength: Swift.Int)
+}
+@objc public class MiSnapVoiceCaptureController : ObjectiveC.NSObject {
+  @objc public init(with parameters: MiSnapVoiceCaptureParameters, delegate: MiSnapVoiceCaptureControllerDelegate)
+  @objc public func start()
+  @objc public func cancel()
+  @objc public func shutdown()
+  @objc public func logModule(named name: Swift.String, version: Swift.String)
+  @objc deinit
+}
+extension MiSnapVoiceCaptureController {
+  public func miSnapVoiceCaptureAnalyzerDidStop(_ speechStart: Swift.Float)
+}
+extension MiSnapVoiceCaptureStatus : Swift.Equatable {}
+extension MiSnapVoiceCaptureStatus : Swift.Hashable {}
+extension MiSnapVoiceCaptureStatus : Swift.RawRepresentable {}
+extension MiSnapVoiceCaptureFlow : Swift.Equatable {}
+extension MiSnapVoiceCaptureFlow : Swift.Hashable {}
+extension MiSnapVoiceCaptureFlow : Swift.RawRepresentable {}
+extension MiSnapVoiceCaptureControllerInterruptionReason : Swift.Equatable {}
+extension MiSnapVoiceCaptureControllerInterruptionReason : Swift.Hashable {}
+extension MiSnapVoiceCaptureControllerInterruptionReason : Swift.RawRepresentable {}

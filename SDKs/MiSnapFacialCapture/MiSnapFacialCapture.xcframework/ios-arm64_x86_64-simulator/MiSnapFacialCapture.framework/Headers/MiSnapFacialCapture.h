@@ -15,7 +15,6 @@
 /**
  Umbrella header
 */
-
 @interface MiSnapFacialCapture : NSObject
 /**
  Version

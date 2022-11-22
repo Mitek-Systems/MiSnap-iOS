@@ -1,0 +1,72 @@
+identifier_name:
+  min_length:
+    warning: 1
+  excluded:
+    - id
+    - for
+    - key
+    - log
+    - URL
+    - vc
+    - w2
+    - i
+    - v
+    - ar
+    - ok
+    - w
+    - h
+    - x
+    - y
+    - dg
+    - K
+force_unwrapping: error
+force_try: warning
+disabled_rules:
+    - trailing_whitespace
+    - closure_parameter_position
+    - todo
+    - unused_optional_binding
+    - nesting
+    - large_tuple
+    - class_delegate_protocol
+    - colon
+    - file_length
+    - multiple_closures_with_trailing_closure
+    - no_space_in_method_call
+    - object_literal
+    - type_body_length
+    - comment_spacing
+    - inclusive_language
+    - empty_enum_arguments
+opt_in_rules:
+    - empty_count
+    - closure_spacing
+    - closure_end_indentation
+    - weak_delegate
+    - force_unwrapping
+    - nimble_operator
+line_length:
+  warning: 190
+  error: 250
+  ignores_function_declarations: true
+  ignores_comments: true
+  ignores_urls: true
+type_name:
+  min_length:
+    error: 3
+  max_length:
+    warning: 50
+  excluded:
+    - ID
+function_body_length:
+  warning: 300
+  error: 450
+cyclomatic_complexity:
+  warning: 20
+  ignores_case_statements: true
+empty_count: warning
+excluded:
+    - Carthage
+    - Pods/
+    - MiSnapWorkflowSampleApp/AppDelegate.swift
+reporter: "xcode"

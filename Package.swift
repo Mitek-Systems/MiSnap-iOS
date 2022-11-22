@@ -26,12 +26,20 @@ let package = Package(
             targets: ["MiSnapFacialCaptureUX","MiSnapAssetManager"]
         ),
         .library(
+            name: "MiSnapVoiceCapture",
+            targets: ["MiSnapVoiceCapture","VoiceSdk","MiSnapMibiData","MiSnapLicenseManager"]
+        ),
+        .library(
+            name: "MiSnapVoiceCaptureUX",
+            targets: ["MiSnapVoiceCaptureUX","MiSnapAssetManager"]
+        ),
+        .library(
             name: "MiSnapNFC",
             targets: ["MiSnapNFC","MiSnapMibiData","MiSnapLicenseManager"]
         ),
         .library(
             name: "MiSnapNFCUX",
-            targets: ["MiSnapNFCUX"]
+            targets: ["MiSnapNFCUX","MiSnapAssetManager"]
         )
     ],
     targets: [
@@ -66,6 +74,18 @@ let package = Package(
         .binaryTarget(
             name: "MiSnapFacialCaptureUX",
             path: "SDKs/MiSnapFacialCapture/MiSnapFacialCaptureUX.xcframework"
+        ),
+        .binaryTarget(
+            name: "MiSnapVoiceCapture",
+            path: "SDKs/MiSnapVoiceCapture/MiSnapVoiceCapture.xcframework"
+        ),
+        .binaryTarget(
+            name: "VoiceSdk",
+            path: "SDKs/MiSnapVoiceCapture/VoiceSdk.xcframework"
+        ),
+        .binaryTarget(
+            name: "MiSnapVoiceCaptureUX",
+            path: "SDKs/MiSnapVoiceCapture/MiSnapVoiceCaptureUX.xcframework"
         ),
         .binaryTarget(
             name: "MiSnapNFC",

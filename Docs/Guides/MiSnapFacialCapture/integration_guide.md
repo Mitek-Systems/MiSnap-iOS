@@ -2,6 +2,8 @@
 
 :warning: MiSnapFacialCapture 5.x has breaking API changes therefore to migrate from 3.x series, remove all old MiSnapFacialCapture references from your project.
 
+[MiSnapFacialCaptureSampleApp](../../../Examples/Apps/MiSnapFacialCapture/MiSnapFacialCaptureSampleApp) was created by following steps below. Please refer to this project as a working example.
+
 ## 1. Obtain the SDK(s)
 MiSnapFacialCapture 5.x is distributed through CocoaPods and Swift Package Manager. For detailed installation instructions refer to:
 * [CocoaPods installation guide](https://guides.cocoapods.org/using/using-cocoapods.html)
@@ -148,7 +150,7 @@ func miSnapFacialCaptureDidFinishRecordingVideo(_ videoData: Data?) {
 ```
 Note, if `autoDismiss` of `MiSnapFacialCaptureUXParameters` is overridden to `false`, a parent view controller that presented `MiSnapFacialCaptureViewController` is responsible for dismissing it. Implement the following optional callback to achive this:
 ```Swift
-func miSnapShouldBeDismissed() {
+func miSnapFacialCaptureShouldBeDismissed() {
     // Dismiss MiSnapFacialCaptureViewController here
 }
 ```

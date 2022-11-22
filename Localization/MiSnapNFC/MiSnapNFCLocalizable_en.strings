@@ -60,4 +60,6 @@
 "misnap_nfc_sdk_error_more_than_one_tag" = "More than 1 tag found. Please present only 1 tag";
 "misnap_nfc_sdk_error_invalid_tag" = "Tag not valid";
 "misnap_nfc_sdk_error_connection_not_established" = "Connection error. Please try again.";
+"misnap_nfc_sdk_error_system_resource_unavailable" = "Sorry, there was a system error.\nPlease reboot your device and re-start the flow";
+"misnap_nfc_sdk_error_system_error" = "Sorry, there was a system error.\nPlease try again and reboot a device if error persists";
 "misnap_nfc_sdk_error_unknown" = "Unknown error";

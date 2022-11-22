@@ -2,6 +2,8 @@
 
 :warning: This guide is only applicable if you've integrated `MiSnapNFCUX`. Use this [starter custom view controller](../../../Examples/Snippets/MiSnapNFC/CustomNFCViewController.swift) when building your own UX/UI.
 
+Please refer to [MiSnapNFCCustomizationSampleApp](../../../Examples/Apps/MiSnapNFC/MiSnapNFCCustomizationSampleApp) as a working customization example.
+
 ## Table of Contents
 * [Overview](#overview)
 * [UX Parameters](#ux-parameters)
@@ -42,7 +44,7 @@ For all available UX Parameters customization options see this [API reference](h
 
 # Localization
 
-Copy localization key-value pairs for a given language from [Localization](../../../Localization/MiSnapNFC) `(TODO)` folder and paste them into your Localizable.strings file.
+Copy localization key-value pairs for a given language from [Localization](../../../Localization/MiSnapNFC) folder and paste them into your Localizable.strings file.
 
 Create a template configuration (if it doesn't exist) and chain `.withCustomLocalization`. Refer to a snippet below.
 

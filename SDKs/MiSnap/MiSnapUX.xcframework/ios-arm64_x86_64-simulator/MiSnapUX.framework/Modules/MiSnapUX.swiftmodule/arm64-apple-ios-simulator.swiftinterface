@@ -26,9 +26,21 @@ import _Concurrency
   @objc optional func tutorialRetryButtonAction()
   @objc func tutorialCancelButtonAction()
 }
-@_inheritsConvenienceInitializers @objc public class MiSnapTutorialViewControllerConfiguration : ObjectiveC.NSObject {
-  @objc public var instruction: MiSnapTutorialViewControllerInstructionConfiguration
+@_inheritsConvenienceInitializers @objc public class MiSnapTutorialConfiguration : ObjectiveC.NSObject {
+  @objc public var buttons: MiSnapTutorialButtonsConfiguration
+  @objc public var instruction: MiSnapTutorialInstructionConfiguration
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapTutorialButtonsConfiguration : ObjectiveC.NSObject {
+  @objc public var barColor: UIKit.UIColor
+  @objc public var cancel: MiSnapLabelConfiguration
+  @objc public var retry: MiSnapLabelConfiguration
+  @objc public var proceed: MiSnapLabelConfiguration
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
   @objc deinit
 }
 @objc public enum MiSnapTutorialType : Swift.Int {
@@ -40,7 +52,7 @@ import _Concurrency
     get
   }
 }
-@objc @_inheritsConvenienceInitializers public class MiSnapTutorialViewControllerInstructionConfiguration : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers public class MiSnapTutorialInstructionConfiguration : ObjectiveC.NSObject {
   @objc public var type: MiSnapTutorialType {
     @objc get
     @objc set
@@ -107,6 +119,9 @@ import _Concurrency
   @objc public var glare: MiSnapGlareViewConfiguration {
     get
   }
+  @objc public var documentLabel: MiSnapLabelConfiguration {
+    get
+  }
   @objc public var cancel: MiSnapCancelViewConfiguration {
     get
   }
@@ -125,7 +140,7 @@ import _Concurrency
   @objc public var successCheckmark: MiSnapSuccessCheckmarkViewConfiguration {
     get
   }
-  @objc public var tutorial: MiSnapTutorialViewControllerConfiguration {
+  @objc public var tutorial: MiSnapTutorialConfiguration {
     get
   }
   @objc override dynamic public init()
@@ -135,6 +150,7 @@ import _Concurrency
   @objc public func withCustomGuide(completion: (MiSnapGuideViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomHint(completion: (MiSnapHintViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomGlare(completion: (MiSnapGlareViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomDocumentLabel(completion: (MiSnapLabelConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomCancel(completion: (MiSnapCancelViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomHelp(completion: (MiSnapHelpViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomTorch(completion: (MiSnapTorchViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
@@ -142,7 +158,8 @@ import _Concurrency
   @objc public func withCustomRecordingIndicator(completion: (MiSnapRecordingIndicatorViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomSuccessCheckmark(completion: (MiSnapSuccessCheckmarkViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomLocalization(completion: (MiSnapLocalizationConfiguration) -> Swift.Void) -> MiSnapConfiguration
-  @objc public func withCustomInstruction(completion: (MiSnapTutorialViewControllerInstructionConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomInstruction(completion: (MiSnapTutorialInstructionConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomTutorial(completion: (MiSnapTutorialConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func applying(_ template: MiSnapConfiguration) -> MiSnapConfiguration
   @objc public init(with parameters: MiSnapParameters, uxParameters: MiSnapUxParameters? = nil)
   @objc override dynamic public var description: Swift.String {
@@ -196,9 +213,9 @@ extension MiSnapViewController {
   @objc @_Concurrency.MainActor(unsafe) dynamic public func resumeAnalysis()
   @objc @_Concurrency.MainActor(unsafe) public static func miSnapVersion() -> Swift.String
   @objc @_Concurrency.MainActor(unsafe) public static func miSnapScienceVersion() -> Swift.String
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func checkCameraPermission(handler: @escaping (Swift.Bool) -> Swift.Void)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> Swift.Void)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public static func checkCameraPermission(handler: @escaping (Swift.Bool) -> Swift.Void)
+  @objc @_Concurrency.MainActor(unsafe) public static func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> Swift.Void)
+  @objc @_Concurrency.MainActor(unsafe) public static func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
 }
 extension MiSnapViewController : MiSnapTutorialViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func tutorialContinueButtonAction(for tutorialMode: MiSnapUxTutorialMode)

@@ -1,0 +1,11 @@
+framework module MiSnapVoiceCaptureUX {
+  umbrella header "MiSnapVoiceCaptureUX.h"
+
+  export *
+  module * { export * }
+}
+
+module MiSnapVoiceCaptureUX.Swift {
+    header "MiSnapVoiceCaptureUX-Swift.h"
+    requires objc
+}

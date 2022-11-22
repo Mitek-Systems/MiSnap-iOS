@@ -2,7 +2,7 @@
 //  MiSnapAssetManager.h
 //  MiSnapAssetManager
 //
-//  Created by Mitek Engineering on 2/3/22.
+//  Created by Stas Tsuprenko on 2/3/22.
 //
 
 #import <Foundation/Foundation.h>

@@ -95,9 +95,6 @@ import _Concurrency
   @objc public func logModule(named name: Swift.String, version: Swift.String)
   @objc deinit
 }
-extension MiSnapVoiceCaptureController {
-  public func miSnapVoiceCaptureAnalyzerDidStop(_ speechStart: Swift.Float)
-}
 extension MiSnapVoiceCaptureStatus : Swift.Equatable {}
 extension MiSnapVoiceCaptureStatus : Swift.Hashable {}
 extension MiSnapVoiceCaptureStatus : Swift.RawRepresentable {}

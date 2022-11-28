@@ -181,6 +181,7 @@ Refer to "Create the App Size Report" section of [this article](https://develope
     * Check back sometimes can be erroneously acquired when Check Front document type is invoked
 * MiSnapNFC
     * Some iPhone 7 devices fail NFC reading of eDriving License regardless of an iOS version
+    * Some iPhone XR devices fail NFC reading of some Italian eIDs
 * MiSnapFacialCapture
     * On iPhone 7 and earlier, the hint messages take a few seconds to begin appearing. During this time the message label will be blank
 * MiSnapVoiceCapture

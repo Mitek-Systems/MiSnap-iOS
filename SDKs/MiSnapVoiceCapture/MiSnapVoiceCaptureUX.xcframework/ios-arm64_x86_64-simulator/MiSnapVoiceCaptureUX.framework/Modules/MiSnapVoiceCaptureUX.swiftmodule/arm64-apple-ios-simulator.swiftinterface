@@ -31,6 +31,7 @@ import _Concurrency
   @objc public func withCustomIntroductoryInstruction(completion: (MiSnapVoiceCaptureIntroductoryInstructionConfiguration) -> Swift.Void) -> MiSnapVoiceCaptureConfiguration
   @objc public func withCustomRecording(completion: (MiSnapVoiceCaptureRecordingConfiguration) -> Swift.Void) -> MiSnapVoiceCaptureConfiguration
   @objc public func withCustomLocalization(completion: (MiSnapVoiceCaptureLocalizationConfiguration) -> Swift.Void) -> MiSnapVoiceCaptureConfiguration
+  @objc public func withCustomAssetLocation(completion: (MiSnapVoiceCaptureAssetLocationConfiguration) -> Swift.Void) -> MiSnapVoiceCaptureConfiguration
   @objc public func applying(_ template: MiSnapVoiceCaptureConfiguration) -> MiSnapVoiceCaptureConfiguration
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -46,6 +47,8 @@ import _Concurrency
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCapturePhraseSelectionConfiguration : ObjectiveC.NSObject {
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var backgroundColorDarkMode: UIKit.UIColor?
   @objc public var message: MiSnapLabelConfiguration
   @objc public var phrase: MiSnapLabelConfiguration
   @objc public var buttons: MiSnapVoiceCapturePhraseSelectionButtonsConfiguration
@@ -64,8 +67,9 @@ import _Concurrency
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureIntroductoryInstructionConfiguration : ObjectiveC.NSObject {
-  @objc public var image: UIKit.UIImage?
-  @objc public var instruction: MiSnapLabelConfiguration
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var backgroundColorDarkMode: UIKit.UIColor?
+  @objc public var message: MiSnapLabelConfiguration
   @objc public var buttons: MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
@@ -83,6 +87,8 @@ import _Concurrency
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureRecordingConfiguration : ObjectiveC.NSObject {
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var backgroundColorDarkMode: UIKit.UIColor?
   @objc public var neutral: MiSnapVoiceCaptureNeutralViewConfiguration
   @objc public var success: MiSnapVoiceCaptureSuccessViewConfiguration
   @objc public var failure: MiSnapVoiceCaptureFailureViewConfiguration
@@ -144,11 +150,23 @@ extension MiSnapVoiceCaptureViewController : MiSnapVoiceCaptureControllerDelegat
   @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerInterruptionEnded()
   @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerSpeechLength(_ speechLength: Swift.Int)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MiSnapVoiceCaptureLocalizationConfiguration : ObjectiveC.NSObject {
+extension MiSnapVoiceCaptureViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureLocalizationConfiguration : ObjectiveC.NSObject {
   @objc public var bundle: Foundation.Bundle
   @objc public var stringsName: Swift.String
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureAssetLocationConfiguration : ObjectiveC.NSObject {
+  @objc public var bundle: Foundation.Bundle
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
   @objc deinit
 }

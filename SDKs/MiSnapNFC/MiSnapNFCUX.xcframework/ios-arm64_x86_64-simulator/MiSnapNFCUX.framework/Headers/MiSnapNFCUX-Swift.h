@@ -192,7 +192,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import MiSnapLicenseManager;
-@import MiSnapNFC;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -213,51 +212,46 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class MiSnapNFCInputs;
+@class MiSnapNFCParameters;
 @class MiSnapNFCUxParameters;
 @class MiSnapNFCLocalizationConfiguration;
+@class MiSnapNFCAssetLocationConfiguration;
 @class MiSnapNFCScanConfiguration;
 @class NSString;
 
 /// A session  configuration
 SWIFT_CLASS("_TtC11MiSnapNFCUX22MiSnapNFCConfiguration")
 @interface MiSnapNFCConfiguration : NSObject
-/// Creates and returns configuration object with default UX configuration.
-/// <ul>
-///   <li>
-///     Return: An instance of <code>MiSnapNFCConfiguration</code>
-///   </li>
-/// </ul>
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Convenience function for UX parameters customization
 - (MiSnapNFCConfiguration * _Nonnull)withInputsWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCInputs * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for parameters customization
+- (MiSnapNFCConfiguration * _Nonnull)withCustomParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for UX parameters customization
 - (MiSnapNFCConfiguration * _Nonnull)withCustomUxParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCUxParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapNFCConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Asset location customization
+- (MiSnapNFCConfiguration * _Nonnull)withCustomAssetLocationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCAssetLocationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for scan screen customization
 - (MiSnapNFCConfiguration * _Nonnull)withCustomScanWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCScanConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Description of <code>MiSnapNFCConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImage;
 
-/// Inputs required for a session initialization
-SWIFT_CLASS("_TtC11MiSnapNFCUX15MiSnapNFCInputs")
-@interface MiSnapNFCInputs : NSObject
-/// Document number
-@property (nonatomic, copy) NSString * _Nonnull documentNumber;
-/// Date of birth in YYMMDD format
-@property (nonatomic, copy) NSString * _Nonnull dateOfBirth;
-/// Date of expiry in YYMMDD format
-@property (nonatomic, copy) NSString * _Nonnull dateOfExpiry;
-/// MRZ string
-@property (nonatomic, copy) NSString * _Nonnull mrzString;
-/// Document type
-@property (nonatomic) enum MiSnapNFCDocumentType documentType;
-/// Chip location
-@property (nonatomic) enum MiSnapNFCChipLocation chipLocation;
-/// Description of <code>MiSnapNFCInputs</code>
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Instruction configuration
+SWIFT_CLASS("_TtC11MiSnapNFCUX33MiSnapNFCInstructionConfiguration")
+@interface MiSnapNFCInstructionConfiguration : NSObject
+/// Device image
+@property (nonatomic, strong) UIImage * _Nullable device;
+/// ID image
+@property (nonatomic, strong) UIImage * _Nullable id;
+/// Passport image
+@property (nonatomic, strong) UIImage * _Nullable passport;
+/// Target image
+@property (nonatomic, strong) UIImage * _Nullable target;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -285,8 +279,21 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX33MiSnapNFCScanButtonsConfiguration")
 /// A scan screen configuration
 SWIFT_CLASS("_TtC11MiSnapNFCUX26MiSnapNFCScanConfiguration")
 @interface MiSnapNFCScanConfiguration : NSObject
+/// Background color
+/// Default: <code>.systemBackground</code> for iOS >= 13  and <code>.white</code> for the rest
+/// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Background color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
+/// Message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Failure message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureMessage;
 /// Scan screen buttons configuration
 @property (nonatomic, strong) MiSnapNFCScanButtonsConfiguration * _Nonnull buttons;
+/// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -295,19 +302,10 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX26MiSnapNFCScanConfiguration")
 /// UX parameters used during the chip reading process
 SWIFT_CLASS("_TtC11MiSnapNFCUX21MiSnapNFCUxParameters")
 @interface MiSnapNFCUxParameters : NSObject
-/// Timeout (sec)
-/// Range: 10…59
-/// Default: 15
-@property (nonatomic) NSTimeInterval timeout;
-/// Indicates whether Chip Authentication should be skipped
-/// Default: <code>false</code>
-@property (nonatomic) BOOL skipCA;
 /// Indicates whether MiSnapViewController should be automatically dismissed or
 /// will be dismissed by a presenting view controller
 /// Default: <code>true</code>
 @property (nonatomic) BOOL autoDismiss;
-/// Log level
-@property (nonatomic) enum MiSnapNFCLogLevel logLevel;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -566,7 +564,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import MiSnapLicenseManager;
-@import MiSnapNFC;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -587,51 +584,46 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class MiSnapNFCInputs;
+@class MiSnapNFCParameters;
 @class MiSnapNFCUxParameters;
 @class MiSnapNFCLocalizationConfiguration;
+@class MiSnapNFCAssetLocationConfiguration;
 @class MiSnapNFCScanConfiguration;
 @class NSString;
 
 /// A session  configuration
 SWIFT_CLASS("_TtC11MiSnapNFCUX22MiSnapNFCConfiguration")
 @interface MiSnapNFCConfiguration : NSObject
-/// Creates and returns configuration object with default UX configuration.
-/// <ul>
-///   <li>
-///     Return: An instance of <code>MiSnapNFCConfiguration</code>
-///   </li>
-/// </ul>
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Convenience function for UX parameters customization
 - (MiSnapNFCConfiguration * _Nonnull)withInputsWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCInputs * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for parameters customization
+- (MiSnapNFCConfiguration * _Nonnull)withCustomParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for UX parameters customization
 - (MiSnapNFCConfiguration * _Nonnull)withCustomUxParametersWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCUxParameters * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapNFCConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Asset location customization
+- (MiSnapNFCConfiguration * _Nonnull)withCustomAssetLocationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCAssetLocationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for scan screen customization
 - (MiSnapNFCConfiguration * _Nonnull)withCustomScanWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapNFCScanConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Description of <code>MiSnapNFCConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImage;
 
-/// Inputs required for a session initialization
-SWIFT_CLASS("_TtC11MiSnapNFCUX15MiSnapNFCInputs")
-@interface MiSnapNFCInputs : NSObject
-/// Document number
-@property (nonatomic, copy) NSString * _Nonnull documentNumber;
-/// Date of birth in YYMMDD format
-@property (nonatomic, copy) NSString * _Nonnull dateOfBirth;
-/// Date of expiry in YYMMDD format
-@property (nonatomic, copy) NSString * _Nonnull dateOfExpiry;
-/// MRZ string
-@property (nonatomic, copy) NSString * _Nonnull mrzString;
-/// Document type
-@property (nonatomic) enum MiSnapNFCDocumentType documentType;
-/// Chip location
-@property (nonatomic) enum MiSnapNFCChipLocation chipLocation;
-/// Description of <code>MiSnapNFCInputs</code>
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Instruction configuration
+SWIFT_CLASS("_TtC11MiSnapNFCUX33MiSnapNFCInstructionConfiguration")
+@interface MiSnapNFCInstructionConfiguration : NSObject
+/// Device image
+@property (nonatomic, strong) UIImage * _Nullable device;
+/// ID image
+@property (nonatomic, strong) UIImage * _Nullable id;
+/// Passport image
+@property (nonatomic, strong) UIImage * _Nullable passport;
+/// Target image
+@property (nonatomic, strong) UIImage * _Nullable target;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -659,8 +651,21 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX33MiSnapNFCScanButtonsConfiguration")
 /// A scan screen configuration
 SWIFT_CLASS("_TtC11MiSnapNFCUX26MiSnapNFCScanConfiguration")
 @interface MiSnapNFCScanConfiguration : NSObject
+/// Background color
+/// Default: <code>.systemBackground</code> for iOS >= 13  and <code>.white</code> for the rest
+/// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Background color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
+/// Message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Failure message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureMessage;
 /// Scan screen buttons configuration
 @property (nonatomic, strong) MiSnapNFCScanButtonsConfiguration * _Nonnull buttons;
+/// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -669,19 +674,10 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX26MiSnapNFCScanConfiguration")
 /// UX parameters used during the chip reading process
 SWIFT_CLASS("_TtC11MiSnapNFCUX21MiSnapNFCUxParameters")
 @interface MiSnapNFCUxParameters : NSObject
-/// Timeout (sec)
-/// Range: 10…59
-/// Default: 15
-@property (nonatomic) NSTimeInterval timeout;
-/// Indicates whether Chip Authentication should be skipped
-/// Default: <code>false</code>
-@property (nonatomic) BOOL skipCA;
 /// Indicates whether MiSnapViewController should be automatically dismissed or
 /// will be dismissed by a presenting view controller
 /// Default: <code>true</code>
 @property (nonatomic) BOOL autoDismiss;
-/// Log level
-@property (nonatomic) enum MiSnapNFCLogLevel logLevel;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

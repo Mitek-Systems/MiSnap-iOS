@@ -14,6 +14,13 @@ It's highly recommended to use one of these distribution managers but manual int
 ### SDK and UX/UI
 It is Mitek's recommended option to integrated both SDK and UX/UI which is highly customizable.
 
+From 5.2.0 onwards localization and image assets are moved out of `MiSnapFacialCaptureUX` framework to enable easy customization while making sure app size is not ballooned. As such, regardless of your choise of integration (CocoaPods, Swift Package Manager, manual) the first step should be adding assets to your Xcode project. Here's how to do this:
+* Copy `MiSnapFacialCapture` folder from [here](../../../Assets) into your project's location
+* In Xcode, File > Add Files to "YourAppName"...
+* Select copied folder and make sure:
+    * `Create groups` option is selected in `Added folders` section
+    * All necessary targets are checked in `Add to targets` section
+
 #### CocoaPods
 
 Include the following in your Podfile

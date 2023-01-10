@@ -208,79 +208,79 @@ typedef NS_ENUM(NSInteger, MiSnapScienceGeoRegion) {
 /**
  Minimum horizontal fill required to acquire an image in Landscape orientation.  E.g. 800 = 80.0%
  
- Range: 500...1000
+ Range: `500...1000`
  */
 @property (nonatomic, readwrite) NSInteger landscapeFill;
 /**
  Minimum horizontal fill required to acquire an image in Portrait orientation.  E.g. 800 = 80.0%
 
- Range: 500...1000
+ Range: `500...1000`
  */
 @property (nonatomic, readwrite) NSInteger portraitFill;
 /**
  Minimum Corner Confidence
  
- Range: 0...1000
+ Range: `0...1000`
  */
 @property (nonatomic, readwrite) NSInteger cornerConfidence;
 /**
  Minimum Glare Confidence
 
- Range: 0...1000
+ Range: `0...1000`
  */
 @property (nonatomic, readwrite) NSInteger glareConfidence;
 /**
  Minimum Contrast Confidence
 
- Range: 0...1000
+ Range: `0...1000`
  */
 @property (nonatomic, readwrite) NSInteger contrastConfidence;
 /**
  Minimum Background Confidence
 
- Range: 0...1000
+ Range: `0...1000`
  */
 @property (nonatomic, readwrite) NSInteger backgroundConfidence;
 /**
  Minimum MICR Confidence
 
- Range: 0...1000
+ Range: `0...1000`
  */
 @property (nonatomic, readwrite) NSInteger micrConfidence;
 /**
  Minimum brightness
 
- Range: 0...1000
+ Range: `0...1000`
  */
 @property (nonatomic, readwrite) NSInteger minBrightness;
 /**
  Maximum brightness
 
- Range: 0...1000
+ Range: `0...1000`
  */
 @property (nonatomic, readwrite) NSInteger maxBrightness;
 /**
  Minimum sharpness
 
- Range: 0...1000
+ Range: `0...1000`
  */
 @property (nonatomic, readwrite) NSInteger sharpness;
 /**
  Minimum image padding between document rectangle and image frame
 
- Range: 0...1000
+ Range: `0...1000`
  */
 @property (nonatomic, readwrite) NSInteger padding;
 /**
  Skew angle (tilt)
 
- Range: 0...1000
+ Range: `0...1000`
  */
 @property (nonatomic, readwrite) NSInteger skewAngle;
 /**
  Rotation angle
 
- Range: 0...1000
+ Range: `0...1000`
  */
 @property (nonatomic, readwrite) NSInteger rotationAngle;
 /**
@@ -290,11 +290,18 @@ typedef NS_ENUM(NSInteger, MiSnapScienceGeoRegion) {
  */
 @property (nonatomic, readwrite) MiSnapScienceGeoRegion geoRegion;
 /**
- Indicate whether On-Device Classification should be done when licensed
+ Indicates whether On-Device Classification should be done when licensed
  
- Default: TRUE
+ Default: `TRUE`
  */
 @property (nonatomic, readwrite) BOOL odcEnabled;
+/**
+ Indicates whether redaction is enabled for:
+ - Personal number (BSN) in NLD Passports MRZ
+ 
+ Default: `FALSE`
+ */
+@property (nonatomic, readwrite) BOOL optionalDataRedactionEnabled;
 /**
  String code for `MiSnapScienceDocumentType`
  */

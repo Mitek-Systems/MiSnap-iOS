@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapNFCUX-Swift.h</key>
 		<data>
-		5LjG+2qD3B/rFUWUDkQ32RxHCmE=
+		Vip4+VuzhkIiGtT3My5zgAE5jKk=
 		</data>
 		<key>Headers/MiSnapNFCUX.h</key>
 		<data>
@@ -18,65 +18,31 @@
 		</data>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ttq6rNbOEnZ2uW7eV69mqaML/M4=
+		Y6kChmw6x69lo/uyB+zNe8BHPKg=
 		</data>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		03uH5KKvrpebu3/1mOh0GX9zCYs=
+		pX6LggEvKOAz0VNPP+47qn/Sx1w=
 		</data>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Gxy//D8JWx+TlP2ANMGtVFEI6iE=
+		9EQTkzzyuV+PZ3EIHS3K0e+ZgVg=
 		</data>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		ttq6rNbOEnZ2uW7eV69mqaML/M4=
+		Y6kChmw6x69lo/uyB+zNe8BHPKg=
 		</data>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		03uH5KKvrpebu3/1mOh0GX9zCYs=
+		pX6LggEvKOAz0VNPP+47qn/Sx1w=
 		</data>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Gxy//D8JWx+TlP2ANMGtVFEI6iE=
+		9EQTkzzyuV+PZ3EIHS3K0e+ZgVg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		/YTLyfXBwmyWg4UKtuQHsgnpti8=
-		</data>
-		<key>device.png</key>
-		<data>
-		uf6rdaM/xFmt/rDI29pL95GInqU=
-		</data>
-		<key>en.lproj/MiSnapNFCLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			U8a5Uz/UpzW6I0gHRBt2IXpwtxs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/MiSnapNFCLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZpVkPGF66qG7igEEnUyDXnyfzj0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>id.png</key>
-		<data>
-		YCQNcFWeETu8aJaXUBdOiv7tulQ=
-		</data>
-		<key>passport.png</key>
-		<data>
-		wcj7DyChj7fuMSBzgTNS0BCWcvA=
-		</data>
-		<key>target.png</key>
-		<data>
-		JnFFIwlt+zzBWVkZwFxR157MqwA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -85,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TiROcn70l4iXK25AxJEC0l8HOzzt9zvegXLWndT27Rs=
+			eyhiFfLnquPnpLBiPgOb2CDgNPS3eG9r3oabmyo37wE=
 			</data>
 		</dict>
 		<key>Headers/MiSnapNFCUX.h</key>
@@ -99,42 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4MDsP70WdVo5CZax7QrxG6UD328sSUjijYIGM20MPZc=
+			dyZYZSRZIC5VhuzouSmhIJ/mMQUtj25nkMkYwYa0QY8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C8bsCrGVOHGqVT5Ih1ABfe5EAv2erTXmNSSsxgice7c=
+			I+/111/cOD97hlCQsOKsIsrEPoheigLeb1GYLluGrFQ=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WbjwtkeZijf65F6v+5ZYag2UvKgVkF2E2VNl3gg1c8o=
+			KFfLG0oqEaldTlq5ppBHzopufYt1aPQ2Pof6yYAW0D4=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4MDsP70WdVo5CZax7QrxG6UD328sSUjijYIGM20MPZc=
+			dyZYZSRZIC5VhuzouSmhIJ/mMQUtj25nkMkYwYa0QY8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C8bsCrGVOHGqVT5Ih1ABfe5EAv2erTXmNSSsxgice7c=
+			I+/111/cOD97hlCQsOKsIsrEPoheigLeb1GYLluGrFQ=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WbjwtkeZijf65F6v+5ZYag2UvKgVkF2E2VNl3gg1c8o=
+			KFfLG0oqEaldTlq5ppBHzopufYt1aPQ2Pof6yYAW0D4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -142,52 +108,6 @@
 			<key>hash2</key>
 			<data>
 			K/QfuvOnenzmbp2ZYqchzaVpenUgloq+5DWkSWJk07A=
-			</data>
-		</dict>
-		<key>device.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Pk7gMh+08tMPpeIbCnWo1QshytYIYzaX54D5+7FcojU=
-			</data>
-		</dict>
-		<key>en.lproj/MiSnapNFCLocalizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fGlswNsTO5giIQNZPmlrN9RsmKNgXf4P6Ay/8oWzkAg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/MiSnapNFCLocalizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SS2uP8quHCcLwQx1qhBLYqRauQSYBpb4fpHuPovh0NQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>id.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JZ3xTZFQf6TklAcA3ZK4o8Yitm/58/WQMIoOH8rAYCM=
-			</data>
-		</dict>
-		<key>passport.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Zi7NflH+8x2Xt7Mt6+eT0dwiBIf32qro//WMHwI6wKY=
-			</data>
-		</dict>
-		<key>target.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			x9gYeeQHRuF0TzexhZdzY5UZInzJZ2XX4iFwLfGSbwY=
 			</data>
 		</dict>
 	</dict>

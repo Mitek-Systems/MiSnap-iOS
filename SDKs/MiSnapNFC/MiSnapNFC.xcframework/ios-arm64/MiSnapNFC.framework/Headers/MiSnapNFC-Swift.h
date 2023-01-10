@@ -188,6 +188,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -212,10 +213,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Asset location configuration
 SWIFT_CLASS("_TtC9MiSnapNFC35MiSnapNFCAssetLocationConfiguration")
 @interface MiSnapNFCAssetLocationConfiguration : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Description of <code>MiSnapNFCAssetLocationConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 /// Chip location
@@ -252,13 +252,38 @@ typedef SWIFT_ENUM(NSInteger, MiSnapNFCDocumentType, open) {
 };
 
 
+/// Inputs required for a session initialization
+SWIFT_CLASS("_TtC9MiSnapNFC15MiSnapNFCInputs")
+@interface MiSnapNFCInputs : NSObject
+/// Document number
+@property (nonatomic, copy) NSString * _Nonnull documentNumber;
+/// Date of birth in YYMMDD format
+@property (nonatomic, copy) NSString * _Nonnull dateOfBirth;
+/// Date of expiry in YYMMDD format
+@property (nonatomic, copy) NSString * _Nonnull dateOfExpiry;
+/// MRZ string
+@property (nonatomic, copy) NSString * _Nonnull mrzString;
+/// Document type
+@property (nonatomic) enum MiSnapNFCDocumentType documentType;
+/// Chip location
+@property (nonatomic) enum MiSnapNFCChipLocation chipLocation;
+/// Description of <code>MiSnapNFCInputs</code>
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSBundle;
+
 /// Localization configuration
 SWIFT_CLASS("_TtC9MiSnapNFC34MiSnapNFCLocalizationConfiguration")
 @interface MiSnapNFCLocalizationConfiguration : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Bundle where localizable files are located
+@property (nonatomic, strong) NSBundle * _Nonnull bundle;
+/// Localizable file name
+@property (nonatomic, copy) NSString * _Nonnull stringsName;
 /// Description of <code>MiSnapNFCLocalizationConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 /// Log level
@@ -275,6 +300,34 @@ typedef SWIFT_ENUM(NSInteger, MiSnapNFCLogLevel, open) {
   MiSnapNFCLogLevelError = 4,
 };
 
+@class NSNumber;
+
+/// Parameters used during chip scanning process
+SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
+@interface MiSnapNFCParameters : NSObject
+/// Timeout (sec)
+/// Range: <code>10...59</code>
+/// Default: <code>15</code>
+@property (nonatomic) NSTimeInterval timeout;
+/// Indicates whether Chip Authentication should be skipped
+/// Default: <code>false</code>
+@property (nonatomic) BOOL skipCA;
+/// Indicates whether redaction is enabled for:
+/// <ul>
+///   <li>
+///     Personal number (BSN) in NLD Passports MRZ
+///   </li>
+/// </ul>
+/// Default: <code>false</code>
+@property (nonatomic) BOOL optionalDataRedactionEnabled;
+/// Log level
+/// Default: <code>info</code>
+@property (nonatomic) enum MiSnapNFCLogLevel logLevel;
+/// Description of <code>MiSnapNFCUxParameters</code>
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 /// Chip reader
 SWIFT_CLASS("_TtC9MiSnapNFC15MiSnapNFCReader") SWIFT_AVAILABILITY(ios,introduced=13)
@@ -289,6 +342,10 @@ SWIFT_CLASS("_TtC9MiSnapNFC15MiSnapNFCReader") SWIFT_AVAILABILITY(ios,introduced
 /// Resource locator configuration
 SWIFT_CLASS("_TtC9MiSnapNFC37MiSnapNFCResourceLocatorConfiguration")
 @interface MiSnapNFCResourceLocatorConfiguration : NSObject
+/// Localization configuration
+@property (nonatomic, strong) MiSnapNFCLocalizationConfiguration * _Nonnull localization;
+/// Asset location configuration
+@property (nonatomic, strong) MiSnapNFCAssetLocationConfiguration * _Nonnull assetLocation;
 /// Description of <code>MiSnapNFCResourceLocatorConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

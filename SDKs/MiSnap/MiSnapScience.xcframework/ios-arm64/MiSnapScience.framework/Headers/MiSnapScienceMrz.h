@@ -71,6 +71,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) NSString *optionalNumber;
 /**
+ The bounding boxes around personal number in MRZ
+ */
+@property (nonatomic, strong) NSArray *personalNumberBoundingBoxes;
+/**
  A dictionary describing `MiSnapScienceMrz` object
  */
 - (NSDictionary *)toDictionary;

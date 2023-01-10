@@ -83,13 +83,13 @@ typedef NS_ENUM(NSInteger, MiSnapTutorialMode) {
 /**
  Compression to apply to an acquired image (100 - no compression, 0 - absolute compression)
  
- Range: 50...100
+ Range: `50...100`
  */
 @property (nonatomic, readwrite) NSInteger compression;
 /**
  A delay in milliseconds between the first frame that passed all IQA checks before continuing analysis
 
- Range: 0...2000
+ Range: `0...2000`
  */
 @property (nonatomic, readwrite) NSInteger frameDelay;
 /**
@@ -100,6 +100,14 @@ typedef NS_ENUM(NSInteger, MiSnapTutorialMode) {
  Server version
  */
 @property (nonatomic, readwrite) NSString * _Nullable serverVersion;
+/**
+ Indicates whether hints need to be presented to a user in Manual mode
+ 
+ Default: `FALSE`
+ 
+ - Note: This is a licensed feature therefore in addition to overriding this parameter to `TRUE`, it needs to be available in a license key for Enhanced Manual functionality to work
+ */
+@property (nonatomic, readwrite) BOOL enhancedManualEnabled;
 /**
  Logs UX parameters into MIBI for analytics
  */

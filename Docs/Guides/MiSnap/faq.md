@@ -52,3 +52,7 @@ if let extraction = result.extraction, let personalNumber = extraction.personalN
 ```
 
 Refer to [Integration Guide](integration_guide.md) and [Customization Guide](customization_guide.md) for detailed instructions on proper configuration and customization.
+
+## How does video recording feature work when optional data (BSN) redaction for NLD Passports is enabled?
+
+`Video recording` feature requires no frame processing therefore optional data (BSN) will not be redacted in a recorded video. It is your responsibility to keep `video recording` disabled (default) or disable if enabled in case you enable `optional data redaction` feature.

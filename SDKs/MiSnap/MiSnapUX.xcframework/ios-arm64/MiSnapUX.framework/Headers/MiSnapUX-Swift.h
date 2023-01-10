@@ -214,6 +214,19 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSBundle;
+@class NSString;
+
+/// Asset location configuration
+SWIFT_CLASS("_TtC8MiSnapUX32MiSnapAssetLocationConfiguration")
+@interface MiSnapAssetLocationConfiguration : NSObject
+/// Bundle where assets are located
+@property (nonatomic, strong) NSBundle * _Nonnull bundle;
+/// Description of <code>MiSnapAssetLocationConfiguration</code>
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class MiSnapParameters;
 @class MiSnapUxParameters;
 @class MiSnapGuideViewConfiguration;
@@ -225,11 +238,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class MiSnapTorchViewConfiguration;
 @class MiSnapCameraShutterViewConfiguration;
 @class MiSnapRecordingIndicatorViewConfiguration;
-@class MiSnapSuccessCheckmarkViewConfiguration;
+@class MiSnapSuccessConfiguration;
 @class MiSnapTutorialConfiguration;
+@class MiSnapSuccessCheckmarkViewConfiguration;
 @class MiSnapLocalizationConfiguration;
 @class MiSnapTutorialInstructionConfiguration;
-@class NSString;
 
 /// A session  configuration
 SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
@@ -256,8 +269,8 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 @property (nonatomic, readonly, strong) MiSnapCameraShutterViewConfiguration * _Nonnull cameraShutter;
 /// Recording indicator view configuration
 @property (nonatomic, readonly, strong) MiSnapRecordingIndicatorViewConfiguration * _Nonnull recordingIndicator;
-/// Success checkmark view configuration
-@property (nonatomic, readonly, strong) MiSnapSuccessCheckmarkViewConfiguration * _Nonnull successCheckmark;
+/// Success configuration
+@property (nonatomic, readonly, strong) MiSnapSuccessConfiguration * _Nonnull success;
 /// Tutorial screen configuration
 @property (nonatomic, readonly, strong) MiSnapTutorialConfiguration * _Nonnull tutorial;
 /// Creates and returns configuration object with default UX configuration.
@@ -296,25 +309,30 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 - (MiSnapConfiguration * _Nonnull)withCustomCameraShutterWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapCameraShutterViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Recording indicator view customization
 - (MiSnapConfiguration * _Nonnull)withCustomRecordingIndicatorWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapRecordingIndicatorViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Success customization
+- (MiSnapConfiguration * _Nonnull)withCustomSuccessWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Success checkmark view customization
-- (MiSnapConfiguration * _Nonnull)withCustomSuccessCheckmarkWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessCheckmarkViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// note:
+/// Deprecated in 5.2.0 and will be removed in future versions.Call <code>withCustomSuccess(completion:)</code> instead and and access this customization through <code>success.checkmark</code>
+- (MiSnapConfiguration * _Nonnull)withCustomSuccessCheckmarkWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessCheckmarkViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Call withCustomSuccess(completion:) instead and and access this customization through `success.checkmark`");
 /// Convenience function for Localization customization
 - (MiSnapConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
-/// Convenience function for tutorial instruction type customization
-/// note:
-/// Deprecated in 5.1.0 and will be removed in future versions. Use <code>.withCustomTutorial(completion:)</code> instead and access it by <code>configuration.instruction</code>
-- (MiSnapConfiguration * _Nonnull)withCustomInstructionWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapTutorialInstructionConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Asset location customization
+- (MiSnapConfiguration * _Nonnull)withCustomAssetLocationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapAssetLocationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for tutorial screen customization
 - (MiSnapConfiguration * _Nonnull)withCustomTutorialWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapTutorialConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for tutorial instruction type customization
+/// note:
+/// Deprecated in 5.2.0 and will be removed in future versions. Call <code>.withCustomTutorial(completion:)</code> instead and access it through <code>tutorial.instruction</code>
+- (MiSnapConfiguration * _Nonnull)withCustomInstructionWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapTutorialInstructionConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Call withCustomTutorial(completion:) instead and access this customization through `tutorial.instruction`");
 /// Convenience function for applying UX customization
 - (MiSnapConfiguration * _Nonnull)applying:(MiSnapConfiguration * _Nonnull)template_ SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for initializing a configuration with given SDK and UX parameters
-- (nonnull instancetype)initWith:(MiSnapParameters * _Nonnull)parameters uxParameters:(MiSnapUxParameters * _Nullable)uxParameters OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWith:(MiSnapParameters * _Nonnull)parameters uxParameters:(MiSnapUxParameters * _Nullable)uxParameters;
 /// Description of <code>MiSnapConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
-@class NSBundle;
 
 /// Localization configuration
 SWIFT_CLASS("_TtC8MiSnapUX31MiSnapLocalizationConfiguration")
@@ -379,6 +397,14 @@ SWIFT_CLASS("_TtC8MiSnapUX34MiSnapTutorialButtonsConfiguration")
 /// Tutorial configuration
 SWIFT_CLASS("_TtC8MiSnapUX27MiSnapTutorialConfiguration")
 @interface MiSnapTutorialConfiguration : NSObject
+/// Background color
+/// Default: not set in which case <code>.white</code> for image tutorials and <code>.systemBackground</code> for text tutorials
+/// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nullable backgroundColor;
+/// Background color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
 /// Tutorial buttons configuration
 @property (nonatomic, strong) MiSnapTutorialButtonsConfiguration * _Nonnull buttons;
 /// Tutorial instruction configuration
@@ -387,12 +413,25 @@ SWIFT_CLASS("_TtC8MiSnapUX27MiSnapTutorialConfiguration")
 @end
 
 enum MiSnapTutorialType : NSInteger;
+@class MiSnapBulletViewConfiguration;
+@class MiSnapCheckboxViewConfiguration;
 
 /// Tutorial instruction configuration
 SWIFT_CLASS("_TtC8MiSnapUX38MiSnapTutorialInstructionConfiguration")
 @interface MiSnapTutorialInstructionConfiguration : NSObject
 /// Tutorial type
 @property (nonatomic) enum MiSnapTutorialType type;
+/// Bullet configuration
+@property (nonatomic, strong) MiSnapBulletViewConfiguration * _Nonnull bullet;
+/// Checkbox configuration
+@property (nonatomic, strong) MiSnapCheckboxViewConfiguration * _Nonnull checkbox;
+/// Don’t show label configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull dontShowAgain;
+/// Message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Secondary message configuration
+/// For example, a label in an instructional tutorial for QR code
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull messageSecondary;
 /// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

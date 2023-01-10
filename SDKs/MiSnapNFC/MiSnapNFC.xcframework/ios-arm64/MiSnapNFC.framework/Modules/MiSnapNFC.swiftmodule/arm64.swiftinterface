@@ -48,28 +48,30 @@ public enum MiSnapNFCTagError : Swift.Error, Swift.Equatable {
   case invalidLicense(MiSnapLicenseStatus)
   public static func == (a: MiSnapNFCTagError, b: MiSnapNFCTagError) -> Swift.Bool
 }
-@objc @_inheritsConvenienceInitializers public class MiSnapNFCResourceLocatorConfiguration : ObjectiveC.NSObject {
-  public var localization: MiSnapNFCLocalizationConfiguration
-  public var assetLocation: MiSnapNFCAssetLocationConfiguration
+@_inheritsConvenienceInitializers @objc public class MiSnapNFCResourceLocatorConfiguration : ObjectiveC.NSObject {
+  @objc public var localization: MiSnapNFCLocalizationConfiguration
+  @objc public var assetLocation: MiSnapNFCAssetLocationConfiguration
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MiSnapNFCLocalizationConfiguration : ObjectiveC.NSObject {
-  public var bundle: Foundation.Bundle
-  public var stringsName: Swift.String
+@_inheritsConvenienceInitializers @objc public class MiSnapNFCLocalizationConfiguration : ObjectiveC.NSObject {
+  @objc public var bundle: Foundation.Bundle
+  @objc public var stringsName: Swift.String
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
+  @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MiSnapNFCAssetLocationConfiguration : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class MiSnapNFCAssetLocationConfiguration : ObjectiveC.NSObject {
   public var bundle: Foundation.Bundle
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class MiSnapNFCResourceLocator {
@@ -108,14 +110,21 @@ public enum MiSnapNFCInvalidationReason : Swift.String {
     get
   }
 }
-@objc @_hasMissingDesignatedInitializers @available(iOS 13, *)
+@objc @available(iOS 13, *)
 public class MiSnapNFCReader : ObjectiveC.NSObject {
+  public init(with inputs: MiSnapNFCInputs, parameters: MiSnapNFCParameters)
+  @available(*, deprecated, message: "Call init(with:parameters:) instead")
   public init(logLevel: MiSnapNFCLogLevel = .info, timeout: Foundation.TimeInterval = 15.0)
+  @available(*, deprecated, message: "Document type should be set in MiSnapNFCInputs which are passed in init(with:parameters:)")
   public func set(documentType: MiSnapNFCDocumentType)
+  @available(*, deprecated, message: "Log level should be set in MiSnapNFCParameters which are passed in init(with:parameters:)")
   public func set(logLevel: MiSnapNFCLogLevel)
+  @available(*, deprecated, message: "Timeout should be set in MiSnapNFCParameters which are passed in init(with:parameters:)")
   public func set(timeout: Foundation.TimeInterval)
   public func logModule(withName name: Swift.String, version: Swift.String)
-  public func read(documentNumber: Swift.String = "", dateOfBirth: Swift.String = "", dateOfExpiry: Swift.String = "", mrz: Swift.String = "", skipCA: Swift.Bool = false, completed: @escaping ([Swift.String : Any]?, MiSnapNFCTagError?) -> Swift.Void)
+  public func read(completed: @escaping ([Swift.String : Any]?, MiSnapNFCTagError?) -> Swift.Void)
+  @available(*, deprecated, message: "Call read(completed:) instead")
+  public func read(documentNumber: Swift.String = "", dateOfBirth: Swift.String = "", dateOfExpiry: Swift.String = "", mrz: Swift.String = "", completed: @escaping ([Swift.String : Any]?, MiSnapNFCTagError?) -> Swift.Void)
   public func stop()
   @objc deinit
 }
@@ -139,6 +148,19 @@ extension MiSnapNFCReader : CoreNFC.NFCTagReaderSessionDelegate {
 @_inheritsConvenienceInitializers @available(iOS 13.0, *)
 @objc public class MiSnapNFCChipLocator : ObjectiveC.NSObject {
   @objc public class func chipLocation(mrzString: Swift.String, documentNumber: Swift.String, dateOfBirth: Swift.String, dateOfExpiry: Swift.String) -> MiSnapNFCChipLocation
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapNFCInputs : ObjectiveC.NSObject {
+  @objc public var documentNumber: Swift.String
+  @objc public var dateOfBirth: Swift.String
+  @objc public var dateOfExpiry: Swift.String
+  @objc public var mrzString: Swift.String
+  @objc public var documentType: MiSnapNFCDocumentType
+  @objc public var chipLocation: MiSnapNFCChipLocation
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
   @objc override dynamic public init()
   @objc deinit
 }
@@ -190,6 +212,20 @@ public enum MiSnapNFCKey {
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapNFCParameters : ObjectiveC.NSObject {
+  @objc public var timeout: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var skipCA: Swift.Bool
+  @objc public var optionalDataRedactionEnabled: Swift.Bool
+  @objc public var logLevel: MiSnapNFCLogLevel
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
 }
 precedencegroup ExponentiationPrecedence {
   associativity: left

@@ -8,6 +8,7 @@ Please refer to [MiSnapVoiceCaptureCustomizationSampleApp](../../../Examples/App
 * [Overview](#overview)
 * [UX Parameters](#ux-parameters)
 * [Localization](#localization)
+* [Image assets](#image-assets)
 * [Phrase Selection Screen](#phrase-selection-screen)
 * [Introductory Instruction Screen](#introductory-instruction-screen)
 * [Recording Screen](#review-screen)
@@ -49,7 +50,7 @@ misnapVoiceCaptureVC = MiSnapVoiceCaptureViewController(with: configuration, del
 ```
 
 # UX Parameters
-Create a configuration (if it doesn't exist) and chain `.withCustomUxParameters`. Refer to a snippet below.
+Create a template configuration (if it doesn't exist) and chain `.withCustomUxParameters`. Refer to a snippet below.
 
 ```Swift
 let template = MiSnapVoiceCaptureConfiguration(for: .enrollment)
@@ -62,7 +63,9 @@ For all available UX Parameters customization options see this [API reference](h
 
 # Localization
 
-Copy localization key-value pairs for a given language from [Localization](../../../Localization/MiSnapVoiceCapture) folder and paste them into your Localizable.strings file.
+Go to a localizable strings file that was added to your project during integration process and adjust values for a desired language as needed.
+
+By default, it's expected that localizable files are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps: 
 
 Create a template configuration (if it doesn't exist) and chain `.withCustomLocalization`. Refer to a snippet below.
 
@@ -70,7 +73,32 @@ Create a template configuration (if it doesn't exist) and chain `.withCustomLoca
 let template = MiSnapVoiceCaptureConfiguration()
     .withCustomLocalization { localization in
         localization.bundle = // Your bundle where localization files are located
+    }
+```
+
+By default, it's aslo expected that localizable file name is `MiSnapVoiceCaptureLocalizable` but if you changed its name or moved localization key-pairs to your own localizable file then you can specify a new file name by following next steps:
+
+Create a template configuration (if it doesn't exist) and chain `.withCustomLocalization` (if it doesn't exist). Refer to a snippet below.
+
+```Swift
+let template = MiSnapVoiceCaptureConfiguration()
+    .withCustomLocalization { localization in
         localization.stringsName = // Your localization file name
+    }
+```
+
+# Image Assets
+
+Go to a place where you copied images into during integration process and replace existing resources with new ones but make sure to keep the same names.
+
+By default, it's expected that images are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps:
+
+Create a template configuration (if it doesn't exist) and chain `.withCustomAssetLocation`. Refer to a snippet below.
+
+```Swift
+let template = MiSnapVoiceCaptureConfiguration()
+    .withCustomAssetLocation { assetLocation in
+        assetLocation.bundle = // Your bundle where image assets are located
     }
 ```
 

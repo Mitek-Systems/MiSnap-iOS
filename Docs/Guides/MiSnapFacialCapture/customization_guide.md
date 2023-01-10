@@ -8,6 +8,7 @@ Please refer to [MiSnapFacialCaptureCustomizationSampleApp](../../../Examples/Ap
 * [Overview](#overview)
 * [UX Parameters](#ux-parameters)
 * [Localization](#localization)
+* [Image assets](#image-assets)
 * [Introductory Instruction Screen](#introductory-instruction-screen)
 * [Review Screen](#review-screen)
 * [Help and Timeout Screens](#help-and-timeout-screens)
@@ -63,15 +64,42 @@ For all available UX Parameters customization options see this [API reference](h
 
 # Localization
 
-Copy localization key-value pairs for a given language from [Localization](../../../Localization/MiSnapFacialCapture) folder and paste them into your Localizable.strings file.
+Go to a localizable strings file that was added to your project during integration process and adjust values for a desired language as needed.
 
-Create a template configuration (if it doesn't exist) and chain `.withCustomLocalization`. Refer to a snippet below.
+By default, it's expected that localizable files are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps: 
+
+Create a configuration (if it doesn't exist) and chain `.withCustomLocalization`. Refer to a snippet below.
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomLocalization { localization in
         localization.bundle = // Your bundle where localization files are located
+    }
+```
+
+By default, it's aslo expected that localizable file name is `MiSnapFacialCaptureLocalizable` but if you changed its name or moved localization key-pairs to your own localizable file then you can specify a new file name by following next steps:
+
+Create a configuration (if it doesn't exist) and chain `.withCustomLocalization` (if it doesn't exist). Refer to a snippet below.
+
+```Swift
+let configuration = MiSnapFacialCaptureConfiguration()
+    .withCustomLocalization { localization in
         localization.stringsName = // Your localization file name
+    }
+```
+
+# Image Assets
+
+Go to a place where you copied images into during integration process and replace existing resources with new ones but make sure to keep the same names.
+
+By default, it's expected that images are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps:
+
+Create a configuration (if it doesn't exist) and chain `.withCustomAssetLocation`. Refer to a snippet below.
+
+```Swift
+let configuration = MiSnapFacialCaptureConfiguration()
+    .withCustomAssetLocation { assetLocation in
+        assetLocation.bundle = // Your bundle where image assets are located
     }
 ```
 
@@ -82,7 +110,7 @@ By default, an introductory instruction screen is presented.
 If you prefer to use your own introductory instruction screen or would like not to show it at all (not recommended) use the following snippet:
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomUxParameters { uxParameters in
         uxParameters.showIntroductoryInstructionScreen = false
     }
@@ -93,7 +121,7 @@ let template = MiSnapFacialCaptureConfiguration()
 By default, a review screen is presented only after a session is completed in Manual mode. If you'd like to present it for both Auto and Manual sessions use the following snippet:
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomUxParameters { uxParameters in
         uxParameters.reviewMode = .autoAndManual
     }
@@ -102,7 +130,7 @@ let template = MiSnapFacialCaptureConfiguration()
 If you prefer to use your own review screen or would like not to show it at all (not recommended) use the following snippet:
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomUxParameters { uxParameters in
         uxParameters.showReviewScreen = false
     }
@@ -118,7 +146,7 @@ Use this [starter custom view controller](../../../Examples/Snippets/MiSnapFacia
 ### 2. Disable default Help and/or Timeout screen(s)
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomUxParameters { uxParameters in
         uxParameters.showHelpScreen = false
         uxParameters.showTimeoutScreen = false
@@ -151,7 +179,7 @@ func miSnapFacialCaptureTimeoutAction() {
 Create a configuration (if it doesn't exist) and chain `.withCustomCancel`. Refer to a snippet below:
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomCancel { cancel in
         cancel.color = .lightGray
         // Other Cancel button customizations
@@ -164,7 +192,7 @@ For all available Cancel button customization options see this [API reference](h
 Create a configuration (if it doesn't exist) and chain `.withCustomHelp`. Refer to a snippet below:
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomHelp { help in
         help.color = .lightGray
         // Other Help button customizations
@@ -174,10 +202,10 @@ For all available Help button customization options see this [API reference](htt
 
 ## Camera Shutter (Manual) Button
 
-Create a template configuration (if it doesn't exist) and chain `.withCustomCameraShutter`. Refer to a snippet below:
+Create a configuration (if it doesn't exist) and chain `.withCustomCameraShutter`. Refer to a snippet below:
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomCameraShutter { cameraShutter in
         cameraShutter.color = .lightGray
         // Other Camera shutter button customizations
@@ -187,7 +215,7 @@ For all available Camera shutter button customization options see this [API refe
 
 ## Countdown View
 
-Create a template configuration (if it doesn't exist) and chain `.withCustomCountdown`. Refer to a snippet below:
+Create a configuration (if it doesn't exist) and chain `.withCustomCountdown`. Refer to a snippet below:
 
 ```Swift
 let configuration = MiSnapFacialCaptureConfiguration()
@@ -204,7 +232,7 @@ For all available Countdown view customization options see this [API reference](
 Create a configuration (if it doesn't exist) and chain `.withCustomGuide`. Refer to a snippet below:
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomGuide { guide in
         guide.vignette.style = .blur
         guide.vignette.alpha = 0.9
@@ -223,7 +251,7 @@ For all available Guide outline view customization options see this [API referen
 Create a configuration (if it doesn't exist) and chain `.withCustomRecordingIndicator`. Refer to a snippet below:
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomRecordingIndicator { recordingIndicator in
         recordingIndicator.backgroundColor = .lightGray.withAlphaComponent(0.5)
         // Other Recording Indicator view customizations
@@ -236,7 +264,7 @@ For all available Recording Indicator view customization options see this [API r
 Create a configuration (if it doesn't exist) and chain `.withCustomSuccessCheckmark`. Refer to a snippet below:
 
 ```Swift
-let template = MiSnapFacialCaptureConfiguration()
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomSuccessCheckmark { successCheckmark in
         successCheckmark.color = .systemGreen
         // Other Success Checkmark view customizations

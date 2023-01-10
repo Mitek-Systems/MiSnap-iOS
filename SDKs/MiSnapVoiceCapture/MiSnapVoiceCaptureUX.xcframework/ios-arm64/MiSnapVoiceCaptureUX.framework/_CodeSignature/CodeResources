@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapVoiceCaptureUX-Swift.h</key>
 		<data>
-		JoBw1Sg28VATDNfhB2/Fk7ejxpE=
+		KlPWhB1MD763dhnIyAvTUzJtO2I=
 		</data>
 		<key>Headers/MiSnapVoiceCaptureUX.h</key>
 		<data>
@@ -18,53 +18,31 @@
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		d7hlLLJj+KreEKpkM8dc3alr8Mc=
+		w3EjSx9y4U5LiKma+MJSYkpDFkA=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ZjNb2ke5QEitJnjmb8ze3dXW86Y=
+		cHwAkiFAF5FtiTc2v7SB/OxoGTc=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		czf+EnShJPWK3z065ltnBVL+TGw=
+		7xO5A7OVKTvEMJziZ1ynxMDp6jg=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		d7hlLLJj+KreEKpkM8dc3alr8Mc=
+		w3EjSx9y4U5LiKma+MJSYkpDFkA=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		ZjNb2ke5QEitJnjmb8ze3dXW86Y=
+		cHwAkiFAF5FtiTc2v7SB/OxoGTc=
 		</data>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		czf+EnShJPWK3z065ltnBVL+TGw=
+		7xO5A7OVKTvEMJziZ1ynxMDp6jg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		UxkTR5mj86scSyHInmc/AooTM4M=
-		</data>
-		<key>en.lproj/MiSnapVoiceCaptureLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DJ1lVA2ly5YUWGVp17HTRm/LR9A=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/MiSnapVoiceCaptureLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pUIvAQJXcwGJtyPw+KkNTbsCgtg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>misnap_facial_capture_instruction_distance.png</key>
-		<data>
-		SM91b+ERD8kQNut/oKF/FR3T7Wo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -73,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N2NcXgeZvvNaUDuajmLwTvBTVE70Vuy1Qlow67TB02s=
+			p9wjw4TrdaDRN5VkS6F6MFJI4ElHtIXUoFP/6UB3fHA=
 			</data>
 		</dict>
 		<key>Headers/MiSnapVoiceCaptureUX.h</key>
@@ -87,42 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b6/grzTIk+wl8uvQnvHrn19YG/SFS2f4H7XaAONdY+E=
+			8D5GQWelH7Ka/8RVVLBbJF1N7E167cLDgUZe9Wk+yLg=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8P0upRuAmRO5lbPklqQ59CmN3RXyHLC5c2uCWQZVBPc=
+			B3sJJy3rFabQMrJm9Uez6X4tkLGdUgxGIHmMmH9fRs4=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X8OdiSXGe1gezeA0uXFTJl9B8VAm6qUYjjNttg6+aOk=
+			2cmdrYCeQ81Bls3onmMISMUfwu/CTRiCseDP/suP3H4=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b6/grzTIk+wl8uvQnvHrn19YG/SFS2f4H7XaAONdY+E=
+			8D5GQWelH7Ka/8RVVLBbJF1N7E167cLDgUZe9Wk+yLg=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8P0upRuAmRO5lbPklqQ59CmN3RXyHLC5c2uCWQZVBPc=
+			B3sJJy3rFabQMrJm9Uez6X4tkLGdUgxGIHmMmH9fRs4=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCaptureUX.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X8OdiSXGe1gezeA0uXFTJl9B8VAm6qUYjjNttg6+aOk=
+			2cmdrYCeQ81Bls3onmMISMUfwu/CTRiCseDP/suP3H4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -130,31 +108,6 @@
 			<key>hash2</key>
 			<data>
 			h4z8bonvvsLb9PLxvwcApQRDJlcZQMA/UEUuxQEI75I=
-			</data>
-		</dict>
-		<key>en.lproj/MiSnapVoiceCaptureLocalizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IRlrKInZ4F9XO6blolBEFqiQqw/bNTcqd9D0G8IfGhA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/MiSnapVoiceCaptureLocalizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			28FRRWnjT16imOPvYBn6eGvjqAzb+dZjUyagdjJ4nks=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>misnap_facial_capture_instruction_distance.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fYSyuRqmPcBdIWVtSe/jiE8Qedx3qGrOvqD22M0SDDE=
 			</data>
 		</dict>
 	</dict>

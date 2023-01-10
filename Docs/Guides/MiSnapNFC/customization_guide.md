@@ -8,10 +8,11 @@ Please refer to [MiSnapNFCCustomizationSampleApp](../../../Examples/Apps/MiSnapN
 * [Overview](#overview)
 * [UX Parameters](#ux-parameters)
 * [Localization](#localization)
+* [Image assets](#image-assets)
+* [Parameters](#parameters)
+    * [Optional Data Redaction](#optional-data-redaction)
 
 # Overview
-
-Only UX parameters customization is available.
 
 Create a configuration and make all necessary customizations then pass it to a `MiSnapNFCViewController`.
 
@@ -22,8 +23,8 @@ let configuration = MiSnapNFCConfiguration()
     .withCustomUxObject... { uxObject in
         // uxObject customization here
     }
-    .withCustomUxObjectN... { uxObjectN in
-        // uxObjectN customization here
+    .withCustomParameters { parameters in
+        // Parameters customization here
     }
 
 nfc = MiSnapNFCViewController(with: configuration, delegate: self)
@@ -35,7 +36,7 @@ Create a configuration (if it doesn't exist) and chain `.withCustomUxParameters`
 ```Swift
 let configuration = MiSnapNFCConfiguration()
     .withCustomUxParameters { uxParameters in
-        uxParameters.timeout = 25.0
+        uxParameters.autoDismiss = false
         // Other UX Parameters customizations
     }
 ```
@@ -44,18 +45,56 @@ For all available UX Parameters customization options see this [API reference](h
 
 # Localization
 
-Copy localization key-value pairs for a given language from [Localization](../../../Localization/MiSnapNFC) folder and paste them into your Localizable.strings file.
+Go to a localizable strings file that was added to your project during integration process and adjust values for a desired language as needed.
 
-Create a template configuration (if it doesn't exist) and chain `.withCustomLocalization`. Refer to a snippet below.
+By default, it's expected that localizable files are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps: 
+
+Create a configuration (if it doesn't exist) and chain `.withCustomLocalization`. Refer to a snippet below.
 
 ```Swift
-let template = MiSnapNFCConfiguration()
+let configuration = MiSnapNFCConfiguration()
     .withCustomLocalization { localization in
         localization.bundle = // Your bundle where localization files are located
+    }
+```
+
+By default, it's aslo expected that localizable file name is `MiSnapNFCLocalizable` but if you changed its name or moved localization key-pairs to your own localizable file then you can specify a new file name by following next steps:
+
+Create a configuration (if it doesn't exist) and chain `.withCustomLocalization` (if it doesn't exist). Refer to a snippet below.
+
+```Swift
+let configuration = MiSnapNFCConfiguration()
+    .withCustomLocalization { localization in
         localization.stringsName = // Your localization file name
     }
 ```
 
+# Image Assets
+
+Go to a place where you copied images into during integration process and replace existing resources with new ones but make sure to keep the same names.
+
+By default, it's expected that images are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps:
+
+Create a configuration (if it doesn't exist) and chain `.withCustomAssetLocation`. Refer to a snippet below.
+
+```Swift
+let configuration = MiSnapNFCConfiguration()
+    .withCustomAssetLocation { assetLocation in
+        assetLocation.bundle = // Your bundle where image assets are located
+    }
+```
+
+# Parameters
+## Optional Data Redaction
+Create a configuration (if it doesn't exist) and chain `.withCustomParameters`. Refer to a snippet below:
+
+```Swift
+let configuration = MiSnapNFCConfiguration()
+    .withCustomParameters { parameters in
+        parameters.optionalDataRedactionEnabled = true
+        // Other Parameters customizations
+    }
+```
 
 
 

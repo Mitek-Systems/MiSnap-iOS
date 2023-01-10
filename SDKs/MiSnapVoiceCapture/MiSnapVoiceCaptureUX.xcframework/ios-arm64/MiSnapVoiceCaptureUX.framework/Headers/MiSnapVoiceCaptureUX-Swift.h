@@ -210,12 +210,22 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSBundle;
+@class NSString;
+
+/// Asset location configuration
+SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX44MiSnapVoiceCaptureAssetLocationConfiguration")
+@interface MiSnapVoiceCaptureAssetLocationConfiguration : NSObject
+@property (nonatomic, strong) NSBundle * _Nonnull bundle;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class MiSnapVoiceCaptureParameters;
 @class MiSnapVoiceCaptureUXParameters;
 @class MiSnapVoiceCapturePhraseSelectionConfiguration;
 @class MiSnapVoiceCaptureIntroductoryInstructionConfiguration;
 @class MiSnapVoiceCaptureRecordingConfiguration;
-@class NSString;
 @class MiSnapVoiceCaptureLocalizationConfiguration;
 
 /// A session  configuration
@@ -247,6 +257,8 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX31MiSnapVoiceCaptureConfiguration")
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomRecordingWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureRecordingConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Asset location customization
+- (MiSnapVoiceCaptureConfiguration * _Nonnull)withCustomAssetLocationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapVoiceCaptureAssetLocationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for applying UX customization
 - (MiSnapVoiceCaptureConfiguration * _Nonnull)applying:(MiSnapVoiceCaptureConfiguration * _Nonnull)template_ SWIFT_WARN_UNUSED_RESULT;
 /// Description of <code>MiSnapVoiceCaptureConfiguration</code>
@@ -266,15 +278,21 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX61MiSnapVoiceCaptureIntroductoryInstructi
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
-@class UIImage;
+@class UIColor;
 
 /// An introductory instruction screen configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX54MiSnapVoiceCaptureIntroductoryInstructionConfiguration")
 @interface MiSnapVoiceCaptureIntroductoryInstructionConfiguration : NSObject
-/// Image at the top
-@property (nonatomic, strong) UIImage * _Nullable image;
+/// Background color
+/// Default: <code>.systemBackground</code> for iOS >= 13  and <code>.white</code> for the rest
+/// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Background color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
 /// Configuration for instructions presented underneath an image
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull instruction;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
 /// Configuration for buttons
 @property (nonatomic, strong) MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration * _Nonnull buttons;
 /// Creates and returns tutorial configuration
@@ -283,7 +301,6 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX54MiSnapVoiceCaptureIntroductoryInstructi
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
-@class NSBundle;
 
 /// Localization configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX43MiSnapVoiceCaptureLocalizationConfiguration")
@@ -292,10 +309,9 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX43MiSnapVoiceCaptureLocalizationConfigura
 @property (nonatomic, strong) NSBundle * _Nonnull bundle;
 /// Localizable file name
 @property (nonatomic, copy) NSString * _Nonnull stringsName;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Description of <code>MiSnapVoiceCaptureLocalizationConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -314,6 +330,14 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX53MiSnapVoiceCapturePhraseSelectionButton
 /// A phrase selection screen  configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX46MiSnapVoiceCapturePhraseSelectionConfiguration")
 @interface MiSnapVoiceCapturePhraseSelectionConfiguration : NSObject
+/// Background color
+/// Default: <code>.systemBackground</code> for iOS >= 13  and <code>.white</code> for the rest
+/// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Background color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
 /// Configuration for a message at the top
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
 /// Configuration for a phase in a list
@@ -347,6 +371,14 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX47MiSnapVoiceCaptureRecordingButtonsConfi
 /// A recording screen configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureRecordingConfiguration")
 @interface MiSnapVoiceCaptureRecordingConfiguration : NSObject
+/// Background color
+/// Default: <code>.systemBackground</code> for iOS >= 13  and <code>.white</code> for the rest
+/// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Background color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
 /// Neutral view configuration
 @property (nonatomic, strong) MiSnapVoiceCaptureNeutralViewConfiguration * _Nonnull neutral;
 /// Success view configuration
@@ -431,6 +463,15 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 
 
 
+
+@class UITraitCollection;
+
+@interface MiSnapVoiceCaptureViewController (SWIFT_EXTENSION(MiSnapVoiceCaptureUX))
+/// Called when the environment’s traits change.
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+@end
 
 @class MiSnapVoiceCaptureResult;
 

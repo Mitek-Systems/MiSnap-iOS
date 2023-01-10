@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        MiSnapLicenseManager.shared().setLicenseKey("eyJzaWduYXR1cmUiOiJvNElpS1RvbHhFa1dSWUUxQ2VEalVIRm94ZTRxOStrOGhsNU5pZ2Zxa0ZQLytXVGhCeDZZV3MwVjhWMHZkMGtqZlJBaHB2VUhuUThXM2t6RHZsS1dueE0vV1VYcGhRcThVV2ZySGFNek1NcXdRc0VZRlFtMzdvdmVrQVN2ZmZMdnVRTEt5NENtamZieFRiNTBxcGtZaVRMMjQ1S2ZlSjVVMk4rQXBZZkxVM1YzNThGc1Zpait4bXR4VkdiY3hQTmkxekdoODloMUsyUmxOMEpPajVTTytpTGNFN1hBZTJEakNDbWdrV1dXejhRL25BQXM3VnVLM091YU9GNEE0WVd5ZUc5eW44RlFkcVNJdXUyNHB0ZkNjMGFxajFsejBrRlFxN0l3ams0NGIrYWZ0cTQvTWJ4Vm5FNWlvYkc0YTJOYVQwZnFOSWtPWm04S3NBOUlsZmtMUVE9PSIsInNpZ25lZCI6eyJleHBpcnkiOiIyMDMyLTEyLTMwIiwiZmVhdHVyZXMiOlsiYmFyY29kZSIsImRlcG9zaXQiLCJmYWNlIiwiZ2VuZXJpYyIsImlkIiwibmZjIiwib2RjIiwib2RlIiwidm9pY2UiLCJlbSJdLCJhcHBsaWNhdGlvbklkZW50aWZpZXIiOnsiaW9zIjpbImNvbS5taXRla3N5c3RlbXMuKiJdfSwiZ3BvIjoiMTZkIiwib3JnYW5pemF0aW9uIjoiTWl0ZWsgU3lzdGVtcyBJbmMuIiwidmVyc2lvbiI6IjEuMCJ9fQ==")
+        MiSnapLicenseManager.shared().setLicenseKey("your_license_key_here")
         print(MiSnapLicenseManager.shared().description)
         
         /**

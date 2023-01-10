@@ -76,11 +76,14 @@ extension ViewController {
                     inputs.chipLocation = chipLocation
                 }
                 .withCustomUxParameters { uxParameters in
-                    uxParameters.timeout = 20.0
+                    uxParameters.autoDismiss = true
+                }
+                .withCustomParameters { parameters in
+                    parameters.timeout = 10.0
                 }
                 .withCustomLocalization { localization in
                     localization.bundle = Bundle.main
-                    localization.stringsName = "Localizable"
+                    localization.stringsName = "MiSnapNFCLocalizable"
                 }
             
             misnapNFCVC = MiSnapNFCViewController(with: configuration, delegate: self)

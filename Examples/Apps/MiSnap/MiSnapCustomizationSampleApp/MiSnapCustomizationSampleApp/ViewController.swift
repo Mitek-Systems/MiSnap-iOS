@@ -53,9 +53,9 @@ class ViewController: UIViewController {
             cameraShutter.style = .stroke
             cameraShutter.size = cameraShutter.size.scaled(by: 1.15)
         }
-        .withCustomSuccessCheckmark { successCheckmark in
-            successCheckmark.color = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-            successCheckmark.cutoutFillColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.5)
+        .withCustomSuccess { success in
+            success.checkmark.color = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            success.checkmark.cutoutFillColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.5)
         }
         .withCustomUxParameters { uxParameters in
             uxParameters.timeout = 25.0
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         }
         .withCustomLocalization { localization in
             localization.bundle = Bundle.main
-            localization.stringsName = "Localizable"
+            localization.stringsName = "MiSnapLocalizable"
         }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -17,7 +17,8 @@
 		4271F14E2900948F00120D0B /* RecordingPlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4271F14D2900948F00120D0B /* RecordingPlaybackView.swift */; };
 		4271F151290094FD00120D0B /* MiSnapVoiceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 4271F150290094FD00120D0B /* MiSnapVoiceCapture */; };
 		4271F153290094FD00120D0B /* MiSnapVoiceCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 4271F152290094FD00120D0B /* MiSnapVoiceCaptureUX */; };
-		4271F1562900953E00120D0B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4271F1542900953E00120D0B /* Localizable.strings */; };
+		42A141C9296E2864007E7252 /* MiSnapVoiceCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A141AC296E2864007E7252 /* MiSnapVoiceCaptureLocalizable.strings */; };
+		42A141CA296E2864007E7252 /* misnap_facial_capture_instruction_distance.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A141AF296E2864007E7252 /* misnap_facial_capture_instruction_distance.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +32,9 @@
 		4271F1402900943200120D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4271F14B2900948900120D0B /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		4271F14D2900948F00120D0B /* RecordingPlaybackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingPlaybackView.swift; sourceTree = "<group>"; };
-		4271F1552900953E00120D0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4271F1572900954400120D0B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		42A141AD296E2864007E7252 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapVoiceCaptureLocalizable.strings; sourceTree = "<group>"; };
+		42A141AE296E2864007E7252 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapVoiceCaptureLocalizable.strings; sourceTree = "<group>"; };
+		42A141AF296E2864007E7252 /* misnap_facial_capture_instruction_distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_distance.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		4271F1312900943000120D0B /* MiSnapVoiceCaptureCustomizationSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				42A14187296E2863007E7252 /* Assets */,
 				4271F14A2900945500120D0B /* Models */,
 				4271F1492900945000120D0B /* Views */,
 				4271F1482900944A00120D0B /* Controllers */,
@@ -87,7 +90,6 @@
 		4271F1472900944500120D0B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4271F1542900953E00120D0B /* Localizable.strings */,
 				4271F13B2900943200120D0B /* Assets.xcassets */,
 				4271F1382900943000120D0B /* Main.storyboard */,
 				4271F13D2900943200120D0B /* LaunchScreen.storyboard */,
@@ -119,6 +121,24 @@
 			children = (
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		42A14187296E2863007E7252 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				42A141AB296E2864007E7252 /* MiSnapVoiceCapture */,
+			);
+			name = Assets;
+			path = ../../../../../Assets;
+			sourceTree = "<group>";
+		};
+		42A141AB296E2864007E7252 /* MiSnapVoiceCapture */ = {
+			isa = PBXGroup;
+			children = (
+				42A141AC296E2864007E7252 /* MiSnapVoiceCaptureLocalizable.strings */,
+				42A141AF296E2864007E7252 /* misnap_facial_capture_instruction_distance.png */,
+			);
+			path = MiSnapVoiceCapture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +188,7 @@
 				en,
 				Base,
 				es,
+				fr,
 			);
 			mainGroup = 4271F1262900943000120D0B;
 			packageReferences = (
@@ -187,8 +208,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A141C9296E2864007E7252 /* MiSnapVoiceCaptureLocalizable.strings in Resources */,
+				42A141CA296E2864007E7252 /* misnap_facial_capture_instruction_distance.png in Resources */,
 				4271F13F2900943200120D0B /* LaunchScreen.storyboard in Resources */,
-				4271F1562900953E00120D0B /* Localizable.strings in Resources */,
 				4271F13C2900943200120D0B /* Assets.xcassets in Resources */,
 				4271F13A2900943000120D0B /* Main.storyboard in Resources */,
 			);
@@ -228,13 +250,13 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		4271F1542900953E00120D0B /* Localizable.strings */ = {
+		42A141AC296E2864007E7252 /* MiSnapVoiceCaptureLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4271F1552900953E00120D0B /* en */,
-				4271F1572900954400120D0B /* es */,
+				42A141AD296E2864007E7252 /* en */,
+				42A141AE296E2864007E7252 /* es */,
 			);
-			name = Localizable.strings;
+			name = MiSnapVoiceCaptureLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -440,7 +462,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
 			requirement = {
-				branch = feature/5.1.1;
+				branch = feature/5.2.0;
 				kind = branch;
 			};
 		};

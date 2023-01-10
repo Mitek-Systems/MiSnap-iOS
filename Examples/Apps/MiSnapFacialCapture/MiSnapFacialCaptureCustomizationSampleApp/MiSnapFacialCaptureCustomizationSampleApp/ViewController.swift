@@ -71,9 +71,9 @@ extension ViewController {
                 countdown.burnupLineWidth = 3
                 countdown.fontSize = 35.0
             }
-            .withCustomSuccessCheckmark { successCheckmark in
-                successCheckmark.color = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-                successCheckmark.cutoutFillColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).withAlphaComponent(0.5)
+            .withCustomSuccess { success in
+                success.checkmark.color = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+                success.checkmark.cutoutFillColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).withAlphaComponent(0.5)
             }
             .withCustomUxParameters { uxParameters in
                 uxParameters.timeout = 25.0
@@ -82,7 +82,7 @@ extension ViewController {
             }
             .withCustomLocalization { localization in
                 localization.bundle = Bundle.main
-                localization.stringsName = "Localizable"
+                localization.stringsName = "MiSnapFacialCaptureLocalizable"
             }
             .withCustomParameters { parameters in
                 parameters.selectOnSmile = triggerSegmentedControl.selectedSegmentIndex == 1

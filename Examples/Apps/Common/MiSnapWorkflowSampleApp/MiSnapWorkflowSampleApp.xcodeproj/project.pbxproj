@@ -11,7 +11,7 @@
 		42A14299296E2CA2007E7252 /* MiSnapFacialCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A14276296E2CA1007E7252 /* MiSnapFacialCaptureLocalizable.strings */; };
 		42A142A0296E2CA2007E7252 /* MiSnapNFCLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A14280296E2CA2007E7252 /* MiSnapNFCLocalizable.strings */; };
 		42A142A5296E2CA2007E7252 /* MiSnapVoiceCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A14288296E2CA2007E7252 /* MiSnapVoiceCaptureLocalizable.strings */; };
-		42A142A6296E2CA2007E7252 /* misnap_facial_capture_instruction_distance.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A1428B296E2CA2007E7252 /* misnap_facial_capture_instruction_distance.png */; };
+		42A142A6296E2CA2007E7252 /* misnap_voice_capture_instruction_distance.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A1428B296E2CA2007E7252 /* misnap_voice_capture_instruction_distance.png */; };
 		42A142B3296E2CB0007E7252 /* misnap_tutorial_id_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A142A7296E2CB0007E7252 /* misnap_tutorial_id_portrait_2.jpg */; };
 		42A142B4296E2CB0007E7252 /* misnap_tutorial_passport_qr_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A142A8296E2CB0007E7252 /* misnap_tutorial_passport_qr_portrait.jpg */; };
 		42A142B5296E2CB0007E7252 /* misnap_tutorial_id_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A142A9296E2CB0007E7252 /* misnap_tutorial_id_back.jpg */; };
@@ -137,7 +137,7 @@
 		42A14282296E2CA2007E7252 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapNFCLocalizable.strings; sourceTree = "<group>"; };
 		42A14289296E2CA2007E7252 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapVoiceCaptureLocalizable.strings; sourceTree = "<group>"; };
 		42A1428A296E2CA2007E7252 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapVoiceCaptureLocalizable.strings; sourceTree = "<group>"; };
-		42A1428B296E2CA2007E7252 /* misnap_facial_capture_instruction_distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_distance.png; sourceTree = "<group>"; };
+		42A1428B296E2CA2007E7252 /* misnap_voice_capture_instruction_distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_voice_capture_instruction_distance.png; sourceTree = "<group>"; };
 		42A142A7296E2CB0007E7252 /* misnap_tutorial_id_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_portrait_2.jpg; sourceTree = "<group>"; };
 		42A142A8296E2CB0007E7252 /* misnap_tutorial_passport_qr_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport_qr_portrait.jpg; sourceTree = "<group>"; };
 		42A142A9296E2CB0007E7252 /* misnap_tutorial_id_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_back.jpg; sourceTree = "<group>"; };
@@ -342,7 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				42A14288296E2CA2007E7252 /* MiSnapVoiceCaptureLocalizable.strings */,
-				42A1428B296E2CA2007E7252 /* misnap_facial_capture_instruction_distance.png */,
+				42A1428B296E2CA2007E7252 /* misnap_voice_capture_instruction_distance.png */,
 			);
 			path = MiSnapVoiceCapture;
 			sourceTree = "<group>";
@@ -640,7 +640,7 @@
 				42A142B5296E2CB0007E7252 /* misnap_tutorial_id_back.jpg in Resources */,
 				42A142BB296E2CB0007E7252 /* misnap_tutorial_id_portrait.jpg in Resources */,
 				42A1428C296E2CA2007E7252 /* MiSnapLocalizable.strings in Resources */,
-				42A142A6296E2CA2007E7252 /* misnap_facial_capture_instruction_distance.png in Resources */,
+				42A142A6296E2CA2007E7252 /* misnap_voice_capture_instruction_distance.png in Resources */,
 				42A142B3296E2CB0007E7252 /* misnap_tutorial_id_portrait_2.jpg in Resources */,
 				42A142C8296E2CBE007E7252 /* misnap_facial_capture_instruction_image_neutral.png in Resources */,
 				42A142BD296E2CB0007E7252 /* misnap_tutorial_passport_qr_portrait_2.jpg in Resources */,

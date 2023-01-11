@@ -1,12 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/stsuprenko/MobileVerify/MiSnapBiometrics/MiSnapVoiceCapture/MiSnapVoiceCapture/MiSnapVoiceCaptureController.swift",
-      "line": 213,
-      "symbol": "MiSnapVoiceCaptureController.miSnapVoiceCaptureAnalyzerDidStop(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/stsuprenko/MobileVerify/Tools"
 }

@@ -341,7 +341,7 @@
                       <div class="abstract">
                         <p>Minimum horizontal fill required to acquire an image in Landscape orientation.  E.g. 800 = 80.0%</p>
 
-<p>Range: 500&hellip;1000</p>
+<p>Range: <code>500...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -370,7 +370,7 @@
                       <div class="abstract">
                         <p>Minimum horizontal fill required to acquire an image in Portrait orientation.  E.g. 800 = 80.0%</p>
 
-<p>Range: 500&hellip;1000</p>
+<p>Range: <code>500...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -399,7 +399,7 @@
                       <div class="abstract">
                         <p>Minimum Corner Confidence</p>
 
-<p>Range: 0&hellip;1000</p>
+<p>Range: <code>0...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -428,7 +428,7 @@
                       <div class="abstract">
                         <p>Minimum Glare Confidence</p>
 
-<p>Range: 0&hellip;1000</p>
+<p>Range: <code>0...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -457,7 +457,7 @@
                       <div class="abstract">
                         <p>Minimum Contrast Confidence</p>
 
-<p>Range: 0&hellip;1000</p>
+<p>Range: <code>0...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -486,7 +486,7 @@
                       <div class="abstract">
                         <p>Minimum Background Confidence</p>
 
-<p>Range: 0&hellip;1000</p>
+<p>Range: <code>0...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -515,7 +515,7 @@
                       <div class="abstract">
                         <p>Minimum MICR Confidence</p>
 
-<p>Range: 0&hellip;1000</p>
+<p>Range: <code>0...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -544,7 +544,7 @@
                       <div class="abstract">
                         <p>Minimum brightness</p>
 
-<p>Range: 0&hellip;1000</p>
+<p>Range: <code>0...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -573,7 +573,7 @@
                       <div class="abstract">
                         <p>Maximum brightness</p>
 
-<p>Range: 0&hellip;1000</p>
+<p>Range: <code>0...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -602,7 +602,7 @@
                       <div class="abstract">
                         <p>Minimum sharpness</p>
 
-<p>Range: 0&hellip;1000</p>
+<p>Range: <code>0...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -631,7 +631,7 @@
                       <div class="abstract">
                         <p>Minimum image padding between document rectangle and image frame</p>
 
-<p>Range: 0&hellip;1000</p>
+<p>Range: <code>0...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -660,7 +660,7 @@
                       <div class="abstract">
                         <p>Skew angle (tilt)</p>
 
-<p>Range: 0&hellip;1000</p>
+<p>Range: <code>0...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -689,7 +689,7 @@
                       <div class="abstract">
                         <p>Rotation angle</p>
 
-<p>Range: 0&hellip;1000</p>
+<p>Range: <code>0...1000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -748,9 +748,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Indicate whether On-Device Classification should be done when licensed</p>
+                        <p>Indicates whether On-Device Classification should be done when licensed</p>
 
-<p>Default: TRUE</p>
+<p>Default: <code>TRUE</code></p>
 
                       </div>
                       <div class="declaration">
@@ -758,6 +758,39 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">odcEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapScienceParameters(py)optionalDataRedactionEnabled"></a>
+                    <a name="//apple_ref/objc/Property/optionalDataRedactionEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapScienceParameters(py)optionalDataRedactionEnabled">optionalDataRedactionEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether redaction is enabled for:</p>
+
+<ul>
+<li>Personal number (BSN) in NLD Passports MRZ</li>
+</ul>
+
+<p>Default: <code>FALSE</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">optionalDataRedactionEnabled</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>

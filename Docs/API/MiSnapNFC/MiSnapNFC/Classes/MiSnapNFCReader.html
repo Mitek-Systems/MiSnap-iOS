@@ -57,7 +57,13 @@
                 <a class="nav-group-task-link" href="../Classes/MiSnapNFCChipLocator.html">MiSnapNFCChipLocator</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCInputs.html">MiSnapNFCInputs</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapNFCLocalizationConfiguration.html">MiSnapNFCLocalizationConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCParameters.html">MiSnapNFCParameters</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapNFCReader.html">MiSnapNFCReader</a>
@@ -132,6 +138,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC4with10parametersAcA0aB9NFCInputsC_AA0aB13NFCParametersCtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(with:parameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC4with10parametersAcA0aB9NFCInputsC_AA0aB13NFCParametersCtcfc">init(with:<wbr>parameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns NFC reader with given inputs and parameters</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">with</span> <span class="nv">inputs</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapNFCInputs.html">MiSnapNFCInputs</a></span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapNFCParameters.html">MiSnapNFCParameters</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:9MiSnapNFC0aB9NFCReaderC8logLevel7timeoutAcA0ab6NFCLogF0O_Sdtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(logLevel:timeout:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC8logLevel7timeoutAcA0ab6NFCLogF0O_Sdtcfc">init(logLevel:<wbr>timeout:<wbr>)</a>
@@ -143,13 +176,19 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Creates and returns NFC reader</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Deprecated in 5.2.0 and will be removed in future versions. Call <code><a href="../Classes/MiSnapNFCReader.html#/s:9MiSnapNFC0aB9NFCReaderC4with10parametersAcA0aB9NFCInputsC_AA0aB13NFCParametersCtcfc">init(with:parameters:)</a></code> instead
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">logLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapNFCLogLevel.html">MiSnapNFCLogLevel</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">info</span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="mf">15.0</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Call init(with:parameters:﹚ instead"</span><span class="p">)</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">logLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapNFCLogLevel.html">MiSnapNFCLogLevel</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">info</span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="mf">15.0</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -170,13 +209,19 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Sets a document type</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Deprecated in 5.2.0 and will be removed in future versions. Document type should be set in MiSnapNFCInputs which are passed in <code><a href="../Classes/MiSnapNFCReader.html#/s:9MiSnapNFC0aB9NFCReaderC4with10parametersAcA0aB9NFCInputsC_AA0aB13NFCParametersCtcfc">init(with:parameters:)</a></code>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">documentType</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapNFCDocumentType.html">MiSnapNFCDocumentType</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Document type should be set in MiSnapNFCInputs which are passed in init(with:parameters:﹚"</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">documentType</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapNFCDocumentType.html">MiSnapNFCDocumentType</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -197,13 +242,19 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Sets a log level</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Deprecated in 5.2.0 and will be removed in future versions. Log level should be set in MiSnapNFCParameters which are passed in <code><a href="../Classes/MiSnapNFCReader.html#/s:9MiSnapNFC0aB9NFCReaderC4with10parametersAcA0aB9NFCInputsC_AA0aB13NFCParametersCtcfc">init(with:parameters:)</a></code>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">logLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapNFCLogLevel.html">MiSnapNFCLogLevel</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Log level should be set in MiSnapNFCParameters which are passed in init(with:parameters:﹚"</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">logLevel</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapNFCLogLevel.html">MiSnapNFCLogLevel</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -224,13 +275,19 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Sets a timeout interval</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Deprecated in 5.2.0 and will be removed in future versions. Timeout should be set in MiSnapNFCParameters which are passed in <code><a href="../Classes/MiSnapNFCReader.html#/s:9MiSnapNFC0aB9NFCReaderC4with10parametersAcA0aB9NFCInputsC_AA0aB13NFCParametersCtcfc">init(with:parameters:)</a></code>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Timeout should be set in MiSnapNFCParameters which are passed in init(with:parameters:﹚"</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -267,9 +324,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9MiSnapNFC0aB9NFCReaderC4read14documentNumber11dateOfBirth0hI6Expiry3mrz6skipCA9completedySS_S3SSbySDySSypGSg_AA0aB11NFCTagErrorOSgtctF"></a>
-                    <a name="//apple_ref/swift/Method/read(documentNumber:dateOfBirth:dateOfExpiry:mrz:skipCA:completed:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC4read14documentNumber11dateOfBirth0hI6Expiry3mrz6skipCA9completedySS_S3SSbySDySSypGSg_AA0aB11NFCTagErrorOSgtctF">read(documentNumber:<wbr>dateOfBirth:<wbr>dateOfExpiry:<wbr>mrz:<wbr>skipCA:<wbr>completed:<wbr>)</a>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC4read9completedyySDySSypGSg_AA0aB11NFCTagErrorOSgtc_tF"></a>
+                    <a name="//apple_ref/swift/Method/read(completed:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC4read9completedyySDySSypGSg_AA0aB11NFCTagErrorOSgtc_tF">read(completed:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -284,7 +341,40 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">read</span><span class="p">(</span><span class="nv">documentNumber</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">dateOfBirth</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">dateOfExpiry</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">mrz</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">skipCA</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">completed</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?,</span> <span class="kt"><a href="../Enums/MiSnapNFCTagError.html">MiSnapNFCTagError</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">read</span><span class="p">(</span><span class="nv">completed</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?,</span> <span class="kt"><a href="../Enums/MiSnapNFCTagError.html">MiSnapNFCTagError</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MiSnapNFC0aB9NFCReaderC4read14documentNumber11dateOfBirth0hI6Expiry3mrz9completedySS_S3SySDySSypGSg_AA0aB11NFCTagErrorOSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/read(documentNumber:dateOfBirth:dateOfExpiry:mrz:completed:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MiSnapNFC0aB9NFCReaderC4read14documentNumber11dateOfBirth0hI6Expiry3mrz9completedySS_S3SySDySSypGSg_AA0aB11NFCTagErrorOSgtctF">read(documentNumber:<wbr>dateOfBirth:<wbr>dateOfExpiry:<wbr>mrz:<wbr>completed:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts NFC chip reading session</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Deprecated in 5.2.0 and will be removed in future versions. Call <code><a href="../Classes/MiSnapNFCReader.html#/s:9MiSnapNFC0aB9NFCReaderC4read9completedyySDySSypGSg_AA0aB11NFCTagErrorOSgtc_tF">read(completed:)</a></code> instead. All parameters are supplied during initialization now.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Call read(completed:﹚ instead"</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">read</span><span class="p">(</span><span class="nv">documentNumber</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">dateOfBirth</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">dateOfExpiry</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">mrz</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span> <span class="nv">completed</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?,</span> <span class="kt"><a href="../Enums/MiSnapNFCTagError.html">MiSnapNFCTagError</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

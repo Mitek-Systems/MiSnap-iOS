@@ -51,7 +51,7 @@
                 <a class="nav-group-task-link" href="../Classes/MiSnapNFCConfiguration.html">MiSnapNFCConfiguration</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/MiSnapNFCInputs.html">MiSnapNFCInputs</a>
+                <a class="nav-group-task-link" href="../Classes/MiSnapNFCInstructionConfiguration.html">MiSnapNFCInstructionConfiguration</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapNFCScanButtonsConfiguration.html">MiSnapNFCScanButtonsConfiguration</a>
@@ -105,6 +105,126 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)backgroundColor"></a>
+                    <a name="//apple_ref/swift/Property/backgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)backgroundColor">backgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Background color</p>
+
+<p>Default: <code>.systemBackground</code> for iOS &gt;= 13  and <code>.white</code> for the rest</p>
+
+<p>Used in both Light and Dark modes if <code><a href="../Classes/MiSnapNFCScanConfiguration.html#/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)backgroundColorDarkMode">backgroundColorDarkMode</a></code> is not set. Otherwise, used in Light mode only</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)backgroundColorDarkMode"></a>
+                    <a name="//apple_ref/swift/Property/backgroundColorDarkMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)backgroundColorDarkMode">backgroundColorDarkMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Background color in Dark mode</p>
+
+<p>Default: not set</p>
+
+<p>When this color is set then it&rsquo;s used in Dark mode</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">backgroundColorDarkMode</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)message"></a>
+                    <a name="//apple_ref/swift/Property/message" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)message">message</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Message configuration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">MiSnapLabelConfiguration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)failureMessage"></a>
+                    <a name="//apple_ref/swift/Property/failureMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)failureMessage">failureMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Failure message configuration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">failureMessage</span><span class="p">:</span> <span class="kt">MiSnapLabelConfiguration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)buttons"></a>
                     <a name="//apple_ref/swift/Property/buttons" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)buttons">buttons</a>
@@ -124,6 +244,33 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="k">var</span> <span class="nv">buttons</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapNFCScanButtonsConfiguration.html">MiSnapNFCScanButtonsConfiguration</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)init"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)init">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default initializer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>

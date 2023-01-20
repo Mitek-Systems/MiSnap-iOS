@@ -222,6 +222,18 @@ typedef SWIFT_ENUM(NSInteger, MiSnapFaceCaptureFlow, open) {
   MiSnapFaceCaptureFlowVerification = 1,
 };
 
+@class NSBundle;
+@class NSString;
+
+/// Asset location configuration
+SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX45MiSnapFacialCaptureAssetLocationConfiguration")
+@interface MiSnapFacialCaptureAssetLocationConfiguration : NSObject
+@property (nonatomic, strong) NSBundle * _Nonnull bundle;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class MiSnapFacialCaptureParameters;
 @class MiSnapFacialCaptureUXParameters;
 @class MiSnapFacialCaptureGuideConfiguration;
@@ -231,10 +243,10 @@ typedef SWIFT_ENUM(NSInteger, MiSnapFaceCaptureFlow, open) {
 @class MiSnapCameraShutterViewConfiguration;
 @class MiSnapFacialCaptureCountdownViewConfiguration;
 @class MiSnapRecordingIndicatorViewConfiguration;
-@class MiSnapSuccessCheckmarkViewConfiguration;
+@class MiSnapSuccessConfiguration;
 @class MiSnapFacialCaptureTutorialConfiguration;
+@class MiSnapSuccessCheckmarkViewConfiguration;
 @class MiSnapFacialCaptureLocalizationConfiguration;
-@class NSString;
 
 /// A session  configuration
 SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
@@ -257,8 +269,8 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 @property (nonatomic, readonly, strong) MiSnapFacialCaptureCountdownViewConfiguration * _Nonnull countdown;
 /// Recording indicator view configuration
 @property (nonatomic, readonly, strong) MiSnapRecordingIndicatorViewConfiguration * _Nonnull recordingIndicator;
-/// Success checkmark view configuration
-@property (nonatomic, readonly, strong) MiSnapSuccessCheckmarkViewConfiguration * _Nonnull successCheckmark;
+/// Success configuration
+@property (nonatomic, readonly, strong) MiSnapSuccessConfiguration * _Nonnull success;
 /// Tutorial screen configuration
 @property (nonatomic, readonly, strong) MiSnapFacialCaptureTutorialConfiguration * _Nonnull tutorial;
 /// Convenience function for SDK parameters customization
@@ -279,12 +291,18 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomCountdownWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureCountdownViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Recording indicator view customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomRecordingIndicatorWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapRecordingIndicatorViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Success customization
+- (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomSuccessWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Success checkmark view customization
-- (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomSuccessCheckmarkWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessCheckmarkViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// note:
+/// Deprecated in 5.2.0 and will be removed in future versions.Call <code>withCustomSuccess(completion:)</code> instead and and access this customization through <code>success.checkmark</code>
+- (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomSuccessCheckmarkWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessCheckmarkViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Call withCustomSuccess(completion:) instead and and access this customization through `success.checkmark`");
 /// Convenience function for Tutorial screen customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomTutorialWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureTutorialConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Asset location customization
+- (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomAssetLocationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureAssetLocationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Creates and returns configuration object with default UX configuration.
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Convenience function for initializing a configuration with given SDK and UX parameters
@@ -293,7 +311,6 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
-@class NSBundle;
 
 /// Localization configuration
 SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX44MiSnapFacialCaptureLocalizationConfiguration")
@@ -302,10 +319,9 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX44MiSnapFacialCaptureLocalizationConfigu
 @property (nonatomic, strong) NSBundle * _Nonnull bundle;
 /// Localizable file name
 @property (nonatomic, copy) NSString * _Nonnull stringsName;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Description of <code>MiSnapFacialCaptureLocalizationConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 /// Review mode
@@ -361,12 +377,30 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX47MiSnapFacialCaptureTutorialButtonsConf
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
+@class UIColor;
 
 /// A tutorial screen configuration
 SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX40MiSnapFacialCaptureTutorialConfiguration")
 @interface MiSnapFacialCaptureTutorialConfiguration : NSObject
+/// Background color
+/// Default: <code>.systemBackground</code> for iOS >= 13  and <code>.white</code> for the rest
+/// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Background color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
 /// Tutorial buttons configuration
 @property (nonatomic, strong) MiSnapFacialCaptureTutorialButtonsConfiguration * _Nonnull buttons;
+/// Introductory instruction message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull introductoryInstructionMessage;
+/// Introductory instruction header configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull introductoryInstructionHeader;
+/// Timeout message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull timeoutMessage;
+/// Review message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull reviewMessage;
+/// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -488,6 +522,22 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 @end
 
 
+
+@interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX)) <MiSnapFacialCaptureTutorialViewControllerDelegate>
+/// Called when a tutorial view controller’s cancel button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialCancelButtonAction;
+/// Called when a tutorial view controller’s continue button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
+/// Called when a tutorial view controller’s retry button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialRetryButtonAction;
+@end
+
 @class NSData;
 
 @interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX)) <MiSnapFacialCaptureCameraDelegate>
@@ -506,28 +556,12 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 @end
 
 
-@interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX)) <MiSnapFacialCaptureTutorialViewControllerDelegate>
-/// Called when a tutorial view controller’s cancel button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialCancelButtonAction;
-/// Called when a tutorial view controller’s continue button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
-/// Called when a tutorial view controller’s retry button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialRetryButtonAction;
-@end
-
 
 
 @interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX))
 /// Convenience function to present another view controller as a child view controller
 - (void)presentVC:(UIViewController * _Nonnull)vc;
 @end
-
 
 @class MiSnapFacialCaptureResult;
 
@@ -827,6 +861,18 @@ typedef SWIFT_ENUM(NSInteger, MiSnapFaceCaptureFlow, open) {
   MiSnapFaceCaptureFlowVerification = 1,
 };
 
+@class NSBundle;
+@class NSString;
+
+/// Asset location configuration
+SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX45MiSnapFacialCaptureAssetLocationConfiguration")
+@interface MiSnapFacialCaptureAssetLocationConfiguration : NSObject
+@property (nonatomic, strong) NSBundle * _Nonnull bundle;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class MiSnapFacialCaptureParameters;
 @class MiSnapFacialCaptureUXParameters;
 @class MiSnapFacialCaptureGuideConfiguration;
@@ -836,10 +882,10 @@ typedef SWIFT_ENUM(NSInteger, MiSnapFaceCaptureFlow, open) {
 @class MiSnapCameraShutterViewConfiguration;
 @class MiSnapFacialCaptureCountdownViewConfiguration;
 @class MiSnapRecordingIndicatorViewConfiguration;
-@class MiSnapSuccessCheckmarkViewConfiguration;
+@class MiSnapSuccessConfiguration;
 @class MiSnapFacialCaptureTutorialConfiguration;
+@class MiSnapSuccessCheckmarkViewConfiguration;
 @class MiSnapFacialCaptureLocalizationConfiguration;
-@class NSString;
 
 /// A session  configuration
 SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
@@ -862,8 +908,8 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 @property (nonatomic, readonly, strong) MiSnapFacialCaptureCountdownViewConfiguration * _Nonnull countdown;
 /// Recording indicator view configuration
 @property (nonatomic, readonly, strong) MiSnapRecordingIndicatorViewConfiguration * _Nonnull recordingIndicator;
-/// Success checkmark view configuration
-@property (nonatomic, readonly, strong) MiSnapSuccessCheckmarkViewConfiguration * _Nonnull successCheckmark;
+/// Success configuration
+@property (nonatomic, readonly, strong) MiSnapSuccessConfiguration * _Nonnull success;
 /// Tutorial screen configuration
 @property (nonatomic, readonly, strong) MiSnapFacialCaptureTutorialConfiguration * _Nonnull tutorial;
 /// Convenience function for SDK parameters customization
@@ -884,12 +930,18 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomCountdownWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureCountdownViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Recording indicator view customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomRecordingIndicatorWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapRecordingIndicatorViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Success customization
+- (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomSuccessWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Success checkmark view customization
-- (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomSuccessCheckmarkWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessCheckmarkViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// note:
+/// Deprecated in 5.2.0 and will be removed in future versions.Call <code>withCustomSuccess(completion:)</code> instead and and access this customization through <code>success.checkmark</code>
+- (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomSuccessCheckmarkWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapSuccessCheckmarkViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Call withCustomSuccess(completion:) instead and and access this customization through `success.checkmark`");
 /// Convenience function for Tutorial screen customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomTutorialWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureTutorialConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Localization customization
 - (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomLocalizationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureLocalizationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+/// Convenience function for Asset location customization
+- (MiSnapFacialCaptureConfiguration * _Nonnull)withCustomAssetLocationWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapFacialCaptureAssetLocationConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Creates and returns configuration object with default UX configuration.
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Convenience function for initializing a configuration with given SDK and UX parameters
@@ -898,7 +950,6 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX32MiSnapFacialCaptureConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
-@class NSBundle;
 
 /// Localization configuration
 SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX44MiSnapFacialCaptureLocalizationConfiguration")
@@ -907,10 +958,9 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX44MiSnapFacialCaptureLocalizationConfigu
 @property (nonatomic, strong) NSBundle * _Nonnull bundle;
 /// Localizable file name
 @property (nonatomic, copy) NSString * _Nonnull stringsName;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Description of <code>MiSnapFacialCaptureLocalizationConfiguration</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 /// Review mode
@@ -966,12 +1016,30 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX47MiSnapFacialCaptureTutorialButtonsConf
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
+@class UIColor;
 
 /// A tutorial screen configuration
 SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX40MiSnapFacialCaptureTutorialConfiguration")
 @interface MiSnapFacialCaptureTutorialConfiguration : NSObject
+/// Background color
+/// Default: <code>.systemBackground</code> for iOS >= 13  and <code>.white</code> for the rest
+/// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Background color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
 /// Tutorial buttons configuration
 @property (nonatomic, strong) MiSnapFacialCaptureTutorialButtonsConfiguration * _Nonnull buttons;
+/// Introductory instruction message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull introductoryInstructionMessage;
+/// Introductory instruction header configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull introductoryInstructionHeader;
+/// Timeout message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull timeoutMessage;
+/// Review message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull reviewMessage;
+/// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1093,6 +1161,22 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 @end
 
 
+
+@interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX)) <MiSnapFacialCaptureTutorialViewControllerDelegate>
+/// Called when a tutorial view controller’s cancel button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialCancelButtonAction;
+/// Called when a tutorial view controller’s continue button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
+/// Called when a tutorial view controller’s retry button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialRetryButtonAction;
+@end
+
 @class NSData;
 
 @interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX)) <MiSnapFacialCaptureCameraDelegate>
@@ -1111,28 +1195,12 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 @end
 
 
-@interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX)) <MiSnapFacialCaptureTutorialViewControllerDelegate>
-/// Called when a tutorial view controller’s cancel button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialCancelButtonAction;
-/// Called when a tutorial view controller’s continue button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
-/// Called when a tutorial view controller’s retry button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialRetryButtonAction;
-@end
-
 
 
 @interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX))
 /// Convenience function to present another view controller as a child view controller
 - (void)presentVC:(UIViewController * _Nonnull)vc;
 @end
-
 
 @class MiSnapFacialCaptureResult;
 

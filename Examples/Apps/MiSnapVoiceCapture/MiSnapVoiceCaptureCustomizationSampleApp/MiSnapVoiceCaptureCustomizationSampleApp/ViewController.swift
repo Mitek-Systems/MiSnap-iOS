@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             phraseSelection.buttons.proceed.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         }
         .withCustomIntroductoryInstruction { introductoryInstruction in
-            introductoryInstruction.instruction.font = .systemFont(ofSize: 29, weight: .thin)
+            introductoryInstruction.message.font = .systemFont(ofSize: 29, weight: .thin)
             
             introductoryInstruction.buttons.proceed.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         }
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         }
         .withCustomLocalization { localization in
             localization.bundle = Bundle.main
-            localization.stringsName = "Localizable"
+            localization.stringsName = "MiSnapVoiceCaptureLocalizable"
         }
     
     override func viewWillAppear(_ animated: Bool) {

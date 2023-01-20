@@ -17,6 +17,11 @@
 		426BDBBE27EE06DA0058B665 /* MiSnapNFCUX in Frameworks */ = {isa = PBXBuildFile; productRef = 426BDBBD27EE06DA0058B665 /* MiSnapNFCUX */; };
 		426BDBC127EE0D110058B665 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426BDBC027EE0D110058B665 /* ResultViewController.swift */; };
 		426BDBC527F1E23E0058B665 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426BDBC427F1E23E0058B665 /* Utils.swift */; };
+		42A14208296E2990007E7252 /* MiSnapNFCLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A141E8296E2990007E7252 /* MiSnapNFCLocalizable.strings */; };
+		42A14213296E29A2007E7252 /* id.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A1420F296E29A1007E7252 /* id.png */; };
+		42A14214296E29A2007E7252 /* target.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A14210296E29A1007E7252 /* target.png */; };
+		42A14215296E29A2007E7252 /* passport.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A14211296E29A2007E7252 /* passport.png */; };
+		42A14216296E29A2007E7252 /* device.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A14212296E29A2007E7252 /* device.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,12 @@
 		426BDBBF27EE07A80058B665 /* MiSnapNFCSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiSnapNFCSampleApp.entitlements; sourceTree = "<group>"; };
 		426BDBC027EE0D110058B665 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		426BDBC427F1E23E0058B665 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		42A141E9296E2990007E7252 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapNFCLocalizable.strings; sourceTree = "<group>"; };
+		42A141EA296E2990007E7252 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapNFCLocalizable.strings; sourceTree = "<group>"; };
+		42A1420F296E29A1007E7252 /* id.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id.png; sourceTree = "<group>"; };
+		42A14210296E29A1007E7252 /* target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = target.png; sourceTree = "<group>"; };
+		42A14211296E29A2007E7252 /* passport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passport.png; sourceTree = "<group>"; };
+		42A14212296E29A2007E7252 /* device.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +76,7 @@
 		426BDBA027EE064D0058B665 /* MiSnapNFCSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				42A141CB296E2990007E7252 /* Assets */,
 				426BDBB927EE06970058B665 /* Models */,
 				426BDBB827EE06930058B665 /* Views */,
 				426BDBB727EE068D0058B665 /* Controllers */,
@@ -119,6 +131,27 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		42A141CB296E2990007E7252 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				42A141E7296E2990007E7252 /* MiSnapNFC */,
+			);
+			name = Assets;
+			path = ../../../../../Assets;
+			sourceTree = "<group>";
+		};
+		42A141E7296E2990007E7252 /* MiSnapNFC */ = {
+			isa = PBXGroup;
+			children = (
+				42A141E8296E2990007E7252 /* MiSnapNFCLocalizable.strings */,
+				42A14212296E29A2007E7252 /* device.png */,
+				42A1420F296E29A1007E7252 /* id.png */,
+				42A14211296E29A2007E7252 /* passport.png */,
+				42A14210296E29A1007E7252 /* target.png */,
+			);
+			path = MiSnapNFC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,6 +198,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				fr,
 			);
 			mainGroup = 426BDB9527EE064D0058B665;
 			packageReferences = (
@@ -184,8 +219,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A14213296E29A2007E7252 /* id.png in Resources */,
 				426BDBAE27EE064F0058B665 /* LaunchScreen.storyboard in Resources */,
+				42A14214296E29A2007E7252 /* target.png in Resources */,
+				42A14215296E29A2007E7252 /* passport.png in Resources */,
 				426BDBAB27EE064F0058B665 /* Assets.xcassets in Resources */,
+				42A14216296E29A2007E7252 /* device.png in Resources */,
+				42A14208296E2990007E7252 /* MiSnapNFCLocalizable.strings in Resources */,
 				426BDBA927EE064D0058B665 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +262,15 @@
 				426BDBAD27EE064F0058B665 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		42A141E8296E2990007E7252 /* MiSnapNFCLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42A141E9296E2990007E7252 /* en */,
+				42A141EA296E2990007E7252 /* es */,
+			);
+			name = MiSnapNFCLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,7 +482,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
 			requirement = {
-				branch = feature/5.1.1;
+				branch = feature/5.2.0;
 				kind = branch;
 			};
 		};

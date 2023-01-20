@@ -68,9 +68,15 @@ typedef NS_ENUM(NSInteger, MiSnapLicenseFeature) {
     /**
      Voice
      
-     - Note: Not implemented yet. Exposed for future use.
+     Allows invoking MiSnapVoiceCapture SDK
      */
-    MiSnapLicenseFeatureVoice               = 9
+    MiSnapLicenseFeatureVoice               = 9,
+    /**
+     Enhanced Manual
+     
+     When enabled, returns hints after processing a frame in Manual mode
+     */
+    MiSnapLicenseFeatureEnhancedManual      = 10
 };
 
 /**

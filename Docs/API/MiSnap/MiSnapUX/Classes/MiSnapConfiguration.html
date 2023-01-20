@@ -48,6 +48,9 @@
             <a class="nav-group-name-link" href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapAssetLocationConfiguration.html">MiSnapAssetLocationConfiguration</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapConfiguration.html">MiSnapConfiguration</a>
               </li>
               <li class="nav-group-task">
@@ -433,9 +436,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(py)successCheckmark"></a>
-                    <a name="//apple_ref/swift/Property/successCheckmark" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(py)successCheckmark">successCheckmark</a>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(py)success"></a>
+                    <a name="//apple_ref/swift/Property/success" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(py)success">success</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -443,7 +446,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Success checkmark view configuration</p>
+                        <p>Success configuration</p>
 
                       </div>
                       <div class="declaration">
@@ -451,7 +454,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">successCheckmark</span><span class="p">:</span> <span class="kt">MiSnapSuccessCheckmarkViewConfiguration</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">MiSnapSuccessConfiguration</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -861,6 +864,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomSuccessWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/withCustomSuccess(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomSuccessWithCompletion:">withCustomSuccess(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience function for Success customization</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomSuccess</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapSuccessConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomSuccessCheckmarkWithCompletion:"></a>
                     <a name="//apple_ref/swift/Method/withCustomSuccessCheckmark(completion:)" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomSuccessCheckmarkWithCompletion:">withCustomSuccessCheckmark(completion:<wbr>)</a>
@@ -872,13 +903,19 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Convenience function for Success checkmark view customization</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Deprecated in 5.2.0 and will be removed in future versions.Call <code><a href="../Classes/MiSnapConfiguration.html#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomSuccessWithCompletion:">withCustomSuccess(completion:)</a></code> instead and and access this customization through <code>success.checkmark</code>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Call withCustomSuccess(completion:﹚ instead and and access this customization through `success.checkmark`"</span><span class="p">)</span>
+<span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomSuccessCheckmark</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapSuccessCheckmarkViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
@@ -917,9 +954,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomInstructionWithCompletion:"></a>
-                    <a name="//apple_ref/swift/Method/withCustomInstruction(completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomInstructionWithCompletion:">withCustomInstruction(completion:<wbr>)</a>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomAssetLocationWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/withCustomAssetLocation(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomAssetLocationWithCompletion:">withCustomAssetLocation(completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -927,12 +964,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Convenience function for tutorial instruction type customization</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Deprecated in 5.1.0 and will be removed in future versions. Use <code><a href="../Classes/MiSnapConfiguration.html#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomTutorialWithCompletion:">.withCustomTutorial(completion:)</a></code> instead and access it by <code>configuration.instruction</code>
-
-</div>
+                        <p>Convenience function for Asset location customization</p>
 
                       </div>
                       <div class="declaration">
@@ -940,7 +972,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomInstruction</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/MiSnapTutorialInstructionConfiguration.html">MiSnapTutorialInstructionConfiguration</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomAssetLocation</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/MiSnapAssetLocationConfiguration.html">MiSnapAssetLocationConfiguration</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -969,6 +1001,40 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomTutorial</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/MiSnapTutorialConfiguration.html">MiSnapTutorialConfiguration</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomInstructionWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/withCustomInstruction(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomInstructionWithCompletion:">withCustomInstruction(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience function for tutorial instruction type customization</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Deprecated in 5.2.0 and will be removed in future versions. Call <code><a href="../Classes/MiSnapConfiguration.html#/c:@M@MiSnapUX@objc(cs)MiSnapConfiguration(im)withCustomTutorialWithCompletion:">.withCustomTutorial(completion:)</a></code> instead and access it through <code>tutorial.instruction</code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Call withCustomTutorial(completion:﹚ instead and access this customization through `tutorial.instruction`"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomInstruction</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/MiSnapTutorialInstructionConfiguration.html">MiSnapTutorialInstructionConfiguration</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapConfiguration</span></code></pre>
 
                         </div>
                       </div>
@@ -1024,7 +1090,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">MiSnapParameters</span><span class="p">,</span> <span class="nv">uxParameters</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapUxParameters.html">MiSnapUxParameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+<span class="kd">convenience</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">MiSnapParameters</span><span class="p">,</span> <span class="nv">uxParameters</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapUxParameters.html">MiSnapUxParameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

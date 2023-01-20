@@ -31,28 +31,26 @@ import _Concurrency
   }
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class MiSnapNFCInputs : ObjectiveC.NSObject {
-  @objc public var documentNumber: Swift.String
-  @objc public var dateOfBirth: Swift.String
-  @objc public var dateOfExpiry: Swift.String
-  @objc public var mrzString: Swift.String
-  @objc public var documentType: MiSnapNFCDocumentType
-  @objc public var chipLocation: MiSnapNFCChipLocation
+@_inheritsConvenienceInitializers @objc public class MiSnapNFCConfiguration : ObjectiveC.NSObject {
+  @objc public func withInputs(completion: (MiSnapNFCInputs) -> Swift.Void) -> MiSnapNFCConfiguration
+  @objc public func withCustomParameters(completion: (MiSnapNFCParameters) -> Swift.Void) -> MiSnapNFCConfiguration
+  @objc public func withCustomUxParameters(completion: (MiSnapNFCUxParameters) -> Swift.Void) -> MiSnapNFCConfiguration
+  @objc public func withCustomLocalization(completion: (MiSnapNFCLocalizationConfiguration) -> Swift.Void) -> MiSnapNFCConfiguration
+  @objc public func withCustomAssetLocation(completion: (MiSnapNFCAssetLocationConfiguration) -> Swift.Void) -> MiSnapNFCConfiguration
+  @objc public func withCustomScan(completion: (MiSnapNFCScanConfiguration) -> Swift.Void) -> MiSnapNFCConfiguration
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class MiSnapNFCConfiguration : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class MiSnapNFCScanConfiguration : ObjectiveC.NSObject {
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var backgroundColorDarkMode: UIKit.UIColor?
+  @objc public var message: MiSnapAssetManager.MiSnapLabelConfiguration
+  @objc public var failureMessage: MiSnapAssetManager.MiSnapLabelConfiguration
+  @objc public var buttons: MiSnapNFCScanButtonsConfiguration
   @objc override dynamic public init()
-  @objc public func withInputs(completion: (MiSnapNFCInputs) -> Swift.Void) -> MiSnapNFCConfiguration
-  @objc public func withCustomUxParameters(completion: (MiSnapNFCUxParameters) -> Swift.Void) -> MiSnapNFCConfiguration
-  @objc public func withCustomLocalization(completion: (MiSnapNFCLocalizationConfiguration) -> Swift.Void) -> MiSnapNFCConfiguration
-  @objc public func withCustomScan(completion: (MiSnapNFCScanConfiguration) -> Swift.Void) -> MiSnapNFCConfiguration
-  @objc override dynamic public var description: Swift.String {
-    @objc get
-  }
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapNFCScanButtonsConfiguration : ObjectiveC.NSObject {
@@ -66,19 +64,16 @@ import _Concurrency
   }
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class MiSnapNFCScanConfiguration : ObjectiveC.NSObject {
-  @objc public var buttons: MiSnapNFCScanButtonsConfiguration
+@_inheritsConvenienceInitializers @objc public class MiSnapNFCInstructionConfiguration : ObjectiveC.NSObject {
+  @objc public var device: UIKit.UIImage?
+  @objc public var id: UIKit.UIImage?
+  @objc public var passport: UIKit.UIImage?
+  @objc public var target: UIKit.UIImage?
   @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapNFCUxParameters : ObjectiveC.NSObject {
-  @objc public var timeout: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc public var skipCA: Swift.Bool
   @objc public var autoDismiss: Swift.Bool
-  @objc public var logLevel: MiSnapNFCLogLevel
   @objc override dynamic public var description: Swift.String {
     @objc get
   }

@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
            Docs
         </a>
-         (100% documented)
+         (99% documented)
       </p>
     
       <div class="header-col--secondary">
@@ -47,6 +47,9 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureAssetLocationConfiguration.html">MiSnapFacialCaptureAssetLocationConfiguration</a>
+              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureConfiguration.html">MiSnapFacialCaptureConfiguration</a>
               </li>
@@ -374,9 +377,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureConfiguration(py)successCheckmark"></a>
-                    <a name="//apple_ref/swift/Property/successCheckmark" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureConfiguration(py)successCheckmark">successCheckmark</a>
+                    <a name="/c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureConfiguration(py)success"></a>
+                    <a name="//apple_ref/swift/Property/success" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureConfiguration(py)success">success</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -384,7 +387,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Success checkmark view configuration</p>
+                        <p>Success configuration</p>
 
                       </div>
                       <div class="declaration">
@@ -392,7 +395,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">successCheckmark</span><span class="p">:</span> <span class="kt">MiSnapSuccessCheckmarkViewConfiguration</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">MiSnapSuccessConfiguration</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -682,6 +685,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureConfiguration(im)withCustomSuccessWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/withCustomSuccess(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureConfiguration(im)withCustomSuccessWithCompletion:">withCustomSuccess(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience function for Success customization</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomSuccess</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapSuccessConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapFacialCaptureConfiguration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureConfiguration(im)withCustomSuccessCheckmarkWithCompletion:"></a>
                     <a name="//apple_ref/swift/Method/withCustomSuccessCheckmark(completion:)" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureConfiguration(im)withCustomSuccessCheckmarkWithCompletion:">withCustomSuccessCheckmark(completion:<wbr>)</a>
@@ -693,13 +724,19 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Convenience function for Success checkmark view customization</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Deprecated in 5.2.0 and will be removed in future versions.Call <code><a href="../Classes/MiSnapFacialCaptureConfiguration.html#/c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureConfiguration(im)withCustomSuccessWithCompletion:">withCustomSuccess(completion:)</a></code> instead and and access this customization through <code>success.checkmark</code>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Call withCustomSuccess(completion:﹚ instead and and access this customization through `success.checkmark`"</span><span class="p">)</span>
+<span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomSuccessCheckmark</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt">MiSnapSuccessCheckmarkViewConfiguration</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapFacialCaptureConfiguration</span></code></pre>
 
                         </div>
@@ -757,6 +794,34 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomLocalization</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/MiSnapFacialCaptureLocalizationConfiguration.html">MiSnapFacialCaptureLocalizationConfiguration</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapFacialCaptureConfiguration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureConfiguration(im)withCustomAssetLocationWithCompletion:"></a>
+                    <a name="//apple_ref/swift/Method/withCustomAssetLocation(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureConfiguration(im)withCustomAssetLocationWithCompletion:">withCustomAssetLocation(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience function for Asset location customization</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">withCustomAssetLocation</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/MiSnapFacialCaptureAssetLocationConfiguration.html">MiSnapFacialCaptureAssetLocationConfiguration</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">MiSnapFacialCaptureConfiguration</span></code></pre>
 
                         </div>
                       </div>

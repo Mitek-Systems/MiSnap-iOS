@@ -215,11 +215,11 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The corner points of the document
  */
-@property (nonatomic, readonly) NSArray* cornerPoints;
+@property (nonatomic, readonly) NSArray *cornerPoints;
 /**
  The corner points of the document normalized to a screen size
  */
-@property (nonatomic, readonly) NSArray* cornerPointsNormalized;
+@property (nonatomic, readonly) NSArray *cornerPointsNormalized;
 /**
  Adds IQA failure to `orderedFailures`
  

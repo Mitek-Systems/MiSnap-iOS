@@ -302,7 +302,7 @@
                       <div class="abstract">
                         <p>Compression to apply to an acquired image (100 - no compression, 0 - absolute compression)</p>
 
-<p>Range: 50&hellip;100</p>
+<p>Range: <code>50...100</code></p>
 
                       </div>
                       <div class="declaration">
@@ -331,7 +331,7 @@
                       <div class="abstract">
                         <p>A delay in milliseconds between the first frame that passed all IQA checks before continuing analysis</p>
 
-<p>Range: 0&hellip;2000</p>
+<p>Range: <code>0...2000</code></p>
 
                       </div>
                       <div class="declaration">
@@ -393,6 +393,40 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">serverVersion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapParameters(py)enhancedManualEnabled"></a>
+                    <a name="//apple_ref/objc/Property/enhancedManualEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapParameters(py)enhancedManualEnabled">enhancedManualEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether hints need to be presented to a user in Manual mode</p>
+
+<p>Default: <code>FALSE</code></p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This is a licensed feature therefore in addition to overriding this parameter to <code>TRUE</code>, it needs to be available in a license key for Enhanced Manual functionality to work
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">enhancedManualEnabled</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>

@@ -226,6 +226,12 @@ extension CoreGraphics.CGSize {
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapAssetManager.MiSnapFacialCaptureGuideConfiguration? = nil, fill: CoreGraphics.CGFloat, frame: CoreGraphics.CGRect)
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class MiSnapSuccessConfiguration : ObjectiveC.NSObject {
+  @objc public var checkmark: MiSnapAssetManager.MiSnapSuccessCheckmarkViewConfiguration
+  @objc public var message: MiSnapAssetManager.MiSnapLabelConfiguration
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class MiSnapSuccessCheckmarkViewConfiguration : MiSnapAssetManager.MiSnapStatelessViewConfiguration {
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
@@ -351,6 +357,40 @@ extension MiSnapAssetManager.MiSnapLabel {
   @_Concurrency.MainActor(unsafe) public init(with status: MiSnapAssetManager.MiSnapVoiceCaptureViewStatus, neutralConfiguration: MiSnapAssetManager.MiSnapVoiceCaptureNeutralViewConfiguration? = nil, successConfiguration: MiSnapAssetManager.MiSnapVoiceCaptureSuccessViewConfiguration? = nil, failureConfiguration: MiSnapAssetManager.MiSnapVoiceCaptureFailureViewConfiguration? = nil, for step: Swift.Int? = nil)
   @objc @_Concurrency.MainActor(unsafe) public func update(for status: MiSnapAssetManager.MiSnapVoiceCaptureViewStatus)
   @objc deinit
+}
+@objc public enum BulletType : Swift.Int {
+  case arrow, circle, square
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapBulletViewConfiguration : ObjectiveC.NSObject {
+  @objc public var type: MiSnapAssetManager.BulletType {
+    @objc get
+    @objc set
+  }
+  @objc public var size: CoreGraphics.CGSize
+  @objc public var fillColor: UIKit.UIColor
+  @objc public var strokeColor: UIKit.UIColor
+  @objc public var strokeWidth: CoreGraphics.CGFloat
+  @objc public var shadowColor: UIKit.UIColor
+  @objc public var shadowOffset: CoreGraphics.CGSize
+  @objc public var shadowRadius: CoreGraphics.CGFloat
+  @objc public var shadowOpacity: Swift.Float
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapBulletView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapAssetManager.MiSnapBulletViewConfiguration? = nil)
+  @objc deinit
+}
+extension MiSnapAssetManager.MiSnapBulletView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
 }
 @objc public enum MiSnapHintStyle : Swift.Int {
   case semitransparent = 0
@@ -480,6 +520,39 @@ extension MiSnapAssetManager.MiSnapLabel {
   @_Concurrency.MainActor(unsafe) public func update(_ orientation: UIKit.UIInterfaceOrientation)
   @objc deinit
 }
+@objc public enum MiSnapCheckboxState : Swift.Int {
+  case unchecked, checked
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapCheckboxViewConfiguration : ObjectiveC.NSObject {
+  @objc public var size: CoreGraphics.CGSize
+  @objc public var color: UIKit.UIColor
+  @objc public var backgroundColorUnchecked: UIKit.UIColor
+  @objc public var backgroundColorChecked: UIKit.UIColor
+  @objc public var borderColor: UIKit.UIColor
+  @objc public var borderWidth: CoreGraphics.CGFloat
+  @objc public var cornerRadius: CoreGraphics.CGFloat
+  @objc public var shadowColor: UIKit.UIColor
+  @objc public var shadowOffset: CoreGraphics.CGSize
+  @objc public var shadowRadius: CoreGraphics.CGFloat
+  @objc public var shadowOpacity: Swift.Float
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCheckboxView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapAssetManager.MiSnapCheckboxViewConfiguration? = nil, for state: MiSnapAssetManager.MiSnapCheckboxState = .unchecked)
+  @objc @_Concurrency.MainActor(unsafe) public func check()
+  @objc @_Concurrency.MainActor(unsafe) public func uncheck()
+  @objc @_Concurrency.MainActor(unsafe) public func toggle()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class MiSnapTorchViewConfiguration : MiSnapAssetManager.MiSnapStatefulViewConfiguration {
   @objc override dynamic public init()
   @objc override public init(for state: MiSnapAssetManager.MiSnapViewState)
@@ -513,6 +586,9 @@ extension MiSnapAssetManager.MiSnapFacialCaptureOutlineState : Swift.RawRepresen
 extension MiSnapAssetManager.MiSnapVoiceCaptureViewStatus : Swift.Equatable {}
 extension MiSnapAssetManager.MiSnapVoiceCaptureViewStatus : Swift.Hashable {}
 extension MiSnapAssetManager.MiSnapVoiceCaptureViewStatus : Swift.RawRepresentable {}
+extension MiSnapAssetManager.BulletType : Swift.Equatable {}
+extension MiSnapAssetManager.BulletType : Swift.Hashable {}
+extension MiSnapAssetManager.BulletType : Swift.RawRepresentable {}
 extension MiSnapAssetManager.MiSnapHintStyle : Swift.Equatable {}
 extension MiSnapAssetManager.MiSnapHintStyle : Swift.Hashable {}
 extension MiSnapAssetManager.MiSnapHintStyle : Swift.RawRepresentable {}
@@ -528,3 +604,6 @@ extension MiSnapAssetManager.MiSnapVignetteStyle : Swift.RawRepresentable {}
 extension MiSnapAssetManager.MiSnapGuideAlignment : Swift.Equatable {}
 extension MiSnapAssetManager.MiSnapGuideAlignment : Swift.Hashable {}
 extension MiSnapAssetManager.MiSnapGuideAlignment : Swift.RawRepresentable {}
+extension MiSnapAssetManager.MiSnapCheckboxState : Swift.Equatable {}
+extension MiSnapAssetManager.MiSnapCheckboxState : Swift.Hashable {}
+extension MiSnapAssetManager.MiSnapCheckboxState : Swift.RawRepresentable {}

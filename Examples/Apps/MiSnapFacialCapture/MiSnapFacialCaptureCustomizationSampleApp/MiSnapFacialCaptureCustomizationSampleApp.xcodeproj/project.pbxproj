@@ -16,8 +16,14 @@
 		423A92C927EC9D7C00D3F481 /* MiSnapFacialCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 423A92C827EC9D7C00D3F481 /* MiSnapFacialCapture */; };
 		423A92CB27EC9D7C00D3F481 /* MiSnapFacialCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 423A92CA27EC9D7C00D3F481 /* MiSnapFacialCaptureUX */; };
 		423A92CD27EC9DE900D3F481 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423A92CC27EC9DE900D3F481 /* ResultViewController.swift */; };
-		423A92D027ECA65B00D3F481 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 423A92D227ECA65B00D3F481 /* Localizable.strings */; };
 		423A92D527ECB28C00D3F481 /* CustomFacialCaptureTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423A92D427ECB28C00D3F481 /* CustomFacialCaptureTutorialViewController.swift */; };
+		42A14129296E265E007E7252 /* MiSnapFacialCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A14106296E265E007E7252 /* MiSnapFacialCaptureLocalizable.strings */; };
+		42A1413D296E266D007E7252 /* misnap_facial_capture_instruction_image_mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A14137296E266C007E7252 /* misnap_facial_capture_instruction_image_mask.png */; };
+		42A1413E296E266D007E7252 /* misnap_facial_capture_instruction_manual_with_finger.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A14138296E266C007E7252 /* misnap_facial_capture_instruction_manual_with_finger.png */; };
+		42A1413F296E266D007E7252 /* misnap_facial_capture_instruction_image_smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A14139296E266C007E7252 /* misnap_facial_capture_instruction_image_smile.png */; };
+		42A14140296E266D007E7252 /* misnap_facial_capture_instruction_image_neutral.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A1413A296E266D007E7252 /* misnap_facial_capture_instruction_image_neutral.png */; };
+		42A14141296E266D007E7252 /* misnap_facial_capture_instruction_image_oval.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A1413B296E266D007E7252 /* misnap_facial_capture_instruction_image_oval.png */; };
+		42A14142296E266D007E7252 /* misnap_facial_capture_instruction_image_hat.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A1413C296E266D007E7252 /* misnap_facial_capture_instruction_image_hat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +36,15 @@
 		423A92B727EC9CA200D3F481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		423A92B927EC9CA200D3F481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		423A92CC27EC9DE900D3F481 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		423A92D127ECA65B00D3F481 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		423A92D327ECA68600D3F481 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		423A92D427ECB28C00D3F481 /* CustomFacialCaptureTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFacialCaptureTutorialViewController.swift; sourceTree = "<group>"; };
+		42A14107296E265E007E7252 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapFacialCaptureLocalizable.strings; sourceTree = "<group>"; };
+		42A14108296E265E007E7252 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapFacialCaptureLocalizable.strings; sourceTree = "<group>"; };
+		42A14137296E266C007E7252 /* misnap_facial_capture_instruction_image_mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_image_mask.png; sourceTree = "<group>"; };
+		42A14138296E266C007E7252 /* misnap_facial_capture_instruction_manual_with_finger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_manual_with_finger.png; sourceTree = "<group>"; };
+		42A14139296E266C007E7252 /* misnap_facial_capture_instruction_image_smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_image_smile.png; sourceTree = "<group>"; };
+		42A1413A296E266D007E7252 /* misnap_facial_capture_instruction_image_neutral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_image_neutral.png; sourceTree = "<group>"; };
+		42A1413B296E266D007E7252 /* misnap_facial_capture_instruction_image_oval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_image_oval.png; sourceTree = "<group>"; };
+		42A1413C296E266D007E7252 /* misnap_facial_capture_instruction_image_hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_image_hat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,7 @@
 		423A92AA27EC9CA000D3F481 /* MiSnapFacialCaptureCustomizationSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				42A140F3296E265D007E7252 /* Assets */,
 				423A92C627EC9D1100D3F481 /* Models */,
 				423A92C527EC9D0D00D3F481 /* Views */,
 				423A92C427EC9D0600D3F481 /* Controllers */,
@@ -87,7 +100,6 @@
 		423A92C327EC9CFE00D3F481 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				423A92D227ECA65B00D3F481 /* Localizable.strings */,
 				423A92B427EC9CA200D3F481 /* Assets.xcassets */,
 				423A92B127EC9CA000D3F481 /* Main.storyboard */,
 				423A92B627EC9CA200D3F481 /* LaunchScreen.storyboard */,
@@ -119,6 +131,29 @@
 			children = (
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		42A140F3296E265D007E7252 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				42A14105296E265E007E7252 /* MiSnapFacialCapture */,
+			);
+			name = Assets;
+			path = ../../../../../Assets;
+			sourceTree = "<group>";
+		};
+		42A14105296E265E007E7252 /* MiSnapFacialCapture */ = {
+			isa = PBXGroup;
+			children = (
+				42A14106296E265E007E7252 /* MiSnapFacialCaptureLocalizable.strings */,
+				42A1413C296E266D007E7252 /* misnap_facial_capture_instruction_image_hat.png */,
+				42A14137296E266C007E7252 /* misnap_facial_capture_instruction_image_mask.png */,
+				42A1413A296E266D007E7252 /* misnap_facial_capture_instruction_image_neutral.png */,
+				42A1413B296E266D007E7252 /* misnap_facial_capture_instruction_image_oval.png */,
+				42A14139296E266C007E7252 /* misnap_facial_capture_instruction_image_smile.png */,
+				42A14138296E266C007E7252 /* misnap_facial_capture_instruction_manual_with_finger.png */,
+			);
+			path = MiSnapFacialCapture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +203,7 @@
 				en,
 				Base,
 				es,
+				fr,
 			);
 			mainGroup = 423A929F27EC9C9F00D3F481;
 			packageReferences = (
@@ -188,9 +224,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				423A92B827EC9CA200D3F481 /* LaunchScreen.storyboard in Resources */,
-				423A92D027ECA65B00D3F481 /* Localizable.strings in Resources */,
+				42A1413D296E266D007E7252 /* misnap_facial_capture_instruction_image_mask.png in Resources */,
+				42A1413F296E266D007E7252 /* misnap_facial_capture_instruction_image_smile.png in Resources */,
+				42A14142296E266D007E7252 /* misnap_facial_capture_instruction_image_hat.png in Resources */,
 				423A92B527EC9CA200D3F481 /* Assets.xcassets in Resources */,
 				423A92B327EC9CA000D3F481 /* Main.storyboard in Resources */,
+				42A14140296E266D007E7252 /* misnap_facial_capture_instruction_image_neutral.png in Resources */,
+				42A1413E296E266D007E7252 /* misnap_facial_capture_instruction_manual_with_finger.png in Resources */,
+				42A14129296E265E007E7252 /* MiSnapFacialCaptureLocalizable.strings in Resources */,
+				42A14141296E266D007E7252 /* misnap_facial_capture_instruction_image_oval.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,13 +270,13 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		423A92D227ECA65B00D3F481 /* Localizable.strings */ = {
+		42A14106296E265E007E7252 /* MiSnapFacialCaptureLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				423A92D127ECA65B00D3F481 /* en */,
-				423A92D327ECA68600D3F481 /* es */,
+				42A14107296E265E007E7252 /* en */,
+				42A14108296E265E007E7252 /* es */,
 			);
-			name = Localizable.strings;
+			name = MiSnapFacialCaptureLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -448,7 +490,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
 			requirement = {
-				branch = feature/5.1.1;
+				branch = feature/5.2.0;
 				kind = branch;
 			};
 		};

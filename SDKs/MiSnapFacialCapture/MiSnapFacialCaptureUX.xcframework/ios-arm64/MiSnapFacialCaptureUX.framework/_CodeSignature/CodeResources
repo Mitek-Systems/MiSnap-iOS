@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapFacialCaptureUX-Swift.h</key>
 		<data>
-		SxAuFBR1H1fIsi+isM5t7Pg1euw=
+		tGEsF7qZ7/FoGkXVOgKuT/k9Dxc=
 		</data>
 		<key>Headers/MiSnapFacialCaptureUX.h</key>
 		<data>
@@ -18,73 +18,31 @@
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		z6fZ/+4ToXelHVuBueUwG9fKz5M=
+		Cw5SRSSKripyOknCfRTx4Df7HUo=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		t/SS7lEhYkji8LqcPg9aRWAlnnY=
+		k/nfoPcuLwVf1jrtjKE6drvjNT8=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7M0taV50AtFD4t6TroyaHiHwP0c=
+		UQFLEAABu7z6/3vRXqbhK0hlRcA=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		z6fZ/+4ToXelHVuBueUwG9fKz5M=
+		Cw5SRSSKripyOknCfRTx4Df7HUo=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		t/SS7lEhYkji8LqcPg9aRWAlnnY=
+		k/nfoPcuLwVf1jrtjKE6drvjNT8=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		7M0taV50AtFD4t6TroyaHiHwP0c=
+		UQFLEAABu7z6/3vRXqbhK0hlRcA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		s5pwilBkA4mdmHbvxYFKN651GHg=
-		</data>
-		<key>en.lproj/MiSnapFacialCaptureLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YYOCtapK/kO9tD/lkjp2Bj4HBJE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/MiSnapFacialCaptureLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fFlF2FgyyhPaLcoO6UY4utvGHF0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>misnap_facial_capture_instruction_image_hat.png</key>
-		<data>
-		w3V3CNSXB+fRLWPuPfGxbahFoTQ=
-		</data>
-		<key>misnap_facial_capture_instruction_image_mask.png</key>
-		<data>
-		6L9hCT0YP0L6RkgjbMfyVDJCjio=
-		</data>
-		<key>misnap_facial_capture_instruction_image_neutral.png</key>
-		<data>
-		ioGj5vzRpzpuGhAVieB/38wsiXg=
-		</data>
-		<key>misnap_facial_capture_instruction_image_oval.png</key>
-		<data>
-		eOltiO6U+2lehYf0oFHDKi3CMNM=
-		</data>
-		<key>misnap_facial_capture_instruction_image_smile.png</key>
-		<data>
-		+9wXTw9V+i4KEssJPw4FY/iCLuU=
-		</data>
-		<key>misnap_facial_capture_instruction_manual_with_finger.png</key>
-		<data>
-		5MvX+nG/PyiGNH8Qr08bb7n8ARo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -93,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IN1yKQjzliwK99EQq8Emu9+D/+9+ZuBMBD7zNwTFilE=
+			xJ5RJdglQV6UBasdIORPSdfo+dFfqAnTpvcUCSjJWho=
 			</data>
 		</dict>
 		<key>Headers/MiSnapFacialCaptureUX.h</key>
@@ -107,42 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hQ+DeQ/+STdRiqmpZCHcyV1kuLcxljQqRp42owfJiNE=
+			ej96bNSOkYmYTFzcuO8vfdS4sN9a3J2sBMs67wFFCMk=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s1/ReBViRbiD0iaUfUwPl5LA/TPQ5CSaK1e39cCQFRI=
+			DnCah2M1YSETxqJqsnc2vsH4lntR/cimIB1zsFIKxf8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M1IB9GmUsqEm1Oqs3Ugs/XToQ1kOsRx2VEaa8/jG6ig=
+			/lOg4ucYYpFdlxPIOC0lhWdWvuIGI49V7vmOMsBmHFY=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hQ+DeQ/+STdRiqmpZCHcyV1kuLcxljQqRp42owfJiNE=
+			ej96bNSOkYmYTFzcuO8vfdS4sN9a3J2sBMs67wFFCMk=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s1/ReBViRbiD0iaUfUwPl5LA/TPQ5CSaK1e39cCQFRI=
+			DnCah2M1YSETxqJqsnc2vsH4lntR/cimIB1zsFIKxf8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M1IB9GmUsqEm1Oqs3Ugs/XToQ1kOsRx2VEaa8/jG6ig=
+			/lOg4ucYYpFdlxPIOC0lhWdWvuIGI49V7vmOMsBmHFY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -150,66 +108,6 @@
 			<key>hash2</key>
 			<data>
 			Xy6V5nuowJY3DO1HsI2udKneCUFHRSCap5MTu/ZWULI=
-			</data>
-		</dict>
-		<key>en.lproj/MiSnapFacialCaptureLocalizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jBDYt7+7xjrC8W55oef+rOxcc/D56KudyO1kyfhOtRs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/MiSnapFacialCaptureLocalizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			muri7K0zCLwi6nmuu8NopKaVLM4EaG+utwG6M6g+d8U=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>misnap_facial_capture_instruction_image_hat.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mQb8LZ4iXqdSUhjGKlHwQms9g/UjzOHQRNWUd1Gm3pw=
-			</data>
-		</dict>
-		<key>misnap_facial_capture_instruction_image_mask.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mg4YdRw5vAICRQjdBOtRQJbh/baW6M9jG0SHVxSz1K0=
-			</data>
-		</dict>
-		<key>misnap_facial_capture_instruction_image_neutral.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RL/6cZfYLxR5bHYySzIqcULAcKFrp7+FL7ba6UZkauE=
-			</data>
-		</dict>
-		<key>misnap_facial_capture_instruction_image_oval.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			scvUIi88ErVNd3SkLl5Ec5xHhDkEF2z7Z11C69buD94=
-			</data>
-		</dict>
-		<key>misnap_facial_capture_instruction_image_smile.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4iYNeYCzVZVIsRP94Vt6W2tffqPlUF0XP3eIrs8JoW0=
-			</data>
-		</dict>
-		<key>misnap_facial_capture_instruction_manual_with_finger.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oaPqr6hmzxzZYHNQ25v6UlT/hp2VVzC6IqppT5kWdGs=
 			</data>
 		</dict>
 	</dict>

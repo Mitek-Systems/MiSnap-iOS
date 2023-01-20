@@ -27,6 +27,8 @@ import _Concurrency
   @objc func tutorialCancelButtonAction()
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapTutorialConfiguration : ObjectiveC.NSObject {
+  @objc public var backgroundColor: UIKit.UIColor?
+  @objc public var backgroundColorDarkMode: UIKit.UIColor?
   @objc public var buttons: MiSnapTutorialButtonsConfiguration
   @objc public var instruction: MiSnapTutorialInstructionConfiguration
   @objc override dynamic public init()
@@ -52,11 +54,13 @@ import _Concurrency
     get
   }
 }
-@objc @_inheritsConvenienceInitializers public class MiSnapTutorialInstructionConfiguration : ObjectiveC.NSObject {
-  @objc public var type: MiSnapTutorialType {
-    @objc get
-    @objc set
-  }
+@_inheritsConvenienceInitializers @objc public class MiSnapTutorialInstructionConfiguration : ObjectiveC.NSObject {
+  @objc public var type: MiSnapTutorialType
+  @objc public var bullet: MiSnapBulletViewConfiguration
+  @objc public var checkbox: MiSnapCheckboxViewConfiguration
+  @objc public var dontShowAgain: MiSnapLabelConfiguration
+  @objc public var message: MiSnapLabelConfiguration
+  @objc public var messageSecondary: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc deinit
 }
@@ -137,7 +141,7 @@ import _Concurrency
   @objc public var recordingIndicator: MiSnapRecordingIndicatorViewConfiguration {
     get
   }
-  @objc public var successCheckmark: MiSnapSuccessCheckmarkViewConfiguration {
+  @objc public var success: MiSnapSuccessConfiguration {
     get
   }
   @objc public var tutorial: MiSnapTutorialConfiguration {
@@ -156,12 +160,16 @@ import _Concurrency
   @objc public func withCustomTorch(completion: (MiSnapTorchViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomCameraShutter(completion: (MiSnapCameraShutterViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomRecordingIndicator(completion: (MiSnapRecordingIndicatorViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomSuccess(completion: (MiSnapSuccessConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @available(*, deprecated, message: "Call withCustomSuccess(completion:) instead and and access this customization through `success.checkmark`")
   @objc public func withCustomSuccessCheckmark(completion: (MiSnapSuccessCheckmarkViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomLocalization(completion: (MiSnapLocalizationConfiguration) -> Swift.Void) -> MiSnapConfiguration
-  @objc public func withCustomInstruction(completion: (MiSnapTutorialInstructionConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomAssetLocation(completion: (MiSnapAssetLocationConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomTutorial(completion: (MiSnapTutorialConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @available(*, deprecated, message: "Call withCustomTutorial(completion:) instead and access this customization through `tutorial.instruction`")
+  @objc public func withCustomInstruction(completion: (MiSnapTutorialInstructionConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func applying(_ template: MiSnapConfiguration) -> MiSnapConfiguration
-  @objc public init(with parameters: MiSnapParameters, uxParameters: MiSnapUxParameters? = nil)
+  @objc convenience public init(with parameters: MiSnapParameters, uxParameters: MiSnapUxParameters? = nil)
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -173,6 +181,14 @@ import _Concurrency
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapAssetLocationConfiguration : ObjectiveC.NSObject {
+  @objc public var bundle: Foundation.Bundle
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol MiSnapViewControllerDelegate {

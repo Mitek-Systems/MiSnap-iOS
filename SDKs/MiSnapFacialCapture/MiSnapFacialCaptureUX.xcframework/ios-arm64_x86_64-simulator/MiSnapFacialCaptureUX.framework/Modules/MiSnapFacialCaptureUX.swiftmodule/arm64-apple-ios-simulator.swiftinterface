@@ -7,12 +7,21 @@ import MiSnapFacialCapture
 import Swift
 import UIKit
 import _Concurrency
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MiSnapFacialCaptureLocalizationConfiguration : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureLocalizationConfiguration : ObjectiveC.NSObject {
   @objc public var bundle: Foundation.Bundle
   @objc public var stringsName: Swift.String
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureAssetLocationConfiguration : ObjectiveC.NSObject {
+  @objc public var bundle: Foundation.Bundle
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum MiSnapFaceCaptureFlow : Swift.Int {
@@ -67,6 +76,37 @@ import _Concurrency
   @objc optional func tutorialRetryButtonAction()
   @objc func tutorialContinueButtonAction(for tutorialMode: MiSnapFacialCaptureTutorialMode)
 }
+@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureTutorialConfiguration : ObjectiveC.NSObject {
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var backgroundColorDarkMode: UIKit.UIColor?
+  @objc public var buttons: MiSnapFacialCaptureTutorialButtonsConfiguration
+  @objc public var introductoryInstructionMessage: MiSnapLabelConfiguration
+  @objc public var introductoryInstructionHeader: MiSnapLabelConfiguration
+  @objc public var timeoutMessage: MiSnapLabelConfiguration
+  @objc public var reviewMessage: MiSnapLabelConfiguration
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum MiSnapFacialCaptureTutorialButtonLayout : Swift.Int {
+  case defaultLayout = 0
+  case vertical = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureTutorialButtonsConfiguration : ObjectiveC.NSObject {
+  @objc public var layout: MiSnapFacialCaptureTutorialButtonLayout
+  @objc public var cancel: MiSnapLabelConfiguration
+  @objc public var retry: MiSnapLabelConfiguration
+  @objc public var proceed: MiSnapLabelConfiguration
+  @objc override dynamic public init()
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureConfiguration : ObjectiveC.NSObject {
   @objc public var parameters: MiSnapFacialCaptureParameters
   @objc public var uxParameters: MiSnapFacialCaptureUXParameters
@@ -91,7 +131,7 @@ import _Concurrency
   @objc public var recordingIndicator: MiSnapRecordingIndicatorViewConfiguration {
     get
   }
-  @objc public var successCheckmark: MiSnapSuccessCheckmarkViewConfiguration {
+  @objc public var success: MiSnapSuccessConfiguration {
     get
   }
   @objc public var tutorial: MiSnapFacialCaptureTutorialConfiguration {
@@ -106,39 +146,17 @@ import _Concurrency
   @objc public func withCustomCameraShutter(completion: (MiSnapCameraShutterViewConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc public func withCustomCountdown(completion: (MiSnapFacialCaptureCountdownViewConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc public func withCustomRecordingIndicator(completion: (MiSnapRecordingIndicatorViewConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomSuccess(completion: (MiSnapSuccessConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
+  @available(*, deprecated, message: "Call withCustomSuccess(completion:) instead and and access this customization through `success.checkmark`")
   @objc public func withCustomSuccessCheckmark(completion: (MiSnapSuccessCheckmarkViewConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc public func withCustomTutorial(completion: (MiSnapFacialCaptureTutorialConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc public func withCustomLocalization(completion: (MiSnapFacialCaptureLocalizationConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
+  @objc public func withCustomAssetLocation(completion: (MiSnapFacialCaptureAssetLocationConfiguration) -> Swift.Void) -> MiSnapFacialCaptureConfiguration
   @objc override dynamic public init()
   @objc convenience public init(with parameters: MiSnapFacialCaptureParameters? = nil, uxParameters: MiSnapFacialCaptureUXParameters? = nil)
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
-  @objc deinit
-}
-@objc public enum MiSnapFacialCaptureTutorialButtonLayout : Swift.Int {
-  case defaultLayout = 0
-  case vertical = 1
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureTutorialButtonsConfiguration : ObjectiveC.NSObject {
-  @objc public var layout: MiSnapFacialCaptureTutorialButtonLayout
-  @objc public var cancel: MiSnapLabelConfiguration
-  @objc public var retry: MiSnapLabelConfiguration
-  @objc public var proceed: MiSnapLabelConfiguration
-  @objc override dynamic public init()
-  @objc override dynamic public var description: Swift.String {
-    @objc get
-  }
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureTutorialConfiguration : ObjectiveC.NSObject {
-  @objc public var buttons: MiSnapFacialCaptureTutorialButtonsConfiguration
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol MiSnapFacialCaptureViewControllerDelegate {

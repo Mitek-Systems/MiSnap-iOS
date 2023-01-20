@@ -11,6 +11,13 @@ MiSnapNFC 5.x is distributed through CocoaPods and Swift Package Manager. For de
 
 It's highly recommended to use one of these distribution managers but manual integration is still supported.
 
+From 5.2.0 onwards localization and image assets are moved out of `MiSnapNFCUX` framework to enable easy customization while making sure app size is not ballooned. As such, regardless of your choise of integration (CocoaPods, Swift Package Manager, manual) the first step should be adding assets to your Xcode project. Here's how to do this:
+* Copy `MiSnapNFC` folder from [here](../../../Assets) into your project's location
+* In Xcode, File > Add Files to "YourAppName"...
+* Select copied folder and make sure:
+    * `Create groups` option is selected in `Added folders` section
+    * All necessary targets are checked in `Add to targets` section
+
 ### SDK and UX/UI
 It is Mitek's recommended option to integrated both SDK and UX/UI.
 

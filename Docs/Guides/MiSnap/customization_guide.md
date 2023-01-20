@@ -8,6 +8,7 @@ Please refer to [MiSnapCustomizationSampleApp](../../../Examples/Apps/MiSnap/MiS
 * [Overview](#overview)
 * [UX Parameters](#ux-parameters)
 * [Localization](#localization)
+* [Image assets](#image-assets)
 * [Introductory Instruction Screen](#introductory-instruction-screen)
 * [Review Screen](#review-screen)
 * [Help and Timeout Screens](#help-and-timeout-screens)
@@ -23,6 +24,8 @@ Please refer to [MiSnapCustomizationSampleApp](../../../Examples/Apps/MiSnap/MiS
     * [Success Checkmark View](#success-view)
 * [Parameters](#parameters)
     * [Video Recording](#video-recording)
+    * [Optional Data Redaction](#optional-data-redaction)
+    * [Enhanced Manual](#enhanced-manual)
     * [ID Back Mode](#id-back-mode)
     * [Document Type Name](#document-type-name)
     * [Other](#other)
@@ -79,7 +82,9 @@ For all available UX Parameters customization options see this [API reference](h
 
 # Localization
 
-Copy localization key-value pairs for a given language from [Localization](../../../Localization/MiSnap) folder and paste them into your Localizable.strings file.
+Go to a localizable strings file that was added to your project during integration process and adjust values for a desired language as needed.
+
+By default, it's expected that localizable files are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps: 
 
 Create a template configuration (if it doesn't exist) and chain `.withCustomLocalization`. Refer to a snippet below.
 
@@ -87,7 +92,32 @@ Create a template configuration (if it doesn't exist) and chain `.withCustomLoca
 let template = MiSnapConfiguration()
     .withCustomLocalization { localization in
         localization.bundle = // Your bundle where localization files are located
+    }
+```
+
+By default, it's aslo expected that localizable file name is `MiSnapLocalizable` but if you changed its name or moved localization key-pairs to your own localizable file then you can specify a new file name by following next steps:
+
+Create a template configuration (if it doesn't exist) and chain `.withCustomLocalization` (if it doesn't exist). Refer to a snippet below.
+
+```Swift
+let template = MiSnapConfiguration()
+    .withCustomLocalization { localization in
         localization.stringsName = // Your localization file name
+    }
+```
+
+# Image Assets
+
+Go to a place where you copied images into during integration process and replace existing resources with new ones but make sure to keep the same names.
+
+By default, it's expected that images are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps:
+
+Create a template configuration (if it doesn't exist) and chain `.withCustomAssetLocation`. Refer to a snippet below.
+
+```Swift
+let template = MiSnapConfiguration()
+    .withCustomAssetLocation { assetLocation in
+        assetLocation.bundle = // Your bundle where image assets are located
     }
 ```
 
@@ -115,7 +145,7 @@ let template = MiSnapConfiguration()
     }
 ```
 
-If you prefer to use your own review screen or would like not to show it at all (not recommended) use the following snippet:
+If you prefer to use your own review screen or would like not to show it at all (only recommended for legal purposes) use the following snippet:
 
 ```Swift
 let template = MiSnapConfiguration()
@@ -288,7 +318,7 @@ For all available Success Checkmark view customization options see this [API ref
 
 # Parameters
 
-## Video recording
+## Video Recording
 Create a configuration for a specific document type and chain `.withCustomParameters`. Refer to a snippet below:
 
 ```Swift
@@ -300,6 +330,28 @@ let configuration = MiSnapConfiguration(for: documentType)
         parameters.camera.recordAudio = true 
     }
 ```
+
+## Optional Data Redaction
+Create a configuration for a specific document type and chain `.withCustomParameters`. Refer to a snippet below:
+
+```Swift
+let configuration = MiSnapConfiguration(for: documentType)
+    .withCustomParameters { parameters in
+        parameters.science.optionalDataRedactionEnabled = true
+    }
+```
+:warning: `Video Recording` feature requires no frame processing therefore optional data (BSN) will not be redacted in a recorded video. It is your responsibility to keep `Video Recording` disabled (default) or disable if enabled in case you enable `Optional Data Redaction`.
+
+## Enhanced Manual
+Create a configuration for a specific document type and chain `.withCustomParameters`. Refer to a snippet below:
+
+```Swift
+let configuration = MiSnapConfiguration(for: documentType)
+    .withCustomParameters { parameters in
+        parameters.enhancedManualEnabled = true
+    }
+```
+:warning: If you have to disable a review screen for legal purposes follow instructions outlined [here](#review-screen).
 
 ## ID Back Mode
 Create a configuration for a specific document type and chain `.withCustomParameters`. Refer to a snippet below:

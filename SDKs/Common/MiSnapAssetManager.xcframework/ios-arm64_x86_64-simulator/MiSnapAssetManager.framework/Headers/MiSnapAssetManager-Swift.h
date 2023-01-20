@@ -211,6 +211,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+/// Bullet type
+typedef SWIFT_ENUM(NSInteger, BulletType, open) {
+  BulletTypeArrow = 0,
+  BulletTypeCircle = 1,
+  BulletTypeSquare = 2,
+};
+
 /// Asset style
 typedef SWIFT_ENUM(NSInteger, MiSnapAssetStyle, open) {
 /// Fill
@@ -220,6 +227,60 @@ typedef SWIFT_ENUM(NSInteger, MiSnapAssetStyle, open) {
 };
 
 @class NSCoder;
+@class MiSnapBulletViewConfiguration;
+
+/// Bullet view
+SWIFT_CLASS("_TtC18MiSnapAssetManager16MiSnapBulletView")
+@interface MiSnapBulletView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// Creates and returns <code>MiSnapArrowView</code> with a given configuration
+- (nonnull instancetype)initWith:(MiSnapBulletViewConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+@class UITraitCollection;
+
+@interface MiSnapBulletView (SWIFT_EXTENSION(MiSnapAssetManager))
+/// Called when the environment’s traits change.
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+@end
+
+@class UIColor;
+@class NSNumber;
+@class NSString;
+
+/// Bullet configuration
+SWIFT_CLASS("_TtC18MiSnapAssetManager29MiSnapBulletViewConfiguration")
+@interface MiSnapBulletViewConfiguration : NSObject
+/// Type
+@property (nonatomic) enum BulletType type;
+/// Size
+@property (nonatomic) CGSize size;
+/// Fill color
+@property (nonatomic, strong) UIColor * _Nonnull fillColor;
+/// Stroke color
+@property (nonatomic, strong) UIColor * _Nonnull strokeColor;
+/// Stroke width
+@property (nonatomic) CGFloat strokeWidth;
+/// Shadow color
+/// Default: <code>.clear</code>
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+/// Shadow offset
+/// Default: <code>.zero</code>
+@property (nonatomic) CGSize shadowOffset;
+/// Shadow radius
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat shadowRadius;
+/// Shadow opacity
+/// Default: <code>0.0</code>
+@property (nonatomic) float shadowOpacity;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
 @class MiSnapViewConfiguration;
 
 /// MiSnap view
@@ -253,9 +314,6 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager23MiSnapCameraShutterView")
 - (nonnull instancetype)initWith:(MiSnapCameraShutterViewConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIColor;
-@class NSNumber;
-@class NSString;
 
 /// View configuration
 /// <ul>
@@ -331,6 +389,68 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager29MiSnapCancelViewConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MiSnapCheckboxState, open) {
+  MiSnapCheckboxStateUnchecked = 0,
+  MiSnapCheckboxStateChecked = 1,
+};
+
+@class MiSnapCheckboxViewConfiguration;
+
+/// Checkbox view
+SWIFT_CLASS("_TtC18MiSnapAssetManager18MiSnapCheckboxView")
+@interface MiSnapCheckboxView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// Creates and returns <code>MiSnapHintView</code> with a given configuration
+- (nonnull instancetype)initWith:(MiSnapCheckboxViewConfiguration * _Nullable)configuration for:(enum MiSnapCheckboxState)state OBJC_DESIGNATED_INITIALIZER;
+/// Changes a checkbox state to checked
+- (void)check;
+/// Changes a checkbox state to unchecked
+- (void)uncheck;
+/// Toggles between checked and unchecked states
+- (void)toggle;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+/// Checkbox view configuration
+SWIFT_CLASS("_TtC18MiSnapAssetManager31MiSnapCheckboxViewConfiguration")
+@interface MiSnapCheckboxViewConfiguration : NSObject
+/// Size
+@property (nonatomic) CGSize size;
+/// Checkmark color
+@property (nonatomic, strong) UIColor * _Nonnull color;
+/// Background color when unchecked
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColorUnchecked;
+/// Background color when checked
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColorChecked;
+/// Border color when unchecked
+/// note:
+/// When checked border color is the same as <code>backgroundColorChecked</code>
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+/// Border width
+@property (nonatomic) CGFloat borderWidth;
+/// Corner radius
+/// Default: <code>-1.0</code>
+/// note:
+/// when <code>-1</code> (default) corner radius will scale with the whole view size increase to have a consistent look
+@property (nonatomic) CGFloat cornerRadius;
+/// Shadow color
+/// Default: <code>.clear</code>
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+/// Shadow offset
+/// Default: <code>.zero</code>
+@property (nonatomic) CGSize shadowOffset;
+/// Shadow radius
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat shadowRadius;
+/// Shadow opacity
+/// Default: <code>0.0</code>
+@property (nonatomic) float shadowOpacity;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 enum MiSnapGuideAlignment : NSInteger;
@@ -738,7 +858,6 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager11MiSnapLabel")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-@class UITraitCollection;
 
 @interface MiSnapLabel (SWIFT_EXTENSION(MiSnapAssetManager))
 /// Called when the environment’s traits change.
@@ -806,7 +925,7 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapLabelConfiguration")
 /// Shadow radius
 /// Default: <code>0.0</code>
 @property (nonatomic) CGFloat shadowRadius;
-/// Shadow radius
+/// Shadow opacity
 /// Default: <code>0.0</code>
 @property (nonatomic) float shadowOpacity;
 /// Indicates whether should be clipped to bounds
@@ -912,6 +1031,17 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager39MiSnapSuccessCheckmarkViewConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+/// Success configuration
+SWIFT_CLASS("_TtC18MiSnapAssetManager26MiSnapSuccessConfiguration")
+@interface MiSnapSuccessConfiguration : NSObject
+/// Checkmark configuration
+@property (nonatomic, strong) MiSnapSuccessCheckmarkViewConfiguration * _Nonnull checkmark;
+/// Message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class MiSnapTorchViewConfiguration;
@@ -1287,6 +1417,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+/// Bullet type
+typedef SWIFT_ENUM(NSInteger, BulletType, open) {
+  BulletTypeArrow = 0,
+  BulletTypeCircle = 1,
+  BulletTypeSquare = 2,
+};
+
 /// Asset style
 typedef SWIFT_ENUM(NSInteger, MiSnapAssetStyle, open) {
 /// Fill
@@ -1296,6 +1433,60 @@ typedef SWIFT_ENUM(NSInteger, MiSnapAssetStyle, open) {
 };
 
 @class NSCoder;
+@class MiSnapBulletViewConfiguration;
+
+/// Bullet view
+SWIFT_CLASS("_TtC18MiSnapAssetManager16MiSnapBulletView")
+@interface MiSnapBulletView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// Creates and returns <code>MiSnapArrowView</code> with a given configuration
+- (nonnull instancetype)initWith:(MiSnapBulletViewConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+@class UITraitCollection;
+
+@interface MiSnapBulletView (SWIFT_EXTENSION(MiSnapAssetManager))
+/// Called when the environment’s traits change.
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+@end
+
+@class UIColor;
+@class NSNumber;
+@class NSString;
+
+/// Bullet configuration
+SWIFT_CLASS("_TtC18MiSnapAssetManager29MiSnapBulletViewConfiguration")
+@interface MiSnapBulletViewConfiguration : NSObject
+/// Type
+@property (nonatomic) enum BulletType type;
+/// Size
+@property (nonatomic) CGSize size;
+/// Fill color
+@property (nonatomic, strong) UIColor * _Nonnull fillColor;
+/// Stroke color
+@property (nonatomic, strong) UIColor * _Nonnull strokeColor;
+/// Stroke width
+@property (nonatomic) CGFloat strokeWidth;
+/// Shadow color
+/// Default: <code>.clear</code>
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+/// Shadow offset
+/// Default: <code>.zero</code>
+@property (nonatomic) CGSize shadowOffset;
+/// Shadow radius
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat shadowRadius;
+/// Shadow opacity
+/// Default: <code>0.0</code>
+@property (nonatomic) float shadowOpacity;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
 @class MiSnapViewConfiguration;
 
 /// MiSnap view
@@ -1329,9 +1520,6 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager23MiSnapCameraShutterView")
 - (nonnull instancetype)initWith:(MiSnapCameraShutterViewConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIColor;
-@class NSNumber;
-@class NSString;
 
 /// View configuration
 /// <ul>
@@ -1407,6 +1595,68 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager29MiSnapCancelViewConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+typedef SWIFT_ENUM(NSInteger, MiSnapCheckboxState, open) {
+  MiSnapCheckboxStateUnchecked = 0,
+  MiSnapCheckboxStateChecked = 1,
+};
+
+@class MiSnapCheckboxViewConfiguration;
+
+/// Checkbox view
+SWIFT_CLASS("_TtC18MiSnapAssetManager18MiSnapCheckboxView")
+@interface MiSnapCheckboxView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// Creates and returns <code>MiSnapHintView</code> with a given configuration
+- (nonnull instancetype)initWith:(MiSnapCheckboxViewConfiguration * _Nullable)configuration for:(enum MiSnapCheckboxState)state OBJC_DESIGNATED_INITIALIZER;
+/// Changes a checkbox state to checked
+- (void)check;
+/// Changes a checkbox state to unchecked
+- (void)uncheck;
+/// Toggles between checked and unchecked states
+- (void)toggle;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+/// Checkbox view configuration
+SWIFT_CLASS("_TtC18MiSnapAssetManager31MiSnapCheckboxViewConfiguration")
+@interface MiSnapCheckboxViewConfiguration : NSObject
+/// Size
+@property (nonatomic) CGSize size;
+/// Checkmark color
+@property (nonatomic, strong) UIColor * _Nonnull color;
+/// Background color when unchecked
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColorUnchecked;
+/// Background color when checked
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColorChecked;
+/// Border color when unchecked
+/// note:
+/// When checked border color is the same as <code>backgroundColorChecked</code>
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+/// Border width
+@property (nonatomic) CGFloat borderWidth;
+/// Corner radius
+/// Default: <code>-1.0</code>
+/// note:
+/// when <code>-1</code> (default) corner radius will scale with the whole view size increase to have a consistent look
+@property (nonatomic) CGFloat cornerRadius;
+/// Shadow color
+/// Default: <code>.clear</code>
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+/// Shadow offset
+/// Default: <code>.zero</code>
+@property (nonatomic) CGSize shadowOffset;
+/// Shadow radius
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat shadowRadius;
+/// Shadow opacity
+/// Default: <code>0.0</code>
+@property (nonatomic) float shadowOpacity;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 enum MiSnapGuideAlignment : NSInteger;
@@ -1814,7 +2064,6 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager11MiSnapLabel")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-@class UITraitCollection;
 
 @interface MiSnapLabel (SWIFT_EXTENSION(MiSnapAssetManager))
 /// Called when the environment’s traits change.
@@ -1882,7 +2131,7 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapLabelConfiguration")
 /// Shadow radius
 /// Default: <code>0.0</code>
 @property (nonatomic) CGFloat shadowRadius;
-/// Shadow radius
+/// Shadow opacity
 /// Default: <code>0.0</code>
 @property (nonatomic) float shadowOpacity;
 /// Indicates whether should be clipped to bounds
@@ -1988,6 +2237,17 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager39MiSnapSuccessCheckmarkViewConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+/// Success configuration
+SWIFT_CLASS("_TtC18MiSnapAssetManager26MiSnapSuccessConfiguration")
+@interface MiSnapSuccessConfiguration : NSObject
+/// Checkmark configuration
+@property (nonatomic, strong) MiSnapSuccessCheckmarkViewConfiguration * _Nonnull checkmark;
+/// Message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class MiSnapTorchViewConfiguration;

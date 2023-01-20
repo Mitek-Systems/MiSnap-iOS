@@ -1,5 +1,13 @@
 # Frequently Asked Questions (FAQs)
 
+## What is optional data (BSN) redaction feature?
+
+The on-device redaction feature of the MiSnap SDK has been added in version 5.2.0 to aid in compliance with Dutch data protection legislation regarding the Citizen Service Number (BSN) - see section 46 of the Dutch Implementation Act of the GDPR (“UAVG”). Mitek is making its best effort to ensure the BSN is adequately redacted so it is unreadable by human or machine.  Mitek is only redacting the BSN from still images, so the customer or integrator must ensure they are not using the video component of MiSnap if redaction is to take place.
+
+## How does video recording feature work when optional data (BSN) redaction for NLD Passports is enabled?
+
+`Video recording` feature requires no frame processing therefore optional data (BSN) will not be redacted in a recorded video (see the previous question). It is your responsibility to keep `video recording` disabled (default) or disable if enabled in case you enable `optional data redaction` feature.
+
 ## How do I handle a new NLD passport with a BSN number on a separate page?
 
 :warning: `ode` and `barcode` features have to be licensed for this feature to work.

@@ -1,6 +1,54 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapBulletView.swift",
+      "line": 13,
+      "symbol": "BulletType.arrow",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapBulletView.swift",
+      "line": 13,
+      "symbol": "BulletType.circle",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapBulletView.swift",
+      "line": 13,
+      "symbol": "BulletType.square",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapBulletView.swift",
+      "line": 79,
+      "symbol": "MiSnapBulletViewConfiguration.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapCheckboxView.swift",
+      "line": 10,
+      "symbol": "MiSnapCheckboxState",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapCheckboxView.swift",
+      "line": 11,
+      "symbol": "MiSnapCheckboxState.checked",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stsuprenko/MobileVerify/MiSnapAssetManager/MiSnapAssetManager/MiSnapCheckboxView.swift",
+      "line": 11,
+      "symbol": "MiSnapCheckboxState.unchecked",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/stsuprenko/MobileVerify/Tools"
 }

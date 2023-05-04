@@ -1,10 +1,10 @@
 # Integration Guide
 
-:warning: __Note__, when this SDK is integrated and its API is called a collection of device info used for enrollment and verification happens without a user action therefore it's your responsibility to get user's consent and possibly allow to opt out beforehand.
+:warning: __Note__, Note, when this SDK is integrated and its API is called a collection of device info used for enrollment and verification happens without a user action therefore it's the app developer’s responsibility to get user's consent and possibly allow to opt out beforehand.
 
 What device info is collected?
 
-It's publicly available non-PII device properties exposed by Apple APIs along with a unique Mitek-specific ID. Note, an ID is unique for every application that has this SDK integrated and its sole purpose is tying a device along with biometrics (face and/or voice) in MiPass, i.e. it's impossible to use it to track any user activity for purposes of creating a user profile for advertisement and/or malicious activities.
+It's publicly available non-PII device properties exposed by Apple APIs along with a unique Mitek-specific ID. Note, an ID is unique for every application that has this SDK integrated and its sole purpose is tying a device along with biometrics (face and/or voice) in Mitek server products, i.e. it's impossible to use it to track any user activity for purposes of creating a user profile for advertisement and/or malicious activities.
 
 ## 1. Obtain the SDK(s)
 MiSnapDeviceKit 5.x is distributed through CocoaPods and Swift Package Manager. For detailed installation instructions refer to:

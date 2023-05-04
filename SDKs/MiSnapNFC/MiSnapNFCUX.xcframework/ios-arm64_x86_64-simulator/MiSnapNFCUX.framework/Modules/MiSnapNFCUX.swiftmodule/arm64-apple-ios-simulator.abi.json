@@ -1,0 +1,3278 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapNFC",
+        "printedName": "MiSnapNFC",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX"
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapAssetManager",
+        "printedName": "MiSnapAssetManager",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AudioToolbox",
+        "printedName": "AudioToolbox",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX"
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapNFC",
+        "printedName": "MiSnapNFC",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX"
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapLicenseManager",
+        "printedName": "MiSnapLicenseManager",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapNFCViewControllerDelegate",
+        "printedName": "MiSnapNFCViewControllerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "miSnapNfcLicenseStatus",
+            "printedName": "miSnapNfcLicenseStatus(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapLicenseStatus",
+                "printedName": "MiSnapLicenseManager.MiSnapLicenseStatus",
+                "usr": "c:@E@MiSnapLicenseStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcLicenseStatus:",
+            "mangledName": "$s11MiSnapNFCUX0aB25NFCViewControllerDelegateP02miB16NfcLicenseStatusyySo0abiJ0VF",
+            "moduleName": "MiSnapNFCUX",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapNFCUX.MiSnapNFCViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapNFCUX.MiSnapNFCViewControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapNfcSuccess",
+            "printedName": "miSnapNfcSuccess(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcSuccess:",
+            "mangledName": "$s11MiSnapNFCUX0aB25NFCViewControllerDelegateP02miB10NfcSuccessyySDySSypGF",
+            "moduleName": "MiSnapNFCUX",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapNFCUX.MiSnapNFCViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapNFCUX.MiSnapNFCViewControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapNfcCancelled",
+            "printedName": "miSnapNfcCancelled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcCancelled:",
+            "mangledName": "$s11MiSnapNFCUX0aB25NFCViewControllerDelegateP02miB12NfcCancelledyySDySSypGF",
+            "moduleName": "MiSnapNFCUX",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapNFCUX.MiSnapNFCViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapNFCUX.MiSnapNFCViewControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapNfcSkipped",
+            "printedName": "miSnapNfcSkipped(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcSkipped:",
+            "mangledName": "$s11MiSnapNFCUX0aB25NFCViewControllerDelegateP02miB10NfcSkippedyySDySSypGF",
+            "moduleName": "MiSnapNFCUX",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapNFCUX.MiSnapNFCViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapNFCUX.MiSnapNFCViewControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapNfcShouldBeDismissed",
+            "printedName": "miSnapNfcShouldBeDismissed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate(im)miSnapNfcShouldBeDismissed",
+            "mangledName": "$s11MiSnapNFCUX0aB25NFCViewControllerDelegateP02miB20NfcShouldBeDismissedyyF",
+            "moduleName": "MiSnapNFCUX",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapNFCUX.MiSnapNFCViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapNFCUX.MiSnapNFCViewControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate",
+        "mangledName": "$s11MiSnapNFCUX0aB25NFCViewControllerDelegateP",
+        "moduleName": "MiSnapNFCUX",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapNFCViewController",
+        "printedName": "MiSnapNFCViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "MiSnapNFCUX.MiSnapNFCViewControllerDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11MiSnapNFCUX0aB17NFCViewControllerC8delegateAA0abdE8Delegate_pSgvp",
+            "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC8delegateAA0abdE8Delegate_pSgvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MiSnapNFCUX.MiSnapNFCViewControllerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapNFCViewControllerDelegate",
+                        "printedName": "MiSnapNFCUX.MiSnapNFCViewControllerDelegate",
+                        "usr": "c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB17NFCViewControllerC8delegateAA0abdE8Delegate_pSgvg",
+                "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC8delegateAA0abdE8Delegate_pSgvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MiSnapNFCUX.MiSnapNFCViewControllerDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapNFCViewControllerDelegate",
+                        "printedName": "MiSnapNFCUX.MiSnapNFCViewControllerDelegate",
+                        "usr": "c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB17NFCViewControllerC8delegateAA0abdE8Delegate_pSgvs",
+                "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC8delegateAA0abdE8Delegate_pSgvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB17NFCViewControllerC8delegateAA0abdE8Delegate_pSgvM",
+                "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC8delegateAA0abdE8Delegate_pSgvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(with:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCViewController",
+                "printedName": "MiSnapNFCUX.MiSnapNFCViewController",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCViewControllerDelegate",
+                "printedName": "MiSnapNFCUX.MiSnapNFCViewControllerDelegate",
+                "usr": "c:@M@MiSnapNFCUX@objc(pl)MiSnapNFCViewControllerDelegate"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController(im)initWith:delegate:",
+            "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC4with8delegateAcA0aB16NFCConfigurationC_AA0abdE8Delegate_ptcfc",
+            "moduleName": "MiSnapNFCUX",
+            "objc_name": "initWith:delegate:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController(im)viewDidLoad",
+            "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC11viewDidLoadyyF",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidAppear",
+            "printedName": "viewDidAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController(im)viewDidAppear:",
+            "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC13viewDidAppearyySbF",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "objc_name": "viewDidAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController(im)viewWillDisappear:",
+            "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC17viewWillDisappearyySbF",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "objc_name": "viewWillDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "prefersStatusBarHidden",
+            "printedName": "prefersStatusBarHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController(py)prefersStatusBarHidden",
+            "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC22prefersStatusBarHiddenSbvp",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "objc_name": "prefersStatusBarHidden",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController(im)prefersStatusBarHidden",
+                "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC22prefersStatusBarHiddenSbvg",
+                "moduleName": "MiSnapNFCUX",
+                "overriding": true,
+                "objc_name": "prefersStatusBarHidden",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supportedInterfaceOrientations",
+            "printedName": "supportedInterfaceOrientations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientationMask",
+                "printedName": "UIKit.UIInterfaceOrientationMask",
+                "usr": "c:@E@UIInterfaceOrientationMask"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController(py)supportedInterfaceOrientations",
+            "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvp",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "objc_name": "supportedInterfaceOrientations",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientationMask",
+                    "printedName": "UIKit.UIInterfaceOrientationMask",
+                    "usr": "c:@E@UIInterfaceOrientationMask"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController(im)supportedInterfaceOrientations",
+                "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvg",
+                "moduleName": "MiSnapNFCUX",
+                "overriding": true,
+                "objc_name": "supportedInterfaceOrientations",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCViewController",
+                "printedName": "MiSnapNFCUX.MiSnapNFCViewController",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCViewController",
+        "mangledName": "$s11MiSnapNFCUX0aB17NFCViewControllerC",
+        "moduleName": "MiSnapNFCUX",
+        "intro_iOS": "13",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC",
+          "Available",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapNFC",
+        "printedName": "MiSnapNFC",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX"
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapAssetManager",
+        "printedName": "MiSnapAssetManager",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapNFCConfiguration",
+        "printedName": "MiSnapNFCConfiguration",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "withInputs",
+            "printedName": "withInputs(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapNFC.MiSnapNFCInputs) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCInputs",
+                    "printedName": "MiSnapNFC.MiSnapNFCInputs",
+                    "usr": "c:@M@MiSnapNFC@objc(cs)MiSnapNFCInputs"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration(im)withInputsWithCompletion:",
+            "mangledName": "$s11MiSnapNFCUX0aB16NFCConfigurationC10withInputs10completionACy0aB3NFC0aB9NFCInputsCXE_tF",
+            "moduleName": "MiSnapNFCUX",
+            "objc_name": "withInputsWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "withCustomParameters",
+            "printedName": "withCustomParameters(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapNFC.MiSnapNFCParameters) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCParameters",
+                    "printedName": "MiSnapNFC.MiSnapNFCParameters",
+                    "usr": "c:@M@MiSnapNFC@objc(cs)MiSnapNFCParameters"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration(im)withCustomParametersWithCompletion:",
+            "mangledName": "$s11MiSnapNFCUX0aB16NFCConfigurationC20withCustomParameters10completionACy0aB3NFC0aB13NFCParametersCXE_tF",
+            "moduleName": "MiSnapNFCUX",
+            "objc_name": "withCustomParametersWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "withCustomUxParameters",
+            "printedName": "withCustomUxParameters(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapNFCUX.MiSnapNFCUxParameters) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCUxParameters",
+                    "printedName": "MiSnapNFCUX.MiSnapNFCUxParameters",
+                    "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCUxParameters"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration(im)withCustomUxParametersWithCompletion:",
+            "mangledName": "$s11MiSnapNFCUX0aB16NFCConfigurationC22withCustomUxParameters10completionACyAA0ab5NFCUxH0CXE_tF",
+            "moduleName": "MiSnapNFCUX",
+            "objc_name": "withCustomUxParametersWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "withCustomLocalization",
+            "printedName": "withCustomLocalization(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapNFC.MiSnapNFCLocalizationConfiguration) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCLocalizationConfiguration",
+                    "printedName": "MiSnapNFC.MiSnapNFCLocalizationConfiguration",
+                    "usr": "c:@M@MiSnapNFC@objc(cs)MiSnapNFCLocalizationConfiguration"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration(im)withCustomLocalizationWithCompletion:",
+            "mangledName": "$s11MiSnapNFCUX0aB16NFCConfigurationC22withCustomLocalization10completionACy0aB3NFC0aB28NFCLocalizationConfigurationCXE_tF",
+            "moduleName": "MiSnapNFCUX",
+            "objc_name": "withCustomLocalizationWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "withCustomAssetLocation",
+            "printedName": "withCustomAssetLocation(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapNFC.MiSnapNFCAssetLocationConfiguration) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCAssetLocationConfiguration",
+                    "printedName": "MiSnapNFC.MiSnapNFCAssetLocationConfiguration",
+                    "usr": "c:@M@MiSnapNFC@objc(cs)MiSnapNFCAssetLocationConfiguration"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration(im)withCustomAssetLocationWithCompletion:",
+            "mangledName": "$s11MiSnapNFCUX0aB16NFCConfigurationC23withCustomAssetLocation10completionACy0aB3NFC0ab8NFCAssetH13ConfigurationCXE_tF",
+            "moduleName": "MiSnapNFCUX",
+            "objc_name": "withCustomAssetLocationWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "withCustomScan",
+            "printedName": "withCustomScan(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapNFCUX.MiSnapNFCScanConfiguration) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCScanConfiguration",
+                    "printedName": "MiSnapNFCUX.MiSnapNFCScanConfiguration",
+                    "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration(im)withCustomScanWithCompletion:",
+            "mangledName": "$s11MiSnapNFCUX0aB16NFCConfigurationC14withCustomScan10completionACyAA0aB20NFCScanConfigurationCXE_tF",
+            "moduleName": "MiSnapNFCUX",
+            "objc_name": "withCustomScanWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration(py)description",
+            "mangledName": "$s11MiSnapNFCUX0aB16NFCConfigurationC11descriptionSSvp",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration(im)description",
+                "mangledName": "$s11MiSnapNFCUX0aB16NFCConfigurationC11descriptionSSvg",
+                "moduleName": "MiSnapNFCUX",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration(im)init",
+            "mangledName": "$s11MiSnapNFCUX0aB16NFCConfigurationCACycfc",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCConfiguration",
+        "mangledName": "$s11MiSnapNFCUX0aB16NFCConfigurationC",
+        "moduleName": "MiSnapNFCUX",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapNFCScanConfiguration",
+        "printedName": "MiSnapNFCScanConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "backgroundColor",
+            "printedName": "backgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)backgroundColor",
+            "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC15backgroundColorSo7UIColorCvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)backgroundColor",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC15backgroundColorSo7UIColorCvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)setBackgroundColor:",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC15backgroundColorSo7UIColorCvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB20NFCScanConfigurationC15backgroundColorSo7UIColorCvM",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC15backgroundColorSo7UIColorCvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backgroundColorDarkMode",
+            "printedName": "backgroundColorDarkMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)backgroundColorDarkMode",
+            "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC23backgroundColorDarkModeSo7UIColorCSgvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)backgroundColorDarkMode",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC23backgroundColorDarkModeSo7UIColorCSgvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)setBackgroundColorDarkMode:",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC23backgroundColorDarkModeSo7UIColorCSgvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB20NFCScanConfigurationC23backgroundColorDarkModeSo7UIColorCSgvM",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC23backgroundColorDarkModeSo7UIColorCSgvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapLabelConfiguration",
+                "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)message",
+            "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC7message0aB12AssetManager0ab5LabelE0Cvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapLabelConfiguration",
+                    "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                    "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)message",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC7message0aB12AssetManager0ab5LabelE0Cvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapLabelConfiguration",
+                    "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                    "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)setMessage:",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC7message0aB12AssetManager0ab5LabelE0Cvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB20NFCScanConfigurationC7message0aB12AssetManager0ab5LabelE0CvM",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC7message0aB12AssetManager0ab5LabelE0CvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failureMessage",
+            "printedName": "failureMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapLabelConfiguration",
+                "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)failureMessage",
+            "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC14failureMessage0aB12AssetManager0ab5LabelE0Cvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapLabelConfiguration",
+                    "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                    "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)failureMessage",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC14failureMessage0aB12AssetManager0ab5LabelE0Cvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapLabelConfiguration",
+                    "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                    "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)setFailureMessage:",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC14failureMessage0aB12AssetManager0ab5LabelE0Cvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB20NFCScanConfigurationC14failureMessage0aB12AssetManager0ab5LabelE0CvM",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC14failureMessage0aB12AssetManager0ab5LabelE0CvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "buttons",
+            "printedName": "buttons",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCScanButtonsConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCScanButtonsConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(py)buttons",
+            "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC7buttonsAA0abd7ButtonsE0Cvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCScanButtonsConfiguration",
+                    "printedName": "MiSnapNFCUX.MiSnapNFCScanButtonsConfiguration",
+                    "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)buttons",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC7buttonsAA0abd7ButtonsE0Cvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCScanButtonsConfiguration",
+                    "printedName": "MiSnapNFCUX.MiSnapNFCScanButtonsConfiguration",
+                    "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)setButtons:",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC7buttonsAA0abd7ButtonsE0Cvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB20NFCScanConfigurationC7buttonsAA0abd7ButtonsE0CvM",
+                "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC7buttonsAA0abd7ButtonsE0CvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCScanConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCScanConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration(im)init",
+            "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationCACycfc",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanConfiguration",
+        "mangledName": "$s11MiSnapNFCUX0aB20NFCScanConfigurationC",
+        "moduleName": "MiSnapNFCUX",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapNFCScanButtonsConfiguration",
+        "printedName": "MiSnapNFCScanButtonsConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "barColor",
+            "printedName": "barColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(py)barColor",
+            "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC8barColorSo7UIColorCvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(im)barColor",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC8barColorSo7UIColorCvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(im)setBarColor:",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC8barColorSo7UIColorCvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC8barColorSo7UIColorCvM",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC8barColorSo7UIColorCvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "proceed",
+            "printedName": "proceed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapLabelConfiguration",
+                "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(py)proceed",
+            "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC7proceed0aB12AssetManager0ab5LabelF0Cvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapLabelConfiguration",
+                    "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                    "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(im)proceed",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC7proceed0aB12AssetManager0ab5LabelF0Cvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapLabelConfiguration",
+                    "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                    "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(im)setProceed:",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC7proceed0aB12AssetManager0ab5LabelF0Cvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC7proceed0aB12AssetManager0ab5LabelF0CvM",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC7proceed0aB12AssetManager0ab5LabelF0CvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cancel",
+            "printedName": "cancel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapLabelConfiguration",
+                "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(py)cancel",
+            "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC6cancel0aB12AssetManager0ab5LabelF0Cvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapLabelConfiguration",
+                    "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                    "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(im)cancel",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC6cancel0aB12AssetManager0ab5LabelF0Cvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapLabelConfiguration",
+                    "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                    "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(im)setCancel:",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC6cancel0aB12AssetManager0ab5LabelF0Cvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC6cancel0aB12AssetManager0ab5LabelF0CvM",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC6cancel0aB12AssetManager0ab5LabelF0CvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "skip",
+            "printedName": "skip",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapLabelConfiguration",
+                "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(py)skip",
+            "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC4skip0aB12AssetManager0ab5LabelF0Cvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapLabelConfiguration",
+                    "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                    "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(im)skip",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC4skip0aB12AssetManager0ab5LabelF0Cvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapLabelConfiguration",
+                    "printedName": "MiSnapAssetManager.MiSnapLabelConfiguration",
+                    "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(im)setSkip:",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC4skip0aB12AssetManager0ab5LabelF0Cvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC4skip0aB12AssetManager0ab5LabelF0CvM",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC4skip0aB12AssetManager0ab5LabelF0CvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCScanButtonsConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCScanButtonsConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(im)init",
+            "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationCACycfc",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(py)description",
+            "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC11descriptionSSvp",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration(im)description",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC11descriptionSSvg",
+                "moduleName": "MiSnapNFCUX",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCScanButtonsConfiguration",
+        "mangledName": "$s11MiSnapNFCUX0aB27NFCScanButtonsConfigurationC",
+        "moduleName": "MiSnapNFCUX",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapNFCInstructionConfiguration",
+        "printedName": "MiSnapNFCInstructionConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "device",
+            "printedName": "device",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(py)device",
+            "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC6deviceSo7UIImageCSgvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(im)device",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC6deviceSo7UIImageCSgvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(im)setDevice:",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC6deviceSo7UIImageCSgvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB27NFCInstructionConfigurationC6deviceSo7UIImageCSgvM",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC6deviceSo7UIImageCSgvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(py)id",
+            "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC2idSo7UIImageCSgvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(im)id",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC2idSo7UIImageCSgvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(im)setId:",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC2idSo7UIImageCSgvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB27NFCInstructionConfigurationC2idSo7UIImageCSgvM",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC2idSo7UIImageCSgvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "passport",
+            "printedName": "passport",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(py)passport",
+            "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC8passportSo7UIImageCSgvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(im)passport",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC8passportSo7UIImageCSgvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(im)setPassport:",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC8passportSo7UIImageCSgvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB27NFCInstructionConfigurationC8passportSo7UIImageCSgvM",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC8passportSo7UIImageCSgvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "target",
+            "printedName": "target",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(py)target",
+            "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC6targetSo7UIImageCSgvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(im)target",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC6targetSo7UIImageCSgvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(im)setTarget:",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC6targetSo7UIImageCSgvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB27NFCInstructionConfigurationC6targetSo7UIImageCSgvM",
+                "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC6targetSo7UIImageCSgvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCInstructionConfiguration",
+                "printedName": "MiSnapNFCUX.MiSnapNFCInstructionConfiguration",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration(im)init",
+            "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationCACycfc",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCInstructionConfiguration",
+        "mangledName": "$s11MiSnapNFCUX0aB27NFCInstructionConfigurationC",
+        "moduleName": "MiSnapNFCUX",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapNFC",
+        "printedName": "MiSnapNFC",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapNFCUxParameters",
+        "printedName": "MiSnapNFCUxParameters",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "autoDismiss",
+            "printedName": "autoDismiss",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCUxParameters(py)autoDismiss",
+            "mangledName": "$s11MiSnapNFCUX0aB15NFCUxParametersC11autoDismissSbvp",
+            "moduleName": "MiSnapNFCUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCUxParameters(im)autoDismiss",
+                "mangledName": "$s11MiSnapNFCUX0aB15NFCUxParametersC11autoDismissSbvg",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCUxParameters(im)setAutoDismiss:",
+                "mangledName": "$s11MiSnapNFCUX0aB15NFCUxParametersC11autoDismissSbvs",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11MiSnapNFCUX0aB15NFCUxParametersC11autoDismissSbvM",
+                "mangledName": "$s11MiSnapNFCUX0aB15NFCUxParametersC11autoDismissSbvM",
+                "moduleName": "MiSnapNFCUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCUxParameters(py)description",
+            "mangledName": "$s11MiSnapNFCUX0aB15NFCUxParametersC11descriptionSSvp",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCUxParameters(im)description",
+                "mangledName": "$s11MiSnapNFCUX0aB15NFCUxParametersC11descriptionSSvg",
+                "moduleName": "MiSnapNFCUX",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCUxParameters",
+                "printedName": "MiSnapNFCUX.MiSnapNFCUxParameters",
+                "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCUxParameters"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCUxParameters(im)init",
+            "mangledName": "$s11MiSnapNFCUX0aB15NFCUxParametersCACycfc",
+            "moduleName": "MiSnapNFCUX",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MiSnapNFCUX@objc(cs)MiSnapNFCUxParameters",
+        "mangledName": "$s11MiSnapNFCUX0aB15NFCUxParametersC",
+        "moduleName": "MiSnapNFCUX",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapNFC",
+        "printedName": "MiSnapNFC",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX"
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapAssetManager",
+        "printedName": "MiSnapAssetManager",
+        "declKind": "Import",
+        "moduleName": "MiSnapNFCUX"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCTutorialView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 676,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCTutorialView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 715,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCTutorialView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1556,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCTutorialView.swift",
+      "kind": "FloatLiteral",
+      "offset": 12270,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCTutorialView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12294,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCTutorialView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21973,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCTutorialView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21997,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCTutorialView.swift",
+      "kind": "StringLiteral",
+      "offset": 489,
+      "length": 21,
+      "value": "\"MiSnapNFCUX.MiSnapNFCTutorialView\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1357,
+      "length": 23,
+      "value": "\"MiSnapNFCUX.MiSnapNFCViewController\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10691,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10712,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12141,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12748,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCUxParameters.swift",
+      "kind": "BooleanLiteral",
+      "offset": 463,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFCUX\/MiSnapNFCUX\/MiSnapNFCOverlayView.swift",
+      "kind": "StringLiteral",
+      "offset": 383,
+      "length": 20,
+      "value": "\"MiSnapNFCUX.MiSnapNFCOverlayView\""
+    }
+  ]
+}

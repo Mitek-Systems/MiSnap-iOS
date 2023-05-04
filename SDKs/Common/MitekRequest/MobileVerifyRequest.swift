@@ -338,20 +338,16 @@ public class MobileVerifyRequest: NSObject {
      */
     public func addVerifications(_ verifications: [MobileVerifyRequestVerification]) {
         verificationsSet = true
-        for verification in verifications {
-            if !self.verifications.contains(verification) {
-                self.verifications.append(verification)
-            }
+        for verification in verifications where !self.verifications.contains(verification) {
+            self.verifications.append(verification)
         }
     }
     /**
      Adds response images
      */
     public func addResponseImages(_ responseImages: [MobileVerifyRequestResponseImageType]) {
-        for responseImage in responseImages {
-            if !self.responseImages.contains(responseImage) {
-                self.responseImages.append(responseImage)
-            }
+        for responseImage in responseImages where !self.responseImages.contains(responseImage) {
+            self.responseImages.append(responseImage)
         }
     }
     /**
@@ -400,11 +396,9 @@ public class MobileVerifyRequest: NSObject {
                 errors.append(.nfcEvidenceRequiredInputsMissing)
             }
             if !nfcEvidence.dataGroups.isEmpty {
-                for (k, _) in nfcEvidence.dataGroups {
-                    if !k.starts(with: "dg") {
-                        errors.append(.nfcEvidenceDataGroupsInvalidFormat)
-                        break
-                    }
+                for (k, _) in nfcEvidence.dataGroups where !k.starts(with: "dg") {
+                    errors.append(.nfcEvidenceDataGroupsInvalidFormat)
+                    break
                 }
             }
             if let activeAuthInput = nfcEvidence.activeAuthInput, activeAuthInput.count != 3 {
@@ -509,3 +503,5 @@ public class MobileVerifyRequest: NSObject {
         return dictionary
     }
 }
+
+// swiftlint:enable function_parameter_count identifier_name line_length

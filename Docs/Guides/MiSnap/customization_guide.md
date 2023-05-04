@@ -9,9 +9,10 @@ Please refer to [MiSnapCustomizationSampleApp](../../../Examples/Apps/MiSnap/MiS
 * [UX Parameters](#ux-parameters)
 * [Localization](#localization)
 * [Image assets](#image-assets)
-* [Introductory Instruction Screen](#introductory-instruction-screen)
-* [Review Screen](#review-screen)
-* [Help and Timeout Screens](#help-and-timeout-screens)
+* [Tutorial screens](#tutorial-screens)
+    * [Introductory Instruction Screen](#introductory-instruction-screen)
+    * [Review Screen](#review-screen)
+    * [Help and Timeout Screens](#help-and-timeout-screens)
 * [Capture Screen](#capture-screen)
     * [Cancel Button](#cancel-button)
     * [Help Button](#help-button)
@@ -121,7 +122,23 @@ let template = MiSnapConfiguration()
     }
 ```
 
-# Introductory Instruction Screen
+# Tutorial screens
+
+From the SDK perspective introductory instruction, help, timeout and review screens are the same instruction screen with just different messages and/or UI elements.
+
+```Swift
+let template = MiSnapConfiguration()
+    .withCustomTutorial { tutorial in
+        // Your tutorial customizations here
+    }
+```
+where,
+
+`tutorial` is of `MiSnapTutorialConfiguration`.
+
+For all available tutorial customization options see this [API reference](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/main/Docs/API/MiSnap/MiSnapUX/Classes/MiSnapTutorialConfiguration.html).
+
+## Introductory Instruction Screen
 
 By default, an introductory instruction screen is presented.
 
@@ -134,7 +151,7 @@ let template = MiSnapConfiguration()
     }
 ```
 
-# Review Screen
+## Review Screen
 
 By default, a review screen is presented only after a session is completed in Manual mode. If you'd like to present it for both Auto and Manual sessions use the following snippet:
 
@@ -154,7 +171,7 @@ let template = MiSnapConfiguration()
     }
 ```
 
-# Help and Timeout Screens
+## Help and Timeout Screens
 
 A default Help screen is presented when a user presses Help button and a default Timeout screen is presented when an Auto session times out. If you'd like to present your own custom Help and/or Timeout screen(s) follow these steps:
 

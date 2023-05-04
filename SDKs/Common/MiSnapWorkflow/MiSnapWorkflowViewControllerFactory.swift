@@ -47,8 +47,8 @@ class MiSnapWorkflowViewControllerFactory {
             configuration = MiSnapConfiguration(for: .passport).applying(template)
         case .passportQr:
             configuration = MiSnapConfiguration(for: .idBack)
-                .withCustomInstruction { instruction in
-                    instruction.type = .passportQr
+                .withCustomTutorial { tutorial in
+                    tutorial.instruction.type = .passportQr
                 }
                 .withCustomGuide { guide in
                     guide.vignette.alpha = 0.0
@@ -147,10 +147,13 @@ class MiSnapWorkflowViewControllerFactory {
         case .nfc:      return .portrait
         #endif
         #if canImport(MiSnapFacialCaptureUX) && canImport(MiSnapFacialCapture)
-        case .face:     return .portrait
+        case .face:     return UIDevice.current.userInterfaceIdiom == .pad ? .all : .portrait
         #endif
         #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
-        case .voice:     return .portrait
+        case .voice:    return .portrait
+        #endif
+        #if canImport(MiSnapUX) && canImport(MiSnap)
+        case .passport: return .landscape
         #endif
         default:        return .all
         }

@@ -1,0 +1,2807 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MiSnapVoiceCapture",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MiSnapVoiceCapture",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapMibiData",
+        "printedName": "MiSnapMibiData",
+        "declKind": "Import",
+        "moduleName": "MiSnapVoiceCapture"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapVoiceCaptureStatus",
+        "printedName": "MiSnapVoiceCaptureStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureStatus.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureStatus",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureStatus",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus@MiSnapVoiceCaptureStatusNone",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6StatusO4noneyA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "tooNoisy",
+            "printedName": "tooNoisy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureStatus.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureStatus",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureStatus",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus@MiSnapVoiceCaptureStatusTooNoisy",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6StatusO8tooNoisyyA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "tooShort",
+            "printedName": "tooShort",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureStatus.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureStatus",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureStatus",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus@MiSnapVoiceCaptureStatusTooShort",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6StatusO8tooShortyA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "good",
+            "printedName": "good",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureStatus.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureStatus",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureStatus",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus@MiSnapVoiceCaptureStatusGood",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6StatusO4goodyA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureStatus",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MiSnapVoiceCapture0abcD6StatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6StatusO8rawValueACSgSi_tcfc",
+            "moduleName": "MiSnapVoiceCapture",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MiSnapVoiceCapture0abcD6StatusO8rawValueSivp",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6StatusO8rawValueSivp",
+            "moduleName": "MiSnapVoiceCapture",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapVoiceCapture0abcD6StatusO8rawValueSivg",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD6StatusO8rawValueSivg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus",
+        "mangledName": "$s18MiSnapVoiceCapture0abcD6StatusO",
+        "moduleName": "MiSnapVoiceCapture",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapVoiceCaptureResult",
+        "printedName": "MiSnapVoiceCaptureResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(py)data",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC4data10Foundation4DataVSgvp",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(im)data",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC4data10Foundation4DataVSgvg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureStatus",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(py)status",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC6statusAA0abcD6StatusOvp",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureStatus",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(im)status",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC6statusAA0abcD6StatusOvg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "speechLength",
+            "printedName": "speechLength",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(py)speechLength",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC12speechLengthSfvp",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(im)speechLength",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC12speechLengthSfvg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "snr",
+            "printedName": "snr",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(py)snr",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC3snrSfvp",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(im)snr",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC3snrSfvg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mibiString",
+            "printedName": "mibiString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(py)mibiString",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC10mibiStringSSSgvp",
+            "moduleName": "MiSnapVoiceCapture",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(im)mibiString",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC10mibiStringSSSgvg",
+                "moduleName": "MiSnapVoiceCapture",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mibi",
+            "printedName": "mibi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapMibi",
+                "printedName": "MiSnapMibiData.MiSnapMibi",
+                "usr": "c:@M@MiSnapMibiData@objc(cs)MiSnapMibi"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(py)mibi",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC4mibi0aB8MibiData0abG0Cvp",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapMibi",
+                    "printedName": "MiSnapMibiData.MiSnapMibi",
+                    "usr": "c:@M@MiSnapMibiData@objc(cs)MiSnapMibi"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(im)mibi",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC4mibi0aB8MibiData0abG0Cvg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(py)error",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC5errorSo7NSErrorCSgvp",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(im)error",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC5errorSo7NSErrorCSgvg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureResult",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureResult",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(im)init",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultCACycfc",
+            "moduleName": "MiSnapVoiceCapture",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureResult",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureResult",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSError",
+                "printedName": "Foundation.NSError",
+                "usr": "c:objc(cs)NSError"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(im)initWith:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC4withACSo7NSErrorC_tcfc",
+            "moduleName": "MiSnapVoiceCapture",
+            "objc_name": "initWith:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "stringFromStatus",
+            "printedName": "stringFromStatus(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureStatus",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureStatus",
+                "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult(cm)stringFromStatus:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC16stringFromStatusySSAA0abcdH0OFZ",
+            "moduleName": "MiSnapVoiceCapture",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult",
+        "mangledName": "$s18MiSnapVoiceCapture0abcD6ResultC",
+        "moduleName": "MiSnapVoiceCapture",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MiSnapVoiceCapture",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapVoiceCaptureFlow",
+        "printedName": "MiSnapVoiceCaptureFlow",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enrollment",
+            "printedName": "enrollment",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureFlow.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureFlow",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureFlow",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureFlow",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow@MiSnapVoiceCaptureFlowEnrollment",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD4FlowO10enrollmentyA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "verification",
+            "printedName": "verification",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureFlow.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureFlow",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureFlow",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureFlow",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow@MiSnapVoiceCaptureFlowVerification",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD4FlowO12verificationyA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureFlow",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MiSnapVoiceCapture0abcD4FlowO8rawValueACSgSi_tcfc",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD4FlowO8rawValueACSgSi_tcfc",
+            "moduleName": "MiSnapVoiceCapture",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MiSnapVoiceCapture0abcD4FlowO8rawValueSivp",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD4FlowO8rawValueSivp",
+            "moduleName": "MiSnapVoiceCapture",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapVoiceCapture0abcD4FlowO8rawValueSivg",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD4FlowO8rawValueSivg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow",
+        "mangledName": "$s18MiSnapVoiceCapture0abcD4FlowO",
+        "moduleName": "MiSnapVoiceCapture",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapVoiceCaptureParameters",
+        "printedName": "MiSnapVoiceCaptureParameters",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "flow",
+            "printedName": "flow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureFlow",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow",
+                "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(py)flow",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC4flowAA0abcD4FlowOvp",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureFlow",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(im)flow",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC4flowAA0abcD4FlowOvg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "speechLengthMin",
+            "printedName": "speechLengthMin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(py)speechLengthMin",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC15speechLengthMinSfvp",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(im)speechLengthMin",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC15speechLengthMinSfvg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(im)setSpeechLengthMin:",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC15speechLengthMinSfvs",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapVoiceCapture0abcD10ParametersC15speechLengthMinSfvM",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC15speechLengthMinSfvM",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "silenceLengthMax",
+            "printedName": "silenceLengthMax",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(py)silenceLengthMax",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC16silenceLengthMaxSfvp",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(im)silenceLengthMax",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC16silenceLengthMaxSfvg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(im)setSilenceLengthMax:",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC16silenceLengthMaxSfvs",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapVoiceCapture0abcD10ParametersC16silenceLengthMaxSfvM",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC16silenceLengthMaxSfvM",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "snrMin",
+            "printedName": "snrMin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(py)snrMin",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC6snrMinSfvp",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(im)snrMin",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC6snrMinSfvg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(im)setSnrMin:",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC6snrMinSfvs",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapVoiceCapture0abcD10ParametersC6snrMinSfvM",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC6snrMinSfvM",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureParameters",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureParameters",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureFlow",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow",
+                "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(im)initFor:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC3forAcA0abcD4FlowO_tcfc",
+            "moduleName": "MiSnapVoiceCapture",
+            "objc_name": "initFor:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "string",
+            "printedName": "string(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureFlow",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureFlow",
+                "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureFlow"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(cm)stringFrom:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC6string4fromSSAA0abcD4FlowO_tFZ",
+            "moduleName": "MiSnapVoiceCapture",
+            "static": true,
+            "objc_name": "stringFrom:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureParameters",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureParameters",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters(im)init",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersCACycfc",
+            "moduleName": "MiSnapVoiceCapture",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters",
+        "mangledName": "$s18MiSnapVoiceCapture0abcD10ParametersC",
+        "moduleName": "MiSnapVoiceCapture",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MiSnapVoiceCapture",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "MiSnapVoiceCapture"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MiSnapVoiceCapture",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapLicenseManager",
+        "printedName": "MiSnapLicenseManager",
+        "declKind": "Import",
+        "moduleName": "MiSnapVoiceCapture"
+      },
+      {
+        "kind": "Import",
+        "name": "MiSnapMibiData",
+        "printedName": "MiSnapMibiData",
+        "declKind": "Import",
+        "moduleName": "MiSnapVoiceCapture"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+        "printedName": "MiSnapVoiceCaptureControllerInterruptionReason",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason@MiSnapVoiceCaptureControllerInterruptionReasonNone",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO4noneyA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "notActive",
+            "printedName": "notActive",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason@MiSnapVoiceCaptureControllerInterruptionReasonNotActive",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO9notActiveyA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "noise",
+            "printedName": "noise",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason@MiSnapVoiceCaptureControllerInterruptionReasonNoise",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO5noiseyA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "voiceOver",
+            "printedName": "voiceOver",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason@MiSnapVoiceCaptureControllerInterruptionReasonVoiceOver",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO9voiceOveryA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "micInUseByAnotherClient",
+            "printedName": "micInUseByAnotherClient",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason@MiSnapVoiceCaptureControllerInterruptionReasonMicInUseByAnotherClient",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO23micInUseByAnotherClientyA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "mediaReset",
+            "printedName": "mediaReset",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type) -> MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                        "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason@MiSnapVoiceCaptureControllerInterruptionReasonMediaReset",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO10mediaResetyA2CmF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                    "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                    "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO8rawValueACSgSi_tcfc",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO8rawValueACSgSi_tcfc",
+            "moduleName": "MiSnapVoiceCapture",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO8rawValueSivp",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO8rawValueSivp",
+            "moduleName": "MiSnapVoiceCapture",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO8rawValueSivg",
+                "mangledName": "$s18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO8rawValueSivg",
+                "moduleName": "MiSnapVoiceCapture",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason",
+        "mangledName": "$s18MiSnapVoiceCapture0abcD28ControllerInterruptionReasonO",
+        "moduleName": "MiSnapVoiceCapture",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapVoiceCaptureControllerDelegate",
+        "printedName": "MiSnapVoiceCaptureControllerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "miSnapVoiceCaptureControllerLicenseStatus",
+            "printedName": "miSnapVoiceCaptureControllerLicenseStatus(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapLicenseStatus",
+                "printedName": "MiSnapLicenseManager.MiSnapLicenseStatus",
+                "usr": "c:@E@MiSnapLicenseStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate(im)miSnapVoiceCaptureControllerLicenseStatus:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP02mibcdE13LicenseStatusyySo0abhI0VF",
+            "moduleName": "MiSnapVoiceCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapVoiceCaptureControllerDidStart",
+            "printedName": "miSnapVoiceCaptureControllerDidStart()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate(im)miSnapVoiceCaptureControllerDidStart",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP02mibcdE8DidStartyyF",
+            "moduleName": "MiSnapVoiceCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapVoiceCaptureControllerSuccess",
+            "printedName": "miSnapVoiceCaptureControllerSuccess(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureResult",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureResult",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate(im)miSnapVoiceCaptureControllerSuccess:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP02mibcdE7SuccessyyAA0abcD6ResultCF",
+            "moduleName": "MiSnapVoiceCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapVoiceCaptureControllerFailure",
+            "printedName": "miSnapVoiceCaptureControllerFailure(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureResult",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureResult",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate(im)miSnapVoiceCaptureControllerFailure:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP02mibcdE7FailureyyAA0abcD6ResultCF",
+            "moduleName": "MiSnapVoiceCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapVoiceCaptureControllerError",
+            "printedName": "miSnapVoiceCaptureControllerError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureResult",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureResult",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate(im)miSnapVoiceCaptureControllerError:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP02mibcdE5ErroryyAA0abcD6ResultCF",
+            "moduleName": "MiSnapVoiceCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapVoiceCaptureControllerCancel",
+            "printedName": "miSnapVoiceCaptureControllerCancel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureResult",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureResult",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureResult"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate(im)miSnapVoiceCaptureControllerCancel:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP02mibcdE6CancelyyAA0abcD6ResultCF",
+            "moduleName": "MiSnapVoiceCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapVoiceCaptureControllerInterruptionStarted",
+            "printedName": "miSnapVoiceCaptureControllerInterruptionStarted(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureControllerInterruptionReason",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerInterruptionReason",
+                "usr": "c:@M@MiSnapVoiceCapture@E@MiSnapVoiceCaptureControllerInterruptionReason"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate(im)miSnapVoiceCaptureControllerInterruptionStarted:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP02mibcdE19InterruptionStartedyyAA0abcdeH6ReasonOF",
+            "moduleName": "MiSnapVoiceCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapVoiceCaptureControllerInterruptionEnded",
+            "printedName": "miSnapVoiceCaptureControllerInterruptionEnded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate(im)miSnapVoiceCaptureControllerInterruptionEnded",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP02mibcdE17InterruptionEndedyyF",
+            "moduleName": "MiSnapVoiceCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "miSnapVoiceCaptureControllerSpeechLength",
+            "printedName": "miSnapVoiceCaptureControllerSpeechLength(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate(im)miSnapVoiceCaptureControllerSpeechLength:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP02mibcdE12SpeechLengthyySiF",
+            "moduleName": "MiSnapVoiceCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate",
+        "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP",
+        "moduleName": "MiSnapVoiceCapture",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapVoiceCaptureController",
+        "printedName": "MiSnapVoiceCaptureController",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(with:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureController",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureController",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureParameters",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureParameters",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureParameters"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureControllerDelegate",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureControllerDelegate",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureController(im)initWith:delegate:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ControllerC4with8delegateAcA0abcD10ParametersC_AA0abcdE8Delegate_ptcfc",
+            "moduleName": "MiSnapVoiceCapture",
+            "objc_name": "initWith:delegate:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureController(im)start",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ControllerC5startyyF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureController(im)cancel",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ControllerC6cancelyyF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shutdown",
+            "printedName": "shutdown()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureController(im)shutdown",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ControllerC8shutdownyyF",
+            "moduleName": "MiSnapVoiceCapture",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logModule",
+            "printedName": "logModule(named:version:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureController(im)logModuleWithNamed:version:",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ControllerC9logModule5named7versionySS_SStF",
+            "moduleName": "MiSnapVoiceCapture",
+            "objc_name": "logModuleWithNamed:version:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVoiceCaptureController",
+                "printedName": "MiSnapVoiceCapture.MiSnapVoiceCaptureController",
+                "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureController"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureController(im)init",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD10ControllerCACycfc",
+            "moduleName": "MiSnapVoiceCapture",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MiSnapVoiceCapture@objc(cs)MiSnapVoiceCaptureController",
+        "mangledName": "$s18MiSnapVoiceCapture0abcD10ControllerC",
+        "moduleName": "MiSnapVoiceCapture",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 283,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 362,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 441,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 515,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 283,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 362,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 441,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 515,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 916,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 1020,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureAnalyzer.swift",
+      "kind": "StringLiteral",
+      "offset": 621,
+      "length": 26,
+      "value": "\"MiSnapVoiceCapture.MiSnapVoiceCaptureAnalyzer\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureAnalyzer.swift",
+      "kind": "FloatLiteral",
+      "offset": 3674,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureAnalyzer.swift",
+      "kind": "FloatLiteral",
+      "offset": 3692,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 251,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 317,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 251,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 317,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 808,
+      "length": 3,
+      "value": "750"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1079,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1381,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "StringLiteral",
+      "offset": 396,
+      "length": 28,
+      "value": "\"MiSnapVoiceCapture.MiSnapVoiceCaptureParameters\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 770,
+      "length": 5,
+      "value": "16000"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 966,
+      "length": 32,
+      "value": "\"com.miteksystems.recorderQueue\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "FloatLiteral",
+      "offset": 3606,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3627,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 488,
+      "length": 9,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 534,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 580,
+      "length": 9,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 664,
+      "length": 23,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 734,
+      "length": 10,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 488,
+      "length": 9,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 534,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 580,
+      "length": 9,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 664,
+      "length": 23,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 734,
+      "length": 10,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3002,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "Array",
+      "offset": 3043,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 2547,
+      "length": 28,
+      "value": "\"MiSnapVoiceCapture.MiSnapVoiceCaptureController\""
+    }
+  ]
+}

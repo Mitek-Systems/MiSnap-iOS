@@ -6,6 +6,6 @@ framework module MiSnapVoiceCapture {
 }
 
 module MiSnapVoiceCapture.Swift {
-    header "MiSnapVoiceCapture-Swift.h"
-    requires objc
+  header "MiSnapVoiceCapture-Swift.h"
+  requires objc
 }

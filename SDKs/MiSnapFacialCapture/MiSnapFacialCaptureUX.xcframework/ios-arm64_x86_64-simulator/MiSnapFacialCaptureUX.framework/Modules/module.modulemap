@@ -6,6 +6,6 @@ framework module MiSnapFacialCaptureUX {
 }
 
 module MiSnapFacialCaptureUX.Swift {
-    header "MiSnapFacialCaptureUX-Swift.h"
-    requires objc
+  header "MiSnapFacialCaptureUX-Swift.h"
+  requires objc
 }

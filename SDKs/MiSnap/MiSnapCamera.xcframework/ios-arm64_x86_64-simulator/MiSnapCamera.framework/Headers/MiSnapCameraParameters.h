@@ -10,6 +10,43 @@
 #import <AVFoundation/AVFoundation.h>
 
 /**
+ Document type
+ */
+typedef NS_ENUM(NSInteger, MiSnapCameraDocumentType) {
+    /**
+     Document type is not set
+     */
+    MiSnapCameraDocumentTypeNone           = 0,
+    /**
+     Any ID
+     */
+    MiSnapCameraDocumentTypeAnyId          = 1,
+    /**
+     Passport
+     */
+    MiSnapCameraDocumentTypePassport       = 2,
+    /**
+     ID Front
+     */
+    MiSnapCameraDocumentTypeIdFront        = 3,
+    /**
+     ID Back
+     */
+    MiSnapCameraDocumentTypeIdBack         = 4,
+    /**
+     Check Front
+     */
+    MiSnapCameraDocumentTypeCheckFront     = 5,
+    /**
+     Check Back
+     */
+    MiSnapCameraDocumentTypeCheckBack      = 6,
+    /**
+     Generic
+     */
+    MiSnapCameraDocumentTypeGeneric        = 7
+};
+/**
  Barcode type
  */
 typedef NS_ENUM(NSInteger, MiSnapCameraBarcodeType) {
@@ -63,6 +100,10 @@ typedef NS_ENUM(NSInteger, MiSnapCameraTorchMode) {
  Camera specific parameters
  */
 @interface MiSnapCameraParameters : NSObject
+/**
+ Document type
+ */
+@property (nonatomic, readonly) MiSnapCameraDocumentType documentType;
 /**
  Sets the preset of the camera session.
  
@@ -141,19 +182,15 @@ typedef NS_ENUM(NSInteger, MiSnapCameraTorchMode) {
  */
 @property (nonatomic, readwrite) NSArray * _Nonnull supportedBarcodeTypes;
 /**
- Locked focus dictionary
+ Locked focus dictionary (DEPRECATED)
  
- where,
- 
- key is a device model (e.g. iPhone15,3)
- 
- value is a locked focus float value in a range [0.0, 1.0]
- 
- Default: nil
- 
- - Note, it's not recommended to set this property without consulting with Mitek representative
+ - Note, it's deprecated in 5.2.0 and has no effect on a camera
  */
-@property (nonatomic) NSDictionary * _Nullable lockedFocusDictionary;
+@property (nonatomic) NSDictionary * _Nullable lockedFocusDictionary DEPRECATED_ATTRIBUTE;
+/**
+ Initializes parameters for a given document type
+ */
+- (instancetype)initFor:(MiSnapCameraDocumentType)documentType;
 /**
  @return Dictionary of parameters
  */

@@ -266,9 +266,13 @@ typedef NS_ENUM(NSInteger, MiSnapScienceGeoRegion) {
  */
 @property (nonatomic, readwrite) NSInteger sharpness;
 /**
- Minimum image padding between document rectangle and image frame
+ Minimum padding between a document edge and a frame border expressed in % of a smaller frame side size
 
- Range: `0...1000`
+ Range:
+ * Identity document types: `5...15`
+ * Deposit document types: `1...15`
+ 
+ Note, prior to 5.3.0 its value was reported in absolute pixels
  */
 @property (nonatomic, readwrite) NSInteger padding;
 /**

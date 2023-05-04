@@ -6,6 +6,6 @@ framework module MiSnapAssetManager {
 }
 
 module MiSnapAssetManager.Swift {
-    header "MiSnapAssetManager-Swift.h"
-    requires objc
+  header "MiSnapAssetManager-Swift.h"
+  requires objc
 }

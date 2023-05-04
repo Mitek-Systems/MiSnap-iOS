@@ -32,7 +32,7 @@ See [here](https://github.com/Mitek-Systems/MiSnap-iOS/releases).
 
 | Technology | Min version |
 | :--- | :---: |
-| Xcode | 13.0 |
+| Xcode | 14.0 |
 | iOS | 11.0 |
 | iPhone | 6 |
 | iPad | mini (4th generation) |
@@ -186,6 +186,8 @@ Refer to "Create the App Size Report" section of [this article](https://develope
     * On iPhone 7 and earlier, the hint messages take a few seconds to begin appearing. During this time the message label will be blank
 * MiSnapVoiceCapture
     * None
+* MiSnapWorkflow:
+    * An edge case where UI alignment is occasionally broken when transitioning from a Landscape-only to a Portrait-only view controller when a device is held at an approximately 45 degree angle due to a defect in iOS (pre-iOS 16 versions) where a method notifying that transition is happening isn't called in such cases
 
 - - -
 

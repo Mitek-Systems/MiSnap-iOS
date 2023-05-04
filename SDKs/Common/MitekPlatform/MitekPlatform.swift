@@ -101,7 +101,7 @@ public class MiPassConfiguration: NSObject {
 public class MitekPlatform: NSObject {
     private static var sharedInstance: MitekPlatform?
     
-    private var configuration = MitekPlatformConfiguration()
+    private(set) var configuration = MitekPlatformConfiguration()
     
     private var dataTask: URLSessionDataTask?
     private var mobileVerifyTokenManager = MitekPlatformTokenManager()

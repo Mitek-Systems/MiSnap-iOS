@@ -6,6 +6,6 @@ framework module MiSnapNFCUX {
 }
 
 module MiSnapNFCUX.Swift {
-    header "MiSnapNFCUX-Swift.h"
-    requires objc
+  header "MiSnapNFCUX-Swift.h"
+  requires objc
 }

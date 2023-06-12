@@ -83,10 +83,23 @@ MiSnapFacialCaptureAnalyzer is a class that defines an interface for controlling
  Creates an instance of MiSnapFacialCaptureAnalyzer
  
  @param parameters The `MiSnapFacialCaptureParameters` to use
+ @param orientation the `UIInterfaceOrientation` of `MiSnapFacialCaptureAnalyzer`
+ 
+ @return An instance of MiSnapFacialCaptureAnalyzer
+*/
+- (instancetype)initWithParameters:(MiSnapFacialCaptureParameters *)parameters delegate:(id<MiSnapFacialCaptureAnalyzerDelegate>)delegate orientation:(UIInterfaceOrientation)orientation;
+/**
+ Creates an instance of MiSnapFacialCaptureAnalyzer
+ 
+ @param parameters The `MiSnapFacialCaptureParameters` to use
  
  @return An instance of MiSnapFacialCaptureAnalyzer
 */
 - (instancetype)initWithParameters:(MiSnapFacialCaptureParameters *)parameters delegate:(id<MiSnapFacialCaptureAnalyzerDelegate>)delegate;
+/**
+ Updates analyzer orientation
+ */
+- (void)updateOrientation:(UIInterfaceOrientation)orientation;
 /**
  Pause the frame analysis for no specific reason. The analyzer can resume again from the paused state.
 */

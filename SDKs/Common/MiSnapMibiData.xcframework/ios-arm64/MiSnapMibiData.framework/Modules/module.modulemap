@@ -4,3 +4,8 @@ framework module MiSnapMibiData {
   export *
   module * { export * }
 }
+
+module MiSnapMibiData.Swift {
+  header "MiSnapMibiData-Swift.h"
+  requires objc
+}

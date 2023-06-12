@@ -138,6 +138,14 @@ typedef NS_ENUM(NSInteger, MiSnapLicenseStatus) {
  */
 @property (nonatomic, readonly) MiSnapLicenseStatus status;
 /**
+ GPO (a private property internally used by Mitek)
+ */
+@property (nonatomic, readonly) NSString * _Nullable gpo;
+/**
+ A string representation of an expiration date
+ */
+@property (nonatomic, readonly) NSString * _Nullable expirationDateString;
+/**
  Sets a Base64 license key
  */
 - (void)setLicenseKey:(NSString * _Nullable)base64LicenseKey;

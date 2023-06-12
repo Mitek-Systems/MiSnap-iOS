@@ -32,7 +32,7 @@ See [here](https://github.com/Mitek-Systems/MiSnap-iOS/releases).
 
 | Technology | Min version |
 | :--- | :---: |
-| Xcode | 13.0 |
+| Xcode | 14.0 |
 | iOS | 11.0 |
 | iPhone | 6 |
 | iPad | mini (4th generation) |
@@ -99,14 +99,16 @@ See [this guide](Docs/Guides/Common/workflow.md) for `MiSnapWorkflow` integratio
 
 | Component                        | Compressed, MB | Uncompressed, MB |
 | :------------------------------- | :------------: | :--------------: |
-| MiSnap                           |  1.20          |  3.10            |
-| MiSnap + MiSnapUX                |  1.90          |  4.40            |
-| NFC                              |  0.41          |  1.10            |
-| NFC + NFCUX                      |  0.68          |  1.50            |
-| FacialCapture                    |  0.13          |  0.47            |
-| FacialCapture + FacialCaptureUX  |  0.44          |  1.20            |
-| VoiceCapture                     |  0.86          |  2.20            |
-| VoiceCapture + VoiceCaptureUX    |  1.10          |  2.90            |
+| MiSnap                           |  1.40          |  3.60            |
+| MiSnap + MiSnapUX                |  2.30          |  5.30            |
+| NFC                              |  1.60          |  3.80            |
+| NFC + NFCUX                      |  2.00          |  4.60            |
+| FacialCapture                    |  0.19          |  0.68            |
+| FacialCapture + FacialCaptureUX  |  0.53          |  1.50            |
+| VoiceCapture                     |  0.91          |  2.30            |
+| VoiceCapture + VoiceCaptureUX    |  1.20          |  3.00            |
+| All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture + MiSnapDeviceKit)                   |  3.80          |  9.20            |
+| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  5.20          |  12.0            |
 
 </center>
 
@@ -186,6 +188,8 @@ Refer to "Create the App Size Report" section of [this article](https://develope
     * On iPhone 7 and earlier, the hint messages take a few seconds to begin appearing. During this time the message label will be blank
 * MiSnapVoiceCapture
     * None
+* MiSnapWorkflow:
+    * An edge case where UI alignment is occasionally broken when transitioning from a Landscape-only to a Portrait-only view controller when a device is held at an approximately 45 degree angle due to a defect in iOS (pre-iOS 16 versions) where a method notifying that transition is happening isn't called in such cases
 
 - - -
 

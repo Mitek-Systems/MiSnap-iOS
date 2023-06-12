@@ -6,6 +6,6 @@ framework module MiSnapNFC {
 }
 
 module MiSnapNFC.Swift {
-    header "MiSnapNFC-Swift.h"
-    requires objc
+  header "MiSnapNFC-Swift.h"
+  requires objc
 }

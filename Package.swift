@@ -35,11 +35,15 @@ let package = Package(
         ),
         .library(
             name: "MiSnapNFC",
-            targets: ["MiSnapNFC","MiSnapMibiData","MiSnapLicenseManager"]
+            targets: ["MiSnapNFC","MiSnapMibiData","MiSnapLicenseManager","OpenSSL"]
         ),
         .library(
             name: "MiSnapNFCUX",
             targets: ["MiSnapNFCUX","MiSnapAssetManager"]
+        ),
+        .library(
+            name: "MiSnapDeviceKit",
+            targets: ["MiSnapDeviceKit","MiSnapLicenseManager"]
         )
     ],
     targets: [
@@ -92,6 +96,10 @@ let package = Package(
             path: "SDKs/MiSnapNFC/MiSnapNFC.xcframework"
         ),
         .binaryTarget(
+            name: "OpenSSL",
+            path: "SDKs/MiSnapNFC/OpenSSL.xcframework"
+        ),
+        .binaryTarget(
             name: "MiSnapNFCUX",
             path: "SDKs/MiSnapNFC/MiSnapNFCUX.xcframework"
         ),
@@ -106,6 +114,10 @@ let package = Package(
         .binaryTarget(
             name: "MiSnapAssetManager",
             path: "SDKs/Common/MiSnapAssetManager.xcframework"
+        ),
+        .binaryTarget(
+            name: "MiSnapDeviceKit",
+            path: "SDKs/MiSnapDeviceKit/MiSnapDeviceKit.xcframework"
         )
     ]
 )

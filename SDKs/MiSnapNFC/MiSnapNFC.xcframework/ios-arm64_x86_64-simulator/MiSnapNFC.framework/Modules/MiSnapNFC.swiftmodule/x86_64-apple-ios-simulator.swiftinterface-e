@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapNFC
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
 import CoreNFC
 import CryptoKit
@@ -9,9 +10,11 @@ import Foundation
 import MiSnapLicenseManager
 import MiSnapMibiData
 @_exported import MiSnapNFC
+import OpenSSL
 import Swift
 import UIKit
 import _Concurrency
+import _StringProcessing
 public enum MiSnapNFCTagError : Swift.Error, Swift.Equatable {
   case responseError(Swift.String)
   case invalidTag
@@ -227,12 +230,6 @@ public enum MiSnapNFCKey {
   @objc override dynamic public init()
   @objc deinit
 }
-precedencegroup ExponentiationPrecedence {
-  associativity: left
-  higherThan: MultiplicationPrecedence
-  lowerThan: BitwiseShiftPrecedence
-}
-infix operator ** : ExponentiationPrecedence
 extension MiSnapNFCDocumentType : Swift.Equatable {}
 extension MiSnapNFCDocumentType : Swift.Hashable {}
 extension MiSnapNFCDocumentType : Swift.RawRepresentable {}

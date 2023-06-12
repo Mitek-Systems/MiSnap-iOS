@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Vision/Vision.h>
 #import <MiSnapFacialCapture/MiSnapFacialCaptureParameters.h>
+#import <MiSnapMibiData/MiSnapMibiData.h>
 
 /**
  Statuses returned by MiSnapFacialCapture.
@@ -165,7 +166,11 @@ An array of outer lip points
  
  -Note: It's `nil` unitl a frame is acquired
 */
-@property (nonatomic, readonly) NSString * _Nullable mibiDataString;
+@property (nonatomic, readonly) NSString * _Nullable mibiDataString DEPRECATED_MSG_ATTRIBUTE("Use `mibi` property instead");
+/**
+ An object containing non-PII session analytics
+ */
+@property (nonatomic, readonly) MiSnapMibi * _Nonnull mibi;
 /**
  A result code of a session
  

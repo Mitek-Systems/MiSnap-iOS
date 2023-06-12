@@ -81,11 +81,25 @@ typedef NS_ENUM(NSInteger, MiSnapTutorialMode) {
  */
 @property (nonatomic, readwrite) MiSnapMode mode;
 /**
+ DEPRECATED and replaced with `jpegQuality`
+ 
  Compression to apply to an acquired image (100 - no compression, 0 - absolute compression)
  
  Range: `50...100`
  */
-@property (nonatomic, readwrite) NSInteger compression;
+@property (nonatomic, readwrite) NSInteger compression DEPRECATED_ATTRIBUTE;
+/**
+ JPEG quality (100 - no compression, 0 - absolute compression)
+ 
+ Range:
+ * Identity document types: `60...100`
+ * Deposit document types: `30...100`
+ 
+ Default:
+ * Identity document types: `90`
+ * Deposit document types: `50`
+ */
+@property (nonatomic, readwrite) NSInteger jpegQuality;
 /**
  A delay in milliseconds between the first frame that passed all IQA checks before continuing analysis
 

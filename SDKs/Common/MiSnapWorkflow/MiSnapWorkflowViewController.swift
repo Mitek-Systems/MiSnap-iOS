@@ -74,18 +74,7 @@ class MiSnapWorkflowViewController: UIViewController {
     private var containerView: UIView = UIView()
     private var controller: MiSnapWorkflowController?
     private var currentChildVC: UIViewController?
-    private var supportedOrientation: UIInterfaceOrientationMask = .all {
-        didSet {
-            // TODO: does this still work in iOS 16
-            if supportedOrientation == .portrait {
-                UIDevice.current.setValue(UIDeviceOrientation.portrait.rawValue, forKey: "orientation")
-            } else if supportedOrientation == .landscape {
-                UIDevice.current.setValue(UIDeviceOrientation.landscapeLeft.rawValue, forKey: "orientation")
-            }
-            
-            _ = self.supportedInterfaceOrientations
-        }
-    }
+    private var supportedOrientation: UIInterfaceOrientationMask = .all
     /**
      Initializes a view controller for MobileVerify
      */
@@ -156,13 +145,16 @@ class MiSnapWorkflowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            
-        containerView.frame = view.frame
-        view.addSubview(containerView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        containerView.frame = view.frame
+        view.addSubview(containerView)
     }
         
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -238,6 +230,15 @@ class MiSnapWorkflowViewController: UIViewController {
         }
     }
     
+    private func willRotate(for orientationMask: UIInterfaceOrientationMask) -> Bool {
+        if UIInterfaceOrientation.current.isPortrait && (orientationMask == .landscape || orientationMask == .landscapeLeft || orientationMask == .landscapeRight) {
+            return true
+        } else if UIInterfaceOrientation.current.isLandscape && (orientationMask == .portrait || orientationMask == .portraitUpsideDown || orientationMask == .all) {
+            return true
+        }
+        return false
+    }
+    
     deinit {
         print("\(NSStringFromClass(type(of: self))) is deinitialized")
     }
@@ -253,13 +254,38 @@ extension MiSnapWorkflowViewController: MiSnapWorkflowControllerDelegate {
     func miSnapWorkflowControllerPresent(_ vc: UIViewController!, supportedOrientation: UIInterfaceOrientationMask, step: MiSnapWorkflowStep) {
         self.supportedOrientation = supportedOrientation
         
-        if let childVC = self.currentChildVC {
-            move(from: childVC, to: vc)
-        } else {
-            present(asChildViewController: vc)
+        var delay: Int = 0
+        if willRotate(for: supportedOrientation) {
+            delay = 250
         }
         
-        self.currentChildVC = vc
+        if #available(iOS 16.0, *) {
+            setNeedsUpdateOfSupportedInterfaceOrientations()
+            guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
+            for window in windowScene.windows {
+                window.rootViewController?.setNeedsUpdateOfSupportedInterfaceOrientations()
+            }
+            windowScene.requestGeometryUpdate(.iOS(interfaceOrientations: supportedOrientation))
+        } else {
+            if supportedOrientation == .portrait || supportedOrientation == .all {
+                UIDevice.current.setValue(UIDeviceOrientation.portrait.rawValue, forKey: "orientation")
+            } else if supportedOrientation == .landscape {
+                UIDevice.current.setValue(UIDeviceOrientation.landscapeLeft.rawValue, forKey: "orientation")
+            }
+            
+            _ = self.supportedInterfaceOrientations
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(delay)) { [weak self] in
+            guard let self = self else { return }
+            if let childVC = self.currentChildVC {
+                self.move(from: childVC, to: vc)
+            } else {
+                self.present(asChildViewController: vc)
+            }
+            
+            self.currentChildVC = vc
+        }
     }
     
     func miSnapWorkflowControllerDidFinishPresentingSteps(_ result: MiSnapWorkflowResult) {
@@ -314,5 +340,16 @@ extension UINavigationController {
             return visibleVC.supportedInterfaceOrientations
         }
         return super.supportedInterfaceOrientations
+    }
+}
+
+private extension UIInterfaceOrientation {
+    static var current: UIInterfaceOrientation {
+        if #available(iOS 13.0, *) {
+            guard let window = UIApplication.shared.windows.first, let scene = window.windowScene else { return .unknown }
+            return scene.interfaceOrientation
+        } else {
+            return UIApplication.shared.statusBarOrientation
+        }
     }
 }

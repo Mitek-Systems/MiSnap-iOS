@@ -10,6 +10,7 @@
 #import <MiSnapScience/MiSnapScienceIQAResult.h>
 #import <MiSnapScience/MiSnapScienceClassificationResult.h>
 #import <MiSnapScience/MiSnapScienceExtractionResult.h>
+#import <MiSnapMibiData/MiSnapMibiData.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -155,7 +156,12 @@ typedef NS_ENUM(NSInteger, MiSnapResultCode) {
 /**
  A string containing non-PII session analytics
  */
-@property (nonatomic, readonly) NSString * _Nullable mibiDataString;
+@property (nonatomic, readonly) NSString * _Nullable mibiDataString DEPRECATED_MSG_ATTRIBUTE("Use `mibi` property instead");
+
+/**
+ An object containing non-PII session analytics
+ */
+@property (nonatomic, readonly) MiSnapMibi * _Nonnull mibi;
 
 /**
  Image Quality Analysis result

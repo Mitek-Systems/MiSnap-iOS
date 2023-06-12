@@ -99,6 +99,10 @@
  */
 @property (nonatomic) MiSnapFacialCaptureCameraParameters *_Nullable parameters;
 /**
+ Controls the camera orientation
+ */
+@property (nonatomic) UIInterfaceOrientation orientation;
+/**
  Creates an instance of `MiSnapFacialCaptureCamera`
  @param sessionPreset the `AVCaptureSessionPreset` to use
  @param pixelBufferFormat the `kCVPixelFormatType` to use
@@ -112,11 +116,11 @@
  @param sessionPreset the `AVCaptureSessionPreset` to use
  @param pixelBufferFormat the `kCVPixelFormatType` to use
  @param position the `AVCaptureDevicePosition` to use
- @param cameraOrientation the `UIInterfaceOrientation` of `MiSnapFacialCaptureCamera`
+ @param orientation the `UIInterfaceOrientation` of `MiSnapFacialCaptureCamera`
  @param frame the frame for the `MiSnapFacialCaptureCamera` view
  @return an instance of `MiSnapFacialCaptureCamera` that is initialized and ready to start
 */
-- (instancetype _Nullable)initWithPreset:(AVCaptureSessionPreset _Nullable)sessionPreset format:(NSInteger)pixelBufferFormat position:(AVCaptureDevicePosition)position orientation:(UIInterfaceOrientation)cameraOrientation frame:(CGRect)frame;
+- (instancetype _Nullable)initWithPreset:(AVCaptureSessionPreset _Nullable)sessionPreset format:(NSInteger)pixelBufferFormat position:(AVCaptureDevicePosition)position orientation:(UIInterfaceOrientation)orientation frame:(CGRect)frame;
 /**
  Creates an instance of MiSnapSDKCamera
  @param desiredResolution the desired resolution (`CGSize`) for the `MiSnapFacialCaptureCamera`

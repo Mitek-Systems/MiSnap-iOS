@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapNFC-Swift.h</key>
 		<data>
-		NHA5kpOlN93bKDk+FQ1m9Rpu5tE=
+		eWrZpDWtOwBfItA4Qv2SEKZ7qu0=
 		</data>
 		<key>Headers/MiSnapNFC.h</key>
 		<data>
@@ -14,59 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wVnu9e1SKwC1E5BKeKNDgwzd+tI=
+		y4JpZlmunOYbj3vgs5SPvqjzB50=
+		</data>
+		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		7o+HqJ+uJDOERWCPA//AkDcJEds=
+		</data>
+		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		x5hrkhhh9bjXsULE/JXbSkYdzR4=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		CZ0lVOemcIZ3bA1QtWZhluqgnjU=
+		20VLm2+WRua+eLaCRPJFsaSGrH8=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9t9CQee1EFPglI7N+macZNzhJYo=
+		x5hrkhhh9bjXsULE/JXbSkYdzR4=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+kp40LihxXPjImOxLA2MfauG/6w=
+		DvB2xaC1dRQ4QWpiDdEmWLHwlxs=
 		</data>
-		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		CZ0lVOemcIZ3bA1QtWZhluqgnjU=
+		7o+HqJ+uJDOERWCPA//AkDcJEds=
 		</data>
-		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9t9CQee1EFPglI7N+macZNzhJYo=
-		</data>
-		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		+kp40LihxXPjImOxLA2MfauG/6w=
+		86wQ0kzxgEAw9HUwwTfZZbt45WM=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		tl/WY8PWI3n2g2q+Wd5ANeUVzoc=
+		Mm/qo6OJXVc4VlKb+/s0KkPebJg=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		y0DzHlk0UoSI8cvlGrooy1UknV0=
+		86wQ0kzxgEAw9HUwwTfZZbt45WM=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4IX3q6i+Y1qrehv9bRSfCzTIeV0=
-		</data>
-		<key>Modules/MiSnapNFC.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		tl/WY8PWI3n2g2q+Wd5ANeUVzoc=
-		</data>
-		<key>Modules/MiSnapNFC.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		y0DzHlk0UoSI8cvlGrooy1UknV0=
-		</data>
-		<key>Modules/MiSnapNFC.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		4IX3q6i+Y1qrehv9bRSfCzTIeV0=
+		QRWMb522UJzXbUYIWBDsviAUBCQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		W9jnBL4Eb+PDaIeLxejtd3XtVE8=
+		vDflf27OV1nWhrMDaevbvHHpdGQ=
 		</data>
 		<key>geos</key>
 		<data>
@@ -79,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			53qNaiSKHxSpusXbtDl2kz9C10DZFrhoYdgC4FReTZM=
+			uxSNw1yKrFBGe3n5+v/DSEqzPwMbEkN4hEEHoYvxz1E=
 			</data>
 		</dict>
 		<key>Headers/MiSnapNFC.h</key>
@@ -89,95 +81,81 @@
 			JOHIpd4RKNSdZYoPXG0HtNCD87vvvFTg98A4Kjapb78=
 			</data>
 		</dict>
+		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			T1sULTjsq+GtbqMUR1FHFoybDYCzlkbMXGlBZ5hLlj8=
+			</data>
+		</dict>
+		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			e4F4WHMA6+L7hDkPEhpXDFlz2zvDE9wh0BVHg5OQzqo=
+			</data>
+		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uqK/+q6W+Bv08drIoO6FfVepoNMiGXUTz4afZAqi7mw=
+			q6vXRDLDpSkGSUR0wIfwe+ed8okRnnAmya/G10AdwVk=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pEw8qghhELfOdGrZ3JJou8FM3hZ9M0jmB5grV6uz3d8=
+			e4F4WHMA6+L7hDkPEhpXDFlz2zvDE9wh0BVHg5OQzqo=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UGxg7j7brj38XHmLxoP6J59iiSIEff6KDFfnV1d7njM=
+			zbu0r01PxFRpZmmMdk6Ve4wLz404phR0KHCNaMzBvjw=
 			</data>
 		</dict>
-		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uqK/+q6W+Bv08drIoO6FfVepoNMiGXUTz4afZAqi7mw=
+			T1sULTjsq+GtbqMUR1FHFoybDYCzlkbMXGlBZ5hLlj8=
 			</data>
 		</dict>
-		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pEw8qghhELfOdGrZ3JJou8FM3hZ9M0jmB5grV6uz3d8=
-			</data>
-		</dict>
-		<key>Modules/MiSnapNFC.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UGxg7j7brj38XHmLxoP6J59iiSIEff6KDFfnV1d7njM=
+			VqNQMpAMEWHpGzcjhWnkKIg8aZ1XlOd3w52wOTdk1Ms=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8cw9xBODYHJTRGdl9klT7srhK0nHXPUConE7j+thqjc=
+			AXrBuqoO4rop1e1ofvf13/kjPCBUXAm0Ww2fATmjZxU=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			laKI295R0399goeOoWCRv9co7nxs070qsHk+LjQo9VU=
+			VqNQMpAMEWHpGzcjhWnkKIg8aZ1XlOd3w52wOTdk1Ms=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ukWP+4WpAgP24TV7RB46KsJCpubk3Y7DlJYYIUVCGBk=
-			</data>
-		</dict>
-		<key>Modules/MiSnapNFC.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8cw9xBODYHJTRGdl9klT7srhK0nHXPUConE7j+thqjc=
-			</data>
-		</dict>
-		<key>Modules/MiSnapNFC.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			laKI295R0399goeOoWCRv9co7nxs070qsHk+LjQo9VU=
-			</data>
-		</dict>
-		<key>Modules/MiSnapNFC.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ukWP+4WpAgP24TV7RB46KsJCpubk3Y7DlJYYIUVCGBk=
+			LNMBzZJQ21qmFgdR33itMlJibOKV47bV0euzQbfgof8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gQLkBEoduSuI37sJZBfO/nC3q2e34+4M0YDcH6zTX5Y=
+			4RQxGmXr1gSJe2NwqFipQzG9IajFYXPtZwOsYCddszw=
 			</data>
 		</dict>
 		<key>geos</key>

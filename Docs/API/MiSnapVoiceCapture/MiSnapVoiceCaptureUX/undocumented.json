@@ -1,19 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/stsuprenko/MobileVerify/MiSnapBiometrics/MiSnapVoiceCaptureUX/MiSnapVoiceCaptureUX/MiSnapVoiceCaptureResourceLocator.swift",
-      "line": 48,
-      "symbol": "MiSnapVoiceCaptureAssetLocationConfiguration.bundle",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/stsuprenko/MobileVerify/MiSnapBiometrics/MiSnapVoiceCaptureUX/MiSnapVoiceCaptureUX/MiSnapVoiceCaptureResourceLocator.swift",
-      "line": 50,
-      "symbol": "MiSnapVoiceCaptureAssetLocationConfiguration.description",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    }
+
   ],
-  "source_directory": "/Users/stsuprenko/MobileVerify/Tools"
+  "source_directory": "/Users/stsuprenko/Repositories/MobileVerify/Tools"
 }

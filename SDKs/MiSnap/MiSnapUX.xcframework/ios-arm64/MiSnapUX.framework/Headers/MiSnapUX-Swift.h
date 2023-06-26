@@ -398,6 +398,8 @@ typedef SWIFT_ENUM(NSInteger, MiSnapReviewMode, open) {
   MiSnapReviewModeManualOnly = 0,
 /// Present review screen when an image is acquired in either <code>Auto</code> or <code>Manual</code> mode
   MiSnapReviewModeAutoAndManual = 1,
+/// Present review screen when an acquired image failed one or more IQA checks
+  MiSnapReviewModeWarnings = 2,
 };
 
 @class UIColor;

@@ -57,7 +57,23 @@ typedef NS_ENUM(NSInteger, MiSnapTutorialMode) {
      */
     MiSnapTutorialModeReview            = 4
 };
-
+/**
+ Device motion sensitivity
+ */
+typedef NS_ENUM(NSInteger, MiSnapDeviceMotionSensitivityLevel) {
+    /**
+     Device motion sensitivity is not set - device motion check is not performed
+     */
+    MiSnapDeviceMotionSensitivityLevelNone = 0,
+    /**
+     Device motion sensitivity low
+     */
+    MiSnapDeviceMotionSensitivityLevelLow = 1,
+    /**
+     Device motion sensitivity high
+     */
+    MiSnapDeviceMotionSensitivityLevelHigh = 2
+};
 /**
  Parameters used during the document acquisition process
  */
@@ -122,6 +138,10 @@ typedef NS_ENUM(NSInteger, MiSnapTutorialMode) {
  - Note: This is a licensed feature therefore in addition to overriding this parameter to `TRUE`, it needs to be available in a license key for Enhanced Manual functionality to work
  */
 @property (nonatomic, readwrite) BOOL enhancedManualEnabled;
+/**
+ Device motion sensitivity level
+ */
+@property (nonatomic, readwrite) MiSnapDeviceMotionSensitivityLevel motionSensitivityLevel;
 /**
  Logs UX parameters into MIBI for analytics
  */

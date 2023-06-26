@@ -257,9 +257,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) NSString * _Nonnull additionalStepString;
 /**
+ MRZ bounding box
+ */
+@property (nonatomic, readonly) CGRect mrzBoundingBox;
+/**
  The bounding boxes around personal number in MRZ
  */
-@property (nonatomic, readonly) NSArray *personalNumberBoundingBoxes;
+@property (nonatomic, readonly) NSArray * _Nullable personalNumberBoundingBoxes;
 /**
  A string representation of `MiSnapScienceExtractionResult`
  */

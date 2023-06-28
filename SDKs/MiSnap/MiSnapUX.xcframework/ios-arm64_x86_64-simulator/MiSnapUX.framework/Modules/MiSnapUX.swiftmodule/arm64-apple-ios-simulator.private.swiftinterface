@@ -91,6 +91,7 @@ import _StringProcessing
 @objc public enum MiSnapReviewMode : Swift.Int, Swift.Codable {
   case manualOnly = 0
   case autoAndManual = 1
+  case warnings = 2
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

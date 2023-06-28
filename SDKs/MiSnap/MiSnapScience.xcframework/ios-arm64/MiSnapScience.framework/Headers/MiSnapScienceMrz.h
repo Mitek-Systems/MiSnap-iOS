@@ -71,6 +71,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) NSString *optionalNumber;
 /**
+ The MRZ bounding box
+ */
+@property (nonatomic, assign) CGRect boundingBox;
+/**
  The bounding boxes around personal number in MRZ
  */
 @property (nonatomic, strong) NSArray *personalNumberBoundingBoxes;

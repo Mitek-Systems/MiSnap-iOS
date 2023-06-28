@@ -3678,6 +3678,48 @@
             "fixedbinaryorder": 1
           },
           {
+            "kind": "Var",
+            "name": "warnings",
+            "printedName": "warnings",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapUX.MiSnapReviewMode.Type) -> MiSnapUX.MiSnapReviewMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapReviewMode",
+                    "printedName": "MiSnapUX.MiSnapReviewMode",
+                    "usr": "c:@M@MiSnapUX@E@MiSnapReviewMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapUX.MiSnapReviewMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapReviewMode",
+                        "printedName": "MiSnapUX.MiSnapReviewMode",
+                        "usr": "c:@M@MiSnapUX@E@MiSnapReviewMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapUX@E@MiSnapReviewMode@MiSnapReviewModeWarnings",
+            "mangledName": "$s8MiSnapUX0aB10ReviewModeO8warningsyA2CmF",
+            "moduleName": "MiSnapUX",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -9459,6 +9501,13 @@
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "IntegerLiteral",
+      "offset": 552,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
+      "kind": "IntegerLiteral",
       "offset": 297,
       "length": 1,
       "value": "0"
@@ -9472,344 +9521,351 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 552,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 736,
+      "offset": 860,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 768,
+      "offset": 892,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 804,
+      "offset": 928,
       "length": 4,
       "value": "90.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 837,
+      "offset": 961,
       "length": 4,
       "value": "90.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 687,
+      "offset": 811,
       "length": 4,
       "value": "20.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 1029,
+      "offset": 1153,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 1157,
+      "offset": 1281,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 1279,
+      "offset": 1403,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 1405,
+      "offset": 1529,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 1724,
+      "offset": 1848,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 1923,
+      "offset": 2047,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 2193,
+      "offset": 2317,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 2336,
+      "offset": 2460,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 2541,
+      "offset": 2665,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 2582,
+      "offset": 2706,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 2627,
+      "offset": 2751,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 2669,
+      "offset": 2793,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 2484,
+      "offset": 2608,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 2959,
+      "offset": 3083,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 3000,
+      "offset": 3124,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 3045,
+      "offset": 3169,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 3087,
+      "offset": 3211,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 2902,
+      "offset": 3026,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4931,
+      "offset": 5055,
       "length": 15,
       "value": "\"CameraTimeout\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4979,
+      "offset": 5103,
       "length": 17,
       "value": "\"SmartHintPeriod\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5029,
+      "offset": 5153,
       "length": 18,
       "value": "\"TerminationDelay\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5097,
+      "offset": 5221,
       "length": 35,
       "value": "\"ShowIntroductoryInstructionScreen\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5166,
+      "offset": 5290,
       "length": 19,
       "value": "\"ShowTimeoutScreen\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5216,
+      "offset": 5340,
       "length": 16,
       "value": "\"ShowHelpScreen\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5265,
+      "offset": 5389,
       "length": 18,
       "value": "\"ShowReviewScreen\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5310,
+      "offset": 5434,
       "length": 12,
       "value": "\"ReviewMode\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5355,
+      "offset": 5479,
       "length": 18,
       "value": "\"SeamlessFailover\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5412,
+      "offset": 5536,
       "length": 24,
       "value": "\"ShowManualButtonInAuto\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5464,
+      "offset": 5588,
       "length": 13,
       "value": "\"AutoDismiss\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5505,
+      "offset": 5629,
       "length": 13,
       "value": "\"ShowCorners\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5550,
+      "offset": 5674,
       "length": 13,
       "value": "\"InjectImage\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4931,
+      "offset": 5055,
       "length": 15,
       "value": "\"CameraTimeout\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 4979,
+      "offset": 5103,
       "length": 17,
       "value": "\"SmartHintPeriod\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5029,
+      "offset": 5153,
       "length": 18,
       "value": "\"TerminationDelay\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5097,
+      "offset": 5221,
       "length": 35,
       "value": "\"ShowIntroductoryInstructionScreen\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5166,
+      "offset": 5290,
       "length": 19,
       "value": "\"ShowTimeoutScreen\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5216,
+      "offset": 5340,
       "length": 16,
       "value": "\"ShowHelpScreen\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5265,
+      "offset": 5389,
       "length": 18,
       "value": "\"ShowReviewScreen\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5310,
+      "offset": 5434,
       "length": 12,
       "value": "\"ReviewMode\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5355,
+      "offset": 5479,
       "length": 18,
       "value": "\"SeamlessFailover\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5412,
+      "offset": 5536,
       "length": 24,
       "value": "\"ShowManualButtonInAuto\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5464,
+      "offset": 5588,
       "length": 13,
       "value": "\"AutoDismiss\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5505,
+      "offset": 5629,
       "length": 13,
       "value": "\"ShowCorners\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapUxParameters.swift",
       "kind": "StringLiteral",
-      "offset": 5550,
+      "offset": 5674,
       "length": 13,
       "value": "\"InjectImage\""
     },

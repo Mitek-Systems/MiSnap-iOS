@@ -63,6 +63,9 @@
                 <a class="nav-group-task-link" href="../Classes/MiSnapLicenseManager.html">MiSnapLicenseManager</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapMibiData.html">MiSnapMibiData</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapParameters.html">MiSnapParameters</a>
               </li>
               <li class="nav-group-task">
@@ -95,7 +98,13 @@
                 <a class="nav-group-task-link" href="../Enums/MiSnapCameraBarcodeType.html">MiSnapCameraBarcodeType</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCameraDocumentType.html">MiSnapCameraDocumentType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapCameraTorchMode.html">MiSnapCameraTorchMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapDeviceMotionSensitivityLevel.html">MiSnapDeviceMotionSensitivityLevel</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapLicenseFeature.html">MiSnapLicenseFeature</a>
@@ -292,15 +301,21 @@
                     <code>
                     <a name="/c:objc(cs)MiSnapParameters(py)compression"></a>
                     <a name="//apple_ref/objc/Property/compression" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MiSnapParameters(py)compression">compression</a>
+                    <a class="token discouraged" href="#/c:objc(cs)MiSnapParameters(py)compression">compression</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        
+                      </div>
                       <div class="abstract">
-                        <p>Compression to apply to an acquired image (100 - no compression, 0 - absolute compression)</p>
+                        <p>DEPRECATED and replaced with <code><a href="../Classes/MiSnapParameters.html#/c:objc(cs)MiSnapParameters(py)jpegQuality">jpegQuality</a></code></p>
+
+<p>Compression to apply to an acquired image (100 - no compression, 0 - absolute compression)</p>
 
 <p>Range: <code>50...100</code></p>
 
@@ -310,6 +325,47 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">compression</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapParameters(py)jpegQuality"></a>
+                    <a name="//apple_ref/objc/Property/jpegQuality" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapParameters(py)jpegQuality">jpegQuality</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>JPEG quality (100 - no compression, 0 - absolute compression)</p>
+
+<p>Range:</p>
+
+<ul>
+<li>Identity document types: <code>60...100</code></li>
+<li>Deposit document types: <code>30...100</code></li>
+</ul>
+
+<p>Default:</p>
+
+<ul>
+<li>Identity document types: <code>90</code></li>
+<li>Deposit document types: <code>50</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">jpegQuality</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -436,6 +492,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)MiSnapParameters(py)motionSensitivityLevel"></a>
+                    <a name="//apple_ref/objc/Property/motionSensitivityLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapParameters(py)motionSensitivityLevel">motionSensitivityLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Device motion sensitivity level</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/MiSnapDeviceMotionSensitivityLevel.html">MiSnapDeviceMotionSensitivityLevel</a></span> <span class="n">motionSensitivityLevel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)MiSnapParameters(im)logUxParameters:"></a>
                     <a name="//apple_ref/objc/Method/-logUxParameters:" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)MiSnapParameters(im)logUxParameters:">-logUxParameters:<wbr></a>
@@ -499,7 +582,7 @@
     </div>
     <section class="footer">
       <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>

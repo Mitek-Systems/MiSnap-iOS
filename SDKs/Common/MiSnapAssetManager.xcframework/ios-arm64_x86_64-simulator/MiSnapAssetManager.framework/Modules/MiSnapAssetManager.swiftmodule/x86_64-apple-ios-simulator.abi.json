@@ -491,6 +491,100 @@
           },
           {
             "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapGlareViewConfiguration(py)isHidden",
+            "mangledName": "$s18MiSnapAssetManager0aB22GlareViewConfigurationC8isHiddenSbvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapGlareViewConfiguration(im)isHidden",
+                "mangledName": "$s18MiSnapAssetManager0aB22GlareViewConfigurationC8isHiddenSbvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapGlareViewConfiguration(im)setIsHidden:",
+                "mangledName": "$s18MiSnapAssetManager0aB22GlareViewConfigurationC8isHiddenSbvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB22GlareViewConfigurationC8isHiddenSbvM",
+                "mangledName": "$s18MiSnapAssetManager0aB22GlareViewConfigurationC8isHiddenSbvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -1831,6 +1925,100 @@
                 "declKind": "Accessor",
                 "usr": "s:18MiSnapAssetManager0aB17ViewConfigurationC13shadowOpacity14CoreFoundation7CGFloatVvM",
                 "mangledName": "$s18MiSnapAssetManager0aB17ViewConfigurationC13shadowOpacity12CoreGraphics7CGFloatVvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapViewConfiguration(py)isHidden",
+            "mangledName": "$s18MiSnapAssetManager0aB17ViewConfigurationC8isHiddenSbvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapViewConfiguration(im)isHidden",
+                "mangledName": "$s18MiSnapAssetManager0aB17ViewConfigurationC8isHiddenSbvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapViewConfiguration(im)setIsHidden:",
+                "mangledName": "$s18MiSnapAssetManager0aB17ViewConfigurationC8isHiddenSbvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB17ViewConfigurationC8isHiddenSbvM",
+                "mangledName": "$s18MiSnapAssetManager0aB17ViewConfigurationC8isHiddenSbvM",
                 "moduleName": "MiSnapAssetManager",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -4684,6 +4872,100 @@
                 "declKind": "Accessor",
                 "usr": "s:18MiSnapAssetManager0aB35RecordingIndicatorViewConfigurationC5alpha14CoreFoundation7CGFloatVvM",
                 "mangledName": "$s18MiSnapAssetManager0aB35RecordingIndicatorViewConfigurationC5alpha12CoreGraphics7CGFloatVvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapRecordingIndicatorViewConfiguration(py)isHidden",
+            "mangledName": "$s18MiSnapAssetManager0aB35RecordingIndicatorViewConfigurationC8isHiddenSbvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapRecordingIndicatorViewConfiguration(im)isHidden",
+                "mangledName": "$s18MiSnapAssetManager0aB35RecordingIndicatorViewConfigurationC8isHiddenSbvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapRecordingIndicatorViewConfiguration(im)setIsHidden:",
+                "mangledName": "$s18MiSnapAssetManager0aB35RecordingIndicatorViewConfigurationC8isHiddenSbvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB35RecordingIndicatorViewConfigurationC8isHiddenSbvM",
+                "mangledName": "$s18MiSnapAssetManager0aB35RecordingIndicatorViewConfigurationC8isHiddenSbvM",
                 "moduleName": "MiSnapAssetManager",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -9219,6 +9501,100 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(py)isHidden",
+            "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC8isHiddenSbvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(im)isHidden",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC8isHiddenSbvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(im)setIsHidden:",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC8isHiddenSbvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB20SuccessConfigurationC8isHiddenSbvM",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC8isHiddenSbvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -11665,6 +12041,100 @@
                 "declKind": "Accessor",
                 "usr": "s:18MiSnapAssetManager0aB18LabelConfigurationC13heightPadding14CoreFoundation7CGFloatVvM",
                 "mangledName": "$s18MiSnapAssetManager0aB18LabelConfigurationC13heightPadding12CoreGraphics7CGFloatVvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration(py)isHidden",
+            "mangledName": "$s18MiSnapAssetManager0aB18LabelConfigurationC8isHiddenSbvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration(im)isHidden",
+                "mangledName": "$s18MiSnapAssetManager0aB18LabelConfigurationC8isHiddenSbvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapLabelConfiguration(im)setIsHidden:",
+                "mangledName": "$s18MiSnapAssetManager0aB18LabelConfigurationC8isHiddenSbvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB18LabelConfigurationC8isHiddenSbvM",
+                "mangledName": "$s18MiSnapAssetManager0aB18LabelConfigurationC8isHiddenSbvM",
                 "moduleName": "MiSnapAssetManager",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -15497,6 +15967,100 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapBulletViewConfiguration(py)isHidden",
+            "mangledName": "$s18MiSnapAssetManager0aB23BulletViewConfigurationC8isHiddenSbvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapBulletViewConfiguration(im)isHidden",
+                "mangledName": "$s18MiSnapAssetManager0aB23BulletViewConfigurationC8isHiddenSbvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapBulletViewConfiguration(im)setIsHidden:",
+                "mangledName": "$s18MiSnapAssetManager0aB23BulletViewConfigurationC8isHiddenSbvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB23BulletViewConfigurationC8isHiddenSbvM",
+                "mangledName": "$s18MiSnapAssetManager0aB23BulletViewConfigurationC8isHiddenSbvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -16912,6 +17476,100 @@
                 "declKind": "Accessor",
                 "usr": "s:18MiSnapAssetManager0aB21HintViewConfigurationC4fontSo6UIFontCvM",
                 "mangledName": "$s18MiSnapAssetManager0aB21HintViewConfigurationC4fontSo6UIFontCvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapHintViewConfiguration(py)isHidden",
+            "mangledName": "$s18MiSnapAssetManager0aB21HintViewConfigurationC8isHiddenSbvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapHintViewConfiguration(im)isHidden",
+                "mangledName": "$s18MiSnapAssetManager0aB21HintViewConfigurationC8isHiddenSbvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapHintViewConfiguration(im)setIsHidden:",
+                "mangledName": "$s18MiSnapAssetManager0aB21HintViewConfigurationC8isHiddenSbvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB21HintViewConfigurationC8isHiddenSbvM",
+                "mangledName": "$s18MiSnapAssetManager0aB21HintViewConfigurationC8isHiddenSbvM",
                 "moduleName": "MiSnapAssetManager",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -20297,6 +20955,100 @@
           },
           {
             "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapDocumentOutlineConfiguration(py)isHidden",
+            "mangledName": "$s18MiSnapAssetManager0aB28DocumentOutlineConfigurationC8isHiddenSbvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapDocumentOutlineConfiguration(im)isHidden",
+                "mangledName": "$s18MiSnapAssetManager0aB28DocumentOutlineConfigurationC8isHiddenSbvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapDocumentOutlineConfiguration(im)setIsHidden:",
+                "mangledName": "$s18MiSnapAssetManager0aB28DocumentOutlineConfigurationC8isHiddenSbvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB28DocumentOutlineConfigurationC8isHiddenSbvM",
+                "mangledName": "$s18MiSnapAssetManager0aB28DocumentOutlineConfigurationC8isHiddenSbvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -21979,6 +22731,100 @@
           },
           {
             "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapCheckboxViewConfiguration(py)isHidden",
+            "mangledName": "$s18MiSnapAssetManager0aB25CheckboxViewConfigurationC8isHiddenSbvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapCheckboxViewConfiguration(im)isHidden",
+                "mangledName": "$s18MiSnapAssetManager0aB25CheckboxViewConfigurationC8isHiddenSbvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapCheckboxViewConfiguration(im)setIsHidden:",
+                "mangledName": "$s18MiSnapAssetManager0aB25CheckboxViewConfigurationC8isHiddenSbvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB25CheckboxViewConfigurationC8isHiddenSbvM",
+                "mangledName": "$s18MiSnapAssetManager0aB25CheckboxViewConfigurationC8isHiddenSbvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -22857,8 +23703,15 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGlareView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 926,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGlareView.swift",
       "kind": "StringLiteral",
-      "offset": 1382,
+      "offset": 1525,
       "length": 15,
       "value": "\"MiSnapAssetManager.MiSnapGlareView\""
     },
@@ -22955,113 +23808,120 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1368,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2066,
+      "offset": 2309,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2076,
+      "offset": 2319,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2085,
+      "offset": 2328,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2095,
+      "offset": 2338,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3353,
+      "offset": 3596,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3363,
+      "offset": 3606,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3372,
+      "offset": 3615,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3382,
+      "offset": 3625,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "FloatLiteral",
-      "offset": 3508,
+      "offset": 3751,
       "length": 12,
       "value": "0.6000000238"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "FloatLiteral",
-      "offset": 3529,
+      "offset": 3772,
       "length": 12,
       "value": "0.6000000238"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "FloatLiteral",
-      "offset": 3549,
+      "offset": 3792,
       "length": 12,
       "value": "0.6000000238"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3570,
+      "offset": 3813,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "FloatLiteral",
-      "offset": 3592,
+      "offset": 3835,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "StringLiteral",
-      "offset": 5182,
+      "offset": 5425,
       "length": 10,
       "value": "\"MiSnapAssetManager.MiSnapView\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "StringLiteral",
-      "offset": 7618,
+      "offset": 7896,
       "length": 19,
       "value": "\"MiSnapAssetManager.MiSnapStatelessView\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapView.swift",
       "kind": "StringLiteral",
-      "offset": 10234,
+      "offset": 10512,
       "length": 18,
       "value": "\"MiSnapAssetManager.MiSnapStatefulView\""
     },
@@ -23172,22 +24032,29 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapRecordingIndicatorView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 828,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapRecordingIndicatorView.swift",
       "kind": "FloatLiteral",
-      "offset": 1376,
+      "offset": 1519,
       "length": 5,
       "value": "110.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapRecordingIndicatorView.swift",
       "kind": "FloatLiteral",
-      "offset": 1391,
+      "offset": 1534,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapRecordingIndicatorView.swift",
       "kind": "StringLiteral",
-      "offset": 1226,
+      "offset": 1369,
       "length": 28,
       "value": "\"MiSnapAssetManager.MiSnapRecordingIndicatorView\""
     },
@@ -23599,8 +24466,15 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 529,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "StringLiteral",
-      "offset": 1234,
+      "offset": 1334,
       "length": 26,
       "value": "\"MiSnapAssetManager.MiSnapSuccessCheckmarkView\""
     },
@@ -23725,8 +24599,15 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapLabel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4062,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapLabel.swift",
       "kind": "StringLiteral",
-      "offset": 5257,
+      "offset": 5401,
       "length": 11,
       "value": "\"MiSnapAssetManager.MiSnapLabel\""
     },
@@ -24019,8 +24900,15 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapBulletView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1820,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapBulletView.swift",
       "kind": "StringLiteral",
-      "offset": 2678,
+      "offset": 2841,
       "length": 16,
       "value": "\"MiSnapAssetManager.MiSnapBulletView\""
     },
@@ -24166,8 +25054,15 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapHintView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1915,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapHintView.swift",
       "kind": "StringLiteral",
-      "offset": 2696,
+      "offset": 2839,
       "length": 14,
       "value": "\"MiSnapAssetManager.MiSnapHintView\""
     },
@@ -24607,8 +25502,15 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5411,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 5976,
+      "offset": 6119,
       "length": 15,
       "value": "\"MiSnapAssetManager.MiSnapGuideView\""
     },
@@ -24782,8 +25684,15 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapCheckboxView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2058,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapCheckboxView.swift",
       "kind": "StringLiteral",
-      "offset": 2964,
+      "offset": 3107,
       "length": 18,
       "value": "\"MiSnapAssetManager.MiSnapCheckboxView\""
     },

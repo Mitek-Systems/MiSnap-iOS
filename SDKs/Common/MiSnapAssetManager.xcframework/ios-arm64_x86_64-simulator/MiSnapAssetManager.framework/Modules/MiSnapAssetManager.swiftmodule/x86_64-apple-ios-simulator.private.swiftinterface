@@ -13,6 +13,7 @@ import _StringProcessing
   @objc public var borderWidth: CoreFoundation.CGFloat
   @objc public var cornerRadius: CoreFoundation.CGFloat
   @objc public var minSize: CoreFoundation.CGFloat
+  @objc public var isHidden: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -49,6 +50,7 @@ import _StringProcessing
   @objc public var shadowOffset: CoreFoundation.CGSize
   public var shadowRadius: CoreFoundation.CGFloat?
   @objc public var shadowOpacity: CoreFoundation.CGFloat
+  @objc public var isHidden: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -112,6 +114,7 @@ import _StringProcessing
   public var dotColor: UIKit.UIColor
   public var backgroundColor: UIKit.UIColor
   public var alpha: CoreFoundation.CGFloat
+  @objc public var isHidden: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -231,6 +234,7 @@ extension CoreFoundation.CGSize {
 @_inheritsConvenienceInitializers @objc public class MiSnapSuccessConfiguration : ObjectiveC.NSObject {
   @objc public var checkmark: MiSnapSuccessCheckmarkViewConfiguration
   @objc public var message: MiSnapLabelConfiguration
+  @objc public var isHidden: Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -273,6 +277,7 @@ extension CoreFoundation.CGSize {
     @objc get
     @objc set
   }
+  @objc public var isHidden: Swift.Bool
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -383,6 +388,7 @@ extension MiSnapLabel {
   @objc public var shadowOffset: CoreFoundation.CGSize
   @objc public var shadowRadius: CoreFoundation.CGFloat
   @objc public var shadowOpacity: Swift.Float
+  @objc public var isHidden: Swift.Bool
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -415,6 +421,7 @@ extension MiSnapBulletView {
   @objc public var cornerRadius: CoreFoundation.CGFloat
   @objc public var textColor: UIKit.UIColor
   @objc public var font: UIKit.UIFont
+  @objc public var isHidden: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -510,6 +517,7 @@ extension MiSnapBulletView {
   @objc public var secondaryBorderColor: UIKit.UIColor
   @objc public var mainBorderWidth: CoreFoundation.CGFloat
   @objc public var secondaryBorderWidth: CoreFoundation.CGFloat
+  @objc public var isHidden: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -545,6 +553,7 @@ extension MiSnapBulletView {
   @objc public var shadowOffset: CoreFoundation.CGSize
   @objc public var shadowRadius: CoreFoundation.CGFloat
   @objc public var shadowOpacity: Swift.Float
+  @objc public var isHidden: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
   }

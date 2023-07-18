@@ -321,6 +321,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager29MiSnapBulletViewConfiguration")
 /// Shadow opacity
 /// Default: <code>0.0</code>
 @property (nonatomic) float shadowOpacity;
+/// Indicates whether a view is hidden
+@property (nonatomic) BOOL isHidden;
 /// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -384,6 +386,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager23MiSnapViewConfiguration")
 @property (nonatomic) CGSize shadowOffset;
 /// Shadow opacity
 @property (nonatomic) CGFloat shadowOpacity;
+/// Indicates whether a view is hidden (in case if a view is a button then additionally indicates whether it’s enabled)
+@property (nonatomic) BOOL isHidden;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -497,6 +501,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager31MiSnapCheckboxViewConfiguration")
 /// Shadow opacity
 /// Default: <code>0.0</code>
 @property (nonatomic) float shadowOpacity;
+/// Indicates whether a view is hidden
+@property (nonatomic) BOOL isHidden;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -521,6 +527,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager34MiSnapDocumentOutlineConfiguration")
 @property (nonatomic) CGFloat mainBorderWidth;
 /// Secondary border color
 @property (nonatomic) CGFloat secondaryBorderWidth;
+/// Indicates whether a view is hidden
+@property (nonatomic) BOOL isHidden;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -739,6 +747,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapGlareViewConfiguration")
 /// Min size
 /// If a glare bounding box has width and/or heigh less than <code>minSize</code> pixels then increase them to at least <code>minSize</code> to improve user experience
 @property (nonatomic) CGFloat minSize;
+/// Indicates whether a view is hidden
+@property (nonatomic) BOOL isHidden;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -891,6 +901,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager27MiSnapHintViewConfiguration")
 @property (nonatomic, strong) UIColor * _Nonnull textColor;
 /// Font
 @property (nonatomic, strong) UIFont * _Nonnull font;
+/// Indicates whether a view is hidden
+@property (nonatomic) BOOL isHidden;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -991,6 +1003,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapLabelConfiguration")
 /// Range: <code>0.0...1.0</code>
 /// Default: <code>0.0</code>
 @property (nonatomic) CGFloat heightPadding;
+/// Indicates whether a label is hidden
+@property (nonatomic) BOOL isHidden;
 /// Creates and returns configuration with default values
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -1012,6 +1026,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapRecordingIndicatorView")
 /// Recording indicator view configuration
 SWIFT_CLASS("_TtC18MiSnapAssetManager41MiSnapRecordingIndicatorViewConfiguration")
 @interface MiSnapRecordingIndicatorViewConfiguration : NSObject
+/// Indicates whether a view is hidden
+@property (nonatomic) BOOL isHidden;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1090,6 +1106,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager26MiSnapSuccessConfiguration")
 @property (nonatomic, strong) MiSnapSuccessCheckmarkViewConfiguration * _Nonnull checkmark;
 /// Message configuration
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Indicates whether a view is hidden
+@property (nonatomic) BOOL isHidden;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

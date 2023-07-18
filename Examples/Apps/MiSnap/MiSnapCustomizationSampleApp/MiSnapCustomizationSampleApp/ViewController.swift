@@ -17,54 +17,118 @@ class ViewController: UIViewController {
     private var resultVC: ResultViewController?
         
     private let template = MiSnapConfiguration()
+        // Customizes a guide view (a document outline + vignette)
         .withCustomGuide { guide in
             guide.vignette.style = .blur
             guide.vignette.alpha = 0.925
-            
+            // For all available Guide vignette view customization options see this API reference: https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapVignetteConfiguration.html
+
             guide.outline.mainBorderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            // For all available Guide outline view customization options see this API reference: https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapDocumentOutlineConfiguration.html
+            
         }
+        // Customizes a glare view that's presented when a glare is detected
         .withCustomGlare { glare in
             glare.borderColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
             glare.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1).withAlphaComponent(0.35)
+            // For all available Glare view customization options see this API reference: https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapGlareViewConfiguration.html
         }
+        // Customizes a real-time hint view
         .withCustomHint { hint in
             hint.size = hint.size.scaled(by: 0.8)
             hint.font = .systemFont(ofSize: 21.0, weight: .thin)
             hint.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).withAlphaComponent(0.7)
+            // For all available Hint view customization options see this API reference: https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapHintViewConfiguration.html
         }
-        .withCustomHelp { help in
-            help.color = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-            help.style = .stroke
-            help.size = help.size.scaled(by: 0.8)
+        // Customizes a Document type label displayed at the top
+        .withCustomDocumentLabel { documentLabel in
+            documentLabel.font = .systemFont(ofSize: 18.0)
+            // For all Document label customization options see this API reference: https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapLabelConfiguration.html
         }
+        // Customizes the Cancel button
         .withCustomCancel { cancel in
             cancel.color = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
             cancel.style = .stroke
             cancel.size = cancel.size.scaled(by: 0.8)
+            
+            // For all available the Cancel button customization options see this API reference: https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapCancelViewConfiguration.html
         }
+        // Customizes the Help button
+        .withCustomHelp { help in
+            help.color = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            help.style = .stroke
+            help.size = help.size.scaled(by: 0.8)
+            
+            // For all available the Help button customization options see this API reference: https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapHelpViewConfiguration.html
+        }
+        // Customizes the Torch button
         .withCustomTorch { torch in
             torch.colorEnabled = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
             torch.colorDisabled = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
             torch.style = .stroke
             torch.size = torch.size.scaled(by: 0.8)
+            
+            // For all available the Torch button customization options see this API reference: https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapTorchViewConfiguration.html
         }
+        // Customizes the Camera shutter button that's used to trigger an image acquisition in Manual mode
         .withCustomCameraShutter { cameraShutter in
             cameraShutter.color = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
             cameraShutter.style = .stroke
             cameraShutter.size = cameraShutter.size.scaled(by: 1.15)
+            
+            // For all available the Camera shutter button customization options see this API reference: https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapCameraShutterViewConfiguration.html
         }
+        // Customizes the Recording indicator that's displayed when Video Recording feature is enabled
+        .withCustomRecordingIndicator { recordingIndicator in
+            recordingIndicator.alpha = 0.8
+            
+            // For all available the Recording indicator customization options see this API reference: https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapRecordingIndicatorViewConfiguration.html
+        }
+        // Customizes the Success view at the end of a successful session
         .withCustomSuccess { success in
             success.checkmark.color = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
             success.checkmark.cutoutFillColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.5)
+            
+            // For all available the Success checkmark customization options see this API reference: https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapSuccessCheckmarkViewConfiguration.html
+            
+            success.message.font = .systemFont(ofSize: 35.0, weight: .bold)
+            
+            // For all available the Success message customization options see this API reference: https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/main/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapLabelConfiguration.html
         }
+        // Customizes UX parameters
         .withCustomUxParameters { uxParameters in
             uxParameters.timeout = 25.0
             uxParameters.showHelpScreen = false
             uxParameters.showTimeoutScreen = false
+            
+            // For all available UX parameters customization options see this API reference: https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/MiSnap/MiSnapUX/Classes/MiSnapUxParameters.html
         }
+        // Customizes localization
         .withCustomLocalization { localization in
-            localization.bundle = Bundle.main
+            localization.bundle = .main
             localization.stringsName = "MiSnapLocalizable"
+            
+            // For all available Localization options see this API reference: https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/main/Docs/API/MiSnap/MiSnapUX/Classes/MiSnapLocalizationConfiguration.html
+        }
+        // Customizes asset location
+        .withCustomAssetLocation { assetLocation in
+            assetLocation.bundle = .main
+            
+            // For all available Localization options see this API reference: https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/main/Docs/API/MiSnap/MiSnapUX/Classes/MiSnapAssetLocationConfiguration.html
+        }
+        // Customizes tutorial (introductory instruction, help, timeout, review)
+        .withCustomTutorial { tutorial in
+            tutorial.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+            
+            // For all available Tutorial options see this API reference: https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/main/Docs/API/MiSnap/MiSnapUX/Classes/MiSnapTutorialConfiguration.html
+            
+            tutorial.buttons.barColor = #colorLiteral(red: 0.1454155445, green: 0.1572948992, blue: 0.1745085716, alpha: 1)
+            
+            // For all available Tutorial buttons customization options see this API reference: https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/main/Docs/API/MiSnap/MiSnapUX/Classes/MiSnapTutorialButtonsConfiguration.html
+            
+            tutorial.instruction.message.font = .systemFont(ofSize: 22.0, weight: .thin)
+            
+            // For all available Tutorial instruction customization options see this API reference: https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/main/Docs/API/MiSnap/MiSnapUX/Classes/MiSnapTutorialInstructionConfiguration.html#/c:@M@MiSnapUX@objc(cs)MiSnapTutorialInstructionConfiguration(py)message
         }
     
     override func viewWillAppear(_ animated: Bool) {

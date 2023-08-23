@@ -40,7 +40,7 @@ See [here](https://github.com/Mitek-Systems/MiSnap-iOS/releases).
 </center>
 Min OS/device combination offers coverage level of 99.89%.
 
-__Note__, `On-Device Classification (ODC)` feature is only available on devices running iOS 13.0 or newer and powered by A11 or newer chip (iPhone 8 or newer, iPad Mini 5th generation or newer) which offers coverage level of 92.68%.
+__Note__, `On-Device Classification (ODC)` `beta` feature is only available on devices running iOS 13.0 or newer and powered by A11 or newer chip (iPhone 8 or newer, iPad Mini 5th generation or newer) which offers coverage level of 95.92% as of Q2 2023. `Any ID` document type heavily relies on this feature therefore its support has the same constraints.
 
 __Note__, for `MiSnapNFC SDK` functionality, supported devices are all iPhone 7 and newer that support iOS 13.0 and above.
 

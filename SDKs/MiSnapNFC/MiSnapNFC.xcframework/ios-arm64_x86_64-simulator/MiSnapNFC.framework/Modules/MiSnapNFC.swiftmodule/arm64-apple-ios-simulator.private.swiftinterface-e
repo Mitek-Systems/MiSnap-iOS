@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapNFC
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
@@ -10,7 +10,7 @@ import Foundation
 import MiSnapLicenseManager
 import MiSnapMibiData
 @_exported import MiSnapNFC
-import OpenSSL
+import MiSnapOpenSSL
 import Swift
 import UIKit
 import _Concurrency
@@ -134,7 +134,7 @@ public class MiSnapNFCReader : ObjectiveC.NSObject {
 @available(iOS 13, *)
 extension MiSnapNFCReader : CoreNFC.NFCTagReaderSessionDelegate {
   public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
-  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: Swift.Error)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: any Swift.Error)
   public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didDetect tags: [CoreNFC.NFCTag])
 }
 @objc public enum MiSnapNFCChipLocation : Swift.Int {

@@ -2538,6 +2538,125 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 518,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 526,
+      "length": 44,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 616,
+      "length": 38,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 628,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 640,
+      "length": 1,
+      "value": "\" - \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 653,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 683,
+      "length": 25,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 695,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 707,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 869,
+      "length": 20,
+      "value": "\"MiSnapVoiceCapture\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 897,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1206,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1362,
+      "length": 21,
+      "value": "\"yyyy_MM_dd_HH_mm_ss\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1520,
+      "length": 43,
+      "value": "\"misnap_biometrics_voice_\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1558,
+      "length": 1,
+      "value": "\".wav\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2003,
+      "length": 25,
+      "value": "\"misnap_biometrics_voice\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 2048,
+      "length": 6,
+      "value": "\".wav\""
+    },
+    {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
       "kind": "IntegerLiteral",
       "offset": 283,
@@ -2608,6 +2727,69 @@
       "value": "0.0"
     },
     {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1849,
+      "length": 6,
+      "value": "\"None\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1911,
+      "length": 10,
+      "value": "\"TooNoisy\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "StringLiteral",
+      "offset": 1977,
+      "length": 10,
+      "value": "\"TooShort\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "StringLiteral",
+      "offset": 2043,
+      "length": 6,
+      "value": "\"Good\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 2702,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureResult.swift",
+      "kind": "FloatLiteral",
+      "offset": 2720,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureAnalyzer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1867,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureAnalyzer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1918,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureAnalyzer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2163,
+      "length": 3,
+      "value": "300"
+    },
+    {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 621,
@@ -2627,6 +2809,13 @@
       "offset": 3692,
       "length": 3,
       "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureAnalyzer.swift",
+      "kind": "StringLiteral",
+      "offset": 4385,
+      "length": 26,
+      "value": "\"Could Not Get Audio Data\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
@@ -2680,6 +2869,83 @@
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
       "kind": "StringLiteral",
+      "offset": 1453,
+      "length": 6,
+      "value": "\"Flow\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "StringLiteral",
+      "offset": 1538,
+      "length": 17,
+      "value": "\"SpeechLengthMin\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "StringLiteral",
+      "offset": 1577,
+      "length": 6,
+      "value": "\"%.0f\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "StringLiteral",
+      "offset": 1615,
+      "length": 18,
+      "value": "\"SilenceLengthMax\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "StringLiteral",
+      "offset": 1654,
+      "length": 6,
+      "value": "\"%.0f\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "StringLiteral",
+      "offset": 1693,
+      "length": 8,
+      "value": "\"SnrMin\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "StringLiteral",
+      "offset": 1732,
+      "length": 6,
+      "value": "\"%.0f\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2016,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2056,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "StringLiteral",
+      "offset": 2276,
+      "length": 12,
+      "value": "\"Enrollment\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "StringLiteral",
+      "offset": 2328,
+      "length": 14,
+      "value": "\"Verification\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureParameters.swift",
+      "kind": "StringLiteral",
       "offset": 396,
       "length": 28,
       "value": "\"MiSnapVoiceCapture.MiSnapVoiceCaptureParameters\""
@@ -2700,6 +2966,118 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "Dictionary",
+      "offset": 1108,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1133,
+      "length": 5,
+      "value": "16000"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1434,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1472,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1624,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2026,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 2329,
+      "length": 34,
+      "value": "\"Could Not Activate Audio Session\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2511,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2536,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2552,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 2657,
+      "length": 34,
+      "value": "\"Could Not Activate Audio Session\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2756,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2771,
+      "length": 4,
+      "value": "4096"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2997,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3052,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "StringLiteral",
+      "offset": 3499,
+      "length": 32,
+      "value": "\"Could Not Process Voice Sample\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
       "kind": "FloatLiteral",
       "offset": 3606,
       "length": 3,
@@ -2711,6 +3089,55 @@
       "offset": 3627,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "FloatLiteral",
+      "offset": 3949,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4808,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4833,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4921,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5545,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6264,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureRecorder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6349,
+      "length": 4,
+      "value": "1000"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
@@ -2799,9 +3226,212 @@
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
       "kind": "StringLiteral",
+      "offset": 3650,
+      "length": 20,
+      "value": "\"MiSnapVoiceCapture\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 3742,
+      "length": 22,
+      "value": "\"MiSnapLicenseManager\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3876,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5994,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 7123,
+      "length": 62,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 7167,
+      "length": 2,
+      "value": "\" is deinitialized\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
       "offset": 2547,
       "length": 28,
       "value": "\"MiSnapVoiceCapture.MiSnapVoiceCaptureController\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9992,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11276,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11426,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 12074,
+      "length": 38,
+      "value": "\"Error: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 12111,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "Array",
+      "offset": 12920,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12939,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 13131,
+      "length": 6,
+      "value": "\"Type\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 13139,
+      "length": 7,
+      "value": "\"Voice\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 13160,
+      "length": 6,
+      "value": "\"Flow\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 13240,
+      "length": 15,
+      "value": "\"TotalDuration\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 13313,
+      "length": 7,
+      "value": "\"Tries\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 13395,
+      "length": 10,
+      "value": "\"Warnings\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "FloatLiteral",
+      "offset": 13462,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 13485,
+      "length": 5,
+      "value": "\"SNR\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "FloatLiteral",
+      "offset": 13558,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 13581,
+      "length": 16,
+      "value": "\"SpeechDuration\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 13859,
+      "length": 6,
+      "value": "\"None\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 13917,
+      "length": 11,
+      "value": "\"NotActive\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 13980,
+      "length": 7,
+      "value": "\"Noise\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 14039,
+      "length": 11,
+      "value": "\"VoiceOver\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 14102,
+      "length": 25,
+      "value": "\"MicInUseByAnotherClient\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCapture\/MiSnapVoiceCapture\/MiSnapVoiceCaptureController.swift",
+      "kind": "StringLiteral",
+      "offset": 14179,
+      "length": 12,
+      "value": "\"MediaReset\""
     }
   ]
 }

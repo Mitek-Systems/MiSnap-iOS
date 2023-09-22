@@ -392,6 +392,69 @@
       "value": "190"
     },
     {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceCryptography.swift",
+      "kind": "Array",
+      "offset": 11531,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceCryptography.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12484,
+      "length": 2,
+      "value": "66"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceCryptography.swift",
+      "kind": "StringLiteral",
+      "offset": 12512,
+      "length": 87,
+      "value": "\"Input data size is \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceCryptography.swift",
+      "kind": "StringLiteral",
+      "offset": 12545,
+      "length": 1,
+      "value": "\". Max allowed size is \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceCryptography.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12595,
+      "length": 2,
+      "value": "66"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceCryptography.swift",
+      "kind": "StringLiteral",
+      "offset": 12598,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceCryptography.swift",
+      "kind": "StringLiteral",
+      "offset": 12735,
+      "length": 46,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceCryptography.swift",
+      "kind": "StringLiteral",
+      "offset": 12748,
+      "length": 2,
+      "value": "\" is not supported for encryption\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceCryptography.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14276,
+      "length": 4,
+      "value": "2048"
+    },
+    {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
       "kind": "IntegerLiteral",
       "offset": 193,
@@ -532,6 +595,251 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1508,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 1791,
+      "length": 17,
+      "value": "\"decoding failed\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2146,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "Array",
+      "offset": 2476,
+      "length": 16,
+      "value": "[8, 4, 4, 4, 12]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 2545,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 2648,
+      "length": 20,
+      "value": "\"id creation failed\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 3609,
+      "length": 21,
+      "value": "\"id retrieval failed\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 3800,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 3842,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 3961,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 4083,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 5406,
+      "length": 19,
+      "value": "\"encryption failed\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 5653,
+      "length": 58,
+      "value": "\"misnap_device_error: unhandled error with code \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 5710,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 5783,
+      "length": 33,
+      "value": "\"misnap_device_error: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 5815,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 5842,
+      "length": 30,
+      "value": "\"misnap_device_error: unknown\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 365,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 767,
+      "length": 6,
+      "value": "\"%.0f\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 798,
+      "length": 12,
+      "value": "1000000000"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1088,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1979,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2042,
+      "length": 6,
+      "value": "\"%02x\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2233,
+      "length": 3,
+      "value": "\"[\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2283,
+      "length": 4,
+      "value": "\"0x\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2304,
+      "length": 4,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2346,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2362,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2380,
+      "length": 3,
+      "value": "\"]\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2490,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2695,
+      "length": 6,
+      "value": "\"%02x\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "Array",
+      "offset": 2887,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2907,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2988,
+      "length": 1,
+      "value": "1"
+    },
+    {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
       "kind": "BooleanLiteral",
       "offset": 3598,
@@ -544,6 +852,111 @@
       "offset": 3626,
       "length": 1,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3671,
+      "length": 28,
+      "value": "\"abcdefghijklmnopqrstuvwxyz\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3730,
+      "length": 28,
+      "value": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 3785,
+      "length": 12,
+      "value": "\"0123456789\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3821,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3849,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4028,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4048,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4186,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4218,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4367,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4403,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4475,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4504,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4647,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapDeviceKit\/MiSnapDeviceKit\/MiSnapDeviceExtensions.swift",
+      "kind": "Dictionary",
+      "offset": 5436,
+      "length": 3,
+      "value": "[]"
     }
   ]
 }

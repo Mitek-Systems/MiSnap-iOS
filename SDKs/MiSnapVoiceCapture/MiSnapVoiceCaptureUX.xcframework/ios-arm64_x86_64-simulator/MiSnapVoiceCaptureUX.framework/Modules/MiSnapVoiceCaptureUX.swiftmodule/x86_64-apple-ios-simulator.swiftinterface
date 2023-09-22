@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapVoiceCaptureUX
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import MiSnapAssetManager
@@ -128,7 +128,7 @@ import _StringProcessing
   @objc @_Concurrency.MainActor(unsafe) public var configuration: MiSnapVoiceCaptureConfiguration {
     get
   }
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapVoiceCaptureConfiguration, delegate: MiSnapVoiceCaptureViewControllerDelegate)
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapVoiceCaptureConfiguration, delegate: any MiSnapVoiceCaptureViewControllerDelegate)
   @objc @_Concurrency.MainActor(unsafe) public static func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) public static func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()

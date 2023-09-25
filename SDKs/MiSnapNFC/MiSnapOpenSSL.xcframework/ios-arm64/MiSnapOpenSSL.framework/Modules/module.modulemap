@@ -1,0 +1,6 @@
+framework module MiSnapOpenSSL {
+  umbrella header "MiSnapOpenSSL.h"
+
+  export *
+  module * { export * }
+}

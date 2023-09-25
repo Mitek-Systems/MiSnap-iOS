@@ -45,7 +45,7 @@ From [Common](../../../SDKs/Common) copy:
 
 From [MiSnapNFC](../../../SDKs/MiSnapNFC) copy:
 * MiSnapNFC.xcframework
-* OpenSSL.xcframework
+* MiSnapOpenSSL.xcframework
 * MiSnapNFCUX.xcframework
 
 Add all copied artifacts to your Xcode project under "Frameworks, Libraries, and Embedded Content". 
@@ -83,7 +83,7 @@ From [Common](../../../SDKs/Common) copy:
 
 From [MiSnapNFC](../../../SDKs/MiSnapNFC) copy:
 * MiSnapNFC.xcframework
-* OpenSSL.xcframework
+* MiSnapOpenSSL.xcframework
 
 Add all copied artifacts to your Xcode project under "Frameworks, Libraries, and Embedded Content". 
 

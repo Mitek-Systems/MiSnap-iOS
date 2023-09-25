@@ -11221,6 +11221,188 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 1663,
+      "length": 13,
+      "value": "\"MibiVersion\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 1732,
+      "length": 12,
+      "value": "\"DeviceInfo\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 1800,
+      "length": 9,
+      "value": "\"SdkInfo\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 1865,
+      "length": 17,
+      "value": "\"PlatformPrivate\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 1938,
+      "length": 13,
+      "value": "\"SessionInfo\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2007,
+      "length": 8,
+      "value": "\"Device\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2071,
+      "length": 14,
+      "value": "\"Manufacturer\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2141,
+      "length": 7,
+      "value": "\"Model\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2204,
+      "length": 10,
+      "value": "\"Platform\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2270,
+      "length": 4,
+      "value": "\"OS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2330,
+      "length": 4,
+      "value": "\"ID\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2390,
+      "length": 9,
+      "value": "\"Modules\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2455,
+      "length": 6,
+      "value": "\"Name\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2517,
+      "length": 9,
+      "value": "\"Version\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2582,
+      "length": 9,
+      "value": "\"License\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2647,
+      "length": 5,
+      "value": "\"GPO\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2708,
+      "length": 12,
+      "value": "\"ExpiryDate\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2776,
+      "length": 12,
+      "value": "\"Parameters\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2844,
+      "length": 10,
+      "value": "\"Original\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2910,
+      "length": 7,
+      "value": "\"Final\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 2973,
+      "length": 5,
+      "value": "\"UXP\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 3034,
+      "length": 18,
+      "value": "\"MiSnapResultCode\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 3108,
+      "length": 12,
+      "value": "\"ImageWidth\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 3176,
+      "length": 13,
+      "value": "\"ImageHeight\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 3245,
+      "length": 13,
+      "value": "\"Orientation\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 3314,
+      "length": 28,
+      "value": "\"ClassificationDocumentType\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
       "kind": "IntegerLiteral",
       "offset": 312,
       "length": 10,
@@ -11438,10 +11620,318 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "Array",
+      "offset": 4410,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 4714,
+      "length": 6,
+      "value": "\"Type\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 5806,
+      "length": 16,
+      "value": "\"MiSnapMibiData\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
       "kind": "BooleanLiteral",
       "offset": 7406,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 7464,
+      "length": 6,
+      "value": "\"Type\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 7513,
+      "length": 64,
+      "value": "\"Session info doesn't have a type or its value type not correct\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "Array",
+      "offset": 7705,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 7789,
+      "length": 6,
+      "value": "\"Type\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "FloatLiteral",
+      "offset": 9619,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9796,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "Dictionary",
+      "offset": 10015,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 10157,
+      "length": 4,
+      "value": "\"72\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 10217,
+      "length": 4,
+      "value": "\"72\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 10280,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "Dictionary",
+      "offset": 10336,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "FloatLiteral",
+      "offset": 10469,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "Dictionary",
+      "offset": 10683,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 10938,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 11055,
+      "length": 21,
+      "value": "\"yyyy:MM:dd HH:mm:ss\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 11127,
+      "length": 5,
+      "value": "\"UTC\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 11328,
+      "length": 8,
+      "value": "\"+00:00\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11674,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11773,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12707,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13069,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13073,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13935,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13940,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 13964,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14634,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14965,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14969,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 15104,
+      "length": 6,
+      "value": "\"mibi\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 16243,
+      "length": 6,
+      "value": "\"%08X\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 16324,
+      "length": 6,
+      "value": "\"%08X\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "Array",
+      "offset": 16491,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16510,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16567,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16588,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16629,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16710,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16784,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 17333,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "Dictionary",
+      "offset": 17742,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 18240,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
@@ -11477,6 +11967,83 @@
       "offset": 18591,
       "length": 3,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 18739,
+      "length": 10,
+      "value": "\"Document\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 18785,
+      "length": 9,
+      "value": "\"Barcode\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 18830,
+      "length": 6,
+      "value": "\"Face\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 18872,
+      "length": 7,
+      "value": "\"Voice\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 18915,
+      "length": 5,
+      "value": "\"NFC\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 18956,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 19138,
+      "length": 10,
+      "value": "\"Document\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 19183,
+      "length": 9,
+      "value": "\"Barcode\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 19227,
+      "length": 6,
+      "value": "\"Face\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 19268,
+      "length": 7,
+      "value": "\"Voice\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 19310,
+      "length": 5,
+      "value": "\"NFC\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
@@ -11533,6 +12100,55 @@
       "offset": 19658,
       "length": 10,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 19813,
+      "length": 6,
+      "value": "\"Auto\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 19855,
+      "length": 8,
+      "value": "\"Manual\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 19899,
+      "length": 12,
+      "value": "\"ForcedAuto\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 19947,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 20129,
+      "length": 6,
+      "value": "\"Auto\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 20170,
+      "length": 8,
+      "value": "\"Manual\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 20213,
+      "length": 12,
+      "value": "\"ForcedAuto\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
@@ -11568,6 +12184,41 @@
       "offset": 20551,
       "length": 9,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 20705,
+      "length": 10,
+      "value": "\"Portrait\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 20751,
+      "length": 11,
+      "value": "\"Landscape\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 20798,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 20994,
+      "length": 10,
+      "value": "\"Portrait\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 21039,
+      "length": 11,
+      "value": "\"Landscape\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
@@ -11596,6 +12247,41 @@
       "offset": 21362,
       "length": 12,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 21523,
+      "length": 12,
+      "value": "\"Enrollment\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 21575,
+      "length": 14,
+      "value": "\"Verification\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 21629,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 21811,
+      "length": 12,
+      "value": "\"Enrollment\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 21862,
+      "length": 14,
+      "value": "\"Verification\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
@@ -11631,6 +12317,55 @@
       "offset": 22242,
       "length": 3,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 22390,
+      "length": 6,
+      "value": "\"PACE\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 22432,
+      "length": 4,
+      "value": "\"CA\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 22472,
+      "length": 5,
+      "value": "\"BAC\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 22513,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 22709,
+      "length": 6,
+      "value": "\"PACE\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 22750,
+      "length": 4,
+      "value": "\"CA\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 22789,
+      "length": 5,
+      "value": "\"BAC\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
@@ -11659,6 +12394,62 @@
       "offset": 23140,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 23414,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 23421,
+      "length": 27,
+      "value": "\"Type: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 23447,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 23451,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 23471,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 23478,
+      "length": 37,
+      "value": "\"Total duration: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 23511,
+      "length": 2,
+      "value": "\" ms\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 23518,
+      "length": 4,
+      "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
@@ -11719,6 +12510,482 @@
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
       "kind": "StringLiteral",
+      "offset": 25458,
+      "length": 9,
+      "value": "\"DocType\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 25637,
+      "length": 6,
+      "value": "\"Mode\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 25896,
+      "length": 19,
+      "value": "\"DeviceOrientation\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 26231,
+      "length": 21,
+      "value": "\"DocumentOrientation\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 26557,
+      "length": 13,
+      "value": "\"JpegQuality\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 26760,
+      "length": 15,
+      "value": "\"TotalDuration\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 26961,
+      "length": 11,
+      "value": "\"AutoTries\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 27154,
+      "length": 13,
+      "value": "\"ManualTries\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 27359,
+      "length": 16,
+      "value": "\"EnhancedManual\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 27617,
+      "length": 20,
+      "value": "\"ClassificationType\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 27828,
+      "length": 13,
+      "value": "\"FourCorners\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28013,
+      "length": 10,
+      "value": "\"Warnings\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28198,
+      "length": 14,
+      "value": "\"MrzExtracted\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28407,
+      "length": 22,
+      "value": "\"OptionalDataRedacted\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28665,
+      "length": 34,
+      "value": "\"MiSnapMibiDocumentSessionInfo:\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28748,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28755,
+      "length": 22,
+      "value": "\"Doc type: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28776,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28780,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28861,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28868,
+      "length": 44,
+      "value": "\"Classification type: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28911,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28915,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28945,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28952,
+      "length": 27,
+      "value": "\"Mode: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28978,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 28982,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29002,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29009,
+      "length": 54,
+      "value": "\"Device orientation: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29062,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29066,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29086,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29093,
+      "length": 58,
+      "value": "\"Document orientation: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29150,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29154,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29174,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29181,
+      "length": 30,
+      "value": "\"Jpeg quality: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29210,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29214,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29234,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29241,
+      "length": 26,
+      "value": "\"Auto tries: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29266,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29270,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29290,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29297,
+      "length": 30,
+      "value": "\"Manual tries: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29326,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29330,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29397,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29404,
+      "length": 30,
+      "value": "\"Four corners: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29433,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29437,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29508,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29515,
+      "length": 12,
+      "value": "\"Warnings: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29530,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29596,
+      "length": 18,
+      "value": "\"\t\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29611,
+      "length": 1,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29654,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29661,
+      "length": 36,
+      "value": "\"Enhanced manual: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29696,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29700,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29720,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29727,
+      "length": 32,
+      "value": "\"MRZ extracted: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29758,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29762,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29782,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29789,
+      "length": 49,
+      "value": "\"Optional data redacted: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29837,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 29841,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
       "offset": 23600,
       "length": 29,
       "value": "\"MiSnapMibiData.MiSnapMibiDocumentSessionInfo\""
@@ -11750,6 +13017,265 @@
       "offset": 30702,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 31205,
+      "length": 13,
+      "value": "\"BarcodeType\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 31396,
+      "length": 6,
+      "value": "\"Mode\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 31655,
+      "length": 19,
+      "value": "\"DeviceOrientation\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 31990,
+      "length": 21,
+      "value": "\"DocumentOrientation\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 32316,
+      "length": 13,
+      "value": "\"JpegQuality\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 32519,
+      "length": 15,
+      "value": "\"TotalDuration\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 32720,
+      "length": 11,
+      "value": "\"AutoTries\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 32913,
+      "length": 13,
+      "value": "\"ManualTries\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33143,
+      "length": 33,
+      "value": "\"MiSnapMibiBarcodeSessionInfo:\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33225,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33232,
+      "length": 30,
+      "value": "\"Barcode type: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33261,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33265,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33285,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33292,
+      "length": 27,
+      "value": "\"Mode: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33318,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33322,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33342,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33349,
+      "length": 54,
+      "value": "\"Device orientation: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33402,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33406,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33426,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33433,
+      "length": 58,
+      "value": "\"Document orientation: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33490,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33494,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33514,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33521,
+      "length": 30,
+      "value": "\"Jpeg quality: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33550,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33554,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33574,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33581,
+      "length": 26,
+      "value": "\"Auto tries: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33606,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33610,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33630,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33637,
+      "length": 30,
+      "value": "\"Manual tries: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33666,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 33670,
+      "length": 4,
+      "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
@@ -11789,6 +13315,272 @@
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
       "kind": "StringLiteral",
+      "offset": 34939,
+      "length": 6,
+      "value": "\"Mode\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 35171,
+      "length": 7,
+      "value": "\"Smile\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 35368,
+      "length": 19,
+      "value": "\"DeviceOrientation\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 35684,
+      "length": 13,
+      "value": "\"JpegQuality\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 35887,
+      "length": 15,
+      "value": "\"TotalDuration\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36088,
+      "length": 11,
+      "value": "\"AutoTries\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36281,
+      "length": 13,
+      "value": "\"ManualTries\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36509,
+      "length": 10,
+      "value": "\"Warnings\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36735,
+      "length": 30,
+      "value": "\"MiSnapMibiFaceSessionInfo:\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36814,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36821,
+      "length": 27,
+      "value": "\"Mode: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36847,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36851,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36871,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36878,
+      "length": 17,
+      "value": "\"Smile: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36894,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36898,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36918,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36925,
+      "length": 54,
+      "value": "\"Device orientation: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36978,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 36982,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37002,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37009,
+      "length": 30,
+      "value": "\"Jpeg quality: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37038,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37042,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37062,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37069,
+      "length": 26,
+      "value": "\"Auto tries: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37094,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37098,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37118,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37125,
+      "length": 30,
+      "value": "\"Manual tries: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37154,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37158,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37219,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37226,
+      "length": 12,
+      "value": "\"Warnings: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37241,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37307,
+      "length": 18,
+      "value": "\"\t\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 37322,
+      "length": 1,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
       "offset": 33748,
       "length": 25,
       "value": "\"MiSnapMibiData.MiSnapMibiFaceSessionInfo\""
@@ -11817,6 +13609,209 @@
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
       "kind": "StringLiteral",
+      "offset": 38391,
+      "length": 6,
+      "value": "\"Flow\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 38639,
+      "length": 15,
+      "value": "\"TotalDuration\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 38832,
+      "length": 7,
+      "value": "\"Tries\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39042,
+      "length": 10,
+      "value": "\"Warnings\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39211,
+      "length": 5,
+      "value": "\"SNR\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39382,
+      "length": 16,
+      "value": "\"SpeechDuration\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39621,
+      "length": 31,
+      "value": "\"MiSnapMibiVoiceSessionInfo:\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39701,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39708,
+      "length": 27,
+      "value": "\"Flow: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39734,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39738,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39758,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39765,
+      "length": 17,
+      "value": "\"Tries: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39781,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39785,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39805,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39812,
+      "length": 40,
+      "value": "\"SNR: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39835,
+      "length": 6,
+      "value": "\"%.2f\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39848,
+      "length": 2,
+      "value": "\" dB\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39855,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39875,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39882,
+      "length": 39,
+      "value": "\"Speech duration: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39917,
+      "length": 2,
+      "value": "\" ms\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39924,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39985,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 39992,
+      "length": 12,
+      "value": "\"Warnings: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 40007,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 40073,
+      "length": 18,
+      "value": "\"\t\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 40088,
+      "length": 1,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
       "offset": 37424,
       "length": 26,
       "value": "\"MiSnapMibiData.MiSnapMibiVoiceSessionInfo\""
@@ -11838,6 +13833,391 @@
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
       "kind": "StringLiteral",
+      "offset": 41639,
+      "length": 7,
+      "value": "\"Tries\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 41813,
+      "length": 8,
+      "value": "\"Unlock\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 42073,
+      "length": 15,
+      "value": "\"TotalDuration\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 42295,
+      "length": 4,
+      "value": "\"CA\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 42451,
+      "length": 5,
+      "value": "\"DGs\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 42613,
+      "length": 10,
+      "value": "\"Warnings\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 42800,
+      "length": 14,
+      "value": "\"DocumentCode\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 42999,
+      "length": 16,
+      "value": "\"IssuingCountry\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 43194,
+      "length": 11,
+      "value": "\"IssueDate\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 43378,
+      "length": 13,
+      "value": "\"Nationality\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 43586,
+      "length": 22,
+      "value": "\"OptionalDataRedacted\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 43844,
+      "length": 29,
+      "value": "\"MiSnapMibiNFCSessionInfo:\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 43922,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 43929,
+      "length": 17,
+      "value": "\"Tries: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 43945,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 43949,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 43969,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 43976,
+      "length": 31,
+      "value": "\"Unlock: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44006,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44010,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44059,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44066,
+      "length": 6,
+      "value": "\"CA: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44075,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44134,
+      "length": 18,
+      "value": "\"\t\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44143,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44149,
+      "length": 1,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44223,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44230,
+      "length": 13,
+      "value": "\"DGs: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44242,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44246,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44317,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44324,
+      "length": 12,
+      "value": "\"Warnings: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44339,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44405,
+      "length": 18,
+      "value": "\"\t\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44420,
+      "length": 1,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44512,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44519,
+      "length": 32,
+      "value": "\"Document code: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44550,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44554,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44637,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44644,
+      "length": 36,
+      "value": "\"Issuing country: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44679,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44683,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44756,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44763,
+      "length": 26,
+      "value": "\"Issue date: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44788,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44792,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44869,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44876,
+      "length": 29,
+      "value": "\"Nationality: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44904,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44908,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44938,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44945,
+      "length": 49,
+      "value": "\"Optional data redacted: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44993,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 44997,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
       "offset": 40188,
       "length": 24,
       "value": "\"MiSnapMibiData.MiSnapMibiNFCSessionInfo\""
@@ -11855,6 +14235,174 @@
       "offset": 45486,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 45885,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47644,
+      "length": 25,
+      "value": "\"MiSnapMibiDeviceInfo:\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47685,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47692,
+      "length": 31,
+      "value": "\"Manufacturer: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47722,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47726,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47746,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47753,
+      "length": 19,
+      "value": "\"Device: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47771,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47775,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47795,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47802,
+      "length": 17,
+      "value": "\"Model: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47818,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47822,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47842,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47849,
+      "length": 11,
+      "value": "\"OS: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47859,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47863,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47883,
+      "length": 4,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47890,
+      "length": 11,
+      "value": "\"ID: \""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47900,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibi.swift",
+      "kind": "StringLiteral",
+      "offset": 47904,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibiDataExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 366,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapMibiDataExtensions.swift",
+      "kind": "Dictionary",
+      "offset": 615,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
@@ -12331,6 +14879,503 @@
       "offset": 1868,
       "length": 19,
       "value": "68"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2000,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2058,
+      "length": 4,
+      "value": "\"FE\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2118,
+      "length": 4,
+      "value": "\"BE\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2178,
+      "length": 5,
+      "value": "\"EIF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2239,
+      "length": 5,
+      "value": "\"EIB\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2300,
+      "length": 4,
+      "value": "\"EP\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2360,
+      "length": 4,
+      "value": "\"NF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2420,
+      "length": 4,
+      "value": "\"EM\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2480,
+      "length": 4,
+      "value": "\"YF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2540,
+      "length": 4,
+      "value": "\"ZF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2600,
+      "length": 4,
+      "value": "\"AF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2660,
+      "length": 4,
+      "value": "\"RF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2720,
+      "length": 4,
+      "value": "\"TF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2780,
+      "length": 4,
+      "value": "\"CF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2840,
+      "length": 5,
+      "value": "\"ARF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2901,
+      "length": 4,
+      "value": "\"SF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2961,
+      "length": 4,
+      "value": "\"BF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3021,
+      "length": 4,
+      "value": "\"LF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3081,
+      "length": 4,
+      "value": "\"GF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3141,
+      "length": 4,
+      "value": "\"CP\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3214,
+      "length": 6,
+      "value": "\"FENF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3276,
+      "length": 6,
+      "value": "\"FENC\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3338,
+      "length": 6,
+      "value": "\"FEMF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3400,
+      "length": 5,
+      "value": "\"FER\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3461,
+      "length": 5,
+      "value": "\"FEP\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3522,
+      "length": 5,
+      "value": "\"FEY\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3583,
+      "length": 6,
+      "value": "\"FETF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3645,
+      "length": 6,
+      "value": "\"FETC\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3707,
+      "length": 6,
+      "value": "\"FENS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3769,
+      "length": 6,
+      "value": "\"FESS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3831,
+      "length": 5,
+      "value": "\"FHS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3892,
+      "length": 4,
+      "value": "\"FS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3965,
+      "length": 7,
+      "value": "\"ERROR\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4028,
+      "length": 9,
+      "value": "\"SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4093,
+      "length": 9,
+      "value": "\"TIMEOUT\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4158,
+      "length": 7,
+      "value": "\"START\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4221,
+      "length": 6,
+      "value": "\"READ\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4283,
+      "length": 13,
+      "value": "\"UNKNOWN_TAG\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4352,
+      "length": 6,
+      "value": "\"PACE\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4414,
+      "length": 4,
+      "value": "\"CA\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4474,
+      "length": 4,
+      "value": "\"AA\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4534,
+      "length": 18,
+      "value": "\"ACCESS_MECHANISM\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4608,
+      "length": 9,
+      "value": "\"DISCARD\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4673,
+      "length": 8,
+      "value": "\"CANCEL\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4750,
+      "length": 3,
+      "value": "\"C\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4809,
+      "length": 4,
+      "value": "\"IS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4869,
+      "length": 4,
+      "value": "\"HS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4929,
+      "length": 4,
+      "value": "\"TS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 4989,
+      "length": 4,
+      "value": "\"RS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5062,
+      "length": 4,
+      "value": "\"MC\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5122,
+      "length": 5,
+      "value": "\"MFC\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5183,
+      "length": 4,
+      "value": "\"MI\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5243,
+      "length": 4,
+      "value": "\"MY\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5303,
+      "length": 4,
+      "value": "\"MZ\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5363,
+      "length": 4,
+      "value": "\"MA\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5423,
+      "length": 4,
+      "value": "\"MR\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5483,
+      "length": 4,
+      "value": "\"MS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5543,
+      "length": 4,
+      "value": "\"MB\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5603,
+      "length": 4,
+      "value": "\"MG\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5663,
+      "length": 4,
+      "value": "\"MW\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5723,
+      "length": 4,
+      "value": "\"MT\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5783,
+      "length": 4,
+      "value": "\"ST\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5843,
+      "length": 4,
+      "value": "\"MF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5916,
+      "length": 4,
+      "value": "\"FT\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 5976,
+      "length": 4,
+      "value": "\"FF\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6049,
+      "length": 4,
+      "value": "\"SA\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6109,
+      "length": 4,
+      "value": "\"SS\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6182,
+      "length": 4,
+      "value": "\"DL\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 6242,
+      "length": 4,
+      "value": "\"DP\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6637,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6693,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
@@ -12835,6 +15880,27 @@
       "offset": 7117,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8551,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "Dictionary",
+      "offset": 8603,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapMibiData\/MiSnapMibiData\/MiSnapUxpEventManager.swift",
+      "kind": "Array",
+      "offset": 9240,
+      "length": 2,
+      "value": "[]"
     }
   ]
 }

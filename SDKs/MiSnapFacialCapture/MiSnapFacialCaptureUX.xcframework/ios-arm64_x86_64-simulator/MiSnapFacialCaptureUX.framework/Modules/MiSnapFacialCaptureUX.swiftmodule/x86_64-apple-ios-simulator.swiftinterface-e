@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapFacialCaptureUX
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import MiSnapAssetManager
@@ -174,14 +174,14 @@ import _StringProcessing
   @objc @_Concurrency.MainActor(unsafe) public var configuration: MiSnapFacialCaptureConfiguration {
     get
   }
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapFacialCaptureConfiguration, delegate: MiSnapFacialCaptureViewControllerDelegate)
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapFacialCaptureConfiguration, delegate: any MiSnapFacialCaptureViewControllerDelegate)
   @objc @_Concurrency.MainActor(unsafe) public func update(_ uxParameters: MiSnapFacialCaptureUXParameters? = nil, _ parameters: MiSnapFacialCaptureParameters? = nil)
   @objc @_Concurrency.MainActor(unsafe) public func shutdown()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
     @objc get
   }

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapMibiData
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import MiSnapLicenseManager
@@ -53,8 +53,8 @@ import _StringProcessing
     @objc get
   }
   @objc override dynamic public init()
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
   @objc public func setModuleWithName(_ name: Swift.String, version: Swift.String)
   @objc public func setSessionInfo(_ sessionInfo: [Swift.String : Any], resetOld: Swift.Bool = true)
   @objc public func set(value: Swift.String, for element: MiSnapMibiDataElement)
@@ -314,8 +314,8 @@ import _StringProcessing
     get
   }
   @objc override dynamic public init()
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
   @objc override dynamic public var description: Swift.String {
     @objc get
   }

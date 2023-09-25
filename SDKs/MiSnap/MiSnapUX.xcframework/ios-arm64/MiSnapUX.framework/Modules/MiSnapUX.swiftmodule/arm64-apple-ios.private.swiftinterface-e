@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapUX
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import MiSnap
@@ -129,8 +129,8 @@ import _StringProcessing
   }
   @objc override dynamic public init()
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapConfiguration : ObjectiveC.NSObject {
   @objc public var parameters: MiSnapParameters {
@@ -231,10 +231,10 @@ import _StringProcessing
   @objc @_Concurrency.MainActor(unsafe) public var configuration: MiSnapConfiguration {
     get
   }
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapConfiguration, delegate: MiSnapViewControllerDelegate)
+  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapConfiguration, delegate: any MiSnapViewControllerDelegate)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
     @objc get
@@ -246,10 +246,11 @@ import _StringProcessing
     @objc get
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func present(_ viewControllerToPresent: UIKit.UIViewController, animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
   @objc deinit
 }
 extension MiSnapViewController {
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func set(delegate: MiSnapViewControllerDelegate?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func set(delegate: (any MiSnapViewControllerDelegate)?)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func pauseAnalysis()
   @objc @_Concurrency.MainActor(unsafe) dynamic public func resumeAnalysis()
   @objc @_Concurrency.MainActor(unsafe) public static func miSnapVersion() -> Swift.String

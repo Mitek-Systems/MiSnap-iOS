@@ -4440,6 +4440,13 @@
       },
       {
         "kind": "Import",
+        "name": "MiSnapCore",
+        "printedName": "MiSnapCore",
+        "declKind": "Import",
+        "moduleName": "MiSnapVoiceCaptureUX"
+      },
+      {
+        "kind": "Import",
         "name": "MiSnapVoiceCapture",
         "printedName": "MiSnapVoiceCapture",
         "declKind": "Import",
@@ -4470,13 +4477,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MiSnapLicenseStatus",
-                "printedName": "MiSnapLicenseManager.MiSnapLicenseStatus",
-                "usr": "c:@E@MiSnapLicenseStatus"
+                "printedName": "MiSnapCore.MiSnapLicenseStatus",
+                "usr": "c:@M@MiSnapCore@E@MiSnapLicenseStatus"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate(im)miSnapVoiceCaptureLicenseStatus:",
-            "mangledName": "$s20MiSnapVoiceCaptureUX0abcD22ViewControllerDelegateP02mibcD13LicenseStatusyySo0abjK0VF",
+            "mangledName": "$s20MiSnapVoiceCaptureUX0abcD22ViewControllerDelegateP02mibcD13LicenseStatusyy0aB4Core0abjK0OF",
             "moduleName": "MiSnapVoiceCaptureUX",
             "genericSig": "<τ_0_0 where τ_0_0 : MiSnapVoiceCaptureUX.MiSnapVoiceCaptureViewControllerDelegate>",
             "sugared_genericSig": "<Self where Self : MiSnapVoiceCaptureUX.MiSnapVoiceCaptureViewControllerDelegate>",
@@ -4835,33 +4842,6 @@
           },
           {
             "kind": "Function",
-            "name": "viewDidLoad",
-            "printedName": "viewDidLoad()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)viewDidLoad",
-            "mangledName": "$s20MiSnapVoiceCaptureUX0abcD14ViewControllerC11viewDidLoadyyF",
-            "moduleName": "MiSnapVoiceCaptureUX",
-            "overriding": true,
-            "objc_name": "viewDidLoad",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "viewWillAppear",
             "printedName": "viewWillAppear(_:)",
             "children": [
@@ -5067,13 +5047,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MiSnapLicenseStatus",
-                "printedName": "MiSnapLicenseManager.MiSnapLicenseStatus",
-                "usr": "c:@E@MiSnapLicenseStatus"
+                "printedName": "MiSnapCore.MiSnapLicenseStatus",
+                "usr": "c:@M@MiSnapCore@E@MiSnapLicenseStatus"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@MiSnapVoiceCaptureUX@objc(cs)MiSnapVoiceCaptureViewController(im)miSnapVoiceCaptureControllerLicenseStatus:",
-            "mangledName": "$s20MiSnapVoiceCaptureUX0abcD14ViewControllerC02mibcdG13LicenseStatusyySo0abiJ0VF",
+            "mangledName": "$s20MiSnapVoiceCaptureUX0abcD14ViewControllerC02mibcdG13LicenseStatusyy0aB4Core0abiJ0OF",
             "moduleName": "MiSnapVoiceCaptureUX",
             "objc_name": "miSnapVoiceCaptureControllerLicenseStatus:",
             "declAttributes": [
@@ -8939,315 +8919,315 @@
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "Array",
-      "offset": 2147,
+      "offset": 2165,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2188,
+      "offset": 2206,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2393,
+      "offset": 2411,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2459,
+      "offset": 2477,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3594,
+      "offset": 3612,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3620,
+      "offset": 3638,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3829,
+      "offset": 3847,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3890,
+      "offset": 3908,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3897,
+      "offset": 3915,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3992,
+      "offset": 4010,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4846,
+      "offset": 4638,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5300,
+      "offset": 5092,
       "length": 56,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5338,
+      "offset": 5130,
       "length": 2,
       "value": "\" is deinitialized\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1744,
+      "offset": 1762,
       "length": 32,
       "value": "\"MiSnapVoiceCaptureUX.MiSnapVoiceCaptureViewController\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5592,
+      "offset": 5384,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5696,
+      "offset": 5488,
       "length": 126,
       "value": "\"\"MiSnapVoiceCaptureConfiguration\" is initialized for \"verification\" flow but \"phrase\" is not set or an empty string.\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5850,
+      "offset": 5642,
       "length": 73,
       "value": "\"Call \"init(for flow:, phrase:)\" and provide a valid non-empty string.\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5996,
+      "offset": 5788,
       "length": 20,
       "value": "\"MiSnapVoiceCapture\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6088,
+      "offset": 5880,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6309,
+      "offset": 6101,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6356,
+      "offset": 6148,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6387,
+      "offset": 6179,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7888,
+      "offset": 7680,
       "length": 19,
       "value": "\"Phrase is not set\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8698,
+      "offset": 8490,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8779,
+      "offset": 8571,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8791,
+      "offset": 8583,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8912,
+      "offset": 8704,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8943,
+      "offset": 8735,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9744,
+      "offset": 9536,
       "length": 22,
       "value": "\"MiSnapVoiceCaptureUX\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 9845,
+      "offset": 9637,
       "length": 20,
       "value": "\"MiSnapAssetManager\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12403,
+      "offset": 12195,
       "length": 33,
       "value": "\"misnap_voice_capture_ux_success\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12568,
+      "offset": 12360,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12676,
+      "offset": 12468,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 12783,
+      "offset": 12575,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13386,
+      "offset": 13178,
       "length": 87,
       "value": "\"MiSnapVoiceCapture error: \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13472,
+      "offset": 13264,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13537,
+      "offset": 13329,
       "length": 69,
       "value": "\" | speech length: \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13573,
+      "offset": 13365,
       "length": 9,
       "value": "\"%.2f ms\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13605,
+      "offset": 13397,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13680,
+      "offset": 13472,
       "length": 50,
       "value": "\" | snr: \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13706,
+      "offset": 13498,
       "length": 9,
       "value": "\"%.2f dB\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13729,
+      "offset": 13521,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15687,
+      "offset": 15479,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16034,
+      "offset": 15826,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16395,
+      "offset": 16187,
       "length": 5,
       "value": "false"
     },

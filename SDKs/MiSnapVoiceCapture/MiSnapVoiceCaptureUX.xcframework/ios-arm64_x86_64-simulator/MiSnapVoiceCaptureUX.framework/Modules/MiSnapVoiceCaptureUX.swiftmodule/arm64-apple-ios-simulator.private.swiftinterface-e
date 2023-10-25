@@ -1,8 +1,9 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapVoiceCaptureUX
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapVoiceCaptureUX
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import MiSnapAssetManager
+import MiSnapCore
 import MiSnapVoiceCapture
 @_exported import MiSnapVoiceCaptureUX
 import Swift
@@ -41,7 +42,7 @@ import _StringProcessing
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCapturePhraseSelectionButtonsConfiguration : ObjectiveC.NSObject {
-  @objc public var proceed: MiSnapAssetManager.MiSnapLabelConfiguration
+  @objc public var proceed: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -51,8 +52,8 @@ import _StringProcessing
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCapturePhraseSelectionConfiguration : ObjectiveC.NSObject {
   @objc public var backgroundColor: UIKit.UIColor
   @objc public var backgroundColorDarkMode: UIKit.UIColor?
-  @objc public var message: MiSnapAssetManager.MiSnapLabelConfiguration
-  @objc public var phrase: MiSnapAssetManager.MiSnapLabelConfiguration
+  @objc public var message: MiSnapLabelConfiguration
+  @objc public var phrase: MiSnapLabelConfiguration
   @objc public var buttons: MiSnapVoiceCapturePhraseSelectionButtonsConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
@@ -61,7 +62,7 @@ import _StringProcessing
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration : ObjectiveC.NSObject {
-  @objc public var proceed: MiSnapAssetManager.MiSnapLabelConfiguration
+  @objc public var proceed: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -71,7 +72,7 @@ import _StringProcessing
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureIntroductoryInstructionConfiguration : ObjectiveC.NSObject {
   @objc public var backgroundColor: UIKit.UIColor
   @objc public var backgroundColorDarkMode: UIKit.UIColor?
-  @objc public var message: MiSnapAssetManager.MiSnapLabelConfiguration
+  @objc public var message: MiSnapLabelConfiguration
   @objc public var buttons: MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
@@ -80,8 +81,8 @@ import _StringProcessing
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureRecordingButtonsConfiguration : ObjectiveC.NSObject {
-  @objc public var cancel: MiSnapAssetManager.MiSnapLabelConfiguration
-  @objc public var failureAcknowledgment: MiSnapAssetManager.MiSnapLabelConfiguration
+  @objc public var cancel: MiSnapLabelConfiguration
+  @objc public var failureAcknowledgment: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -91,12 +92,12 @@ import _StringProcessing
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureRecordingConfiguration : ObjectiveC.NSObject {
   @objc public var backgroundColor: UIKit.UIColor
   @objc public var backgroundColorDarkMode: UIKit.UIColor?
-  @objc public var neutral: MiSnapAssetManager.MiSnapVoiceCaptureNeutralViewConfiguration
-  @objc public var success: MiSnapAssetManager.MiSnapVoiceCaptureSuccessViewConfiguration
-  @objc public var failure: MiSnapAssetManager.MiSnapVoiceCaptureFailureViewConfiguration
-  @objc public var message: MiSnapAssetManager.MiSnapLabelConfiguration
-  @objc public var phrase: MiSnapAssetManager.MiSnapLabelConfiguration
-  @objc public var failureMessage: MiSnapAssetManager.MiSnapLabelConfiguration
+  @objc public var neutral: MiSnapVoiceCaptureNeutralViewConfiguration
+  @objc public var success: MiSnapVoiceCaptureSuccessViewConfiguration
+  @objc public var failure: MiSnapVoiceCaptureFailureViewConfiguration
+  @objc public var message: MiSnapLabelConfiguration
+  @objc public var phrase: MiSnapLabelConfiguration
+  @objc public var failureMessage: MiSnapLabelConfiguration
   @objc public var buttons: MiSnapVoiceCaptureRecordingButtonsConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
@@ -117,7 +118,7 @@ import _StringProcessing
   @objc deinit
 }
 @objc public protocol MiSnapVoiceCaptureViewControllerDelegate {
-  @objc func miSnapVoiceCaptureLicenseStatus(_ status: MiSnapLicenseStatus)
+  @objc func miSnapVoiceCaptureLicenseStatus(_ status: MiSnapCore.MiSnapLicenseStatus)
   @objc func miSnapVoiceCaptureDidSelectPhrase(_ phrase: Swift.String)
   @objc func miSnapVoiceCaptureSuccess(_ results: [MiSnapVoiceCaptureResult], for flow: MiSnapVoiceCaptureFlow)
   @objc func miSnapVoiceCaptureCancelled(_ result: MiSnapVoiceCaptureResult)
@@ -131,7 +132,6 @@ import _StringProcessing
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapVoiceCaptureConfiguration, delegate: any MiSnapVoiceCaptureViewControllerDelegate)
   @objc @_Concurrency.MainActor(unsafe) public static func checkMicrophonePermission(handler: @escaping (Swift.Bool) -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) public static func hasMinDiskSpace(_ minDiskSpace: Swift.Int) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
     @objc get
@@ -142,7 +142,7 @@ import _StringProcessing
   @objc deinit
 }
 extension MiSnapVoiceCaptureViewController : MiSnapVoiceCaptureControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerLicenseStatus(_ status: MiSnapLicenseStatus)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerLicenseStatus(_ status: MiSnapCore.MiSnapLicenseStatus)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerDidStart()
   @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerSuccess(_ result: MiSnapVoiceCaptureResult)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapVoiceCaptureControllerFailure(_ result: MiSnapVoiceCaptureResult)

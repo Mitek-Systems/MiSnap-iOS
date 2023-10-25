@@ -40,8 +40,7 @@ then check `MiSnapFacialCapture` and `MiSnapFacialCaptureUX` checkboxes in a lis
 #### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
-* MiSnapLicenseManager.xcframework
-* MiSnapMibiData.xcframework
+* MiSnapCore.xcframework
 * MiSnapAssetManager.xcframework
 
 From [MiSnapFacialCapture](../../../SDKs/MiSnapFacialCapture) copy:
@@ -78,8 +77,7 @@ then check `MiSnapFacialCapture` checkbox in a list of Package Products.
 #### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
-* MiSnapLicenseManager.xcframework
-* MiSnapMibiData.xcframework
+* MiSnaCore.xcframework
 
 From [MiSnapFacialCapture](../../../SDKs/MiSnapFacialCapture) copy:
 * MiSnapFacialCapture.xcframework
@@ -94,15 +92,15 @@ Set valid path(s) to copied artifacts in `Framework Search Paths` under `Build S
 
 In your project's `AppDelegate`:
 
-2.1. Import licensing SDK:
+2.1. Import core SDK:
 ```Swift
-import MiSnapLicenseManager
+import MiSnapCore
 ```
 2.2. Set the license key in `application(_ :, didFinishLaunchingWithOptions:)`
 
 ```Swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    MiSnapLicenseManager.shared().setLicenseKey("your-license-key-here")
+    MiSnapLicenseManager.shared.setLicenseKey("your_license_key_here")
     return true
 }
 ```
@@ -119,9 +117,9 @@ When both `MiSnapFacialCapture` and `MiSnapFacialCaptureUX` are integrated:
 
 4.1. Add necessary imports
 ```Swift
-import MiSnapFacialCaptureUX
+import MiSnapCore
 import MiSnapFacialCapture
-import MiSnapLicenseManager
+import MiSnapFacialCaptureUX
 ```
 4.2. Configure and present MiSnapFacialCaptureViewController:
 ```Swift

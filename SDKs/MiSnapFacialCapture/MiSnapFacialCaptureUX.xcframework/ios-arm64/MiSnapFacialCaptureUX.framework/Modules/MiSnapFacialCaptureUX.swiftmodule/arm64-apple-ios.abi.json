@@ -5688,13 +5688,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MiSnapLicenseStatus",
-                "printedName": "MiSnapLicenseManager.MiSnapLicenseStatus",
-                "usr": "c:@E@MiSnapLicenseStatus"
+                "printedName": "MiSnapCore.MiSnapLicenseStatus",
+                "usr": "c:@M@MiSnapCore@E@MiSnapLicenseStatus"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@MiSnapFacialCaptureUX@objc(pl)MiSnapFacialCaptureViewControllerDelegate(im)miSnapFacialCaptureLicenseStatus:",
-            "mangledName": "$s21MiSnapFacialCaptureUX0abcD22ViewControllerDelegateP02mibcD13LicenseStatusyySo0abjK0VF",
+            "mangledName": "$s21MiSnapFacialCaptureUX0abcD22ViewControllerDelegateP02mibcD13LicenseStatusyy0aB4Core0abjK0OF",
             "moduleName": "MiSnapFacialCaptureUX",
             "genericSig": "<τ_0_0 where τ_0_0 : MiSnapFacialCaptureUX.MiSnapFacialCaptureViewControllerDelegate>",
             "sugared_genericSig": "<Self where Self : MiSnapFacialCaptureUX.MiSnapFacialCaptureViewControllerDelegate>",
@@ -6406,13 +6406,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "MiSnapLicenseStatus",
-                "printedName": "MiSnapLicenseManager.MiSnapLicenseStatus",
-                "usr": "c:@E@MiSnapLicenseStatus"
+                "printedName": "MiSnapCore.MiSnapLicenseStatus",
+                "usr": "c:@M@MiSnapCore@E@MiSnapLicenseStatus"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureViewController(im)miSnapFacialCaptureAnalyzerLicenseStatus:",
-            "mangledName": "$s21MiSnapFacialCaptureUX0abcD14ViewControllerC02mibcD21AnalyzerLicenseStatusyySo0abjK0VF",
+            "mangledName": "$s21MiSnapFacialCaptureUX0abcD14ViewControllerC02mibcD21AnalyzerLicenseStatusyy0aB4Core0abjK0OF",
             "moduleName": "MiSnapFacialCaptureUX",
             "objc_name": "miSnapFacialCaptureAnalyzerLicenseStatus:",
             "declAttributes": [

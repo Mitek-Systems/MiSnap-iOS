@@ -53,6 +53,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) MiSnapBarcodeScannerType type;
 
+@property (nonatomic, readonly) NSArray * _Nullable points;
+
 @end
 
 NS_ASSUME_NONNULL_END

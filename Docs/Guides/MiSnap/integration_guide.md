@@ -40,8 +40,7 @@ then check `MiSnap` and `MiSnapUX` checkboxes in a list of Package Products.
 #### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
-* MiSnapLicenseManager.xcframework
-* MiSnapMibiData.xcframework
+* MiSnapCore.xcframework
 * MiSnapAssetManager.xcframework
 
 From [MiSnap](../../../SDKs/MiSnap) copy:
@@ -82,8 +81,7 @@ then check `MiSnap` checkbox in a list of Package Products.
 #### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
-* MiSnapLicenseManager.xcframework
-* MiSnapMibiData.xcframework
+* MiSnapCore.xcframework
 
 From [MiSnap](../../../SDKs/MiSnap) copy:
 * MiSnap.xcframework
@@ -102,15 +100,15 @@ Set valid path(s) to copied artifacts in `Framework Search Paths` under `Build S
 
 In your project's `AppDelegate`:
 
-2.1. Import licensing SDK:
+2.1. Import core SDK:
 ```Swift
-import MiSnapLicenseManager
+import MiSnapCore
 ```
 2.2. Set the license key in `application(_ :, didFinishLaunchingWithOptions:)`
 
 ```Swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    MiSnapLicenseManager.shared().setLicenseKey("your-license-key-here")
+    MiSnapLicenseManager.shared.setLicenseKey("your_license_key_here")
     return true
 }
 ```
@@ -127,9 +125,9 @@ When both `MiSnap` and `MiSnapUX` are integrated:
 
 4.1. Add necessary imports
 ```Swift
-import MiSnapUX
+import MiSnapCore
 import MiSnap
-import MiSnapLicenseManager
+import MiSnapUX
 ```
 4.2. Configure and present MiSnapViewController:
 ```Swift

@@ -261,7 +261,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import MiSnapLicenseManager;
+@import MiSnapCore;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -422,7 +422,7 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX23MiSnapNFCViewController") SWIFT_AVAILABILITY(ios
 SWIFT_PROTOCOL("_TtP11MiSnapNFCUX31MiSnapNFCViewControllerDelegate_")
 @protocol MiSnapNFCViewControllerDelegate
 /// Delegates receive this callback only when license status is anything but valid
-- (void)miSnapNfcLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapNfcLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Delegates receive this callback when a chip was successfully read
 - (void)miSnapNfcSuccess:(NSDictionary<NSString *, id> * _Nonnull)result;
 /// Delegates receive this callback when a  user cancels a session
@@ -708,7 +708,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import MiSnapLicenseManager;
+@import MiSnapCore;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -869,7 +869,7 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX23MiSnapNFCViewController") SWIFT_AVAILABILITY(ios
 SWIFT_PROTOCOL("_TtP11MiSnapNFCUX31MiSnapNFCViewControllerDelegate_")
 @protocol MiSnapNFCViewControllerDelegate
 /// Delegates receive this callback only when license status is anything but valid
-- (void)miSnapNfcLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapNfcLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Delegates receive this callback when a chip was successfully read
 - (void)miSnapNfcSuccess:(NSDictionary<NSString *, id> * _Nonnull)result;
 /// Delegates receive this callback when a  user cancels a session

@@ -99,16 +99,16 @@ See [this guide](Docs/Guides/Common/workflow.md) for `MiSnapWorkflow` integratio
 
 | Component                        | Compressed, MB | Uncompressed, MB |
 | :------------------------------- | :------------: | :--------------: |
-| MiSnap                           |  1.40          |  3.60            |
-| MiSnap + MiSnapUX                |  2.30          |  5.30            |
-| NFC                              |  1.60          |  3.80            |
-| NFC + NFCUX                      |  2.00          |  4.60            |
-| FacialCapture                    |  0.19          |  0.68            |
-| FacialCapture + FacialCaptureUX  |  0.53          |  1.50            |
-| VoiceCapture                     |  0.91          |  2.30            |
-| VoiceCapture + VoiceCaptureUX    |  1.20          |  3.00            |
-| All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture + MiSnapDeviceKit)                   |  3.80          |  9.20            |
-| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  5.20          |  12.0            |
+| MiSnap                           |  1.40          |  3.70            |
+| MiSnap + MiSnapUX                |  2.40          |  5.40            |
+| NFC                              |  1.30          |  3.10            |
+| NFC + NFCUX                      |  1.70          |  3.90            |
+| FacialCapture                    |  0.23          |  0.72            |
+| FacialCapture + FacialCaptureUX  |  0.59          |  1.60            |
+| VoiceCapture                     |  0.95          |  2.40            |
+| VoiceCapture + VoiceCaptureUX    |  1.70          |  3.90            |
+| All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture + MiSnapDeviceKit)                   |  3.50          |  8.40            |
+| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  5.00          |  11.30           |
 
 </center>
 

@@ -9,15 +9,15 @@ MiSnapVoiceCapture 5.x is distributed through CocoaPods and Swift Package Manage
 
 It's highly recommended to use one of these distribution managers but manual integration is still supported.
 
+### SDK and UX/UI
+It is Mitek's recommended option to integrated both SDK and UX/UI which is highly customizable.
+
 From 5.2.0 onwards localization and image assets are moved out of `MiSnapVoiceCaptureUX` framework to enable easy customization while making sure app size is not ballooned. As such, regardless of your choise of integration (CocoaPods, Swift Package Manager, manual) the first step should be adding assets to your Xcode project. Here's how to do this:
 * Copy `MiSnapVoiceCapture` folder from [here](../../../Assets) into your project's location
 * In Xcode, File > Add Files to "YourAppName"...
 * Select copied folder and make sure:
     * `Create groups` option is selected in `Added folders` section
     * All necessary targets are checked in `Add to targets` section
-
-### SDK and UX/UI
-It is Mitek's recommended option to integrated both SDK and UX/UI which is highly customizable.
 
 #### CocoaPods
 
@@ -38,8 +38,7 @@ then check `MiSnapVoiceCapture` and `MiSnapVoiceCaptureUX` checkboxes in a list 
 #### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
-* MiSnapLicenseManager.xcframework
-* MiSnapMibiData.xcframework
+* MiSnapCore.xcframework
 * MiSnapAssetManager.xcframework
 
 From [MiSnapVoiceCapture](../../../SDKs/MiSnapVoiceCapture) copy:
@@ -77,8 +76,7 @@ then check `MiSnapVoiceCapture` checkbox in a list of Package Products.
 #### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
-* MiSnapLicenseManager.xcframework
-* MiSnapMibiData.xcframework
+* MiSnapCore.xcframework
 
 From [MiSnapVoiceCapture](../../../SDKs/MiSnapVoiceCapture) copy:
 * MiSnapVoiceCapture.xcframework
@@ -94,15 +92,15 @@ Set valid path(s) to copied artifacts in `Framework Search Paths` under `Build S
 
 In your project's `AppDelegate`:
 
-2.1. Import licensing SDK:
+2.1. Import core SDK:
 ```Swift
-import MiSnapLicenseManager
+import MiSnapCore
 ```
 2.2. Set the license key in `application(_ :, didFinishLaunchingWithOptions:)`
 
 ```Swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    MiSnapLicenseManager.shared().setLicenseKey("your-license-key-here")
+    MiSnapLicenseManager.shared.setLicenseKey("your_license_key_here")
     return true
 }
 ```
@@ -117,9 +115,9 @@ When both `MiSnapVoiceCapture` and `MiSnapVoiceCaptureUX` are integrated:
 
 4.1. Add necessary imports
 ```Swift
-import MiSnapVoiceCaptureUX
+import MiSnapCore
 import MiSnapVoiceCapture
-import MiSnapLicenseManager
+import MiSnapVoiceCaptureUX
 ```
 4.2. Configure and present MiSnapVoiceCaptureViewController for Enrollment or Verification
 

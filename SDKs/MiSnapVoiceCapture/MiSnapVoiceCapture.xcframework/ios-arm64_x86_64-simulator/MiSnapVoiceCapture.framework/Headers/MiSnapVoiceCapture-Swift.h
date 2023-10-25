@@ -260,7 +260,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import MiSnapLicenseManager;
+@import MiSnapCore;
 @import ObjectiveC;
 #endif
 
@@ -315,7 +315,7 @@ enum MiSnapVoiceCaptureControllerInterruptionReason : NSInteger;
 SWIFT_PROTOCOL("_TtP18MiSnapVoiceCapture36MiSnapVoiceCaptureControllerDelegate_")
 @protocol MiSnapVoiceCaptureControllerDelegate
 /// Delegates receive this callback only when license status is anything but valid
-- (void)miSnapVoiceCaptureControllerLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapVoiceCaptureControllerLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Delegates receive this callback when a controller is started
 - (void)miSnapVoiceCaptureControllerDidStart;
 /// Delegates receive this callback when a recording passes all quality checks
@@ -697,7 +697,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import MiSnapLicenseManager;
+@import MiSnapCore;
 @import ObjectiveC;
 #endif
 
@@ -752,7 +752,7 @@ enum MiSnapVoiceCaptureControllerInterruptionReason : NSInteger;
 SWIFT_PROTOCOL("_TtP18MiSnapVoiceCapture36MiSnapVoiceCaptureControllerDelegate_")
 @protocol MiSnapVoiceCaptureControllerDelegate
 /// Delegates receive this callback only when license status is anything but valid
-- (void)miSnapVoiceCaptureControllerLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapVoiceCaptureControllerLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Delegates receive this callback when a controller is started
 - (void)miSnapVoiceCaptureControllerDidStart;
 /// Delegates receive this callback when a recording passes all quality checks

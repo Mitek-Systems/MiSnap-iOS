@@ -355,6 +355,8 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
         if let extraction = result.extraction {
             if let mrzString = extraction.mrzString {
                 self.mrzString = mrzString
+            } else if let barcodeString = extraction.barcodeString {
+                self.mrzString = barcodeString
             }
             if let documentNumber = extraction.documentNumber {
                 self.documentNumber = documentNumber
@@ -428,7 +430,7 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
     
     private func shouldAddNfcStep() -> Bool {
         guard !self.mutableSteps.contains(.nfc) else { return false }
-        if documentNumber != "", dateOfBirth != "", dateOfBirth.count == 6, dateOfExpiry != "", dateOfExpiry.count == 6, mrzString != "" {
+        if !mrzString.isEmpty, !documentNumber.isEmpty, dateOfBirth.count == 6, dateOfExpiry.count == 6 {
             if completedStep == .passport {
                 nfcDocumentType = .passport
             } else {
@@ -442,7 +444,7 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
                 }
             }
             #endif
-        } else if mrzString != "", mrzString.count == 30, mrzString.starts(with: "D") {
+        } else if mrzString.count == 30, mrzString.starts(with: "D1") {
             nfcDocumentType = .dl
             #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
             return true

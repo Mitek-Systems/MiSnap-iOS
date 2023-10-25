@@ -261,6 +261,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
+@import MiSnapCore;
 @import ObjectiveC;
 #endif
 
@@ -282,7 +283,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
 @class NSString;
 
 /// Asset location configuration
@@ -361,20 +361,7 @@ SWIFT_CLASS("_TtC9MiSnapNFC34MiSnapNFCLocalizationConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-/// Log level
-typedef SWIFT_ENUM(NSInteger, MiSnapNFCLogLevel, open) {
-/// Verbose
-  MiSnapNFCLogLevelVerbose = 0,
-/// Debug
-  MiSnapNFCLogLevelDebug = 1,
-/// Info
-  MiSnapNFCLogLevelInfo = 2,
-/// Warning
-  MiSnapNFCLogLevelWarning = 3,
-/// Error
-  MiSnapNFCLogLevelError = 4,
-};
-
+@class MiSnapLogConfiguration;
 
 /// Parameters used during chip scanning process
 SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
@@ -394,9 +381,13 @@ SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
 /// </ul>
 /// Default: <code>false</code>
 @property (nonatomic) BOOL optionalDataRedactionEnabled;
+/// Logging configuration
+@property (nonatomic, strong) MiSnapLogConfiguration * _Nonnull logging;
 /// Log level
 /// Default: <code>info</code>
-@property (nonatomic) enum MiSnapNFCLogLevel logLevel;
+/// note:
+/// Deprecated in 5.4.0 and will be removed in future versions. Access this customization through <code>logging.level</code>
+@property (nonatomic) enum MiSnapLogLevel logLevel SWIFT_DEPRECATED_MSG("Call `logging.level` instead");
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

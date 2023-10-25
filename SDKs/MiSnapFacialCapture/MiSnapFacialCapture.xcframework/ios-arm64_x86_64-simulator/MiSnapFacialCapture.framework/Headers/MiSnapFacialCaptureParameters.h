@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MiSnapCore/MiSnapCore.h>
 #import <MiSnapFacialCapture/MiSnapFacialCaptureCameraParameters.h>
 
 /**
@@ -173,6 +174,10 @@ MiSnapFacialCaptureParameters is a class that defines an interface for controlli
  An object that configures camera specific parameters
  */
 @property (readwrite, nonatomic) MiSnapFacialCaptureCameraParameters * _Nonnull camera;
+/**
+ An object that configures logging specific parameters
+ */
+@property (nonatomic, readwrite) MiSnapLogConfiguration * _Nonnull logging;
 /**
  @return Dictionary of parameters
  */

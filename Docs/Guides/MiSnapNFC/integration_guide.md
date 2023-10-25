@@ -11,15 +11,15 @@ MiSnapNFC 5.x is distributed through CocoaPods and Swift Package Manager. For de
 
 It's highly recommended to use one of these distribution managers but manual integration is still supported.
 
+### SDK and UX/UI
+It is Mitek's recommended option to integrated both SDK and UX/UI.
+
 From 5.2.0 onwards localization and image assets are moved out of `MiSnapNFCUX` framework to enable easy customization while making sure app size is not ballooned. As such, regardless of your choise of integration (CocoaPods, Swift Package Manager, manual) the first step should be adding assets to your Xcode project. Here's how to do this:
 * Copy `MiSnapNFC` folder from [here](../../../Assets) into your project's location
 * In Xcode, File > Add Files to "YourAppName"...
 * Select copied folder and make sure:
     * `Create groups` option is selected in `Added folders` section
     * All necessary targets are checked in `Add to targets` section
-
-### SDK and UX/UI
-It is Mitek's recommended option to integrated both SDK and UX/UI.
 
 #### CocoaPods
 
@@ -40,12 +40,10 @@ then check `MiSnapNFC` and `MiSnapNFCUX` checkboxes in a list of Package Product
 #### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
-* MiSnapLicenseManager.xcframework
-* MiSnapMibiData.xcframework
+* MiSnapCore.xcframework
 
 From [MiSnapNFC](../../../SDKs/MiSnapNFC) copy:
 * MiSnapNFC.xcframework
-* MiSnapOpenSSL.xcframework
 * MiSnapNFCUX.xcframework
 
 Add all copied artifacts to your Xcode project under "Frameworks, Libraries, and Embedded Content". 
@@ -78,12 +76,10 @@ then check `MiSnapNFC` checkbox in a list of Package Products.
 #### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
-* MiSnapLicenseManager.xcframework
-* MiSnapMibiData.xcframework
+* MiSnapCore.xcframework
 
 From [MiSnapNFC](../../../SDKs/MiSnapNFC) copy:
 * MiSnapNFC.xcframework
-* MiSnapOpenSSL.xcframework
 
 Add all copied artifacts to your Xcode project under "Frameworks, Libraries, and Embedded Content". 
 
@@ -95,15 +91,15 @@ Set valid path(s) to copied artifacts in `Framework Search Paths` under `Build S
 
 In your project's `AppDelegate`:
 
-2.1. Import licensing SDK:
+2.1. Import core SDK:
 ```Swift
-import MiSnapLicenseManager
+import MiSnapCore
 ```
 2.2. Set the license key in `application(_ :, didFinishLaunchingWithOptions:)`
 
 ```Swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    MiSnapLicenseManager.shared().setLicenseKey("your-license-key-here")
+    MiSnapLicenseManager.shared.setLicenseKey("your_license_key_here")
     return true
 }
 ```
@@ -126,17 +122,17 @@ When both `MiSnapNFC` and `MiSnapNFCUX` are integrated:
 
 5.1. Add necessary imports
 ```Swift
-import MiSnapNFCUX
+import MiSnapCore
 import MiSnapNFC
-import MiSnapLicenseManager
+import MiSnapNFCUX
 ```
 5.2. Configure and present MiSnapNFCViewController:
 ```Swift
-let documentType: MiSnapNFCDocumentType = <your-document-type-here>
-let documentNumber = "document-number-here"
-let dateOfBirth = "date-of-birth-in-YYMMDD-format-here"
-let dateOfExpiry = "date-of-expiry-in-YYMMDD-format-here"
-let mrzString = "mrz-string-here"
+let documentType: MiSnapNFCDocumentType = <your_document_type_here>
+let documentNumber = "document_number_here"
+let dateOfBirth = "date_of_birth_in_YYMMDD_format_here"
+let dateOfExpiry = "date_of_expiry_in_YYMMDD_format_here"
+let mrzString = "mrz_string_here"
         
 let chipLocation = MiSnapNFCChipLocator.chipLocation(mrzString: mrzString,
                                                      documentNumber: documentNumber,

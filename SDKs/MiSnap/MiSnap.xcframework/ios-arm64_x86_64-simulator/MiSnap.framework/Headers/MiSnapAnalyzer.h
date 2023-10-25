@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <MiSnap/MiSnapParameters.h>
 #import <MiSnap/MiSnapResult.h>
-#import <MiSnapLicenseManager/MiSnapLicenseManager.h>
+#import <MiSnapCore/MiSnapCore.h>
 
 /**
  Defines an interface for delegates of `MiSnapAnalyzer` to receive frame result

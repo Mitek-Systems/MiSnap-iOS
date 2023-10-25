@@ -263,8 +263,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import CoreMedia;
 @import Foundation;
+@import MiSnapCore;
 @import MiSnapFacialCapture;
-@import MiSnapLicenseManager;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -642,7 +642,7 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 /// Called when an analyzer detects an invalid license
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapFacialCaptureAnalyzerLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapFacialCaptureAnalyzerLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Called when an analyzer detects a frame that fails one or more Image Quality Analysis checks
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
@@ -672,7 +672,7 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 SWIFT_PROTOCOL("_TtP21MiSnapFacialCaptureUX41MiSnapFacialCaptureViewControllerDelegate_")
 @protocol MiSnapFacialCaptureViewControllerDelegate
 /// Delegates receive this callback only when license status is anything but valid
-- (void)miSnapFacialCaptureLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapFacialCaptureLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Delegates receive this callback in one of the following cases:
 /// <ul>
 ///   <li>

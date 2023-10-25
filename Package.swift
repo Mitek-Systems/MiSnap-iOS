@@ -11,7 +11,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "MiSnap",
-            targets: ["MiSnap","MiSnapCamera","MiSnapScience","MobileFlow","MiSnapMibiData","MiSnapBarcodeScanner","MiSnapLicenseManager"]
+            targets: ["MiSnap","MiSnapCamera","MiSnapScience","MobileFlow","MiSnapBarcodeScanner","MiSnapCore"]
             ),
         .library(
             name: "MiSnapUX",
@@ -19,7 +19,7 @@ let package = Package(
         ),
         .library(
             name: "MiSnapFacialCapture",
-            targets: ["MiSnapFacialCapture","MiSnapMibiData","MiSnapLicenseManager"]
+            targets: ["MiSnapFacialCapture","MiSnapCore"]
         ),
         .library(
             name: "MiSnapFacialCaptureUX",
@@ -27,7 +27,7 @@ let package = Package(
         ),
         .library(
             name: "MiSnapVoiceCapture",
-            targets: ["MiSnapVoiceCapture","VoiceSdk","MiSnapMibiData","MiSnapLicenseManager"]
+            targets: ["MiSnapVoiceCapture","VoiceSdk","MiSnapCore"]
         ),
         .library(
             name: "MiSnapVoiceCaptureUX",
@@ -35,15 +35,15 @@ let package = Package(
         ),
         .library(
             name: "MiSnapNFC",
-            targets: ["MiSnapNFC","MiSnapMibiData","MiSnapLicenseManager","MiSnapOpenSSL"]
+            targets: ["MiSnapNFC","MiSnapCore"]
         ),
         .library(
             name: "MiSnapNFCUX",
             targets: ["MiSnapNFCUX","MiSnapAssetManager"]
         ),
         .library(
-            name: "MiSnapDeviceKit",
-            targets: ["MiSnapDeviceKit","MiSnapLicenseManager"]
+            name: "MiSnapCore",
+            targets: ["MiSnapCore"]
         )
     ],
     targets: [
@@ -96,28 +96,16 @@ let package = Package(
             path: "SDKs/MiSnapNFC/MiSnapNFC.xcframework"
         ),
         .binaryTarget(
-            name: "MiSnapOpenSSL",
-            path: "SDKs/MiSnapNFC/MiSnapOpenSSL.xcframework"
-        ),
-        .binaryTarget(
             name: "MiSnapNFCUX",
             path: "SDKs/MiSnapNFC/MiSnapNFCUX.xcframework"
         ),
         .binaryTarget(
-            name: "MiSnapMibiData",
-            path: "SDKs/Common/MiSnapMibiData.xcframework"
-        ),
-        .binaryTarget(
-            name: "MiSnapLicenseManager",
-            path: "SDKs/Common/MiSnapLicenseManager.xcframework"
+            name: "MiSnapCore",
+            path: "SDKs/Common/MiSnapCore.xcframework"
         ),
         .binaryTarget(
             name: "MiSnapAssetManager",
             path: "SDKs/Common/MiSnapAssetManager.xcframework"
-        ),
-        .binaryTarget(
-            name: "MiSnapDeviceKit",
-            path: "SDKs/MiSnapDeviceKit/MiSnapDeviceKit.xcframework"
         )
     ]
 )

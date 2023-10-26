@@ -6,9 +6,9 @@
 //
 
 import UIKit
-import MiSnapFacialCaptureUX
+import MiSnapCore
 import MiSnapFacialCapture
-import MiSnapLicenseManager
+import MiSnapFacialCaptureUX
 
 class ViewController: UIViewController {
     private var misnapFacialCaptureVC: MiSnapFacialCaptureViewController?

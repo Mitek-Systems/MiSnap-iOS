@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import MiSnapUX
+import MiSnapCore
 import MiSnap
-import MiSnapLicenseManager
+import MiSnapUX
 
 private enum ResultSection: String, Equatable, CaseIterable {
     case summary        = "Summary"
@@ -282,7 +282,7 @@ extension ResultViewController {
     private func configureOdcSection() {
         guard let result = result else { return }
         
-        if !MiSnapLicenseManager.shared().featureSupported(.ODC) {
+        if !MiSnapLicenseManager.shared.featureSupported(.ODC) {
             addInfo(withTitle: "Your license doesn't support On-Device Classification", value: "", split: 1000.0)
             return
         }
@@ -291,7 +291,7 @@ extension ResultViewController {
     }
     
     private func configureOdeSection() {
-        if !MiSnapLicenseManager.shared().featureSupported(.ODE) {
+        if !MiSnapLicenseManager.shared.featureSupported(.ODE) {
             addInfo(withTitle: "Your license doesn't support On-Device Extraction", value: "", split: 1000.0)
             return
         }
@@ -404,7 +404,7 @@ extension ResultViewController {
                 localizedStatus = "Good"
             }
             str = "Status: \(localizedStatus)"
-            if let mibiDataString = result.mibiDataString {
+            if let mibiDataString = result.mibi.string {
                 str += "\n\nMIBI: \(mibiDataString)"
             }
             if let extraction = result.extraction, let barcodeString = extraction.barcodeString {

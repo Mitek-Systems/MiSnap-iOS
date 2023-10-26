@@ -7,15 +7,15 @@
 //
 
 import UIKit
-import MiSnapLicenseManager
+import MiSnapCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        MiSnapLicenseManager.shared().setLicenseKey("your_license_key_here")
-        print(MiSnapLicenseManager.shared().description)
+        MiSnapLicenseManager.shared.setLicenseKey("your_license_key_here")
+        print(MiSnapLicenseManager.shared.description)
         
         /**
          By default, this app functions in `offline` mode (a transaction isn't send to a back end from processing)

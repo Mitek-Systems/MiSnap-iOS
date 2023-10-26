@@ -122,7 +122,7 @@ extension ResultViewController {
         mibiTextView.bounces = false
         mibiTextView.showsVerticalScrollIndicator = false
         mibiTextView.showsHorizontalScrollIndicator = false
-        mibiTextView.text = result.mibiDataString
+        mibiTextView.text = result.mibi.string
         mibiTextView.font = .systemFont(ofSize: 16)
         mibiTextView.textContainer.lineBreakMode = .byCharWrapping
         

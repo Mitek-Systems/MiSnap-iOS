@@ -1,16 +1,14 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapNFC
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapNFC
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
 import CoreNFC
 import CryptoKit
 import CryptoTokenKit
 import Foundation
-import MiSnapLicenseManager
-import MiSnapMibiData
+import MiSnapCore
 @_exported import MiSnapNFC
-import MiSnapOpenSSL
 import Swift
 import UIKit
 import _Concurrency
@@ -48,7 +46,7 @@ public enum MiSnapNFCTagError : Swift.Error, Swift.Equatable {
   case pollingRestarted
   case systemResourceUnavailable
   case systemError
-  case invalidLicense(MiSnapLicenseStatus)
+  case invalidLicense(MiSnapCore.MiSnapLicenseStatus)
   public static func == (a: MiSnapNFCTagError, b: MiSnapNFCTagError) -> Swift.Bool
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapNFCResourceLocatorConfiguration : ObjectiveC.NSObject {
@@ -117,11 +115,11 @@ public enum MiSnapNFCInvalidationReason : Swift.String {
 public class MiSnapNFCReader : ObjectiveC.NSObject {
   public init(with inputs: MiSnapNFCInputs, parameters: MiSnapNFCParameters)
   @available(*, deprecated, message: "Call init(with:parameters:) instead")
-  public init(logLevel: MiSnapNFCLogLevel = .info, timeout: Foundation.TimeInterval = 15.0)
+  public init(logLevel: MiSnapCore.MiSnapLogLevel = .info, timeout: Foundation.TimeInterval = 15.0)
   @available(*, deprecated, message: "Document type should be set in MiSnapNFCInputs which are passed in init(with:parameters:)")
   public func set(documentType: MiSnapNFCDocumentType)
   @available(*, deprecated, message: "Log level should be set in MiSnapNFCParameters which are passed in init(with:parameters:)")
-  public func set(logLevel: MiSnapNFCLogLevel)
+  public func set(logLevel: MiSnapCore.MiSnapLogLevel)
   @available(*, deprecated, message: "Timeout should be set in MiSnapNFCParameters which are passed in init(with:parameters:)")
   public func set(timeout: Foundation.TimeInterval)
   public func logModule(withName name: Swift.String, version: Swift.String)
@@ -204,18 +202,6 @@ public enum MiSnapNFCKey {
   public static let mibi: Swift.String
   public static let requestDictionary: Swift.String
 }
-@objc public enum MiSnapNFCLogLevel : Swift.Int {
-  case verbose = 0
-  case debug = 1
-  case info = 2
-  case warning = 3
-  case error = 4
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @_inheritsConvenienceInitializers @objc public class MiSnapNFCParameters : ObjectiveC.NSObject {
   @objc public var timeout: Swift.Double {
     @objc get
@@ -223,7 +209,9 @@ public enum MiSnapNFCKey {
   }
   @objc public var skipCA: Swift.Bool
   @objc public var optionalDataRedactionEnabled: Swift.Bool
-  @objc public var logLevel: MiSnapNFCLogLevel
+  @objc public var logging: MiSnapCore.MiSnapLogConfiguration
+  @available(*, deprecated, message: "Call `logging.level` instead")
+  @objc public var logLevel: MiSnapCore.MiSnapLogLevel
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -239,6 +227,3 @@ extension MiSnapNFCInvalidationReason : Swift.RawRepresentable {}
 extension MiSnapNFCChipLocation : Swift.Equatable {}
 extension MiSnapNFCChipLocation : Swift.Hashable {}
 extension MiSnapNFCChipLocation : Swift.RawRepresentable {}
-extension MiSnapNFCLogLevel : Swift.Equatable {}
-extension MiSnapNFCLogLevel : Swift.Hashable {}
-extension MiSnapNFCLogLevel : Swift.RawRepresentable {}

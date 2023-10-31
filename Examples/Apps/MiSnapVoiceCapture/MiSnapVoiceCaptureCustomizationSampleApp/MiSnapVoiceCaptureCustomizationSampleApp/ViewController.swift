@@ -6,9 +6,9 @@
 //
 
 import UIKit
-import MiSnapVoiceCaptureUX
+import MiSnapCore
 import MiSnapVoiceCapture
-import MiSnapLicenseManager
+import MiSnapVoiceCaptureUX
 
 class ViewController: UIViewController {
     private var misnapVoiceCaptureVC: MiSnapVoiceCaptureViewController?

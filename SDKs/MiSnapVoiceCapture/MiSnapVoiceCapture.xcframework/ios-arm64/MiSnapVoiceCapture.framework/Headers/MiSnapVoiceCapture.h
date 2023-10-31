@@ -8,7 +8,6 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <MiSnapVoiceCapture/MiSnapVoiceCaptureEngine.h>
-#import <MiSnapLicenseManager/MiSnapLicenseManager.h>
 /**
  Umbrella header
 */

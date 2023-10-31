@@ -261,7 +261,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import MiSnapLicenseManager;
+@import MiSnapCore;
 @import MiSnapVoiceCapture;
 @import ObjectiveC;
 @import UIKit;
@@ -517,10 +517,6 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 + (void)checkMicrophonePermissionWithHandler:(void (^ _Nonnull)(BOOL))handler;
 /// Checks if a device has a given space in MB
 + (BOOL)hasMinDiskSpace:(NSInteger)minDiskSpace SWIFT_WARN_UNUSED_RESULT;
-/// Called after the view has been loaded.
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)viewDidLoad;
 /// Called when the view is about to made visible
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
@@ -555,7 +551,7 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 /// Called when license status is anything but valid
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureControllerLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapVoiceCaptureControllerLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Called when a controller is started
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
@@ -596,7 +592,7 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 SWIFT_PROTOCOL("_TtP20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureViewControllerDelegate_")
 @protocol MiSnapVoiceCaptureViewControllerDelegate
 /// Delegates receive this callback only when license status is anything but valid
-- (void)miSnapVoiceCaptureLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapVoiceCaptureLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Delegates receive this callback when a user selects a phrase on a Phrase selection screen
 - (void)miSnapVoiceCaptureDidSelectPhrase:(NSString * _Nonnull)phrase;
 /// Delegates receive this callback when all voice sample are successfully recorded for a given flow
@@ -883,7 +879,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import MiSnapLicenseManager;
+@import MiSnapCore;
 @import MiSnapVoiceCapture;
 @import ObjectiveC;
 @import UIKit;
@@ -1139,10 +1135,6 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 + (void)checkMicrophonePermissionWithHandler:(void (^ _Nonnull)(BOOL))handler;
 /// Checks if a device has a given space in MB
 + (BOOL)hasMinDiskSpace:(NSInteger)minDiskSpace SWIFT_WARN_UNUSED_RESULT;
-/// Called after the view has been loaded.
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)viewDidLoad;
 /// Called when the view is about to made visible
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
@@ -1177,7 +1169,7 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 /// Called when license status is anything but valid
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapVoiceCaptureControllerLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapVoiceCaptureControllerLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Called when a controller is started
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
@@ -1218,7 +1210,7 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX32MiSnapVoiceCaptureViewController")
 SWIFT_PROTOCOL("_TtP20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureViewControllerDelegate_")
 @protocol MiSnapVoiceCaptureViewControllerDelegate
 /// Delegates receive this callback only when license status is anything but valid
-- (void)miSnapVoiceCaptureLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapVoiceCaptureLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Delegates receive this callback when a user selects a phrase on a Phrase selection screen
 - (void)miSnapVoiceCaptureDidSelectPhrase:(NSString * _Nonnull)phrase;
 /// Delegates receive this callback when all voice sample are successfully recorded for a given flow

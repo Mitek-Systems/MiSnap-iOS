@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Vision/Vision.h>
 #import <MiSnapFacialCapture/MiSnapFacialCaptureParameters.h>
-#import <MiSnapMibiData/MiSnapMibiData.h>
+#import <MiSnapCore/MiSnapCore.h>
 
 /**
  Statuses returned by MiSnapFacialCapture.
@@ -161,6 +161,10 @@ An array of outer lip points
  - Note: it's `nil` if the `image` is nil
 */
 @property (nonatomic, readonly) NSString * _Nullable encodedImage;
+/**
+ An encrypted payload used for an additional authentication
+ */
+@property (nonatomic, readonly) NSString * _Nullable rts;
 /**
  A MIBI Data string that has analytics for the session
  

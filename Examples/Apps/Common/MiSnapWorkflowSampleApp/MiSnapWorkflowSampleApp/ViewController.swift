@@ -548,7 +548,7 @@ extension ViewController {
     
     @discardableResult private func licenseValid(_ status: MiSnapLicenseStatus) -> Bool {
         if status != .valid && status != .expired {
-            switch MiSnapLicenseManager.shared().status {
+            switch MiSnapLicenseManager.shared.status {
             case .none:                     presentAlert(withTitle: "License key is none", message: nil)
             case .notValid:                 presentAlert(withTitle: "License key is not valid", message: nil)
             case .disabled:                 presentAlert(withTitle: "License key is disabled", message: nil)
@@ -560,11 +560,11 @@ extension ViewController {
             return false
         }
         
-        if !MiSnapLicenseManager.shared().featureSupported(.voice) {
+        if !MiSnapLicenseManager.shared.featureSupported(.voice) {
             presentAlert(withTitle: "Voice capture is not licensed", message: nil)
             return false
         }
-        if !MiSnapLicenseManager.shared().featureSupported(.face) {
+        if !MiSnapLicenseManager.shared.featureSupported(.face) {
             presentAlert(withTitle: "Face capture is not licensed", message: nil)
             return false
         }

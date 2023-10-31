@@ -265,7 +265,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import MiSnap;
 @import MiSnapCamera;
-@import MiSnapLicenseManager;
+@import MiSnapCore;
 @import MiSnapScience;
 @import ObjectiveC;
 @import UIKit;
@@ -734,7 +734,7 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 /// Called when an analyzer detects an invalid license
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapAnalyzerLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapAnalyzerLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Called when an analyzer detects a frame that passes all Image Quality Analysis checks
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
@@ -779,7 +779,7 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 SWIFT_PROTOCOL("_TtP8MiSnapUX28MiSnapViewControllerDelegate_")
 @protocol MiSnapViewControllerDelegate
 /// Delegates receive this callback only when license status is anything but valid
-- (void)miSnapLicenseStatus:(MiSnapLicenseStatus)status;
+- (void)miSnapLicenseStatus:(enum MiSnapLicenseStatus)status;
 /// Delegates receive this callback in one of the following cases:
 /// <ul>
 ///   <li>

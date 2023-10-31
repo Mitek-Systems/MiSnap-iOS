@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <MiSnapFacialCapture/MiSnapFacialCaptureParameters.h>
 #import <MiSnapFacialCapture/MiSnapFacialCaptureResult.h>
-#import <MiSnapLicenseManager/MiSnapLicenseManager.h>
+#import <MiSnapCore/MiSnapCore.h>
 
 /**
 Smile status

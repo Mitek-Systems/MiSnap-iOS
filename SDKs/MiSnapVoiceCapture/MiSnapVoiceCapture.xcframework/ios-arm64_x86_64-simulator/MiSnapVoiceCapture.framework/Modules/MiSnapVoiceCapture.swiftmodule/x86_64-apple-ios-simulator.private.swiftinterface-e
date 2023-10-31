@@ -1,10 +1,9 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapVoiceCapture
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapVoiceCapture
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
-import MiSnapLicenseManager
-import MiSnapMibiData
+import MiSnapCore
 @_exported import MiSnapVoiceCapture
 import Swift
 import UIKit
@@ -38,7 +37,7 @@ import _StringProcessing
   @objc public var mibiString: Swift.String? {
     @objc get
   }
-  @objc public var mibi: MiSnapMibiData.MiSnapMibi {
+  @objc public var mibi: MiSnapCore.MiSnapMibi {
     get
   }
   @objc public var error: Foundation.NSError? {
@@ -83,7 +82,7 @@ import _StringProcessing
   }
 }
 @objc public protocol MiSnapVoiceCaptureControllerDelegate {
-  @objc func miSnapVoiceCaptureControllerLicenseStatus(_ status: MiSnapLicenseStatus)
+  @objc func miSnapVoiceCaptureControllerLicenseStatus(_ status: MiSnapCore.MiSnapLicenseStatus)
   @objc func miSnapVoiceCaptureControllerDidStart()
   @objc func miSnapVoiceCaptureControllerSuccess(_ result: MiSnapVoiceCaptureResult)
   @objc func miSnapVoiceCaptureControllerFailure(_ result: MiSnapVoiceCaptureResult)

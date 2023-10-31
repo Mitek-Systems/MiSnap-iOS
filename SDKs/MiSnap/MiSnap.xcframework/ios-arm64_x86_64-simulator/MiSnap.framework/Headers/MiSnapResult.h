@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MiSnapCore/MiSnapCore.h>
 #import <MiSnapScience/MiSnapScienceIQAResult.h>
 #import <MiSnapScience/MiSnapScienceClassificationResult.h>
 #import <MiSnapScience/MiSnapScienceExtractionResult.h>
-#import <MiSnapMibiData/MiSnapMibiData.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -115,7 +115,6 @@ typedef NS_ENUM(NSInteger, MiSnapStatus) {
      */
     MiSnapStatusGood                        = 20
 };
-
 /**
  Result code
  */
@@ -137,76 +136,66 @@ typedef NS_ENUM(NSInteger, MiSnapResultCode) {
      */
     MiSnapResultCodeCancelled             = 3
 };
-
 /**
  Frame analysis result
  */
 @interface MiSnapResult : NSObject
-
 /**
  An acquired image
  */
 @property (nonatomic, readonly) UIImage * _Nullable image;
-
 /**
  Base64 representation of an acquired image that should be sent to the server for processing
  */
 @property (nonatomic, readonly) NSString * _Nullable encodedImage;
-
+/**
+ An encrypted payload used for an additional authentication
+ */
+@property (nonatomic, readonly) NSString * _Nullable rts;
 /**
  A string containing non-PII session analytics
  */
 @property (nonatomic, readonly) NSString * _Nullable mibiDataString DEPRECATED_MSG_ATTRIBUTE("Use `mibi` property instead");
-
 /**
  An object containing non-PII session analytics
  */
 @property (nonatomic, readonly) MiSnapMibi * _Nonnull mibi;
-
 /**
  Image Quality Analysis result
  */
 @property (nonatomic, readonly) MiSnapScienceIQAResult * _Nonnull iqa;
-
 /**
  Classification result
  */
 @property (nonatomic, readonly) MiSnapScienceClassificationResult * _Nonnull classification;
-
 /**
  Extraction result
  */
 @property (nonatomic, readonly) MiSnapScienceExtractionResult * _Nullable extraction;
-
 /**
  A session result code
  */
 @property (nonatomic, readonly) MiSnapResultCode resultCode;
-
 /**
  Frame statuses ordered based on priority
  
  @see `MiSnapStatus`
  */
 @property (nonatomic, readonly) NSArray * _Nonnull orderedStatuses;
-
 /**
  The highest priority frame status
  
  @see `MiSnapStatus`
  */
 @property (nonatomic, readonly) MiSnapStatus highestPriorityStatus;
-
 /**
  A convenience method for getting a string representation of `MiSnapResultCode` value
  */
 + (NSString *)stringFromMiSnapResultCode:(MiSnapResultCode)resultCode;
-
 /**
  A convenience method for getting a string representation of `MiSnapStatus` value
  */
 + (NSString *)stringFromMiSnapStatus:(MiSnapStatus)status;
-
 /**
  A convenience method for getting a string code representation of `MiSnapStatus` value
  */

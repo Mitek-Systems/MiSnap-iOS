@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MiSnapUxpEvent Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Enum/MiSnapUxpEvent" class="dashAnchor"></a>
+
+    <a title="MiSnapUxpEvent Enumeration Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <div class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </div>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      MiSnapUxpEvent Enumeration Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCore.html">MiSnapCore</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapCryptography.html">MiSnapCryptography</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapDevice.html">MiSnapDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapLicenseManager.html">MiSnapLicenseManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapLog.html">MiSnapLog</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapLogConfiguration.html">MiSnapLogConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapMibi.html">MiSnapMibi</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapMibiBarcodeSessionInfo.html">MiSnapMibiBarcodeSessionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapMibiDeviceInfo.html">MiSnapMibiDeviceInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapMibiDocumentSessionInfo.html">MiSnapMibiDocumentSessionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapMibiFaceSessionInfo.html">MiSnapMibiFaceSessionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapMibiNFCSessionInfo.html">MiSnapMibiNFCSessionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapMibiSessionInfo.html">MiSnapMibiSessionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapMibiVoiceSessionInfo.html">MiSnapMibiVoiceSessionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapUxpEventManager.html">MiSnapUxpEventManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCryptographyHashingAlgorithm.html">MiSnapCryptographyHashingAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLicenseFeature.html">MiSnapLicenseFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLicenseStatus.html">MiSnapLicenseStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLogLevel.html">MiSnapLogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapLogPresentation.html">MiSnapLogPresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapMibiDataElement.html">MiSnapMibiDataElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapMibiSessionInfoFlow.html">MiSnapMibiSessionInfoFlow</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapMibiSessionInfoMode.html">MiSnapMibiSessionInfoMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapMibiSessionInfoOrientation.html">MiSnapMibiSessionInfoOrientation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapMibiSessionInfoType.html">MiSnapMibiSessionInfoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapMibiSessionInfoUnlock.html">MiSnapMibiSessionInfoUnlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapUxpEvent.html">MiSnapUxpEvent</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>MiSnapUxpEvent</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MiSnapUxpEvent</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                </div>
+              </div>
+            
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventNone"></a>
+                    <a name="//apple_ref/swift/Element/none" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventNone">none</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="k">none</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventCheckFrontFailure"></a>
+                    <a name="//apple_ref/swift/Element/checkFrontFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventCheckFrontFailure">checkFrontFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">checkFrontFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventCheckBackFailure"></a>
+                    <a name="//apple_ref/swift/Element/checkBackFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventCheckBackFailure">checkBackFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">checkBackFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventIdentityFrontFailure"></a>
+                    <a name="//apple_ref/swift/Element/identityFrontFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventIdentityFrontFailure">identityFrontFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">identityFrontFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventIdentityBackFailure"></a>
+                    <a name="//apple_ref/swift/Element/identityBackFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventIdentityBackFailure">identityBackFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">identityBackFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventPassportFailure"></a>
+                    <a name="//apple_ref/swift/Element/passportFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventPassportFailure">passportFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">passportFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventNotFoundFailure"></a>
+                    <a name="//apple_ref/swift/Element/notFoundFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventNotFoundFailure">notFoundFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">notFoundFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMrzFailure"></a>
+                    <a name="//apple_ref/swift/Element/mrzFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMrzFailure">mrzFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">mrzFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventContrastFailure"></a>
+                    <a name="//apple_ref/swift/Element/contrastFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventContrastFailure">contrastFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">contrastFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventBackgroundFailure"></a>
+                    <a name="//apple_ref/swift/Element/backgroundFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventBackgroundFailure">backgroundFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">backgroundFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventAngleFailure"></a>
+                    <a name="//apple_ref/swift/Element/angleFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventAngleFailure">angleFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">angleFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventRotationAngleFailure"></a>
+                    <a name="//apple_ref/swift/Element/rotationAngleFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventRotationAngleFailure">rotationAngleFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">rotationAngleFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTooFarFailure"></a>
+                    <a name="//apple_ref/swift/Element/tooFarFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTooFarFailure">tooFarFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tooFarFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTooCloseFailure"></a>
+                    <a name="//apple_ref/swift/Element/tooCloseFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTooCloseFailure">tooCloseFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">tooCloseFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventAspectRatioFailure"></a>
+                    <a name="//apple_ref/swift/Element/aspectRatioFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventAspectRatioFailure">aspectRatioFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">aspectRatioFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventSharpnessFailure"></a>
+                    <a name="//apple_ref/swift/Element/sharpnessFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventSharpnessFailure">sharpnessFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">sharpnessFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventBrightnessFailure"></a>
+                    <a name="//apple_ref/swift/Element/brightnessFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventBrightnessFailure">brightnessFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">brightnessFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMaxBrightnessFailure"></a>
+                    <a name="//apple_ref/swift/Element/maxBrightnessFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMaxBrightnessFailure">maxBrightnessFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">maxBrightnessFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventGlareFailure"></a>
+                    <a name="//apple_ref/swift/Element/glareFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventGlareFailure">glareFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">glareFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventClassificationInProgress"></a>
+                    <a name="//apple_ref/swift/Element/classificationInProgress" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventClassificationInProgress">classificationInProgress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">classificationInProgress</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceNotFoundFailure"></a>
+                    <a name="//apple_ref/swift/Element/faceNotFoundFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceNotFoundFailure">faceNotFoundFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">faceNotFoundFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceNotCenteredFailure"></a>
+                    <a name="//apple_ref/swift/Element/faceNotCenteredFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceNotCenteredFailure">faceNotCenteredFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">faceNotCenteredFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceMultipleFacesFailure"></a>
+                    <a name="//apple_ref/swift/Element/faceMultipleFacesFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceMultipleFacesFailure">faceMultipleFacesFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">faceMultipleFacesFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceRollFailure"></a>
+                    <a name="//apple_ref/swift/Element/faceRollFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceRollFailure">faceRollFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">faceRollFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFacePitchFailure"></a>
+                    <a name="//apple_ref/swift/Element/facePitchFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFacePitchFailure">facePitchFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">facePitchFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceYawFailure"></a>
+                    <a name="//apple_ref/swift/Element/faceYawFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceYawFailure">faceYawFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">faceYawFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceTooFarFailure"></a>
+                    <a name="//apple_ref/swift/Element/faceTooFarFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceTooFarFailure">faceTooFarFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">faceTooFarFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceTooCloseFailure"></a>
+                    <a name="//apple_ref/swift/Element/faceTooCloseFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceTooCloseFailure">faceTooCloseFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">faceTooCloseFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceNotStillFailure"></a>
+                    <a name="//apple_ref/swift/Element/faceNotStillFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceNotStillFailure">faceNotStillFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">faceNotStillFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceStopSmilingFailure"></a>
+                    <a name="//apple_ref/swift/Element/faceStopSmilingFailure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceStopSmilingFailure">faceStopSmilingFailure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">faceStopSmilingFailure</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventHoldStill"></a>
+                    <a name="//apple_ref/swift/Element/holdStill" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventHoldStill">holdStill</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">holdStill</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventSmile"></a>
+                    <a name="//apple_ref/swift/Element/smile" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventSmile">smile</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">smile</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventErrorVerbose"></a>
+                    <a name="//apple_ref/swift/Element/errorVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventErrorVerbose">errorVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">errorVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventSuccessVerbose"></a>
+                    <a name="//apple_ref/swift/Element/successVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventSuccessVerbose">successVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">successVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTimeoutVerbose"></a>
+                    <a name="//apple_ref/swift/Element/timeoutVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTimeoutVerbose">timeoutVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">timeoutVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventStartVerbose"></a>
+                    <a name="//apple_ref/swift/Element/startVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventStartVerbose">startVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">startVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventReadVerbose"></a>
+                    <a name="//apple_ref/swift/Element/readVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventReadVerbose">readVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">readVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventUnknownTagVerbose"></a>
+                    <a name="//apple_ref/swift/Element/unknownTagVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventUnknownTagVerbose">unknownTagVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknownTagVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventPaceSupportVerbose"></a>
+                    <a name="//apple_ref/swift/Element/paceSupportVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventPaceSupportVerbose">paceSupportVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">paceSupportVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventCaSupportVerbose"></a>
+                    <a name="//apple_ref/swift/Element/caSupportVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventCaSupportVerbose">caSupportVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">caSupportVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventAaSupportVerbose"></a>
+                    <a name="//apple_ref/swift/Element/aaSupportVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventAaSupportVerbose">aaSupportVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">aaSupportVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventAccessMechanismVerbose"></a>
+                    <a name="//apple_ref/swift/Element/accessMechanismVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventAccessMechanismVerbose">accessMechanismVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">accessMechanismVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventDiscardVerbose"></a>
+                    <a name="//apple_ref/swift/Element/discardVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventDiscardVerbose">discardVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">discardVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventCancelVerbose"></a>
+                    <a name="//apple_ref/swift/Element/cancelVerbose" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventCancelVerbose">cancelVerbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cancelVerbose</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventCancel"></a>
+                    <a name="//apple_ref/swift/Element/cancel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventCancel">cancel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cancel</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventInstruction"></a>
+                    <a name="//apple_ref/swift/Element/instruction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventInstruction">instruction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">instruction</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventHelp"></a>
+                    <a name="//apple_ref/swift/Element/help" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventHelp">help</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">help</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTimeout"></a>
+                    <a name="//apple_ref/swift/Element/timeout" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTimeout">timeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">timeout</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventReview"></a>
+                    <a name="//apple_ref/swift/Element/review" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventReview">review</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">review</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredConfidence"></a>
+                    <a name="//apple_ref/swift/Element/measuredConfidence" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredConfidence">measuredConfidence</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredConfidence</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredCornerPoints"></a>
+                    <a name="//apple_ref/swift/Element/measuredCornerPoints" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredCornerPoints">measuredCornerPoints</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredCornerPoints</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredMicrConfidence"></a>
+                    <a name="//apple_ref/swift/Element/measuredMicrConfidence" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredMicrConfidence">measuredMicrConfidence</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredMicrConfidence</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredContrast"></a>
+                    <a name="//apple_ref/swift/Element/measuredContrast" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredContrast">measuredContrast</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredContrast</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredBackground"></a>
+                    <a name="//apple_ref/swift/Element/measuredBackground" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredBackground">measuredBackground</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredBackground</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredAngle"></a>
+                    <a name="//apple_ref/swift/Element/measuredAngle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredAngle">measuredAngle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredAngle</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredRotationAngle"></a>
+                    <a name="//apple_ref/swift/Element/measuredRotationAngle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredRotationAngle">measuredRotationAngle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredRotationAngle</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredSharpness"></a>
+                    <a name="//apple_ref/swift/Element/measuredSharpness" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredSharpness">measuredSharpness</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredSharpness</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredBrightness"></a>
+                    <a name="//apple_ref/swift/Element/measuredBrightness" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredBrightness">measuredBrightness</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredBrightness</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredGlare"></a>
+                    <a name="//apple_ref/swift/Element/measuredGlare" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredGlare">measuredGlare</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredGlare</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredWidth"></a>
+                    <a name="//apple_ref/swift/Element/measuredWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredWidth">measuredWidth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredWidth</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredAutoTime"></a>
+                    <a name="//apple_ref/swift/Element/measuredAutoTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredAutoTime">measuredAutoTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredAutoTime</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredManualTime"></a>
+                    <a name="//apple_ref/swift/Element/measuredManualTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredManualTime">measuredManualTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredManualTime</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredFailover"></a>
+                    <a name="//apple_ref/swift/Element/measuredFailover" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventMeasuredFailover">measuredFailover</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">measuredFailover</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTorchOn"></a>
+                    <a name="//apple_ref/swift/Element/torchOn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTorchOn">torchOn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">torchOn</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTorchOff"></a>
+                    <a name="//apple_ref/swift/Element/torchOff" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventTorchOff">torchOff</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">torchOff</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventStartAuto"></a>
+                    <a name="//apple_ref/swift/Element/startAuto" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventStartAuto">startAuto</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">startAuto</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventStartManual"></a>
+                    <a name="//apple_ref/swift/Element/startManual" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventStartManual">startManual</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">startManual</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventOrientationLandscape"></a>
+                    <a name="//apple_ref/swift/Element/orientationLandscape" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventOrientationLandscape">orientationLandscape</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">orientationLandscape</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventOrientationPortrait"></a>
+                    <a name="//apple_ref/swift/Element/orientationPortrait" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventOrientationPortrait">orientationPortrait</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">orientationPortrait</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>

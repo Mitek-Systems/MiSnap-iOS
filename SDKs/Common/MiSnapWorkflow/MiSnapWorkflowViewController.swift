@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MiSnapLicenseManager
+import MiSnapCore
 #if canImport(MiSnapUX) && canImport(MiSnap)
 import MiSnapUX
 #endif

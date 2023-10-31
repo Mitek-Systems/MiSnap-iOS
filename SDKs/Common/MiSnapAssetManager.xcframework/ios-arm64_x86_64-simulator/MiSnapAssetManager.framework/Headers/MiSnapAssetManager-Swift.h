@@ -1136,6 +1136,14 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager26MiSnapSuccessConfiguration")
 @property (nonatomic, strong) MiSnapSuccessCheckmarkViewConfiguration * _Nonnull checkmark;
 /// Message configuration
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Background color
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Border color
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+/// Border width
+@property (nonatomic) CGFloat borderWidth;
+/// Corner radius
+@property (nonatomic) CGFloat cornerRadius;
 /// Indicates whether a view is hidden
 @property (nonatomic) BOOL isHidden;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -2442,6 +2450,14 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager26MiSnapSuccessConfiguration")
 @property (nonatomic, strong) MiSnapSuccessCheckmarkViewConfiguration * _Nonnull checkmark;
 /// Message configuration
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Background color
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Border color
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+/// Border width
+@property (nonatomic) CGFloat borderWidth;
+/// Corner radius
+@property (nonatomic) CGFloat cornerRadius;
 /// Indicates whether a view is hidden
 @property (nonatomic) BOOL isHidden;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

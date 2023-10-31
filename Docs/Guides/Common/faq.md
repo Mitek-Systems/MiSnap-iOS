@@ -1,5 +1,18 @@
 # Frequently Asked Questions (FAQs)
 
+## Why is the minimum iOS target is set to 12.0 starting with 5.4.0?
+
+For 2 reasons:
+* Apple has set the minimum supported iOS to 12.0 in the latest Xcode 15.0. It is always advised by Apple and internally by our IT department to always use the latest version of any software. 
+* Per our internal reports there wasn't a single transaction submitted to MobileVerify from a device running iOS 11.x in over a year.
+
+## Encountering a build error when upgrading from 5.0.0...5.3.4 version
+
+Starting from 5.4.0 `MiSnapLicenseManager`, `MiSnapMibiData` and `MiSnapDeviceKit` were moved into `MiSnapCore`. With this change there were a few very minor breaking changes requiring following updates:
+1. Skip to the next step if integrated through CocoaPods or SPM. When integrating manually copy and use `MiSnapCore` from SDKs/Common instead of copying and using `MiSnapLicenseManager.xcframework` and `MiSnapMibiData.xcframework`
+2. Replace `import MiSnapLicenseManager` with `import MiSnapCore`
+3. Replace all calls to `MiSnapLicenseManager.shared()` with `MiSnapLicenseManager.shared`, i.e. delete `()` at the end
+
 ## GitHub doesn't have a preview for HTML so how can API documentation be viewed?
 
 Use [GitHub & BitBucket HTML Preview](https://htmlpreview.github.io) tool. 

@@ -5,9 +5,9 @@
 
 #include <voicesdk/core/config.h>
 
-#define VOICESDK_PROJECT_VERSION "3.7.2"
+#define VOICESDK_PROJECT_VERSION "3.7.3"
 #define VOICESDK_COMPONENTS      "core media"
-#define VOICESDK_GIT_INFO        "HEAD b8ead2dd "
+#define VOICESDK_GIT_INFO        "HEAD 61370d94 "
 
 namespace voicesdk {
 

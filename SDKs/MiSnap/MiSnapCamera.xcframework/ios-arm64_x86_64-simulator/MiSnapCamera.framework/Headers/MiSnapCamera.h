@@ -160,7 +160,7 @@ A convenience method to discards a video recording if it exists on cancel or tim
 /**
  Sets an `image` that will be output in didReceiveSampleBuffer: callback with a given `frameRate`
  
- @note Only applies to a Simulator
+ @note Only works on a Simulator in Debug mode
  */
 - (void)setImage:(UIImage * _Nullable)image frameRate:(NSInteger)frameRate;
 

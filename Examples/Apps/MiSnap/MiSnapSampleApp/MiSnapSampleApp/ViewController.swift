@@ -6,9 +6,9 @@
 //
 
 import UIKit
+import MiSnapCore
 import MiSnap
 import MiSnapUX
-import MiSnapLicenseManager
 
 class ViewController: UIViewController {
     private var misnapVC: MiSnapViewController?

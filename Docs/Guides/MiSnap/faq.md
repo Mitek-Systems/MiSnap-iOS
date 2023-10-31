@@ -1,8 +1,12 @@
 # Frequently Asked Questions (FAQs)
 
+## Encountering an issue where localization and image assets are not found when upgrading from 5.0.0...5.1.1 version
+
+Refer to [this section](integration_guide.md#sdk-and-uxui) of the Integration guide for updated instructions.
+
 ## What is optional data (BSN) redaction feature?
 
-The on-device redaction feature of the MiSnap SDK has been added in version 5.2.0 to aid in compliance with Dutch data protection legislation regarding the Citizen Service Number (BSN) - see section 46 of the Dutch Implementation Act of the GDPR (“UAVG”). Mitek is making its best effort to ensure the BSN is adequately redacted so it is unreadable by human or machine.  Mitek is only redacting the BSN from still images, so the customer or integrator must ensure they are not using the video component of MiSnap if redaction is to take place.
+The on-device redaction feature of the MiSnap SDK has been added in version 5.2.0 to aid in compliance with Dutch data protection legislation regarding the Citizen Service Number (BSN) - see section 46 of the Dutch Implementation Act of the GDPR ("UAVG"). Mitek is making its best effort to ensure the BSN is adequately redacted so it is unreadable by human or machine.  Mitek is only redacting the BSN from still images, so the customer or integrator must ensure they are not using the video component of MiSnap if redaction is to take place.
 
 ## How does video recording feature work when optional data (BSN) redaction for NLD Passports is enabled?
 

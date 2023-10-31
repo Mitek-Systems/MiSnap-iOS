@@ -6,9 +6,9 @@
 //
 
 import UIKit
-import MiSnapNFCUX
+import MiSnapCore
 import MiSnapNFC
-import MiSnapLicenseManager
+import MiSnapNFCUX
 
 class ViewController: UIViewController {
     private var misnapNFCVC: MiSnapNFCViewController?

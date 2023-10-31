@@ -265,6 +265,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) NSArray * _Nullable personalNumberBoundingBoxes;
 /**
+ The array of four corner points of the detect barcode
+ */
+@property (nonatomic, readonly) NSArray * _Nullable barcodePoints;
+/**
  A string representation of `MiSnapScienceExtractionResult`
  */
 - (NSString *)debugString;

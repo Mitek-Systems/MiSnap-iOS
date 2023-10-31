@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MiSnapCore/MiSnapCore.h>
 #import <MiSnapCamera/MiSnapCameraParameters.h>
 #import <MiSnapScience/MiSnapScienceParameters.h>
 
@@ -92,6 +93,10 @@ typedef NS_ENUM(NSInteger, MiSnapDeviceMotionSensitivityLevel) {
  An object that configures camera specific parameters
  */
 @property (nonatomic, readwrite) MiSnapCameraParameters * _Nonnull camera;
+/**
+ An object that configures logging specific parameters
+ */
+@property (nonatomic, readwrite) MiSnapLogConfiguration * _Nonnull logging;
 /**
  Mode that's used to acquire an image
  */

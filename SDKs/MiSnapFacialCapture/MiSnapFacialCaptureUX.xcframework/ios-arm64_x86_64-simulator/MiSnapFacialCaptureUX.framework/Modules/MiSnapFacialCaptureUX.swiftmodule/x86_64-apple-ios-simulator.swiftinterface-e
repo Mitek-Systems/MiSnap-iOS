@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapFacialCaptureUX
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapFacialCaptureUX
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import MiSnapAssetManager
 import MiSnapFacialCapture
@@ -162,7 +162,7 @@ import _StringProcessing
   @objc deinit
 }
 @objc public protocol MiSnapFacialCaptureViewControllerDelegate {
-  @objc func miSnapFacialCaptureLicenseStatus(_ status: MiSnapLicenseStatus)
+  @objc func miSnapFacialCaptureLicenseStatus(_ status: MiSnapCore.MiSnapLicenseStatus)
   @objc func miSnapFacialCaptureSuccess(_ result: MiSnapFacialCaptureResult)
   @objc func miSnapFacialCaptureCancelled(_ result: MiSnapFacialCaptureResult)
   @objc optional func miSnapFacialCaptureHelpAction()
@@ -191,7 +191,7 @@ import _StringProcessing
   @objc deinit
 }
 extension MiSnapFacialCaptureViewController : MiSnapFacialCaptureAnalyzerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapFacialCaptureAnalyzerLicenseStatus(_ status: MiSnapLicenseStatus)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapFacialCaptureAnalyzerLicenseStatus(_ status: MiSnapCore.MiSnapLicenseStatus)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapFacialCaptureAnalyzerError(_ result: MiSnapFacialCaptureResult!)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapFacialCaptureAnalyzerSuccess(_ result: MiSnapFacialCaptureResult!)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapFacialCaptureAnalyzerCancelled(_ result: MiSnapFacialCaptureResult!)

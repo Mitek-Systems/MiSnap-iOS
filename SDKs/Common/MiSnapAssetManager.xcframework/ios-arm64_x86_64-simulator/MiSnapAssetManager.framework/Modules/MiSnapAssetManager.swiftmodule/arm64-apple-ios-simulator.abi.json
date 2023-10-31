@@ -9502,6 +9502,382 @@
           },
           {
             "kind": "Var",
+            "name": "backgroundColor",
+            "printedName": "backgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(py)backgroundColor",
+            "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC15backgroundColorSo7UIColorCvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(im)backgroundColor",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC15backgroundColorSo7UIColorCvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(im)setBackgroundColor:",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC15backgroundColorSo7UIColorCvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB20SuccessConfigurationC15backgroundColorSo7UIColorCvM",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC15backgroundColorSo7UIColorCvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "borderColor",
+            "printedName": "borderColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(py)borderColor",
+            "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC11borderColorSo7UIColorCvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(im)borderColor",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC11borderColorSo7UIColorCvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(im)setBorderColor:",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC11borderColorSo7UIColorCvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB20SuccessConfigurationC11borderColorSo7UIColorCvM",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC11borderColorSo7UIColorCvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "borderWidth",
+            "printedName": "borderWidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(py)borderWidth",
+            "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC11borderWidth12CoreGraphics7CGFloatVvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(im)borderWidth",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC11borderWidth12CoreGraphics7CGFloatVvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(im)setBorderWidth:",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC11borderWidth12CoreGraphics7CGFloatVvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB20SuccessConfigurationC11borderWidth14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC11borderWidth12CoreGraphics7CGFloatVvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cornerRadius",
+            "printedName": "cornerRadius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(py)cornerRadius",
+            "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC12cornerRadius12CoreGraphics7CGFloatVvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(im)cornerRadius",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC12cornerRadius12CoreGraphics7CGFloatVvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapSuccessConfiguration(im)setCornerRadius:",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC12cornerRadius12CoreGraphics7CGFloatVvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB20SuccessConfigurationC12cornerRadius14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s18MiSnapAssetManager0aB20SuccessConfigurationC12cornerRadius12CoreGraphics7CGFloatVvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isHidden",
             "printedName": "isHidden",
             "children": [
@@ -26195,470 +26571,491 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "FloatLiteral",
+      "offset": 547,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "FloatLiteral",
+      "offset": 715,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "FloatLiteral",
+      "offset": 799,
+      "length": 4,
+      "value": "12.0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "BooleanLiteral",
-      "offset": 529,
+      "offset": 903,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 919,
+      "offset": 1293,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 934,
+      "offset": 1308,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 976,
+      "offset": 1350,
       "length": 12,
       "value": "0.3411764801"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 997,
+      "offset": 1371,
       "length": 12,
       "value": "0.6235294342"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 1017,
+      "offset": 1391,
       "length": 12,
       "value": "0.1686274558"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1038,
+      "offset": 1412,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 1065,
+      "offset": 1439,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "StringLiteral",
-      "offset": 1178,
+      "offset": 1552,
       "length": 44,
       "value": "\"MiSnapSuccessCheckmarkViewConfiguration:\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 1557,
+      "offset": 1931,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 1593,
+      "offset": 1967,
       "length": 4,
       "value": "0.01"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "StringLiteral",
-      "offset": 1675,
+      "offset": 2049,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2391,
+      "offset": 2765,
       "length": 5,
       "value": "0.177"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2416,
+      "offset": 2790,
       "length": 5,
       "value": "0.492"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2481,
+      "offset": 2855,
       "length": 5,
       "value": "0.203"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2506,
+      "offset": 2880,
       "length": 5,
       "value": "0.515"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2536,
+      "offset": 2910,
       "length": 5,
       "value": "0.035"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2561,
+      "offset": 2935,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2563,
+      "offset": 2937,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2582,
+      "offset": 2956,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2584,
+      "offset": 2958,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2598,
+      "offset": 2972,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2655,
+      "offset": 3029,
       "length": 5,
       "value": "0.415"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2680,
+      "offset": 3054,
       "length": 5,
       "value": "0.777"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2745,
+      "offset": 3119,
       "length": 5,
       "value": "0.438"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2770,
+      "offset": 3144,
       "length": 5,
       "value": "0.751"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2800,
+      "offset": 3174,
       "length": 5,
       "value": "0.035"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2825,
+      "offset": 3199,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2827,
+      "offset": 3201,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2846,
+      "offset": 3220,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2848,
+      "offset": 3222,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2862,
+      "offset": 3236,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2919,
+      "offset": 3293,
       "length": 5,
       "value": "0.823"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 2944,
+      "offset": 3318,
       "length": 5,
       "value": "0.419"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 3009,
+      "offset": 3383,
       "length": 5,
       "value": "0.796"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 3034,
+      "offset": 3408,
       "length": 5,
       "value": "0.396"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 3064,
+      "offset": 3438,
       "length": 5,
       "value": "0.035"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3089,
+      "offset": 3463,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3091,
+      "offset": 3465,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3111,
+      "offset": 3485,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3114,
+      "offset": 3488,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3128,
+      "offset": 3502,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3185,
-      "length": 5,
-      "value": "0.762"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3210,
-      "length": 5,
-      "value": "0.308"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3275,
-      "length": 5,
-      "value": "0.735"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3300,
-      "length": 5,
-      "value": "0.332"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3330,
-      "length": 5,
-      "value": "0.035"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3355,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3358,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3377,
-      "length": 2,
-      "value": "-3"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3380,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3394,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3451,
-      "length": 5,
-      "value": "0.442"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3476,
-      "length": 5,
-      "value": "0.577"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3534,
-      "length": 5,
-      "value": "0.288"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
       "offset": 3559,
       "length": 5,
-      "value": "0.423"
+      "value": "0.762"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 3624,
+      "offset": 3584,
       "length": 5,
-      "value": "0.265"
+      "value": "0.308"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
       "offset": 3649,
       "length": 5,
-      "value": "0.450"
+      "value": "0.735"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 3679,
+      "offset": 3674,
+      "length": 5,
+      "value": "0.332"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3704,
       "length": 5,
       "value": "0.035"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3704,
+      "offset": 3729,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3707,
+      "offset": 3732,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3726,
+      "offset": 3751,
       "length": 2,
       "value": "-3"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3729,
+      "offset": 3754,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3743,
+      "offset": 3768,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 3800,
+      "offset": 3825,
+      "length": 5,
+      "value": "0.442"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3850,
+      "length": 5,
+      "value": "0.577"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3908,
+      "length": 5,
+      "value": "0.288"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3933,
+      "length": 5,
+      "value": "0.423"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3998,
+      "length": 5,
+      "value": "0.265"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4023,
+      "length": 5,
+      "value": "0.450"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4053,
+      "length": 5,
+      "value": "0.035"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4078,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4081,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4100,
+      "length": 2,
+      "value": "-3"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4103,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4117,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4174,
       "length": 5,
       "value": "0.177"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "FloatLiteral",
-      "offset": 3825,
+      "offset": 4199,
       "length": 5,
       "value": "0.492"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapSuccessCheckmarkView.swift",
       "kind": "StringLiteral",
-      "offset": 1334,
+      "offset": 1708,
       "length": 26,
       "value": "\"MiSnapAssetManager.MiSnapSuccessCheckmarkView\""
     },
@@ -29788,1175 +30185,1175 @@
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
       "offset": 10701,
-      "length": 4,
-      "value": "1.05"
+      "length": 3,
+      "value": "1.1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10900,
+      "offset": 10899,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10904,
+      "offset": 10903,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11149,
+      "offset": 11148,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11276,
+      "offset": 11275,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 11478,
+      "offset": 11477,
       "length": 4,
       "value": "1.78"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11499,
+      "offset": 11498,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11504,
+      "offset": 11503,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11666,
+      "offset": 11665,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 11795,
+      "offset": 11794,
       "length": 4,
       "value": "1.78"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11816,
+      "offset": 11815,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11821,
+      "offset": 11820,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11971,
+      "offset": 11970,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12080,
+      "offset": 12079,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12465,
+      "offset": 12464,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12471,
+      "offset": 12470,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12526,
+      "offset": 12525,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12532,
+      "offset": 12531,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 13432,
+      "offset": 13431,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 13460,
+      "offset": 13459,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 14044,
+      "offset": 14043,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14626,
+      "offset": 14625,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14757,
+      "offset": 14756,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 15561,
+      "offset": 15560,
       "length": 3,
       "value": "\"P\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15604,
+      "offset": 15603,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15610,
+      "offset": 15609,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 15633,
+      "offset": 15632,
       "length": 5,
       "value": "0.068"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 15661,
+      "offset": 15660,
       "length": 5,
       "value": "0.068"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15782,
+      "offset": 15781,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 15892,
+      "offset": 15891,
       "length": 4,
       "value": "0.82"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 15945,
+      "offset": 15944,
       "length": 5,
       "value": "0.934"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16000,
+      "offset": 15999,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 16098,
+      "offset": 16097,
       "length": 4,
       "value": "0.79"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 16151,
+      "offset": 16150,
       "length": 5,
       "value": "0.005"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 16252,
+      "offset": 16251,
       "length": 4,
       "value": "0.79"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 16305,
+      "offset": 16304,
       "length": 5,
       "value": "0.995"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16353,
+      "offset": 16352,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16359,
+      "offset": 16358,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 16577,
+      "offset": 16576,
       "length": 4,
       "value": "0.06"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 16630,
+      "offset": 16629,
       "length": 4,
       "value": "0.82"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16668,
+      "offset": 16667,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 16757,
+      "offset": 16756,
       "length": 5,
       "value": "0.005"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 16811,
+      "offset": 16810,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 16901,
+      "offset": 16900,
       "length": 5,
       "value": "0.995"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 16955,
+      "offset": 16954,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 17107,
+      "offset": 17106,
       "length": 5,
       "value": "0.888"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17497,
+      "offset": 17496,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17500,
+      "offset": 17499,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17503,
+      "offset": 17502,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 17798,
+      "offset": 17797,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18216,
+      "offset": 18215,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18245,
+      "offset": 18244,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18299,
+      "offset": 18298,
       "length": 5,
       "value": "0.016"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18331,
+      "offset": 18330,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18335,
+      "offset": 18334,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18421,
+      "offset": 18420,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18450,
+      "offset": 18449,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18558,
+      "offset": 18557,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18602,
+      "offset": 18601,
       "length": 6,
       "value": "0.0111"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18695,
+      "offset": 18694,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18724,
+      "offset": 18723,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18768,
+      "offset": 18767,
       "length": 6,
       "value": "0.0222"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18853,
+      "offset": 18852,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18882,
+      "offset": 18881,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19030,
+      "offset": 19029,
       "length": 5,
       "value": "0.065"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19063,
+      "offset": 19062,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19067,
+      "offset": 19066,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19153,
+      "offset": 19152,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19182,
+      "offset": 19181,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19290,
+      "offset": 19289,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19334,
+      "offset": 19333,
       "length": 6,
       "value": "0.0111"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19427,
+      "offset": 19426,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19456,
+      "offset": 19455,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19500,
+      "offset": 19499,
       "length": 6,
       "value": "0.0222"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19585,
+      "offset": 19584,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19614,
+      "offset": 19613,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19758,
+      "offset": 19757,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19811,
+      "offset": 19810,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19841,
+      "offset": 19840,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19875,
+      "offset": 19874,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19879,
+      "offset": 19878,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19981,
+      "offset": 19980,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20011,
+      "offset": 20010,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20105,
+      "offset": 20104,
       "length": 6,
       "value": "0.0111"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20150,
+      "offset": 20149,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20244,
+      "offset": 20243,
       "length": 6,
       "value": "0.0222"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20289,
+      "offset": 20288,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20319,
+      "offset": 20318,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20420,
+      "offset": 20419,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20450,
+      "offset": 20449,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20559,
+      "offset": 20558,
       "length": 5,
       "value": "0.085"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20617,
+      "offset": 20616,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20621,
+      "offset": 20620,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20723,
+      "offset": 20722,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20753,
+      "offset": 20752,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20847,
+      "offset": 20846,
       "length": 6,
       "value": "0.0111"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20892,
+      "offset": 20891,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20986,
+      "offset": 20985,
       "length": 6,
       "value": "0.0222"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21031,
+      "offset": 21030,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21061,
+      "offset": 21060,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21162,
+      "offset": 21161,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21192,
+      "offset": 21191,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21351,
+      "offset": 21350,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21440,
+      "offset": 21439,
       "length": 5,
       "value": "0.444"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 21765,
+      "offset": 21764,
       "length": 32,
       "value": "\"#########  ############  #####\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21837,
+      "offset": 21836,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21843,
+      "offset": 21842,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21866,
+      "offset": 21865,
       "length": 4,
       "value": "0.71"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21893,
+      "offset": 21892,
       "length": 5,
       "value": "0.058"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22014,
+      "offset": 22013,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22139,
+      "offset": 22138,
       "length": 4,
       "value": "0.17"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22192,
+      "offset": 22191,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22245,
+      "offset": 22244,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22346,
+      "offset": 22345,
       "length": 4,
       "value": "0.21"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22399,
+      "offset": 22398,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22502,
+      "offset": 22501,
       "length": 4,
       "value": "0.21"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22555,
+      "offset": 22554,
       "length": 4,
       "value": "0.40"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22660,
+      "offset": 22659,
       "length": 4,
       "value": "0.21"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22713,
+      "offset": 22712,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22816,
+      "offset": 22815,
       "length": 4,
       "value": "0.21"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22869,
+      "offset": 22868,
       "length": 4,
       "value": "0.95"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23090,
+      "offset": 23089,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23143,
+      "offset": 23142,
       "length": 4,
       "value": "0.84"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23181,
+      "offset": 23180,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23273,
+      "offset": 23272,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23326,
+      "offset": 23325,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23419,
+      "offset": 23418,
       "length": 4,
       "value": "0.40"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23472,
+      "offset": 23471,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23567,
+      "offset": 23566,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23620,
+      "offset": 23619,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23713,
+      "offset": 23712,
       "length": 4,
       "value": "0.95"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23766,
+      "offset": 23765,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23918,
+      "offset": 23917,
       "length": 5,
       "value": "0.333"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24190,
+      "offset": 24189,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24196,
+      "offset": 24195,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24316,
+      "offset": 24315,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24319,
+      "offset": 24318,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24322,
+      "offset": 24321,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24689,
+      "offset": 24688,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 24777,
+      "offset": 24776,
       "length": 5,
       "value": "0.333"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 24968,
+      "offset": 24967,
       "length": 9,
       "value": "\"ENDORSE\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25017,
+      "offset": 25016,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25023,
+      "offset": 25022,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25047,
+      "offset": 25046,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25074,
+      "offset": 25073,
       "length": 4,
       "value": "0.11"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25194,
+      "offset": 25193,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25319,
+      "offset": 25318,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25371,
+      "offset": 25370,
       "length": 4,
       "value": "0.16"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25418,
+      "offset": 25417,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25516,
+      "offset": 25515,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25568,
+      "offset": 25567,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25668,
+      "offset": 25667,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25720,
+      "offset": 25719,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25941,
+      "offset": 25940,
       "length": 4,
       "value": "0.84"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25994,
+      "offset": 25993,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26037,
+      "offset": 26036,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 26126,
+      "offset": 26125,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 26179,
+      "offset": 26178,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 26269,
+      "offset": 26268,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 26322,
+      "offset": 26321,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 26474,
+      "offset": 26473,
       "length": 5,
       "value": "0.555"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26746,
+      "offset": 26745,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26752,
+      "offset": 26751,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26872,
+      "offset": 26871,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26875,
+      "offset": 26874,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26878,
+      "offset": 26877,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 27140,
+      "offset": 27139,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 27228,
+      "offset": 27227,
       "length": 5,
       "value": "0.444"
     },

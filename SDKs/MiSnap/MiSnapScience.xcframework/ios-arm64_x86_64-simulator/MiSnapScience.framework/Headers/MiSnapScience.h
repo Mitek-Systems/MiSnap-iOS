@@ -43,6 +43,10 @@
  */
 @property (nonatomic) UIInterfaceOrientation orientation;
 /**
+ Indicates whether an anlyzed frame is the final one acquired in Manual mode
+ */
+@property (nonatomic) BOOL isFinalManualFrame;
+/**
  Version
  */
 + (NSString * _Nonnull)version;

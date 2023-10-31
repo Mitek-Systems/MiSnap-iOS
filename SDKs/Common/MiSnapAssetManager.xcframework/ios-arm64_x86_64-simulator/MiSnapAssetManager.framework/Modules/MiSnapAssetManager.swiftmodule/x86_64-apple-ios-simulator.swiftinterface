@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapAssetManager
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapAssetManager
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import MiSnapAssetManager
 import Swift
@@ -234,6 +234,10 @@ extension CoreFoundation.CGSize {
 @_inheritsConvenienceInitializers @objc public class MiSnapSuccessConfiguration : ObjectiveC.NSObject {
   @objc public var checkmark: MiSnapSuccessCheckmarkViewConfiguration
   @objc public var message: MiSnapLabelConfiguration
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var borderColor: UIKit.UIColor
+  @objc public var borderWidth: CoreFoundation.CGFloat
+  @objc public var cornerRadius: CoreFoundation.CGFloat
   @objc public var isHidden: Swift.Bool
   @objc override dynamic public init()
   @objc deinit

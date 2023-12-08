@@ -140,8 +140,8 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 | iPhone 8                         | 16.4.1       |
 | iPhone SE (1nd gen)              | 13.5.1       |
 | iPhone 7                         | 15.7.3       |
-| iPad Pro  (12.9-inch) (2nd gen)  | 16.1         |
-| iPad (10th gen)                  | 16.1         |
+| iPad Pro  (12.9-inch) (2nd gen)  | 13.1         |
+| iPad (10th gen)                  | 16.1.1       |
 
 </center>
 

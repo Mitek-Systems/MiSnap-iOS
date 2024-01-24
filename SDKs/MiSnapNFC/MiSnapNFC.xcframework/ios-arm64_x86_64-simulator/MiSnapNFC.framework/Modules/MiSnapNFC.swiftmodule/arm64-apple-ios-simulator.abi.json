@@ -12938,554 +12938,561 @@
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
+      "kind": "StringLiteral",
+      "offset": 21495,
+      "length": 5,
+      "value": "\"rou\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 21491,
+      "offset": 21510,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 21524,
+      "offset": 21543,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 21828,
+      "offset": 21847,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 21861,
+      "offset": 21880,
       "length": 24,
       "value": "\"\nReading \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 21884,
+      "offset": 21903,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 22194,
+      "offset": 22213,
       "length": 29,
       "value": "\"misnap_nfc_sdk_info_reading\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 22227,
+      "offset": 22246,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 22358,
+      "offset": 22377,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 22480,
+      "offset": 22499,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 22685,
+      "offset": 22704,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 22764,
+      "offset": 22783,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 23193,
+      "offset": 23212,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 24606,
+      "offset": 24625,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 25044,
+      "offset": 25063,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 25342,
+      "offset": 25361,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 25890,
+      "offset": 25909,
       "length": 11,
       "value": "\"supported\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 25905,
+      "offset": 25924,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "Array",
-      "offset": 25965,
+      "offset": 25984,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 26077,
+      "offset": 26096,
       "length": 21,
       "value": "\"Session invalidated\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 26117,
+      "offset": 26136,
       "length": 21,
       "value": "\"Class not supported\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 26510,
+      "offset": 26529,
       "length": 29,
       "value": "\"INCOMPATIBLE_ENCRYPTION_ALG\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 26669,
+      "offset": 26688,
       "length": 18,
       "value": "\"DG_14_CA_MISSING\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 26789,
+      "offset": 26808,
       "length": 23,
       "value": "\"AUTHENTICATION_FAILED\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27170,
+      "offset": 27189,
       "length": 11,
       "value": "\"supported\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 27185,
+      "offset": 27204,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "Array",
-      "offset": 27241,
+      "offset": 27260,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27322,
+      "offset": 27341,
       "length": 17,
       "value": "\"NOT_IMPLEMENTED\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27468,
+      "offset": 27487,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 27481,
+      "offset": 27500,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27702,
+      "offset": 27721,
       "length": 27,
       "value": "\"CA error - \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27728,
+      "offset": 27747,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27823,
+      "offset": 27842,
       "length": 80,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27881,
+      "offset": 27900,
       "length": 1,
       "value": "\": CA - \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27902,
+      "offset": 27921,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28024,
+      "offset": 28043,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 28037,
+      "offset": 28056,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28150,
+      "offset": 28169,
       "length": 9,
       "value": "\"reasons\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28439,
+      "offset": 28458,
       "length": 33,
       "value": "\"TagError reading tag - \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28471,
+      "offset": 28490,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28574,
+      "offset": 28593,
       "length": 95,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28632,
+      "offset": 28651,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28651,
+      "offset": 28670,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28668,
+      "offset": 28687,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28750,
+      "offset": 28769,
       "length": 41,
       "value": "\"Unexpected error reading tag - \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28790,
+      "offset": 28809,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 28958,
+      "offset": 28977,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 29779,
+      "offset": 29798,
       "length": 21,
       "value": "\"Session invalidated\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 29814,
+      "offset": 29833,
       "length": 21,
       "value": "\"Class not supported\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30076,
+      "offset": 30095,
       "length": 90,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30134,
+      "offset": 30153,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30153,
+      "offset": 30172,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30165,
+      "offset": 30184,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30201,
+      "offset": 30220,
       "length": 31,
       "value": "\"Security status not satisfied\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30489,
+      "offset": 30508,
       "length": 16,
       "value": "\"File not found\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30576,
+      "offset": 30595,
       "length": 4,
       "value": "\"dg\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30710,
+      "offset": 30729,
       "length": 11,
       "value": "\"supported\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 30725,
+      "offset": 30744,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30804,
+      "offset": 30823,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 30817,
+      "offset": 30836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30897,
+      "offset": 30916,
       "length": 9,
       "value": "\"reasons\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "Array",
-      "offset": 30910,
+      "offset": 30929,
       "length": 17,
       "value": "[\"DG_14_MISSING\"]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 31140,
+      "offset": 31159,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 31553,
+      "offset": 31572,
       "length": 27,
       "value": "\"SM data objects incorrect\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 31782,
+      "offset": 31801,
       "length": 14,
       "value": "\"Wrong length\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 31818,
+      "offset": 31837,
       "length": 13,
       "value": "\"End of file\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 32186,
+      "offset": 32205,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 32309,
+      "offset": 32328,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 32584,
+      "offset": 32603,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 33508,
+      "offset": 33527,
       "length": 38,
       "value": "\"misnap_nfc_sdk_error_connection_lost\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 33608,
+      "offset": 33627,
       "length": 35,
       "value": "\"misnap_nfc_sdk_error_system_error\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 34175,
+      "offset": 34194,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34402,
+      "offset": 34421,
       "length": 72,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34445,
+      "offset": 34464,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34473,
+      "offset": 34492,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34535,
+      "offset": 34554,
       "length": 87,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34578,
+      "offset": 34597,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34592,
+      "offset": 34611,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34621,
+      "offset": 34640,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 34757,
+      "offset": 34776,
       "length": 5,
       "value": "false"
     },

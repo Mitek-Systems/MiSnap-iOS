@@ -9326,6 +9326,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       }
@@ -11276,594 +11283,594 @@
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
       "offset": 20215,
-      "length": 4,
-      "value": "0.95"
+      "length": 3,
+      "value": "0.9"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20445,
+      "offset": 20444,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20451,
+      "offset": 20450,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20539,
+      "offset": 20538,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20694,
+      "offset": 20693,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20794,
+      "offset": 20793,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 20800,
+      "offset": 20799,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20923,
+      "offset": 20922,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22626,
+      "offset": 22625,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22727,
+      "offset": 22726,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22759,
+      "offset": 22758,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22847,
+      "offset": 22846,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 22937,
+      "offset": 22936,
       "length": 2,
       "value": "-5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 23185,
+      "offset": 23184,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 23233,
+      "offset": 23232,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 23279,
+      "offset": 23278,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 23339,
+      "offset": 23338,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 23399,
+      "offset": 23398,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 23438,
+      "offset": 23437,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 23512,
+      "offset": 23511,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 23641,
+      "offset": 23640,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 23751,
+      "offset": 23750,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 23854,
+      "offset": 23853,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 24807,
+      "offset": 24806,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 24950,
+      "offset": 24949,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 24971,
+      "offset": 24970,
       "length": 28,
       "value": "\"there's no view with tag 4\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 25097,
+      "offset": 25096,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 25102,
+      "offset": 25101,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 25194,
+      "offset": 25193,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 25199,
+      "offset": 25198,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 25265,
+      "offset": 25264,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 25315,
+      "offset": 25314,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25800,
+      "offset": 25799,
       "length": 61,
       "value": "\"instruction_for_\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25860,
+      "offset": 25859,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25896,
+      "offset": 25895,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 26204,
+      "offset": 26203,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26636,
+      "offset": 26635,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "Array",
-      "offset": 27072,
+      "offset": 27071,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27115,
+      "offset": 27114,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 30996,
+      "offset": 30995,
       "length": 39,
       "value": "\"MiSnapTutorialButtonsConfiguration:\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31051,
+      "offset": 31050,
       "length": 27,
       "value": "\"\tbarColor: \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31075,
+      "offset": 31074,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31094,
+      "offset": 31093,
       "length": 26,
       "value": "\"\tCancelConfiguration:\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31136,
+      "offset": 31135,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31187,
+      "offset": 31186,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31199,
+      "offset": 31198,
       "length": 6,
       "value": "\"\t\t\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31209,
+      "offset": 31208,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31229,
+      "offset": 31228,
       "length": 25,
       "value": "\"\tRetryConfiguration:\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31270,
+      "offset": 31269,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31320,
+      "offset": 31319,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31332,
+      "offset": 31331,
       "length": 6,
       "value": "\"\t\t\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31342,
+      "offset": 31341,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31362,
+      "offset": 31361,
       "length": 27,
       "value": "\"\tProceedConfiguration:\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31405,
+      "offset": 31404,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31457,
+      "offset": 31456,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31469,
+      "offset": 31468,
       "length": 6,
       "value": "\"\t\t\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 31479,
+      "offset": 31478,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 31582,
+      "offset": 31581,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 31632,
+      "offset": 31631,
       "length": 4,
       "value": "0.32"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 31736,
+      "offset": 31735,
       "length": 4,
       "value": "0.32"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 31839,
+      "offset": 31838,
       "length": 4,
       "value": "0.32"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32036,
+      "offset": 32035,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32106,
+      "offset": 32105,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32036,
+      "offset": 32035,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 32106,
+      "offset": 32105,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34070,
+      "offset": 34069,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34161,
+      "offset": 34160,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34248,
+      "offset": 34247,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34297,
+      "offset": 34296,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 34351,
+      "offset": 34350,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 34406,
+      "offset": 34405,
       "length": 11,
       "value": "0.371708785"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 34426,
+      "offset": 34425,
       "length": 11,
       "value": "0.371708785"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 34445,
+      "offset": 34444,
       "length": 11,
       "value": "0.371708785"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34465,
+      "offset": 34464,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 34520,
+      "offset": 34519,
       "length": 4,
       "value": "35.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34554,
+      "offset": 34553,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 34658,
+      "offset": 34657,
       "length": 4,
       "value": "20.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34701,
+      "offset": 34700,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 34746,
+      "offset": 34745,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 34791,
+      "offset": 34790,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34979,
+      "offset": 34978,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35026,
+      "offset": 35025,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34979,
+      "offset": 34978,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35026,
+      "offset": 35025,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 35393,
+      "offset": 35392,
       "length": 4,
       "value": "true"
     },

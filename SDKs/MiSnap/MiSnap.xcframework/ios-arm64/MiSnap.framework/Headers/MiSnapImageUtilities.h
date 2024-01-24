@@ -45,14 +45,6 @@
  */
 + (CMSampleBufferRef)sampleBufferFromCGImage:(CGImageRef)image;
 /**
- Returns the sampleBuffer of an image.
-
- @param image Source image in 32-bit ARGB format.
-
- @return A CMSampleBufferRef containing the image data.
- */
-+ (CMSampleBufferRef)sampleBufferFromImage:(UIImage *)image;
-/**
  Returns a UIImage from sampleBuffer data
 
  @param sampleBuffer Source data of an image
@@ -61,14 +53,6 @@
  @return A UIImage representing the image data
  */
 + (UIImage *)imageFromSampleBuffer:(CMSampleBufferRef)sampleBuffer withDeviceOrientation:(UIDeviceOrientation)deviceOrientation;
-/**
- Returns a UIImage from sampleBuffer data with UIDeviceOrientationUnknown
-
- @param sampleBuffer Source data of an image
-
- @return A UIImage representing the image data
- */
-+ (UIImage *)imageFromSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 /**
  Returns a rotated UIImage from UIImage
 

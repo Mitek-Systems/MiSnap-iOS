@@ -1,7 +1,7 @@
 framework module MiSnapAssetManager {
   umbrella header "MiSnapAssetManager.h"
-
   export *
+
   module * { export * }
 }
 

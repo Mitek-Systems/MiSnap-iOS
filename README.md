@@ -125,54 +125,25 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 <center>
 
 | Device                           | Version      |
-| :-----:                          | :-----:      |
-| iPhone 14 Pro Max                | 16.1         |
-| iPhone 14 Plus                   | 16.0.1       |
-| iPhone SE (3rd gen)              | 16.1         |
-| iPhone 13 Pro Max                | 16.1         |
-| iPhone 13                        | 16.1         |
-|                                  | 16.0.2       |
-| iPhone 13 mini                   | 16.1         |
-|                                  | 15.0         |
-| iPhone 12 Pro Max                | 16.1         |
-|                                  | 16.0         |
-| iPhone 12                        | 16.1         |
-|                                  | 15.5         |
-|                                  | 14.1         |
-| iPhone 12 mini                   | 16.2         |
-|                                  | 14.2         |
-| iPhone SE (2nd gen)              | 16.1         |
-|                                  | 15.6.1       |
-|                                  | 14.0         |
-| iPhone 11 Pro                    | 13.5.1       |
-| iPhone 11                        | 16.1         |
-| iPhone Xs Max                    | 16.0.3       |
-|                                  | 13.3.1       |
-| iPhone Xr                        | 16.0.3       |
-|                                  | 15.7         |
-| iPhone X                         | 15.6.1       |
-| iPhone 8                         | 16.1         |
-|                                  | 15.6.1       |
-|                                  | 13.1.3       |
-| iPhone 7 Plus                    | 15.6.1       |
-|                                  | 14.4         |
-| iPhone 7                         | 15.6         |
-|                                  | 15.3         |
-|                                  | 15.0         |
-| iPhone 6s Plus                   | 11.4.1       |
-| iPhone 6s                        | 15.7         |
-|                                  | 15.6.1       |
-| iPhone 6                         | 12.5.5       |
-| iPad Pro  (12.9-inch) (2nd gen)  | 16.1         |
-| iPad Pro  (12.9-inch)            | 13.1         |
-| iPad Pro  (10.5-inch)            | 16.1         |
-| iPad (9th gen)                   | 16.1         |
-|                                  | 15.6         |
-| iPad Air (4th gen)               | 16.1         |
-| iPad Air                         | 16.1         |
-|                                  | 12.5.5       |
-| iPad mini 5                      | 15.7         |
-| iPad mini 3                      | 12.4.3       |
+| :-----                           | :-----:      |
+| iPhone 15 Plus                   | 17.0         |
+| iPhone 14 Pro Max                | 17.0.3       |
+| iPhone 14 Plus                   | 16.5.1       |
+| iPhone 13                        | 17.0         |
+| iPhone 13 mini                   | 16.4.1       |
+| iPhone 12 Pro Max                | 16.4         |
+| iPhone 12                        | 14.1         |
+| iPhone 12 mini                   | 14.2         |
+| iPhone SE (2nd gen)              | 14.0         |
+| iPhone 11 Pro                    | 16.0         |
+| iPhone 11                        | 15.0         |
+| iPhone Xs Max                    | 13.3.1       |
+| iPhone 8                         | 16.4.1       |
+| iPhone SE (1nd gen)              | 13.5.1       |
+| iPhone 7                         | 15.7.3       |
+| iPad Air (5th gen)               | 17.1.2       |
+| iPad Pro  (12.9-inch) (2nd gen)  | 13.1         |
+| iPad (10th gen)                  | 16.1.1       |
 
 </center>
 

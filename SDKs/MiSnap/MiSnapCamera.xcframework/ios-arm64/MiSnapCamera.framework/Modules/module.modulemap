@@ -1,6 +1,6 @@
 framework module MiSnapCamera {
   umbrella header "MiSnapCamera.h"
-
   export *
+
   module * { export * }
 }

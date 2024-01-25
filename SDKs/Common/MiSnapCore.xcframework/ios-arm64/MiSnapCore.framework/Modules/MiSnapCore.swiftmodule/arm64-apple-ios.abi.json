@@ -22046,29 +22046,29 @@
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
       "offset": 10934,
-      "length": 32,
-      "value": "\"\n\tApplication identifiers:\n\""
+      "length": 30,
+      "value": "\"\n\tApplication identifiers:\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "Array",
-      "offset": 10991,
+      "offset": 10989,
       "length": 25,
       "value": "[\"ios\", \"android\", \"web\"]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 11169,
+      "offset": 11167,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 11187,
-      "length": 12,
-      "value": "\"\t\tiOS:\n\""
+      "offset": 11185,
+      "length": 14,
+      "value": "\"\n\t\tiOS:\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
@@ -22081,223 +22081,223 @@
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
       "offset": 11235,
-      "length": 16,
-      "value": "\"\t\tAndroid:\n\""
+      "length": 18,
+      "value": "\"\n\t\tAndroid:\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 11269,
+      "offset": 11271,
       "length": 5,
       "value": "\"web\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 11287,
-      "length": 12,
-      "value": "\"\t\tWeb:\n\""
+      "offset": 11289,
+      "length": 14,
+      "value": "\"\n\t\tWeb:\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 11405,
+      "offset": 11409,
       "length": 18,
       "value": "\"\t\t\t\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 11420,
+      "offset": 11424,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11460,
+      "offset": 11464,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11476,
+      "offset": 11480,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 11504,
+      "offset": 11508,
       "length": 27,
       "value": "\"\n\tVersion: \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 11528,
+      "offset": 11532,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11651,
+      "offset": 11655,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "Array",
-      "offset": 11672,
+      "offset": 11676,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "Array",
-      "offset": 11695,
+      "offset": 11699,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "Dictionary",
-      "offset": 11750,
+      "offset": 11754,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12061,
+      "offset": 12065,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12118,
+      "offset": 12122,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12244,
+      "offset": 12248,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12461,
+      "offset": 12465,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 12645,
+      "offset": 12649,
       "length": 48,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 12658,
+      "offset": 12662,
       "length": 2,
       "value": "\" is not supported for verification\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12714,
+      "offset": 12718,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13001,
+      "offset": 13005,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13166,
+      "offset": 13170,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13184,
+      "offset": 13188,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13378,
+      "offset": 13382,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 13466,
+      "offset": 13470,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13495,
+      "offset": 13499,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 13540,
+      "offset": 13544,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 13619,
+      "offset": 13623,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "StringLiteral",
-      "offset": 13630,
+      "offset": 13634,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13724,
+      "offset": 13728,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13821,
+      "offset": 13825,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13865,
+      "offset": 13869,
       "length": 5,
       "value": "false"
     }

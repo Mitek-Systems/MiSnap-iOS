@@ -1,7 +1,7 @@
 framework module MiSnapNFC {
   umbrella header "MiSnapNFC.h"
-
   export *
+
   module * { export * }
 }
 

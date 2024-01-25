@@ -1,7 +1,7 @@
 framework module MiSnapFacialCaptureUX {
   umbrella header "MiSnapFacialCaptureUX.h"
-
   export *
+
   module * { export * }
 }
 

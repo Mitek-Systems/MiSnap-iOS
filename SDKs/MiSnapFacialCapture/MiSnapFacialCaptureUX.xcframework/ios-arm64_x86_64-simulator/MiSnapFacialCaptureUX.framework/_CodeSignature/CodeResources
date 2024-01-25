@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapFacialCaptureUX-Swift.h</key>
 		<data>
-		G0G/w/ZBbK39WjJyk0U2KEsuqjw=
+		pFznw7OlRfRPJIEGaHfJ9xao4wo=
 		</data>
 		<key>Headers/MiSnapFacialCaptureUX.h</key>
 		<data>
@@ -14,51 +14,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dcq32jWUSqataeZ37uHab9p0TG0=
+		hqwzhvuSuOsRYV7QcyQHBKMwLqw=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		/h1RRZJLmsGe8DWotXDkJ7X9vNE=
+		FmPyZR/XhVFdykRd6eylsGtUkQI=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		AZdbFR5+BQxSfMW5ehCmHg5kJS8=
+		iOwT1U1L5mpFChmYu1oieU/Mr+Y=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9gZjDaM/QRwRQSck+Q2zYHJfn8M=
+		g5c0G6kH+qmaNP318Z8eM+JiZj0=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AZdbFR5+BQxSfMW5ehCmHg5kJS8=
+		iOwT1U1L5mpFChmYu1oieU/Mr+Y=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0kUlOALRL4nnt9Tko0QWhUi4WVA=
+		RK7/dnWn0+ErcKWFSFfK3iIvd88=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/h1RRZJLmsGe8DWotXDkJ7X9vNE=
+		FmPyZR/XhVFdykRd6eylsGtUkQI=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dN2vQuGE8EG49sYhA4yZ6NQ0UTk=
+		QMQD4HBemjnaZUgesyBNFSBxx+g=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		TGQ32O75LYg3wcVJp8LCVBwtsFM=
+		YJff7GPj7HskWKVdOe3cVH9sRXE=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dN2vQuGE8EG49sYhA4yZ6NQ0UTk=
+		QMQD4HBemjnaZUgesyBNFSBxx+g=
 		</data>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fF0eVLxIOAz3XDXgEwqK+3/Uf5U=
+		hHfS3QWAwK9Pr3F2Pg1/sVK9od8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		iwb6Uc/CnVFZKc/oFK806pSYSJw=
+		NA6GXzY1qUYWzzaaUzr1QjdCO7g=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		gHOGnJz0bPpVsIjsvEATcGgQqh0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TdSmPjXSgs7YvP89GoWmRV60EY4LmxXfajtg8kobRuY=
+			4Una3q6NYXx7sUx7I/DSamqFPFTkTwxE+cwCA2hfs7o=
 			</data>
 		</dict>
 		<key>Headers/MiSnapFacialCaptureUX.h</key>
@@ -81,77 +85,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GVOIGe3Ar0yaXH1ZXXuBZ7gr8kEeV18gmml5YRqjK/c=
+			uPFz0NBp6Ey/qXoe+IMyfp25BkuvdAzwawnjVEBmE7k=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qcogluaFQMyShmnSRgc59mtIOSOeGEdbLfrbXG0Z8n0=
+			g4mddW3SxtTWyM9iUGpxBe9yFKVKocmZCVJpan0+uBk=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SLzGCF1nuwYg6liVtNxZHcA1snBn1+9Je1ZqV7Ca2SE=
+			7KPE3FjMcmEIfl7x9u7TbKmtFZLtf72HdgCkbmYj44k=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qcogluaFQMyShmnSRgc59mtIOSOeGEdbLfrbXG0Z8n0=
+			g4mddW3SxtTWyM9iUGpxBe9yFKVKocmZCVJpan0+uBk=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HRVqmQjaICVcLyZncwNI/OA3wTySdtLELql4Ehf3b+4=
+			aQaDihgqm5uvcTROBAS/+GkX+oER0VOWhOE/ZpPBRQo=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GVOIGe3Ar0yaXH1ZXXuBZ7gr8kEeV18gmml5YRqjK/c=
+			uPFz0NBp6Ey/qXoe+IMyfp25BkuvdAzwawnjVEBmE7k=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9KmlmKLigNid7GpswYwhD8E8BgyU2BoIILaCDJ7sn+Y=
+			AU1gKqk7oMT/iXEZnCN3Ds3PAUgAjc8n8OUlUt1bs0Q=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iZhioe4d19aKBw3ZYC9TdPGu1HGNHrKtD1kVoNlqjR4=
+			3aMVOtFZTb/JXCdKGtJ5Mu6nh2QWjlU1a7nH5F475W8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9KmlmKLigNid7GpswYwhD8E8BgyU2BoIILaCDJ7sn+Y=
+			AU1gKqk7oMT/iXEZnCN3Ds3PAUgAjc8n8OUlUt1bs0Q=
 			</data>
 		</dict>
 		<key>Modules/MiSnapFacialCaptureUX.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6tQV4oM0YOXzJAB324XP1wXuPqYARCF5Wjan4BQdQCc=
+			f61EVZ4xPFBe4wwrmLaZekp3WYt+YiqbFHCSE1SGRFk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YACPNdmh/duC96NbntHSP5U+qAjGnhdXSsCHfOEwD2U=
+			Kde755nNtBdeubH4921TESX/CkOgLFsmXJdi3/Nb/WU=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LAz6xxplwGuHoSERfDOujJWKdufqjNjyQp+dTWahkeI=
 			</data>
 		</dict>
 	</dict>

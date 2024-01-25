@@ -125,8 +125,9 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 <center>
 
 | Device                           | Version      |
-| :-----:                          | :-----:      |
+| :-----                           | :-----:      |
 | iPhone 15 Plus                   | 17.0         |
+| iPhone 14 Pro Max                | 17.0.3       |
 | iPhone 14 Plus                   | 16.5.1       |
 | iPhone 13                        | 17.0         |
 | iPhone 13 mini                   | 16.4.1       |
@@ -140,6 +141,7 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 | iPhone 8                         | 16.4.1       |
 | iPhone SE (1nd gen)              | 13.5.1       |
 | iPhone 7                         | 15.7.3       |
+| iPad Air (5th gen)               | 17.1.2       |
 | iPad Pro  (12.9-inch) (2nd gen)  | 13.1         |
 | iPad (10th gen)                  | 16.1.1       |
 

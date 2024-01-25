@@ -1,7 +1,7 @@
 framework module MiSnapCore {
   umbrella header "MiSnapCore.h"
-
   export *
+
   module * { export * }
 }
 

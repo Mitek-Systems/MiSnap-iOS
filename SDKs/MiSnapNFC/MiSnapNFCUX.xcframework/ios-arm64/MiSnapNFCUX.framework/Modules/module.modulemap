@@ -1,7 +1,7 @@
 framework module MiSnapNFCUX {
   umbrella header "MiSnapNFCUX.h"
-
   export *
+
   module * { export * }
 }
 

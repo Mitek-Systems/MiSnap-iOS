@@ -1,7 +1,7 @@
 framework module MiSnapDeviceKit {
   umbrella header "MiSnapDeviceKit.h"
-
   export *
+
   module * { export * }
 }
 

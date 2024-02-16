@@ -1,6 +1,6 @@
 framework module MiSnapBarcodeScanner {
   umbrella header "MiSnapBarcodeScanner.h"
-
   export *
+
   module * { export * }
 }

@@ -27,9 +27,7 @@ import MiSnapLicenseManager
                 analyzer.update(orientation)
             }
             if let camera = camera {
-                if parameters.science.orientationMode == .deviceLandscapeGuideLandscape && orientation.isPortrait {
-                    camera.orientation = .landscapeRight
-                } else {
+                if parameters.science.orientationMode != .deviceLandscapeGuideLandscape {
                     camera.orientation = orientation
                 }
                 camera.updatePreviewLayer(orientation)
@@ -50,8 +48,17 @@ import MiSnapLicenseManager
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        orientation = UIApplication.shared.statusBarOrientation
+        orientation = preferredInterfaceOrientationForPresentation
         start()
+    }
+    
+    public override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        coordinator.animate { [weak self] _ in
+            guard let self = self else { return }
+            self.orientation = UIApplication.shared.statusBarOrientation
+        }
     }
     
     public override var shouldAutorotate: Bool {

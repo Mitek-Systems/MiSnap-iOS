@@ -1,6 +1,6 @@
 framework module MiSnapLicenseManager {
   umbrella header "MiSnapLicenseManager.h"
-
   export *
+
   module * { export * }
 }

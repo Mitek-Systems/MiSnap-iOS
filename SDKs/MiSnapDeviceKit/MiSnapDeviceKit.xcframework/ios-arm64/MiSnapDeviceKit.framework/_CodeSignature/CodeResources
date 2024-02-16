@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapDeviceKit-Swift.h</key>
 		<data>
-		hsd4uKpj22gwZsr+27vSNRjjDv0=
+		4XK1n/rBktXfII23fjKrm/1hfJc=
 		</data>
 		<key>Headers/MiSnapDeviceKit.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vB1qEXJRkMCz/HrUuuW0NCt/G+A=
+		/v16YwBv+n5alsswpdSOHsqNBGA=
 		</data>
 		<key>Modules/MiSnapDeviceKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -22,23 +22,27 @@
 		</data>
 		<key>Modules/MiSnapDeviceKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ujeELy2dvujiHqeGyMgCVEb877s=
+		oWbB2nfrzm1VFEJjRTcWOcr2UK4=
 		</data>
 		<key>Modules/MiSnapDeviceKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		1v+iKWdo2XCre0MzIeNnfGJ3jZ8=
+		2bquLlKPPZXAj7ncZaKKwjHqfgE=
 		</data>
 		<key>Modules/MiSnapDeviceKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ujeELy2dvujiHqeGyMgCVEb877s=
+		oWbB2nfrzm1VFEJjRTcWOcr2UK4=
 		</data>
 		<key>Modules/MiSnapDeviceKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YHPLcO4iIrqWYr+N6UM906XhYtw=
+		QagxB9KZewXbGf6ERLfaj8GLmkQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		fKp83TU+OO59UoQr3VbUlCsN+sE=
+		xoh7CQT73e4X04cX/vjs3aFJTdc=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		MU5ak/5/g5I9amyWl3I7O999qvM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -47,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xUzaYLWH5NE4QSRkPQdHZbFxEge01NwhythqtHdnPMU=
+			MacOTDvn0+z458hGfmo4YGAeyyXF+ItWG/9lCmUIEKU=
 			</data>
 		</dict>
 		<key>Headers/MiSnapDeviceKit.h</key>
@@ -68,35 +72,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VilCfnEmj2MEdZ+jGR9Gmb08/9HIeB3nHnaCJgkBQhc=
+			ILiGzWDrXdITeH9HYEdg94TIWdyMhY1Bu5ciYOSMTJg=
 			</data>
 		</dict>
 		<key>Modules/MiSnapDeviceKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XsViU5fbeyosFpQqH867Cbjq/Xw8NirEb4DlkziTynk=
+			CC05tk+JF2VEYrvBLMPX+QhI2QqtWIZ/3jykwGT6hk8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapDeviceKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VilCfnEmj2MEdZ+jGR9Gmb08/9HIeB3nHnaCJgkBQhc=
+			ILiGzWDrXdITeH9HYEdg94TIWdyMhY1Bu5ciYOSMTJg=
 			</data>
 		</dict>
 		<key>Modules/MiSnapDeviceKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SujG7ZeLiMd4M6ZwK2kpNmaIFbxZloWUb/JRZuda/TA=
+			KlwolTC2kHK2AeIsefCJ6xU3R0xirsiLX7qVSr1gtjc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mB6m7oGxSGlJV4xB6dspx/CCZwWIVb/GqWMeVnHBW+8=
+			DTwt5sy42nrjcDLTJ9OzwPkfTaqDCRAvImUDBGRZ8ac=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Pti4tHueh33klsEm3Ev/mJYhjG8cvk0vhqOgRTqder0=
 			</data>
 		</dict>
 	</dict>

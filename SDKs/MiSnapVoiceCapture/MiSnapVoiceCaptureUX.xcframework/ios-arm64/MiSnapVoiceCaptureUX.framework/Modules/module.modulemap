@@ -1,7 +1,7 @@
 framework module MiSnapVoiceCaptureUX {
   umbrella header "MiSnapVoiceCaptureUX.h"
-
   export *
+
   module * { export * }
 }
 

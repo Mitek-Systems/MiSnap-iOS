@@ -426,31 +426,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8MX4ABALXsq2ZnLf5jL5uUI9EDg=
+		JbV+jGvubecGfnaeH1CmQfmoiRE=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		PgjKP7NI9sUu4A5k8E0gYTdcjfE=
+		6k6JrpD3SsKpssDde/AvfU1LEAo=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		GezMlf+SGrzFfNiTw1zuXPzUyOc=
+		9bZhrxtubBOgXxyVqqh/jhQYnKI=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		MPLoCbZJ/tCCQRDIYZrzOcd5tmM=
+		DOePXDjzAiMKg8HyABOVcU2oTy0=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		GezMlf+SGrzFfNiTw1zuXPzUyOc=
+		9bZhrxtubBOgXxyVqqh/jhQYnKI=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		DYr2y9wSL6drAav2zZeAZ4leZqc=
+		Puue53hQWRZjA5GDleA5Oy2ONeQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		IdOnc/OT2EVvlXUA/9gJq7UWFyc=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		87UFAlwJhAiIOk0bl5yb2+F0eaE=
 		</data>
 		<key>geos</key>
 		<data>
@@ -1198,35 +1202,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gsgv5VPxdQANovqI05PTQ2LE0GC5S5IfG1m7vJMjwzY=
+			WOcVWdt9xqF3vz1T3NZnXb3PdAzL0Z6SxbznOxVegd8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Iwpp95feF2yPNokQmAH1g4sVVHw+vVDyu0jjVuZ9bzA=
+			k/O7lvuyvIcEW+isGPAreLsTNcMLrapnLjjeZ01/TVs=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jXzGFOiiQUXLD0WigDsFjbfoB1usywYgef3mOIPzbkw=
+			BQhRbSez+zi0CxqVrNSxl5Oo9N39l3u7xD5Gm4fAWX8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Iwpp95feF2yPNokQmAH1g4sVVHw+vVDyu0jjVuZ9bzA=
+			k/O7lvuyvIcEW+isGPAreLsTNcMLrapnLjjeZ01/TVs=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9rWsTF2IyVavD/LXMcMs7CEDwtYrC30QdKoX7kJc+1c=
+			pHa/l37/WUb8QObgXa+h+LJTuW15xdpg4pcndn/3b+o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1234,6 +1238,13 @@
 			<key>hash2</key>
 			<data>
 			chUz1K9PVTyAI7LEMpn/SrBzP12warFxCEdlMejUbQY=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uDUhwq2hQite4tKIm17+rUB4aImBXFv0bVaqFqaSCf0=
 			</data>
 		</dict>
 		<key>geos</key>

@@ -141,5 +141,9 @@ MiSnapFacialCaptureAnalyzer is a class that defines an interface for controlling
  Logs module with its name and version in MIBI
  */
 - (void)logModuleWithName:(NSString *)name version:(NSString *)version;
+/**
+ Logs low light detected event
+ */
+- (void)logLowLightDetected;
 
 @end

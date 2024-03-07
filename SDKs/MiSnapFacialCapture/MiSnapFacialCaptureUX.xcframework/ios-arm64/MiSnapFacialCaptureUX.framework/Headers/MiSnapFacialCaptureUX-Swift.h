@@ -415,6 +415,18 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX44MiSnapFacialCaptureLocalizationConfigu
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+/// Low light sensitivity which in low light activates a feature where a screen brightness and UI are adjusted to provide more light
+typedef SWIFT_ENUM(NSInteger, MiSnapFacialCaptureLowLightSensitivity, open) {
+/// Not sensitive to low light at all, i.e. no brightness and UI adjustments for low light
+  MiSnapFacialCaptureLowLightSensitivityNone = 0,
+/// A lighting condition is perceived as very dark
+  MiSnapFacialCaptureLowLightSensitivityLow = 1,
+/// A  lighting condition is perceived as dark
+  MiSnapFacialCaptureLowLightSensitivityMedium = 2,
+/// A lighting condition is perceived as semi dark
+  MiSnapFacialCaptureLowLightSensitivityHigh = 3,
+};
+
 /// Review mode
 typedef SWIFT_ENUM(NSInteger, MiSnapFacialCaptureReviewMode, open) {
 /// Present review screen when an image is acquired in <code>Manual</code> mode only
@@ -554,6 +566,10 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX31MiSnapFacialCaptureUXParameters")
 /// Range: 0…30
 /// Default: 20
 @property (nonatomic) NSTimeInterval timeout;
+/// Low light sensitivity which in low light activates a feature where a screen brightness and UI is adjusted to provide more light
+/// Defaut: <code>.medium</code>
+/// To deactivate override to <code>.none</code>
+@property (nonatomic) enum MiSnapFacialCaptureLowLightSensitivity lowLightSensitivity;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Creates and returns default UX parameters for a provided flow
@@ -613,20 +629,6 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 
 
 
-@interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX)) <MiSnapFacialCaptureTutorialViewControllerDelegate>
-/// Called when a tutorial view controller’s cancel button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialCancelButtonAction;
-/// Called when a tutorial view controller’s continue button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
-/// Called when a tutorial view controller’s retry button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialRetryButtonAction;
-@end
 
 @class NSData;
 
@@ -645,6 +647,21 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 - (void)didFinishRecordingVideo:(NSData * _Nullable)videoData;
 @end
 
+
+@interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX)) <MiSnapFacialCaptureTutorialViewControllerDelegate>
+/// Called when a tutorial view controller’s cancel button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialCancelButtonAction;
+/// Called when a tutorial view controller’s continue button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
+/// Called when a tutorial view controller’s retry button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialRetryButtonAction;
+@end
 
 
 

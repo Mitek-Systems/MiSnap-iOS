@@ -32,8 +32,8 @@ See [here](https://github.com/Mitek-Systems/MiSnap-iOS/releases).
 
 | Technology | Min version |
 | :--- | :---: |
-| Xcode | 14.0 |
-| iOS | 11.0 |
+| Xcode | 15.0 |
+| iOS | 12.0 |
 | iPhone | 6 |
 | iPad | mini (4th generation) |
 
@@ -126,22 +126,52 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 
 | Device                           | Version      |
 | :-----                           | :-----:      |
+| iPhone 15 Pro                    | 17.3         |
 | iPhone 15 Plus                   | 17.0         |
-| iPhone 14 Pro Max                | 17.0.3       |
+| iPhone 15                        | 17.3.1       |
+|                                  | 17.3         |
+|                                  | 17.2         |
+| iPhone 14 Pro Max                | 17.3         |
+|                                  | 17.2         |
+|                                  | 17.0.3       |
+| iPhone 14 Pro                    | 17.4         |
 | iPhone 14 Plus                   | 16.5.1       |
-| iPhone 13                        | 17.0         |
-| iPhone 13 mini                   | 16.4.1       |
+| iPhone 14                        | 17.3         |
+|                                  | 16.7.2       |
+| iPhone 13 Pro Max                | 17.3.1       |
+|                                  | 17.2.1       |
+|                                  | 17.3         |
+| iPhone 13                        | 17.3.1       |
+|                                  | 17.1.2       |
+|                                  | 17.0         |
+| iPhone 13 mini                   | 17.3.1       |
+|                                  | 16.4.1       |
 | iPhone 12 Pro Max                | 16.4         |
-| iPhone 12                        | 14.1         |
-| iPhone 12 mini                   | 14.2         |
-| iPhone SE (2nd gen)              | 14.0         |
-| iPhone 11 Pro                    | 16.0         |
-| iPhone 11                        | 15.0         |
-| iPhone Xs Max                    | 13.3.1       |
+| iPhone 12                        | 17.3         |
+|                                  | 16.3.1       |
+|                                  | 14.1         |
+| iPhone 12 mini                   | 17.3         |
+|                                  | 14.2         |
+| iPhone SE (2nd gen)              | 17.3.1       |
+|                                  | 17.3         |
+|                                  | 14.0         |
+| iPhone 11 Pro                    | 17.3         |
+|                                  | 16.0         |
+| iPhone 11                        | 17.4         |
+|                                  | 15.0         |
+| iPhone Xs Max                    | 16.6         |
+|                                  | 13.3.1       |
+| iPhone Xs                        | 17.2.1       |
+| iPhone Xr                        | 17.4         |
+| iPhone X                         | 16.7         |
 | iPhone 8                         | 16.4.1       |
+|                                  | 16.3         |
 | iPhone SE (1nd gen)              | 13.5.1       |
-| iPhone 7                         | 15.7.3       |
-| iPad Air (5th gen)               | 17.1.2       |
+| iPhone 7                         | 15.8.1       |
+|                                  | 15.7.3       |
+| iPad Air (4th gen)               | 17.1.2       |
+| iPad Air 2                       | 16.7         |
+| iPad Air                         | 17.4         |
 | iPad Pro  (12.9-inch) (2nd gen)  | 13.1         |
 | iPad (10th gen)                  | 16.1.1       |
 
@@ -155,6 +185,7 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 * MiSnapNFC
     * Some iPhone 7 devices fail NFC reading of eDriving License regardless of an iOS version
     * Some iPhone XR devices fail NFC reading of some Italian eIDs
+    * An intermitten chip connection loss when both a device and a document are held still on newer iPhone models (iPhone 12 series and newer) running newer version of iOS (iOS 16 or newer) caused by OS and/or hardware issues. Note, a user should be able to successfully finish reading a chip upon a retry
 * MiSnapFacialCapture
     * On iPhone 7 and earlier, the hint messages take a few seconds to begin appearing. During this time the message label will be blank
 * MiSnapVoiceCapture

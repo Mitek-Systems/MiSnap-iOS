@@ -412,6 +412,8 @@ SWIFT_CLASS("_TtC18MiSnapVoiceCapture24MiSnapVoiceCaptureResult")
 @interface MiSnapVoiceCaptureResult : NSObject
 /// Data representation of a recorded .wav file
 @property (nonatomic, readonly, copy) NSData * _Nullable data;
+/// An encrypted payload used for an additional authentication
+@property (nonatomic, readonly, copy) NSString * _Nullable rts;
 /// Status
 @property (nonatomic, readonly) enum MiSnapVoiceCaptureStatus status;
 /// Speech length, ms

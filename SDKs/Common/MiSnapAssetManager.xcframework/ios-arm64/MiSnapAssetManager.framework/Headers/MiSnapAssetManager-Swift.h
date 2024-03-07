@@ -278,6 +278,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import Foundation;
 @import ObjectiveC;
 @import QuartzCore;
 @import UIKit;
@@ -560,6 +561,12 @@ enum MiSnapGuideAlignment : NSInteger;
 /// Outline configuration
 SWIFT_CLASS("_TtC18MiSnapAssetManager34MiSnapDocumentOutlineConfiguration")
 @interface MiSnapDocumentOutlineConfiguration : NSObject
+/// A custom image that should be used instead of a drawn view
+/// note:
+/// for optimal UX an image asset (.png) should have the exact aspect ratio of a document and should be added to the project in landscape orientation (rotations are handled automatically)
+@property (nonatomic, strong) UIImage * _Nullable image;
+/// Indicates whether an image should be rotated 180 degrees in portrait orientation when guide’s <code>orientationMode</code> is <code>devicePortraitGuidePortrait</code>
+@property (nonatomic) BOOL rotatePortraitImage;
 /// Alignment
 /// note:
 /// used only when orientation mode of <code>MiSnapParameters</code> is set to <code>Device Portrait Guide Landscape</code>
@@ -674,6 +681,9 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapFacialCaptureGuideView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// Creates and returns <code>MiSnapFacialCaptureGuideView</code> with given parameters
 - (nonnull instancetype)initWith:(MiSnapFacialCaptureGuideConfiguration * _Nullable)configuration fill:(CGFloat)fill orientation:(UIInterfaceOrientation)orientation frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+/// Adjusts look and feel for low light
+- (void)adjustForLowLight;
+- (void)removeLowLightAdjustment;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -733,7 +743,7 @@ enum MiSnapFacialCaptureVignetteStyle : NSInteger;
 
 /// Facial Capture vignette configuration
 SWIFT_CLASS("_TtC18MiSnapAssetManager40MiSnapFacialCaptureVignetteConfiguration")
-@interface MiSnapFacialCaptureVignetteConfiguration : NSObject
+@interface MiSnapFacialCaptureVignetteConfiguration : NSObject <NSSecureCoding>
 /// Style
 /// <ul>
 ///   <li>
@@ -751,9 +761,18 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager40MiSnapFacialCaptureVignetteConfiguration"
 @property (nonatomic, strong) UIColor * _Nonnull color;
 /// Alpha
 @property (nonatomic) CGFloat alpha;
+/// Default initialization
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Indicates whether a secure coding is supported
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureCoding;)
++ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
+/// Initialization with coder
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+/// Encodes with coder
+- (void)encodeWithCoder:(NSCoder * _Nonnull)coder;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, strong) MiSnapFacialCaptureVignetteConfiguration * _Nonnull deepCopy;
 @end
 
 /// Facial Capture vignette style
@@ -853,6 +872,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager15MiSnapGuideView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// Creates and returns <code>MiSnapGuideView</code> with given parameters
 - (nonnull instancetype)initFor:(enum MiSnapGuideDocumentType)documentType configuration:(MiSnapGuideViewConfiguration * _Nullable)configuration orientationMode:(enum MiSnapGuideOrientationMode)orientationMode portraitFill:(CGFloat)portraitFill landscapeFill:(CGFloat)landscapeFill orientation:(UIInterfaceOrientation)orientation frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+/// Updates orientation of a guide view
+- (void)update:(UIInterfaceOrientation)orientation;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -1319,6 +1340,7 @@ typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureViewStatus, open) {
 /// Failure
   MiSnapVoiceCaptureViewStatusFailure = 2,
 };
+
 
 
 #endif

@@ -48,6 +48,7 @@ public enum MiSnapNFCTagError : Swift.Error, Swift.Equatable {
   case systemResourceUnavailable
   case systemError
   case invalidLicense(MiSnapCore.MiSnapLicenseStatus)
+  case sessionInvalidated
   public static func == (a: MiSnapNFCTagError, b: MiSnapNFCTagError) -> Swift.Bool
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapNFCResourceLocatorConfiguration : ObjectiveC.NSObject {

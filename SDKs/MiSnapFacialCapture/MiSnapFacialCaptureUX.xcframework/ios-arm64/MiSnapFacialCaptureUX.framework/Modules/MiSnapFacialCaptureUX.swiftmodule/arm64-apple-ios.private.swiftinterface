@@ -45,6 +45,17 @@ import _SwiftConcurrencyShims
     get
   }
 }
+@objc public enum MiSnapFacialCaptureLowLightSensitivity : Swift.Int {
+  case none = 0
+  case low = 1
+  case medium = 2
+  case high = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MiSnapFacialCaptureUXParameters : ObjectiveC.NSObject {
   @objc public var flow: MiSnapFaceCaptureFlow
   @objc public var showIntroductoryInstructionScreen: Swift.Bool
@@ -65,6 +76,7 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
+  @objc public var lowLightSensitivity: MiSnapFacialCaptureLowLightSensitivity
   @objc public init(for flow: MiSnapFaceCaptureFlow)
   @objc public var dictionary: [Swift.String : Swift.String] {
     @objc get
@@ -223,6 +235,9 @@ extension MiSnapFaceCaptureFlow : Swift.RawRepresentable {}
 extension MiSnapFacialCaptureReviewMode : Swift.Equatable {}
 extension MiSnapFacialCaptureReviewMode : Swift.Hashable {}
 extension MiSnapFacialCaptureReviewMode : Swift.RawRepresentable {}
+extension MiSnapFacialCaptureLowLightSensitivity : Swift.Equatable {}
+extension MiSnapFacialCaptureLowLightSensitivity : Swift.Hashable {}
+extension MiSnapFacialCaptureLowLightSensitivity : Swift.RawRepresentable {}
 extension MiSnapFacialCaptureTutorialButtonLayout : Swift.Equatable {}
 extension MiSnapFacialCaptureTutorialButtonLayout : Swift.Hashable {}
 extension MiSnapFacialCaptureTutorialButtonLayout : Swift.RawRepresentable {}

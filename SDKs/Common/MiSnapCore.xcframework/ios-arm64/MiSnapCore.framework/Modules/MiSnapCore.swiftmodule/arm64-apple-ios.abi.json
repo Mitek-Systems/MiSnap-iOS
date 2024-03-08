@@ -1251,6 +1251,47 @@
           },
           {
             "kind": "Var",
+            "name": "faceTooDarkFailure",
+            "printedName": "faceTooDarkFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapCore.MiSnapUxpEvent.Type) -> MiSnapCore.MiSnapUxpEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapUxpEvent",
+                    "printedName": "MiSnapCore.MiSnapUxpEvent",
+                    "usr": "c:@M@MiSnapCore@E@MiSnapUxpEvent"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapCore.MiSnapUxpEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapUxpEvent",
+                        "printedName": "MiSnapCore.MiSnapUxpEvent",
+                        "usr": "c:@M@MiSnapCore@E@MiSnapUxpEvent"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapCore@E@MiSnapUxpEvent@MiSnapUxpEventFaceTooDarkFailure",
+            "mangledName": "$s10MiSnapCore0aB8UxpEventO18faceTooDarkFailureyA2CmF",
+            "moduleName": "MiSnapCore",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 30
+          },
+          {
+            "kind": "Var",
             "name": "holdStill",
             "printedName": "holdStill",
             "children": [
@@ -1288,7 +1329,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 30
+            "fixedbinaryorder": 31
           },
           {
             "kind": "Var",
@@ -1329,7 +1370,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 31
+            "fixedbinaryorder": 32
           },
           {
             "kind": "Var",
@@ -1370,7 +1411,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 32
+            "fixedbinaryorder": 33
           },
           {
             "kind": "Var",
@@ -1411,7 +1452,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 33
+            "fixedbinaryorder": 34
           },
           {
             "kind": "Var",
@@ -1452,7 +1493,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 34
+            "fixedbinaryorder": 35
           },
           {
             "kind": "Var",
@@ -1493,7 +1534,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 35
+            "fixedbinaryorder": 36
           },
           {
             "kind": "Var",
@@ -1534,7 +1575,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 36
+            "fixedbinaryorder": 37
           },
           {
             "kind": "Var",
@@ -1575,7 +1616,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 37
+            "fixedbinaryorder": 38
           },
           {
             "kind": "Var",
@@ -1616,7 +1657,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 38
+            "fixedbinaryorder": 39
           },
           {
             "kind": "Var",
@@ -1657,7 +1698,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 39
+            "fixedbinaryorder": 40
           },
           {
             "kind": "Var",
@@ -1698,7 +1739,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 40
+            "fixedbinaryorder": 41
           },
           {
             "kind": "Var",
@@ -1739,7 +1780,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 41
+            "fixedbinaryorder": 42
           },
           {
             "kind": "Var",
@@ -1780,7 +1821,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 42
+            "fixedbinaryorder": 43
           },
           {
             "kind": "Var",
@@ -1821,7 +1862,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 43
+            "fixedbinaryorder": 44
           },
           {
             "kind": "Var",
@@ -1862,7 +1903,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 44
+            "fixedbinaryorder": 45
           },
           {
             "kind": "Var",
@@ -1903,7 +1944,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 45
+            "fixedbinaryorder": 46
           },
           {
             "kind": "Var",
@@ -1944,7 +1985,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 46
+            "fixedbinaryorder": 47
           },
           {
             "kind": "Var",
@@ -1985,7 +2026,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 47
+            "fixedbinaryorder": 48
           },
           {
             "kind": "Var",
@@ -2026,7 +2067,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 48
+            "fixedbinaryorder": 49
           },
           {
             "kind": "Var",
@@ -2067,7 +2108,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 49
+            "fixedbinaryorder": 50
           },
           {
             "kind": "Var",
@@ -2108,7 +2149,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 50
+            "fixedbinaryorder": 51
           },
           {
             "kind": "Var",
@@ -2149,7 +2190,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 51
+            "fixedbinaryorder": 52
           },
           {
             "kind": "Var",
@@ -2190,7 +2231,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 52
+            "fixedbinaryorder": 53
           },
           {
             "kind": "Var",
@@ -2231,7 +2272,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 53
+            "fixedbinaryorder": 54
           },
           {
             "kind": "Var",
@@ -2272,7 +2313,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 54
+            "fixedbinaryorder": 55
           },
           {
             "kind": "Var",
@@ -2313,7 +2354,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 55
+            "fixedbinaryorder": 56
           },
           {
             "kind": "Var",
@@ -2354,7 +2395,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 56
+            "fixedbinaryorder": 57
           },
           {
             "kind": "Var",
@@ -2395,7 +2436,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 57
+            "fixedbinaryorder": 58
           },
           {
             "kind": "Var",
@@ -2436,7 +2477,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 58
+            "fixedbinaryorder": 59
           },
           {
             "kind": "Var",
@@ -2477,7 +2518,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 59
+            "fixedbinaryorder": 60
           },
           {
             "kind": "Var",
@@ -2518,7 +2559,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 60
+            "fixedbinaryorder": 61
           },
           {
             "kind": "Var",
@@ -2559,7 +2600,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 61
+            "fixedbinaryorder": 62
           },
           {
             "kind": "Var",
@@ -2600,7 +2641,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 62
+            "fixedbinaryorder": 63
           },
           {
             "kind": "Var",
@@ -2641,7 +2682,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 63
+            "fixedbinaryorder": 64
           },
           {
             "kind": "Var",
@@ -2682,7 +2723,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 64
+            "fixedbinaryorder": 65
           },
           {
             "kind": "Var",
@@ -2723,7 +2764,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 65
+            "fixedbinaryorder": 66
           },
           {
             "kind": "Var",
@@ -2764,7 +2805,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 66
+            "fixedbinaryorder": 67
           },
           {
             "kind": "Var",
@@ -2805,7 +2846,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 67
+            "fixedbinaryorder": 68
           },
           {
             "kind": "Var",
@@ -2846,7 +2887,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 68
+            "fixedbinaryorder": 69
           },
           {
             "kind": "Constructor",
@@ -4272,9 +4313,78 @@
               "Dynamic",
               "ObjC",
               "Override",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiSnapCore.MiSnapLogConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapLogConfiguration",
+                    "printedName": "MiSnapCore.MiSnapLogConfiguration",
+                    "usr": "c:@M@MiSnapCore@objc(cs)MiSnapLogConfiguration"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapCore@objc(cs)MiSnapLogConfiguration(im)initWithCoder:",
+            "mangledName": "$s10MiSnapCore0aB16LogConfigurationC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "MiSnapCore",
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "ObjC",
+              "Required",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapCore@objc(cs)MiSnapLogConfiguration(im)encodeWithCoder:",
+            "mangledName": "$s10MiSnapCore0aB16LogConfigurationC6encode4withySo7NSCoderC_tF",
+            "moduleName": "MiSnapCore",
+            "objc_name": "encodeWithCoder:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Var",
@@ -4327,72 +4437,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MiSnapCore.MiSnapLogConfiguration?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MiSnapLogConfiguration",
-                    "printedName": "MiSnapCore.MiSnapLogConfiguration",
-                    "usr": "c:@M@MiSnapCore@objc(cs)MiSnapLogConfiguration"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@MiSnapCore@objc(cs)MiSnapLogConfiguration(im)initWithCoder:",
-            "mangledName": "$s10MiSnapCore0aB16LogConfigurationC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "MiSnapCore",
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "ObjC",
-              "Required",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@MiSnapCore@objc(cs)MiSnapLogConfiguration(im)encodeWithCoder:",
-            "mangledName": "$s10MiSnapCore0aB16LogConfigurationC6encode4withySo7NSCoderC_tF",
-            "moduleName": "MiSnapCore",
-            "objc_name": "encodeWithCoder:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -15541,6 +15585,912 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Array",
+        "printedName": "Array",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "encodeDecodeData",
+            "printedName": "encodeDecodeData(using:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.UInt8]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.UInt8]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:Sa10MiSnapCores5UInt8VRszlE16encodeDecodeData5usingSayACGAF_tF",
+            "mangledName": "$sSa10MiSnapCores5UInt8VRszlE16encodeDecodeData5usingSayACGAF_tF",
+            "moduleName": "MiSnapCore",
+            "genericSig": "<τ_0_0 where τ_0_0 == Swift.UInt8>",
+            "sugared_genericSig": "<Element where Element == Swift.UInt8>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decodedString",
+            "printedName": "decodedString(using:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.UInt8]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:Sa10MiSnapCores5UInt8VRszlE13decodedString5usingSSSgSayACG_tF",
+            "mangledName": "$sSa10MiSnapCores5UInt8VRszlE13decodedString5usingSSSgSayACG_tF",
+            "moduleName": "MiSnapCore",
+            "genericSig": "<τ_0_0 where τ_0_0 == Swift.UInt8>",
+            "sugared_genericSig": "<Element where Element == Swift.UInt8>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hexRep",
+            "printedName": "hexRep",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:Sa10MiSnapCores5UInt8VRszlE6hexRepSSvp",
+            "mangledName": "$sSa10MiSnapCores5UInt8VRszlE6hexRepSSvp",
+            "moduleName": "MiSnapCore",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:Sa10MiSnapCores5UInt8VRszlE6hexRepSSvg",
+                "mangledName": "$sSa10MiSnapCores5UInt8VRszlE6hexRepSSvg",
+                "moduleName": "MiSnapCore",
+                "genericSig": "<τ_0_0 where τ_0_0 == Swift.UInt8>",
+                "sugared_genericSig": "<Element where Element == Swift.UInt8>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hexRepUppercased",
+            "printedName": "hexRepUppercased",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:Sa10MiSnapCores5UInt8VRszlE16hexRepUppercasedSSvp",
+            "mangledName": "$sSa10MiSnapCores5UInt8VRszlE16hexRepUppercasedSSvp",
+            "moduleName": "MiSnapCore",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:Sa10MiSnapCores5UInt8VRszlE16hexRepUppercasedSSvg",
+                "mangledName": "$sSa10MiSnapCores5UInt8VRszlE16hexRepUppercasedSSvg",
+                "moduleName": "MiSnapCore",
+                "genericSig": "<τ_0_0 where τ_0_0 == Swift.UInt8>",
+                "sugared_genericSig": "<Element where Element == Swift.UInt8>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "humanReadableHexRep",
+            "printedName": "humanReadableHexRep",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:Sa10MiSnapCores5UInt8VRszlE19humanReadableHexRepSSvp",
+            "mangledName": "$sSa10MiSnapCores5UInt8VRszlE19humanReadableHexRepSSvp",
+            "moduleName": "MiSnapCore",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:Sa10MiSnapCores5UInt8VRszlE19humanReadableHexRepSSvg",
+                "mangledName": "$sSa10MiSnapCores5UInt8VRszlE19humanReadableHexRepSSvg",
+                "moduleName": "MiSnapCore",
+                "genericSig": "<τ_0_0 where τ_0_0 == Swift.UInt8>",
+                "sugared_genericSig": "<Element where Element == Swift.UInt8>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "chunk",
+            "printedName": "chunk(segmentSize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[Swift.UInt8]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.UInt8]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UInt8",
+                        "printedName": "Swift.UInt8",
+                        "usr": "s:s5UInt8V"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:Sa10MiSnapCores5UInt8VRszlE5chunk11segmentSizeSaySayACGGSi_tF",
+            "mangledName": "$sSa10MiSnapCores5UInt8VRszlE5chunk11segmentSizeSaySayACGGSi_tF",
+            "moduleName": "MiSnapCore",
+            "genericSig": "<τ_0_0 where τ_0_0 == Swift.UInt8>",
+            "sugared_genericSig": "<Element where Element == Swift.UInt8>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:Sa",
+        "mangledName": "$sSa",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Element>",
+        "declAttributes": [
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_DestructorSafeContainer",
+            "printedName": "_DestructorSafeContainer",
+            "usr": "s:s24_DestructorSafeContainerP",
+            "mangledName": "$ss24_DestructorSafeContainerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ArrayProtocol",
+            "printedName": "_ArrayProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_Buffer",
+                "printedName": "_Buffer",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_ArrayBuffer",
+                    "printedName": "Swift._ArrayBuffer<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s12_ArrayBufferV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s14_ArrayProtocolP",
+            "mangledName": "$ss14_ArrayProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RandomAccessCollection",
+            "printedName": "RandomAccessCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sk",
+            "mangledName": "$sSk"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableCollection",
+            "printedName": "MutableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SM",
+            "mangledName": "$sSM"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<[τ_0_0]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Range",
+                    "printedName": "Swift.Range<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sn"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IndexingIterator",
+                    "printedName": "Swift.IndexingIterator<[τ_0_0]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[τ_0_0]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s16IndexingIteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByArrayLiteral",
+            "printedName": "ExpressibleByArrayLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ArrayLiteralElement",
+                "printedName": "ArrayLiteralElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s25ExpressibleByArrayLiteralP",
+            "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ArraySlice",
+                    "printedName": "Swift.ArraySlice<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:s10ArraySliceV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasContiguousBytes",
+            "printedName": "_HasContiguousBytes",
+            "usr": "s:s19_HasContiguousBytesP",
+            "mangledName": "$ss19_HasContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EncodableWithConfiguration",
+            "printedName": "EncodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "EncodingConfiguration",
+                "printedName": "EncodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.EncodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26EncodableWithConfigurationP",
+            "mangledName": "$s10Foundation26EncodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DecodableWithConfiguration",
+            "printedName": "DecodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "DecodingConfiguration",
+                "printedName": "DecodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.DecodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26DecodableWithConfigurationP",
+            "mangledName": "$s10Foundation26DecodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -15753,769 +16703,783 @@
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 967,
-      "length": 9,
+      "length": 18,
       "value": "30"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 986,
-      "length": 5,
+      "offset": 995,
+      "length": 9,
       "value": "31"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1001,
-      "length": 12,
+      "offset": 1014,
+      "length": 5,
       "value": "32"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1023,
-      "length": 14,
+      "offset": 1029,
+      "length": 12,
       "value": "33"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1047,
+      "offset": 1051,
       "length": 14,
       "value": "34"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1071,
-      "length": 12,
+      "offset": 1075,
+      "length": 14,
       "value": "35"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1093,
-      "length": 11,
+      "offset": 1099,
+      "length": 12,
       "value": "36"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1114,
-      "length": 17,
+      "offset": 1121,
+      "length": 11,
       "value": "37"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1141,
-      "length": 18,
+      "offset": 1142,
+      "length": 17,
       "value": "38"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1169,
-      "length": 16,
+      "length": 18,
       "value": "39"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1195,
+      "offset": 1197,
       "length": 16,
       "value": "40"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1221,
-      "length": 22,
+      "offset": 1223,
+      "length": 16,
       "value": "41"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1253,
-      "length": 14,
+      "offset": 1249,
+      "length": 22,
       "value": "42"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1277,
-      "length": 13,
+      "offset": 1281,
+      "length": 14,
       "value": "43"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1300,
-      "length": 6,
+      "offset": 1305,
+      "length": 13,
       "value": "44"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1316,
-      "length": 11,
+      "offset": 1328,
+      "length": 6,
       "value": "45"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1337,
-      "length": 4,
+      "offset": 1344,
+      "length": 11,
       "value": "46"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1351,
-      "length": 7,
+      "offset": 1365,
+      "length": 4,
       "value": "47"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1368,
-      "length": 6,
+      "offset": 1379,
+      "length": 7,
       "value": "48"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1384,
-      "length": 18,
+      "offset": 1396,
+      "length": 6,
       "value": "49"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1412,
-      "length": 20,
+      "length": 18,
       "value": "50"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1442,
-      "length": 22,
+      "offset": 1440,
+      "length": 20,
       "value": "51"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1474,
-      "length": 16,
+      "offset": 1470,
+      "length": 22,
       "value": "52"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1500,
-      "length": 18,
+      "offset": 1502,
+      "length": 16,
       "value": "53"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1528,
-      "length": 13,
+      "length": 18,
       "value": "54"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1551,
-      "length": 21,
+      "offset": 1556,
+      "length": 13,
       "value": "55"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1582,
-      "length": 17,
+      "offset": 1579,
+      "length": 21,
       "value": "56"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1609,
-      "length": 18,
+      "offset": 1610,
+      "length": 17,
       "value": "57"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1637,
-      "length": 13,
+      "length": 18,
       "value": "58"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1660,
+      "offset": 1665,
       "length": 13,
       "value": "59"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1683,
-      "length": 16,
+      "offset": 1688,
+      "length": 13,
       "value": "60"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1709,
-      "length": 18,
+      "offset": 1711,
+      "length": 16,
       "value": "61"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1737,
-      "length": 16,
+      "length": 18,
       "value": "62"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1763,
-      "length": 7,
+      "offset": 1765,
+      "length": 16,
       "value": "63"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1780,
-      "length": 8,
+      "offset": 1791,
+      "length": 7,
       "value": "64"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1798,
-      "length": 9,
+      "offset": 1808,
+      "length": 8,
       "value": "65"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1817,
-      "length": 11,
+      "offset": 1826,
+      "length": 9,
       "value": "66"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1838,
-      "length": 20,
+      "offset": 1845,
+      "length": 11,
       "value": "67"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1868,
-      "length": 19,
+      "offset": 1866,
+      "length": 20,
       "value": "68"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1896,
+      "length": 19,
+      "value": "69"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2000,
+      "offset": 2028,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2058,
+      "offset": 2086,
       "length": 4,
       "value": "\"FE\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2118,
+      "offset": 2146,
       "length": 4,
       "value": "\"BE\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2178,
+      "offset": 2206,
       "length": 5,
       "value": "\"EIF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2239,
+      "offset": 2267,
       "length": 5,
       "value": "\"EIB\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2300,
+      "offset": 2328,
       "length": 4,
       "value": "\"EP\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2360,
+      "offset": 2388,
       "length": 4,
       "value": "\"NF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2420,
+      "offset": 2448,
       "length": 4,
       "value": "\"EM\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2480,
+      "offset": 2508,
       "length": 4,
       "value": "\"YF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2540,
+      "offset": 2568,
       "length": 4,
       "value": "\"ZF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2600,
+      "offset": 2628,
       "length": 4,
       "value": "\"AF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2660,
+      "offset": 2688,
       "length": 4,
       "value": "\"RF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2720,
+      "offset": 2748,
       "length": 4,
       "value": "\"TF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2780,
+      "offset": 2808,
       "length": 4,
       "value": "\"CF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2840,
+      "offset": 2868,
       "length": 5,
       "value": "\"ARF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2901,
+      "offset": 2929,
       "length": 4,
       "value": "\"SF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 2961,
+      "offset": 2989,
       "length": 4,
       "value": "\"BF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3021,
+      "offset": 3049,
       "length": 4,
       "value": "\"LF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3081,
+      "offset": 3109,
       "length": 4,
       "value": "\"GF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3141,
+      "offset": 3169,
       "length": 4,
       "value": "\"CP\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3214,
+      "offset": 3242,
       "length": 6,
       "value": "\"FENF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3276,
+      "offset": 3304,
       "length": 6,
       "value": "\"FENC\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3338,
+      "offset": 3366,
       "length": 6,
       "value": "\"FEMF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3400,
+      "offset": 3428,
       "length": 5,
       "value": "\"FER\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3461,
+      "offset": 3489,
       "length": 5,
       "value": "\"FEP\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3522,
+      "offset": 3550,
       "length": 5,
       "value": "\"FEY\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3583,
+      "offset": 3611,
       "length": 6,
       "value": "\"FETF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3645,
+      "offset": 3673,
       "length": 6,
       "value": "\"FETC\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3707,
+      "offset": 3735,
       "length": 6,
       "value": "\"FENS\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3769,
+      "offset": 3797,
       "length": 6,
       "value": "\"FESS\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3831,
+      "offset": 3859,
+      "length": 6,
+      "value": "\"FETD\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3921,
       "length": 5,
       "value": "\"FHS\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3892,
+      "offset": 3982,
       "length": 4,
       "value": "\"FS\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 3965,
+      "offset": 4055,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4028,
+      "offset": 4118,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4093,
+      "offset": 4183,
       "length": 9,
       "value": "\"TIMEOUT\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4158,
+      "offset": 4248,
       "length": 7,
       "value": "\"START\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4221,
+      "offset": 4311,
       "length": 6,
       "value": "\"READ\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4283,
+      "offset": 4373,
       "length": 13,
       "value": "\"UNKNOWN_TAG\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4352,
+      "offset": 4442,
       "length": 6,
       "value": "\"PACE\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4414,
+      "offset": 4504,
       "length": 4,
       "value": "\"CA\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4474,
+      "offset": 4564,
       "length": 4,
       "value": "\"AA\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4534,
+      "offset": 4624,
       "length": 18,
       "value": "\"ACCESS_MECHANISM\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4608,
+      "offset": 4698,
       "length": 9,
       "value": "\"DISCARD\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4673,
+      "offset": 4763,
       "length": 8,
       "value": "\"CANCEL\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4750,
+      "offset": 4840,
       "length": 3,
       "value": "\"C\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4809,
+      "offset": 4899,
       "length": 4,
       "value": "\"IS\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4869,
+      "offset": 4959,
       "length": 4,
       "value": "\"HS\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4929,
+      "offset": 5019,
       "length": 4,
       "value": "\"TS\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 4989,
+      "offset": 5079,
       "length": 4,
       "value": "\"RS\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5062,
+      "offset": 5152,
       "length": 4,
       "value": "\"MC\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5122,
+      "offset": 5212,
       "length": 5,
       "value": "\"MFC\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5183,
+      "offset": 5273,
       "length": 4,
       "value": "\"MI\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5243,
+      "offset": 5333,
       "length": 4,
       "value": "\"MY\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5303,
+      "offset": 5393,
       "length": 4,
       "value": "\"MZ\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5363,
+      "offset": 5453,
       "length": 4,
       "value": "\"MA\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5423,
+      "offset": 5513,
       "length": 4,
       "value": "\"MR\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5483,
+      "offset": 5573,
       "length": 4,
       "value": "\"MS\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5543,
+      "offset": 5633,
       "length": 4,
       "value": "\"MB\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5603,
+      "offset": 5693,
       "length": 4,
       "value": "\"MG\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5663,
+      "offset": 5753,
       "length": 4,
       "value": "\"MW\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5723,
+      "offset": 5813,
       "length": 4,
       "value": "\"MT\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5783,
+      "offset": 5873,
       "length": 4,
       "value": "\"ST\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5843,
+      "offset": 5933,
       "length": 4,
       "value": "\"MF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5916,
+      "offset": 6006,
       "length": 4,
       "value": "\"FT\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 5976,
+      "offset": 6066,
       "length": 4,
       "value": "\"FF\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 6049,
+      "offset": 6139,
       "length": 4,
       "value": "\"SA\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 6109,
+      "offset": 6199,
       "length": 4,
       "value": "\"SS\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 6182,
+      "offset": 6272,
       "length": 4,
       "value": "\"DL\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "StringLiteral",
-      "offset": 6242,
+      "offset": 6332,
       "length": 4,
       "value": "\"DP\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6637,
+      "offset": 6727,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6693,
+      "offset": 6783,
       "length": 5,
       "value": "false"
     },
@@ -16726,321 +17690,328 @@
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 967,
-      "length": 9,
+      "length": 18,
       "value": "30"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 986,
-      "length": 5,
+      "offset": 995,
+      "length": 9,
       "value": "31"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1001,
-      "length": 12,
+      "offset": 1014,
+      "length": 5,
       "value": "32"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1023,
-      "length": 14,
+      "offset": 1029,
+      "length": 12,
       "value": "33"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1047,
+      "offset": 1051,
       "length": 14,
       "value": "34"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1071,
-      "length": 12,
+      "offset": 1075,
+      "length": 14,
       "value": "35"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1093,
-      "length": 11,
+      "offset": 1099,
+      "length": 12,
       "value": "36"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1114,
-      "length": 17,
+      "offset": 1121,
+      "length": 11,
       "value": "37"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1141,
-      "length": 18,
+      "offset": 1142,
+      "length": 17,
       "value": "38"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1169,
-      "length": 16,
+      "length": 18,
       "value": "39"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1195,
+      "offset": 1197,
       "length": 16,
       "value": "40"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1221,
-      "length": 22,
+      "offset": 1223,
+      "length": 16,
       "value": "41"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1253,
-      "length": 14,
+      "offset": 1249,
+      "length": 22,
       "value": "42"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1277,
-      "length": 13,
+      "offset": 1281,
+      "length": 14,
       "value": "43"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1300,
-      "length": 6,
+      "offset": 1305,
+      "length": 13,
       "value": "44"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1316,
-      "length": 11,
+      "offset": 1328,
+      "length": 6,
       "value": "45"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1337,
-      "length": 4,
+      "offset": 1344,
+      "length": 11,
       "value": "46"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1351,
-      "length": 7,
+      "offset": 1365,
+      "length": 4,
       "value": "47"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1368,
-      "length": 6,
+      "offset": 1379,
+      "length": 7,
       "value": "48"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1384,
-      "length": 18,
+      "offset": 1396,
+      "length": 6,
       "value": "49"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1412,
-      "length": 20,
+      "length": 18,
       "value": "50"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1442,
-      "length": 22,
+      "offset": 1440,
+      "length": 20,
       "value": "51"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1474,
-      "length": 16,
+      "offset": 1470,
+      "length": 22,
       "value": "52"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1500,
-      "length": 18,
+      "offset": 1502,
+      "length": 16,
       "value": "53"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1528,
-      "length": 13,
+      "length": 18,
       "value": "54"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1551,
-      "length": 21,
+      "offset": 1556,
+      "length": 13,
       "value": "55"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1582,
-      "length": 17,
+      "offset": 1579,
+      "length": 21,
       "value": "56"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1609,
-      "length": 18,
+      "offset": 1610,
+      "length": 17,
       "value": "57"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1637,
-      "length": 13,
+      "length": 18,
       "value": "58"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1660,
+      "offset": 1665,
       "length": 13,
       "value": "59"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1683,
-      "length": 16,
+      "offset": 1688,
+      "length": 13,
       "value": "60"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1709,
-      "length": 18,
+      "offset": 1711,
+      "length": 16,
       "value": "61"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1737,
-      "length": 16,
+      "length": 18,
       "value": "62"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1763,
-      "length": 7,
+      "offset": 1765,
+      "length": 16,
       "value": "63"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1780,
-      "length": 8,
+      "offset": 1791,
+      "length": 7,
       "value": "64"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1798,
-      "length": 9,
+      "offset": 1808,
+      "length": 8,
       "value": "65"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1817,
-      "length": 11,
+      "offset": 1826,
+      "length": 9,
       "value": "66"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1838,
-      "length": 20,
+      "offset": 1845,
+      "length": 11,
       "value": "67"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1868,
-      "length": 19,
+      "offset": 1866,
+      "length": 20,
       "value": "68"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1896,
+      "length": 19,
+      "value": "69"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "FloatLiteral",
-      "offset": 6880,
+      "offset": 6970,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "FloatLiteral",
-      "offset": 6931,
+      "offset": 7021,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "Array",
-      "offset": 7054,
+      "offset": 7144,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7117,
+      "offset": 7207,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8616,
+      "offset": 8706,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "Dictionary",
-      "offset": 8668,
+      "offset": 8758,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapUxpEventManager.swift",
       "kind": "Array",
-      "offset": 9305,
+      "offset": 9395,
       "length": 2,
       "value": "[]"
     },
@@ -17229,203 +18200,203 @@
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 1240,
+      "offset": 1342,
+      "length": 7,
+      "value": "\"level\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1444,
+      "length": 14,
+      "value": "\"presentation\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1516,
+      "length": 9,
+      "value": "\"savePII\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1670,
+      "length": 7,
+      "value": "\"level\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1731,
+      "length": 14,
+      "value": "\"presentation\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1785,
+      "length": 9,
+      "value": "\"savePII\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
+      "kind": "StringLiteral",
+      "offset": 1905,
       "length": 27,
       "value": "\"MiSnapLogConfiguration:\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 1283,
+      "offset": 1948,
       "length": 30,
       "value": "\"\tLevel: \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 1310,
+      "offset": 1975,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 1329,
+      "offset": 1994,
       "length": 44,
       "value": "\"\tPresentation: \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 1370,
+      "offset": 2035,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 1389,
+      "offset": 2054,
       "length": 25,
       "value": "\"\tSavePII: \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 1411,
+      "offset": 2076,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 1564,
-      "length": 7,
-      "value": "\"level\""
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
-      "kind": "StringLiteral",
-      "offset": 1666,
-      "length": 14,
-      "value": "\"presentation\""
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
-      "kind": "StringLiteral",
-      "offset": 1738,
-      "length": 9,
-      "value": "\"savePII\""
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
-      "kind": "StringLiteral",
-      "offset": 1857,
-      "length": 7,
-      "value": "\"level\""
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
-      "kind": "StringLiteral",
-      "offset": 1918,
-      "length": 14,
-      "value": "\"presentation\""
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
-      "kind": "StringLiteral",
-      "offset": 1972,
-      "length": 9,
-      "value": "\"savePII\""
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
-      "kind": "StringLiteral",
-      "offset": 3540,
+      "offset": 3656,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 3579,
+      "offset": 3695,
       "length": 1,
       "value": "\".txt\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 3751,
+      "offset": 3867,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 3915,
+      "offset": 4031,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "Array",
-      "offset": 3955,
+      "offset": 4071,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 4053,
+      "offset": 4169,
       "length": 6,
       "value": "\".txt\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 4189,
+      "offset": 4305,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 4229,
+      "offset": 4345,
       "length": 115,
       "value": "\"\nDevice info:\n\tModel: \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 4294,
+      "offset": 4410,
       "length": 1,
       "value": "\"\n\tOS: \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 4330,
+      "offset": 4446,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 4562,
+      "offset": 4678,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 4798,
+      "offset": 4914,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 5030,
+      "offset": 5146,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 5085,
+      "offset": 5201,
       "length": 21,
       "value": "\"yyyy-MM-dd_HH_mm_ss\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 5130,
+      "offset": 5246,
       "length": 13,
       "value": "\"misnap_nfc_\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapLog.swift",
       "kind": "StringLiteral",
-      "offset": 5179,
+      "offset": 5295,
       "length": 6,
       "value": "\".txt\""
     },
@@ -21198,231 +22169,231 @@
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1971,
+      "offset": 1978,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2034,
+      "offset": 2041,
       "length": 6,
       "value": "\"%02x\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2225,
+      "offset": 2232,
       "length": 3,
       "value": "\"[\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2275,
+      "offset": 2282,
       "length": 4,
       "value": "\"0x\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2296,
+      "offset": 2303,
       "length": 4,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2338,
+      "offset": 2345,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2354,
+      "offset": 2361,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2372,
+      "offset": 2379,
       "length": 3,
       "value": "\"]\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2482,
+      "offset": 2489,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 2687,
+      "offset": 2694,
       "length": 6,
       "value": "\"%02x\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "Array",
-      "offset": 2879,
+      "offset": 2886,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2899,
+      "offset": 2906,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 2952,
+      "offset": 2959,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "BooleanLiteral",
-      "offset": 3573,
+      "offset": 3580,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3601,
+      "offset": 3608,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 3646,
+      "offset": 3653,
       "length": 28,
       "value": "\"abcdefghijklmnopqrstuvwxyz\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 3705,
+      "offset": 3712,
       "length": 28,
       "value": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 3760,
+      "offset": 3767,
       "length": 12,
       "value": "\"0123456789\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3796,
+      "offset": 3803,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 3824,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
-      "kind": "StringLiteral",
-      "offset": 4003,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4023,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4161,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4193,
+      "offset": 3831,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 4342,
+      "offset": 4010,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 4378,
+      "offset": 4030,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 4450,
+      "offset": 4168,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 4479,
+      "offset": 4200,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 4349,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4385,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 4622,
+      "offset": 4457,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4486,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 4835,
+      "offset": 4629,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4842,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "Dictionary",
-      "offset": 5398,
+      "offset": 5405,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "IntegerLiteral",
-      "offset": 6076,
+      "offset": 6083,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stsuprenko\/Repositories\/MobileVerify\/MiSnapCore\/MiSnapCore\/MiSnapCoreExtensions.swift",
       "kind": "Dictionary",
-      "offset": 6218,
+      "offset": 6225,
       "length": 3,
       "value": "[]"
     },

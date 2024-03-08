@@ -10,11 +10,15 @@
 		</data>
 		<key>Headers/MiSnapFacialCaptureAnalyzer.h</key>
 		<data>
-		jaHwRCAZeYeb74QTKTDNOyxLetY=
+		2PliAr9zBEyWFg/kprwx6mgfyUU=
 		</data>
 		<key>Headers/MiSnapFacialCaptureCamera.h</key>
 		<data>
-		OrbHOMY6AKoacoLWLBgwB88Z/6E=
+		0qhaEYAVF/0b+mcdOhgnMCWJtbg=
+		</data>
+		<key>Headers/MiSnapFacialCaptureCameraExposureResult.h</key>
+		<data>
+		Di227tlOKNlT/uwW80x9FnzGWC8=
 		</data>
 		<key>Headers/MiSnapFacialCaptureCameraParameters.h</key>
 		<data>
@@ -22,7 +26,7 @@
 		</data>
 		<key>Headers/MiSnapFacialCaptureParameters.h</key>
 		<data>
-		L5g/IeLT2n8EYvH5nyr5qoj6n2c=
+		K3K82EJ0E/GjJ4IlmqOu3ShKLi8=
 		</data>
 		<key>Headers/MiSnapFacialCaptureResult.h</key>
 		<data>
@@ -30,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kRqWALd6WUV2vzFLgzqdo4nwgTo=
+		mUKxDUqZecu+F3ik77IOao/XZ0s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,14 +54,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KPF9AeCBkXTNvvpj7IPqbLagdpQBw+fujD2XkjFoXvY=
+			em13RyQiwfdPLbKWryj+vwGMN0OC0A9eGWKxKzcjEkM=
 			</data>
 		</dict>
 		<key>Headers/MiSnapFacialCaptureCamera.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8jFchHqTmJEDqKbMr3dc90ZQ5ivDYOcuyZWK+KuZYTM=
+			36ElSVR166q6eMs8jzM+xghHLskMmLzKQYPnssDvQm0=
+			</data>
+		</dict>
+		<key>Headers/MiSnapFacialCaptureCameraExposureResult.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nMKqEM0o18ql/LVbgQV47cewk4/bxTz3Fqd52f7ezzQ=
 			</data>
 		</dict>
 		<key>Headers/MiSnapFacialCaptureCameraParameters.h</key>
@@ -71,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9FqtsEO5KoUfgs/mkfw5UG1PU6xoqgzNp4CGrzIm6/s=
+			EpaBLtZTQfgBMisp8saAW8wTQgXyZcqM4pag1XNL590=
 			</data>
 		</dict>
 		<key>Headers/MiSnapFacialCaptureResult.h</key>

@@ -41,6 +41,7 @@ import _SwiftConcurrencyShims
   case faceTooCloseFailure
   case faceNotStillFailure
   case faceStopSmilingFailure
+  case faceTooDarkFailure
   case holdStill
   case smile
   case errorVerbose
@@ -130,11 +131,11 @@ import _SwiftConcurrencyShims
   @objc public var presentation: MiSnapCore.MiSnapLogPresentation
   @objc public var savePII: Swift.Bool
   @objc override dynamic public init()
+  @objc required public init?(coder: Foundation.NSCoder)
+  @objc public func encode(with coder: Foundation.NSCoder)
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
-  @objc required public init?(coder: Foundation.NSCoder)
-  @objc public func encode(with coder: Foundation.NSCoder)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapLog : ObjectiveC.NSObject {
@@ -508,6 +509,20 @@ import _SwiftConcurrencyShims
     @objc get
   }
   @objc deinit
+}
+extension Swift.Array where Element == Swift.UInt8 {
+  public func encodeDecodeData(using cipher: [Swift.UInt8]) -> [Swift.UInt8]
+  public func decodedString(using cipher: [Swift.UInt8]) -> Swift.String?
+  public var hexRep: Swift.String {
+    get
+  }
+  public var hexRepUppercased: Swift.String {
+    get
+  }
+  public var humanReadableHexRep: Swift.String {
+    get
+  }
+  public func chunk(segmentSize: Swift.Int) -> [[Swift.UInt8]]
 }
 @objc public enum MiSnapLicenseFeature : Swift.Int {
   case none = 0

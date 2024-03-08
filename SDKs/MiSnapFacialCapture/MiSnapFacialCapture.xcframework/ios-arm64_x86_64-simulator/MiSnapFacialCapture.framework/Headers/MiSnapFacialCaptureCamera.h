@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <MiSnapFacialCapture/MiSnapFacialCaptureCameraParameters.h>
+#import <MiSnapFacialCapture/MiSnapFacialCaptureCameraExposureResult.h>
 
 /**
  Defines an interface for delegates of MiSnapFacialCaptureCameraDelegate
@@ -102,6 +103,10 @@
  Controls the camera orientation
  */
 @property (nonatomic) UIInterfaceOrientation orientation;
+/**
+ Exposure
+ */
+@property (nonatomic, readwrite) MiSnapFacialCaptureCameraExposureResult * _Nonnull exposure;
 /**
  Creates an instance of `MiSnapFacialCaptureCamera`
  @param sessionPreset the `AVCaptureSessionPreset` to use

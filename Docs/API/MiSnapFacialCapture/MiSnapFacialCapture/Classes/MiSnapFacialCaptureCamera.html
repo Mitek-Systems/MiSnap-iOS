@@ -57,6 +57,9 @@
                 <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureCamera.html">MiSnapFacialCaptureCamera</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureCameraExposureResult.html">MiSnapFacialCaptureCameraExposureResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapFacialCaptureCameraParameters.html">MiSnapFacialCaptureCameraParameters</a>
               </li>
               <li class="nav-group-task">
@@ -317,6 +320,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureCamera(py)exposure"></a>
+                    <a name="//apple_ref/objc/Property/exposure" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(py)exposure">exposure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Exposure</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/MiSnapFacialCaptureCameraExposureResult.html">MiSnapFacialCaptureCameraExposureResult</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">exposure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)MiSnapFacialCaptureCamera(im)initWithPreset:format:position:frame:"></a>
                     <a name="//apple_ref/objc/Method/-initWithPreset:format:position:frame:" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureCamera(im)initWithPreset:format:position:frame:">-initWithPreset:<wbr>format:<wbr>position:<wbr>frame:<wbr></a>
@@ -334,10 +364,9 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nf">initWithPreset</span><span class="p">:</span>
-                              <span class="p">(</span><span class="n">AVCaptureSessionPreset</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">sessionPreset</span>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nf">initWithPreset</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sessionPreset</span>
                                   <span class="nf">format</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">pixelBufferFormat</span>
-                                <span class="nf">position</span><span class="p">:(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">position</span>
+                                <span class="nf">position</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">position</span>
                                    <span class="nf">frame</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span><span class="p">;</span></code></pre>
 
                         </div>
@@ -424,10 +453,9 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nf">initWithPreset</span><span class="p">:</span>
-                              <span class="p">(</span><span class="n">AVCaptureSessionPreset</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">sessionPreset</span>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nf">initWithPreset</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sessionPreset</span>
                                   <span class="nf">format</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">pixelBufferFormat</span>
-                                <span class="nf">position</span><span class="p">:(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">position</span>
+                                <span class="nf">position</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">position</span>
                              <span class="nf">orientation</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">orientation</span>
                                    <span class="nf">frame</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span><span class="p">;</span></code></pre>
 
@@ -529,8 +557,7 @@
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nf">initWithDesiredResolution</span><span class="p">:(</span><span class="n">CGSize</span><span class="p">)</span><span class="nv">desiredResolution</span>
                                              <span class="nf">format</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">pixelBufferFormat</span>
-                                           <span class="nf">position</span><span class="p">:</span>
-                                               <span class="p">(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">position</span>
+                                           <span class="nf">position</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">position</span>
                                               <span class="nf">frame</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span><span class="p">;</span></code></pre>
 
                         </div>
@@ -617,8 +644,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPreset</span><span class="p">:(</span><span class="n">AVCaptureSessionPreset</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">sessionPreset</span>
-           <span class="nf">format</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">pixelBufferFormat</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPreset</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sessionPreset</span> <span class="nf">format</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">pixelBufferFormat</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
@@ -676,9 +702,9 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPreset</span><span class="p">:(</span><span class="n">AVCaptureSessionPreset</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">sessionPreset</span>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPreset</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sessionPreset</span>
            <span class="nf">format</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">pixelBufferFormat</span>
-         <span class="nf">position</span><span class="p">:(</span><span class="n">AVCaptureDevicePosition</span><span class="p">)</span><span class="nv">devicePosition</span><span class="p">;</span></code></pre>
+         <span class="nf">position</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">devicePosition</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>

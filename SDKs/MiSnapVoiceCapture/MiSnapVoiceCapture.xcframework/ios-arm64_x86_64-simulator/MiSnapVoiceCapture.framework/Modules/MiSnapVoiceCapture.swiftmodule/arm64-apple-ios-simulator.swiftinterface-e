@@ -25,6 +25,9 @@ import _SwiftConcurrencyShims
   @objc public var data: Foundation.Data? {
     get
   }
+  @objc public var rts: Swift.String? {
+    get
+  }
   @objc public var status: MiSnapVoiceCaptureStatus {
     get
   }

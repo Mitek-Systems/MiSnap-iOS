@@ -179,6 +179,10 @@ MiSnapFacialCaptureParameters is a class that defines an interface for controlli
  */
 @property (nonatomic, readwrite) MiSnapLogConfiguration * _Nonnull logging;
 /**
+ Logs UX parameters into MIBI for analytics
+ */
+- (void)logUxParameters:(NSDictionary * _Nonnull)uxParametersDictionary;
+/**
  @return Dictionary of parameters
  */
 - (NSDictionary * _Nonnull)toDictionary;

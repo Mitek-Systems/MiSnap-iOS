@@ -466,11 +466,14 @@ SWIFT_CLASS("_TtC10MiSnapCore22MiSnapLogConfiguration")
 /// Indicates whether PII should be saved
 /// Default: <code>false</code>
 @property (nonatomic) BOOL savePII;
+/// Default initialization
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Initialization with coder
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+/// Encodes with coder
+- (void)encodeWithCoder:(NSCoder * _Nonnull)coder;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)encodeWithCoder:(NSCoder * _Nonnull)coder;
 @end
 
 /// Log level
@@ -869,45 +872,46 @@ typedef SWIFT_ENUM(NSInteger, MiSnapUxpEvent, open) {
   MiSnapUxpEventFaceTooCloseFailure = 27,
   MiSnapUxpEventFaceNotStillFailure = 28,
   MiSnapUxpEventFaceStopSmilingFailure = 29,
-  MiSnapUxpEventHoldStill = 30,
-  MiSnapUxpEventSmile = 31,
-  MiSnapUxpEventErrorVerbose = 32,
-  MiSnapUxpEventSuccessVerbose = 33,
-  MiSnapUxpEventTimeoutVerbose = 34,
-  MiSnapUxpEventStartVerbose = 35,
-  MiSnapUxpEventReadVerbose = 36,
-  MiSnapUxpEventUnknownTagVerbose = 37,
-  MiSnapUxpEventPaceSupportVerbose = 38,
-  MiSnapUxpEventCaSupportVerbose = 39,
-  MiSnapUxpEventAaSupportVerbose = 40,
-  MiSnapUxpEventAccessMechanismVerbose = 41,
-  MiSnapUxpEventDiscardVerbose = 42,
-  MiSnapUxpEventCancelVerbose = 43,
-  MiSnapUxpEventCancel = 44,
-  MiSnapUxpEventInstruction = 45,
-  MiSnapUxpEventHelp = 46,
-  MiSnapUxpEventTimeout = 47,
-  MiSnapUxpEventReview = 48,
-  MiSnapUxpEventMeasuredConfidence = 49,
-  MiSnapUxpEventMeasuredCornerPoints = 50,
-  MiSnapUxpEventMeasuredMicrConfidence = 51,
-  MiSnapUxpEventMeasuredContrast = 52,
-  MiSnapUxpEventMeasuredBackground = 53,
-  MiSnapUxpEventMeasuredAngle = 54,
-  MiSnapUxpEventMeasuredRotationAngle = 55,
-  MiSnapUxpEventMeasuredSharpness = 56,
-  MiSnapUxpEventMeasuredBrightness = 57,
-  MiSnapUxpEventMeasuredGlare = 58,
-  MiSnapUxpEventMeasuredWidth = 59,
-  MiSnapUxpEventMeasuredAutoTime = 60,
-  MiSnapUxpEventMeasuredManualTime = 61,
-  MiSnapUxpEventMeasuredFailover = 62,
-  MiSnapUxpEventTorchOn = 63,
-  MiSnapUxpEventTorchOff = 64,
-  MiSnapUxpEventStartAuto = 65,
-  MiSnapUxpEventStartManual = 66,
-  MiSnapUxpEventOrientationLandscape = 67,
-  MiSnapUxpEventOrientationPortrait = 68,
+  MiSnapUxpEventFaceTooDarkFailure = 30,
+  MiSnapUxpEventHoldStill = 31,
+  MiSnapUxpEventSmile = 32,
+  MiSnapUxpEventErrorVerbose = 33,
+  MiSnapUxpEventSuccessVerbose = 34,
+  MiSnapUxpEventTimeoutVerbose = 35,
+  MiSnapUxpEventStartVerbose = 36,
+  MiSnapUxpEventReadVerbose = 37,
+  MiSnapUxpEventUnknownTagVerbose = 38,
+  MiSnapUxpEventPaceSupportVerbose = 39,
+  MiSnapUxpEventCaSupportVerbose = 40,
+  MiSnapUxpEventAaSupportVerbose = 41,
+  MiSnapUxpEventAccessMechanismVerbose = 42,
+  MiSnapUxpEventDiscardVerbose = 43,
+  MiSnapUxpEventCancelVerbose = 44,
+  MiSnapUxpEventCancel = 45,
+  MiSnapUxpEventInstruction = 46,
+  MiSnapUxpEventHelp = 47,
+  MiSnapUxpEventTimeout = 48,
+  MiSnapUxpEventReview = 49,
+  MiSnapUxpEventMeasuredConfidence = 50,
+  MiSnapUxpEventMeasuredCornerPoints = 51,
+  MiSnapUxpEventMeasuredMicrConfidence = 52,
+  MiSnapUxpEventMeasuredContrast = 53,
+  MiSnapUxpEventMeasuredBackground = 54,
+  MiSnapUxpEventMeasuredAngle = 55,
+  MiSnapUxpEventMeasuredRotationAngle = 56,
+  MiSnapUxpEventMeasuredSharpness = 57,
+  MiSnapUxpEventMeasuredBrightness = 58,
+  MiSnapUxpEventMeasuredGlare = 59,
+  MiSnapUxpEventMeasuredWidth = 60,
+  MiSnapUxpEventMeasuredAutoTime = 61,
+  MiSnapUxpEventMeasuredManualTime = 62,
+  MiSnapUxpEventMeasuredFailover = 63,
+  MiSnapUxpEventTorchOn = 64,
+  MiSnapUxpEventTorchOff = 65,
+  MiSnapUxpEventStartAuto = 66,
+  MiSnapUxpEventStartManual = 67,
+  MiSnapUxpEventOrientationLandscape = 68,
+  MiSnapUxpEventOrientationPortrait = 69,
 };
 
 
@@ -1402,11 +1406,14 @@ SWIFT_CLASS("_TtC10MiSnapCore22MiSnapLogConfiguration")
 /// Indicates whether PII should be saved
 /// Default: <code>false</code>
 @property (nonatomic) BOOL savePII;
+/// Default initialization
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Initialization with coder
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+/// Encodes with coder
+- (void)encodeWithCoder:(NSCoder * _Nonnull)coder;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)encodeWithCoder:(NSCoder * _Nonnull)coder;
 @end
 
 /// Log level
@@ -1805,45 +1812,46 @@ typedef SWIFT_ENUM(NSInteger, MiSnapUxpEvent, open) {
   MiSnapUxpEventFaceTooCloseFailure = 27,
   MiSnapUxpEventFaceNotStillFailure = 28,
   MiSnapUxpEventFaceStopSmilingFailure = 29,
-  MiSnapUxpEventHoldStill = 30,
-  MiSnapUxpEventSmile = 31,
-  MiSnapUxpEventErrorVerbose = 32,
-  MiSnapUxpEventSuccessVerbose = 33,
-  MiSnapUxpEventTimeoutVerbose = 34,
-  MiSnapUxpEventStartVerbose = 35,
-  MiSnapUxpEventReadVerbose = 36,
-  MiSnapUxpEventUnknownTagVerbose = 37,
-  MiSnapUxpEventPaceSupportVerbose = 38,
-  MiSnapUxpEventCaSupportVerbose = 39,
-  MiSnapUxpEventAaSupportVerbose = 40,
-  MiSnapUxpEventAccessMechanismVerbose = 41,
-  MiSnapUxpEventDiscardVerbose = 42,
-  MiSnapUxpEventCancelVerbose = 43,
-  MiSnapUxpEventCancel = 44,
-  MiSnapUxpEventInstruction = 45,
-  MiSnapUxpEventHelp = 46,
-  MiSnapUxpEventTimeout = 47,
-  MiSnapUxpEventReview = 48,
-  MiSnapUxpEventMeasuredConfidence = 49,
-  MiSnapUxpEventMeasuredCornerPoints = 50,
-  MiSnapUxpEventMeasuredMicrConfidence = 51,
-  MiSnapUxpEventMeasuredContrast = 52,
-  MiSnapUxpEventMeasuredBackground = 53,
-  MiSnapUxpEventMeasuredAngle = 54,
-  MiSnapUxpEventMeasuredRotationAngle = 55,
-  MiSnapUxpEventMeasuredSharpness = 56,
-  MiSnapUxpEventMeasuredBrightness = 57,
-  MiSnapUxpEventMeasuredGlare = 58,
-  MiSnapUxpEventMeasuredWidth = 59,
-  MiSnapUxpEventMeasuredAutoTime = 60,
-  MiSnapUxpEventMeasuredManualTime = 61,
-  MiSnapUxpEventMeasuredFailover = 62,
-  MiSnapUxpEventTorchOn = 63,
-  MiSnapUxpEventTorchOff = 64,
-  MiSnapUxpEventStartAuto = 65,
-  MiSnapUxpEventStartManual = 66,
-  MiSnapUxpEventOrientationLandscape = 67,
-  MiSnapUxpEventOrientationPortrait = 68,
+  MiSnapUxpEventFaceTooDarkFailure = 30,
+  MiSnapUxpEventHoldStill = 31,
+  MiSnapUxpEventSmile = 32,
+  MiSnapUxpEventErrorVerbose = 33,
+  MiSnapUxpEventSuccessVerbose = 34,
+  MiSnapUxpEventTimeoutVerbose = 35,
+  MiSnapUxpEventStartVerbose = 36,
+  MiSnapUxpEventReadVerbose = 37,
+  MiSnapUxpEventUnknownTagVerbose = 38,
+  MiSnapUxpEventPaceSupportVerbose = 39,
+  MiSnapUxpEventCaSupportVerbose = 40,
+  MiSnapUxpEventAaSupportVerbose = 41,
+  MiSnapUxpEventAccessMechanismVerbose = 42,
+  MiSnapUxpEventDiscardVerbose = 43,
+  MiSnapUxpEventCancelVerbose = 44,
+  MiSnapUxpEventCancel = 45,
+  MiSnapUxpEventInstruction = 46,
+  MiSnapUxpEventHelp = 47,
+  MiSnapUxpEventTimeout = 48,
+  MiSnapUxpEventReview = 49,
+  MiSnapUxpEventMeasuredConfidence = 50,
+  MiSnapUxpEventMeasuredCornerPoints = 51,
+  MiSnapUxpEventMeasuredMicrConfidence = 52,
+  MiSnapUxpEventMeasuredContrast = 53,
+  MiSnapUxpEventMeasuredBackground = 54,
+  MiSnapUxpEventMeasuredAngle = 55,
+  MiSnapUxpEventMeasuredRotationAngle = 56,
+  MiSnapUxpEventMeasuredSharpness = 57,
+  MiSnapUxpEventMeasuredBrightness = 58,
+  MiSnapUxpEventMeasuredGlare = 59,
+  MiSnapUxpEventMeasuredWidth = 60,
+  MiSnapUxpEventMeasuredAutoTime = 61,
+  MiSnapUxpEventMeasuredManualTime = 62,
+  MiSnapUxpEventMeasuredFailover = 63,
+  MiSnapUxpEventTorchOn = 64,
+  MiSnapUxpEventTorchOff = 65,
+  MiSnapUxpEventStartAuto = 66,
+  MiSnapUxpEventStartManual = 67,
+  MiSnapUxpEventOrientationLandscape = 68,
+  MiSnapUxpEventOrientationPortrait = 69,
 };
 
 

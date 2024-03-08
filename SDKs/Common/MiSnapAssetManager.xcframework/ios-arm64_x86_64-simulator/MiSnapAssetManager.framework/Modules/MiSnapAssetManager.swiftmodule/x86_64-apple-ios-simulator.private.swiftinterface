@@ -179,15 +179,23 @@ extension CoreFoundation.CGSize {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureVignetteConfiguration : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureVignetteConfiguration : ObjectiveC.NSObject, Foundation.NSCoding, Foundation.NSSecureCoding {
   @objc public var style: MiSnapFacialCaptureVignetteStyle
   @objc public var blurStyle: UIKit.UIBlurEffect.Style
   @objc public var color: UIKit.UIColor
   @objc public var alpha: CoreFoundation.CGFloat
+  @objc override dynamic public init()
+  @objc public static var supportsSecureCoding: Swift.Bool {
+    @objc get
+  }
+  @objc required public init?(coder: Foundation.NSCoder)
+  @objc public func encode(with coder: Foundation.NSCoder)
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
-  @objc override dynamic public init()
+  @objc public var deepCopy: MiSnapFacialCaptureVignetteConfiguration {
+    @objc get
+  }
   @objc deinit
 }
 @objc public enum MiSnapFacialCaptureOutlineColorStyle : Swift.Int {
@@ -230,6 +238,8 @@ extension CoreFoundation.CGSize {
     @objc set
   }
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapFacialCaptureGuideConfiguration? = nil, fill: CoreFoundation.CGFloat, orientation: UIKit.UIInterfaceOrientation = .portrait, frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) public func adjustForLowLight()
+  @objc @_Concurrency.MainActor(unsafe) public func removeLowLightAdjustment()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapSuccessConfiguration : ObjectiveC.NSObject {
@@ -516,12 +526,15 @@ extension MiSnapBulletView {
   }
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapDocumentOutlineConfiguration : ObjectiveC.NSObject {
+  @objc public var image: UIKit.UIImage?
+  @objc public var rotatePortraitImage: Swift.Bool
   @objc public var alignment: MiSnapGuideAlignment
   @objc public var alpha: CoreFoundation.CGFloat
   @objc public var mainBorderColor: UIKit.UIColor
   @objc public var secondaryBorderColor: UIKit.UIColor
   @objc public var mainBorderWidth: CoreFoundation.CGFloat
   @objc public var secondaryBorderWidth: CoreFoundation.CGFloat
+  public var cornerRadius: CoreFoundation.CGFloat?
   @objc public var isHidden: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -534,7 +547,7 @@ extension MiSnapBulletView {
     get
   }
   @objc @_Concurrency.MainActor(unsafe) public init(for documentType: MiSnapGuideDocumentType, configuration: MiSnapGuideViewConfiguration? = nil, orientationMode: MiSnapGuideOrientationMode, portraitFill: CoreFoundation.CGFloat, landscapeFill: CoreFoundation.CGFloat, orientation: UIKit.UIInterfaceOrientation, frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) public func update(_ orientation: UIKit.UIInterfaceOrientation)
+  @objc @_Concurrency.MainActor(unsafe) public func update(_ orientation: UIKit.UIInterfaceOrientation)
   @objc deinit
 }
 @objc public enum MiSnapCheckboxState : Swift.Int {

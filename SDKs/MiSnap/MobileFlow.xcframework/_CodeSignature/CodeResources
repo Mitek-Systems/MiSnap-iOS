@@ -4,18 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		T0aD7nDtKaQFvx2bH0TJr6GGcu4=
-		</data>
-		<key>ios-arm64/.DS_Store</key>
-		<data>
-		dUbfOOAnGAUQ68noXAJx1rlEaMI=
-		</data>
-		<key>ios-arm64/MobileFlow.framework/.DS_Store</key>
-		<data>
-		E+0+GcmWW9h4VghBcZIA4VMBJRg=
-		</data>
 		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlow.h</key>
 		<data>
 		LJ94Tp9XxmQ72V0RMNCzC9bhg48=
@@ -26,7 +14,7 @@
 		</data>
 		<key>ios-arm64/MobileFlow.framework/MobileFlow</key>
 		<data>
-		ZzdWrxezGriIueCO7wXz4RKFI5M=
+		R4lJX3ISFbA9V4UMrwgYJ0Ftzpw=
 		</data>
 		<key>ios-arm64/MobileFlow.framework/Modules/module.modulemap</key>
 		<data>
@@ -46,7 +34,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/MobileFlow</key>
 		<data>
-		MHlWC7COcY9C5eCTyAQTGKJI6T0=
+		KuOBQKTQcZuZIlm/v+Xa0IcfwMo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Modules/module.modulemap</key>
 		<data>
@@ -85,11 +73,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZzdWrxezGriIueCO7wXz4RKFI5M=
+			R4lJX3ISFbA9V4UMrwgYJ0Ftzpw=
 			</data>
 			<key>hash2</key>
 			<data>
-			XXGxxlhwmhotP4FjUaAbBNOTzOwvvUwGoHjEg49Uz9Y=
+			DRXMIqp+xBhxK1K1zX7+2MxbZZB7EvqCLe30OYEtBBo=
 			</data>
 		</dict>
 		<key>ios-arm64/MobileFlow.framework/Modules/module.modulemap</key>
@@ -140,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MHlWC7COcY9C5eCTyAQTGKJI6T0=
+			KuOBQKTQcZuZIlm/v+Xa0IcfwMo=
 			</data>
 			<key>hash2</key>
 			<data>
-			e4qqfw711NLfz61F9ioNDaQ3Bvw3vz2PQt/iFGZOvUI=
+			lR4uJojudxA4OJCBrfz/SxEuNPEMF2OreE2blxAGWVI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Modules/module.modulemap</key>

@@ -188,6 +188,14 @@ typedef NS_ENUM(NSInteger, MiSnapCameraTorchMode) {
  */
 @property (nonatomic) NSDictionary * _Nullable lockedFocusDictionary DEPRECATED_ATTRIBUTE;
 /**
+ Indicates whether frames need to be discarded when camera is adjusting for focus and/or exposure and/or white balance
+ 
+ Note, overriding this parameter to `FALSE` might result in a faster image acquisition time but introduces a risk of acquiring a slightly blurry image therefore it's not recommended
+ 
+ Default: TRUE
+ */
+@property (nonatomic) BOOL discardFramesWhenAdjusting;
+/**
  Initializes parameters for a given document type
  */
 - (instancetype)initFor:(MiSnapCameraDocumentType)documentType;

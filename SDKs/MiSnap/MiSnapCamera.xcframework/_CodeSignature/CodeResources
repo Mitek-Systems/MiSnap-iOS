@@ -10,15 +10,15 @@
 		</data>
 		<key>ios-arm64/MiSnapCamera.framework/Headers/MiSnapCameraParameters.h</key>
 		<data>
-		bPSQ+rwmvUU7r0ZkXQG5oQjOBCY=
+		os8cPOWInvRMHSc8pJwkC4AW/ik=
 		</data>
 		<key>ios-arm64/MiSnapCamera.framework/Info.plist</key>
 		<data>
-		BxHOogxXoXMJiBz9mwA9EY9k8t4=
+		F1y7EPiGrRuks5mpSeMsKuhYrsg=
 		</data>
 		<key>ios-arm64/MiSnapCamera.framework/MiSnapCamera</key>
 		<data>
-		bto/Vw+f0nWu87wAa9JzmZrsRHk=
+		jzBO2frfXgFKV8Uc5vNjW8HldAs=
 		</data>
 		<key>ios-arm64/MiSnapCamera.framework/Modules/module.modulemap</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>ios-arm64/MiSnapCamera.framework/_CodeSignature/CodeResources</key>
 		<data>
-		CiN7DA/0kjiJs9P+i/nmTrcI5ss=
+		su3YVi7g4aTCT5Ierd2v3hx+QOo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Headers/MiSnapCamera.h</key>
 		<data>
@@ -34,15 +34,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Headers/MiSnapCameraParameters.h</key>
 		<data>
-		bPSQ+rwmvUU7r0ZkXQG5oQjOBCY=
+		os8cPOWInvRMHSc8pJwkC4AW/ik=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Info.plist</key>
 		<data>
-		Jlv8tp8iFklsXRQZggfXR6Mu+6c=
+		ErgUID45R9kYOWKeF3yBrLIY50Q=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/MiSnapCamera</key>
 		<data>
-		GPlM0zMqV2GqLGmXqADccUjFaqU=
+		bsieCSNz+gS35NOdV9uoRDjLGv8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/_CodeSignature/CodeResources</key>
 		<data>
-		mvxj5JxsUnT/tc6G7AULQOWuCcw=
+		ursMQK707+RcEB178k+HzeFUp80=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -70,33 +70,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bPSQ+rwmvUU7r0ZkXQG5oQjOBCY=
+			os8cPOWInvRMHSc8pJwkC4AW/ik=
 			</data>
 			<key>hash2</key>
 			<data>
-			v0nBasujVSWfrHSPu+8vDUe6EOjMmH7s7QjhLiID55c=
+			1pmNHza0CB7lz4XCM47gcU1mIEIh///F+ib/5Mxsgao=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapCamera.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BxHOogxXoXMJiBz9mwA9EY9k8t4=
+			F1y7EPiGrRuks5mpSeMsKuhYrsg=
 			</data>
 			<key>hash2</key>
 			<data>
-			wLThNzS9JTwV8ENommu0rTKAQkOWmT6ibcT/kutGufg=
+			7seWXtkTUm9xGAtRoUUZtyRsDtsaAOsmIJPN4NJX9k0=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapCamera.framework/MiSnapCamera</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bto/Vw+f0nWu87wAa9JzmZrsRHk=
+			jzBO2frfXgFKV8Uc5vNjW8HldAs=
 			</data>
 			<key>hash2</key>
 			<data>
-			P7fKIGD5neVjYI2srXdUbJ8COwE7+P9xn+wb0IhTyMQ=
+			+rytzYMB4b/Qwy0rMOArDjw7vxE3wExAVROmI+qkMWA=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapCamera.framework/Modules/module.modulemap</key>
@@ -114,11 +114,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CiN7DA/0kjiJs9P+i/nmTrcI5ss=
+			su3YVi7g4aTCT5Ierd2v3hx+QOo=
 			</data>
 			<key>hash2</key>
 			<data>
-			sKkXWrywcZgksZB5UgzLUKAuVFr8hPeis7SuBd8h/Jw=
+			gFp4dSBQOkQzV8Gau9d6ibGYbgDD1UtX0XHjkfZ3AqA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Headers/MiSnapCamera.h</key>
@@ -136,33 +136,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bPSQ+rwmvUU7r0ZkXQG5oQjOBCY=
+			os8cPOWInvRMHSc8pJwkC4AW/ik=
 			</data>
 			<key>hash2</key>
 			<data>
-			v0nBasujVSWfrHSPu+8vDUe6EOjMmH7s7QjhLiID55c=
+			1pmNHza0CB7lz4XCM47gcU1mIEIh///F+ib/5Mxsgao=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jlv8tp8iFklsXRQZggfXR6Mu+6c=
+			ErgUID45R9kYOWKeF3yBrLIY50Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			lwe6Htzl2mYkmBnBuwHnnAdX0ljmp9b3VUz7rmUDg90=
+			LWZkY0LnT0yt7hvS8rYEhhZx1AM8/LkRCrEhdBXYbUA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/MiSnapCamera</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GPlM0zMqV2GqLGmXqADccUjFaqU=
+			bsieCSNz+gS35NOdV9uoRDjLGv8=
 			</data>
 			<key>hash2</key>
 			<data>
-			U1i50z5uGmWqGqHopQXmwnHktEjdnsNqN4IW8J/mitc=
+			oG1V98A7g4pmGTIAcwbmroRgtdCL/aSd1c/j33XoeZg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Modules/module.modulemap</key>
@@ -180,11 +180,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mvxj5JxsUnT/tc6G7AULQOWuCcw=
+			ursMQK707+RcEB178k+HzeFUp80=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zz7Y9cOKobvthhPG3DsWzeTN7154x21BhIut3agCLI0=
+			TKlCQTEKqezZ0wV1mo9kRivB4DYMdmdIqSHDK1DEpbI=
 			</data>
 		</dict>
 	</dict>

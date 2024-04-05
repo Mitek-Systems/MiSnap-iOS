@@ -181,6 +181,7 @@ public enum MiSnapNFCKey {
   public static let dateOfBirth: Swift.String
   public static let placeOfBirth: Swift.String
   public static let sex: Swift.String
+  public static let otherNames: Swift.String
   public static let address: Swift.String
   public static let telephone: Swift.String
   public static let profession: Swift.String
@@ -211,6 +212,7 @@ public enum MiSnapNFCKey {
   }
   @objc public var skipCA: Swift.Bool
   @objc public var optionalDataRedactionEnabled: Swift.Bool
+  @objc public var restartPollingTime: Swift.Double
   @objc public var logging: MiSnapLogConfiguration
   @available(*, deprecated, message: "Call `logging.level` instead")
   @objc public var logLevel: MiSnapLogLevel

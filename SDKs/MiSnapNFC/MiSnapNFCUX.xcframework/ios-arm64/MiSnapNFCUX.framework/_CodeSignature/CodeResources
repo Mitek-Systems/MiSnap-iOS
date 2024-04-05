@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LwqYce6F+mp9i6FUJ/v9GiGvOyw=
+		x4cgqGAL4ZIIQ8nmq1fHxYt+w64=
 		</data>
 		<key>Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -39,6 +39,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		gxJQ6WFL4Tf423e/vCHNc0+MIZU=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		2YoRHNXRkGrFl+BRGIONA0qe6e4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -97,6 +101,13 @@
 			<key>hash2</key>
 			<data>
 			voIfXCCr8qVtortAcx9BaIr1Jizi/1+OGFNVo68sybA=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+THqni8bkcloLZHCjOwLkcbqgUKmDF5b5CPI121UkK0=
 			</data>
 		</dict>
 	</dict>

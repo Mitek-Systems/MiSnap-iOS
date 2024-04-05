@@ -398,6 +398,8 @@ SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
 /// </ul>
 /// Default: <code>false</code>
 @property (nonatomic) BOOL optionalDataRedactionEnabled;
+/// A time interval at which a polling should be restarted
+@property (nonatomic) NSTimeInterval restartPollingTime;
 /// Logging configuration
 @property (nonatomic, strong) MiSnapLogConfiguration * _Nonnull logging;
 /// Log level

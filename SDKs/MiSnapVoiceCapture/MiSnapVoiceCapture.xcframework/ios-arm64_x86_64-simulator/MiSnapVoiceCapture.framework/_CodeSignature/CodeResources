@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Cbw5mhCjhyghpymm/PHDVMo2NB0=
+		bIAEzPsYu1P996PaTqAgQASweM8=
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -63,6 +63,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		rAUHt+p/MEh9TXQez1st96EI1Rg=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		2YoRHNXRkGrFl+BRGIONA0qe6e4=
 		</data>
 		<key>media/snr_computer/gvad_model.cbm</key>
 		<data>
@@ -179,6 +183,13 @@
 			<key>hash2</key>
 			<data>
 			r1ouv+mIRsLjNAwU9NVzk6/uVXmV/9e1OBUu8YS1XIg=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+THqni8bkcloLZHCjOwLkcbqgUKmDF5b5CPI121UkK0=
 			</data>
 		</dict>
 		<key>media/snr_computer/gvad_model.cbm</key>

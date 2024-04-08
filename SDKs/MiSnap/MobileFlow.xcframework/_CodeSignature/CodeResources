@@ -14,15 +14,19 @@
 		</data>
 		<key>ios-arm64/MobileFlow.framework/MobileFlow</key>
 		<data>
-		R4lJX3ISFbA9V4UMrwgYJ0Ftzpw=
+		LsHwkoKGSFk3bpzxz+BU+gpEMYw=
 		</data>
 		<key>ios-arm64/MobileFlow.framework/Modules/module.modulemap</key>
 		<data>
 		b5tB3Ir/+b4K2OciFIm9nn6CWWU=
 		</data>
+		<key>ios-arm64/MobileFlow.framework/PrivacyInfo.xcprivacy</key>
+		<data>
+		2YoRHNXRkGrFl+BRGIONA0qe6e4=
+		</data>
 		<key>ios-arm64/MobileFlow.framework/_CodeSignature/CodeResources</key>
 		<data>
-		JB6vmKpnf9eLwI7HmErnCWrsBMw=
+		VHvh7KTz9AogO8JDJl/IGjfT/sQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlow.h</key>
 		<data>
@@ -34,15 +38,19 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/MobileFlow</key>
 		<data>
-		KuOBQKTQcZuZIlm/v+Xa0IcfwMo=
+		fmM5rBFhpfeQh1MKd7VW4hkc5ho=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Modules/module.modulemap</key>
 		<data>
 		b5tB3Ir/+b4K2OciFIm9nn6CWWU=
 		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/PrivacyInfo.xcprivacy</key>
+		<data>
+		2YoRHNXRkGrFl+BRGIONA0qe6e4=
+		</data>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/_CodeSignature/CodeResources</key>
 		<data>
-		pXSXuIjJrmhNqjfgbHcHGE2+qIk=
+		NIPBD4dQWrSiM9nyyK2xyfCTajU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -73,11 +81,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R4lJX3ISFbA9V4UMrwgYJ0Ftzpw=
+			LsHwkoKGSFk3bpzxz+BU+gpEMYw=
 			</data>
 			<key>hash2</key>
 			<data>
-			DRXMIqp+xBhxK1K1zX7+2MxbZZB7EvqCLe30OYEtBBo=
+			xBUR3TZN4fNADcY/esP81GrSMq/X96jpbysCn4JNmZ4=
 			</data>
 		</dict>
 		<key>ios-arm64/MobileFlow.framework/Modules/module.modulemap</key>
@@ -91,15 +99,26 @@
 			BFlJ/WfhP3KY9TCIvonKb8azPNwbGczPKe+5NSAdlX4=
 			</data>
 		</dict>
+		<key>ios-arm64/MobileFlow.framework/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2YoRHNXRkGrFl+BRGIONA0qe6e4=
+			</data>
+			<key>hash2</key>
+			<data>
+			+THqni8bkcloLZHCjOwLkcbqgUKmDF5b5CPI121UkK0=
+			</data>
+		</dict>
 		<key>ios-arm64/MobileFlow.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JB6vmKpnf9eLwI7HmErnCWrsBMw=
+			VHvh7KTz9AogO8JDJl/IGjfT/sQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			31Pg5t0sN7E7UlVGX6qIabSjyL8AlaDxfsBfhPxFJyQ=
+			NG82JWnxi9F08n6z0Cl5Au/IqZ2c7o9reeOMrrDA2QY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlow.h</key>
@@ -128,11 +147,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KuOBQKTQcZuZIlm/v+Xa0IcfwMo=
+			fmM5rBFhpfeQh1MKd7VW4hkc5ho=
 			</data>
 			<key>hash2</key>
 			<data>
-			lR4uJojudxA4OJCBrfz/SxEuNPEMF2OreE2blxAGWVI=
+			yPkmn+23+GTgeRB3+bj3ARA5r5en1bSBKpHBunQ3ZDU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Modules/module.modulemap</key>
@@ -146,15 +165,26 @@
 			BFlJ/WfhP3KY9TCIvonKb8azPNwbGczPKe+5NSAdlX4=
 			</data>
 		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2YoRHNXRkGrFl+BRGIONA0qe6e4=
+			</data>
+			<key>hash2</key>
+			<data>
+			+THqni8bkcloLZHCjOwLkcbqgUKmDF5b5CPI121UkK0=
+			</data>
+		</dict>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pXSXuIjJrmhNqjfgbHcHGE2+qIk=
+			NIPBD4dQWrSiM9nyyK2xyfCTajU=
 			</data>
 			<key>hash2</key>
 			<data>
-			EQVgXvBZor+25egxnnRz4+CMJQVeURKZ16HVJQXoQWg=
+			+VZ22jmdxZRITwXZbdCyGDUFi/9OZDJlQl7ha8qtMuU=
 			</data>
 		</dict>
 	</dict>

@@ -33,8 +33,7 @@ class MiPassResultViewController: ResultViewController {
     override func handleResults() {
         logVoiceResults(result.voice)
         
-        guard MitekPlatform.shared.hasValidMiPassConfiguration else {
-            handleEnrollmentFrontEndResult()
+        guard MitekPlatform.shared.configurationV2.isValid else {
             return configureSubviews()
         }
         
@@ -76,7 +75,7 @@ extension MiPassResultViewController {
         guard let serverResult = serverResult else { return }
         if enrollmentModification == .deleteExistingAndReenroll, let id = enrollmentInput.enrollmentId {
             let semaphore = DispatchSemaphore(value: 0)
-            MitekPlatform.shared.deleteEnrollment(withId: id) { [weak self] (rawResponse, error) in
+            MitekPlatform.shared.deleteEnrollment(withId: id, api: .v2) { [weak self] (rawResponse, error) in
                 guard let self = self else { return }
                 if let error = error {
                     print(error.localizedDescription)
@@ -120,30 +119,22 @@ extension MiPassResultViewController {
         
         guard let requestDictionary = miPassRequest.dictionary else { return }
         
-        // Send an Enrollment request to MiPass using Networking utility
+        // Send an Enrollment request to MiPass using MitekPlatform utility
         
-        MitekPlatform.shared.enroll(requestDictionary) { [weak self] (rawResponse, error) in
+        MitekPlatform.shared.enroll(requestDictionary, api: .v2) { [weak self] (rawResponse, error) in
             guard let self = self else { return }
             serverResult.stopTimer()
             
             DispatchQueue.main.async {
                 if let error = error {
-                    var errorMessage: String = ""
-                    if let urlError = error as? URLError {
-                        errorMessage = "Server error: \(urlError.errorCode) - \(self.messageFrom(urlError.errorCode))"
-                    } else {
-                        errorMessage = "Server error: \(error.localizedDescription)"
-                    }
-                    print(errorMessage)
-                    self.removeLoadingView(with: errorMessage)
+                    serverResult.set(error: error)
                 } else if let rawResponse = rawResponse {
                     serverResult.parse(rawResponse)
-                    self.configureSubviews()
-                    self.removeLoadingView()
                     self.logServerResult(serverResult)
-                    
                     self.handleEnrollmentServerResult(serverResult)
                 }
+                self.configureSubviews()
+                self.removeLoadingView()
             }
         }
     }
@@ -203,26 +194,19 @@ extension MiPassResultViewController {
         
         // Send a Verify request to MiPass using Networking utility
         
-        MitekPlatform.shared.verify(requestDictionary) { rawResponse, error in
+        MitekPlatform.shared.verify(requestDictionary, api: .v2) { rawResponse, error in
             serverResult.stopTimer()
             
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
                 if let error = error {
-                    var errorMessage: String = ""
-                    if let urlError = error as? URLError {
-                        errorMessage = "Server error: \(urlError.errorCode) - \(self.messageFrom(urlError.errorCode))"
-                    } else {
-                        errorMessage = "Server error: \(error.localizedDescription)"
-                    }
-                    print(errorMessage)
-                    self.removeLoadingView(with: errorMessage)
+                    serverResult.set(error: error)
                 } else if let rawResponse = rawResponse {
                     serverResult.parse(rawResponse)
-                    self.configureSubviews()
-                    self.removeLoadingView()
                     self.logServerResult(serverResult)
                 }
+                self.configureSubviews()
+                self.removeLoadingView()
             }
         }
     }

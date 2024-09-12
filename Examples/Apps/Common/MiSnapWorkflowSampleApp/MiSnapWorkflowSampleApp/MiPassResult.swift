@@ -69,6 +69,11 @@ public class MiPassResult {
     private var startTime: Date = Date()
     private var enrollmentResponse: MiPassEnrollmentResponse?
     private var verificationResponse: MiPassVerificationResponse?
+    private(set) var error: MitekPlatformError?
+    public var errorMessage: String? {
+        guard let error = error else { return nil }
+        return "Server error: " + error.stringValue
+    }
     private(set) var roundtripTime: Int = 0
     public var processingTime: Int {
         if let response = enrollmentResponse {
@@ -105,6 +110,10 @@ public class MiPassResult {
     
     private(set) var voiceEnrolled: Bool = false
     private(set) var faceEnrolled: Bool = false
+    
+    public func set(error: MitekPlatformError) {
+        self.error = error
+    }
     
     public func parse(_ rawResponse: [AnyHashable : Any]) {
         guard let jsonData = try? JSONSerialization.data(withJSONObject: rawResponse) else { return }

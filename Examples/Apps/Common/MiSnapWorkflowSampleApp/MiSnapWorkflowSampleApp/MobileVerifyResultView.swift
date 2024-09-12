@@ -2,7 +2,7 @@
 //  MobileVerifyResultView.swift
 //  MiSnapWorkflowSampleApp
 //
-//  Created by Mitek Engineering on 6/30/20.
+//  Created by Stas Tsuprenko on 6/30/20.
 //  Copyright © 2020 Mitek Systems Inc. All rights reserved.
 //
 
@@ -70,6 +70,12 @@ class MobileVerifyResultView: UIStackView {
         return images
     }
     
+    private var hasServerError: Bool {
+        guard let serverResult = serverResult, let errorMessage = serverResult.errorMessage else { return false }
+        addNotification(withText: errorMessage)
+        return true
+    }
+    
     private var segmentedControl: UISegmentedControl!
     private var scrollView: UIScrollView!
     private var verticalStackView: UIStackView!
@@ -94,12 +100,6 @@ class MobileVerifyResultView: UIStackView {
         distribution = .fill
         spacing = 5
         translatesAutoresizingMaskIntoConstraints = false
-        
-        verticalStackView = UIStackView()
-        verticalStackView.translatesAutoresizingMaskIntoConstraints = false
-        verticalStackView.axis = .vertical
-        verticalStackView.spacing = 5
-        verticalStackView.distribution = .equalSpacing
         
         configureInitialSubviews()
         configureScrollView(for: segmentedControl.selectedSegmentIndex)
@@ -142,6 +142,16 @@ class MobileVerifyResultView: UIStackView {
             horizontalStack.heightAnchor.constraint(equalToConstant: frame.size.height * 0.25),
             segmentedControl.heightAnchor.constraint(equalToConstant: 30)
         ])
+        
+        verticalStackView = UIStackView()
+        verticalStackView.translatesAutoresizingMaskIntoConstraints = false
+        verticalStackView.axis = .vertical
+        verticalStackView.spacing = 5
+        verticalStackView.distribution = .equalSpacing
+        
+        if hasServerError {
+            segmentedControl.isHidden = true
+        }
     }
     
     private func addHeader(withTitle title: String) {
@@ -172,9 +182,10 @@ class MobileVerifyResultView: UIStackView {
         }
     }
     
-    private func addGenericInfo(withTitle title: String, value: String, split: CGFloat = 1) {
+    private func addGenericInfo(withTitle title: String, value: String, split: CGFloat = 1, valueSelectable: Bool = false) {
         let genericInfoView = InfoView(with: title, values: [value], split: split,
-                                       frame: CGRect(x: 0, y: 0, width: widthConstant, height: heightConstant))
+                                       frame: CGRect(x: 0, y: 0, width: widthConstant, height: heightConstant),
+                                       valuesSelectable: valueSelectable)
         genericInfoView.translatesAutoresizingMaskIntoConstraints = false
         
         verticalStackView.addArrangedSubview(genericInfoView)
@@ -285,7 +296,7 @@ class MobileVerifyResultView: UIStackView {
         
         if let dossierId = serverResult.dossierId {
             addHeader(withTitle: "Metadata")
-            addGenericInfo(withTitle: "Dossier ID", value: dossierId, split: 3/10)
+            addGenericInfo(withTitle: "Dossier ID", value: dossierId, split: 3/10, valueSelectable: true)
         }
     }
     
@@ -315,10 +326,12 @@ class MobileVerifyResultView: UIStackView {
     
     private func configureScrollView(for resultSection: ResultSection) {
         clearSubviews()
-        switch resultSection {
-        case .summary:          configureForSummary()
-        case .details:          configureForDetails()
-        case .extractedData:    configureForExtractedData()
+        if !hasServerError {
+            switch resultSection {
+            case .summary:          configureForSummary()
+            case .details:          configureForDetails()
+            case .extractedData:    configureForExtractedData()
+            }
         }
         finishConfiguring()
     }

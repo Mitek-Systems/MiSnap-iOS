@@ -16,12 +16,20 @@ class ResultLabel: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public init(with title: String, alignement: NSTextAlignment = .center, bgColor: UIColor? = nil, fontSize: CGFloat = 19, fontWeight: UIFont.Weight = .light, cornerRadius: CGFloat? = 10, frame: CGRect) {
+    public init(with title: String, alignement: NSTextAlignment = .center, bgColor: UIColor? = nil, fontSize: CGFloat = 19, fontWeight: UIFont.Weight = .light, cornerRadius: CGFloat? = 10, frame: CGRect, selectable: Bool = false) {
         super.init(frame: frame)
-        self.text = title
-        self.textAlignment = alignement
-        self.font = .systemFont(ofSize: fontSize, weight: fontWeight)
-        self.numberOfLines = 3
+        text = title
+        textAlignment = alignement
+        lineBreakMode = .byWordWrapping
+        font = .systemFont(ofSize: fontSize, weight: fontWeight)
+        numberOfLines = 3
+        
+        if selectable {
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapped(_:)))
+            tapGesture.numberOfTapsRequired = 1
+            addGestureRecognizer(tapGesture)
+            isUserInteractionEnabled = true
+        }
         
         if let radius = cornerRadius {
             self.layer.cornerRadius = radius
@@ -55,6 +63,15 @@ extension ResultLabel {
             self.backgroundColor = darkColor
         } else {
             self.backgroundColor = lightColor
+        }
+    }
+    
+    @objc private func tapped(_ tapRecognizer: UITapGestureRecognizer) {
+        UIPasteboard.general.string = text
+        text = "Copied!"
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) { [weak self] in
+            guard let self = self else { return }
+            self.text = UIPasteboard.general.string
         }
     }
 }

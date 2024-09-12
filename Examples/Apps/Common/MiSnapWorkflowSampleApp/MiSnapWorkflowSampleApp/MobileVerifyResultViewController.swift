@@ -15,7 +15,7 @@ class MobileVerifyResultViewController: ResultViewController {
     private var serverResult: MobileVerifyResult?
     
     override func handleResults() {
-        guard MitekPlatform.shared.hasValidMobileVerifyConfiguration else {
+        guard MitekPlatform.shared.configurationV2.isValid else {
             return configureSubviews()
         }
         
@@ -33,60 +33,73 @@ class MobileVerifyResultViewController: ResultViewController {
         } else if let passport = result.passport {
             encodedFrontImage = passport.encodedImage
         }
+        var frontRts = result.idFront?.rts
+        if let passportRts = result.passport?.rts {
+            frontRts = passportRts
+        }
         let encodedBackImage = result.idBack?.encodedImage
+        let backRts = result.idBack?.rts
         let pdf417 = result.idBack?.extraction?.barcodeString
         let qrCode = result.passportQr?.extraction?.barcodeString
         let nfcRequestDictionary = result.nfc?[MiSnapNFCKey.requestDictionary]
         let encodedFaceImage = result.face?.encodedImage
+        let faceRts = result.face?.rts
         
         // Create a MobileVerify request dictionary using MobileVerifyRequest utility
         
-        let mvRequest = MobileVerifyRequest()
+        let mvAutoAuthenticationRequest = MobileVerifyAutoAuthenticationRequest()
+        let mvAADocAuthenticationRequest = MobileVerifyAgentAssistDocumentAuthenticationRequest()
+        
         if let encodedFrontImage = encodedFrontImage {
-            mvRequest.addFrontEvidence(withData: encodedFrontImage, qrCode: qrCode)
+            mvAutoAuthenticationRequest.addFrontEvidence(withData: encodedFrontImage, qrCode: qrCode, rts: frontRts)
+            mvAADocAuthenticationRequest.addImage(encodedFrontImage)
         }
         if let encodedBackImage = encodedBackImage {
-            mvRequest.addBackEvidence(withData: encodedBackImage, pdf417: pdf417)
+            mvAutoAuthenticationRequest.addBackEvidence(withData: encodedBackImage, pdf417: pdf417, rts: backRts)
+            mvAADocAuthenticationRequest.addImage(encodedBackImage)
+            mvAADocAuthenticationRequest.addDeviceExtractedData(pdf417)
         }
         if let nfcRequestDictionary = nfcRequestDictionary as? [String : Any] {
-            mvRequest.addNfcEvidence(from: nfcRequestDictionary)
+            mvAutoAuthenticationRequest.addNfcEvidence(from: nfcRequestDictionary)
         }
         if let encodedFaceImage = encodedFaceImage {
-            mvRequest.addSelfieEvidence(withData: encodedFaceImage)
-            mvRequest.addVerifications([.faceComparison, .faceLiveness])
+            mvAutoAuthenticationRequest.addSelfieEvidence(withData: encodedFaceImage, rts: faceRts)
+            mvAutoAuthenticationRequest.addVerifications([.faceComparison, .faceLiveness])
         }
         
-        if let errors = mvRequest.errors {
-            print("Errors generating MobileVerifyRequest:")
+        if let _ = frontRts {
+            mvAutoAuthenticationRequest.addVerifications([.injectionAttackDetection])
+        }
+        if let _ = backRts {
+            mvAutoAuthenticationRequest.addVerifications([.injectionAttackDetection])
+        }
+        if let _ = faceRts {
+            mvAutoAuthenticationRequest.addVerifications([.injectionAttackDetection])
+        }
+        
+        if let errors = mvAutoAuthenticationRequest.errors {
+            print("Errors generating MobileVerifyAutoAuthenticationRequest:")
             for (idx, error) in errors.enumerated() {
                 print("\(idx + 1). \(error.description)")
             }
             return
         }
         
-        guard let requestDictionary = mvRequest.dictionary else { return }
+        guard let requestDictionary = mvAutoAuthenticationRequest.dictionary else { return }
         
-        // Send a request to MobileVerify using Networking utility
-        
-        MitekPlatform.shared.authenticate(requestDictionary) { rawResponse, error in
+        // Send a request to MobileVerifyAutoAuthentication using MitekPlatform utility
+        MitekPlatform.shared.authenticateAuto(requestDictionary, api: .v2) { rawResponse, error in
             serverResult.stopTimer()
             DispatchQueue.main.async { [weak self] in
                 guard let self = self else { return }
                 if let error = error {
-                    var errorMessage: String = ""
-                    if let urlError = error as? URLError {
-                        errorMessage = "Authentication error: \(urlError.errorCode) - \(self.messageFrom(urlError.errorCode))"
-                    } else {
-                        errorMessage = "Authentication error: \(error.localizedDescription)"
-                    }
-                    print(errorMessage)
-                    self.removeLoadingView(with: errorMessage)
+                    serverResult.set(error: error)
                 } else if let rawResponse = rawResponse {
                     serverResult.parse(rawResponse)
                     if let nfcResult = self.result.nfc { serverResult.update(with: nfcResult) }
-                    self.configureSubviews()
-                    self.removeLoadingView(animated: true)
                 }
+                self.configureSubviews()
+                self.removeLoadingView()
             }
         }
     }

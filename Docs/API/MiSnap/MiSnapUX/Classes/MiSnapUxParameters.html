@@ -54,6 +54,9 @@
                 <a class="nav-group-task-link" href="../Classes/MiSnapConfiguration.html">MiSnapConfiguration</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapHintParameters.html">MiSnapHintParameters</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapLocalizationConfiguration.html">MiSnapLocalizationConfiguration</a>
               </li>
               <li class="nav-group-task">
@@ -82,6 +85,9 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapIntroductoryInstructionMode.html">MiSnapIntroductoryInstructionMode</a>
+              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapReviewMode.html">MiSnapReviewMode</a>
               </li>
@@ -191,8 +197,9 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="k">var</span> <span class="nv">showIntroductoryInstructionScreen</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Override `useCustomTutorials` to `true` if you want to present a custom introductory instruction screen or override `introductoryInstructionMode` to `.noInstruction` if you do not want to show it"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">showIntroductoryInstructionScreen</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -219,8 +226,9 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="k">var</span> <span class="nv">showTimeoutScreen</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Override `useCustomTutorials` to `true` if you want to present a custom timeout screen"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">showTimeoutScreen</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -247,8 +255,9 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="k">var</span> <span class="nv">showHelpScreen</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Override `useCustomTutorials` to `true` if you want to present a custom help screen"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">showHelpScreen</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -275,8 +284,65 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Override `useCustomTutorials` to `true` if you want to present a custom review screen or override `reviewMode` to `.noReview` if you do not want to show it"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">showReviewScreen</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapUxParameters(py)useCustomTutorials"></a>
+                    <a name="//apple_ref/swift/Property/useCustomTutorials" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapUxParameters(py)useCustomTutorials">useCustomTutorials</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates that an integrator wants to implement custom tutorials and <code><a href="../Classes/MiSnapViewController.html">MiSnapViewController</a></code> should return <code>miSnapCustomTutorial(_:mode:statuses:image:)</code> optional callback</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="k">var</span> <span class="nv">showReviewScreen</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">useCustomTutorials</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapUxParameters(py)instructionMode"></a>
+                    <a name="//apple_ref/swift/Property/instructionMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapUxParameters(py)instructionMode">instructionMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Introductory instruction mode</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">instructionMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapIntroductoryInstructionMode.html">MiSnapIntroductoryInstructionMode</a></span></code></pre>
 
                         </div>
                       </div>
@@ -458,8 +524,37 @@ will be dismissed by a presenting view controller</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Use `hint.betweenTime`, `hint.transitionTime`, and `hint.displayTime` for finer control instead"</span><span class="p">)</span>
+<span class="kd">@objc</span>
 <span class="kd">public</span> <span class="k">var</span> <span class="nv">hintUpdatePeriod</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapUxParameters(py)hint"></a>
+                    <a name="//apple_ref/swift/Property/hint" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapUxParameters(py)hint">hint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hint parameters</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">hint</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapHintParameters.html">MiSnapHintParameters</a></span></code></pre>
 
                         </div>
                       </div>
@@ -534,6 +629,36 @@ will be dismissed by a presenting view controller</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:@M@MiSnapUX@objc(cs)MiSnapUxParameters(py)showCancelAlert"></a>
+                    <a name="//apple_ref/swift/Property/showCancelAlert" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapUxParameters(py)showCancelAlert">showCancelAlert</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether a system alert should be presented on Cancel button tap to warn a user that the progress will be lost</p>
+
+<p>Default: <code>false</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">showCancelAlert</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:@M@MiSnapUX@objc(cs)MiSnapUxParameters(py)dictionary"></a>
                     <a name="//apple_ref/swift/Property/dictionary" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@MiSnapUX@objc(cs)MiSnapUxParameters(py)dictionary">dictionary</a>
@@ -552,7 +677,7 @@ will be dismissed by a presenting view controller</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="k">var</span> <span class="nv">dictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">dictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

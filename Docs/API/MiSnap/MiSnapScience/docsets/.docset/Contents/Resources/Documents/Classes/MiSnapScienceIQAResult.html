@@ -699,13 +699,18 @@
                     <code>
                     <a name="/c:objc(cs)MiSnapScienceIQAResult(py)glareBoundingBoxNormalized"></a>
                     <a name="//apple_ref/objc/Property/glareBoundingBoxNormalized" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MiSnapScienceIQAResult(py)glareBoundingBoxNormalized">glareBoundingBoxNormalized</a>
+                    <a class="token discouraged" href="#/c:objc(cs)MiSnapScienceIQAResult(py)glareBoundingBoxNormalized">glareBoundingBoxNormalized</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Deprecated since it returns a wrong rect when aspect ratio is anything other than 16:9. Normalize <code><a href="../Classes/MiSnapScienceIQAResult.html#/c:objc(cs)MiSnapScienceIQAResult(py)glareBoundingBox">glareBoundingBox</a></code> based on a camera preview rect instead</p>
+
+                      </div>
                       <div class="abstract">
                         <p>The bounding box around the largest glare spot detected normalized to a screen size.</p>
 
@@ -753,13 +758,18 @@
                     <code>
                     <a name="/c:objc(cs)MiSnapScienceIQAResult(py)cornerPointsNormalized"></a>
                     <a name="//apple_ref/objc/Property/cornerPointsNormalized" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MiSnapScienceIQAResult(py)cornerPointsNormalized">cornerPointsNormalized</a>
+                    <a class="token discouraged" href="#/c:objc(cs)MiSnapScienceIQAResult(py)cornerPointsNormalized">cornerPointsNormalized</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Deprecated since it returns wrong corner points when aspect ratio is anything other than 16:9. Normalize <code><a href="../Classes/MiSnapScienceIQAResult.html#/c:objc(cs)MiSnapScienceIQAResult(py)cornerPoints">cornerPoints</a></code> based on a camera preview rect instead</p>
+
+                      </div>
                       <div class="abstract">
                         <p>The corner points of the document normalized to a screen size</p>
 
@@ -768,7 +778,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cornerPointsNormalized</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">DEPRECATED_MSG_ATTRIBUTE</span><span class="p">(</span> <span class="s">"Deprecated since it returns wrong corner points when aspect ratio is "</span> <span class="s">"anything other than 16:9. Normalize `cornerPoints` based on a camera "</span> <span class="s">"preview rect instead"</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">cornerPointsNormalized</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>

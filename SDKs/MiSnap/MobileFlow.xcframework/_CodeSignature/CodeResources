@@ -6,15 +6,63 @@
 	<dict>
 		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlow.h</key>
 		<data>
-		LJ94Tp9XxmQ72V0RMNCzC9bhg48=
+		MVVv2JlPoPp9Y7rZpp3XTBQ/byk=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowAnalyzer.h</key>
+		<data>
+		K5gb+agkP4csdmJVB7mdI5M3VB8=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowDocParameters.h</key>
+		<data>
+		aY0u/bG9hIGx+NcTGbyr3oQeGdg=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowDocResult.h</key>
+		<data>
+		JChTiLyuUq4n2TNVV90aCis6ZeM=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowExposureResult.h</key>
+		<data>
+		UfXLufXUzceTaDMC2FkNyiHdv0E=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowFocusResult.h</key>
+		<data>
+		BYqNqWQ43xStGrvyGZ3ZytBwJMU=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowFourCornerResult.h</key>
+		<data>
+		MQ9B4qPshZRNKPqkJ8CoG1NZUdU=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowGlareResult.h</key>
+		<data>
+		lpjsu0IAzXPWe7JDs6vHWMloU18=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowImageUtils.h</key>
+		<data>
+		8cpyOk1U6RS+ebXbyKpDT+mASr4=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowMicrResult.h</key>
+		<data>
+		ToqDKL+fSv+S3oZpmYghUSPSkC0=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowMrzResult.h</key>
+		<data>
+		fH/dqAlBOgc/C8Amude8+lP39aw=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowSpikeNormalizer.h</key>
+		<data>
+		PbRHOHwoOfHLjP+vMGTE0+z0btI=
+		</data>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowTypes.h</key>
+		<data>
+		ylc89hEERUHuErchzjl9uY7z7C0=
 		</data>
 		<key>ios-arm64/MobileFlow.framework/Info.plist</key>
 		<data>
-		6US+EzTGudHDKvmg5Vc3elPNGIo=
+		R+cMfgp2fnG0d3pZxdfqguy7Pek=
 		</data>
 		<key>ios-arm64/MobileFlow.framework/MobileFlow</key>
 		<data>
-		LsHwkoKGSFk3bpzxz+BU+gpEMYw=
+		ehHzYS1p7jsv7tjQ/fKdkpotDOU=
 		</data>
 		<key>ios-arm64/MobileFlow.framework/Modules/module.modulemap</key>
 		<data>
@@ -26,19 +74,67 @@
 		</data>
 		<key>ios-arm64/MobileFlow.framework/_CodeSignature/CodeResources</key>
 		<data>
-		VHvh7KTz9AogO8JDJl/IGjfT/sQ=
+		VO7pbfCeA2x9B3vbd8E9R4xYgQY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlow.h</key>
 		<data>
-		LJ94Tp9XxmQ72V0RMNCzC9bhg48=
+		MVVv2JlPoPp9Y7rZpp3XTBQ/byk=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowAnalyzer.h</key>
+		<data>
+		K5gb+agkP4csdmJVB7mdI5M3VB8=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowDocParameters.h</key>
+		<data>
+		aY0u/bG9hIGx+NcTGbyr3oQeGdg=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowDocResult.h</key>
+		<data>
+		JChTiLyuUq4n2TNVV90aCis6ZeM=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowExposureResult.h</key>
+		<data>
+		UfXLufXUzceTaDMC2FkNyiHdv0E=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowFocusResult.h</key>
+		<data>
+		BYqNqWQ43xStGrvyGZ3ZytBwJMU=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowFourCornerResult.h</key>
+		<data>
+		MQ9B4qPshZRNKPqkJ8CoG1NZUdU=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowGlareResult.h</key>
+		<data>
+		lpjsu0IAzXPWe7JDs6vHWMloU18=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowImageUtils.h</key>
+		<data>
+		8cpyOk1U6RS+ebXbyKpDT+mASr4=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowMicrResult.h</key>
+		<data>
+		ToqDKL+fSv+S3oZpmYghUSPSkC0=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowMrzResult.h</key>
+		<data>
+		fH/dqAlBOgc/C8Amude8+lP39aw=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowSpikeNormalizer.h</key>
+		<data>
+		PbRHOHwoOfHLjP+vMGTE0+z0btI=
+		</data>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowTypes.h</key>
+		<data>
+		ylc89hEERUHuErchzjl9uY7z7C0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Info.plist</key>
 		<data>
-		mIlMQ02KGIzQFkf8r1h5hbzqed4=
+		pwHtFcErM6e7TUJgDixr0yp/SVE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/MobileFlow</key>
 		<data>
-		fmM5rBFhpfeQh1MKd7VW4hkc5ho=
+		RxJLv0vSBEwNw9PWzRKvryeMQvs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Modules/module.modulemap</key>
 		<data>
@@ -50,7 +146,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/_CodeSignature/CodeResources</key>
 		<data>
-		NIPBD4dQWrSiM9nyyK2xyfCTajU=
+		H9VPiAbc8GbT6+e5iSOFsx+D/u4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -59,33 +155,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LJ94Tp9XxmQ72V0RMNCzC9bhg48=
+			MVVv2JlPoPp9Y7rZpp3XTBQ/byk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6uMHTlgQLuY0oo5TlaZD/LeckiE9RalzcsnpU7vukCA=
+			NN4rqyGD4dTDZSIzHwla5AIntkEujbtS7Xn8lwefde4=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowAnalyzer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K5gb+agkP4csdmJVB7mdI5M3VB8=
+			</data>
+			<key>hash2</key>
+			<data>
+			9UAcvpLJPrN/BVb3qEy2CRj3iy+6MZigcNUxdCAsA2U=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowDocParameters.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aY0u/bG9hIGx+NcTGbyr3oQeGdg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Q1FhN0eGSDUlP4MhjmEejvNi4WOuJTuWQEQhyQCJDGs=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowDocResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JChTiLyuUq4n2TNVV90aCis6ZeM=
+			</data>
+			<key>hash2</key>
+			<data>
+			d4dwhIjBYyA0EotmFWczBspvKMR0VXJYbZxuzFMuFjc=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowExposureResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UfXLufXUzceTaDMC2FkNyiHdv0E=
+			</data>
+			<key>hash2</key>
+			<data>
+			HQiXjUwKT7XnUR8vxnM2iS6NLz6ZhSawP9WKl/yFGlM=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowFocusResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BYqNqWQ43xStGrvyGZ3ZytBwJMU=
+			</data>
+			<key>hash2</key>
+			<data>
+			deii+X2zyMREFUpBMDZb2FY7i398H790IVPT1tCBbZE=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowFourCornerResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MQ9B4qPshZRNKPqkJ8CoG1NZUdU=
+			</data>
+			<key>hash2</key>
+			<data>
+			nTWqZ47HMC8yg2xHCiglT81kSuvQHCJT9E49837b04E=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowGlareResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lpjsu0IAzXPWe7JDs6vHWMloU18=
+			</data>
+			<key>hash2</key>
+			<data>
+			Tsc7L15h7gLjhgsoSEwCs11YMI6PqG/0ZCL0K1cfSNw=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowImageUtils.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8cpyOk1U6RS+ebXbyKpDT+mASr4=
+			</data>
+			<key>hash2</key>
+			<data>
+			m9dMvArgcanOKnRrTWP2omkOuFlYEvEwL47kYJqgxlE=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowMicrResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ToqDKL+fSv+S3oZpmYghUSPSkC0=
+			</data>
+			<key>hash2</key>
+			<data>
+			8cNKFOau3spPlpGpVLtAnYpUaeenL1EluxY43rnaMiE=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowMrzResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fH/dqAlBOgc/C8Amude8+lP39aw=
+			</data>
+			<key>hash2</key>
+			<data>
+			rmpiy/QTyOuyDDHFyfSfYYQY6qGZnsFIC9Npeyqty7I=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowSpikeNormalizer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PbRHOHwoOfHLjP+vMGTE0+z0btI=
+			</data>
+			<key>hash2</key>
+			<data>
+			huoQCBczxDZrxbaEWmEz4S5oZG+LeB99/1bQEohCUuU=
+			</data>
+		</dict>
+		<key>ios-arm64/MobileFlow.framework/Headers/MobileFlowTypes.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ylc89hEERUHuErchzjl9uY7z7C0=
+			</data>
+			<key>hash2</key>
+			<data>
+			mukFud1OQv5kj7UA/Et0n8d8ooGDr86MAiLm12ymbDc=
 			</data>
 		</dict>
 		<key>ios-arm64/MobileFlow.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6US+EzTGudHDKvmg5Vc3elPNGIo=
+			R+cMfgp2fnG0d3pZxdfqguy7Pek=
 			</data>
 			<key>hash2</key>
 			<data>
-			DSf/BlHCFrDmGc3ykTovjsYCQDFKYv9VENra+BFtQ7I=
+			ZhJJOQiIbh+7mcqh12ZciJXR5rusxrgfJPYokqPsb7A=
 			</data>
 		</dict>
 		<key>ios-arm64/MobileFlow.framework/MobileFlow</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LsHwkoKGSFk3bpzxz+BU+gpEMYw=
+			ehHzYS1p7jsv7tjQ/fKdkpotDOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			xBUR3TZN4fNADcY/esP81GrSMq/X96jpbysCn4JNmZ4=
+			azcmIpvk/Yl9pW3UBN/XJf/0eaaJ2BzNrcL51jzSTLk=
 			</data>
 		</dict>
 		<key>ios-arm64/MobileFlow.framework/Modules/module.modulemap</key>
@@ -114,44 +342,176 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VHvh7KTz9AogO8JDJl/IGjfT/sQ=
+			VO7pbfCeA2x9B3vbd8E9R4xYgQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			NG82JWnxi9F08n6z0Cl5Au/IqZ2c7o9reeOMrrDA2QY=
+			dwV6Twwp1aX81LbYBW624nhHPFRDatt5tbfDcYQ63Ec=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LJ94Tp9XxmQ72V0RMNCzC9bhg48=
+			MVVv2JlPoPp9Y7rZpp3XTBQ/byk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6uMHTlgQLuY0oo5TlaZD/LeckiE9RalzcsnpU7vukCA=
+			NN4rqyGD4dTDZSIzHwla5AIntkEujbtS7Xn8lwefde4=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowAnalyzer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K5gb+agkP4csdmJVB7mdI5M3VB8=
+			</data>
+			<key>hash2</key>
+			<data>
+			9UAcvpLJPrN/BVb3qEy2CRj3iy+6MZigcNUxdCAsA2U=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowDocParameters.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aY0u/bG9hIGx+NcTGbyr3oQeGdg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Q1FhN0eGSDUlP4MhjmEejvNi4WOuJTuWQEQhyQCJDGs=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowDocResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JChTiLyuUq4n2TNVV90aCis6ZeM=
+			</data>
+			<key>hash2</key>
+			<data>
+			d4dwhIjBYyA0EotmFWczBspvKMR0VXJYbZxuzFMuFjc=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowExposureResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UfXLufXUzceTaDMC2FkNyiHdv0E=
+			</data>
+			<key>hash2</key>
+			<data>
+			HQiXjUwKT7XnUR8vxnM2iS6NLz6ZhSawP9WKl/yFGlM=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowFocusResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BYqNqWQ43xStGrvyGZ3ZytBwJMU=
+			</data>
+			<key>hash2</key>
+			<data>
+			deii+X2zyMREFUpBMDZb2FY7i398H790IVPT1tCBbZE=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowFourCornerResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MQ9B4qPshZRNKPqkJ8CoG1NZUdU=
+			</data>
+			<key>hash2</key>
+			<data>
+			nTWqZ47HMC8yg2xHCiglT81kSuvQHCJT9E49837b04E=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowGlareResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lpjsu0IAzXPWe7JDs6vHWMloU18=
+			</data>
+			<key>hash2</key>
+			<data>
+			Tsc7L15h7gLjhgsoSEwCs11YMI6PqG/0ZCL0K1cfSNw=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowImageUtils.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8cpyOk1U6RS+ebXbyKpDT+mASr4=
+			</data>
+			<key>hash2</key>
+			<data>
+			m9dMvArgcanOKnRrTWP2omkOuFlYEvEwL47kYJqgxlE=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowMicrResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ToqDKL+fSv+S3oZpmYghUSPSkC0=
+			</data>
+			<key>hash2</key>
+			<data>
+			8cNKFOau3spPlpGpVLtAnYpUaeenL1EluxY43rnaMiE=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowMrzResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fH/dqAlBOgc/C8Amude8+lP39aw=
+			</data>
+			<key>hash2</key>
+			<data>
+			rmpiy/QTyOuyDDHFyfSfYYQY6qGZnsFIC9Npeyqty7I=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowSpikeNormalizer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PbRHOHwoOfHLjP+vMGTE0+z0btI=
+			</data>
+			<key>hash2</key>
+			<data>
+			huoQCBczxDZrxbaEWmEz4S5oZG+LeB99/1bQEohCUuU=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Headers/MobileFlowTypes.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ylc89hEERUHuErchzjl9uY7z7C0=
+			</data>
+			<key>hash2</key>
+			<data>
+			mukFud1OQv5kj7UA/Et0n8d8ooGDr86MAiLm12ymbDc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mIlMQ02KGIzQFkf8r1h5hbzqed4=
+			pwHtFcErM6e7TUJgDixr0yp/SVE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tfjWKtcM70KhbiEWMK02omQ1W9vJkGiFaeLYGLrQwkk=
+			UYHIzNzDB9UNGYzeCk2YrvFysgEt5BC/iXYqBLLrjLs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/MobileFlow</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fmM5rBFhpfeQh1MKd7VW4hkc5ho=
+			RxJLv0vSBEwNw9PWzRKvryeMQvs=
 			</data>
 			<key>hash2</key>
 			<data>
-			yPkmn+23+GTgeRB3+bj3ARA5r5en1bSBKpHBunQ3ZDU=
+			WWet8JKuw8ubE7X/yCccxLVV9s7Z0hyXMPErac3I9nU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MobileFlow.framework/Modules/module.modulemap</key>
@@ -180,11 +540,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NIPBD4dQWrSiM9nyyK2xyfCTajU=
+			H9VPiAbc8GbT6+e5iSOFsx+D/u4=
 			</data>
 			<key>hash2</key>
 			<data>
-			+VZ22jmdxZRITwXZbdCyGDUFi/9OZDJlQl7ha8qtMuU=
+			q6+1AyMCdbPJ9yPiZB90uGa/vY5sE22KBHQe8fqWVVo=
 			</data>
 		</dict>
 	</dict>

@@ -172,7 +172,7 @@ typedef NS_ENUM(NSInteger, MiSnapScienceGeoRegion) {
 /**
  Parameters for the image analysis
  */
-@interface MiSnapScienceParameters : NSObject
+@interface MiSnapScienceParameters : NSObject <NSSecureCoding>
 /**
  Creates and returns parameters object with default parameter values for a given `MiSnapScienceDocumentType`.
  
@@ -198,7 +198,25 @@ typedef NS_ENUM(NSInteger, MiSnapScienceGeoRegion) {
 /**
  The ID Back mode
  */
-@property (nonatomic, readwrite) MiSnapScienceIdBackMode idBackMode;
+@property (nonatomic, readwrite) MiSnapScienceIdBackMode idBackMode DEPRECATED_MSG_ATTRIBUTE("Use a combination of `iqaRequired` and `barcodeRequired` properties instead");
+/**
+ Indicates whether acceptable IQA (Image Quality Analysis) result is required
+ 
+ Default: `TRUE` for all document types
+ */
+@property (nonatomic, readwrite) BOOL iqaRequired;
+/**
+ Indicates whether a barcode is required
+ 
+ Default: `FALSE` for all document types
+ */
+@property (nonatomic, readwrite) BOOL barcodeRequired;
+/**
+ Indicates whether an MRZ is required
+ 
+ Default: `TRUE` for Passport and `FALSE` for all other document types
+ */
+@property (nonatomic, readwrite) BOOL mrzRequired;
 /**
  Barcode types that ID Back or Any ID document types should scan for.
  

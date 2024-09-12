@@ -216,6 +216,7 @@ public enum MiSnapNFCKey {
   @objc public var logging: MiSnapCore.MiSnapLogConfiguration
   @available(*, deprecated, message: "Call `logging.level` instead")
   @objc public var logLevel: MiSnapCore.MiSnapLogLevel
+  @objc public var skipPortrait: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
   }

@@ -47,6 +47,27 @@ typedef NS_ENUM(NSInteger, MiSnapCameraDocumentType) {
     MiSnapCameraDocumentTypeGeneric        = 7
 };
 /**
+ Document category
+ */
+typedef NS_ENUM(NSInteger, MiSnapCameraDocumentCategory) {
+    /**
+     Category is not set
+     */
+    MiSnapCameraDocumentCategoryNone      = 0,
+    /**
+     ID
+     */
+    MiSnapCameraDocumentCategoryId        = 1,
+    /**
+     Deposit
+     */
+    MiSnapCameraDocumentCategoryDeposit   = 2,
+    /**
+     Generic
+     */
+    MiSnapCameraDocumentCategoryGeneric   = 3
+};
+/**
  Barcode type
  */
 typedef NS_ENUM(NSInteger, MiSnapCameraBarcodeType) {
@@ -97,19 +118,47 @@ typedef NS_ENUM(NSInteger, MiSnapCameraTorchMode) {
 };
 
 /**
+ Resolution
+ */
+typedef NS_ENUM(NSInteger, MiSnapCameraResolution) {
+    /**
+     1920 x 1080 (Full HD, 16:9)
+     */
+    MiSnapCameraResolution1920x1080     = 0,
+    /**
+     3840 x 2160 (4K, 16:9)
+     */
+    MiSnapCameraResolution3840x2160     = 1,
+    /**
+     The highest support resolution on a given device. Can be 16:9 or 4:3 aspect ratio.
+     */
+    MiSnapCameraResolutionMax           = 2
+};
+
+/**
  Camera specific parameters
  */
-@interface MiSnapCameraParameters : NSObject
+@interface MiSnapCameraParameters : NSObject <NSSecureCoding>
 /**
  Document type
  */
 @property (nonatomic, readonly) MiSnapCameraDocumentType documentType;
 /**
+ Document type category
+ */
+@property (nonatomic, readonly) MiSnapCameraDocumentCategory documentCategory;
+/**
  Sets the preset of the camera session.
  
  Default: AVCaptureSessionPreset1920x1080
  */
-@property (nonatomic, readwrite) AVCaptureSessionPreset _Nonnull preset;
+@property (nonatomic, readwrite) AVCaptureSessionPreset _Nonnull preset DEPRECATED_MSG_ATTRIBUTE("Use `resolution` property instead");
+/**
+ Sets a desired resolution of the camera.
+ 
+ Default: AVCaptureSessionPreset1920x1080
+ */
+@property (nonatomic, readwrite) MiSnapCameraResolution resolution;
 
 /**
  Sets the pixel buffer format of the camera session

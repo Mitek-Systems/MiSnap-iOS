@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bIAEzPsYu1P996PaTqAgQASweM8=
+		4n6z/MvUgDO3T3Gs7T68cCJ5P1U=
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ou3MJBmDjWDuA3iqXEWNoVjhPBM=
+		S9yt+NOPZFcOHJNvqjBsBP2ERck=
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		n63ix22x3q94Vxb0f7oBeGXE0hc=
+		keH8Jt9zXrm7OZbqNroD19fK08M=
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ou3MJBmDjWDuA3iqXEWNoVjhPBM=
+		S9yt+NOPZFcOHJNvqjBsBP2ERck=
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AtD/Y5p+MA/89kbLKj2KQO74BhM=
+		Flr74Zm0DZ+pNm9HBQ8NEZHDd5Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -112,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			icUgJf86UcdNki+8MExKEZTqzIwuVnc7LlaieF3MWWs=
+			aH98Mf9cz6vnaTlWmARFd4MxgEd4acFxviZx4V2C3O8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -140,14 +140,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gfSp27r1DXGu799BiHdhm/v6DwVb+8O0X1kf+q4w67k=
+			s/sSPrSwLyV1tpVPE/AKKqswTRwmOFW8qY6M1jxbUqE=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			icUgJf86UcdNki+8MExKEZTqzIwuVnc7LlaieF3MWWs=
+			aH98Mf9cz6vnaTlWmARFd4MxgEd4acFxviZx4V2C3O8=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -175,7 +175,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mO12/owEEyCtdrcpv2efCl+9CHE6ok9ztuY0cGEunV4=
+			KHS5BsYMyUi7meSGm2TaYI9ej3gI7okWDeRVP33KOKk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

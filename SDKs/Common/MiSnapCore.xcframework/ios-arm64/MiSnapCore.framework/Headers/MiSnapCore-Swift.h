@@ -458,7 +458,7 @@ enum MiSnapLogPresentation : NSInteger;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10MiSnapCore22MiSnapLogConfiguration")
-@interface MiSnapLogConfiguration : NSObject <NSCoding>
+@interface MiSnapLogConfiguration : NSObject <NSSecureCoding>
 /// Level
 @property (nonatomic) enum MiSnapLogLevel level;
 /// Presentation
@@ -468,6 +468,9 @@ SWIFT_CLASS("_TtC10MiSnapCore22MiSnapLogConfiguration")
 @property (nonatomic) BOOL savePII;
 /// Default initialization
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// A flag that indicates whether a secure coding is supported
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureCoding;)
++ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
 /// Initialization with coder
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 /// Encodes with coder

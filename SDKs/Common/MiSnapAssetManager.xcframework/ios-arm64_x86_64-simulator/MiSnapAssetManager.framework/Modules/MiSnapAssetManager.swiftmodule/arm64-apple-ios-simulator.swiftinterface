@@ -23,7 +23,7 @@ import _SwiftConcurrencyShims
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapGlareView : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapGlareViewConfiguration? = nil)
-  @objc @_Concurrency.MainActor(unsafe) public func animate(with glareBoundingBox: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) public func animate(with glareBoundingBox: CoreFoundation.CGRect, transition: Foundation.TimeInterval, display: Foundation.TimeInterval)
   @objc deinit
 }
 @objc public enum MiSnapAssetStyle : Swift.Int {
@@ -52,6 +52,8 @@ import _SwiftConcurrencyShims
   public var shadowRadius: CoreFoundation.CGFloat?
   @objc public var shadowOpacity: CoreFoundation.CGFloat
   @objc public var isHidden: Swift.Bool
+  @objc public var locationPortrait: MiSnapViewLocation
+  @objc public var locationLandscape: MiSnapViewLocation
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -60,6 +62,7 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapStatelessViewConfiguration : MiSnapViewConfiguration {
   @objc public var image: UIKit.UIImage?
+  @objc public var imageTintColor: UIKit.UIColor?
   @objc public var color: UIKit.UIColor
   @objc public var cutoutFillColor: UIKit.UIColor?
   @objc override dynamic public var description: Swift.String {
@@ -71,7 +74,9 @@ import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class MiSnapStatefulViewConfiguration : MiSnapViewConfiguration {
   @objc public var state: MiSnapViewState
   @objc public var imageEnabled: UIKit.UIImage?
+  @objc public var imageEnabledTintColor: UIKit.UIColor?
   @objc public var imageDisabled: UIKit.UIImage?
+  @objc public var imageDisabledTintColor: UIKit.UIColor?
   @objc public var colorEnabled: UIKit.UIColor
   @objc public var colorDisabled: UIKit.UIColor
   @objc public var cutoutFillColorEnabled: UIKit.UIColor?
@@ -116,6 +121,9 @@ import _SwiftConcurrencyShims
   public var backgroundColor: UIKit.UIColor
   public var alpha: CoreFoundation.CGFloat
   @objc public var isHidden: Swift.Bool
+  @objc public var size: CoreFoundation.CGSize
+  @objc public var locationPortrait: MiSnapViewLocation
+  @objc public var locationLandscape: MiSnapViewLocation
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -299,6 +307,15 @@ extension CoreFoundation.CGSize {
   }
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class MiSnapDocumentLabelConfiguration : MiSnapLabelConfiguration {
+  @objc public var locationPortrait: MiSnapViewLocation
+  @objc public var locationLandscape: MiSnapViewLocation
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapLabel : UIKit.UILabel {
   @objc @_Concurrency.MainActor(unsafe) public init(withText: Swift.String, configuration: MiSnapLabelConfiguration, in parentFrame: CoreFoundation.CGRect)
   @objc deinit
@@ -315,6 +332,59 @@ extension MiSnapLabel {
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCameraShutterView : MiSnapStatelessView {
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapCameraShutterViewConfiguration? = nil)
+  @objc deinit
+}
+@objc public enum MiSnapViewHorizontalAlignment : Swift.Int {
+  case left = 0
+  case center = 1
+  case right = 2
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum MiSnapViewVerticalAlignment : Swift.Int {
+  case top = 0
+  case center = 1
+  case bottom = 2
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum MiSnapViewParent : Swift.Int {
+  case entireView = 0
+  case documentOutline = 1
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapViewLocation : ObjectiveC.NSObject {
+  @objc public var horizontalAlignment: MiSnapViewHorizontalAlignment
+  @objc public var horizontalOffset: CoreFoundation.CGFloat
+  @objc public var verticalAlignment: MiSnapViewVerticalAlignment
+  @objc public var verticalOffset: CoreFoundation.CGFloat
+  @objc public var parent: MiSnapViewParent
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  public var deepCopy: MiSnapViewLocation {
+    get
+  }
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum MiSnapVoiceCaptureViewStatus : Swift.Int {
@@ -437,6 +507,8 @@ extension MiSnapBulletView {
   @objc public var textColor: UIKit.UIColor
   @objc public var font: UIKit.UIFont
   @objc public var isHidden: Swift.Bool
+  @objc public var locationPortrait: MiSnapViewLocation
+  @objc public var locationLandscape: MiSnapViewLocation
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -445,7 +517,7 @@ extension MiSnapBulletView {
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapHintView : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapHintViewConfiguration? = nil)
-  @objc @_Concurrency.MainActor(unsafe) public func animate(with hintMessage: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func animate(with hintMessage: Swift.String, transition: Foundation.TimeInterval, display: Foundation.TimeInterval)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapCancelViewConfiguration : MiSnapStatelessViewConfiguration {
@@ -488,6 +560,7 @@ extension MiSnapBulletView {
 @_inheritsConvenienceInitializers @objc public class MiSnapGuideViewConfiguration : ObjectiveC.NSObject {
   @objc public var vignette: MiSnapVignetteConfiguration
   @objc public var outline: MiSnapDocumentOutlineConfiguration
+  @objc public var hideOnSuccess: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -528,6 +601,7 @@ extension MiSnapBulletView {
 @_inheritsConvenienceInitializers @objc public class MiSnapDocumentOutlineConfiguration : ObjectiveC.NSObject {
   @objc public var image: UIKit.UIImage?
   @objc public var rotatePortraitImage: Swift.Bool
+  @available(*, deprecated, message: "Deprecated since 5.6.0 and will be removed in the future")
   @objc public var alignment: MiSnapGuideAlignment
   @objc public var alpha: CoreFoundation.CGFloat
   @objc public var mainBorderColor: UIKit.UIColor
@@ -536,6 +610,9 @@ extension MiSnapBulletView {
   @objc public var secondaryBorderWidth: CoreFoundation.CGFloat
   public var cornerRadius: CoreFoundation.CGFloat?
   @objc public var isHidden: Swift.Bool
+  @objc public var featuresAlpha: CoreFoundation.CGFloat
+  @objc public var horizontalOffset: CoreFoundation.CGFloat
+  @objc public var verticalOffset: CoreFoundation.CGFloat
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -546,7 +623,9 @@ extension MiSnapBulletView {
   @objc @_Concurrency.MainActor(unsafe) public var outlineRect: CoreFoundation.CGRect {
     get
   }
-  @objc @_Concurrency.MainActor(unsafe) public init(for documentType: MiSnapGuideDocumentType, configuration: MiSnapGuideViewConfiguration? = nil, orientationMode: MiSnapGuideOrientationMode, portraitFill: CoreFoundation.CGFloat, landscapeFill: CoreFoundation.CGFloat, orientation: UIKit.UIInterfaceOrientation, frame: CoreFoundation.CGRect)
+  @available(*, deprecated, message: "Call init(for:,configuration:,orientationMode:,orientation:,portraitFill:,landscapeFill:,previewFrame:,frame:) instead")
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(for documentType: MiSnapGuideDocumentType, configuration: MiSnapGuideViewConfiguration? = nil, orientationMode: MiSnapGuideOrientationMode, portraitFill: CoreFoundation.CGFloat, landscapeFill: CoreFoundation.CGFloat, orientation: UIKit.UIInterfaceOrientation, frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) public init(for documentType: MiSnapGuideDocumentType, configuration: MiSnapGuideViewConfiguration? = nil, orientationMode: MiSnapGuideOrientationMode, orientation: UIKit.UIInterfaceOrientation, portraitFill: CoreFoundation.CGFloat, landscapeFill: CoreFoundation.CGFloat, previewFrame: CoreFoundation.CGRect, frame: CoreFoundation.CGRect)
   @objc @_Concurrency.MainActor(unsafe) public func update(_ orientation: UIKit.UIInterfaceOrientation)
   @objc deinit
 }
@@ -615,6 +694,15 @@ extension MiSnapFacialCaptureOutlineColorStyle : Swift.RawRepresentable {}
 extension MiSnapFacialCaptureOutlineState : Swift.Equatable {}
 extension MiSnapFacialCaptureOutlineState : Swift.Hashable {}
 extension MiSnapFacialCaptureOutlineState : Swift.RawRepresentable {}
+extension MiSnapViewHorizontalAlignment : Swift.Equatable {}
+extension MiSnapViewHorizontalAlignment : Swift.Hashable {}
+extension MiSnapViewHorizontalAlignment : Swift.RawRepresentable {}
+extension MiSnapViewVerticalAlignment : Swift.Equatable {}
+extension MiSnapViewVerticalAlignment : Swift.Hashable {}
+extension MiSnapViewVerticalAlignment : Swift.RawRepresentable {}
+extension MiSnapViewParent : Swift.Equatable {}
+extension MiSnapViewParent : Swift.Hashable {}
+extension MiSnapViewParent : Swift.RawRepresentable {}
 extension MiSnapVoiceCaptureViewStatus : Swift.Equatable {}
 extension MiSnapVoiceCaptureViewStatus : Swift.Hashable {}
 extension MiSnapVoiceCaptureViewStatus : Swift.RawRepresentable {}

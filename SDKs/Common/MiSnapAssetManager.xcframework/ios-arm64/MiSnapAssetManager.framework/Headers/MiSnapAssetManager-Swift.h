@@ -410,6 +410,7 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager23MiSnapCameraShutterView")
 - (nonnull instancetype)initWith:(MiSnapCameraShutterViewConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class MiSnapViewLocation;
 
 /// View configuration
 /// <ul>
@@ -436,6 +437,10 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager23MiSnapViewConfiguration")
 @property (nonatomic) CGFloat shadowOpacity;
 /// Indicates whether a view is hidden (in case if a view is a button then additionally indicates whether it’s enabled)
 @property (nonatomic) BOOL isHidden;
+/// A location configuration for a Portrait orientation
+@property (nonatomic, strong) MiSnapViewLocation * _Nonnull locationPortrait;
+/// A location configuration for a Landscape orientation
+@property (nonatomic, strong) MiSnapViewLocation * _Nonnull locationLandscape;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -449,6 +454,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager32MiSnapStatelessViewConfiguration")
 @interface MiSnapStatelessViewConfiguration : MiSnapViewConfiguration
 /// A custom image that should be used instead of a drawn view
 @property (nonatomic, strong) UIImage * _Nullable image;
+/// An image tint color to apply when an <code>image</code> is set
+@property (nonatomic, strong) UIColor * _Nullable imageTintColor;
 /// Color
 @property (nonatomic, strong) UIColor * _Nonnull color;
 /// Cutout fill color
@@ -556,6 +563,105 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager31MiSnapCheckboxViewConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIFont;
+
+/// MiSnap label configuration
+SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapLabelConfiguration")
+@interface MiSnapLabelConfiguration : NSObject
+/// Size
+/// Default: <code>.zero</code>
+/// note:
+/// when <code>width</code> and/or <code>height</code> are in range <code>0.0001...0.9999</code> then its value is used as a multiplier for its parent’s <code>width</code> and/or <code>height</code>. Otherwise, <code>width</code> and <code>height</code> are nominal values in pixels
+@property (nonatomic) CGSize size;
+/// Font
+/// Default: system font of size 18.0 and regular font weight
+@property (nonatomic, strong) UIFont * _Nonnull font;
+/// Text alignment
+/// Default: <code>.center</code>
+@property (nonatomic) NSTextAlignment textAlignment;
+/// Text color
+/// Default: <code>.label</code> for iOS >= 13 and <code>.black</code> for iOS < 13
+/// Used in both Light and Dark modes if <code>colorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nonnull color;
+/// Text color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable colorDarkMode;
+/// Background color
+/// Default: <code>.clear</code>
+/// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Background color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
+/// Number of lines
+/// Default: <code>0</code>
+@property (nonatomic) NSInteger numberOfLines;
+/// Line break mode
+/// Default: <code>.byTruncatingTail</code>
+@property (nonatomic) NSLineBreakMode lineBreakMode;
+/// Corner radius
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat cornerRadius;
+/// Indicates whether corners should be rounded
+/// Default: <code>false</code>
+/// When overridden to <code>true</code> value of <code>cornerRadius</code> is ignored
+@property (nonatomic) BOOL roundCorners;
+/// Border width
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat borderWidth;
+/// Border color
+/// Default: <code>.clear</code>
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+/// Shadow color
+/// Default: <code>.clear</code>
+@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
+/// Shadow offset
+/// Default: <code>.zero</code>
+@property (nonatomic) CGSize shadowOffset;
+/// Shadow radius
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat shadowRadius;
+/// Shadow opacity
+/// Default: <code>0.0</code>
+@property (nonatomic) float shadowOpacity;
+/// Indicates whether should be clipped to bounds
+/// Default: <code>false</code>
+@property (nonatomic) BOOL clipsToBounds;
+/// Indicates whether a label should fit to its text size
+/// Default: <code>false</code>
+@property (nonatomic) BOOL sizeToFit;
+/// Width padding that should be added to a width when <code>sizeToFit</code> is overridden to <code>true</code>
+/// Range: <code>0.0...1.0</code>
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat widthPadding;
+/// Height padding that should be added to a height when <code>sizeToFit</code> is overridden to <code>true</code>
+/// Range: <code>0.0...1.0</code>
+/// Default: <code>0.0</code>
+@property (nonatomic) CGFloat heightPadding;
+/// Indicates whether a label is hidden
+@property (nonatomic) BOOL isHidden;
+/// Creates and returns configuration with default values
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+/// Document label configuration
+/// Inherits from: <code>MiSnapLabelConfiguration</code>
+SWIFT_CLASS("_TtC18MiSnapAssetManager32MiSnapDocumentLabelConfiguration")
+@interface MiSnapDocumentLabelConfiguration : MiSnapLabelConfiguration
+/// A location configuration for a Portrait orientation
+@property (nonatomic, strong) MiSnapViewLocation * _Nonnull locationPortrait;
+/// A location configuration for a Landscape orientation
+@property (nonatomic, strong) MiSnapViewLocation * _Nonnull locationLandscape;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 enum MiSnapGuideAlignment : NSInteger;
 
 /// Outline configuration
@@ -570,7 +676,7 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager34MiSnapDocumentOutlineConfiguration")
 /// Alignment
 /// note:
 /// used only when orientation mode of <code>MiSnapParameters</code> is set to <code>Device Portrait Guide Landscape</code>
-@property (nonatomic) enum MiSnapGuideAlignment alignment;
+@property (nonatomic) enum MiSnapGuideAlignment alignment SWIFT_DEPRECATED_MSG("Deprecated since 5.6.0 and will be removed in the future");
 /// Alpha
 @property (nonatomic) CGFloat alpha;
 /// Main border color
@@ -583,6 +689,20 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager34MiSnapDocumentOutlineConfiguration")
 @property (nonatomic) CGFloat secondaryBorderWidth;
 /// Indicates whether a view is hidden
 @property (nonatomic) BOOL isHidden;
+/// Alpha of document elements (MRZ, MICR etc)
+@property (nonatomic) CGFloat featuresAlpha;
+/// Horizontal offset
+/// note:
+/// a positive value moves an element to the left and a negative value moves an element to the right
+/// note:
+/// when <code>horizontalOffset</code> is in range <code>0.0001...0.9999</code> then its value is used as a multiplier for its parent’s <code>width</code>. Otherwise, <code>horizontalOffset</code> is an absolute value in pixels
+@property (nonatomic) CGFloat horizontalOffset;
+/// Vertical offset
+/// note:
+/// a positive value moves an element down and a negative value moves an element up
+/// note:
+/// when <code>verticalOffset</code> is in range <code>0.0001...0.9999</code> then its value is used as a multiplier for its parent’s <code>height</code>. Otherwise, <code>verticalOffset</code> is an absolute value in pixels
+@property (nonatomic) CGFloat verticalOffset;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -794,7 +914,7 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager15MiSnapGlareView")
 /// Creates and returns <code>MiSnapGlareView</code> with a given configuration
 - (nonnull instancetype)initWith:(MiSnapGlareViewConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 /// Animates glare view
-- (void)animateWith:(CGRect)glareBoundingBox;
+- (void)animateWith:(CGRect)glareBoundingBox transition:(NSTimeInterval)transition display:(NSTimeInterval)display;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -871,7 +991,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager15MiSnapGuideView")
 @property (nonatomic, readonly) CGRect outlineRect;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// Creates and returns <code>MiSnapGuideView</code> with given parameters
-- (nonnull instancetype)initFor:(enum MiSnapGuideDocumentType)documentType configuration:(MiSnapGuideViewConfiguration * _Nullable)configuration orientationMode:(enum MiSnapGuideOrientationMode)orientationMode portraitFill:(CGFloat)portraitFill landscapeFill:(CGFloat)landscapeFill orientation:(UIInterfaceOrientation)orientation frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initFor:(enum MiSnapGuideDocumentType)documentType configuration:(MiSnapGuideViewConfiguration * _Nullable)configuration orientationMode:(enum MiSnapGuideOrientationMode)orientationMode portraitFill:(CGFloat)portraitFill landscapeFill:(CGFloat)landscapeFill orientation:(UIInterfaceOrientation)orientation frame:(CGRect)frame SWIFT_DEPRECATED_MSG("Call init(for:,configuration:,orientationMode:,orientation:,portraitFill:,landscapeFill:,previewFrame:,frame:) instead");
+- (nonnull instancetype)initFor:(enum MiSnapGuideDocumentType)documentType configuration:(MiSnapGuideViewConfiguration * _Nullable)configuration orientationMode:(enum MiSnapGuideOrientationMode)orientationMode orientation:(UIInterfaceOrientation)orientation portraitFill:(CGFloat)portraitFill landscapeFill:(CGFloat)landscapeFill previewFrame:(CGRect)previewFrame frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 /// Updates orientation of a guide view
 - (void)update:(UIInterfaceOrientation)orientation;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -887,6 +1008,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapGuideViewConfiguration")
 @property (nonatomic, strong) MiSnapVignetteConfiguration * _Nonnull vignette;
 /// Outline configuration
 @property (nonatomic, strong) MiSnapDocumentOutlineConfiguration * _Nonnull outline;
+/// Indicates whether a guide should be hidden on success
+@property (nonatomic) BOOL hideOnSuccess;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -929,11 +1052,10 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager14MiSnapHintView")
 /// Creates and returns <code>MiSnapHintView</code> with a given configuration
 - (nonnull instancetype)initWith:(MiSnapHintViewConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 /// Animates hint view
-- (void)animateWith:(NSString * _Nonnull)hintMessage;
+- (void)animateWith:(NSString * _Nonnull)hintMessage transition:(NSTimeInterval)transition display:(NSTimeInterval)display;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-@class UIFont;
 
 /// Hint view configuration
 SWIFT_CLASS("_TtC18MiSnapAssetManager27MiSnapHintViewConfiguration")
@@ -971,12 +1093,16 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager27MiSnapHintViewConfiguration")
 @property (nonatomic, strong) UIFont * _Nonnull font;
 /// Indicates whether a view is hidden
 @property (nonatomic) BOOL isHidden;
+/// A location configuration for a Portrait orientation
+@property (nonatomic, strong) MiSnapViewLocation * _Nonnull locationPortrait;
+/// A location configuration for a Landscape orientation
+@property (nonatomic, strong) MiSnapViewLocation * _Nonnull locationLandscape;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class MiSnapLabelConfiguration;
 
 /// MiSnap label
 SWIFT_CLASS("_TtC18MiSnapAssetManager11MiSnapLabel")
@@ -996,89 +1122,6 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager11MiSnapLabel")
 @end
 
 
-/// MiSnap label configuration
-SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapLabelConfiguration")
-@interface MiSnapLabelConfiguration : NSObject
-/// Size
-/// Default: <code>.zero</code>
-/// note:
-/// when <code>width</code> and/or <code>height</code> are in range <code>0.0001...0.9999</code> then its value is used as a multiplier for its parent’s <code>width</code> and/or <code>height</code>. Otherwise, <code>width</code> and <code>height</code> are nominal values in pixels
-@property (nonatomic) CGSize size;
-/// Font
-/// Default: system font of size 18.0 and regular font weight
-@property (nonatomic, strong) UIFont * _Nonnull font;
-/// Text alignment
-/// Default: <code>.center</code>
-@property (nonatomic) NSTextAlignment textAlignment;
-/// Text color
-/// Default: <code>.label</code> for iOS >= 13 and <code>.black</code> for iOS < 13
-/// Used in both Light and Dark modes if <code>colorDarkMode</code> is not set. Otherwise, used in Light mode only
-@property (nonatomic, strong) UIColor * _Nonnull color;
-/// Text color in Dark mode
-/// Default: not set
-/// When this color is set then it’s used in Dark mode
-@property (nonatomic, strong) UIColor * _Nullable colorDarkMode;
-/// Background color
-/// Default: <code>.clear</code>
-/// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
-@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
-/// Background color in Dark mode
-/// Default: not set
-/// When this color is set then it’s used in Dark mode
-@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
-/// Number of lines
-/// Default: <code>0</code>
-@property (nonatomic) NSInteger numberOfLines;
-/// Line break mode
-/// Default: <code>.byTruncatingTail</code>
-@property (nonatomic) NSLineBreakMode lineBreakMode;
-/// Corner radius
-/// Default: <code>0.0</code>
-@property (nonatomic) CGFloat cornerRadius;
-/// Indicates whether corners should be rounded
-/// Default: <code>false</code>
-/// When overridden to <code>true</code> value of <code>cornerRadius</code> is ignored
-@property (nonatomic) BOOL roundCorners;
-/// Border width
-/// Default: <code>0.0</code>
-@property (nonatomic) CGFloat borderWidth;
-/// Border color
-/// Default: <code>.clear</code>
-@property (nonatomic, strong) UIColor * _Nonnull borderColor;
-/// Shadow color
-/// Default: <code>.clear</code>
-@property (nonatomic, strong) UIColor * _Nonnull shadowColor;
-/// Shadow offset
-/// Default: <code>.zero</code>
-@property (nonatomic) CGSize shadowOffset;
-/// Shadow radius
-/// Default: <code>0.0</code>
-@property (nonatomic) CGFloat shadowRadius;
-/// Shadow opacity
-/// Default: <code>0.0</code>
-@property (nonatomic) float shadowOpacity;
-/// Indicates whether should be clipped to bounds
-/// Default: <code>false</code>
-@property (nonatomic) BOOL clipsToBounds;
-/// Indicates whether a label should fit to its text size
-/// Default: <code>false</code>
-@property (nonatomic) BOOL sizeToFit;
-/// Width padding that should be added to a width when <code>sizeToFit</code> is overridden to <code>true</code>
-/// Range: <code>0.0...1.0</code>
-/// Default: <code>0.0</code>
-@property (nonatomic) CGFloat widthPadding;
-/// Height padding that should be added to a height when <code>sizeToFit</code> is overridden to <code>true</code>
-/// Range: <code>0.0...1.0</code>
-/// Default: <code>0.0</code>
-@property (nonatomic) CGFloat heightPadding;
-/// Indicates whether a label is hidden
-@property (nonatomic) BOOL isHidden;
-/// Creates and returns configuration with default values
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-/// Description
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
 @class MiSnapRecordingIndicatorViewConfiguration;
 
 /// Recording indicator view
@@ -1096,8 +1139,15 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager41MiSnapRecordingIndicatorViewConfiguration
 @interface MiSnapRecordingIndicatorViewConfiguration : NSObject
 /// Indicates whether a view is hidden
 @property (nonatomic) BOOL isHidden;
+/// Size
+@property (nonatomic) CGSize size;
+/// A location configuration for a Portrait orientation
+@property (nonatomic, strong) MiSnapViewLocation * _Nonnull locationPortrait;
+/// A location configuration for a Landscape orientation
+@property (nonatomic, strong) MiSnapViewLocation * _Nonnull locationLandscape;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1126,8 +1176,12 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager31MiSnapStatefulViewConfiguration")
 @property (nonatomic) enum MiSnapViewState state;
 /// A custom image for <code>MiSnapViewState.enabled</code> state that should be used instead of a drawn view
 @property (nonatomic, strong) UIImage * _Nullable imageEnabled;
+/// An tint color to apply to image in enabled state if <code>imageEnabled</code> is set
+@property (nonatomic, strong) UIColor * _Nullable imageEnabledTintColor;
 /// A custom image for <code>MiSnapViewState.disabled</code> state that should be used instead of a drawn view
 @property (nonatomic, strong) UIImage * _Nullable imageDisabled;
+/// An tint color to apply to image in disabled state if <code>imageDisabled</code> is set
+@property (nonatomic, strong) UIColor * _Nullable imageDisabledTintColor;
 /// Color for <code>MiSnapViewState.enabled</code>
 @property (nonatomic, strong) UIColor * _Nonnull colorEnabled;
 /// Color for <code>MiSnapViewState.disabled</code>
@@ -1211,12 +1265,69 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapTorchViewConfiguration")
 
 
 
+/// Horizontal alignment
+typedef SWIFT_ENUM(NSInteger, MiSnapViewHorizontalAlignment, open) {
+/// Left
+  MiSnapViewHorizontalAlignmentLeft = 0,
+/// Center
+  MiSnapViewHorizontalAlignmentCenter = 1,
+/// Right
+  MiSnapViewHorizontalAlignmentRight = 2,
+};
+
+enum MiSnapViewVerticalAlignment : NSInteger;
+enum MiSnapViewParent : NSInteger;
+
+/// View location
+SWIFT_CLASS("_TtC18MiSnapAssetManager18MiSnapViewLocation")
+@interface MiSnapViewLocation : NSObject
+/// Horizontal alignment
+@property (nonatomic) enum MiSnapViewHorizontalAlignment horizontalAlignment;
+/// Horizontal offset
+/// note:
+/// a positive value moves an element to the left and a negative value moves an element to the right
+/// note:
+/// when <code>horizontalOffset</code> is in range <code>0.0001...0.9999</code> then its value is used as a multiplier for its parent’s <code>width</code>. Otherwise, <code>horizontalOffset</code> is an absolute value in pixels
+@property (nonatomic) CGFloat horizontalOffset;
+/// Vertical alignment
+@property (nonatomic) enum MiSnapViewVerticalAlignment verticalAlignment;
+/// Vertical offset
+/// note:
+/// a positive value moves an element down and a negative value moves an element up
+/// note:
+/// when <code>verticalOffset</code> is in range <code>0.0001...0.9999</code> then its value is used as a multiplier for its parent’s <code>height</code>. Otherwise, <code>verticalOffset</code> is an absolute value in pixels
+@property (nonatomic) CGFloat verticalOffset;
+/// Parent
+@property (nonatomic) enum MiSnapViewParent parent;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// Parent
+typedef SWIFT_ENUM(NSInteger, MiSnapViewParent, open) {
+/// Indicates that the entire parent’s view is used
+  MiSnapViewParentEntireView = 0,
+/// Indicates that document outline origin x and y are used as 0, 0 cordinates
+  MiSnapViewParentDocumentOutline = 1,
+};
+
 /// View state
 typedef SWIFT_ENUM(NSInteger, MiSnapViewState, open) {
 /// Enabled
   MiSnapViewStateEnabled = 0,
 /// Disabled
   MiSnapViewStateDisabled = 1,
+};
+
+/// Vertical alignment
+typedef SWIFT_ENUM(NSInteger, MiSnapViewVerticalAlignment, open) {
+/// Top
+  MiSnapViewVerticalAlignmentTop = 0,
+/// Center
+  MiSnapViewVerticalAlignmentCenter = 1,
+/// Bottom
+  MiSnapViewVerticalAlignmentBottom = 2,
 };
 
 enum MiSnapVignetteStyle : NSInteger;

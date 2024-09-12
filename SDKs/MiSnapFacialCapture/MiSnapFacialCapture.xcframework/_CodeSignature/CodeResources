@@ -34,11 +34,11 @@
 		</data>
 		<key>ios-arm64/MiSnapFacialCapture.framework/Info.plist</key>
 		<data>
-		xm8uw2jWfEqqj8Li4XfXJyEcZnY=
+		XMmP2Er1iTRtYhd7czydKffvdjE=
 		</data>
 		<key>ios-arm64/MiSnapFacialCapture.framework/MiSnapFacialCapture</key>
 		<data>
-		ghsknGFrgIg1v5CbHFcGf8CJBWY=
+		BIvsJAZINUGNuR6r9mwsBzhiTyA=
 		</data>
 		<key>ios-arm64/MiSnapFacialCapture.framework/Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64/MiSnapFacialCapture.framework/_CodeSignature/CodeResources</key>
 		<data>
-		9x/GUMJxi2dVBAsz0ePX5pIwdrI=
+		X2TDdZhAEG9Eiy5SFdOhQes+gMQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapFacialCapture.framework/Headers/MiSnapFacialCapture.h</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapFacialCapture.framework/Info.plist</key>
 		<data>
-		vmC9joCQcPOgG4QzWalaMpvpBiA=
+		28pfDLs7Y/UMfMkA1eODsB+IxIM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapFacialCapture.framework/MiSnapFacialCapture</key>
 		<data>
-		0HEGg1LDC+tJBfwnio3l0tjA37Y=
+		Sl1+6Xdjngyr0J/L9o4fcgMOnlo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapFacialCapture.framework/Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapFacialCapture.framework/_CodeSignature/CodeResources</key>
 		<data>
-		gKQY+rW4KSuqYZ4gGkp0lZT6ipE=
+		U3x+pF8iGk0ScuFShfHuH+HfNSY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -184,22 +184,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xm8uw2jWfEqqj8Li4XfXJyEcZnY=
+			XMmP2Er1iTRtYhd7czydKffvdjE=
 			</data>
 			<key>hash2</key>
 			<data>
-			nHGfpf1sQfRPIxnemNQPP2ZI1ZJ5Hx4PJ6cRrpqdSRw=
+			bkKtXkMntwe3C5VB236LNWL/FUMnJct0QhAOrPH6BcE=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapFacialCapture.framework/MiSnapFacialCapture</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ghsknGFrgIg1v5CbHFcGf8CJBWY=
+			BIvsJAZINUGNuR6r9mwsBzhiTyA=
 			</data>
 			<key>hash2</key>
 			<data>
-			J6xazJAsgtEim0AVqSIgEX+GlJZahxiW+zeo5OFsWaM=
+			fWpxjlGvONGtYuSxpcZQJi3OT8U+GLAHOZSym/cR63U=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapFacialCapture.framework/Modules/module.modulemap</key>
@@ -228,11 +228,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9x/GUMJxi2dVBAsz0ePX5pIwdrI=
+			X2TDdZhAEG9Eiy5SFdOhQes+gMQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			PSdgzSTwrDiYTn9QsnV8jeJ/rOd7CkelxkDFX2t1Huo=
+			P9I0194dlq8wlPt2umc8wr51ZnOZtiDybtXtxJvb138=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapFacialCapture.framework/Headers/MiSnapFacialCapture.h</key>
@@ -316,22 +316,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vmC9joCQcPOgG4QzWalaMpvpBiA=
+			28pfDLs7Y/UMfMkA1eODsB+IxIM=
 			</data>
 			<key>hash2</key>
 			<data>
-			kOiuep4oZKB0Zb6LcjIkVJhZQQXnQMcnDhObygcm03k=
+			BMRTAE3sLv3AInPBfFmdu2bLLnVqnLmbPuDGmaQ8gIc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapFacialCapture.framework/MiSnapFacialCapture</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0HEGg1LDC+tJBfwnio3l0tjA37Y=
+			Sl1+6Xdjngyr0J/L9o4fcgMOnlo=
 			</data>
 			<key>hash2</key>
 			<data>
-			WCRVlj48MSHBV1S9Tf/VB3eQQFd+z02idtvwi/WoVTc=
+			YBOAyEMFP6/Y37SHHvqapy/yeGV9n72jrSK8rRtjA5c=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapFacialCapture.framework/Modules/module.modulemap</key>
@@ -360,11 +360,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gKQY+rW4KSuqYZ4gGkp0lZT6ipE=
+			U3x+pF8iGk0ScuFShfHuH+HfNSY=
 			</data>
 			<key>hash2</key>
 			<data>
-			DvcVF++TfxP/iQuTnOxU9HJ+3GeaL859v8j9wM4bQbw=
+			s+cQ+L4K3pKs7EigqkufHmSskrJSi+BwSTWoTJWs/Z0=
 			</data>
 		</dict>
 	</dict>

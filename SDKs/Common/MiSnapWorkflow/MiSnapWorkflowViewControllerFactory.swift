@@ -37,6 +37,12 @@ class MiSnapWorkflowViewControllerFactory {
                 uxParameters.autoDismiss = false
             }
         
+        let depositTemplate = MiSnapConfiguration()
+            .withCustomUxParameters { uxParameters in
+                uxParameters.autoDismiss = false
+                uxParameters.instructionMode = .firstTimeUseOnly
+            }
+        
         let configuration: MiSnapConfiguration
         switch step {
         case .idFront:
@@ -58,10 +64,15 @@ class MiSnapWorkflowViewControllerFactory {
                     uxParameters.autoDismiss = false
                 }
                 .withCustomParameters { parameters in
-                    parameters.science.idBackMode = .acceptableImageOptionalBarcodeRequired
+                    parameters.science.iqaRequired = false
+                    parameters.science.barcodeRequired = true
                     parameters.science.supportedBarcodeTypes = [MiSnapScienceBarcodeType.QR.rawValue]
                     parameters.science.documentTypeName = "Passport QR"
                 }
+        case .checkFront:
+            configuration = MiSnapConfiguration(for: .checkFront).applying(depositTemplate)
+        case .checkBack:
+            configuration = MiSnapConfiguration(for: .checkBack).applying(depositTemplate)
         default:
             fatalError("\(step) is not handled in MiSnapWorkflowViewControllerFactory.buildMiSnapVC(_:delegate:)")
         }
@@ -144,18 +155,23 @@ class MiSnapWorkflowViewControllerFactory {
     func supportedOrientationFor(step: MiSnapWorkflowStep) -> UIInterfaceOrientationMask {
         switch step {
         #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
-        case .nfc:      return .portrait
+        case .nfc:      
+            return .portrait
         #endif
         #if canImport(MiSnapFacialCaptureUX) && canImport(MiSnapFacialCapture)
-        case .face:     return UIDevice.current.userInterfaceIdiom == .pad ? .all : .portrait
+        case .face:     
+            return UIDevice.current.userInterfaceIdiom == .pad ? .all : .portrait
         #endif
         #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
-        case .voice:    return .portrait
+        case .voice:    
+            return .portrait
         #endif
         #if canImport(MiSnapUX) && canImport(MiSnap)
-        case .passport: return .landscape
+        case .passport, .checkFront, .checkBack:
+            return .landscape
         #endif
-        default:        return .all
+        default:        
+            return .all
         }
     }
 }

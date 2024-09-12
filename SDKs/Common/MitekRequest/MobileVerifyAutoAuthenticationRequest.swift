@@ -63,6 +63,10 @@ public enum MobileVerifyRequestError: Error {
      */
     case emptyPdf417
     /**
+     Empty RTS
+     */
+    case emptyRts
+    /**
      Description
      */
     var description: String {
@@ -70,9 +74,9 @@ public enum MobileVerifyRequestError: Error {
         case .frontEvidenceNotSet:
             return "Front evidence is required. Call `addFrontEvidence(withData:, qrcode:, customerReferenceId:)`"
         case .frontEvidenceDataNotSet:
-            return "Provide a valid base64 encoded image data when `addFrontEvidence(withData:, qrcode:, customerReferenceId:)` is called"
+            return "Provide a valid base64 encoded image data when `addFrontEvidence(withData:, qrcode:, rts:, customerReferenceId:)` is called"
         case .backEvidenceDataNotSet:
-            return "Provide a valid base64 encoded image data when `addBackEvidence(withData:, pdf417:, customerReferenceId:)` is called"
+            return "Provide a valid base64 encoded image data when `addBackEvidence(withData:, pdf417:, rts:, customerReferenceId:)` is called"
         case .selfieEvidenceNotSet:
             return "`addSelfieEvidence(withData:)` should be called when `addVerifications(_:)` is called with `faceComparison` and `faceComparison` or `faceBlocklist`"
         case .selfieEvidenceDataNotSet:
@@ -82,15 +86,17 @@ public enum MobileVerifyRequestError: Error {
         case .invalidSelfieVerificationsCombination:
             return "`faceLiveness` was added to a list of verifications without a required `faceComparison`"
         case .nfcEvidenceRequiredInputsMissing:
-            return "All of the following properties [`sod`, `com`, `dataFormat`, `dataGroups`, `portrait`, `chipAuthOutput`] should be set with valid non-empty values when `addNfcEvidence(withSod:, com:, dataFormat:, dataGroups:, portrait:, chipAuthOutput:, activeAuthInput:)` is called"
+            return "All of the following properties [`sod`, `com`, `dataFormat`, `dataGroups`, `chipAuthOutput`] should be set with valid non-empty values when `addNfcEvidence(withSod:, com:, dataFormat:, dataGroups:, portrait:, mibi:, chipAuthOutput:, activeAuthInput:)` is called"
         case .nfcEvidenceDataGroupsInvalidFormat:
             return "`dataGroups` dicitonary of NFC evidence is not a correct format.\nExpected format:\n\tKey: dg<number> (e.g. `dg1`, `dg14`)\n\tValue: an empty or valid hex string"
         case .nfcActiveAuthEvidenceRequiredInputsMissing:
             return "When optional `activeAuthInput` of NFC evidence is set then all of its properties [`ecdsaPublicKey`, `signature`, `challenge`] should be set"
         case .emptyQrCode:
-            return "When optional parameter `qrcode` is set in `addFrontEvidence(withData:, qrcode:, customerReferenceId:)` it should be a valid non-empty string"
+            return "When optional parameter `qrcode` is set in `addFrontEvidence(withData:, qrcode:, rts:, customerReferenceId:)` it should be a valid non-empty string"
         case .emptyPdf417:
-            return "When optional parameter `pdf417` is set in `addBackEvidence(withData:, pdf417:, customerReferenceId:)` it should be a valid non-empty string"
+            return "When optional parameter `pdf417` is set in `addBackEvidence(withData:, pdf417:, rts:, customerReferenceId:)` it should be a valid non-empty string"
+        case .emptyRts:
+            return "When optional parameter `rts` is set it should be a valid non-empty string"
         }
     }
 }
@@ -175,18 +181,33 @@ public enum MobileVerifyRequestVerification: String, Equatable {
      */
     case faceBlocklist
     /**
+     Face velocity
+     */
+    case faceVelocity
+    /**
      Data signal AAMVA
      */
     case dataSignalAAMVA
+    /**
+     Injection attack detection
+     */
+    case injectionAttackDetection
+    /**
+     Template attack detection
+     */
+    case templateAttackDetection
     /**
      String value
      */
     var stringValue: String {
         switch self {
-        case .faceComparison:   return "faceComparison"
-        case .faceLiveness:     return "faceLiveness"
-        case .faceBlocklist:    return "faceBlocklist"
-        case .dataSignalAAMVA:  return "dataSignalAAMVA"
+        case .faceComparison:               return "faceComparison"
+        case .faceLiveness:                 return "faceLiveness"
+        case .faceBlocklist:                return "faceBlocklist"
+        case .faceVelocity:                 return "faceVelocity"
+        case .dataSignalAAMVA:              return "dataSignalAAMVA"
+        case .injectionAttackDetection:     return "injectionAttackDetection"
+        case .templateAttackDetection:      return "templateAttackDetection"
         }
     }
 }
@@ -197,12 +218,14 @@ private class MobileVerifyRequestDossierMetadata: NSObject {
 
 private class MobileVerifyRequestEvidenceIdDocumentFront: NSObject {
     var data: String = ""
+    var rts: String?
     var customerReferenceId: String?
     var qrCode: String?
 }
 
 private class MobileVerifyRequestEvidenceIdDocumentBack: NSObject {
     var data: String = ""
+    var rts: String?
     var customerReferenceId: String?
     var pdf417: String?
 }
@@ -212,7 +235,8 @@ private class MobileVerifyRequestEvidenceIdDocumentNfc: NSObject {
     var com: String = ""
     var dataFormat: MobileVerifyRequestNfcDataFormat = .unknown
     var dataGroups: [String : String] = [:]
-    var portrait: String = ""
+    var portrait: String?
+    var mibi: String?
     var chipAuthOutput: String = ""
     var activeAuthInput: [String : Any]?
     
@@ -240,6 +264,9 @@ private class MobileVerifyRequestEvidenceIdDocumentNfc: NSObject {
         if let portrait = nfcRequestDictionary["portrait"] as? String {
             nfcEvidence.portrait = portrait
         }
+        if let mibi = nfcRequestDictionary["mibi"] as? String {
+            nfcEvidence.mibi = mibi
+        }
         
         return nfcEvidence
     }
@@ -249,11 +276,12 @@ private class MobileVerifyRequestEvidenceIdDocumentNfc: NSObject {
  */
 public class MobileVerifyRequestEvidenceBiometricSelfie: NSObject {
     var data: String = ""
+    var rts: String?
 }
 /**
  MobileVerify request
  */
-public class MobileVerifyRequest: NSObject {
+public class MobileVerifyAutoAuthenticationRequest: NSObject {
     private var dossierMetadata = MobileVerifyRequestDossierMetadata()
     private var frontEvidence = MobileVerifyRequestEvidenceIdDocumentFront()
     private var backEvidence = MobileVerifyRequestEvidenceIdDocumentBack()
@@ -285,18 +313,20 @@ public class MobileVerifyRequest: NSObject {
     /**
      Adds front evidence
      */
-    public func addFrontEvidence(withData data: String, qrCode: String? = nil, customerReferenceId: String? = nil) {
+    public func addFrontEvidence(withData data: String, qrCode: String? = nil, rts: String? = nil, customerReferenceId: String? = nil) {
         frontEvidenceSet = true
         frontEvidence.data = data
+        frontEvidence.rts = rts
         frontEvidence.customerReferenceId = customerReferenceId
         frontEvidence.qrCode = qrCode
     }
     /**
      Adds back evidence
      */
-    public func addBackEvidence(withData data: String, pdf417: String? = nil, customerReferenceId: String? = nil) {
+    public func addBackEvidence(withData data: String, pdf417: String? = nil, rts: String? = nil, customerReferenceId: String? = nil) {
         backEvidenceSet = true
         backEvidence.data = data
+        backEvidence.rts = rts
         backEvidence.customerReferenceId = customerReferenceId
         backEvidence.pdf417 = pdf417
     }
@@ -307,7 +337,8 @@ public class MobileVerifyRequest: NSObject {
                                com: String,
                                dataFormat: MobileVerifyRequestNfcDataFormat,
                                dataGroups: [String : String],
-                               portrait: String,
+                               portrait: String? = nil,
+                               mibi: String? = nil,
                                chipAuthOutput: String,
                                activeAuthInput: [String : Any]? = nil) {
         nfcEvidenceSet = true
@@ -316,6 +347,7 @@ public class MobileVerifyRequest: NSObject {
         nfcEvidence.dataFormat = dataFormat
         nfcEvidence.dataGroups = dataGroups
         nfcEvidence.portrait = portrait
+        nfcEvidence.mibi = mibi
         nfcEvidence.chipAuthOutput = chipAuthOutput
         nfcEvidence.activeAuthInput = activeAuthInput
     }
@@ -329,9 +361,10 @@ public class MobileVerifyRequest: NSObject {
     /**
      Adds selfie evidence
      */
-    public func addSelfieEvidence(withData data: String) {
+    public func addSelfieEvidence(withData data: String, rts: String? = nil) {
         selfieEvidenceSet = true
         selfieEvidence.data = data
+        selfieEvidence.rts = rts
     }
     /**
      Adds verifications
@@ -362,6 +395,9 @@ public class MobileVerifyRequest: NSObject {
             if let qrCode = frontEvidence.qrCode, qrCode.isEmpty {
                 errors.append(.emptyQrCode)
             }
+            if let rts = frontEvidence.rts, rts.isEmpty {
+                errors.append(.emptyRts)
+            }
         } else {
             errors.append(.frontEvidenceNotSet)
         }
@@ -373,11 +409,17 @@ public class MobileVerifyRequest: NSObject {
             if let pdf417 = backEvidence.pdf417, pdf417.isEmpty {
                 errors.append(.emptyPdf417)
             }
+            if let rts = backEvidence.rts, rts.isEmpty {
+                errors.append(.emptyRts)
+            }
         }
         
         if selfieEvidenceSet {
             if selfieEvidence.data.isEmpty {
                 errors.append(.selfieEvidenceDataNotSet)
+            }
+            if let rts = selfieEvidence.rts, rts.isEmpty {
+                errors.append(.emptyRts)
             }
             if !verifications.contains(.faceComparison) {
                 errors.append(.selfieVerificationsNotEnabled)
@@ -392,7 +434,7 @@ public class MobileVerifyRequest: NSObject {
         }
         
         if nfcEvidenceSet {
-            if nfcEvidence.sod.isEmpty || nfcEvidence.com.isEmpty || nfcEvidence.dataFormat == .unknown || nfcEvidence.dataGroups.isEmpty || nfcEvidence.portrait.isEmpty || nfcEvidence.chipAuthOutput.isEmpty {
+            if nfcEvidence.sod.isEmpty || nfcEvidence.com.isEmpty || nfcEvidence.dataFormat == .unknown || nfcEvidence.dataGroups.isEmpty || nfcEvidence.chipAuthOutput.isEmpty {
                 errors.append(.nfcEvidenceRequiredInputsMissing)
             }
             if !nfcEvidence.dataGroups.isEmpty {
@@ -435,6 +477,9 @@ public class MobileVerifyRequest: NSObject {
             if let qrCode = frontEvidence.qrCode {
                 frontDictionary["encodedData"] = ["qrcode" : qrCode]
             }
+            if let rts = frontEvidence.rts {
+                frontDictionary["encryptedPayload"] = rts
+            }
             images.append(frontDictionary)
         }
         
@@ -445,6 +490,9 @@ public class MobileVerifyRequest: NSObject {
             }
             if let pdf417 = backEvidence.pdf417 {
                 backDictionary["encodedData"] = ["pdf417" : pdf417]
+            }
+            if let rts = backEvidence.rts {
+                backDictionary["encryptedPayload"] = rts
             }
             images.append(backDictionary)
         }
@@ -459,9 +507,16 @@ public class MobileVerifyRequest: NSObject {
                 "com" : nfcEvidence.com,
                 "dataFormat" : nfcEvidence.dataFormat.stringValue,
                 "dataGroups" : nfcEvidence.dataGroups,
-                "portrait" : nfcEvidence.portrait,
                 "chipAuthOutput" : nfcEvidence.chipAuthOutput
             ]
+            
+            if let portrait = nfcEvidence.portrait {
+                nfcDictionary["portrait"] = portrait
+            }
+            
+            if let mibi = nfcEvidence.mibi {
+                nfcDictionary["mibi"] = mibi
+            }
             
             if let activeAuthInput = nfcEvidence.activeAuthInput {
                 nfcDictionary["activeAuthInput"] = activeAuthInput
@@ -473,11 +528,14 @@ public class MobileVerifyRequest: NSObject {
         evidence.append(idDocumentDictionary)
         
         if selfieEvidenceSet {
-            let selfieDictionary: [String : String] = [
+            var selfieDictionary: [String : String] = [
                 "type" : "Biometric",
                 "biometricType" : "Selfie",
                 "data" : selfieEvidence.data
             ]
+            if let rts = selfieEvidence.rts {
+                selfieDictionary["encryptedPayload"] = rts
+            }
             
             evidence.append(selfieDictionary)
         }

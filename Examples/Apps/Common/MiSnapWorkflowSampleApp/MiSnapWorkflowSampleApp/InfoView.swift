@@ -13,7 +13,7 @@ class InfoView: UIStackView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public init(with title: String, titleSize: CGFloat = 17, titleWeight:UIFont.Weight = .light, values: [String]?, valueSize: CGFloat = 17, valueWeight:UIFont.Weight = .light, split: CGFloat? = nil, frame: CGRect) {
+    public init(with title: String, titleSize: CGFloat = 17, titleWeight:UIFont.Weight = .light, values: [String]?, valueSize: CGFloat = 17, valueWeight:UIFont.Weight = .light, split: CGFloat? = nil, frame: CGRect, valuesSelectable: Bool = false) {
         super.init(frame: frame)
         self.frame = frame
         self.axis = .horizontal
@@ -60,7 +60,8 @@ class InfoView: UIStackView {
         
         for value in values {
             let valueLabel = ResultLabel(with: value, alignement: valueAlignement, bgColor: .clear, fontSize: valueSize, fontWeight: valueWeight,
-                                         frame: CGRect(x: 0, y: 0, width: self.frame.size.width * 0.7, height: frame.size.height))
+                                         frame: CGRect(x: 0, y: 0, width: self.frame.size.width * 0.7, height: frame.size.height),
+                                         selectable: valuesSelectable)
             valueLabel.translatesAutoresizingMaskIntoConstraints = false
             self.addArrangedSubview(valueLabel)
             

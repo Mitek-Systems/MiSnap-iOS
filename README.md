@@ -99,16 +99,16 @@ See [this guide](Docs/Guides/Common/workflow.md) for `MiSnapWorkflow` integratio
 
 | Component                        | Compressed, MB | Uncompressed, MB |
 | :------------------------------- | :------------: | :--------------: |
-| MiSnap                           |  1.40          |  3.70            |
-| MiSnap + MiSnapUX                |  2.40          |  5.40            |
-| NFC                              |  1.30          |  3.10            |
+| MiSnap                           |  1.50          |  3.80            |
+| MiSnap + MiSnapUX                |  2.40          |  5.60            |
+| NFC                              |  1.30          |  3.00            |
 | NFC + NFCUX                      |  1.70          |  3.90            |
-| FacialCapture                    |  0.23          |  0.72            |
-| FacialCapture + FacialCaptureUX  |  0.59          |  1.60            |
+| FacialCapture                    |  0.24          |  0.76            |
+| FacialCapture + FacialCaptureUX  |  0.61          |  1.70            |
 | VoiceCapture                     |  0.95          |  2.40            |
-| VoiceCapture + VoiceCaptureUX    |  1.70          |  3.90            |
-| All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture + MiSnapDeviceKit)                   |  3.50          |  8.40            |
-| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  5.00          |  11.30           |
+| VoiceCapture + VoiceCaptureUX    |  1.20          |  3.20            |
+| All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture)                   |  3.50          |  8.60            |
+| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  5.00          |  11.60           |
 
 </center>
 
@@ -126,24 +126,50 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 
 | Device                           | Version      |
 | :-----                           | :-----:      |
+| iPhone 15 Pro Max                | 17.6.1       |
+| iPhone 15 Pro                    | 18.0         |
 | iPhone 15 Plus                   | 17.0         |
-| iPhone 14 Pro Max                | 17.0.3       |
+| iPhone 15                        | 17.6.1       |
+| iPhone 14 Pro Max                | 17.6.1       |
+|                                  | 17.0.3       |
+| iPhone 14 Pro                    | 18.0         |
+|                                  | 17.6.1       |
 | iPhone 14 Plus                   | 16.5.1       |
-| iPhone 13                        | 17.0         |
+| iPhone 14                        | 17.6.1       |
+| iPhone 13 Pro Max                | 17.6.1       |
+|                                  | 17.0.2       |
+| iPhone 13                        | 17.3         |
 | iPhone 13 mini                   | 16.4.1       |
-| iPhone 12 Pro Max                | 16.4         |
-| iPhone 12                        | 14.1         |
-| iPhone 12 mini                   | 14.2         |
-| iPhone SE (2nd gen)              | 14.0         |
+| iPhone SE (3rd gen)              | 17.5.1       |
+| iPhone 12 Pro Max                | 17.6.1       |
+|                                  | 16.4         |
+| iPhone 12                        | 18.0         |
+|                                  | 17.6.1       |
+|                                  | 17.4.1       |
+|                                  | 17.4         |
+|                                  | 14.1         |
+| iPhone 12 mini                   | 17.6.1       |
+|                                  | 14.2         |
+| iPhone SE (2nd gen)              | 18.0         |
+|                                  | 14.0         |
 | iPhone 11 Pro                    | 16.0         |
-| iPhone 11                        | 15.0         |
-| iPhone Xs Max                    | 13.3.1       |
-| iPhone 8                         | 16.4.1       |
+| iPhone 11                        | 17.6.1       |
+|                                  | 15.0         |
+| iPhone XS Max                    | 13.3.1       |
+| iPhone XS                        | 17.4.1       |
+| iPhone XR                        | 17.6.1       |
+|                                  | 17.4.1       |
+| iPhone X                         | 16.7.1       |
+| iPhone 8                         | 16.7.7       |
+|                                  | 16.7         |
+|                                  | 16.4.1       |
 | iPhone SE (1nd gen)              | 13.5.1       |
-| iPhone 7                         | 15.7.3       |
+| iPhone 7 Plus                    | 15.8.3       |
+| iPhone 7                         | 15.8.1       |
+|                                  | 15.7.3       |
+| iPhone 6s                        | 15.8.2       |
 | iPad Air (5th gen)               | 17.1.2       |
 | iPad Pro  (12.9-inch) (2nd gen)  | 13.1         |
-| iPad (10th gen)                  | 16.1.1       |
 
 </center>
 
@@ -155,7 +181,7 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 * MiSnapNFC
     * Some iPhone 7 devices fail NFC reading of eDriving License regardless of an iOS version
     * Some iPhone XR devices fail NFC reading of some Italian eIDs
-    * An intermitten chip connection loss when both a device and a document are held still on newer iPhone models (iPhone 12 series and newer) running newer version of iOS (iOS 16 or newer) caused by OS and/or hardware issues. Note, a user should be able to successfully finish reading a chip upon a retry
+    * An intermitten chip connection loss when both a device and a document are held still on newer iPhone models (iPhone 11 series and newer) running newer versions of iOS (iOS 16 or newer) when reading NLD documents caused by iOS (operating system) issue. Note, a user should be able to successfully finish reading a chip upon one or multiple retries.
 * MiSnapFacialCapture
     * On iPhone 7 and earlier, the hint messages take a few seconds to begin appearing. During this time the message label will be blank
 * MiSnapVoiceCapture

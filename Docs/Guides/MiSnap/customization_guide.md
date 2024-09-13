@@ -27,8 +27,10 @@ Please refer to [MiSnapCustomizationSampleApp](../../../Examples/Apps/MiSnap/MiS
     * [Video Recording](#video-recording)
     * [Optional Data Redaction](#optional-data-redaction)
     * [Enhanced Manual](#enhanced-manual)
-    * [ID Back Mode](#id-back-mode)
     * [Document Type Name](#document-type-name)
+    * [Trigger](#trigger)
+        * [MRZ only](#mrz-only)
+        * [Barcode only](#barcode-only)
     * [Other](#other)
 
 # Overview
@@ -370,22 +372,6 @@ let configuration = MiSnapConfiguration(for: documentType)
 ```
 :warning: If you have to disable a review screen for legal purposes follow instructions outlined [here](#review-screen).
 
-## ID Back Mode
-Create a configuration for a specific document type and chain `.withCustomParameters`. Refer to a snippet below:
-
-```Swift
-let configuration = MiSnapConfiguration(for: documentType)
-    .withCustomParameters { parameters in
-        // When an image quality is not important and only a decoded barcode string is required use this mode
-        parameters.science.idBackMode = .acceptableImageOptionalBarcodeRequired
-        
-        // When both a good quality image and a decoded barcode string is required use this mode
-        parameters.science.idBackMode = .acceptableImageRequiredBarcodeRequired
-    }
-```
-
-For more details and all available ID Back modes see this [API reference](https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/MiSnap/MiSnapScience/Enums/MiSnapScienceIdBackMode.html).
-
 ## Document type name
 Create a configuration for a specific document type and chain `.withCustomParameters`. Refer to a snippet below:
 
@@ -395,6 +381,54 @@ let configuration = MiSnapConfiguration(for: documentType)
         // Custom document type name displayed at the top of a Capture screen
         parameters.science.documentTypeName = "Your custom document type name"
     }
+```
+
+Note, the value of `documentTypeName` is used as a key in localizable strings. If it's found there then a localized string will be used. Otherwise, the value itself is displayed.
+
+## Trigger
+Create a configuration for a specific document type and chain `.withCustomParameters`. Refer to a snippet below:
+
+```Swift
+let configuration = MiSnapConfiguration(for: documentType)
+    .withCustomParameters { parameters in
+        /* Only apply this customization if image quality isn't important and 
+        one or more additional triggers are enabled (MRZ only or Barcode only flow) */
+        parameters.science.iqaRequired = false
+
+        /* Only apply this customization for a flow where a barcode is expected */
+        parameters.science.barcodeRequired = true
+
+        /* Only apply this customization for a flow where an MRZ is expected */
+        parameters.science.mrzRequired = true
+    }
+```
+
+### MRZ only
+Here's how to configure a trigger for MRZ only flow that significantly reduces friction due to skipping glare, background, corner and other quality checks:
+
+```Swift
+.withCustomParameters { parameters in
+    parameters.science.iqaRequired = false
+    parameters.science.mrzRequired = true
+}
+```
+
+:warning: Since there's a high probability of an acquired image failing one or more image quality analysis checks, we recommend to use this configuration only when NFC step is required.
+
+:warning: Enabling this configuration for ID Front and/or ID Back document types will result in continuos auto session timeouts for documents that do not have MRZ (e.g. US DL front and back) therefore we recommend having at least one flow for documents that have MRZ that'll utilize this new configuration and another one with default configuration that ensures a document without MRZ can still be acquired (if supported by your use case).
+
+### Barcode only
+Here's how to configure a trigger for MRZ only flow that significantly reduces friction due to skipping glare, background, corner and other quality checks:
+
+```Swift
+.withCustomParameters { parameters in
+    parameters.science.iqaRequired = false
+    parameters.science.barcodeRequired = true
+    // By deafult PDF417 barcode is enabled. Here's how to override to support QR
+    parameters.science.supportedBarcodeTypes = [MiSnapScienceBarcodeType.QR.rawValue]
+    // Aditionally you can change a name of a document to a specific barcode
+    parameters.science.documentTypeName = // your name for a specific barcode
+}
 ```
 
 ## Other

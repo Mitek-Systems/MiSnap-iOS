@@ -54,6 +54,14 @@ enum MiSnapWorkflowStep : String, Equatable {
      Passport QR
      */
     case passportQr = "Passport_QR"
+    /**
+     Check Front
+     */
+    case checkFront = "Check_Front"
+    /**
+     Check Back
+     */
+    case checkBack = "Check_Back"
     #endif
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
     /**
@@ -119,6 +127,14 @@ protocol MiSnapWorkflowControllerDelegate: NSObject {
      Delegates receive this callback when an error occurs in any SDK
      */
     func miSnapWorkflowControllerError(_ result: MiSnapWorkflowResult)
+    /**
+     Delegates receive this callback when `useCustomTutorials` of `MiSnapUxParameters` is overridden to `true`
+     */
+    func miSnapWorkflowControllerDocumentCustomTutorial(_ documentType: MiSnapScienceDocumentType,
+                                                        tutorialMode: MiSnapUxTutorialMode,
+                                                        mode: MiSnapMode,
+                                                        statuses: [NSNumber]?,
+                                                        image: UIImage?)
     
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
     /**
@@ -138,6 +154,11 @@ protocol MiSnapWorkflowControllerDelegate: NSObject {
 extension MiSnapWorkflowControllerDelegate {
     func miSnapWorkflowControllerIntermediate(_ result: Any, step: MiSnapWorkflowStep) {}
     func miSnapWorkflowControllerNfcSkipped(_ result: [String : Any]) {}
+    func miSnapWorkflowControllerDocumentCustomTutorial(_ documentType: MiSnapScienceDocumentType,
+                                                        tutorialMode: MiSnapUxTutorialMode,
+                                                        mode: MiSnapMode,
+                                                        statuses: [NSNumber]?,
+                                                        image: UIImage?) {}
 }
 /**
  Workflow result
@@ -160,6 +181,14 @@ class MiSnapWorkflowResult: NSObject {
      Passport QR result
      */
     var passportQr: MiSnapResult?
+    /**
+     Check Front result
+     */
+    var checkFront: MiSnapResult?
+    /**
+     Check Back result
+     */
+    var checkBack: MiSnapResult?
     #endif
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
     /**
@@ -192,6 +221,8 @@ class MiSnapWorkflowResult: NSObject {
         idBack = nil
         passport = nil
         passportQr = nil
+        checkFront = nil
+        checkBack = nil
         #endif
         #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
         nfc = nil
@@ -281,7 +312,7 @@ class MiSnapWorkflowController: NSObject {
         viewController = UIViewController.init()
         switch step {
         #if canImport(MiSnapUX) && canImport(MiSnap)
-        case .idFront, .idBack, .passport, .passportQr:
+        case .idFront, .idBack, .passport, .passportQr, .checkFront, .checkBack:
             viewController = controllerFactory.buildMiSnapVC(for: step, delegate: self)
         #endif
         #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
@@ -347,6 +378,8 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
         case .idBack:       self.result.idBack = result
         case .passport:     self.result.passport = result
         case .passportQr:   self.result.passportQr = result
+        case .checkFront:   self.result.checkFront = result
+        case .checkBack:    self.result.checkBack = result
         default:            break
         }
         
@@ -369,8 +402,9 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
             }
         }
         
+        #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
         if shouldAddNfcStep() {
-            #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
+            
             if #available(iOS 13.0, *), NFCTagReaderSession.readingAvailable {
                 if !self.mutableSteps.contains(.nfc) {
                     var index = -1
@@ -386,8 +420,9 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
                     self.mutableSteps.insert(.nfc, at: index + 1)
                 }
             }
-            #endif
+           
         }
+        #endif
         
         if let extraction = result.extraction, extraction.additionalStep == .passportQr {
             self.mutableSteps.insert(.passportQr, at: 0)
@@ -406,12 +441,18 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
         case .idBack:       self.result.idBack = result
         case .passport:     self.result.passport = result
         case .passportQr:   self.result.passportQr = result
+        case .checkFront:   self.result.checkFront = result
+        case .checkBack:    self.result.checkBack = result
         default:            break
         }
         
         cleanup(cancelled: true)
         
         delegate?.miSnapWorkflowControllerCancelled(self.result)
+    }
+    
+    func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType, tutorialMode: MiSnapUxTutorialMode, mode: MiSnapMode, statuses: [NSNumber]?, image: UIImage?) {
+        delegate?.miSnapWorkflowControllerDocumentCustomTutorial(documentType, tutorialMode: tutorialMode, mode: mode, statuses: statuses, image: image)
     }
     
     private func stepFrom(miSnapDocumentType: String, previousStep: MiSnapWorkflowStep) -> MiSnapWorkflowStep? {
@@ -427,7 +468,7 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
         default: return nil
         }
     }
-    
+    #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
     private func shouldAddNfcStep() -> Bool {
         guard !self.mutableSteps.contains(.nfc) else { return false }
         if !mrzString.isEmpty, !documentNumber.isEmpty, dateOfBirth.count == 6, dateOfExpiry.count == 6 {
@@ -436,23 +477,22 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
             } else {
                 nfcDocumentType = .id
             }
-            #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
+            
             if #available(iOS 13, *) {
                 nfcChipLocation = MiSnapNFCChipLocator.chipLocation(mrzString: mrzString, documentNumber: documentNumber, dateOfBirth: dateOfBirth, dateOfExpiry: dateOfExpiry)
                 if nfcChipLocation != .noChip {
                     return true
                 }
             }
-            #endif
+            
         } else if mrzString.count == 30, mrzString.starts(with: "D1") {
             nfcDocumentType = .dl
-            #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
             return true
-            #endif
         }
 
         return false
     }
+    #endif
 }
 #endif
 

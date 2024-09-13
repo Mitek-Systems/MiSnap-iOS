@@ -25,4 +25,6 @@
 
 - (void)analyzeSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 
+- (void)analyzePixelBuffer:(CVPixelBufferRef)pixelBuffer;
+
 @end

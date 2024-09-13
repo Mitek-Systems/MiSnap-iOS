@@ -168,6 +168,11 @@ public struct MobileVerifyFinding {
 public class MobileVerifyResult {
     private var startTime: Date = Date()
     private var response: MobileVerifyResponse?
+    private(set) var error: MitekPlatformError?
+    public var errorMessage: String? {
+        guard let error = error else { return nil }
+        return "Server error: " + error.stringValue
+    }
     private var nfcResult: [String : Any]?
     
     private var licenseClasses: [[String : String]]?
@@ -375,6 +380,10 @@ public class MobileVerifyResult {
         if let issuingCountry = info[.issuingCountry] { array.append("\(MobileVerifyDocumentInfo.issuingCountry.rawValue):\(issuingCountry)") }
         if let issuingAuthority = info[.issuingAuthority] { array.append("\(MobileVerifyDocumentInfo.issuingAuthority.rawValue):\(issuingAuthority)") }
         return array
+    }
+    
+    public func set(error: MitekPlatformError) {
+        self.error = error
     }
     
     public func parse(_ rawResponse: [AnyHashable : Any]) {

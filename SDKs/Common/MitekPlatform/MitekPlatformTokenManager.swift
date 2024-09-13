@@ -29,11 +29,13 @@ public class MitekPlatformTokenManager {
         self.id = id
         self.secret = secret
         self.scope = scope
+        // Reset a token if a new configuration is set
+        self.token = nil
     }
     /**
      Gets a token
      */
-    public func getToken(completed: @escaping (String?, Error?) -> Void) {
+    public func getToken(completed: @escaping (String?, MitekPlatformError?) -> Void) {
         if let token = token {
             completed(token, nil)
         } else {
@@ -41,7 +43,7 @@ public class MitekPlatformTokenManager {
         }
     }
     
-    private func refreshToken(completed: @escaping (String?, Error?) -> Void) {
+    private func refreshToken(completed: @escaping (String?, MitekPlatformError?) -> Void) {
         guard !url.isEmpty, !id.isEmpty, !secret.isEmpty, !scope.isEmpty else { fatalError("[Token Manager] url, id, secret and scope are not set") }
         
         guard let url = URL(string: url) else { fatalError("[Token Manager] Couldn't initialize URL with string: \(url)") }
@@ -65,14 +67,15 @@ public class MitekPlatformTokenManager {
         
         dataTask = URLSession.shared.dataTask(with: request) { [unowned self] (data, response, error) in
             if let error = error {
-                print("[Token Manager] An error occured when sending the request to the server")
-                completed(nil, error)
+                return completed(nil, .error(error.localizedDescription, -1))
             } else if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode >= 400 && httpResponse.statusCode < 600 {
                 print("[Token Manager] HTTP error: \(httpResponse.statusCode)")
-                completed(nil, NSError(domain: NSURLErrorDomain, code: httpResponse.statusCode, userInfo: nil))
+                return completed(nil, .error("Undocumented error with code \(httpResponse.statusCode)", httpResponse.statusCode))
             }
             
-            guard let data = data else { fatalError("[Token Manager] response data is nil") }
+            guard let data = data else {
+                return completed(nil, .error("Expected token data but got nil", -1))
+            }
             
             do {
                 guard let jsonResponse = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? [String : Any] else { return }
@@ -94,11 +97,11 @@ public class MitekPlatformTokenManager {
                     self.token = token
                     completed(token, nil)
                 } else {
-                    completed(nil, MitekPlatformError.error("Token is absent in the response json"))
+                    completed(nil, MitekPlatformError.error("Token is absent in the server response", -1))
                 }
             } catch let error {
                 print("[Token Manager] An error occured when parsing the response json: \(error.localizedDescription)")
-                completed(nil, error)
+                completed(nil, .error(error.localizedDescription, -1))
             }
         }
         

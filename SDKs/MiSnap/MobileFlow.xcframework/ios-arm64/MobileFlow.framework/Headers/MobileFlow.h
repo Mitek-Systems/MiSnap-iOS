@@ -7,6 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MobileFlow/MobileFlowTypes.h>
+#import <MobileFlow/MobileFlowImageUtils.h>
+#import <MobileFlow/MobileFlowDocResult.h>
+#import <MobileFlow/MobileFlowGlareResult.h>
+#import <MobileFlow/MobileFlowFourCornerResult.h>
+#import <MobileFlow/MobileFlowFocusResult.h>
+#import <MobileFlow/MobileFlowMrzResult.h>
+#import <MobileFlow/MobileFlowExposureResult.h>
+#import <MobileFlow/MobileFlowMicrResult.h>
+#import <MobileFlow/MobileFlowDocParameters.h>
+#import <MobileFlow/MobileFlowAnalyzer.h>
+#import <MobileFlow/MobileFlowSpikeNormalizer.h>
 
 /**
  *  The Mobile Flow framework provides a convenient interface to the Mitek

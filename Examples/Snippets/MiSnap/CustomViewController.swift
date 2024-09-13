@@ -123,28 +123,27 @@ extension CustomViewController {
         analyzer = MiSnapAnalyzer(parameters: parameters, delegate: self, orientation: orientation)
     }
     
-    private func configureCamera() {
-        camera = MiSnapCamera(parameters.camera, orientation: orientation, delegate: self, frame: view.frame)
-        guard let camera = camera else { fatalError("MiSnap Camera wasn't initialized") }
-        camera.translatesAutoresizingMaskIntoConstraints = false
-        view.insertSubview(camera, at: 0)
-        
-        NSLayoutConstraint.activate([
-            camera.topAnchor.constraint(equalTo: view.topAnchor),
-            camera.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            camera.leftAnchor.constraint(equalTo: view.leftAnchor),
-            camera.rightAnchor.constraint(equalTo: view.rightAnchor)
-        ])
+    private func configureCamera(with parameters: MiSnapParameters, orientation: UIInterfaceOrientation) {
+        if let camera = camera, camera.isConfigured {
+            didFinishConfiguringSession()
+        } else {
+            camera = MiSnapCamera(parameters.camera, orientation: orientation, delegate: self, frame: view.frame)
+            guard let camera = camera else { fatalError("MiSnap Camera wasn't initialized") }
+            camera.translatesAutoresizingMaskIntoConstraints = false
+            view.insertSubview(camera, at: 0)
+            
+            NSLayoutConstraint.activate([
+                camera.topAnchor.constraint(equalTo: view.topAnchor),
+                camera.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+                camera.leftAnchor.constraint(equalTo: view.leftAnchor),
+                camera.rightAnchor.constraint(equalTo: view.rightAnchor)
+            ])
+        }
     }
     
     private func start() {
         configureAnalyzer(with: parameters, orientation: orientation)
-        
-        if let camera = camera, camera.isConfigured {
-            didFinishConfiguringSession()
-        } else {
-            configureCamera()
-        }
+        configureCamera(with: parameters, orientation: orientation)
     }
     
     // Call this function to deinitialize all objects to avoid memory leaks
@@ -174,7 +173,7 @@ extension CustomViewController {
     }
     
     // Use this function as selector for Torch button action
-    private func toggleTorch() {
+    @objc private func toggleTorch(_ button: UIButton) {
         guard let camera = camera, let analyzer = analyzer else { return }
         if camera.isTorchOn {
             camera.turnTorchOff()

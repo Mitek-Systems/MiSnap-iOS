@@ -98,6 +98,10 @@
  Iindicates whether the torch is ON or OFF
  */
 @property (nonatomic, readonly, getter=isTorchOn) BOOL torchOn;
+/**
+ Preview rectangle normalized to a screen size that accounts for preview black bars
+ */
+@property (nonatomic, readonly) CGRect previewRect;
 
 /**
  Creates an instance of `MiSnapCamera`

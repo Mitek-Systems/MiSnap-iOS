@@ -21,18 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          By default, this app functions in `offline` mode (a transaction isn't send to a back end from processing)
          Set your valid credentials and update configuration with valid info to enable `online` mode (a transaction is sent to a back end from processing)
          */
-        let configuration = MitekPlatformConfiguration(withClientId: "your_client_id_here", clientSecret: "your_client_secret_here")
-            .withMobileVerifyConfiguration { mobileVerify in
-                mobileVerify.tokenUrl = "your_mobile_verify_token_url_here"
-                mobileVerify.url = "your_mobile_verify_url_here"
-                mobileVerify.scope = "your_mobile_verify_scope_here"
-            }
-            .withMiPassConfiguration { miPass in
-                miPass.tokenUrl = "your_mipass_token_url_here"
-                miPass.baseUrl = "your_mipass_base_url_here"
-                miPass.scope = "your_mipass_scope_here"
-            }
-        MitekPlatform.shared.set(configuration: configuration)
+        let configurationV2 = MitekPlatformConfiguration(withUrl: "your_mobile_verify_url_here",
+                                                         id: "your_client_id_here",
+                                                         secret: "your_client_secret_here",
+                                                         scope: "your_mobile_verify_scope_here")
+        
+        MitekPlatform.shared.set(configuration: configurationV2, api: .v2)
         
         return true
     }

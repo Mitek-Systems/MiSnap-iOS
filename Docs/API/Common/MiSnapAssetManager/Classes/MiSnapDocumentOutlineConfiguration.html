@@ -75,6 +75,9 @@
                 <a class="nav-group-task-link" href="../Classes/MiSnapCheckboxViewConfiguration.html">MiSnapCheckboxViewConfiguration</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapDocumentLabelConfiguration.html">MiSnapDocumentLabelConfiguration</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapDocumentOutlineConfiguration.html">MiSnapDocumentOutlineConfiguration</a>
               </li>
               <li class="nav-group-task">
@@ -165,6 +168,9 @@
                 <a class="nav-group-task-link" href="../Classes/MiSnapViewConfiguration.html">MiSnapViewConfiguration</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapViewLocation.html">MiSnapViewLocation</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapVignetteConfiguration.html">MiSnapVignetteConfiguration</a>
               </li>
               <li class="nav-group-task">
@@ -221,7 +227,16 @@
                 <a class="nav-group-task-link" href="../Enums/MiSnapHintStyle.html">MiSnapHintStyle</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapViewHorizontalAlignment.html">MiSnapViewHorizontalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapViewParent.html">MiSnapViewParent</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapViewState.html">MiSnapViewState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapViewVerticalAlignment.html">MiSnapViewVerticalAlignment</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapVignetteStyle.html">MiSnapVignetteStyle</a>
@@ -349,7 +364,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Deprecated since 5.6.0 and will be removed in the future"</span><span class="p">)</span>
+<span class="kd">@objc</span>
 <span class="kd">public</span> <span class="k">var</span> <span class="nv">alignment</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapGuideAlignment.html">MiSnapGuideAlignment</a></span></code></pre>
 
                         </div>
@@ -546,6 +562,108 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="k">var</span> <span class="nv">isHidden</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(cs)MiSnapDocumentOutlineConfiguration(py)featuresAlpha"></a>
+                    <a name="//apple_ref/swift/Property/featuresAlpha" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(cs)MiSnapDocumentOutlineConfiguration(py)featuresAlpha">featuresAlpha</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Alpha of document elements (MRZ, MICR etc)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">featuresAlpha</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(cs)MiSnapDocumentOutlineConfiguration(py)horizontalOffset"></a>
+                    <a name="//apple_ref/swift/Property/horizontalOffset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(cs)MiSnapDocumentOutlineConfiguration(py)horizontalOffset">horizontalOffset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Horizontal offset</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    a positive value moves an element to the left and a negative value moves an element to the right
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    when <code>horizontalOffset</code> is in range <code>0.0001...0.9999</code> then its value is used as a multiplier for its parent&rsquo;s <code>width</code>. Otherwise, <code>horizontalOffset</code> is an absolute value in pixels
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">horizontalOffset</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(cs)MiSnapDocumentOutlineConfiguration(py)verticalOffset"></a>
+                    <a name="//apple_ref/swift/Property/verticalOffset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(cs)MiSnapDocumentOutlineConfiguration(py)verticalOffset">verticalOffset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Vertical offset</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    a positive value moves an element down and a negative value moves an element up
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    when <code>verticalOffset</code> is in range <code>0.0001...0.9999</code> then its value is used as a multiplier for its parent&rsquo;s <code>height</code>. Otherwise, <code>verticalOffset</code> is an absolute value in pixels
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">verticalOffset</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
 
                         </div>
                       </div>

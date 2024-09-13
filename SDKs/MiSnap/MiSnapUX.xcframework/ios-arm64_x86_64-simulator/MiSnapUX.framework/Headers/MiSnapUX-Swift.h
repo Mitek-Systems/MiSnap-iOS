@@ -324,7 +324,7 @@ SWIFT_CLASS("_TtC8MiSnapUX32MiSnapAssetLocationConfiguration")
 @class MiSnapGuideViewConfiguration;
 @class MiSnapHintViewConfiguration;
 @class MiSnapGlareViewConfiguration;
-@class MiSnapLabelConfiguration;
+@class MiSnapDocumentLabelConfiguration;
 @class MiSnapCancelViewConfiguration;
 @class MiSnapHelpViewConfiguration;
 @class MiSnapTorchViewConfiguration;
@@ -350,7 +350,7 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 /// Glare view configuration
 @property (nonatomic, readonly, strong) MiSnapGlareViewConfiguration * _Nonnull glare;
 /// Document label configuration
-@property (nonatomic, readonly, strong) MiSnapLabelConfiguration * _Nonnull documentLabel;
+@property (nonatomic, readonly, strong) MiSnapDocumentLabelConfiguration * _Nonnull documentLabel;
 /// Cancel button configuration
 @property (nonatomic, readonly, strong) MiSnapCancelViewConfiguration * _Nonnull cancel;
 /// Help button configuration
@@ -390,7 +390,7 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 /// Convenience function for Glare view customization
 - (MiSnapConfiguration * _Nonnull)withCustomGlareWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapGlareViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Document label customization
-- (MiSnapConfiguration * _Nonnull)withCustomDocumentLabelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapLabelConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+- (MiSnapConfiguration * _Nonnull)withCustomDocumentLabelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapDocumentLabelConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Cancel button customization
 - (MiSnapConfiguration * _Nonnull)withCustomCancelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapCancelViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Help button customization
@@ -426,6 +426,45 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 @end
 
 
+/// Hint parameters
+SWIFT_CLASS("_TtC8MiSnapUX20MiSnapHintParameters")
+@interface MiSnapHintParameters : NSObject
+/// Time in seconds between hints (sec)
+/// Range: 0.1.0…10.0
+/// Default: 1.5
+@property (nonatomic) NSTimeInterval betweenTime;
+/// Time in seconds for the hint transition (e.g fade in and out)
+/// Range: 0.01…1.0
+/// Default: 0.25
+@property (nonatomic) NSTimeInterval transitionTime;
+/// Time in seconds for the hint to be displayed for
+/// Range: 0.5…3.0
+/// Default: 1.0
+@property (nonatomic) NSTimeInterval displayTime;
+/// A delay in seconds in the beginning of session before the first hint is displayed
+/// Min: 0.0
+/// Default: 1.5
+@property (nonatomic) NSTimeInterval initialDelayTime;
+/// Hint parameters dictionary representation
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dictionary;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// Introductory instruction mode
+typedef SWIFT_ENUM(NSInteger, MiSnapIntroductoryInstructionMode, open) {
+/// Always present an introductory instruction screen but provide an option to opt out
+  MiSnapIntroductoryInstructionModeAlwaysWithOptOut = 0,
+/// Always present an introductory instruction screen without provide an option to opt out
+  MiSnapIntroductoryInstructionModeAlways = 1,
+/// Present an introductory instruction screen only for the first time use
+  MiSnapIntroductoryInstructionModeFirstTimeUseOnly = 2,
+/// Do not present an introductory instruction
+  MiSnapIntroductoryInstructionModeNoInstruction = 3,
+};
+
+
 /// Localization configuration
 SWIFT_CLASS("_TtC8MiSnapUX31MiSnapLocalizationConfiguration")
 @interface MiSnapLocalizationConfiguration : NSObject
@@ -445,11 +484,14 @@ typedef SWIFT_ENUM(NSInteger, MiSnapReviewMode, open) {
   MiSnapReviewModeManualOnly = 0,
 /// Present review screen when an image is acquired in either <code>Auto</code> or <code>Manual</code> mode
   MiSnapReviewModeAutoAndManual = 1,
-/// Present review screen when an acquired image failed one or more IQA checks
+/// Present review screen only if an acquired image failed one or more IQA checks regardless of a mode
   MiSnapReviewModeWarnings = 2,
+/// Do not present a review screen
+  MiSnapReviewModeNoReview = 3,
 };
 
 @class UIColor;
+@class MiSnapLabelConfiguration;
 
 /// Tutorial buttons configuration
 SWIFT_CLASS("_TtC8MiSnapUX34MiSnapTutorialButtonsConfiguration")
@@ -514,7 +556,7 @@ SWIFT_CLASS("_TtC8MiSnapUX39MiSnapTutorialDocumentTypeConfiguration")
 /// Style
 @property (nonatomic) enum MiSnapTutorialInstructionStyle style;
 /// Indicates whether <code>Don't show this screen again</code> control should be presented
-@property (nonatomic) BOOL dontShowCheckboxPresent;
+@property (nonatomic) BOOL dontShowCheckboxPresent SWIFT_DEPRECATED_MSG("Use `introductoryInstructionMode` of `MiSnapUxParameters` to control whether checkbox should be present or not");
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -596,13 +638,17 @@ SWIFT_CLASS("_TtC8MiSnapUX18MiSnapUxParameters")
 /// Default: 20
 @property (nonatomic) NSTimeInterval timeout;
 /// Indicates whether an introductory instruction screen should be presented
-@property (nonatomic) BOOL showIntroductoryInstructionScreen;
+@property (nonatomic) BOOL showIntroductoryInstructionScreen SWIFT_DEPRECATED_MSG("Override `useCustomTutorials` to `true` if you want to present a custom introductory instruction screen or override `introductoryInstructionMode` to `.noInstruction` if you do not want to show it");
 /// Indicates whether a timeout screen should be presented
-@property (nonatomic) BOOL showTimeoutScreen;
+@property (nonatomic) BOOL showTimeoutScreen SWIFT_DEPRECATED_MSG("Override `useCustomTutorials` to `true` if you want to present a custom timeout screen");
 /// Indicates whether a help screen should be presented
-@property (nonatomic) BOOL showHelpScreen;
+@property (nonatomic) BOOL showHelpScreen SWIFT_DEPRECATED_MSG("Override `useCustomTutorials` to `true` if you want to present a custom help screen");
 /// Indicates whether a review screen should be presented
-@property (nonatomic) BOOL showReviewScreen;
+@property (nonatomic) BOOL showReviewScreen SWIFT_DEPRECATED_MSG("Override `useCustomTutorials` to `true` if you want to present a custom review screen or override `reviewMode` to `.noReview` if you do not want to show it");
+/// Indicates that an integrator wants to implement custom tutorials and <code>MiSnapViewController</code> should return <code>miSnapCustomTutorial(_:mode:statuses:image:)</code> optional callback
+@property (nonatomic) BOOL useCustomTutorials;
+/// Introductory instruction mode
+@property (nonatomic) enum MiSnapIntroductoryInstructionMode instructionMode;
 /// Review mode
 /// <ul>
 ///   <li>
@@ -624,7 +670,9 @@ SWIFT_CLASS("_TtC8MiSnapUX18MiSnapUxParameters")
 /// Time between hints (sec)
 /// Range: 1…10
 /// Default: 3
-@property (nonatomic) NSTimeInterval hintUpdatePeriod;
+@property (nonatomic) NSTimeInterval hintUpdatePeriod SWIFT_DEPRECATED_MSG("Use `hint.betweenTime`, `hint.transitionTime`, and `hint.displayTime` for finer control instead");
+/// Hint parameters
+@property (nonatomic, strong) MiSnapHintParameters * _Nonnull hint;
 /// Time to delay ending of a session after a successful image acquisition (sec)
 /// Range: 1.5…10
 /// Default: 1.5
@@ -633,8 +681,11 @@ SWIFT_CLASS("_TtC8MiSnapUX18MiSnapUxParameters")
 /// note:
 /// Only applies to iOS Simulator
 @property (nonatomic, copy) NSString * _Nullable injectImageName;
+/// Indicates whether a system alert should be presented on Cancel button tap to warn a user that the progress will be lost
+/// Default: <code>false</code>
+@property (nonatomic) BOOL showCancelAlert;
 /// UX parameters dictionary representation
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dictionary;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull dictionary;
 /// Description of <code>MiSnapUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -706,22 +757,6 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 @end
 
 
-
-@interface MiSnapViewController (SWIFT_EXTENSION(MiSnapUX)) <MiSnapTutorialViewControllerDelegate>
-/// Called when a tutorial view controller’s continue button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialContinueButtonActionFor:(enum MiSnapUxTutorialMode)tutorialMode;
-/// Called when a tutorial view controller’s retry button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialRetryButtonAction;
-/// Called when a tutorial view controller’s cancel button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialCancelButtonAction;
-@end
-
 @class NSData;
 
 @interface MiSnapViewController (SWIFT_EXTENSION(MiSnapUX)) <MiSnapCameraDelegate>
@@ -744,6 +779,22 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 @end
 
 
+
+@interface MiSnapViewController (SWIFT_EXTENSION(MiSnapUX)) <MiSnapTutorialViewControllerDelegate>
+/// Called when a tutorial view controller’s continue button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialContinueButtonActionFor:(enum MiSnapUxTutorialMode)tutorialMode;
+/// Called when a tutorial view controller’s retry button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialRetryButtonAction;
+/// Called when a tutorial view controller’s cancel button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialCancelButtonAction;
+@end
+
 @class MiSnapResult;
 @class NSException;
 
@@ -755,19 +806,19 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 /// Called when an analyzer detects a frame that passes all Image Quality Analysis checks
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapAnalyzerSuccess:(MiSnapResult * _Null_unspecified)result;
+- (void)miSnapAnalyzerSuccess:(MiSnapResult * _Nonnull)result;
 /// Called when an analyzer finishes Image Quality Analysis of the current frame
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapAnalyzerFrameResult:(MiSnapResult * _Null_unspecified)result;
+- (void)miSnapAnalyzerFrameResult:(MiSnapResult * _Nonnull)result;
 /// Called when an analyzer is cancelled
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapAnalyzerCancelled:(MiSnapResult * _Null_unspecified)result;
+- (void)miSnapAnalyzerCancelled:(MiSnapResult * _Nonnull)result;
 /// Called whenever an analyzer catches an exception
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapAnalyzerException:(NSException * _Null_unspecified)exception;
+- (void)miSnapAnalyzerException:(NSException * _Nonnull)exception;
 @end
 
 
@@ -791,6 +842,8 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 @end
 
 
+@class NSNumber;
+@class UIImage;
 
 /// Defines an interface for delegates of <code>MiSnapViewController</code> to receive callbacks
 SWIFT_PROTOCOL("_TtP8MiSnapUX28MiSnapViewControllerDelegate_")
@@ -818,12 +871,17 @@ SWIFT_PROTOCOL("_TtP8MiSnapUX28MiSnapViewControllerDelegate_")
 - (void)miSnapDidStartSession;
 /// Delegates receive this callback when a user presses help button and <code>showHelpScreen</code> is overridden to <code>false</code> in <code>MiSnapUxParameters</code>
 /// note:
-/// It’s optional
+/// This callback will be deprecated in the future. Use <code>miSnapCustomTutorial(_ :,mode:,tutorialMode:,statuses:,image:)</code> instead
 - (void)miSnapHelpAction:(NSArray<NSString *> * _Nonnull)messages;
 /// Delegates receive this callback when a session times out and <code>showTimeoutScreen</code> is overridden to <code>false</code> in <code>MiSnapUxParameters</code>
 /// note:
-/// It’s optional
+/// This callback will be deprecated in the future. Use <code>miSnapCustomTutorial(_ :,mode:,tutorialMode:,statuses:,image:)</code> instead
 - (void)miSnapTimeoutAction:(NSArray<NSString *> * _Nonnull)messages;
+/// Delegates receive this callback when <code>useCustomTutorials</code> is overridden to <code>true</code> in <code>MiSnapUxParameters</code>
+/// In this case an integrator is responsible for implementing custom tutorials for Introductory instruction, Help, Timeout and Review screens
+/// note:
+/// It’s optional
+- (void)miSnapCustomTutorial:(MiSnapScienceDocumentType)documentType tutorialMode:(enum MiSnapUxTutorialMode)tutorialMode mode:(MiSnapMode)mode statuses:(NSArray<NSNumber *> * _Nullable)statuses image:(UIImage * _Nullable)image;
 /// Delegates receive this callback when a camera finishes recording a video when <code>recordVideo</code> is overridden to <code>true</code> in <code>MiSnapCameraParameters</code>
 /// note:
 /// It’s optional
@@ -1168,7 +1226,7 @@ SWIFT_CLASS("_TtC8MiSnapUX32MiSnapAssetLocationConfiguration")
 @class MiSnapGuideViewConfiguration;
 @class MiSnapHintViewConfiguration;
 @class MiSnapGlareViewConfiguration;
-@class MiSnapLabelConfiguration;
+@class MiSnapDocumentLabelConfiguration;
 @class MiSnapCancelViewConfiguration;
 @class MiSnapHelpViewConfiguration;
 @class MiSnapTorchViewConfiguration;
@@ -1194,7 +1252,7 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 /// Glare view configuration
 @property (nonatomic, readonly, strong) MiSnapGlareViewConfiguration * _Nonnull glare;
 /// Document label configuration
-@property (nonatomic, readonly, strong) MiSnapLabelConfiguration * _Nonnull documentLabel;
+@property (nonatomic, readonly, strong) MiSnapDocumentLabelConfiguration * _Nonnull documentLabel;
 /// Cancel button configuration
 @property (nonatomic, readonly, strong) MiSnapCancelViewConfiguration * _Nonnull cancel;
 /// Help button configuration
@@ -1234,7 +1292,7 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 /// Convenience function for Glare view customization
 - (MiSnapConfiguration * _Nonnull)withCustomGlareWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapGlareViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Document label customization
-- (MiSnapConfiguration * _Nonnull)withCustomDocumentLabelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapLabelConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
+- (MiSnapConfiguration * _Nonnull)withCustomDocumentLabelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapDocumentLabelConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Cancel button customization
 - (MiSnapConfiguration * _Nonnull)withCustomCancelWithCompletion:(SWIFT_NOESCAPE void (^ _Nonnull)(MiSnapCancelViewConfiguration * _Nonnull))completion SWIFT_WARN_UNUSED_RESULT;
 /// Convenience function for Help button customization
@@ -1270,6 +1328,45 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 @end
 
 
+/// Hint parameters
+SWIFT_CLASS("_TtC8MiSnapUX20MiSnapHintParameters")
+@interface MiSnapHintParameters : NSObject
+/// Time in seconds between hints (sec)
+/// Range: 0.1.0…10.0
+/// Default: 1.5
+@property (nonatomic) NSTimeInterval betweenTime;
+/// Time in seconds for the hint transition (e.g fade in and out)
+/// Range: 0.01…1.0
+/// Default: 0.25
+@property (nonatomic) NSTimeInterval transitionTime;
+/// Time in seconds for the hint to be displayed for
+/// Range: 0.5…3.0
+/// Default: 1.0
+@property (nonatomic) NSTimeInterval displayTime;
+/// A delay in seconds in the beginning of session before the first hint is displayed
+/// Min: 0.0
+/// Default: 1.5
+@property (nonatomic) NSTimeInterval initialDelayTime;
+/// Hint parameters dictionary representation
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dictionary;
+/// Description
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// Introductory instruction mode
+typedef SWIFT_ENUM(NSInteger, MiSnapIntroductoryInstructionMode, open) {
+/// Always present an introductory instruction screen but provide an option to opt out
+  MiSnapIntroductoryInstructionModeAlwaysWithOptOut = 0,
+/// Always present an introductory instruction screen without provide an option to opt out
+  MiSnapIntroductoryInstructionModeAlways = 1,
+/// Present an introductory instruction screen only for the first time use
+  MiSnapIntroductoryInstructionModeFirstTimeUseOnly = 2,
+/// Do not present an introductory instruction
+  MiSnapIntroductoryInstructionModeNoInstruction = 3,
+};
+
+
 /// Localization configuration
 SWIFT_CLASS("_TtC8MiSnapUX31MiSnapLocalizationConfiguration")
 @interface MiSnapLocalizationConfiguration : NSObject
@@ -1289,11 +1386,14 @@ typedef SWIFT_ENUM(NSInteger, MiSnapReviewMode, open) {
   MiSnapReviewModeManualOnly = 0,
 /// Present review screen when an image is acquired in either <code>Auto</code> or <code>Manual</code> mode
   MiSnapReviewModeAutoAndManual = 1,
-/// Present review screen when an acquired image failed one or more IQA checks
+/// Present review screen only if an acquired image failed one or more IQA checks regardless of a mode
   MiSnapReviewModeWarnings = 2,
+/// Do not present a review screen
+  MiSnapReviewModeNoReview = 3,
 };
 
 @class UIColor;
+@class MiSnapLabelConfiguration;
 
 /// Tutorial buttons configuration
 SWIFT_CLASS("_TtC8MiSnapUX34MiSnapTutorialButtonsConfiguration")
@@ -1358,7 +1458,7 @@ SWIFT_CLASS("_TtC8MiSnapUX39MiSnapTutorialDocumentTypeConfiguration")
 /// Style
 @property (nonatomic) enum MiSnapTutorialInstructionStyle style;
 /// Indicates whether <code>Don't show this screen again</code> control should be presented
-@property (nonatomic) BOOL dontShowCheckboxPresent;
+@property (nonatomic) BOOL dontShowCheckboxPresent SWIFT_DEPRECATED_MSG("Use `introductoryInstructionMode` of `MiSnapUxParameters` to control whether checkbox should be present or not");
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1440,13 +1540,17 @@ SWIFT_CLASS("_TtC8MiSnapUX18MiSnapUxParameters")
 /// Default: 20
 @property (nonatomic) NSTimeInterval timeout;
 /// Indicates whether an introductory instruction screen should be presented
-@property (nonatomic) BOOL showIntroductoryInstructionScreen;
+@property (nonatomic) BOOL showIntroductoryInstructionScreen SWIFT_DEPRECATED_MSG("Override `useCustomTutorials` to `true` if you want to present a custom introductory instruction screen or override `introductoryInstructionMode` to `.noInstruction` if you do not want to show it");
 /// Indicates whether a timeout screen should be presented
-@property (nonatomic) BOOL showTimeoutScreen;
+@property (nonatomic) BOOL showTimeoutScreen SWIFT_DEPRECATED_MSG("Override `useCustomTutorials` to `true` if you want to present a custom timeout screen");
 /// Indicates whether a help screen should be presented
-@property (nonatomic) BOOL showHelpScreen;
+@property (nonatomic) BOOL showHelpScreen SWIFT_DEPRECATED_MSG("Override `useCustomTutorials` to `true` if you want to present a custom help screen");
 /// Indicates whether a review screen should be presented
-@property (nonatomic) BOOL showReviewScreen;
+@property (nonatomic) BOOL showReviewScreen SWIFT_DEPRECATED_MSG("Override `useCustomTutorials` to `true` if you want to present a custom review screen or override `reviewMode` to `.noReview` if you do not want to show it");
+/// Indicates that an integrator wants to implement custom tutorials and <code>MiSnapViewController</code> should return <code>miSnapCustomTutorial(_:mode:statuses:image:)</code> optional callback
+@property (nonatomic) BOOL useCustomTutorials;
+/// Introductory instruction mode
+@property (nonatomic) enum MiSnapIntroductoryInstructionMode instructionMode;
 /// Review mode
 /// <ul>
 ///   <li>
@@ -1468,7 +1572,9 @@ SWIFT_CLASS("_TtC8MiSnapUX18MiSnapUxParameters")
 /// Time between hints (sec)
 /// Range: 1…10
 /// Default: 3
-@property (nonatomic) NSTimeInterval hintUpdatePeriod;
+@property (nonatomic) NSTimeInterval hintUpdatePeriod SWIFT_DEPRECATED_MSG("Use `hint.betweenTime`, `hint.transitionTime`, and `hint.displayTime` for finer control instead");
+/// Hint parameters
+@property (nonatomic, strong) MiSnapHintParameters * _Nonnull hint;
 /// Time to delay ending of a session after a successful image acquisition (sec)
 /// Range: 1.5…10
 /// Default: 1.5
@@ -1477,8 +1583,11 @@ SWIFT_CLASS("_TtC8MiSnapUX18MiSnapUxParameters")
 /// note:
 /// Only applies to iOS Simulator
 @property (nonatomic, copy) NSString * _Nullable injectImageName;
+/// Indicates whether a system alert should be presented on Cancel button tap to warn a user that the progress will be lost
+/// Default: <code>false</code>
+@property (nonatomic) BOOL showCancelAlert;
 /// UX parameters dictionary representation
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dictionary;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull dictionary;
 /// Description of <code>MiSnapUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1550,22 +1659,6 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 @end
 
 
-
-@interface MiSnapViewController (SWIFT_EXTENSION(MiSnapUX)) <MiSnapTutorialViewControllerDelegate>
-/// Called when a tutorial view controller’s continue button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialContinueButtonActionFor:(enum MiSnapUxTutorialMode)tutorialMode;
-/// Called when a tutorial view controller’s retry button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialRetryButtonAction;
-/// Called when a tutorial view controller’s cancel button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialCancelButtonAction;
-@end
-
 @class NSData;
 
 @interface MiSnapViewController (SWIFT_EXTENSION(MiSnapUX)) <MiSnapCameraDelegate>
@@ -1588,6 +1681,22 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 @end
 
 
+
+@interface MiSnapViewController (SWIFT_EXTENSION(MiSnapUX)) <MiSnapTutorialViewControllerDelegate>
+/// Called when a tutorial view controller’s continue button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialContinueButtonActionFor:(enum MiSnapUxTutorialMode)tutorialMode;
+/// Called when a tutorial view controller’s retry button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialRetryButtonAction;
+/// Called when a tutorial view controller’s cancel button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialCancelButtonAction;
+@end
+
 @class MiSnapResult;
 @class NSException;
 
@@ -1599,19 +1708,19 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 /// Called when an analyzer detects a frame that passes all Image Quality Analysis checks
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapAnalyzerSuccess:(MiSnapResult * _Null_unspecified)result;
+- (void)miSnapAnalyzerSuccess:(MiSnapResult * _Nonnull)result;
 /// Called when an analyzer finishes Image Quality Analysis of the current frame
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapAnalyzerFrameResult:(MiSnapResult * _Null_unspecified)result;
+- (void)miSnapAnalyzerFrameResult:(MiSnapResult * _Nonnull)result;
 /// Called when an analyzer is cancelled
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapAnalyzerCancelled:(MiSnapResult * _Null_unspecified)result;
+- (void)miSnapAnalyzerCancelled:(MiSnapResult * _Nonnull)result;
 /// Called whenever an analyzer catches an exception
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)miSnapAnalyzerException:(NSException * _Null_unspecified)exception;
+- (void)miSnapAnalyzerException:(NSException * _Nonnull)exception;
 @end
 
 
@@ -1635,6 +1744,8 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 @end
 
 
+@class NSNumber;
+@class UIImage;
 
 /// Defines an interface for delegates of <code>MiSnapViewController</code> to receive callbacks
 SWIFT_PROTOCOL("_TtP8MiSnapUX28MiSnapViewControllerDelegate_")
@@ -1662,12 +1773,17 @@ SWIFT_PROTOCOL("_TtP8MiSnapUX28MiSnapViewControllerDelegate_")
 - (void)miSnapDidStartSession;
 /// Delegates receive this callback when a user presses help button and <code>showHelpScreen</code> is overridden to <code>false</code> in <code>MiSnapUxParameters</code>
 /// note:
-/// It’s optional
+/// This callback will be deprecated in the future. Use <code>miSnapCustomTutorial(_ :,mode:,tutorialMode:,statuses:,image:)</code> instead
 - (void)miSnapHelpAction:(NSArray<NSString *> * _Nonnull)messages;
 /// Delegates receive this callback when a session times out and <code>showTimeoutScreen</code> is overridden to <code>false</code> in <code>MiSnapUxParameters</code>
 /// note:
-/// It’s optional
+/// This callback will be deprecated in the future. Use <code>miSnapCustomTutorial(_ :,mode:,tutorialMode:,statuses:,image:)</code> instead
 - (void)miSnapTimeoutAction:(NSArray<NSString *> * _Nonnull)messages;
+/// Delegates receive this callback when <code>useCustomTutorials</code> is overridden to <code>true</code> in <code>MiSnapUxParameters</code>
+/// In this case an integrator is responsible for implementing custom tutorials for Introductory instruction, Help, Timeout and Review screens
+/// note:
+/// It’s optional
+- (void)miSnapCustomTutorial:(MiSnapScienceDocumentType)documentType tutorialMode:(enum MiSnapUxTutorialMode)tutorialMode mode:(MiSnapMode)mode statuses:(NSArray<NSNumber *> * _Nullable)statuses image:(UIImage * _Nullable)image;
 /// Delegates receive this callback when a camera finishes recording a video when <code>recordVideo</code> is overridden to <code>true</code> in <code>MiSnapCameraParameters</code>
 /// note:
 /// It’s optional

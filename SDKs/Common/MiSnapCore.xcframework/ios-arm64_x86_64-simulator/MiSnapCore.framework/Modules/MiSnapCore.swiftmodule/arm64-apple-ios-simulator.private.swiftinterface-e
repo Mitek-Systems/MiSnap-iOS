@@ -126,11 +126,14 @@ import _SwiftConcurrencyShims
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class MiSnapLogConfiguration : ObjectiveC.NSObject, Foundation.NSCoding {
+@_inheritsConvenienceInitializers @objc public class MiSnapLogConfiguration : ObjectiveC.NSObject, Foundation.NSSecureCoding {
   @objc public var level: MiSnapCore.MiSnapLogLevel
   @objc public var presentation: MiSnapCore.MiSnapLogPresentation
   @objc public var savePII: Swift.Bool
   @objc override dynamic public init()
+  @objc public static var supportsSecureCoding: Swift.Bool {
+    @objc get
+  }
   @objc required public init?(coder: Foundation.NSCoder)
   @objc public func encode(with coder: Foundation.NSCoder)
   @objc override dynamic public var description: Swift.String {

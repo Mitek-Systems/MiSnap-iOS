@@ -265,9 +265,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) NSArray * _Nullable personalNumberBoundingBoxes;
 /**
+ The array of four corner points of the detect personal number in non-MRZ area when optional data redaction is enabled
+ */
+@property (nonatomic, readonly) NSArray * _Nullable personalNumberNonMrzPoints;
+/**
  The array of four corner points of the detect barcode
  */
 @property (nonatomic, readonly) NSArray * _Nullable barcodePoints;
+/**
+ Indicates whether redaction was made to an image (i.e. some data was covered by black boxes)
+ */
+@property (nonatomic, readonly) BOOL didRedact;
 /**
  A string representation of `MiSnapScienceExtractionResult`
  */

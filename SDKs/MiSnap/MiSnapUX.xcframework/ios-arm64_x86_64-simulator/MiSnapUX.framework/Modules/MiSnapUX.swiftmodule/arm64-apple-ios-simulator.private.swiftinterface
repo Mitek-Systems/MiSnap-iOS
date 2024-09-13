@@ -85,6 +85,7 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapTutorialDocumentTypeConfiguration : ObjectiveC.NSObject {
   @objc public var style: MiSnapTutorialInstructionStyle
+  @available(*, deprecated, message: "Use `introductoryInstructionMode` of `MiSnapUxParameters` to control whether checkbox should be present or not")
   @objc public var dontShowCheckboxPresent: Swift.Bool
   @objc override dynamic public init()
   @objc deinit
@@ -93,6 +94,24 @@ import _SwiftConcurrencyShims
   case manualOnly = 0
   case autoAndManual = 1
   case warnings = 2
+  case noReview = 3
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum MiSnapIntroductoryInstructionMode : Swift.Int, Swift.Codable {
+  case alwaysWithOptOut = 0
+  case always = 1
+  case firstTimeUseOnly = 2
+  case noInstruction = 3
+  public var stringValue: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -104,24 +123,73 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set
   }
-  @objc public var showIntroductoryInstructionScreen: Swift.Bool
-  @objc public var showTimeoutScreen: Swift.Bool
-  @objc public var showHelpScreen: Swift.Bool
-  @objc public var showReviewScreen: Swift.Bool
+  @available(*, deprecated, message: "Override `useCustomTutorials` to `true` if you want to present a custom introductory instruction screen or override `introductoryInstructionMode` to `.noInstruction` if you do not want to show it")
+  @objc public var showIntroductoryInstructionScreen: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @available(*, deprecated, message: "Override `useCustomTutorials` to `true` if you want to present a custom timeout screen")
+  @objc public var showTimeoutScreen: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @available(*, deprecated, message: "Override `useCustomTutorials` to `true` if you want to present a custom help screen")
+  @objc public var showHelpScreen: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @available(*, deprecated, message: "Override `useCustomTutorials` to `true` if you want to present a custom review screen or override `reviewMode` to `.noReview` if you do not want to show it")
+  @objc public var showReviewScreen: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var useCustomTutorials: Swift.Bool
+  @objc public var instructionMode: MiSnapIntroductoryInstructionMode
   @objc public var reviewMode: MiSnapReviewMode
   @objc public var seamlessFailover: Swift.Bool
   @objc public var autoDismiss: Swift.Bool
   @objc public var showManualButtonInAuto: Swift.Bool
   @objc public var showCorners: Swift.Bool
+  @available(*, deprecated, message: "Use `hint.betweenTime`, `hint.transitionTime`, and `hint.displayTime` for finer control instead")
   @objc public var hintUpdatePeriod: Swift.Double {
     @objc get
     @objc set
   }
+  @objc public var hint: MiSnapHintParameters
   @objc public var terminationDelay: Swift.Double {
     @objc get
     @objc set
   }
   @objc public var injectImageName: Swift.String?
+  @objc public var showCancelAlert: Swift.Bool
+  @objc public var dictionary: [Swift.String : Any] {
+    @objc get
+  }
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapHintParameters : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var betweenTime: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var transitionTime: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var displayTime: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc public var initialDelayTime: Swift.Double {
+    @objc get
+    @objc set
+  }
   @objc public var dictionary: [Swift.String : Swift.String] {
     @objc get
   }
@@ -149,7 +217,7 @@ import _SwiftConcurrencyShims
   @objc public var glare: MiSnapGlareViewConfiguration {
     get
   }
-  @objc public var documentLabel: MiSnapLabelConfiguration {
+  @objc public var documentLabel: MiSnapDocumentLabelConfiguration {
     get
   }
   @objc public var cancel: MiSnapCancelViewConfiguration {
@@ -180,7 +248,7 @@ import _SwiftConcurrencyShims
   @objc public func withCustomGuide(completion: (MiSnapGuideViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomHint(completion: (MiSnapHintViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomGlare(completion: (MiSnapGlareViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
-  @objc public func withCustomDocumentLabel(completion: (MiSnapLabelConfiguration) -> Swift.Void) -> MiSnapConfiguration
+  @objc public func withCustomDocumentLabel(completion: (MiSnapDocumentLabelConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomCancel(completion: (MiSnapCancelViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomHelp(completion: (MiSnapHelpViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
   @objc public func withCustomTorch(completion: (MiSnapTorchViewConfiguration) -> Swift.Void) -> MiSnapConfiguration
@@ -225,6 +293,7 @@ import _SwiftConcurrencyShims
   @objc optional func miSnapDidStartSession()
   @objc optional func miSnapHelpAction(_ messages: [Swift.String])
   @objc optional func miSnapTimeoutAction(_ messages: [Swift.String])
+  @objc optional func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType, tutorialMode: MiSnapUxTutorialMode, mode: MiSnapMode, statuses: [Foundation.NSNumber]?, image: UIKit.UIImage?)
   @objc optional func miSnapDidFinishRecordingVideo(_ videoData: Foundation.Data?)
   @objc optional func miSnapShouldBeDismissed()
 }
@@ -248,6 +317,7 @@ import _SwiftConcurrencyShims
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func present(_ viewControllerToPresent: UIKit.UIViewController, animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func shutdown()
   @objc deinit
 }
 extension MiSnapViewController {
@@ -273,10 +343,10 @@ extension MiSnapViewController : MiSnapCameraDelegate {
 }
 extension MiSnapViewController : MiSnapAnalyzerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapAnalyzerLicenseStatus(_ status: MiSnapLicenseStatus)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapAnalyzerSuccess(_ result: MiSnapResult!)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapAnalyzerFrameResult(_ result: MiSnapResult!)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapAnalyzerCancelled(_ result: MiSnapResult!)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapAnalyzerException(_ exception: Foundation.NSException!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapAnalyzerSuccess(_ result: MiSnapResult)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapAnalyzerFrameResult(_ result: MiSnapResult)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapAnalyzerCancelled(_ result: MiSnapResult)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func miSnapAnalyzerException(_ exception: Foundation.NSException)
 }
 extension MiSnapUxTutorialMode : Swift.Equatable {}
 extension MiSnapUxTutorialMode : Swift.Hashable {}
@@ -290,3 +360,6 @@ extension MiSnapTutorialInstructionStyle : Swift.RawRepresentable {}
 extension MiSnapReviewMode : Swift.Equatable {}
 extension MiSnapReviewMode : Swift.Hashable {}
 extension MiSnapReviewMode : Swift.RawRepresentable {}
+extension MiSnapIntroductoryInstructionMode : Swift.Equatable {}
+extension MiSnapIntroductoryInstructionMode : Swift.Hashable {}
+extension MiSnapIntroductoryInstructionMode : Swift.RawRepresentable {}

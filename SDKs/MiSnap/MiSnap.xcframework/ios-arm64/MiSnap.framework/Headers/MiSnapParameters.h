@@ -78,7 +78,7 @@ typedef NS_ENUM(NSInteger, MiSnapDeviceMotionSensitivityLevel) {
 /**
  Parameters used during the document acquisition process
  */
-@interface MiSnapParameters : NSObject
+@interface MiSnapParameters : NSObject <NSSecureCoding>
 /**
  Creates and returns parameters object with default parameter values.
  

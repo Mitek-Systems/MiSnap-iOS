@@ -75,6 +75,9 @@
                 <a class="nav-group-task-link" href="../Classes/MiSnapCheckboxViewConfiguration.html">MiSnapCheckboxViewConfiguration</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapDocumentLabelConfiguration.html">MiSnapDocumentLabelConfiguration</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapDocumentOutlineConfiguration.html">MiSnapDocumentOutlineConfiguration</a>
               </li>
               <li class="nav-group-task">
@@ -165,6 +168,9 @@
                 <a class="nav-group-task-link" href="../Classes/MiSnapViewConfiguration.html">MiSnapViewConfiguration</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MiSnapViewLocation.html">MiSnapViewLocation</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/MiSnapVignetteConfiguration.html">MiSnapVignetteConfiguration</a>
               </li>
               <li class="nav-group-task">
@@ -221,7 +227,16 @@
                 <a class="nav-group-task-link" href="../Enums/MiSnapHintStyle.html">MiSnapHintStyle</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapViewHorizontalAlignment.html">MiSnapViewHorizontalAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapViewParent.html">MiSnapViewParent</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapViewState.html">MiSnapViewState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapViewVerticalAlignment.html">MiSnapViewVerticalAlignment</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapVignetteStyle.html">MiSnapVignetteStyle</a>
@@ -311,13 +326,48 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Call init(for:,configuration:,orientationMode:,orientation:,portraitFill:,landscapeFill:,previewFrame:,frame:﹚ instead"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">convenience</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="k">for</span> <span class="nv">documentType</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapGuideDocumentType.html">MiSnapGuideDocumentType</a></span><span class="p">,</span>
+                        <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapGuideViewConfiguration.html">MiSnapGuideViewConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                        <span class="nv">orientationMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapGuideOrientationMode.html">MiSnapGuideOrientationMode</a></span><span class="p">,</span>
+                        <span class="nv">portraitFill</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span>
+                        <span class="nv">landscapeFill</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span>
+                        <span class="nv">orientation</span><span class="p">:</span> <span class="kt">UIInterfaceOrientation</span><span class="p">,</span>
+                        <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(cs)MiSnapGuideView(im)initFor:configuration:orientationMode:orientation:portraitFill:landscapeFill:previewFrame:frame:"></a>
+                    <a name="//apple_ref/swift/Method/init(for:configuration:orientationMode:orientation:portraitFill:landscapeFill:previewFrame:frame:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(cs)MiSnapGuideView(im)initFor:configuration:orientationMode:orientation:portraitFill:landscapeFill:previewFrame:frame:">init(for:<wbr>configuration:<wbr>orientationMode:<wbr>orientation:<wbr>portraitFill:<wbr>landscapeFill:<wbr>previewFrame:<wbr>frame:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="k">for</span> <span class="nv">documentType</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapGuideDocumentType.html">MiSnapGuideDocumentType</a></span><span class="p">,</span>
             <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapGuideViewConfiguration.html">MiSnapGuideViewConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
             <span class="nv">orientationMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapGuideOrientationMode.html">MiSnapGuideOrientationMode</a></span><span class="p">,</span>
+            <span class="nv">orientation</span><span class="p">:</span> <span class="kt">UIInterfaceOrientation</span><span class="p">,</span>
             <span class="nv">portraitFill</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span>
             <span class="nv">landscapeFill</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span>
-            <span class="nv">orientation</span><span class="p">:</span> <span class="kt">UIInterfaceOrientation</span><span class="p">,</span>
+            <span class="nv">previewFrame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span>
             <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
 
                         </div>

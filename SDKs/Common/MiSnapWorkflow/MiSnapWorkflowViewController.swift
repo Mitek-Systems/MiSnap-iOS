@@ -10,6 +10,7 @@ import UIKit
 import MiSnapCore
 #if canImport(MiSnapUX) && canImport(MiSnap)
 import MiSnapUX
+import MiSnap
 #endif
 #if canImport(MiSnapFacialCaptureUX) && canImport(MiSnapFacialCapture)
 import MiSnapFacialCaptureUX
@@ -278,6 +279,14 @@ extension MiSnapWorkflowViewController: MiSnapWorkflowControllerDelegate {
             
             self.currentChildVC = vc
         }
+    }
+    
+    func miSnapWorkflowControllerDocumentCustomTutorial(_ documentType: MiSnapScienceDocumentType, 
+                                                        tutorialMode: MiSnapUxTutorialMode,
+                                                        mode: MiSnapMode,
+                                                        statuses: [NSNumber]?,
+                                                        image: UIImage?) {
+        // Initialize and present your custom document tutorial view controller here
     }
     
     func miSnapWorkflowControllerDidFinishPresentingSteps(_ result: MiSnapWorkflowResult) {

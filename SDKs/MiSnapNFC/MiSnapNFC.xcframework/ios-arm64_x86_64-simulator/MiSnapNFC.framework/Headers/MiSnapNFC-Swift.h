@@ -407,6 +407,9 @@ SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
 /// note:
 /// Deprecated in 5.4.0 and will be removed in future versions. Access this customization through <code>logging.level</code>
 @property (nonatomic) enum MiSnapLogLevel logLevel SWIFT_DEPRECATED_MSG("Call `logging.level` instead");
+/// Indicates whether reading of portrait image should be skipped
+/// Default: <code>false</code>
+@property (nonatomic) BOOL skipPortrait;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -852,6 +855,9 @@ SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
 /// note:
 /// Deprecated in 5.4.0 and will be removed in future versions. Access this customization through <code>logging.level</code>
 @property (nonatomic) enum MiSnapLogLevel logLevel SWIFT_DEPRECATED_MSG("Call `logging.level` instead");
+/// Indicates whether reading of portrait image should be skipped
+/// Default: <code>false</code>
+@property (nonatomic) BOOL skipPortrait;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

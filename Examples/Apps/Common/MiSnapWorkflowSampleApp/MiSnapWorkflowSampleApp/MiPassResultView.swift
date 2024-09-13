@@ -2,7 +2,7 @@
 //  MiPassResultView.swift
 //  MiSnapWorkflowSampleApp
 //
-//  Created by Mitek Engineering on 7/13/21.
+//  Created by Stas Tsuprenko on 7/13/21.
 //
 
 import UIKit
@@ -33,8 +33,10 @@ class MiPassResultView: UIStackView {
     private let heightConstant: CGFloat = 50
     private var widthConstant: CGFloat!
     
-    required init(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    private var hasServerError: Bool {
+        guard let serverResult = serverResult, let errorMessage = serverResult.errorMessage else { return false }
+        addNotification(withText: errorMessage)
+        return true
     }
     
     private var voiceClientInfo: [String]? {
@@ -62,6 +64,10 @@ class MiPassResultView: UIStackView {
             return nil
         }
         return info
+    }
+    
+    required init(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     public init(with serverResult: MiPassResult?, result: MiSnapWorkflowResult, frame: CGRect) {
@@ -141,6 +147,10 @@ extension MiPassResultView {
         verticalStackView.axis = .vertical
         verticalStackView.spacing = 5
         verticalStackView.distribution = .fill
+        
+        if hasServerError {
+            segmentedControl.isHidden = true
+        }
     }
     
     private func finishConfiguring() {
@@ -176,16 +186,28 @@ extension MiPassResultView {
             addInfoSection(for: voiceClientInfo)
             addedVoiceHeader = true
         }
-        if let serverResult = serverResult, let errors = serverResult.voiceErrors, !errors.isEmpty {
+        
+        guard let serverResult = serverResult else { return }
+        
+        if let errors = serverResult.voiceErrors, !errors.isEmpty {
             if !addedVoiceHeader {
                 addHeader(withTitle: "Voice Result")
             }
             addInfoView(for: errors)
         }
         
-        if let serverResult = serverResult, let errors = serverResult.faceErrors, !errors.isEmpty {
+        if let errors = serverResult.faceErrors, !errors.isEmpty {
             addHeader(withTitle: "Face Result")
             addInfoView(for: errors)
+        }
+        
+        addHeader(withTitle: "Other")
+        if let enrollmentId = serverResult.enrollmentId {
+            addGenericInfo(withTitle: "Enrollment ID", value: enrollmentId, valueSelectable: true, split: 5/10)
+        }
+        
+        if let requestId = serverResult.requestId {
+            addGenericInfo(withTitle: "Request ID", value: requestId, valueSelectable: true, split: 5/10)
         }
     }
     
@@ -251,6 +273,13 @@ extension MiPassResultView {
         }
     }
     
+    private func addGenericInfo(withTitle title: String, value: String, valueSelectable: Bool = false, split: CGFloat = 1) {
+        let genericInfoView = InfoView(with: title, values: [value], split: split,
+                                       frame: CGRect(x: 0, y: 0, width: widthConstant, height: heightConstant), valuesSelectable: valueSelectable)
+        
+        verticalStackView.addArrangedSubview(genericInfoView)
+    }
+    
     @objc private func segmentedControlAction() {
         configureScrollView(for: segmentedControl.selectedSegmentIndex)
     }
@@ -262,9 +291,11 @@ extension MiPassResultView {
     
     private func configureScrollView(for resultSection: ResultSection) {
         clearSubviews()
-        switch resultSection {
-        case .summary:          configureForSummary()
-        case .details:          configureForDetails()
+        if !hasServerError {
+            switch resultSection {
+            case .summary:          configureForSummary()
+            case .details:          configureForDetails()
+            }
         }
         finishConfiguring()
     }

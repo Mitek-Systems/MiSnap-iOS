@@ -211,7 +211,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The bounding box around the largest glare spot detected normalized to a screen size.
  */
-@property (nonatomic, readonly) CGRect glareBoundingBoxNormalized;
+@property (nonatomic, readonly) CGRect glareBoundingBoxNormalized DEPRECATED_MSG_ATTRIBUTE("Deprecated since it returns a wrong rect when aspect ratio is anything other than 16:9. Normalize `glareBoundingBox` based on a camera preview rect instead");
 /**
  The corner points of the document
  */
@@ -219,7 +219,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The corner points of the document normalized to a screen size
  */
-@property (nonatomic, readonly) NSArray *cornerPointsNormalized;
+@property (nonatomic, readonly) NSArray *cornerPointsNormalized DEPRECATED_MSG_ATTRIBUTE("Deprecated since it returns wrong corner points when aspect ratio is anything other than 16:9. Normalize `cornerPoints` based on a camera preview rect instead");
 /**
  Adds IQA failure to `orderedFailures`
  

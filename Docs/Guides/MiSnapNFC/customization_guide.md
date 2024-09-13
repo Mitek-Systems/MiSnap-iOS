@@ -11,6 +11,7 @@ Please refer to [MiSnapNFCCustomizationSampleApp](../../../Examples/Apps/MiSnapN
 * [Image assets](#image-assets)
 * [Parameters](#parameters)
     * [Optional Data Redaction](#optional-data-redaction)
+    * [Skip Portrait](#skip-portrait)
 
 # Overview
 
@@ -95,6 +96,23 @@ let configuration = MiSnapNFCConfiguration()
         // Other Parameters customizations
     }
 ```
+
+## Skip Portrait
+
+Starting with 5.6.0 it's possible to skip reading portrait image from NFC chip when your use case doesn't require it. This has two benefits:
+* much faster reading time
+* significantly reduced probability of intermittent connection loss issue due to iOS (operating system) defect when reading NLD documents
+
+To enable this feature chain the following snippet to your configuration:
+```Swift
+let configuration = MiSnapNFCConfiguration()
+    .withCustomParameters { parameters in
+        parameters.skipPortrait = true
+        // Other Parameters customizations
+    }
+```
+
+Note, we do not recommend combining this feature with document MRZ only feature (see [here](../MiSnap/customization_guide.md#mrz-only)) since it might result in lower acceptance rate due to a potentially bad quality image being used for face comparison instead of a skipped portait image on a chip.
 
 
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		427FBE242C93592500D015BF /* MobileVerifyAutoAuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427FBE222C93592500D015BF /* MobileVerifyAutoAuthenticationRequest.swift */; };
+		427FBE252C93592500D015BF /* MobileVerifyAgentAssistDocumentAuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427FBE232C93592500D015BF /* MobileVerifyAgentAssistDocumentAuthenticationRequest.swift */; };
 		42A1428C296E2CA2007E7252 /* MiSnapLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A14265296E2CA1007E7252 /* MiSnapLocalizable.strings */; };
 		42A14299296E2CA2007E7252 /* MiSnapFacialCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A14276296E2CA1007E7252 /* MiSnapFacialCaptureLocalizable.strings */; };
 		42A142A0296E2CA2007E7252 /* MiSnapNFCLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A14280296E2CA2007E7252 /* MiSnapNFCLocalizable.strings */; };
@@ -44,7 +46,6 @@
 		42A8A70529158A6800CE54AD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A70429158A6800CE54AD /* ResultViewController.swift */; };
 		42A8A77B291A829F00CE54AD /* MitekPlatformTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A772291A829C00CE54AD /* MitekPlatformTokenManager.swift */; };
 		42A8A77C291A829F00CE54AD /* MitekPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A773291A829C00CE54AD /* MitekPlatform.swift */; };
-		42A8A77D291A829F00CE54AD /* MobileVerifyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A775291A829D00CE54AD /* MobileVerifyRequest.swift */; };
 		42A8A77E291A829F00CE54AD /* MiPassRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A776291A829D00CE54AD /* MiPassRequest.swift */; };
 		42A8A77F291A829F00CE54AD /* MiSnapWorkflowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A778291A829E00CE54AD /* MiSnapWorkflowViewControllerFactory.swift */; };
 		42A8A780291A829F00CE54AD /* MiSnapWorkflowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A8A779291A829E00CE54AD /* MiSnapWorkflowController.swift */; };
@@ -128,6 +129,8 @@
 		426D27C02864D5BA00D0AACD /* MiSnapNFCUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapNFCUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426D27C12864D5BA00D0AACD /* MiSnapScience.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapScience.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426D27C22864D5BA00D0AACD /* MiSnapUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MiSnapUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		427FBE222C93592500D015BF /* MobileVerifyAutoAuthenticationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileVerifyAutoAuthenticationRequest.swift; sourceTree = "<group>"; };
+		427FBE232C93592500D015BF /* MobileVerifyAgentAssistDocumentAuthenticationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileVerifyAgentAssistDocumentAuthenticationRequest.swift; sourceTree = "<group>"; };
 		42A14266296E2CA1007E7252 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
 		42A14267296E2CA1007E7252 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
 		42A1426F296E2CA1007E7252 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
@@ -173,7 +176,6 @@
 		42A8A70429158A6800CE54AD /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		42A8A772291A829C00CE54AD /* MitekPlatformTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MitekPlatformTokenManager.swift; sourceTree = "<group>"; };
 		42A8A773291A829C00CE54AD /* MitekPlatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MitekPlatform.swift; sourceTree = "<group>"; };
-		42A8A775291A829D00CE54AD /* MobileVerifyRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileVerifyRequest.swift; sourceTree = "<group>"; };
 		42A8A776291A829D00CE54AD /* MiPassRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiPassRequest.swift; sourceTree = "<group>"; };
 		42A8A778291A829E00CE54AD /* MiSnapWorkflowViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapWorkflowViewControllerFactory.swift; sourceTree = "<group>"; };
 		42A8A779291A829E00CE54AD /* MiSnapWorkflowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiSnapWorkflowController.swift; sourceTree = "<group>"; };
@@ -441,7 +443,8 @@
 		42A8A774291A829D00CE54AD /* MitekRequest */ = {
 			isa = PBXGroup;
 			children = (
-				42A8A775291A829D00CE54AD /* MobileVerifyRequest.swift */,
+				427FBE222C93592500D015BF /* MobileVerifyAutoAuthenticationRequest.swift */,
+				427FBE232C93592500D015BF /* MobileVerifyAgentAssistDocumentAuthenticationRequest.swift */,
 				42A8A776291A829D00CE54AD /* MiPassRequest.swift */,
 			);
 			name = MitekRequest;
@@ -685,6 +688,7 @@
 				42A8A77E291A829F00CE54AD /* MiPassRequest.swift in Sources */,
 				42A8A6EE29153AA300CE54AD /* MiPassResult.swift in Sources */,
 				42A8A6F329153B6900CE54AD /* MiPassResultView.swift in Sources */,
+				427FBE242C93592500D015BF /* MobileVerifyAutoAuthenticationRequest.swift in Sources */,
 				42EE31AA27FF484000D27B02 /* MobileVerifyResultView.swift in Sources */,
 				42A8A6B52913EC8200CE54AD /* CustomSegmentedControl.swift in Sources */,
 				42EE31B027FF484000D27B02 /* LoadingView.swift in Sources */,
@@ -693,13 +697,13 @@
 				42EE31B327FF484000D27B02 /* SceneDelegate.swift in Sources */,
 				42EE31A527FF484000D27B02 /* MobileVerifyResult.swift in Sources */,
 				42EE31AF27FF484000D27B02 /* AppDelegate.swift in Sources */,
+				427FBE252C93592500D015BF /* MobileVerifyAgentAssistDocumentAuthenticationRequest.swift in Sources */,
 				42EE31A627FF484000D27B02 /* ViewController.swift in Sources */,
 				42A8A780291A829F00CE54AD /* MiSnapWorkflowController.swift in Sources */,
 				42A8A6C62913FB8200CE54AD /* MiPassEnrollmentInput.swift in Sources */,
 				42EE31B127FF484000D27B02 /* ResultLabel.swift in Sources */,
 				42A8A781291A829F00CE54AD /* MiSnapWorkflowViewController.swift in Sources */,
 				42A8A70529158A6800CE54AD /* ResultViewController.swift in Sources */,
-				42A8A77D291A829F00CE54AD /* MobileVerifyRequest.swift in Sources */,
 				42A8A77F291A829F00CE54AD /* MiSnapWorkflowViewControllerFactory.swift in Sources */,
 				42A8A77B291A829F00CE54AD /* MitekPlatformTokenManager.swift in Sources */,
 				42A8A6BB2913EFC700CE54AD /* Utils.swift in Sources */,
@@ -969,7 +973,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
 			requirement = {
-				branch = feature/5.5.2;
+				branch = feature/5.6.0;
 				kind = branch;
 			};
 		};

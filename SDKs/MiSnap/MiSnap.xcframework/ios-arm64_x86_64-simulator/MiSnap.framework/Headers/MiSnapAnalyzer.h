@@ -27,20 +27,20 @@
  - a frame passes Image Quality Analysis (IQA) check in `MiSnapModeAuto`
  - a user manually triggers image acqusition
  */
-- (void)miSnapAnalyzerSuccess:(MiSnapResult *)result;
+- (void)miSnapAnalyzerSuccess:(MiSnapResult * _Nonnull)result;
 /**
  Delegates receive this callback in `MiSnapModeAuto` when a frame analysis is completed
  and it was determined that a given frame didn't pass IQA checks
  */
-- (void)miSnapAnalyzerFrameResult:(MiSnapResult *)result;
+- (void)miSnapAnalyzerFrameResult:(MiSnapResult * _Nonnull)result;
 /**
  Delegates receive this callback whenever a user cancels a session
  */
-- (void)miSnapAnalyzerCancelled:(MiSnapResult *)result;
+- (void)miSnapAnalyzerCancelled:(MiSnapResult * _Nonnull)result;
 /**
  Delegates receive this callback whenever an exception is occured while perfroming an image analysis
  */
-- (void)miSnapAnalyzerException:(NSException *)exception;
+- (void)miSnapAnalyzerException:(NSException * _Nonnull)exception;
 
 @end
 
@@ -52,13 +52,13 @@
 /**
  An object conforming to the `MiSnapAnalyzerDelegate` protocol that will receive `MiSnapResult` when it's available
  */
-@property (nonatomic, weak) id <MiSnapAnalyzerDelegate> delegate;
+@property (nonatomic, weak) id <MiSnapAnalyzerDelegate> _Nullable delegate;
 
 /**
  Initializes an analyzer with parameters, delegate that will accept analysis results and interface orientation
  @return Initialized instance
  */
-- (instancetype)initWithParameters:(MiSnapParameters *)parameters delegate:(id <MiSnapAnalyzerDelegate>)delegate orientation:(UIInterfaceOrientation)orientation;
+- (instancetype _Nonnull)initWithParameters:(MiSnapParameters * _Nonnull)parameters delegate:(id <MiSnapAnalyzerDelegate> _Nonnull)delegate orientation:(UIInterfaceOrientation)orientation;
 
 /**
  Updates `MiSnapMode`
@@ -124,14 +124,14 @@
  
  @param sampleBuffer with `kCVPixelFormatType_32BGRA` pixel format type
  */
-- (void)didReceiveSampleBuffer:(CMSampleBufferRef)sampleBuffer;
+- (void)didReceiveSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer;
 
 /**
  Passes decoded barcode string
  
  @param decodedBarcodeString returned by `MiSnapCamera`
  */
-- (void)didReceiveDecodedBarcode:(NSString *)decodedBarcodeString;
+- (void)didReceiveDecodedBarcode:(NSString * _Nonnull)decodedBarcodeString;
 
 /**
  Updates analyzer's orientation for accurate frame analysis
@@ -143,10 +143,14 @@
  
  @return An array of messages for a specific tutorial mode
  */
-- (NSArray *)messagesForTutorialMode:(MiSnapTutorialMode)tutorialMode;
+- (NSArray * _Nonnull)messagesForTutorialMode:(MiSnapTutorialMode)tutorialMode;
+/**
+ All timeout statuses ordered from the most frequent to the less frequent
+ */
+- (NSArray <NSNumber *> * _Nonnull)statusesForTutorialMode:(MiSnapTutorialMode)tutorialMode;
 /**
  Logs module with its name and version in MIBI
  */
-- (void)logModuleWithName:(NSString *)name version:(NSString *)version;
+- (void)logModuleWithName:(NSString * _Nonnull)name version:(NSString * _Nonnull)version;
 
 @end

@@ -18,6 +18,10 @@
 "Generic"                               = "Document";
 
 "dialog_success"                        = "Success!";
+"dialog_cancel_title"                   = "Are you sure you want to leave?";
+"dialog_cancel_message"                 = "You will have to start the process from the beginning.";
+"dialog_cancel_abort"                   = "Stay";
+"dialog_cancel_proceed"                 = "Leave";
 
 "misnap_tutorial_check"                 = "Center the check on the screen, hold still, and we will take the photo for you.";
 "misnap_tutorial_document"              = "Center the document on the screen, hold still, and we will take the photo for you.";
@@ -96,6 +100,7 @@
 "misnap_status_not_check_front"             = "Use check front";
 "misnap_status_not_check_back"              = "Flip check";
 "misnap_status_document_not_found"          = "Center a document on a dark background";
+"misnap_status_document_not_found_mrz"      = "The bottom text should be fully visible";
 "misnap_status_not_sharp"                   = "Hold steady";
 "misnap_status_too_rotated"                 = "Reduce angle";
 "misnap_status_too_skewed"                  = "Reduce angle";
@@ -124,6 +129,7 @@
 "misnap_status_too_far_timeout"              = "Move the device closer to the document";
 "misnap_status_not_sharp_timeout"            = "Hold the device steady";
 "misnap_status_document_not_found_timeout"   = "Center a document on a dark background";
+"misnap_status_document_not_found_mrz_timeout" = "The bottom text should be fully visible";
 "misnap_status_wrong_aspect_ratio_timeout"   = "Center a document on a dark background";
 
 "misnap_session_interruption_multiple_foreground_apps" = "Full screen is required";

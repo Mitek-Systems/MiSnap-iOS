@@ -92,7 +92,13 @@
                 <a class="nav-group-task-link" href="../Enums/MiSnapCameraBarcodeType.html">MiSnapCameraBarcodeType</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCameraDocumentCategory.html">MiSnapCameraDocumentCategory</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapCameraDocumentType.html">MiSnapCameraDocumentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/MiSnapCameraResolution.html">MiSnapCameraResolution</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/MiSnapCameraTorchMode.html">MiSnapCameraTorchMode</a>
@@ -159,7 +165,7 @@
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">MiSnapScienceParameters</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">MiSnapScienceParameters</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
@@ -316,13 +322,18 @@
                     <code>
                     <a name="/c:objc(cs)MiSnapScienceParameters(py)idBackMode"></a>
                     <a name="//apple_ref/objc/Property/idBackMode" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MiSnapScienceParameters(py)idBackMode">idBackMode</a>
+                    <a class="token discouraged" href="#/c:objc(cs)MiSnapScienceParameters(py)idBackMode">idBackMode</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use a combination of <code><a href="../Classes/MiSnapScienceParameters.html#/c:objc(cs)MiSnapScienceParameters(py)iqaRequired">iqaRequired</a></code> and <code><a href="../Classes/MiSnapScienceParameters.html#/c:objc(cs)MiSnapScienceParameters(py)barcodeRequired">barcodeRequired</a></code> properties instead</p>
+
+                      </div>
                       <div class="abstract">
                         <p>The ID Back mode</p>
 
@@ -332,6 +343,93 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/MiSnapScienceIdBackMode.html">MiSnapScienceIdBackMode</a></span> <span class="n">idBackMode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapScienceParameters(py)iqaRequired"></a>
+                    <a name="//apple_ref/objc/Property/iqaRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapScienceParameters(py)iqaRequired">iqaRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether acceptable IQA (Image Quality Analysis) result is required</p>
+
+<p>Default: <code>TRUE</code> for all document types</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">iqaRequired</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapScienceParameters(py)barcodeRequired"></a>
+                    <a name="//apple_ref/objc/Property/barcodeRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapScienceParameters(py)barcodeRequired">barcodeRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether a barcode is required</p>
+
+<p>Default: <code>FALSE</code> for all document types</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">barcodeRequired</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapScienceParameters(py)mrzRequired"></a>
+                    <a name="//apple_ref/objc/Property/mrzRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapScienceParameters(py)mrzRequired">mrzRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether an MRZ is required</p>
+
+<p>Default: <code>TRUE</code> for Passport and <code>FALSE</code> for all other document types</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">mrzRequired</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>

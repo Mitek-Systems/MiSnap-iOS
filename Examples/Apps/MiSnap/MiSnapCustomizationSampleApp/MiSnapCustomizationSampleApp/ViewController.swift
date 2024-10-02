@@ -98,8 +98,9 @@ class ViewController: UIViewController {
         // Customizes UX parameters
         .withCustomUxParameters { uxParameters in
             uxParameters.timeout = 25.0
-            uxParameters.showHelpScreen = false
-            uxParameters.showTimeoutScreen = false
+            uxParameters.useCustomTutorials = true
+            uxParameters.instructionMode = .noInstruction
+            uxParameters.reviewMode = .noReview
             
             // For all available UX parameters customization options see this API reference: https://htmlpreview.github.io/?https://github.com/Mitek-Systems/MiSnap-iOS/blob/main/Docs/API/MiSnap/MiSnapUX/Classes/MiSnapUxParameters.html
         }
@@ -242,21 +243,14 @@ extension ViewController: MiSnapViewControllerDelegate {
     }
     
     /*
-     Implementing optional callbacks since `showHelpScreen` and `showTimeoutScreen`
-     of `MiSnapUxParameters`were overridden to `false` in template configuration
+     Implementing optional callback since `useCustomTutorials` of `MiSnapUxParameters`
+     was overridden to `true` in template configuration
      */
-    func miSnapHelpAction(_ messages: [String]) {
+    func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType, tutorialMode: MiSnapUxTutorialMode, mode: MiSnapMode, statuses: [NSNumber]?, image: UIImage?) {
         guard let misnapVC = misnapVC else { return }
         
-        let helpVC = CustomTutorialViewController(for: .help, delegate: misnapVC, messages: messages)
+        let helpVC = CustomTutorialViewController(for: documentType, tutorialMode: tutorialMode, mode: mode, statuses: statuses, image: image, delegate: misnapVC)
         misnapVC.present(helpVC, animated: true)
-    }
-    
-    func miSnapTimeoutAction(_ messages: [String]) {
-        guard let misnapVC = misnapVC else { return }
-        
-        let timeoutVC = CustomTutorialViewController(for: .timeout, delegate: misnapVC, messages: messages)
-        misnapVC.present(timeoutVC, animated: true)
     }
 }
 

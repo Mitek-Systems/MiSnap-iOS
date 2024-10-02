@@ -1236,6 +1236,10 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager26MiSnapSuccessConfiguration")
 @property (nonatomic) CGFloat borderWidth;
 /// Corner radius
 @property (nonatomic) CGFloat cornerRadius;
+/// Checkmark and message padding
+@property (nonatomic) CGFloat padding;
+/// Horizontal spacing between a checkmark and a message
+@property (nonatomic) CGFloat spacing;
 /// Indicates whether a view is hidden
 @property (nonatomic) BOOL isHidden;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

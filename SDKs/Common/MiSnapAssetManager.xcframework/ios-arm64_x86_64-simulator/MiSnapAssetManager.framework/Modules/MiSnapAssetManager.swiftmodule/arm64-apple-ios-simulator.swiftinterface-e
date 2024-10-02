@@ -257,6 +257,8 @@ extension CoreFoundation.CGSize {
   @objc public var borderColor: UIKit.UIColor
   @objc public var borderWidth: CoreFoundation.CGFloat
   @objc public var cornerRadius: CoreFoundation.CGFloat
+  @objc public var padding: CoreFoundation.CGFloat
+  @objc public var spacing: CoreFoundation.CGFloat
   @objc public var isHidden: Swift.Bool
   @objc override dynamic public init()
   @objc deinit

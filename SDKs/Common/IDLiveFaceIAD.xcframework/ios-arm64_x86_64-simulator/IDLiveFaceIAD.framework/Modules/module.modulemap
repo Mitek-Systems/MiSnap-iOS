@@ -1,0 +1,11 @@
+framework module IDLiveFaceIAD {
+  umbrella header "IDLiveFaceIAD.h"
+  export *
+
+  module * { export * }
+}
+
+module IDLiveFaceIAD.Swift {
+  header "IDLiveFaceIAD-Swift.h"
+  requires objc
+}

@@ -33,16 +33,19 @@ See [here](https://github.com/Mitek-Systems/MiSnap-iOS/releases).
 | Technology | Min version |
 | :--- | :---: |
 | Xcode | 15.0 |
-| iOS | 12.0 |
+| iOS | 12.0 * |
 | iPhone | 6 |
 | iPad | mini (4th generation) |
 
 </center>
+
+`*` when AI based RTS feature is enabled min iOS version is 13.0
+
 Min OS/device combination offers coverage level of 99.89%.
 
 __Note__, `On-Device Classification (ODC)` `beta` feature is only available on devices running iOS 13.0 or newer and powered by A11 or newer chip (iPhone 8 or newer, iPad Mini 5th generation or newer) which offers coverage level of 95.92% as of Q2 2023. `Any ID` document type heavily relies on this feature therefore its support has the same constraints.
 
-__Note__, for `MiSnapNFC SDK` functionality, supported devices are all iPhone 7 and newer that support iOS 13.0 and above.
+__Note__, for `MiSnapNFC` functionality, supported devices are all iPhone 7 and newer that support iOS 13.0 and above.
 
 - - -
 
@@ -109,7 +112,7 @@ See [this guide](Docs/Guides/Common/workflow.md) for `MiSnapWorkflow` integratio
 | VoiceCapture + VoiceCaptureUX    |  1.20          |  3.20            |
 | All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture)                   |  3.50          |  8.60            |
 | All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  5.00          |  11.60           |
-
+| IDLiveFaceIAD (optional)    |  0.73          |  2.80            |
 </center>
 
 Sizes are taken from "App Thinning Size Report.txt" of an Xcode distribution package for the latest iOS version where `compressed` is your app download size increase, and `uncompressed` size is equivalent to the size increase of your app once installed on the device. 

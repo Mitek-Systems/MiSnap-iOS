@@ -60,6 +60,19 @@ typedef NS_ENUM(NSInteger, MiSnapFacialCaptureTutorialMode) {
     MiSnapFacialCaptureTutorialModeReview
 };
 /**
+ AI based RTS payload size
+ */
+typedef NS_ENUM(NSInteger, MiSnapFacialCaptureAiBasedRtsPayloadSize) {
+    /**
+     Small
+     */
+    MiSnapFacialCaptureAiBasedRtsPayloadSizeSmall   = 0,
+    /**
+     Normal
+     */
+    MiSnapFacialCaptureAiBasedRtsPayloadSizeNormal  = 1
+};
+/**
 MiSnapFacialCaptureParameters is a class that defines an interface for controlling a frame acquisition thresholds.
 */
 @interface MiSnapFacialCaptureParameters : NSObject
@@ -170,6 +183,16 @@ MiSnapFacialCaptureParameters is a class that defines an interface for controlli
  Default: 0
  */
 @property (nonatomic, readwrite) NSTimeInterval analysisDelayTime;
+/**
+ Indicates whether an AI based RTS payload should be collected
+ 
+ Default: `FALSE`
+ 
+ - Note: if overridden to `TRUE`:
+ - `IDLiveFaceIAD.xcframework` has to be added to a project
+ - No other parameters should be modified unless advised by a Mitek representative
+ */
+@property (nonatomic) BOOL aiBasedRtsEnabled;
 /**
  An object that configures camera specific parameters
  */

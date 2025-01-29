@@ -118,6 +118,10 @@ An array of ordered statuses for the current frame
 */
 @property (nonatomic, readonly) NSArray * _Nonnull orderedStatuses;
 /**
+ Indicates whether an array of ordered statuses contains one or more error statuses
+ */
+@property (nonatomic, readonly, getter=isAcceptable) BOOL acceptable;
+/**
 A `CGRect` rectangle of a face
 */
 @property (nonatomic, readonly) CGRect faceRect;
@@ -165,6 +169,10 @@ An array of outer lip points
  An encrypted payload used for an additional authentication
  */
 @property (nonatomic, readonly) NSString * _Nullable rts;
+/**
+ An AI based RTS payload used for an additional authentication
+ */
+@property (nonatomic, readonly) NSString * _Nullable aiBasedRts;
 /**
  A MIBI Data string that has analytics for the session
  

@@ -44,6 +44,10 @@ let package = Package(
         .library(
             name: "MiSnapCore",
             targets: ["MiSnapCore"]
+        ),
+        .library(
+            name: "MiSnapIAD",
+            targets: ["MiSnapIAD"]
         )
     ],
     targets: [
@@ -106,6 +110,10 @@ let package = Package(
         .binaryTarget(
             name: "MiSnapAssetManager",
             path: "SDKs/Common/MiSnapAssetManager.xcframework"
+        ),
+        .binaryTarget(
+            name: "MiSnapIAD",
+            path: "SDKs/Common/IDLiveFaceIAD.xcframework"
         )
     ]
 )

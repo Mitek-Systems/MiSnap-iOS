@@ -610,6 +610,7 @@ extension MiSnapBulletView {
   @objc public var secondaryBorderColor: UIKit.UIColor
   @objc public var mainBorderWidth: CoreFoundation.CGFloat
   @objc public var secondaryBorderWidth: CoreFoundation.CGFloat
+  @objc public var secondaryBorderOffset: CoreFoundation.CGSize
   public var cornerRadius: CoreFoundation.CGFloat?
   @objc public var isHidden: Swift.Bool
   @objc public var featuresAlpha: CoreFoundation.CGFloat
@@ -660,6 +661,9 @@ extension MiSnapBulletView {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCheckboxView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var state: MiSnapCheckboxState {
+    get
+  }
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapCheckboxViewConfiguration? = nil, for state: MiSnapCheckboxState = .unchecked)
   @objc @_Concurrency.MainActor(unsafe) public func check()
   @objc @_Concurrency.MainActor(unsafe) public func uncheck()

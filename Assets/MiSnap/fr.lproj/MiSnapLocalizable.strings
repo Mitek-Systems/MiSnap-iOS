@@ -72,6 +72,8 @@
 "misnap_torch_off"                      = "Étteindre";
 
 "misnap_tutorial_do_not_show_again"     = "Ne plus afficher ce même écran";
+"misnap_checkbox_checked"               = "Case cochée";
+"misnap_checkbox_unchecked"             = "Case décochée";
 
 // Navigation buttons
 "misnap_tutorial_cancel"                = "Annuler";

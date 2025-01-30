@@ -125,6 +125,24 @@ extension CustomTutorialViewController {
         return messages
     }
     
+    private func getGenericMessages() -> [String] {
+        var firstKey = ""
+        switch documentType {
+        case .checkFront, .checkBack:
+            firstKey = "misnap_tutorial_check"
+        case .anyId, .idFront, .idBack:
+            firstKey = "misnap_tutorial_id"
+        case .passport:
+            firstKey = "misnap_tutorial_passport"
+        default:
+            firstKey = "misnap_tutorial_document"
+        }
+        
+        let secondKey = mode == .auto ? "misnap_tutorial_auto" : "misnap_tutorial_manual"
+        
+        return [localizedString(for: firstKey), localizedString(for: secondKey)]
+    }
+    
     private func localizedString(for key: String) -> String {
         bundle.localizedString(forKey: key, value: key, table: stringsName)
     }
@@ -171,6 +189,13 @@ extension CustomTutorialViewController {
          and pass cancelButtonAction(_:), retryButtonAction(_:), continueButtonAction(_:) selectors respectively
          that'll properly notify MiSnapViewController
          */
+        
+        /*
+         Uncomment to get default MiSnap messages.
+         Note, messages themselves can be customized in `MiSnapLocalizable.strings`.
+         Alternatively, use your own messages if needed.
+         */
+        //let messages = getGenericMessages()
     }
     
     private func configureForHelp() {
@@ -187,6 +212,13 @@ extension CustomTutorialViewController {
          and pass cancelButtonAction(_:), retryButtonAction(_:), continueButtonAction(_:) selectors respectively
          that'll properly notify MiSnapViewController
          */
+        
+        /*
+         Uncomment to get default MiSnap messages.
+         Note, messages themselves can be customized in `MiSnapLocalizable.strings`.
+         Alternatively, use your own messages if needed.
+         */
+        //let messages = getGenericMessages()
     }
     
     private func configureForTimeout() {

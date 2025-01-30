@@ -23,6 +23,7 @@ Please refer to [MiSnapFacialCaptureCustomizationSampleApp](../../../Examples/Ap
 * [Parameters](#parameters)
     * [Enable Smile](#enable-smile)
     * [Video Recording](#video-recording)
+    * [AI-based RTS](#ai-based-rts)
     * [Other](#other)
 
 # Overview
@@ -291,7 +292,7 @@ let configuration = MiSnapFacialCaptureConfiguration()
 Create a configuration (if it doesn't exist) and chain `.withCustomParameters`. Refer to a snippet below:
 
 ```Swift
-let configuration = MiSnapConfiguration(for: documentType)
+let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomParameters { parameters in
         parameters.camera.recordVideo = true
 
@@ -299,6 +300,23 @@ let configuration = MiSnapConfiguration(for: documentType)
         parameters.camera.recordAudio = true 
     }
 ```
+
+## AI-based RTS
+Create a configuration (if it doesn't exist) and chain `.withCustomParameters`. Refer to a snippet below:
+
+```Swift
+let configuration = MiSnapFacialCaptureConfiguration()
+    .withCustomParameters { parameters in
+        parameters.aiBasedRtsEnabled = true
+    }
+```
+
+Note, this feature has a dependency on an optional library. You'll get an exception with a verbose explanation if you attempt to run the application without the library. To add this library:
+* SPM: add `MiSnapIAD` package
+* CocoaPods: add `pod 'MiSnapIAD'` to your Podfile
+* Manual: add `IDLiveFaceIAD.xcframework` to your Xcode project:
+    * Under `Frameworks, Libraries, and Embedded Content` with `Embed & Sign` option in `General` tab
+    * Add a valid path to the library in `Framework Search Paths` in `Build Settings` tab
 
 ## Other
 

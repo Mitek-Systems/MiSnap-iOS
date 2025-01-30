@@ -70,6 +70,8 @@
 "misnap_torch_off"                      = "Off";
 
 "misnap_tutorial_do_not_show_again"     = "Don't show this screen again";
+"misnap_checkbox_checked"               = "Checkbox checked";
+"misnap_checkbox_unchecked"             = "Checkbox unchecked";
 
 // Navigation buttons
 "misnap_tutorial_cancel"                = "Cancel";

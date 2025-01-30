@@ -48,6 +48,12 @@ NS_ASSUME_NONNULL_BEGIN
  - Note: Only used  when `recordVideo` parameter is `TRUE`
  */
 @property (nonatomic) BOOL showRecordingUI;
+/**
+ RTS enabled
+ 
+ Default: `FALSE`
+ */
+@property (nonatomic) BOOL aiBasedRtsEnabled;
 
 @end
 

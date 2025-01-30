@@ -67,6 +67,10 @@ public enum MobileVerifyRequestError: Error {
      */
     case emptyRts
     /**
+     Empty AI based RTS
+     */
+    case emptyAiBasedRts
+    /**
      Description
      */
     var description: String {
@@ -97,6 +101,8 @@ public enum MobileVerifyRequestError: Error {
             return "When optional parameter `pdf417` is set in `addBackEvidence(withData:, pdf417:, rts:, customerReferenceId:)` it should be a valid non-empty string"
         case .emptyRts:
             return "When optional parameter `rts` is set it should be a valid non-empty string"
+        case .emptyAiBasedRts:
+            return "When optional parameter `aiBasedRts` is set it should be a valid non-empty string"
         }
     }
 }
@@ -193,6 +199,10 @@ public enum MobileVerifyRequestVerification: String, Equatable {
      */
     case injectionAttackDetection
     /**
+     Injection attack detection AI
+     */
+    case injectionAttackDetectionAI
+    /**
      Template attack detection
      */
     case templateAttackDetection
@@ -207,6 +217,7 @@ public enum MobileVerifyRequestVerification: String, Equatable {
         case .faceVelocity:                 return "faceVelocity"
         case .dataSignalAAMVA:              return "dataSignalAAMVA"
         case .injectionAttackDetection:     return "injectionAttackDetection"
+        case .injectionAttackDetectionAI:   return "injectionAttackDetectionAI"
         case .templateAttackDetection:      return "templateAttackDetection"
         }
     }
@@ -277,6 +288,7 @@ private class MobileVerifyRequestEvidenceIdDocumentNfc: NSObject {
 public class MobileVerifyRequestEvidenceBiometricSelfie: NSObject {
     var data: String = ""
     var rts: String?
+    var aiBasedRts: String?
 }
 /**
  MobileVerify request
@@ -317,6 +329,11 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
         frontEvidenceSet = true
         frontEvidence.data = data
         frontEvidence.rts = rts
+        #if !DEBUG
+        if let rts = rts, !rts.isEmpty {
+            addVerifications([.injectionAttackDetection])
+        }
+        #endif
         frontEvidence.customerReferenceId = customerReferenceId
         frontEvidence.qrCode = qrCode
     }
@@ -327,6 +344,11 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
         backEvidenceSet = true
         backEvidence.data = data
         backEvidence.rts = rts
+        #if !DEBUG
+        if let rts = rts, !rts.isEmpty {
+            addVerifications([.injectionAttackDetection])
+        }
+        #endif
         backEvidence.customerReferenceId = customerReferenceId
         backEvidence.pdf417 = pdf417
     }
@@ -361,10 +383,19 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
     /**
      Adds selfie evidence
      */
-    public func addSelfieEvidence(withData data: String, rts: String? = nil) {
+    public func addSelfieEvidence(withData data: String, rts: String? = nil, aiBasedRts: String? = nil) {
         selfieEvidenceSet = true
         selfieEvidence.data = data
         selfieEvidence.rts = rts
+        #if !DEBUG
+        if let rts = rts, !rts.isEmpty {
+            addVerifications([.injectionAttackDetection])
+        }
+        #endif
+        selfieEvidence.aiBasedRts = aiBasedRts
+        if let aiBasedRts = aiBasedRts, !aiBasedRts.isEmpty {
+            addVerifications([.injectionAttackDetectionAI])
+        }
     }
     /**
      Adds verifications
@@ -420,6 +451,9 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
             }
             if let rts = selfieEvidence.rts, rts.isEmpty {
                 errors.append(.emptyRts)
+            }
+            if let aiBasedRts = selfieEvidence.aiBasedRts, aiBasedRts.isEmpty {
+                errors.append(.emptyAiBasedRts)
             }
             if !verifications.contains(.faceComparison) {
                 errors.append(.selfieVerificationsNotEnabled)
@@ -531,8 +565,12 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
             var selfieDictionary: [String : String] = [
                 "type" : "Biometric",
                 "biometricType" : "Selfie",
-                "data" : selfieEvidence.data
             ]
+            if let aiBasedRts = selfieEvidence.aiBasedRts {
+                selfieDictionary["data"] = aiBasedRts
+            } else {
+                selfieDictionary["data"] = selfieEvidence.data
+            }
             if let rts = selfieEvidence.rts {
                 selfieDictionary["encryptedPayload"] = rts
             }

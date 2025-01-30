@@ -687,6 +687,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager34MiSnapDocumentOutlineConfiguration")
 @property (nonatomic) CGFloat mainBorderWidth;
 /// Secondary border color
 @property (nonatomic) CGFloat secondaryBorderWidth;
+/// Secondary border offset
+@property (nonatomic) CGSize secondaryBorderOffset;
 /// Indicates whether a view is hidden
 @property (nonatomic) BOOL isHidden;
 /// Alpha of document elements (MRZ, MICR etc)

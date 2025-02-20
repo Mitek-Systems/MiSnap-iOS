@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cuoVkkSiaxJJ0ak7nzRMt6z9X8w=
+		mk+LWc8SWFy8K8185JaxKVhwmho=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		G7MqrvH45F8zCZSYCVhsE011ZlQ=
+		wCiAJ24k4FPtb8qjdfMqMCQ0EMs=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xLtrHqHkKYHuTIzT2qRMo6QDy38=
+		o1DdC799KECHb1/daxE1+KLtMA8=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		G7MqrvH45F8zCZSYCVhsE011ZlQ=
+		wCiAJ24k4FPtb8qjdfMqMCQ0EMs=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,11 +54,15 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YVTSd39Uu81LC2NWqBs+2quPmlk=
+		Ms4xh07nW3EKPY4nala64VmhSQE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		fP6cLamc7My09JLQZxx+MquwxtE=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		2YoRHNXRkGrFl+BRGIONA0qe6e4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -81,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YUsqOPNU3BLSrjCsn86u9U5b7f3fS3JtZxb/LAdjXaM=
+			jP1rvjeZ60WpJZtrbfyUSfQGtBaM7ug3h8wOP5HHFzw=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fw6/tdt4e++KfkUDuadF12r7TPW2drmrniu+uGUsIqg=
+			0eeJiPFA6684/L1mUflgVtEMeC7FqbQRDcjzSPdiD9k=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YUsqOPNU3BLSrjCsn86u9U5b7f3fS3JtZxb/LAdjXaM=
+			jP1rvjeZ60WpJZtrbfyUSfQGtBaM7ug3h8wOP5HHFzw=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LMXjDNjb1jnRy2MXaLllZAo5/oeoQDNC6qwmIN/aWws=
+			t5weU7/8/m6XBOkKGHCSz5aQSoBA7H3z1Ahy69pfzhU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -152,6 +156,13 @@
 			<key>hash2</key>
 			<data>
 			aXa5fd/kb8eJ1Ce9Sg6da2WMpsTqWHQJqtHQq/t8A9M=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+THqni8bkcloLZHCjOwLkcbqgUKmDF5b5CPI121UkK0=
 			</data>
 		</dict>
 	</dict>

@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1icALRW1v/3rrfvP5pImsX2xo88=
+		i+f6rz5Nfzla1bczHOT+hOjKOy4=
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		pH6RoRZc7cpQrMaumDEThf8d7HA=
+		9+hP/35nQtmjCBuw7KTTrU1LjHc=
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qTbArrEK5M24Dnizgg4GzVpHGIk=
+		cQbLcOxvxZ/OMhYnW0E7hsyP8sA=
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		pH6RoRZc7cpQrMaumDEThf8d7HA=
+		9+hP/35nQtmjCBuw7KTTrU1LjHc=
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,11 +58,15 @@
 		</data>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XG80vWOMnsffRticcZKL+A6JyUs=
+		PZhwDf0U+avWx7abQUt5cDHsJ1A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		rAUHt+p/MEh9TXQez1st96EI1Rg=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		2YoRHNXRkGrFl+BRGIONA0qe6e4=
 		</data>
 		<key>media/snr_computer/gvad_model.cbm</key>
 		<data>
@@ -108,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZAerMm8hHaEHbR/WWNiE/KmLk9pauA6Mmw9R8PVhJq4=
+			IF1KZgUgatvrV7ogDtVM7dTgE5/wZMNYBPGDn1pkKR0=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -136,14 +140,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xoTsf63GZZjQPh7XmfBSVALstjTxi2OVfyHm3F0BbwE=
+			LPikL90lgtVaBCK2ZgIcLeqSh0AveD25Wg98/l/iQnE=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZAerMm8hHaEHbR/WWNiE/KmLk9pauA6Mmw9R8PVhJq4=
+			IF1KZgUgatvrV7ogDtVM7dTgE5/wZMNYBPGDn1pkKR0=
 			</data>
 		</dict>
 		<key>Modules/MiSnapVoiceCapture.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -171,7 +175,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uv9cyEoPrJy8h8PXNm3Tq70gsaNcXO6It/YVdShV22I=
+			21JTwRNS9vVJph0IDzanT+dKKCP8JrZWuaXox7XsDvY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -179,6 +183,13 @@
 			<key>hash2</key>
 			<data>
 			r1ouv+mIRsLjNAwU9NVzk6/uVXmV/9e1OBUu8YS1XIg=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+THqni8bkcloLZHCjOwLkcbqgUKmDF5b5CPI121UkK0=
 			</data>
 		</dict>
 		<key>media/snr_computer/gvad_model.cbm</key>

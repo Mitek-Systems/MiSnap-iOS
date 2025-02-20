@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NHNw3Ah7xE19Y2dn7P20dARvwks=
+		Q5zyNiD/RmH9B4W31xuxj9O9jx8=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		G7MqrvH45F8zCZSYCVhsE011ZlQ=
+		wCiAJ24k4FPtb8qjdfMqMCQ0EMs=
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,15 @@
 		</data>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xevHJ4nQXsmWjqDJtMZ32qidvWo=
+		VSgI/QEJTykrRudFUle5fKUkdfg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		fP6cLamc7My09JLQZxx+MquwxtE=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		2YoRHNXRkGrFl+BRGIONA0qe6e4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -61,7 +65,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YUsqOPNU3BLSrjCsn86u9U5b7f3fS3JtZxb/LAdjXaM=
+			jP1rvjeZ60WpJZtrbfyUSfQGtBaM7ug3h8wOP5HHFzw=
 			</data>
 		</dict>
 		<key>Modules/MiSnapAssetManager.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -89,7 +93,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+NONCmTdtqPsgjlpZt1c+euHWXsAKWXOr55an6KGAvw=
+			nDcUie2eI+Tm4n1PQktBphwim7UTDE5B0MMO8XCIS6A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -97,6 +101,13 @@
 			<key>hash2</key>
 			<data>
 			aXa5fd/kb8eJ1Ce9Sg6da2WMpsTqWHQJqtHQq/t8A9M=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+THqni8bkcloLZHCjOwLkcbqgUKmDF5b5CPI121UkK0=
 			</data>
 		</dict>
 	</dict>

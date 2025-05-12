@@ -26,11 +26,11 @@
 		</data>
 		<key>ios-arm64/MiSnap.framework/Info.plist</key>
 		<data>
-		BA8Tro7ajmRVbPZvW3J5f347no4=
+		adY9DAWt4z+xurHBthSQc5RAR2I=
 		</data>
 		<key>ios-arm64/MiSnap.framework/MiSnap</key>
 		<data>
-		ht8h+TKWI/rVxUsc0BocJjlJBMs=
+		6qM6iMzTZ/R02OtT1gG4E3rioaE=
 		</data>
 		<key>ios-arm64/MiSnap.framework/Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64/MiSnap.framework/_CodeSignature/CodeResources</key>
 		<data>
-		40srq4YLKpYsTphXDa5HAncjtdQ=
+		JmhJkVdodwf+LIuonE2rGKk84uo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnap.framework/Headers/MiSnap.h</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnap.framework/Info.plist</key>
 		<data>
-		JBRM6kVzpuq3O+iUCSYRAIPMl4A=
+		V88hWiZo3Oaci9abYWO5SGKGapM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnap.framework/MiSnap</key>
 		<data>
-		8GcFeHkZ2Z4YD4o5fBB1wJLWRxM=
+		b/WbfRoi+Tu1NJ/oX6x3LDvuL5E=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnap.framework/Modules/module.modulemap</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnap.framework/_CodeSignature/CodeResources</key>
 		<data>
-		kyNNv/I9ArExEvYf1C6uBnApkGU=
+		jxSaUHTyop/Vj/eRgbWPZB34/Wc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -146,22 +146,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BA8Tro7ajmRVbPZvW3J5f347no4=
+			adY9DAWt4z+xurHBthSQc5RAR2I=
 			</data>
 			<key>hash2</key>
 			<data>
-			9LooD7DcOo+waamtSnbdsgC7iZw17dTtSVZPB3aMMyE=
+			OVlcadmybqK0fmwR9TOcMx+HCHNk6b0OyfYh4l60AWo=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnap.framework/MiSnap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ht8h+TKWI/rVxUsc0BocJjlJBMs=
+			6qM6iMzTZ/R02OtT1gG4E3rioaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			fXuov5sA6xD+01mlo0KzNS4hcEQIpFpT9N5eJQfM6lU=
+			z9fKvNjZncqFyY4sMN+qZJQ1JqcgT5xmgqDdXkdzQm0=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnap.framework/Modules/module.modulemap</key>
@@ -190,11 +190,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			40srq4YLKpYsTphXDa5HAncjtdQ=
+			JmhJkVdodwf+LIuonE2rGKk84uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			372YtxlF3+SyfMIDSS7XE2CtokHW58zRsJUE/umaaeA=
+			XQXpGPeuGDp1PYgbBAROmXEOz2WkbhVOy2Iyt219K7o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnap.framework/Headers/MiSnap.h</key>
@@ -256,22 +256,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JBRM6kVzpuq3O+iUCSYRAIPMl4A=
+			V88hWiZo3Oaci9abYWO5SGKGapM=
 			</data>
 			<key>hash2</key>
 			<data>
-			zQFmAUmg4d+nSi4dWEB1nIlURKoFyZYYjKEQ9O+qnwM=
+			HvoCu1izyMnPjDV5I97XEm2UI3/ITkU1rq7cLGgHeDE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnap.framework/MiSnap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8GcFeHkZ2Z4YD4o5fBB1wJLWRxM=
+			b/WbfRoi+Tu1NJ/oX6x3LDvuL5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			eWI6prFS4eosChZjMDIy2W81o2Fp+GgonXKa6OXQDFc=
+			OB7WEmgYaBuOFfrkb95YXx8fhhsH5Q3W0z2CyInl+UY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnap.framework/Modules/module.modulemap</key>
@@ -300,11 +300,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kyNNv/I9ArExEvYf1C6uBnApkGU=
+			jxSaUHTyop/Vj/eRgbWPZB34/Wc=
 			</data>
 			<key>hash2</key>
 			<data>
-			KnoIQKfvT01BWRVPLF2BR679wVSgupU1rdCfofHJMpU=
+			grGjMD7KJOEHK7BGgG6zi52TpiKR9LnUdtrF9MSlXLE=
 			</data>
 		</dict>
 	</dict>

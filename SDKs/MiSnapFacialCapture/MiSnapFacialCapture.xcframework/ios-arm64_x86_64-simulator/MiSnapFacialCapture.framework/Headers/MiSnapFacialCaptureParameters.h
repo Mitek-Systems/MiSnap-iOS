@@ -184,7 +184,7 @@ MiSnapFacialCaptureParameters is a class that defines an interface for controlli
  */
 @property (nonatomic, readwrite) NSTimeInterval analysisDelayTime;
 /**
- Indicates whether an AI based RTS payload should be collected
+ Indicates whether an AI-based RTS payload should be collected
  
  Default: `FALSE`
  
@@ -193,6 +193,18 @@ MiSnapFacialCaptureParameters is a class that defines an interface for controlli
  - No other parameters should be modified unless advised by a Mitek representative
  */
 @property (nonatomic) BOOL aiBasedRtsEnabled;
+/**
+ AI-based RTS payload size
+ 
+ Default: `.small`
+ */
+@property (nonatomic) MiSnapFacialCaptureAiBasedRtsPayloadSize aiBasedRtsPayloadSize;
+/**
+ Base64 encoded AI-based RTS payload key
+ 
+ Default: `null` (not set)
+ */
+@property (nonatomic) NSString * _Nullable aiBasedRtsKey;
 /**
  An object that configures camera specific parameters
  */

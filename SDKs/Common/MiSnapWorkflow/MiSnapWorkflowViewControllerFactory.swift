@@ -122,6 +122,11 @@ class MiSnapWorkflowViewControllerFactory {
             .withCustomUxParameters { uxParameters in
                 uxParameters.autoDismiss = false
             }
+            .withCustomParameters { parameters in
+                parameters.aiBasedRtsEnabled = true
+//                parameters.aiBasedRtsKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4kT+sJRMzF7p5eVHuqdsf62Vesh1doO9T8jQCrqSMrLSzWcnFQsKwPlJA+3EGbPvlT6XKnXb71aooLMSsnxHX7qZkSMSi8MPOAFA9tMECLOfqIfyWt9tt5Pgwdjh4vkdu9FqmMJJSUwpZ7WKXv10KxFysj5VKgqym9LP9mHi6g7hu0qgjhNjRRdjc08nc92RSVThGdi7TMxYwTzOYUn7RpHtvz41qpbLVCdQtKzHws+BmoJJkWtjChD+HmmMxrXYy0dF3oSU0D910H860y1BpBu156w4OYCU0BOds106x0xmW9pG1K+XAN5hIGV1VTzHlMoYGXMMkeiaptieRRwe9QIDAQAB"
+//                parameters.aiBasedRtsKey = "default"
+            }
         let facialCaptureVC = MiSnapFacialCaptureViewController(with: configuration, delegate: delegate)
         return facialCaptureVC
     }

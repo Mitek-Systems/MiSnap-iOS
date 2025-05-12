@@ -426,11 +426,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		e0iu7zCg5R+xm/ZD1A0BWh91oTE=
+		CU+uBuZL5F6zmESumZkJD37cSHk=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		/9O6oRRJqP6AR+iSVQkE0S9Z6as=
+		gmX4cItNqaCGO/4/P/WuGqp4n1U=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -446,11 +446,11 @@
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6pL0h3RLlIu+08UVebCuXzTT/c0=
+		blPjl6bhXRCTUK2ZyqoNQk4WtIU=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/9O6oRRJqP6AR+iSVQkE0S9Z6as=
+		gmX4cItNqaCGO/4/P/WuGqp4n1U=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -466,7 +466,7 @@
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HRlo6eHu+o1D3HSptHP1OG+nFfo=
+		i+N7/D0criTZHP1SnJpvrwDYr6s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1222,7 +1222,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QT5hxfau3Tt8hBRq8n8aTlQxt1gJ084avqN2jUwPlnc=
+			WA7nJKe6SFd3VhD/vKXgbLJetPpb9QNKUl+nlrHiYnc=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1250,14 +1250,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lKHAa/5OEX6PFXk/NCKWdt0hnXkMS/JqvsO2QI84Tr4=
+			mC3vCu+iPmefTak51s3LBmolYSIBoRcbX5iiD0CwVuE=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QT5hxfau3Tt8hBRq8n8aTlQxt1gJ084avqN2jUwPlnc=
+			WA7nJKe6SFd3VhD/vKXgbLJetPpb9QNKUl+nlrHiYnc=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1285,7 +1285,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UzFWSzgsJvLBEscva0qyG8fSCO8+13XT5Vp3zuqCTiI=
+			WY+IAYMWk0eURRV2W3PIPbPUhD/BkKo4zGzgste+E4Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

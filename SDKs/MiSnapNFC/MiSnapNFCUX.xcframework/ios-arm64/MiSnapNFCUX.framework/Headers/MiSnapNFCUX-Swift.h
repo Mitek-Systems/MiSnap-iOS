@@ -354,11 +354,23 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX33MiSnapNFCScanButtonsConfiguration")
 /// Bar color
 @property (nonatomic, strong) UIColor * _Nonnull barColor;
 /// Configuration for start button
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed SWIFT_DEPRECATED_MSG("Use `primary`");
 /// Configuration for Cancel button
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel SWIFT_DEPRECATED_MSG("Use `secondary` instead");
 /// Configuration for Skip button
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull skip;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull skip SWIFT_DEPRECATED_MSG("Use `secondary` instead");
+/// Configuration for Start button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull primary;
+/// Configuration for:
+/// <ul>
+///   <li>
+///     Cancel button
+///   </li>
+///   <li>
+///     Skip button
+///   </li>
+/// </ul>
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull secondary;
 /// Creates and returns tutorial configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -395,6 +407,9 @@ SWIFT_CLASS("_TtC11MiSnapNFCUX21MiSnapNFCUxParameters")
 /// will be dismissed by a presenting view controller
 /// Default: <code>true</code>
 @property (nonatomic) BOOL autoDismiss;
+/// Indicates whether navigation bar should be hidden when a view controller is embedded into navigation controller
+/// Default: <code>false</code>
+@property (nonatomic) BOOL navigationBarHidden;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

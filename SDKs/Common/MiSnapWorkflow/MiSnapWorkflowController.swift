@@ -485,7 +485,7 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
                 }
             }
             
-        } else if mrzString.count == 30, mrzString.starts(with: "D1") {
+        } else if mrzString.count == 30 {
             nfcDocumentType = .dl
             return true
         }

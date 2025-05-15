@@ -8,19 +8,32 @@
 
 // Hints
 "misnap_facial_capture_status_none"                                     = "";
-"misnap_facial_capture_status_face_not_found"                           = "Centrar Una Cara En El Óvalo";
-"misnap_facial_capture_status_more_than_one_face"                       = "Solo Se Permite Un Rostro";
-"misnap_facial_capture_status_not_centered"                             = "Centrar Una Cara En El Óvalo";
-"misnap_facial_capture_status_move_closer"                              = "Acérquese";
-"misnap_facial_capture_status_too_close"                                = "Retírese";
-"misnap_facial_capture_status_face_roll"                                = "Enderece Su Rostro";
-"misnap_facial_capture_status_face_pitch"                               = "Enderece Su Rostro";
-"misnap_facial_capture_status_face_yaw"                                 = "Enderece Su Rostro";
-"misnap_facial_capture_status_hold_still"                               = "No Lo Mueva";
-"misnap_facial_capture_status_countdown"                                = "No Lo Mueva";
-"misnap_facial_capture_status_stop_smiling"                             = "Pare De Sonreir";
-"misnap_facial_capture_status_good_frame_auto"                          = "Sonría Ahora";
-"misnap_facial_capture_status_good_frame_manual"                        = "Presione El Botón Cuando Esté Listo";
+"misnap_facial_capture_status_face_not_found"                           = "Centrar una cara en el óvalo";
+"misnap_facial_capture_status_more_than_one_face"                       = "Solo se permite un rostro";
+"misnap_facial_capture_status_not_centered"                             = "Centrar una cara en el óvalo";
+"misnap_facial_capture_status_move_closer"                              = "Acércate lentamente";
+"misnap_facial_capture_status_too_close"                                = "Aléjate lentamente";
+"misnap_facial_capture_status_face_roll"                                = "Enderece su rostro";
+"misnap_facial_capture_status_face_pitch"                               = "Enderece su rostro";
+"misnap_facial_capture_status_face_yaw"                                 = "Enderece su rostro";
+"misnap_facial_capture_status_hold_still"                               = "No lo mueva";
+"misnap_facial_capture_status_countdown"                                = "No lo mueva";
+"misnap_facial_capture_status_stop_smiling"                             = "Pare de sonreir";
+"misnap_facial_capture_status_good_frame_auto"                          = "Sonría ahora";
+"misnap_facial_capture_status_good_frame_manual"                        = "Presiona el botón de disparo cuando estés listo";
+
+// Failover Reasons
+"misnap_facial_capture_status_face_not_found_timeout"                   = "Evita que algo cubra tu rostro";
+"misnap_facial_capture_status_more_than_one_face_timeout"               = "Asegúrate de que solo un rostro sea visible";
+"misnap_facial_capture_status_not_centered_timeout"                     = "Centra tu rostro en el óvalo";
+"misnap_facial_capture_status_move_closer_timeout"                      = "Acerca el dispositivo a tu rostro";
+"misnap_facial_capture_status_too_close_timeout"                        = "Aleja el dispositivo de tu rostro";
+"misnap_facial_capture_status_face_roll_timeout"                        = "Sostén el dispositivo frente a ti y mantén el rostro recta";
+"misnap_facial_capture_status_face_pitch_timeout"                       = "Sostén el dispositivo frente a ti y mantén el rostro recta";
+"misnap_facial_capture_status_face_yaw_timeout"                         = "Sostén el dispositivo frente a ti y mantén el rostro recta";
+"misnap_facial_capture_status_hold_still_timeout"                       = "Mantente quieto cuando estés dentro del óvalo";
+"misnap_facial_capture_status_countdown_timeout"                        = "Mantente quieto cuando estés dentro del óvalo";
+"misnap_facial_capture_status_stop_smiling_timeout"                     = "Deja de sonreír cuando se te indique";
 
 // Buttons
 "misnap_facial_capture_ux_tutorial_button_cancel"                       = "Cancelar";
@@ -30,29 +43,16 @@
 "misnap_facial_capture_ux_tutorial_button_retake"                       = "Volver A Tomar";
 "misnap_facial_capture_ux_tutorial_button_auto"                         = "Automática";
 "misnap_facial_capture_ux_tutorial_button_manual"                       = "Manual";
-"misnap_facial_capture_ux_tutorial_button_select_frame"                 = "Captura Manual";
+"misnap_facial_capture_ux_tutorial_button_select_frame"                 = "Botón de disparo";
 
 // Recording UI
 "misnap_facial_capture_ux_record"                                       = "(ES)Recording";
 
 // Instruction and Help tutorials
-"misnap_facial_capture_ux_tutorial_instruction_voiceover_auto_smile"    = "Por Favor: Colóquese frente a un fondo uniforme. Centre su rostro. Sonría cuando esté listo. No oculte su cara con gorras, anteojos, bufandas, cabello, sin máscaras.";
-"misnap_facial_capture_ux_tutorial_instruction_voiceover_auto_countdown"= "Por Favor: Colóquese frente a un fondo uniforme. Centre su rostro. Manténgase quieto cuando esté listo. No oculte su cara con gorras, anteojos, bufandas, cabello, sin máscaras.";
-"misnap_facial_capture_ux_tutorial_instruction_voiceover_manual"        = "Por Favor: Colóquese frente a un fondo uniforme. Centre su rostro. No oculte su cara con gorras, anteojos, bufandas, cabello, sin máscaras";
-
-"misnap_facial_capture_ux_tutorial_instruction_do"                      = "Por Favor:";
-"misnap_facial_capture_ux_tutorial_instruction_do_not"                  = "También:";
-
-"misnap_facial_capture_ux_tutorial_instruction_neutral"                 = "Colóquese frente a un fondo uniforme";
-"misnap_facial_capture_ux_tutorial_instruction_center"                  = "Centre su rostro";
-"misnap_facial_capture_ux_tutorial_instruction_smile"                   = "Sonría cuando este listo";
-"misnap_facial_capture_ux_tutorial_instruction_hold_still"              = "Manténgase quieto cuando esté listo";
-
-"misnap_facial_capture_ux_tutorial_instruction_no_hat"                  = "No oculte su cara con gorras, anteojos, bufandas, cabello";
-"misnap_facial_capture_ux_tutorial_instruction_no_mask"                 = "Sin máscaras";
+"misnap_facial_capture_ux_tutorial_instruction_center"                  = "Centra tu rostro en el óvalo";
+"misnap_facial_capture_ux_tutorial_instruction_no_hat"                  = "Evita que algo cubra tu rostro";
 
 // Timeout tutorial
-"misnap_facial_capture_ux_tutorial_timeout_voiceover"                   = "Se acabó el tiempo, no tomamos su foto… ¿Quisiera intentar de nuevo con Captura Automática o Captura Manual?";
 "misnap_facial_capture_ux_tutorial_timeout_message_1"                   = "Se acabó el tiempo, no tomamos su foto…";
 "misnap_facial_capture_ux_tutorial_timeout_message_2"                   = "Quisiera intentar de nuevo?";
 
@@ -68,6 +68,6 @@
 "misnap_facial_capture_ux_success"                                      = "Gracias,\nhemos tomado su foto";
 
 // Session interruption
-"misnap_facial_capture_ux_interruption_microphone_in_use"               = "(ES)Microphone is in use by another application";
-"misnap_facial_capture_ux_interruption_camera_in_use"                   = "(ES)Camera is in use by another application";
-"misnap_facial_capture_ux_interruption_multiple_foreground_apps"        = "(ES)Full screen is required";
+"misnap_facial_capture_ux_interruption_microphone_in_use"               = "El micrófono está siendo utilizado por otra aplicación";
+"misnap_facial_capture_ux_interruption_camera_in_use"                   = "La cámara está siendo utilizada por otra aplicación";
+"misnap_facial_capture_ux_interruption_multiple_foreground_apps"        = "Se requiere pantalla completa";

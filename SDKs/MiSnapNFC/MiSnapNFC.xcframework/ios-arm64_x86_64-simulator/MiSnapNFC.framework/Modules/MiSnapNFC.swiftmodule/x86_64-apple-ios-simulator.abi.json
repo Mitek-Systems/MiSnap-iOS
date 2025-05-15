@@ -6926,6 +6926,259 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "MiSnapNFCProgressIndicator",
+        "printedName": "MiSnapNFCProgressIndicator",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "emoji",
+            "printedName": "emoji",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapNFC.MiSnapNFCProgressIndicator.Type) -> MiSnapNFC.MiSnapNFCProgressIndicator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCProgressIndicator",
+                    "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator",
+                    "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapNFCProgressIndicator",
+                        "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator",
+                        "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator@MiSnapNFCProgressIndicatorEmoji",
+            "mangledName": "$s9MiSnapNFC0aB20NFCProgressIndicatorO5emojiyA2CmF",
+            "moduleName": "MiSnapNFC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "percentBeforeMessage",
+            "printedName": "percentBeforeMessage",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapNFC.MiSnapNFCProgressIndicator.Type) -> MiSnapNFC.MiSnapNFCProgressIndicator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCProgressIndicator",
+                    "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator",
+                    "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapNFCProgressIndicator",
+                        "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator",
+                        "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator@MiSnapNFCProgressIndicatorPercentBeforeMessage",
+            "mangledName": "$s9MiSnapNFC0aB20NFCProgressIndicatorO20percentBeforeMessageyA2CmF",
+            "moduleName": "MiSnapNFC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "percentAfterMessage",
+            "printedName": "percentAfterMessage",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapNFC.MiSnapNFCProgressIndicator.Type) -> MiSnapNFC.MiSnapNFCProgressIndicator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCProgressIndicator",
+                    "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator",
+                    "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapNFCProgressIndicator",
+                        "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator",
+                        "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator@MiSnapNFCProgressIndicatorPercentAfterMessage",
+            "mangledName": "$s9MiSnapNFC0aB20NFCProgressIndicatorO19percentAfterMessageyA2CmF",
+            "moduleName": "MiSnapNFC",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCProgressIndicator",
+                    "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator",
+                    "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9MiSnapNFC0aB20NFCProgressIndicatorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s9MiSnapNFC0aB20NFCProgressIndicatorO8rawValueACSgSi_tcfc",
+            "moduleName": "MiSnapNFC",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9MiSnapNFC0aB20NFCProgressIndicatorO8rawValueSivp",
+            "mangledName": "$s9MiSnapNFC0aB20NFCProgressIndicatorO8rawValueSivp",
+            "moduleName": "MiSnapNFC",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MiSnapNFC0aB20NFCProgressIndicatorO8rawValueSivg",
+                "mangledName": "$s9MiSnapNFC0aB20NFCProgressIndicatorO8rawValueSivg",
+                "moduleName": "MiSnapNFC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator",
+        "mangledName": "$s9MiSnapNFC0aB20NFCProgressIndicatorO",
+        "moduleName": "MiSnapNFC",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "MiSnapNFCParameters",
         "printedName": "MiSnapNFCParameters",
         "children": [
@@ -7587,6 +7840,100 @@
                 "declKind": "Accessor",
                 "usr": "s:9MiSnapNFC0aB13NFCParametersC12skipPortraitSbvM",
                 "mangledName": "$s9MiSnapNFC0aB13NFCParametersC12skipPortraitSbvM",
+                "moduleName": "MiSnapNFC",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "progressIndicator",
+            "printedName": "progressIndicator",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapNFCProgressIndicator",
+                "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator",
+                "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapNFC@objc(cs)MiSnapNFCParameters(py)progressIndicator",
+            "mangledName": "$s9MiSnapNFC0aB13NFCParametersC17progressIndicatorAA0ab11NFCProgressF0Ovp",
+            "moduleName": "MiSnapNFC",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCProgressIndicator",
+                    "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator",
+                    "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFC@objc(cs)MiSnapNFCParameters(im)progressIndicator",
+                "mangledName": "$s9MiSnapNFC0aB13NFCParametersC17progressIndicatorAA0ab11NFCProgressF0Ovg",
+                "moduleName": "MiSnapNFC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapNFCProgressIndicator",
+                    "printedName": "MiSnapNFC.MiSnapNFCProgressIndicator",
+                    "usr": "c:@M@MiSnapNFC@E@MiSnapNFCProgressIndicator"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapNFC@objc(cs)MiSnapNFCParameters(im)setProgressIndicator:",
+                "mangledName": "$s9MiSnapNFC0aB13NFCParametersC17progressIndicatorAA0ab11NFCProgressF0Ovs",
+                "moduleName": "MiSnapNFC",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9MiSnapNFC0aB13NFCParametersC17progressIndicatorAA0ab11NFCProgressF0OvM",
+                "mangledName": "$s9MiSnapNFC0aB13NFCParametersC17progressIndicatorAA0ab11NFCProgressF0OvM",
                 "moduleName": "MiSnapNFC",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -13081,764 +13428,799 @@
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
+      "kind": "StringLiteral",
+      "offset": 16291,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 16333,
+      "offset": 16392,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 16430,
+      "offset": 16492,
       "length": 38,
       "value": "\"misnap_nfc_sdk_reading_progress_full\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 16575,
+      "offset": 16641,
       "length": 39,
       "value": "\"misnap_nfc_sdk_reading_progress_empty\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 16624,
+      "offset": 16690,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 16672,
-      "length": 40,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
-      "kind": "StringLiteral",
-      "offset": 16694,
-      "length": 1,
-      "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
-      "kind": "StringLiteral",
-      "offset": 16703,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
-      "kind": "StringLiteral",
-      "offset": 16711,
-      "length": 1,
-      "value": "\"\""
+      "offset": 16733,
+      "length": 6,
+      "value": "\"\n\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 16887,
+      "offset": 16823,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16829,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
+      "kind": "StringLiteral",
+      "offset": 16854,
+      "length": 3,
+      "value": "\"(\""
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
+      "kind": "StringLiteral",
+      "offset": 16872,
+      "length": 5,
+      "value": "\"%) \""
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16961,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16967,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
+      "kind": "StringLiteral",
+      "offset": 17008,
+      "length": 4,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
+      "kind": "StringLiteral",
+      "offset": 17027,
+      "length": 4,
+      "value": "\"%)\""
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17276,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 17176,
+      "offset": 17565,
       "length": 38,
       "value": "\"misnap_nfc_sdk_error_invalid_mrz_key\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 17487,
+      "offset": 17876,
       "length": 37,
       "value": "\"misnap_nfc_sdk_info_started_reading\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 17633,
+      "offset": 18022,
       "length": 37,
       "value": "\"misnap_nfc_sdk_info_started_reading\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 19355,
+      "offset": 19744,
       "length": 38,
       "value": "\"misnap_nfc_sdk_info_finished_reading\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 19543,
+      "offset": 19932,
       "length": 38,
       "value": "\"misnap_nfc_sdk_info_finished_reading\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 19968,
+      "offset": 20357,
       "length": 11,
       "value": "\"SUPPORTED\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 20011,
+      "offset": 20400,
       "length": 40,
       "value": "\"\nGetting Active Authentication inputs\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 20103,
+      "offset": 20492,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 20137,
+      "offset": 20526,
       "length": 40,
       "value": "\"\tChallenge: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 20176,
+      "offset": 20565,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 20495,
+      "offset": 20884,
       "length": 69,
       "value": "\"\tSignature: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 20534,
+      "offset": 20923,
       "length": 1,
       "value": "\" | Length: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 20563,
+      "offset": 20952,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 20798,
+      "offset": 21187,
       "length": 80,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 20856,
+      "offset": 21245,
       "length": 1,
       "value": "\": AA - \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 20877,
+      "offset": 21266,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 21647,
+      "offset": 22036,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 21706,
+      "offset": 22095,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 21710,
+      "offset": 22099,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 21768,
+      "offset": 22157,
       "length": 5,
       "value": "\"nld\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 21787,
+      "offset": 22176,
       "length": 5,
       "value": "\"bgr\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 21806,
+      "offset": 22195,
       "length": 5,
       "value": "\"ita\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 21825,
+      "offset": 22214,
       "length": 5,
       "value": "\"swe\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 21844,
+      "offset": 22233,
       "length": 5,
       "value": "\"rou\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 21859,
+      "offset": 22248,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 21892,
+      "offset": 22281,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 22196,
+      "offset": 22585,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 22229,
+      "offset": 22618,
       "length": 24,
       "value": "\"\nReading \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 22252,
+      "offset": 22641,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 22562,
+      "offset": 22951,
       "length": 29,
       "value": "\"misnap_nfc_sdk_info_reading\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 22595,
+      "offset": 22984,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
-      "kind": "StringLiteral",
-      "offset": 22726,
-      "length": 4,
-      "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 22848,
+      "offset": 23230,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 23053,
+      "offset": 23416,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 23132,
+      "offset": 23495,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 24939,
+      "offset": 25302,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 25377,
+      "offset": 25740,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 25675,
+      "offset": 26038,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 26223,
+      "offset": 26586,
       "length": 11,
       "value": "\"supported\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 26238,
+      "offset": 26601,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "Array",
-      "offset": 26298,
+      "offset": 26661,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 26622,
+      "offset": 26985,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 26855,
+      "offset": 27218,
       "length": 29,
       "value": "\"INCOMPATIBLE_ENCRYPTION_ALG\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27014,
+      "offset": 27377,
       "length": 18,
       "value": "\"DG_14_CA_MISSING\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27134,
+      "offset": 27497,
       "length": 23,
       "value": "\"AUTHENTICATION_FAILED\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27515,
+      "offset": 27878,
       "length": 11,
       "value": "\"supported\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 27530,
+      "offset": 27893,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "Array",
-      "offset": 27586,
+      "offset": 27949,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27667,
+      "offset": 28030,
       "length": 17,
       "value": "\"NOT_IMPLEMENTED\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 27813,
+      "offset": 28176,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 27826,
+      "offset": 28189,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28047,
+      "offset": 28410,
       "length": 27,
       "value": "\"CA error - \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28073,
+      "offset": 28436,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28168,
+      "offset": 28531,
       "length": 80,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28226,
+      "offset": 28589,
       "length": 1,
       "value": "\": CA - \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28247,
+      "offset": 28610,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28369,
+      "offset": 28732,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 28382,
+      "offset": 28745,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28495,
+      "offset": 28858,
       "length": 9,
       "value": "\"reasons\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28784,
+      "offset": 29147,
       "length": 33,
       "value": "\"TagError reading tag - \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28816,
+      "offset": 29179,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28919,
+      "offset": 29282,
       "length": 95,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28977,
+      "offset": 29340,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 28996,
+      "offset": 29359,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 29013,
+      "offset": 29376,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 29095,
+      "offset": 29458,
       "length": 41,
       "value": "\"Unexpected error reading tag - \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 29135,
+      "offset": 29498,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 29303,
+      "offset": 29666,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30258,
+      "offset": 30621,
       "length": 90,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30316,
+      "offset": 30679,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30335,
+      "offset": 30698,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30347,
+      "offset": 30710,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30383,
+      "offset": 30746,
       "length": 31,
       "value": "\"Security status not satisfied\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30428,
+      "offset": 30791,
       "length": 21,
       "value": "\"Class not supported\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30706,
+      "offset": 31069,
       "length": 16,
       "value": "\"File not found\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30793,
+      "offset": 31156,
       "length": 4,
       "value": "\"dg\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 30927,
+      "offset": 31290,
       "length": 11,
       "value": "\"supported\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 30942,
+      "offset": 31305,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 31021,
+      "offset": 31384,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 31034,
+      "offset": 31397,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 31114,
+      "offset": 31477,
       "length": 9,
       "value": "\"reasons\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "Array",
-      "offset": 31127,
+      "offset": 31490,
       "length": 17,
       "value": "[\"DG_14_MISSING\"]"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 31357,
+      "offset": 31720,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 31770,
+      "offset": 32133,
       "length": 27,
       "value": "\"SM data objects incorrect\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 31999,
+      "offset": 32362,
       "length": 14,
       "value": "\"Wrong length\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 32035,
+      "offset": 32398,
       "length": 13,
       "value": "\"End of file\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 32403,
+      "offset": 32766,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 32526,
+      "offset": 32889,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 32801,
+      "offset": 33164,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 33725,
+      "offset": 34088,
       "length": 38,
       "value": "\"misnap_nfc_sdk_error_connection_lost\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 33825,
+      "offset": 34188,
       "length": 35,
       "value": "\"misnap_nfc_sdk_error_system_error\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 34392,
+      "offset": 34755,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34619,
+      "offset": 34982,
       "length": 72,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34662,
+      "offset": 35025,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34690,
+      "offset": 35053,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34752,
+      "offset": 35115,
       "length": 87,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34795,
+      "offset": 35158,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34809,
+      "offset": 35172,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "StringLiteral",
-      "offset": 34838,
+      "offset": 35201,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 34974,
+      "offset": 35337,
       "length": 5,
       "value": "false"
     },
@@ -14999,526 +15381,512 @@
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
-      "kind": "StringLiteral",
-      "offset": 2593,
+      "kind": "IntegerLiteral",
+      "offset": 2847,
       "length": 2,
-      "value": "\"\""
+      "value": "30"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 2614,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
-      "kind": "StringLiteral",
-      "offset": 2636,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
-      "kind": "StringLiteral",
-      "offset": 2752,
+      "offset": 2993,
       "length": 6,
       "value": "\"geos\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 2862,
+      "offset": 3103,
       "length": 46,
       "value": "\"AxnqzyX3\/H0VgtevAzqk3VGGHRdIQWMK6UK4j3Dx3+4=\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3374,
+      "offset": 3615,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3378,
+      "offset": 3619,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 3436,
+      "offset": 3677,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 3447,
+      "offset": 3688,
       "length": 3,
       "value": "\"O\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3492,
+      "offset": 3733,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3496,
+      "offset": 3737,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 3536,
+      "offset": 3777,
       "length": 46,
       "value": "\"Determining whether a document is electronic\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 3621,
+      "offset": 3862,
       "length": 22,
       "value": "\"Geo code: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 3642,
+      "offset": 3883,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 3682,
+      "offset": 3923,
       "length": 36,
       "value": "\"Document type code: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 3717,
+      "offset": 3958,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 3898,
+      "offset": 4139,
       "length": 3,
       "value": "\"p\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 3930,
+      "offset": 4171,
       "length": 5,
       "value": "\"mex\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 3980,
+      "offset": 4221,
       "length": 3,
       "value": "\"n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 4200,
+      "offset": 4441,
       "length": 3,
       "value": "\"i\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 4232,
+      "offset": 4473,
       "length": 5,
       "value": "\"hun\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 4279,
+      "offset": 4520,
       "length": 3,
       "value": "\"e\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 4606,
+      "offset": 4847,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "BooleanLiteral",
-      "offset": 4709,
+      "offset": 4950,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 4839,
+      "offset": 5080,
       "length": 24,
       "value": "\"Date of expiry: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 4862,
+      "offset": 5103,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 5066,
+      "offset": 5307,
       "length": 23,
       "value": "\"Date of birth: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 5088,
+      "offset": 5329,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 6199,
+      "offset": 6440,
       "length": 41,
       "value": "\"Theoretical date of issue: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 6239,
+      "offset": 6480,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 6489,
+      "offset": 6730,
       "length": 39,
       "value": "\"Error:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 6527,
+      "offset": 6768,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 6976,
+      "offset": 7217,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 6981,
+      "offset": 7222,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 7012,
+      "offset": 7253,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 7216,
+      "offset": 7457,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 7243,
+      "offset": 7484,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 7319,
+      "offset": 7560,
       "length": 6,
       "value": "-10000"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 7469,
+      "offset": 7710,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 7541,
+      "offset": 7782,
       "length": 3,
       "value": "\"+\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 7920,
+      "offset": 8161,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 7986,
+      "offset": 8227,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8037,
+      "offset": 8278,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8045,
+      "offset": 8286,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8094,
+      "offset": 8335,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8102,
+      "offset": 8343,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 8150,
+      "offset": 8391,
       "length": 3,
       "value": "\"+\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8204,
+      "offset": 8445,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8228,
+      "offset": 8469,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8235,
+      "offset": 8476,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8281,
+      "offset": 8522,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8285,
+      "offset": 8526,
       "length": 5,
       "value": "10000"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8293,
+      "offset": 8534,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8353,
+      "offset": 8594,
       "length": 6,
       "value": "-10000"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 8398,
+      "offset": 8639,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 8469,
+      "offset": 8710,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8524,
+      "offset": 8765,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8532,
+      "offset": 8773,
       "length": 5,
       "value": "-1000"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8585,
+      "offset": 8826,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8593,
+      "offset": 8834,
       "length": 5,
       "value": "-1000"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8633,
+      "offset": 8874,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8707,
+      "offset": 8948,
       "length": 5,
       "value": "-1000"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 8746,
+      "offset": 8987,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 8912,
+      "offset": 9153,
       "length": 121,
       "value": "\"Theoretical issue date: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 8949,
+      "offset": 9190,
       "length": 1,
       "value": "\" | with validity years \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 8988,
+      "offset": 9229,
       "length": 1,
       "value": "\" | for range (\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 9015,
+      "offset": 9256,
       "length": 3,
       "value": "\"...\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 9031,
+      "offset": 9272,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 9293,
+      "offset": 9534,
       "length": 32,
       "value": "\"Age at that issue date: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 9324,
+      "offset": 9565,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 9368,
+      "offset": 9609,
       "length": 95,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 9382,
+      "offset": 9623,
       "length": 3,
       "value": "\"...\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 9398,
+      "offset": 9639,
       "length": 1,
       "value": "\".contains(\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 9414,
+      "offset": 9655,
       "length": 1,
       "value": "\") ==> \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "StringLiteral",
-      "offset": 9462,
+      "offset": 9703,
       "length": 2,
       "value": "\"\""
     },
@@ -17289,532 +17657,546 @@
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 19222,
-      "length": 3,
-      "value": "\"p\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
-      "kind": "StringLiteral",
-      "offset": 19279,
-      "length": 5,
-      "value": "\"nld\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
-      "kind": "StringLiteral",
-      "offset": 19377,
+      "offset": 19165,
       "length": 22,
       "value": "\"OptionalDataRedacted\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "BooleanLiteral",
-      "offset": 19403,
+      "offset": 19191,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 19442,
+      "offset": 19230,
       "length": 22,
       "value": "\"OptionalDataRedacted\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "BooleanLiteral",
-      "offset": 19468,
+      "offset": 19256,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "Dictionary",
-      "offset": 19920,
+      "offset": 19708,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 19969,
+      "offset": 19757,
       "length": 11,
       "value": "\"challenge\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 20052,
+      "offset": 19840,
       "length": 11,
       "value": "\"signature\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 20296,
+      "offset": 20084,
       "length": 16,
       "value": "\"ecdsaPublicKey\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 20402,
+      "offset": 20190,
       "length": 17,
       "value": "\"activeAuthInput\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "Dictionary",
-      "offset": 21071,
+      "offset": 20859,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "Dictionary",
-      "offset": 21328,
+      "offset": 21116,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 21641,
+      "offset": 21429,
       "length": 5,
       "value": "\"com\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 21759,
+      "offset": 21547,
       "length": 5,
       "value": "\"sod\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 21875,
+      "offset": 21663,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 21915,
+      "offset": 21703,
       "length": 4,
       "value": "\"53\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 22461,
+      "offset": 22249,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 22522,
+      "offset": 22310,
       "length": 12,
       "value": "\"dataGroups\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 22662,
+      "offset": 22450,
       "length": 12,
       "value": "\"dataFormat\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 22678,
+      "offset": 22466,
       "length": 11,
       "value": "\"icao_9303\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 22751,
+      "offset": 22539,
       "length": 12,
       "value": "\"dataFormat\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 22767,
+      "offset": 22555,
       "length": 8,
       "value": "\"eu_edl\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 22839,
+      "offset": 22627,
       "length": 12,
       "value": "\"dataFormat\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 22855,
+      "offset": 22643,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 23243,
+      "offset": 23031,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "Dictionary",
-      "offset": 23520,
+      "offset": 23308,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
-      "kind": "Dictionary",
-      "offset": 24380,
-      "length": 3,
-      "value": "[]"
+      "kind": "BooleanLiteral",
+      "offset": 24205,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 24412,
+      "offset": 24244,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 24616,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
-      "kind": "StringLiteral",
-      "offset": 24826,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
-      "kind": "StringLiteral",
-      "offset": 24862,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
-      "kind": "StringLiteral",
-      "offset": 25056,
-      "length": 3,
-      "value": "\"p\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
-      "kind": "StringLiteral",
-      "offset": 25074,
+      "offset": 24455,
       "length": 5,
       "value": "\"nld\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 24475,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 25211,
+      "offset": 24519,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
+      "kind": "Array",
+      "offset": 24683,
+      "length": 18,
+      "value": "[\"ir\", \"it\", \"iw\"]"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 24855,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
+      "kind": "Array",
+      "offset": 24909,
+      "length": 10,
+      "value": "[\"i\", \"p\"]"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
+      "kind": "Dictionary",
+      "offset": 25264,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
+      "kind": "StringLiteral",
+      "offset": 25564,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
+      "kind": "StringLiteral",
+      "offset": 25600,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
+      "kind": "StringLiteral",
+      "offset": 25860,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 25464,
+      "offset": 26113,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 25798,
+      "offset": 26447,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 28435,
+      "offset": 29084,
       "length": 10,
       "value": "\"portrait\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 28591,
+      "offset": 29240,
       "length": 6,
       "value": "\"mibi\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 29603,
+      "offset": 30252,
       "length": 16,
       "value": "\"chipAuthOutput\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 30026,
+      "offset": 30675,
       "length": 14,
       "value": "\"DocumentType\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 30131,
+      "offset": 30780,
       "length": 14,
       "value": "\"DocumentCode\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 30233,
+      "offset": 30882,
       "length": 16,
       "value": "\"PersonalNumber\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 30337,
+      "offset": 30986,
       "length": 16,
       "value": "\"DocumentNumber\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 30436,
+      "offset": 31085,
       "length": 11,
       "value": "\"GivenName\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 30527,
+      "offset": 31176,
       "length": 9,
       "value": "\"Surname\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 30626,
+      "offset": 31275,
       "length": 18,
       "value": "\"IssuingAuthority\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 30732,
+      "offset": 31381,
       "length": 16,
       "value": "\"IssuingCountry\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 30831,
+      "offset": 31480,
       "length": 11,
       "value": "\"IssueDate\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 30930,
+      "offset": 31579,
       "length": 12,
       "value": "\"ExpiryDate\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 31028,
+      "offset": 31677,
       "length": 13,
       "value": "\"DateOfBirth\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 31128,
+      "offset": 31777,
       "length": 14,
       "value": "\"PlaceOfBirth\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 31218,
+      "offset": 31867,
       "length": 5,
       "value": "\"Sex\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 31307,
+      "offset": 31956,
       "length": 12,
       "value": "\"OtherNames\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 31399,
+      "offset": 32048,
       "length": 9,
       "value": "\"Address\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 31497,
+      "offset": 32146,
       "length": 11,
       "value": "\"Telephone\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 31591,
+      "offset": 32240,
       "length": 12,
       "value": "\"Profession\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 31681,
+      "offset": 32330,
       "length": 7,
       "value": "\"Title\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 31777,
+      "offset": 32426,
       "length": 17,
       "value": "\"PersonalSummary\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 31896,
+      "offset": 32545,
       "length": 23,
       "value": "\"OtherTravelDocNumbers\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 32011,
+      "offset": 32660,
       "length": 20,
       "value": "\"CustodyInformation\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 32115,
+      "offset": 32764,
       "length": 13,
       "value": "\"Nationality\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 32216,
+      "offset": 32865,
       "length": 16,
       "value": "\"LicenseClasses\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 32318,
+      "offset": 32967,
       "length": 14,
       "value": "\"LicenseClass\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 32429,
+      "offset": 33078,
       "length": 23,
       "value": "\"LicenseClassIssueDate\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 32554,
+      "offset": 33203,
       "length": 24,
       "value": "\"LicenseClassExpiryDate\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 32654,
+      "offset": 33303,
       "length": 5,
       "value": "\"MRZ\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 32758,
+      "offset": 33407,
       "length": 16,
       "value": "\"ReadDataGroups\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 32857,
+      "offset": 33506,
       "length": 11,
       "value": "\"FaceImage\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 32978,
+      "offset": 33627,
       "length": 18,
       "value": "\"EncodedFaceImage\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 33084,
+      "offset": 33733,
       "length": 16,
       "value": "\"SignatureImage\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 33194,
+      "offset": 33843,
       "length": 22,
       "value": "\"AuthenticationInputs\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 33311,
+      "offset": 33960,
       "length": 23,
       "value": "\"AuthenticationOutputs\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 33426,
+      "offset": 34075,
       "length": 20,
       "value": "\"InvalidationReason\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 33530,
+      "offset": 34179,
       "length": 10,
       "value": "\"MibiData\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCData.swift",
       "kind": "StringLiteral",
-      "offset": 33635,
+      "offset": 34284,
       "length": 19,
       "value": "\"RequestDictionary\""
     },
@@ -18317,169 +18699,197 @@
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 524,
+      "length": 20,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 601,
+      "length": 19,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 524,
+      "length": 20,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
+      "kind": "IntegerLiteral",
+      "offset": 601,
+      "length": 19,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 476,
+      "offset": 911,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 509,
+      "offset": 944,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 546,
+      "offset": 981,
       "length": 4,
       "value": "59.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 579,
+      "offset": 1014,
       "length": 4,
       "value": "59.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 427,
+      "offset": 862,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 755,
+      "offset": 1190,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 962,
+      "offset": 1397,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "FloatLiteral",
-      "offset": 1100,
+      "offset": 1535,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 1669,
+      "offset": 2104,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 1805,
+      "offset": 2436,
       "length": 24,
       "value": "\"MiSnapNFCParameters:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 1845,
+      "offset": 2476,
       "length": 45,
       "value": "\"\ttimeout: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 1887,
+      "offset": 2518,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 1906,
+      "offset": 2537,
       "length": 43,
       "value": "\"\tskipCA: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 1946,
+      "offset": 2577,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 1965,
+      "offset": 2596,
       "length": 87,
       "value": "\"\toptionalDataRedactionEnabled: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 2049,
+      "offset": 2680,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 2068,
+      "offset": 2699,
       "length": 67,
       "value": "\"\trestartPollingTime: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 2132,
+      "offset": 2763,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 2151,
+      "offset": 2782,
       "length": 102,
       "value": "\"\tlogging: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 2229,
+      "offset": 2860,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 2241,
+      "offset": 2872,
       "length": 6,
       "value": "\"\t\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 2250,
+      "offset": 2881,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 2269,
+      "offset": 2900,
       "length": 18,
       "value": "\"\tskipPortrait: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCParameters.swift",
       "kind": "StringLiteral",
-      "offset": 2325,
+      "offset": 2956,
       "length": 4,
       "value": "\"\n\""
     },

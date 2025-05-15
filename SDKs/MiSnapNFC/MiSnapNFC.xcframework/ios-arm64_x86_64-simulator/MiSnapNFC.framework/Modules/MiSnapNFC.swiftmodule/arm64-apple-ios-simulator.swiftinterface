@@ -205,6 +205,16 @@ public enum MiSnapNFCKey {
   public static let mibi: Swift.String
   public static let requestDictionary: Swift.String
 }
+@objc public enum MiSnapNFCProgressIndicator : Swift.Int {
+  case emoji
+  case percentBeforeMessage
+  case percentAfterMessage
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc public class MiSnapNFCParameters : ObjectiveC.NSObject {
   @objc public var timeout: Swift.Double {
     @objc get
@@ -217,6 +227,7 @@ public enum MiSnapNFCKey {
   @available(*, deprecated, message: "Call `logging.level` instead")
   @objc public var logLevel: MiSnapLogLevel
   @objc public var skipPortrait: Swift.Bool
+  @objc public var progressIndicator: MiSnapNFCProgressIndicator
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -232,3 +243,6 @@ extension MiSnapNFCInvalidationReason : Swift.RawRepresentable {}
 extension MiSnapNFCChipLocation : Swift.Equatable {}
 extension MiSnapNFCChipLocation : Swift.Hashable {}
 extension MiSnapNFCChipLocation : Swift.RawRepresentable {}
+extension MiSnapNFCProgressIndicator : Swift.Equatable {}
+extension MiSnapNFCProgressIndicator : Swift.Hashable {}
+extension MiSnapNFCProgressIndicator : Swift.RawRepresentable {}

@@ -10,6 +10,7 @@
 * [System Requirements](#system-requirements)
 * [License Key](#license-key)
 * [Integration Guides](#integration-guides)
+* [Migration Guide](#migration-guide)
 * [Customization Guides](#customization-guides)
 * [Workflow](#workflow)
 * [SDKs Sizes](#sdks-sizes)
@@ -73,6 +74,12 @@ Refer to [Integration Guides](#integration-guides) for setting the license key i
 
 - - -
 
+# Migration Guide
+
+It is recommended to use [this migration guide](Docs/Guides/Common/migration_guide.md) for the integrators upgrading from the earlier versions.
+
+- - -
+
 # Customization Guides
 
 * [MiSnap](Docs/Guides/MiSnap/customization_guide.md)
@@ -103,15 +110,15 @@ See [this guide](Docs/Guides/Common/workflow.md) for `MiSnapWorkflow` integratio
 | Component                        | Compressed, MB | Uncompressed, MB |
 | :------------------------------- | :------------: | :--------------: |
 | MiSnap                           |  1.50          |  3.80            |
-| MiSnap + MiSnapUX                |  2.40          |  5.60            |
+| MiSnap + MiSnapUX                |  1.90          |  5.10            |
 | NFC                              |  1.30          |  3.00            |
-| NFC + NFCUX                      |  1.70          |  3.90            |
-| FacialCapture                    |  0.24          |  0.76            |
-| FacialCapture + FacialCaptureUX  |  0.61          |  1.70            |
+| NFC + NFCUX                      |  1.80          |  4.20            |
+| FacialCapture                    |  0.25          |  0.78            |
+| FacialCapture + FacialCaptureUX  |  0.63          |  1.90            |
 | VoiceCapture                     |  0.95          |  2.40            |
-| VoiceCapture + VoiceCaptureUX    |  1.20          |  3.20            |
+| VoiceCapture + VoiceCaptureUX    |  1.30          |  3.50            |
 | All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture)                   |  3.50          |  8.60            |
-| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  5.00          |  11.60           |
+| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  4.40          |  10.90           |
 | IDLiveFaceIAD (optional)    |  0.73          |  2.80            |
 </center>
 

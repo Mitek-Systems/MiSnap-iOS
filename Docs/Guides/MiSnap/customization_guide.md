@@ -8,12 +8,11 @@ Please refer to [MiSnapCustomizationSampleApp](../../../Examples/Apps/MiSnap/MiS
 * [Overview](#overview)
 * [UX Parameters](#ux-parameters)
 * [Localization](#localization)
-* [Image assets](#image-assets)
 * [Tutorial screens](#tutorial-screens)
-    * [Introductory Instruction Screen](#introductory-instruction-screen)
-    * [Review Screen](#review-screen)
-    * [Help and Timeout Screens](#help-and-timeout-screens)
-* [Capture Screen](#capture-screen)
+    * [Customizing default tutorial screens](#customizing-default-tutorial-screens)
+        * [Graphic assets](#graphic-assets)
+    * [Implementing custom tutorial screens](#implementing-custom-tutorial-screens)
+* [Session Screen](#session-screen)
     * [Cancel Button](#cancel-button)
     * [Help Button](#help-button)
     * [Torch Button](#torch-button)
@@ -109,23 +108,9 @@ let template = MiSnapConfiguration()
     }
 ```
 
-# Image Assets
-
-Go to a place where you copied images into during integration process and replace existing resources with new ones but make sure to keep the same names.
-
-By default, it's expected that images are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps:
-
-Create a template configuration (if it doesn't exist) and chain `.withCustomAssetLocation`. Refer to a snippet below.
-
-```Swift
-let template = MiSnapConfiguration()
-    .withCustomAssetLocation { assetLocation in
-        assetLocation.bundle = // Your bundle where image assets are located
-    }
-```
-
 # Tutorial screens
 
+## Customizing default tutorial screens
 From the SDK perspective introductory instruction, help, timeout and review screens are the same instruction screen with just different messages and/or UI elements.
 
 ```Swift
@@ -140,22 +125,119 @@ where,
 
 For all available tutorial customization options see this [API reference](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/main/Docs/API/MiSnap/MiSnapUX/Classes/MiSnapTutorialConfiguration.html).
 
-## Introductory Instruction Screen
+### Graphic assets
 
-By default, an introductory instruction screen is presented.
+#### Default graphic assets
+`MiSnapUX` comes with built-in default tutorial graphics (`UIView`s) that are very small in size and allow colors customization. We ecncourage using these default assets. Especially, if keeping application size minimal is a high priority for you. 
 
-If you prefer to use your own introductory instruction screen or would like not to show it at all (not recommended) use the following snippet:
+For new integrators there are no additional steps to start using them. For integrators upgrading from 5.7.0 or older, remove MiSnap-related JPGs/PNGs from your project.
+
+#### Custom graphic assets
+For new integrators that would like to use their own custom JPGs/PNGs for tutorials add JPGs/PNGs naming them according to a table below. Supported extensions - `jpg`, `jpeg`, `png`, `JPG`, `JPEG`, `PNG`
+
+<center>
+
+| Image name                              | Description    |
+| :-----                                  | :-----      |
+| misnap_tutorial_id                      | Used for `.idFront` in `.deviceLandscapeGuideLandscape` orientation mode     |
+| misnap_tutorial_id_portrait             | Used for `.idFront` in `.devicePortraitGuidePortrait` orientation mode       |
+| misnap_tutorial_id_portrait_2           | Used for `.idFront` in `.devicePortraitGuideLandscape` orientation mode      |
+| misnap_tutorial_id_back                 | Used for `.idBack` in `.deviceLandscapeGuideLandscape` orientation mode      |
+| misnap_tutorial_id_back_portrait        | Used for `.idBack` in `.devicePortraitGuidePortrait` orientation mode        |
+| misnap_tutorial_id_back_portrait_2      | Used for `.idBack` in `.devicePortraitGuideLandscape` orientation mode       |
+| misnap_tutorial_passport                | Used for `.passport` in `.deviceLandscapeGuideLandscape` orientation mode    |
+| misnap_tutorial_passport_portrait       | Used for `.passport` in `.devicePortraitGuidePortrait` orientation mode      |
+| misnap_tutorial_passport_portrait_2     | Used for `.passport` in `.devicePortraitGuideLandscape` orientation mode     |
+| misnap_tutorial_passport_qr             | Used for Passport QR in `.deviceLandscapeGuideLandscape` orientation mode    |
+| misnap_tutorial_passport_qr_portrait    | Used for Passport QR in `.devicePortraitGuidePortrait` orientation mode      |
+| misnap_tutorial_passport_qr_portrait_2  | Used for Passport QR in `.devicePortraitGuideLandscape` orientation mode     |
+| misnap_tutorial_check_front             | Used for `.checkFront` in `.deviceLandscapeGuideLandscape` orientation mode  |
+| misnap_tutorial_check_front_portrait    | Used for `.checkFront` in `.devicePortraitGuidePortrait` orientation mode    |
+| misnap_tutorial_check_front_portrait_2  | Used for `.checkFront` in `.devicePortraitGuideLandscape` orientation mode   |
+| misnap_tutorial_check_back              | Used for `.checkBack` in `.deviceLandscapeGuideLandscape` orientation mode   |
+| misnap_tutorial_check_back_portrait     | Used for `.checkBack` in `.devicePortraitGuidePortrait` orientation mode     |
+| misnap_tutorial_check_back_portrait_2   | Used for `.checkBack` in `.devicePortraitGuideLandscape` orientation mode    |
+| misnap_tutorial_generic                 | Used for `.generic` in `.deviceLandscapeGuideLandscape` orientation mode     |
+| misnap_tutorial_generic_portrait        | Used for `.generic` in `.devicePortraitGuidePortrait` orientation mode       |
+| misnap_tutorial_generic_portrait_2      | Used for `.generic` in `.devicePortraitGuideLandscape` orientation mode      |
+
+</center>
+
+For integrators upgrading from 5.7.0 or older that already used JPGs/PNGs, there are no additional steps as `MiSnapUX` first queries JPGs/PNGs based on the names in the table above and only falls back to default `UIView`s if they are not available.
+
+By default, it's expected that images are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps:
+
+Create a template configuration (if it doesn't exist) and chain `.withCustomAssetLocation`. Refer to a snippet below.
+
+```Swift
+let template = MiSnapConfiguration()
+    .withCustomAssetLocation { assetLocation in
+        assetLocation.bundle = // Your bundle where image assets are located
+    }
+```
+
+## Implementing custom tutorial screens
+
+### 1. Implement custom Introductory instruction, Help, Timeout, and Review screens
+Use [CustomTutorialViewController as a starter](../../../Examples/Snippets/MiSnap/CustomTutorialViewController.swift).
+
+### 2. Disable default tutorial screens
 
 ```Swift
 let template = MiSnapConfiguration()
     .withCustomUxParameters { uxParameters in
-        uxParameters.showIntroductoryInstructionScreen = false
+        uxParameters.useCustomTutorials = true
+    }
+```
+### 3. Present custom tutorial screens
+
+After disabling default tutorial screens subscribe to `MiSnapViewControllerDelegate`'s optional callback `miSnapCustomTutorial(_:,:,:,:,:)` and present your custom screens.
+
+```Swift
+func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType,
+                          tutorialMode: MiSnapUxTutorialMode,
+                          mode: MiSnapMode,
+                          statuses: [NSNumber]?,
+                          image: UIImage?) {
+    guard let misnapVC = misnapVC else { return }
+    
+    let tutorialVC = CustomTutorialViewController(for: documentType,
+                                                  tutorialMode: tutorialMode,
+                                                  mode: mode,
+                                                  statuses: statuses,
+                                                  image: image,
+                                                  delegate: misnapVC)
+    misnapVC.present(tutorialVC, animated: true)
+}
+```
+
+### 4. (Optional) Introductory instruction mode
+
+By default, an introductory instruction screen is presented.
+
+If you prefer not to show it at all (not recommended) use the following snippet:
+
+```Swift
+let template = MiSnapConfiguration()
+    .withCustomUxParameters { uxParameters in
+        uxParameters.instructionMode = .noInstruction
     }
 ```
 
-## Review Screen
+### 5. (Optional) Review mode
 
-By default, a review screen is presented only after a session is completed in Manual mode. If you'd like to present it for both Auto and Manual sessions use the following snippet:
+By default, a review screen is presented only after a session is completed in Manual mode and there's one or more quality issues with an image. 
+
+If you'd like to present it for Manual only sessions use the following snippet:
+
+```Swift
+let template = MiSnapConfiguration()
+    .withCustomUxParameters { uxParameters in
+        uxParameters.reviewMode = .manualOnly
+    }
+```
+
+If you'd like to present it for both Auto and Manual sessions (not recommended) use the following snippet:
 
 ```Swift
 let template = MiSnapConfiguration()
@@ -164,52 +246,16 @@ let template = MiSnapConfiguration()
     }
 ```
 
-If you prefer to use your own review screen or would like not to show it at all (only recommended for legal purposes) use the following snippet:
+If you prefer not to show it at all (only recommended for legal purposes) use the following snippet:
 
 ```Swift
 let template = MiSnapConfiguration()
     .withCustomUxParameters { uxParameters in
-        uxParameters.showReviewScreen = false
+        uxParameters.reviewMode = .noReview
     }
 ```
 
-## Help and Timeout Screens
-
-A default Help screen is presented when a user presses Help button and a default Timeout screen is presented when an Auto session times out. If you'd like to present your own custom Help and/or Timeout screen(s) follow these steps:
-
-### 1. Create custom Help and/or Timeout screen(s)
-Use this [starter custom view controller](../../../Examples/Snippets/MiSnap/CustomTutorialViewController.swift).
-
-### 2. Disable default Help and/or Timeout screen(s)
-
-```Swift
-let template = MiSnapConfiguration()
-    .withCustomUxParameters { uxParameters in
-        uxParameters.showHelpScreen = false
-        uxParameters.showTimeoutScreen = false
-    }
-```
-### 3. Present custom Help and/or Timeout screen(s)
-
-After disabling a default Help and/or Timeout screen(s) subscribe to `MiSnapViewControllerDelegate`'s optional callbacks `miSnapHelpAction(_ :)` and/or `miSnapTimeoutAction(_ :)` respectively and present your custom screen(s).
-
-```Swift
-func miSnapHelpAction(_ messages: [String]) {
-    guard let misnapVC = misnapVC else { return }
-
-    let helpVC = CustomTutorialViewController(for: .help, delegate: misnapVC, messages: messages)
-    misnapVC.present(helpVC, animated: true)
-}
-
-func miSnapTimeoutAction(_ messages: [String]) {
-    guard let misnapVC = misnapVC else { return }
-
-    let timeoutVC = CustomTutorialViewController(for: .timeout, delegate: misnapVC, messages: messages)
-    misnapVC.present(timeoutVC, animated: true)
-}
-```
-
-# Capture Screen
+# Session Screen
 
 ## Cancel Button
 

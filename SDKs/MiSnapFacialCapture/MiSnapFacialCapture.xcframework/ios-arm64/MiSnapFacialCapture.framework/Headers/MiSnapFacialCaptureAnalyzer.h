@@ -145,5 +145,12 @@ MiSnapFacialCaptureAnalyzer is a class that defines an interface for controlling
  Logs low light detected event
  */
 - (void)logLowLightDetected;
+/**
+ Statuses for a given tutorial mode
+ * Timeout - all timeout statuses ordered from the most frequent to the less frequent
+ * Review - all statuses in priority order
+ * Other tutorials - empty array
+ */
+- (NSArray <NSNumber *> *)statusesForTutorialMode:(MiSnapFacialCaptureTutorialMode)tutorialMode;
 
 @end

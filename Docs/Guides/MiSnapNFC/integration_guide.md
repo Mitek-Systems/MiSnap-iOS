@@ -11,25 +11,21 @@ MiSnapNFC 5.x is distributed through CocoaPods and Swift Package Manager. For de
 
 It's highly recommended to use one of these distribution managers but manual integration is still supported.
 
-### SDK and UX/UI
+## 1.1 SDK and UX/UI
 It is Mitek's recommended option to integrated both SDK and UX/UI.
 
-From 5.2.0 onwards localization and image assets are moved out of `MiSnapNFCUX` framework to enable easy customization while making sure app size is not ballooned. As such, regardless of your choise of integration (CocoaPods, Swift Package Manager, manual) the first step should be adding assets to your Xcode project. Here's how to do this:
+If you'd like to build your own custom UI/UX (not recommended) skip to [1.2](#12-sdk-only).
+
+### Localization files
+
+Regardless of your choise of integration (CocoaPods, Swift Package Manager, manual) the first step should be adding localization files to your Xcode project. Here's how to do this:
 * Copy `MiSnapNFC` folder from [here](../../../Assets) into your project's location
 * In Xcode, File > Add Files to "YourAppName"...
 * Select copied folder and make sure:
     * `Create groups` option is selected in `Added folders` section
     * All necessary targets are checked in `Add to targets` section
 
-#### CocoaPods
-
-Include the following in your Podfile
-
-```Ruby
-pod 'MiSnapNFC'
-pod 'MiSnapNFCUX'
-```
-#### Swift Package Manager
+### Swift Package Manager
 
 Add the following repository url:
 
@@ -37,7 +33,16 @@ Add the following repository url:
 
 then check `MiSnapNFC` and `MiSnapNFCUX` checkboxes in a list of Package Products.
 
-#### Manual integration
+### CocoaPods
+
+Include the following in your Podfile
+
+```Ruby
+pod 'MiSnapNFC'
+pod 'MiSnapNFCUX'
+```
+
+### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
 * MiSnapCore.xcframework
@@ -52,20 +57,15 @@ Make sure `Embed & Sign` is chosen as Embed option.
 
 Set valid path(s) to copied artifacts in `Framework Search Paths` under `Build Settings` tab.
 
-### SDK only
+## 1.2. SDK only
+
+Skip to [the next step](#2-add-license-key-to-your-project) if you've followed steps in 1.1.
 
 If you plan only using SDK and building your own UX/UI:
 
 :warning: Use this [starter custom view controller](../../../Examples/Snippets/MiSnapNFC/CustomNFCViewController.swift) to make sure all components are integrated the right way.
 
-#### CocoaPods
-
-Include the following in your Podfile
-
-```Ruby
-pod 'MiSnapNFC'
-```
-#### Swift Package Manager
+### Swift Package Manager
 
 Add the following repository url:
 
@@ -73,7 +73,15 @@ Add the following repository url:
 
 then check `MiSnapNFC` checkbox in a list of Package Products.
 
-#### Manual integration
+### CocoaPods
+
+Include the following in your Podfile
+
+```Ruby
+pod 'MiSnapNFC'
+```
+
+### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
 * MiSnapCore.xcframework

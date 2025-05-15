@@ -115,6 +115,10 @@ import _SwiftConcurrencyShims
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapAssetManager.MiSnapHelpViewConfiguration? = nil)
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCheckBackTutorial : MiSnapAssetManager.MiSnapDocumentSVGView {
+  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapAssetManager.MiSnapDocumentOrientationMode, colors: MiSnapAssetManager.MiSnapColors, frame: CoreFoundation.CGRect)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class MiSnapRecordingIndicatorViewConfiguration : ObjectiveC.NSObject {
   public var textColor: UIKit.UIColor
   public var dotColor: UIKit.UIColor
@@ -168,6 +172,36 @@ import _SwiftConcurrencyShims
 extension CoreFoundation.CGSize {
   public func scaled(by scale: CoreFoundation.CGFloat) -> CoreFoundation.CGSize
 }
+extension CoreFoundation.CGFloat {
+  public static let miSnapCornerRadius: CoreFoundation.CGFloat
+}
+extension UIKit.UIEdgeInsets {
+  public static var miSnapSafeAreaInsets: UIKit.UIEdgeInsets {
+    get
+  }
+}
+@objc extension UIKit.UIColor {
+  @objc public static let miSnapPrimaryColorLightMode: UIKit.UIColor
+  @objc public static let miSnapPrimaryColorDarkMode: UIKit.UIColor
+  @objc public static let miSnapSecondaryColorLightMode: UIKit.UIColor
+  @objc public static let miSnapSecondaryColorDarkMode: UIKit.UIColor
+  @objc convenience dynamic public init(miSnapHexString hexString: Swift.String)
+}
+extension UIKit.UIScreen {
+  @_Concurrency.MainActor(unsafe) public var shortSide: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var longSide: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension UIKit.UIFont {
+  public class func preferredMiSnapFont(forTextStyle style: UIKit.UIFont.TextStyle, weight: UIKit.UIFont.Weight = .regular) -> UIKit.UIFont
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapPassportQRTutorial : MiSnapAssetManager.MiSnapDocumentSVGView {
+  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapAssetManager.MiSnapDocumentOrientationMode, colors: MiSnapAssetManager.MiSnapColors, frame: CoreFoundation.CGRect)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureGuideConfiguration : ObjectiveC.NSObject {
   @objc public var vignette: MiSnapAssetManager.MiSnapFacialCaptureVignetteConfiguration
   @objc public var outline: MiSnapAssetManager.MiSnapFacialCaptureOutlineConfiguration
@@ -187,7 +221,7 @@ extension CoreFoundation.CGSize {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureVignetteConfiguration : ObjectiveC.NSObject, Foundation.NSCoding, Foundation.NSSecureCoding {
+@_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureVignetteConfiguration : ObjectiveC.NSObject, Foundation.NSSecureCoding {
   @objc public var style: MiSnapAssetManager.MiSnapFacialCaptureVignetteStyle
   @objc public var blurStyle: UIKit.UIBlurEffect.Style
   @objc public var color: UIKit.UIColor
@@ -276,7 +310,7 @@ extension CoreFoundation.CGSize {
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapLabelConfiguration : ObjectiveC.NSObject {
   @objc public var size: CoreFoundation.CGSize
-  @objc public var font: UIKit.UIFont
+  @objc public var font: UIKit.UIFont?
   @objc public var textAlignment: UIKit.NSTextAlignment
   @objc public var color: UIKit.UIColor
   @objc public var colorDarkMode: UIKit.UIColor?
@@ -288,6 +322,7 @@ extension CoreFoundation.CGSize {
   @objc public var roundCorners: Swift.Bool
   @objc public var borderWidth: CoreFoundation.CGFloat
   @objc public var borderColor: UIKit.UIColor
+  @objc public var borderColorDarkMode: UIKit.UIColor?
   @objc public var shadowColor: UIKit.UIColor
   @objc public var shadowOffset: CoreFoundation.CGSize
   @objc public var shadowRadius: CoreFoundation.CGFloat
@@ -303,7 +338,9 @@ extension CoreFoundation.CGSize {
     @objc set
   }
   @objc public var isHidden: Swift.Bool
+  @objc public var minSize: CoreFoundation.CGSize
   @objc override dynamic public init()
+  @objc public func set(textStyle: UIKit.UIFont.TextStyle, weight: UIKit.UIFont.Weight = .regular)
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -324,6 +361,28 @@ extension CoreFoundation.CGSize {
 }
 extension MiSnapAssetManager.MiSnapLabel {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapSVGView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public init(colors: MiSnapAssetManager.MiSnapColors, frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+extension MiSnapAssetManager.MiSnapSVGView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+}
+@objc public enum MiSnapDocumentOrientationMode : Swift.Int {
+  case unknown = 0
+  case deviceLandscapeDocumentLandscape = 1
+  case devicePortraitDocumentPortrait = 2
+  case devicePortraitDocumentLandscape = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapDocumentSVGView : MiSnapAssetManager.MiSnapSVGView {
+  @objc @_Concurrency.MainActor(unsafe) public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapAssetManager.MiSnapDocumentOrientationMode, colors: MiSnapAssetManager.MiSnapColors, frame: CoreFoundation.CGRect)
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapCameraShutterViewConfiguration : MiSnapAssetManager.MiSnapStatelessViewConfiguration {
   @objc override dynamic public init()
@@ -452,10 +511,15 @@ extension MiSnapAssetManager.MiSnapLabel {
   @objc @_Concurrency.MainActor(unsafe) public func update(for status: MiSnapAssetManager.MiSnapVoiceCaptureViewStatus)
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCheckFrontTutorial : MiSnapAssetManager.MiSnapDocumentSVGView {
+  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapAssetManager.MiSnapDocumentOrientationMode, colors: MiSnapAssetManager.MiSnapColors, frame: CoreFoundation.CGRect)
+  @objc deinit
+}
 @objc public enum BulletType : Swift.Int {
   case arrow
   case circle
   case square
+  case verticalLine
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -469,7 +533,9 @@ extension MiSnapAssetManager.MiSnapLabel {
   }
   @objc public var size: CoreFoundation.CGSize
   @objc public var fillColor: UIKit.UIColor
+  @objc public var fillColorDarkMode: UIKit.UIColor
   @objc public var strokeColor: UIKit.UIColor
+  @objc public var strokeColorDarkMode: UIKit.UIColor
   @objc public var strokeWidth: CoreFoundation.CGFloat
   @objc public var shadowColor: UIKit.UIColor
   @objc public var shadowOffset: CoreFoundation.CGSize
@@ -484,10 +550,15 @@ extension MiSnapAssetManager.MiSnapLabel {
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapBulletView : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapAssetManager.MiSnapBulletViewConfiguration? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public func adjust(for someFrame: CoreFoundation.CGRect)
   @objc deinit
 }
 extension MiSnapAssetManager.MiSnapBulletView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapFacialCaptureTutorial : MiSnapAssetManager.MiSnapSVGView {
+  @_Concurrency.MainActor(unsafe) @objc override public init(colors: MiSnapAssetManager.MiSnapColors, frame: CoreFoundation.CGRect)
+  @objc deinit
 }
 @objc public enum MiSnapHintStyle : Swift.Int {
   case semitransparent = 0
@@ -507,7 +578,7 @@ extension MiSnapAssetManager.MiSnapBulletView {
   @objc public var size: CoreFoundation.CGSize
   @objc public var cornerRadius: CoreFoundation.CGFloat
   @objc public var textColor: UIKit.UIColor
-  @objc public var font: UIKit.UIFont
+  @objc public var font: UIKit.UIFont?
   @objc public var isHidden: Swift.Bool
   @objc public var locationPortrait: MiSnapAssetManager.MiSnapViewLocation
   @objc public var locationLandscape: MiSnapAssetManager.MiSnapViewLocation
@@ -519,7 +590,11 @@ extension MiSnapAssetManager.MiSnapBulletView {
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapHintView : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapAssetManager.MiSnapHintViewConfiguration? = nil)
-  @objc @_Concurrency.MainActor(unsafe) public func animate(with hintMessage: Swift.String, transition: Foundation.TimeInterval, display: Foundation.TimeInterval)
+  @objc @_Concurrency.MainActor(unsafe) public func animate(with hintMessage: Swift.String, transition: Foundation.TimeInterval, display: Foundation.TimeInterval, maxRect: CoreFoundation.CGRect = CGRect(x: 0, y: 0, width: 320, height: 100))
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapIDFrontTutorial : MiSnapAssetManager.MiSnapDocumentSVGView {
+  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapAssetManager.MiSnapDocumentOrientationMode, colors: MiSnapAssetManager.MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapCancelViewConfiguration : MiSnapAssetManager.MiSnapStatelessViewConfiguration {
@@ -531,6 +606,10 @@ extension MiSnapAssetManager.MiSnapBulletView {
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCancelView : MiSnapAssetManager.MiSnapStatelessView {
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapAssetManager.MiSnapCancelViewConfiguration? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapIDBackTutorial : MiSnapAssetManager.MiSnapDocumentSVGView {
+  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapAssetManager.MiSnapDocumentOrientationMode, colors: MiSnapAssetManager.MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 @objc public enum MiSnapGuideDocumentType : Swift.Int {
@@ -644,9 +723,13 @@ extension MiSnapAssetManager.MiSnapBulletView {
 @_inheritsConvenienceInitializers @objc public class MiSnapCheckboxViewConfiguration : ObjectiveC.NSObject {
   @objc public var size: CoreFoundation.CGSize
   @objc public var color: UIKit.UIColor
+  @objc public var colorDarkMode: UIKit.UIColor
   @objc public var backgroundColorUnchecked: UIKit.UIColor
+  @objc public var backgroundColorDarkModeUnchecked: UIKit.UIColor
   @objc public var backgroundColorChecked: UIKit.UIColor
+  @objc public var backgroundColorDarkModeChecked: UIKit.UIColor
   @objc public var borderColor: UIKit.UIColor
+  @objc public var borderColorDarkMode: UIKit.UIColor
   @objc public var borderWidth: CoreFoundation.CGFloat
   @objc public var cornerRadius: CoreFoundation.CGFloat
   @objc public var shadowColor: UIKit.UIColor
@@ -670,6 +753,9 @@ extension MiSnapAssetManager.MiSnapBulletView {
   @objc @_Concurrency.MainActor(unsafe) public func toggle()
   @objc deinit
 }
+extension MiSnapAssetManager.MiSnapCheckboxView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+}
 @_inheritsConvenienceInitializers @objc public class MiSnapTorchViewConfiguration : MiSnapAssetManager.MiSnapStatefulViewConfiguration {
   @objc override dynamic public init()
   @objc override public init(for state: MiSnapAssetManager.MiSnapViewState)
@@ -680,6 +766,207 @@ extension MiSnapAssetManager.MiSnapBulletView {
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapTorchView : MiSnapAssetManager.MiSnapStatefulView {
   @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapAssetManager.MiSnapTorchViewConfiguration? = nil)
+  @objc deinit
+}
+@objc public protocol MiSnapColorProvider {
+  @objc var primary: UIKit.UIColor { get }
+  @objc var onPrimary: UIKit.UIColor { get }
+  @objc var secondary: UIKit.UIColor { get }
+  @objc var onSecondary: UIKit.UIColor { get }
+  @objc var background: UIKit.UIColor { get }
+  @objc var onBackground: UIKit.UIColor { get }
+  @objc var surface: UIKit.UIColor { get }
+  @objc var onSurface: UIKit.UIColor { get }
+  @objc var defaultHumanSkin: UIKit.UIColor { get }
+  @objc var defaultHumanSkinShadow: UIKit.UIColor { get }
+  @objc var defaultHumanHair: UIKit.UIColor { get }
+  @objc var defaultHumanEyes: UIKit.UIColor { get }
+  @objc var defaultHumanClothes: UIKit.UIColor { get }
+  @objc var helpDocumentHands: UIKit.UIColor { get }
+  @objc var helpDocumentHandsShadow: UIKit.UIColor { get }
+  @objc var helpDocumentBackground: UIKit.UIColor { get }
+  @objc var helpDocumentContent: UIKit.UIColor { get }
+  @objc var helpOnDocumentContent: UIKit.UIColor { get }
+  @objc var helpDocumentOutline: UIKit.UIColor { get }
+  @objc var helpDocumentHighlight: UIKit.UIColor { get }
+  @objc var helpDevice: UIKit.UIColor { get }
+  @objc var helpDeviceGlare: UIKit.UIColor { get }
+  @objc var helpDeviceDocumentBackground: UIKit.UIColor { get }
+  @objc var helpFaceHair: UIKit.UIColor { get }
+  @objc var helpFaceSkin: UIKit.UIColor { get }
+  @objc var helpFaceSkinShadow: UIKit.UIColor { get }
+  @objc var helpFaceEyes: UIKit.UIColor { get }
+  @objc var helpFaceClothes: UIKit.UIColor { get }
+  @objc var helpFaceFeatures: UIKit.UIColor { get }
+  @objc var helpFaceFeaturesDetail: UIKit.UIColor { get }
+  @objc var helpFaceHandIcon: UIKit.UIColor { get }
+  @objc var helpFaceHandIconBorder: UIKit.UIColor { get }
+  @objc var helpVoiceHair: UIKit.UIColor { get }
+  @objc var helpVoiceSkin: UIKit.UIColor { get }
+  @objc var helpVoiceSkinShadow: UIKit.UIColor { get }
+  @objc var helpVoiceEyes: UIKit.UIColor { get }
+  @objc var helpVoiceClothes: UIKit.UIColor { get }
+  @objc var helpVoiceDoNotSymbol: UIKit.UIColor { get }
+  @objc var helpVoiceDialogBox: UIKit.UIColor { get }
+  @objc var helpVoiceDialogBoxBorder: UIKit.UIColor { get }
+  @objc var helpVoiceDialogBoxContents: UIKit.UIColor { get }
+  @objc var helpVoiceProfileSilhouettes: UIKit.UIColor { get }
+  @objc var helpVoiceBluetooth: UIKit.UIColor { get }
+  @objc var helpVoiceHeadsetDeviceBase: UIKit.UIColor { get }
+  @objc var helpVoiceHeadsetDeviceBaseShadow: UIKit.UIColor { get }
+  @objc var helpVoiceHeadsetDeviceFeature: UIKit.UIColor { get }
+  @objc var helpVoiceHeadsetDeviceFeatureShadow: UIKit.UIColor { get }
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapColorLightMode : ObjectiveC.NSObject, MiSnapAssetManager.MiSnapColorProvider {
+  @objc public var primary: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var onPrimary: UIKit.UIColor
+  @objc public var secondary: UIKit.UIColor
+  @objc public var onSecondary: UIKit.UIColor
+  @objc public var background: UIKit.UIColor
+  @objc public var onBackground: UIKit.UIColor
+  @objc public var surface: UIKit.UIColor
+  @objc public var onSurface: UIKit.UIColor
+  @objc public var defaultHumanSkin: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var defaultHumanSkinShadow: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var defaultHumanHair: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var defaultHumanEyes: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var defaultHumanClothes: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var helpDocumentHands: UIKit.UIColor
+  @objc public var helpDocumentHandsShadow: UIKit.UIColor
+  @objc public var helpDocumentBackground: UIKit.UIColor
+  @objc public var helpDocumentContent: UIKit.UIColor
+  @objc public var helpOnDocumentContent: UIKit.UIColor
+  @objc public var helpDocumentOutline: UIKit.UIColor
+  @objc public var helpDocumentHighlight: UIKit.UIColor
+  @objc public var helpDevice: UIKit.UIColor
+  @objc public var helpDeviceGlare: UIKit.UIColor
+  @objc public var helpDeviceDocumentBackground: UIKit.UIColor
+  @objc public var helpFaceHair: UIKit.UIColor
+  @objc public var helpFaceSkin: UIKit.UIColor
+  @objc public var helpFaceSkinShadow: UIKit.UIColor
+  @objc public var helpFaceEyes: UIKit.UIColor
+  @objc public var helpFaceClothes: UIKit.UIColor
+  @objc public var helpFaceFeatures: UIKit.UIColor
+  @objc public var helpFaceFeaturesDetail: UIKit.UIColor
+  @objc public var helpFaceHandIcon: UIKit.UIColor
+  @objc public var helpFaceHandIconBorder: UIKit.UIColor
+  @objc public var helpVoiceHair: UIKit.UIColor
+  @objc public var helpVoiceSkin: UIKit.UIColor
+  @objc public var helpVoiceSkinShadow: UIKit.UIColor
+  @objc public var helpVoiceEyes: UIKit.UIColor
+  @objc public var helpVoiceClothes: UIKit.UIColor
+  @objc public var helpVoiceDoNotSymbol: UIKit.UIColor
+  @objc public var helpVoiceDialogBox: UIKit.UIColor
+  @objc public var helpVoiceDialogBoxBorder: UIKit.UIColor
+  @objc public var helpVoiceDialogBoxContents: UIKit.UIColor
+  @objc public var helpVoiceProfileSilhouettes: UIKit.UIColor
+  @objc public var helpVoiceBluetooth: UIKit.UIColor
+  @objc public var helpVoiceHeadsetDeviceBase: UIKit.UIColor
+  @objc public var helpVoiceHeadsetDeviceBaseShadow: UIKit.UIColor
+  @objc public var helpVoiceHeadsetDeviceFeature: UIKit.UIColor
+  @objc public var helpVoiceHeadsetDeviceFeatureShadow: UIKit.UIColor
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapColorDarkMode : ObjectiveC.NSObject, MiSnapAssetManager.MiSnapColorProvider {
+  @objc public var primary: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var onPrimary: UIKit.UIColor
+  @objc public var secondary: UIKit.UIColor
+  @objc public var onSecondary: UIKit.UIColor
+  @objc public var background: UIKit.UIColor
+  @objc public var onBackground: UIKit.UIColor
+  @objc public var surface: UIKit.UIColor
+  @objc public var onSurface: UIKit.UIColor
+  @objc public var defaultHumanSkin: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var defaultHumanSkinShadow: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var defaultHumanHair: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var defaultHumanEyes: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var defaultHumanClothes: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc public var helpDocumentHands: UIKit.UIColor
+  @objc public var helpDocumentHandsShadow: UIKit.UIColor
+  @objc public var helpDocumentBackground: UIKit.UIColor
+  @objc public var helpDocumentContent: UIKit.UIColor
+  @objc public var helpOnDocumentContent: UIKit.UIColor
+  @objc public var helpDocumentOutline: UIKit.UIColor
+  @objc public var helpDocumentHighlight: UIKit.UIColor
+  @objc public var helpDevice: UIKit.UIColor
+  @objc public var helpDeviceGlare: UIKit.UIColor
+  @objc public var helpDeviceDocumentBackground: UIKit.UIColor
+  @objc public var helpFaceHair: UIKit.UIColor
+  @objc public var helpFaceSkin: UIKit.UIColor
+  @objc public var helpFaceSkinShadow: UIKit.UIColor
+  @objc public var helpFaceEyes: UIKit.UIColor
+  @objc public var helpFaceClothes: UIKit.UIColor
+  @objc public var helpFaceFeatures: UIKit.UIColor
+  @objc public var helpFaceFeaturesDetail: UIKit.UIColor
+  @objc public var helpFaceHandIcon: UIKit.UIColor
+  @objc public var helpFaceHandIconBorder: UIKit.UIColor
+  @objc public var helpVoiceHair: UIKit.UIColor
+  @objc public var helpVoiceSkin: UIKit.UIColor
+  @objc public var helpVoiceSkinShadow: UIKit.UIColor
+  @objc public var helpVoiceEyes: UIKit.UIColor
+  @objc public var helpVoiceClothes: UIKit.UIColor
+  @objc public var helpVoiceDoNotSymbol: UIKit.UIColor
+  @objc public var helpVoiceDialogBox: UIKit.UIColor
+  @objc public var helpVoiceDialogBoxBorder: UIKit.UIColor
+  @objc public var helpVoiceDialogBoxContents: UIKit.UIColor
+  @objc public var helpVoiceProfileSilhouettes: UIKit.UIColor
+  @objc public var helpVoiceBluetooth: UIKit.UIColor
+  @objc public var helpVoiceHeadsetDeviceBase: UIKit.UIColor
+  @objc public var helpVoiceHeadsetDeviceBaseShadow: UIKit.UIColor
+  @objc public var helpVoiceHeadsetDeviceFeature: UIKit.UIColor
+  @objc public var helpVoiceHeadsetDeviceFeatureShadow: UIKit.UIColor
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class MiSnapColors : ObjectiveC.NSObject {
+  @objc public var light: MiSnapAssetManager.MiSnapColorLightMode
+  @objc public var dark: MiSnapAssetManager.MiSnapColorDarkMode
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapPassportTutorial : MiSnapAssetManager.MiSnapDocumentSVGView {
+  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapAssetManager.MiSnapDocumentOrientationMode, colors: MiSnapAssetManager.MiSnapColors, frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapVoiceCaptureTutorial : MiSnapAssetManager.MiSnapSVGView {
+  @_Concurrency.MainActor(unsafe) @objc override public init(colors: MiSnapAssetManager.MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 extension MiSnapAssetManager.MiSnapAssetStyle : Swift.Equatable {}
@@ -700,6 +987,9 @@ extension MiSnapAssetManager.MiSnapFacialCaptureOutlineColorStyle : Swift.RawRep
 extension MiSnapAssetManager.MiSnapFacialCaptureOutlineState : Swift.Equatable {}
 extension MiSnapAssetManager.MiSnapFacialCaptureOutlineState : Swift.Hashable {}
 extension MiSnapAssetManager.MiSnapFacialCaptureOutlineState : Swift.RawRepresentable {}
+extension MiSnapAssetManager.MiSnapDocumentOrientationMode : Swift.Equatable {}
+extension MiSnapAssetManager.MiSnapDocumentOrientationMode : Swift.Hashable {}
+extension MiSnapAssetManager.MiSnapDocumentOrientationMode : Swift.RawRepresentable {}
 extension MiSnapAssetManager.MiSnapViewHorizontalAlignment : Swift.Equatable {}
 extension MiSnapAssetManager.MiSnapViewHorizontalAlignment : Swift.Hashable {}
 extension MiSnapAssetManager.MiSnapViewHorizontalAlignment : Swift.RawRepresentable {}

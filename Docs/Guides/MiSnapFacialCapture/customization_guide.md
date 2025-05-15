@@ -8,8 +8,8 @@ Please refer to [MiSnapFacialCaptureCustomizationSampleApp](../../../Examples/Ap
 * [Overview](#overview)
 * [UX Parameters](#ux-parameters)
 * [Localization](#localization)
-* [Image assets](#image-assets)
 * [Introductory Instruction Screen](#introductory-instruction-screen)
+    * [Graphic Assets for Introductory Instruction Screen](#graphic-assets-for-introductory-instruction-screen)
 * [Review Screen](#review-screen)
 * [Help and Timeout Screens](#help-and-timeout-screens)
 * [Capture Screen](#capture-screen)
@@ -89,21 +89,6 @@ let configuration = MiSnapFacialCaptureConfiguration()
     }
 ```
 
-# Image Assets
-
-Go to a place where you copied images into during integration process and replace existing resources with new ones but make sure to keep the same names.
-
-By default, it's expected that images are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps:
-
-Create a configuration (if it doesn't exist) and chain `.withCustomAssetLocation`. Refer to a snippet below.
-
-```Swift
-let configuration = MiSnapFacialCaptureConfiguration()
-    .withCustomAssetLocation { assetLocation in
-        assetLocation.bundle = // Your bundle where image assets are located
-    }
-```
-
 # Introductory Instruction Screen
 
 By default, an introductory instruction screen is presented.
@@ -114,6 +99,37 @@ If you prefer to use your own introductory instruction screen or would like not 
 let configuration = MiSnapFacialCaptureConfiguration()
     .withCustomUxParameters { uxParameters in
         uxParameters.showIntroductoryInstructionScreen = false
+    }
+```
+## Graphic Assets for Introductory Instruction Screen
+
+### Default graphic assets
+`MiSnapFacialCaptureUX` comes with built-in default tutorial graphics (`UIView`s) that are very small in size and allow colors customization. We ecncourage using these default assets. Especially, if keeping application size minimal is a high priority for you. 
+
+For new integrators there are no additional steps to start using them. For integrators upgrading from 5.7.0 or older, remove MiSnapFacialCapture-related JPGs/PNGs from your project.
+
+### Custom graphic assets
+For new integrators that would like to use their own custom JPGs/PNGs for tutorials add JPGs/PNGs naming them according to a table below. Supported extensions - `jpg`, `jpeg`, `png`, `JPG`, `JPEG`, `PNG`
+
+<center>
+
+| Image name                                         | Description         |
+| :-----                                             | :-----              |
+| misnap_facial_capture_instruction_image_oval       | Used in Light mode  |
+| misnap_facial_capture_instruction_image_oval_dark  | Used in Dark mode   |
+
+</center>
+
+For integrators upgrading from 5.7.0 or older that already used JPGs/PNGs, there are no additional steps as `MiSnapFacialCaptureUX` first queries JPGs/PNGs based on the names in the table above and only falls back to default `UIView`s if they are not available.
+
+By default, it's expected that images are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps:
+
+Create a template configuration (if it doesn't exist) and chain `.withCustomAssetLocation`. Refer to a snippet below.
+
+```Swift
+let template = MiSnapFacialCaptureConfiguration()
+    .withCustomAssetLocation { assetLocation in
+        assetLocation.bundle = // Your bundle where image assets are located
     }
 ```
 

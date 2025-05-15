@@ -11,6 +11,7 @@ Please refer to [MiSnapVoiceCaptureCustomizationSampleApp](../../../Examples/App
 * [Image assets](#image-assets)
 * [Phrase Selection Screen](#phrase-selection-screen)
 * [Introductory Instruction Screen](#introductory-instruction-screen)
+    * [Graphic Assets for Introductory Instruction Screen](#graphic-assets-for-introductory-instruction-screen)
 * [Recording Screen](#review-screen)
 * [Parameters](#parameters)
 
@@ -87,21 +88,6 @@ let template = MiSnapVoiceCaptureConfiguration()
     }
 ```
 
-# Image Assets
-
-Go to a place where you copied images into during integration process and replace existing resources with new ones but make sure to keep the same names.
-
-By default, it's expected that images are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps:
-
-Create a template configuration (if it doesn't exist) and chain `.withCustomAssetLocation`. Refer to a snippet below.
-
-```Swift
-let template = MiSnapVoiceCaptureConfiguration()
-    .withCustomAssetLocation { assetLocation in
-        assetLocation.bundle = // Your bundle where image assets are located
-    }
-```
-
 # Phrase Selection Screen
 
 There are 3 customizable elements on this screen:
@@ -159,6 +145,38 @@ let template = MiSnapVoiceCaptureConfiguration()
 ```
 
 `instruction` and `button` are of `MiSnapLabelConfiguration` type. For all available customization options see this [API reference](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Mitek-Systems/MiSnap-iOS/5.1.0.b1/Docs/API/Common/MiSnapAssetManager/Classes/MiSnapLabelConfiguration.html).
+
+## Graphic Assets for Introductory Instruction Screen
+
+### Default graphic assets
+`MiSnapVoiceCaptureUX` comes with built-in default tutorial graphics (`UIView`s) that are very small in size and allow colors customization. We ecncourage using these default assets. Especially, if keeping application size minimal is a high priority for you. 
+
+For new integrators there are no additional steps to start using them. For integrators upgrading from 5.7.0 or older, remove MiSnapVoiceCaptureUX-related JPGs/PNGs from your project.
+
+### Custom graphic assets
+For new integrators that would like to use their own custom JPGs/PNGs for tutorials add JPGs/PNGs naming them according to a table below. Supported extensions - `jpg`, `jpeg`, `png`, `JPG`, `JPEG`, `PNG`
+
+<center>
+
+| Image name                                      | Description         |
+| :-----                                          | :-----              |
+| misnap_voice_capture_instruction_distance       | Used in Light mode  |
+| misnap_voice_capture_instruction_distance_dark  | Used in Dark mode   |
+
+</center>
+
+For integrators upgrading from 5.7.0 or older that already used JPGs/PNGs, there are no additional steps as `MiSnapVoiceCaptureUX` first queries JPGs/PNGs based on the names in the table above and only falls back to default `UIView`s if they are not available.
+
+By default, it's expected that images are located in the main bundle (`Bundle.main`) but if you need to change a bundle you can do it by following next steps:
+
+Create a template configuration (if it doesn't exist) and chain `.withCustomAssetLocation`. Refer to a snippet below.
+
+```Swift
+let template = MiSnapVoiceCaptureConfiguration()
+    .withCustomAssetLocation { assetLocation in
+        assetLocation.bundle = // Your bundle where image assets are located
+    }
+```
 
 # Recording Screen
 

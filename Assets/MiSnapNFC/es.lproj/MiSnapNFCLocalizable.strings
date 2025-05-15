@@ -48,6 +48,7 @@
 "misnap_nfc_sdk_reading_progress_full"                      = "🔵 ";
 "misnap_nfc_sdk_reading_progress_empty"                     = "⚪️ ";
 
+"misnap_nfc_sdk_instruction_start_scan"                     = "Presiona Iniciar y luego";
 "misnap_nfc_sdk_instruction_passport_front"                 = "Toque con la parte superior del iPhone la página de identificación del pasaporte";
 "misnap_nfc_sdk_instruction_passport_back"                  = "Toque con la parte superior del iPhone la página opuesta a la de identificación del pasaporte";
 "misnap_nfc_sdk_instruction_passport_unknown"               = "Toque la página con fotografía de su pasaporte con la parte superior del iPhone, después deslice a través de ella lentamente";

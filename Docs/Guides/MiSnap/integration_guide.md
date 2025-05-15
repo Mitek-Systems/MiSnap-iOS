@@ -11,25 +11,21 @@ MiSnap 5.x is distributed through CocoaPods and Swift Package Manager. For detai
 
 It's highly recommended to use one of these distribution managers but manual integration is still supported.
 
-### SDK and UX/UI
-It is Mitek's recommended option to integrate both SDK and UX/UI which is highly customizable. Customization was drastically improved comparing to 3.x and 4.x.
+## 1.1 SDK and UX/UI
+It is Mitek's recommended option to integrate both SDK and UX/UI which is highly customizable. Customization was drastically improved comparing to 3.x and 4.x. 
 
-From 5.2.0 onwards localization and image assets are moved out of `MiSnapUX` framework to enable easy customization while making sure app size is not ballooned. As such, regardless of your choise of integration (CocoaPods, Swift Package Manager, manual) the first step should be adding assets to your Xcode project. Here's how to do this:
+If you'd like to build your own custom UI/UX (not recommended) skip to [1.2](#12-sdk-only).
+
+### Localization files
+
+Regardless of your choise of integration (CocoaPods, Swift Package Manager, manual) the first step should be adding localization files to your Xcode project. Here's how to do this:
 * Copy `MiSnap` folder from [here](../../../Assets) into your project's location
 * In Xcode, File > Add Files to "YourAppName"...
 * Select copied folder and make sure:
     * `Create groups` option is selected in `Added folders` section
     * All necessary targets are checked in `Add to targets` section
 
-#### CocoaPods
-
-Include the following in your Podfile
-
-```Ruby
-pod 'MiSnap'
-pod 'MiSnapUX'
-```
-#### Swift Package Manager
+### Swift Package Manager
 
 Add the following repository url:
 
@@ -37,7 +33,16 @@ Add the following repository url:
 
 then check `MiSnap` and `MiSnapUX` checkboxes in a list of Package Products.
 
-#### Manual integration
+### CocoaPods
+
+Include the following in your Podfile
+
+```Ruby
+pod 'MiSnap'
+pod 'MiSnapUX'
+```
+
+### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
 * MiSnapCore.xcframework
@@ -57,20 +62,15 @@ Make sure `Embed & Sign` is chosen as Embed option.
 
 Set valid path(s) to copied artifacts in `Framework Search Paths` under `Build Settings` tab.
 
-### SDK only
+## 1.2. SDK only
+
+Skip to [the next step](#2-add-license-key-to-your-project) if you've followed steps in 1.1.
 
 If you plan only using SDK and building your own UX/UI:
 
 :warning: Use this [starter custom view controller](../../../Examples/Snippets/MiSnap/CustomViewController.swift) to make sure all components are integrated the right way.
 
-#### CocoaPods
-
-Include the following in your Podfile
-
-```Ruby
-pod 'MiSnap'
-```
-#### Swift Package Manager
+### Swift Package Manager
 
 Add the following repository url:
 
@@ -78,7 +78,15 @@ Add the following repository url:
 
 then check `MiSnap` checkbox in a list of Package Products.
 
-#### Manual integration
+### CocoaPods
+
+Include the following in your Podfile
+
+```Ruby
+pod 'MiSnap'
+```
+
+### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
 * MiSnapCore.xcframework

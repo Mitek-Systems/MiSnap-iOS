@@ -67,7 +67,7 @@ class MiSnapWorkflowViewControllerFactory {
                     parameters.science.iqaRequired = false
                     parameters.science.barcodeRequired = true
                     parameters.science.supportedBarcodeTypes = [MiSnapScienceBarcodeType.QR.rawValue]
-                    parameters.science.documentTypeName = "Passport QR"
+                    parameters.science.documentTypeName = "QR Code"
                 }
         case .checkFront:
             configuration = MiSnapConfiguration(for: .checkFront).applying(depositTemplate)

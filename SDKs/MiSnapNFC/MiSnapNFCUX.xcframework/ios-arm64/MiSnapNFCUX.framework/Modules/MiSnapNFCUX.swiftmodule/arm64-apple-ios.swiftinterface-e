@@ -58,9 +58,14 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapNFCScanButtonsConfiguration : ObjectiveC.NSObject {
   @objc public var barColor: UIKit.UIColor
+  @available(*, deprecated, message: "Use `primary`")
   @objc public var proceed: MiSnapLabelConfiguration
+  @available(*, deprecated, message: "Use `secondary` instead")
   @objc public var cancel: MiSnapLabelConfiguration
+  @available(*, deprecated, message: "Use `secondary` instead")
   @objc public var skip: MiSnapLabelConfiguration
+  @objc public var primary: MiSnapLabelConfiguration
+  @objc public var secondary: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -77,6 +82,7 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapNFCUxParameters : ObjectiveC.NSObject {
   @objc public var autoDismiss: Swift.Bool
+  @objc public var navigationBarHidden: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
   }

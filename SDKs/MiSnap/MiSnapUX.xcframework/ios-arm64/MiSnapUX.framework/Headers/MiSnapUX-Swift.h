@@ -430,15 +430,15 @@ SWIFT_CLASS("_TtC8MiSnapUX19MiSnapConfiguration")
 SWIFT_CLASS("_TtC8MiSnapUX20MiSnapHintParameters")
 @interface MiSnapHintParameters : NSObject
 /// Time in seconds between hints (sec)
-/// Range: 0.1.0…10.0
+/// Range: 0.1.0…30.0
 /// Default: 1.5
 @property (nonatomic) NSTimeInterval betweenTime;
 /// Time in seconds for the hint transition (e.g fade in and out)
-/// Range: 0.01…1.0
+/// Range: 0.01…2.0
 /// Default: 0.25
 @property (nonatomic) NSTimeInterval transitionTime;
 /// Time in seconds for the hint to be displayed for
-/// Range: 0.5…3.0
+/// Range: 0.5…20.0
 /// Default: 1.0
 @property (nonatomic) NSTimeInterval displayTime;
 /// A delay in seconds in the beginning of session before the first hint is displayed
@@ -449,6 +449,7 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapHintParameters")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull dictionary;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -499,7 +500,7 @@ SWIFT_CLASS("_TtC8MiSnapUX34MiSnapTutorialButtonsConfiguration")
 /// Bar color
 @property (nonatomic, strong) UIColor * _Nonnull barColor;
 /// Configuration for Cancel button for all tutroial screens
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel SWIFT_DEPRECATED_MSG("Use `secondary` instead");
 /// Configuration for:
 /// <ul>
 ///   <li>
@@ -509,7 +510,7 @@ SWIFT_CLASS("_TtC8MiSnapUX34MiSnapTutorialButtonsConfiguration")
 ///     Retake button in Review screen
 ///   </li>
 /// </ul>
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull retry;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull retry SWIFT_DEPRECATED_MSG("Use `primary` and `secondary` instead");
 /// Configuration for:
 /// <ul>
 ///   <li>
@@ -522,7 +523,33 @@ SWIFT_CLASS("_TtC8MiSnapUX34MiSnapTutorialButtonsConfiguration")
 ///     Looks good button in Review screen
 ///   </li>
 /// </ul>
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed SWIFT_DEPRECATED_MSG("Use `primary` and `secondary` instead");
+/// Configuration for:
+/// <ul>
+///   <li>
+///     Continue button in Instruction and Help screen
+///   </li>
+///   <li>
+///     Rerty button in Timeout screen
+///   </li>
+///   <li>
+///     Looks good button in Review screen
+///   </li>
+/// </ul>
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull primary;
+/// Configuration for:
+/// <ul>
+///   <li>
+///     Cancel button for all tutroial screens
+///   </li>
+///   <li>
+///     Manual button in Timeout screen
+///   </li>
+///   <li>
+///     Retake button in Review screen
+///   </li>
+/// </ul>
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull secondary;
 /// Creates and returns tutorial configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -563,6 +590,7 @@ SWIFT_CLASS("_TtC8MiSnapUX39MiSnapTutorialDocumentTypeConfiguration")
 enum MiSnapTutorialType : NSInteger;
 @class MiSnapBulletViewConfiguration;
 @class MiSnapCheckboxViewConfiguration;
+@class MiSnapColors;
 
 /// Tutorial instruction configuration
 SWIFT_CLASS("_TtC8MiSnapUX38MiSnapTutorialInstructionConfiguration")
@@ -594,6 +622,8 @@ SWIFT_CLASS("_TtC8MiSnapUX38MiSnapTutorialInstructionConfiguration")
 /// Secondary message configuration
 /// For example, a label in an instructional tutorial for QR code
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull messageSecondary;
+/// Colors for instruction graphics
+@property (nonatomic, strong) MiSnapColors * _Nonnull colors;
 /// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -684,10 +714,14 @@ SWIFT_CLASS("_TtC8MiSnapUX18MiSnapUxParameters")
 /// Indicates whether a system alert should be presented on Cancel button tap to warn a user that the progress will be lost
 /// Default: <code>false</code>
 @property (nonatomic) BOOL showCancelAlert;
+/// Indicates whether navigation bar should be hidden when a view controller is embedded into navigation controller
+/// Default: <code>false</code>
+@property (nonatomic) BOOL navigationBarHidden;
 /// UX parameters dictionary representation
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull dictionary;
 /// Description of <code>MiSnapUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// Initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

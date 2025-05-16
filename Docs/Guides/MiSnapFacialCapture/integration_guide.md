@@ -11,17 +11,31 @@ MiSnapFacialCapture 5.x is distributed through CocoaPods and Swift Package Manag
 
 It's highly recommended to use one of these distribution managers but manual integration is still supported.
 
-## SDK and UX/UI
+## 1.1 SDK and UX/UI
 It is Mitek's recommended option to integrated both SDK and UX/UI which is highly customizable.
 
-From 5.2.0 onwards localization and image assets are moved out of `MiSnapFacialCaptureUX` framework to enable easy customization while making sure app size is not ballooned. As such, regardless of your choise of integration (CocoaPods, Swift Package Manager, manual) the first step should be adding assets to your Xcode project. Here's how to do this:
+If you'd like to build your own custom UI/UX (not recommended) skip to [1.2](#12-sdk-only).
+
+### Localization files
+
+Regardless of your choise of integration (CocoaPods, Swift Package Manager, manual) the first step should be adding localization files to your Xcode project. Here's how to do this:
 * Copy `MiSnapFacialCapture` folder from [here](../../../Assets) into your project's location
 * In Xcode, File > Add Files to "YourAppName"...
 * Select copied folder and make sure:
     * `Create groups` option is selected in `Added folders` section
     * All necessary targets are checked in `Add to targets` section
 
-#### CocoaPods
+### Swift Package Manager
+
+Add the following repository url:
+
+`https://github.com/Mitek-Systems/MiSnap-iOS.git`
+
+then check `MiSnapFacialCapture` and `MiSnapFacialCaptureUX` checkboxes in a list of Package Products.
+
+If AI-based RTS feature is required then additionally check `MiSnapIAD`.
+
+### CocoaPods
 
 Include the following in your Podfile
 
@@ -30,28 +44,19 @@ pod 'MiSnapFacialCapture'
 pod 'MiSnapFacialCaptureUX'
 ```
 
-If AI based RTS feature is required add the following in your Podfile
+If AI-based RTS feature is required add the following in your Podfile
 
 ```Ruby
 pod 'MiSnapIAD'
 ```
-#### Swift Package Manager
 
-Add the following repository url:
-
-`https://github.com/Mitek-Systems/MiSnap-iOS.git`
-
-then check `MiSnapFacialCapture` and `MiSnapFacialCaptureUX` checkboxes in a list of Package Products.
-
-If AI based RTS feature is required then additionally check `MiSnapIAD`.
-
-#### Manual integration
+### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
 * MiSnapCore.xcframework
 * MiSnapAssetManager.xcframework
 
-If AI based RTS feature is required then additionally copy:
+If AI-based RTS feature is required then additionally copy:
 * IDLiveFaceIAD.xcframework
 
 From [MiSnapFacialCapture](../../../SDKs/MiSnapFacialCapture) copy:
@@ -64,27 +69,15 @@ Make sure `Embed & Sign` is chosen as Embed option.
 
 Set valid path(s) to copied artifacts in `Framework Search Paths` under `Build Settings` tab.
 
-## SDK only
+## 1.2. SDK only
+
+Skip to [the next step](#2-add-license-key-to-your-project) if you've followed steps in 1.1.
 
 If you plan only using SDK and building your own UX/UI:
 
 :warning: Use this [starter custom view controller](../../../Examples/Snippets/MiSnapFacialCapture/CustomFacialCaptureViewController.swift) to make sure all components are integrated the right way.
 
-#### CocoaPods
-
-Include the following in your Podfile
-
-```Ruby
-pod 'MiSnapFacialCapture'
-```
-
-If AI based RTS feature is required add the following in your Podfile
-
-```Ruby
-pod 'MiSnapIAD'
-```
-
-#### Swift Package Manager
+### Swift Package Manager
 
 Add the following repository url:
 
@@ -92,14 +85,28 @@ Add the following repository url:
 
 then check `MiSnapFacialCapture` checkbox in a list of Package Products.
 
-If AI based RTS feature is required then additionally check `MiSnapIAD`.
+If AI-based RTS feature is required then additionally check `MiSnapIAD`.
 
-#### Manual integration
+### CocoaPods
+
+Include the following in your Podfile
+
+```Ruby
+pod 'MiSnapFacialCapture'
+```
+
+If AI-based RTS feature is required add the following in your Podfile
+
+```Ruby
+pod 'MiSnapIAD'
+```
+
+### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
 * MiSnaCore.xcframework
 
-If AI based RTS feature is required then additionally copy:
+If AI-based RTS feature is required then additionally copy:
 * IDLiveFaceIAD.xcframework
 
 From [MiSnapFacialCapture](../../../SDKs/MiSnapFacialCapture) copy:

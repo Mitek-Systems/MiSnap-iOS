@@ -39,9 +39,14 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapTutorialButtonsConfiguration : ObjectiveC.NSObject {
   @objc public var barColor: UIKit.UIColor
+  @available(*, deprecated, message: "Use `secondary` instead")
   @objc public var cancel: MiSnapLabelConfiguration
+  @available(*, deprecated, message: "Use `primary` and `secondary` instead")
   @objc public var retry: MiSnapLabelConfiguration
+  @available(*, deprecated, message: "Use `primary` and `secondary` instead")
   @objc public var proceed: MiSnapLabelConfiguration
+  @objc public var primary: MiSnapLabelConfiguration
+  @objc public var secondary: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -71,6 +76,7 @@ import _SwiftConcurrencyShims
   @objc public var dontShowAgain: MiSnapLabelConfiguration
   @objc public var message: MiSnapLabelConfiguration
   @objc public var messageSecondary: MiSnapLabelConfiguration
+  @objc public var colors: MiSnapColors
   @objc override dynamic public init()
   @objc deinit
 }
@@ -162,6 +168,7 @@ import _SwiftConcurrencyShims
   }
   @objc public var injectImageName: Swift.String?
   @objc public var showCancelAlert: Swift.Bool
+  @objc public var navigationBarHidden: Swift.Bool
   @objc public var dictionary: [Swift.String : Any] {
     @objc get
   }

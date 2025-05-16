@@ -77,6 +77,7 @@ import _SwiftConcurrencyShims
     @objc set
   }
   @objc public var lowLightSensitivity: MiSnapFacialCaptureLowLightSensitivity
+  @objc public var navigationBarHidden: Swift.Bool
   @objc public init(for flow: MiSnapFaceCaptureFlow)
   @objc public var dictionary: [Swift.String : Swift.String] {
     @objc get
@@ -97,8 +98,14 @@ import _SwiftConcurrencyShims
   @objc public var buttons: MiSnapFacialCaptureTutorialButtonsConfiguration
   @objc public var introductoryInstructionMessage: MiSnapLabelConfiguration
   @objc public var introductoryInstructionHeader: MiSnapLabelConfiguration
+  @available(*, deprecated, message: "Use `message` and `messageSecondary` instead")
   @objc public var timeoutMessage: MiSnapLabelConfiguration
+  @available(*, deprecated, message: "Use `message` and `messageSecondary` instead")
   @objc public var reviewMessage: MiSnapLabelConfiguration
+  @objc public var message: MiSnapLabelConfiguration
+  @objc public var messageSecondary: MiSnapLabelConfiguration
+  @objc public var bullet: MiSnapBulletViewConfiguration
+  @objc public var colors: MiSnapColors
   @objc override dynamic public init()
   @objc deinit
 }
@@ -112,10 +119,16 @@ import _SwiftConcurrencyShims
   }
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureTutorialButtonsConfiguration : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "Starting with 5.8.0 the only supported layout is vertical which is needed to support Larger Text for compliance with accessibility regulation")
   @objc public var layout: MiSnapFacialCaptureTutorialButtonLayout
+  @available(*, deprecated, message: "Use `primary` and `secondary` instead")
   @objc public var cancel: MiSnapLabelConfiguration
+  @available(*, deprecated, message: "Use `primary` and `secondary` instead")
   @objc public var retry: MiSnapLabelConfiguration
+  @available(*, deprecated, message: "Use `primary` and `secondary` instead")
   @objc public var proceed: MiSnapLabelConfiguration
+  @objc public var primary: MiSnapLabelConfiguration
+  @objc public var secondary: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -180,6 +193,7 @@ import _SwiftConcurrencyShims
   @objc func miSnapFacialCaptureCancelled(_ result: MiSnapFacialCaptureResult)
   @objc optional func miSnapFacialCaptureHelpAction()
   @objc optional func miSnapFacialCaptureTimeoutAction()
+  @objc optional func miSnapFacialCaptureTimeoutAction(_ statuses: [Foundation.NSNumber]?)
   @objc optional func miSnapFacialCaptureDidFinishRecordingVideo(_ videoData: Foundation.Data?)
   @objc optional func miSnapFacialCaptureShouldBeDismissed()
 }

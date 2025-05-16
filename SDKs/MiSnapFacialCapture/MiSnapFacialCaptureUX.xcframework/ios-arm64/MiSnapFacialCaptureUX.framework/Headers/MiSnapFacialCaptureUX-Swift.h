@@ -448,9 +448,9 @@ typedef SWIFT_ENUM(NSInteger, MiSnapFacialCaptureTutorialButtonLayout, open) {
 SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX47MiSnapFacialCaptureTutorialButtonsConfiguration")
 @interface MiSnapFacialCaptureTutorialButtonsConfiguration : NSObject
 /// Layout
-@property (nonatomic) enum MiSnapFacialCaptureTutorialButtonLayout layout;
+@property (nonatomic) enum MiSnapFacialCaptureTutorialButtonLayout layout SWIFT_DEPRECATED_MSG("Starting with 5.8.0 the only supported layout is vertical which is needed to support Larger Text for compliance with accessibility regulation");
 /// Configuration for Cancel button for all tutroial screens
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel SWIFT_DEPRECATED_MSG("Use `primary` and `secondary` instead");
 /// Configuration for:
 /// <ul>
 ///   <li>
@@ -460,7 +460,7 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX47MiSnapFacialCaptureTutorialButtonsConf
 ///     Retake button in Review screen
 ///   </li>
 /// </ul>
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull retry;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull retry SWIFT_DEPRECATED_MSG("Use `primary` and `secondary` instead");
 /// Configuration for:
 /// <ul>
 ///   <li>
@@ -473,7 +473,33 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX47MiSnapFacialCaptureTutorialButtonsConf
 ///     Looks good button in Review screen
 ///   </li>
 /// </ul>
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed SWIFT_DEPRECATED_MSG("Use `primary` and `secondary` instead");
+/// Configuration for:
+/// <ul>
+///   <li>
+///     Continue button in Instruction and Help screen
+///   </li>
+///   <li>
+///     Rerty button in Timeout screen
+///   </li>
+///   <li>
+///     Looks good button in Review screen
+///   </li>
+/// </ul>
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull primary;
+/// Configuration for:
+/// <ul>
+///   <li>
+///     Cancel button for all tutroial screens
+///   </li>
+///   <li>
+///     Manual button in Timeout screen
+///   </li>
+///   <li>
+///     Retake button in Review screen
+///   </li>
+/// </ul>
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull secondary;
 /// Creates and returns tutorial configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -481,6 +507,8 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX47MiSnapFacialCaptureTutorialButtonsConf
 @end
 
 @class UIColor;
+@class MiSnapBulletViewConfiguration;
+@class MiSnapColors;
 
 /// A tutorial screen configuration
 SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX40MiSnapFacialCaptureTutorialConfiguration")
@@ -500,9 +528,18 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX40MiSnapFacialCaptureTutorialConfigurati
 /// Introductory instruction header configuration
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull introductoryInstructionHeader;
 /// Timeout message configuration
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull timeoutMessage;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull timeoutMessage SWIFT_DEPRECATED_MSG("Use `message` and `messageSecondary` instead");
 /// Review message configuration
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull reviewMessage;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull reviewMessage SWIFT_DEPRECATED_MSG("Use `message` and `messageSecondary` instead");
+/// Message configuration
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Secondary message configuration
+/// For example, a label in an instructional tutorial for QR code
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull messageSecondary;
+/// Bullet configuration
+@property (nonatomic, strong) MiSnapBulletViewConfiguration * _Nonnull bullet;
+/// Colors for instruction graphics
+@property (nonatomic, strong) MiSnapColors * _Nonnull colors;
 /// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -570,6 +607,9 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX31MiSnapFacialCaptureUXParameters")
 /// Defaut: <code>.medium</code>
 /// To deactivate override to <code>.none</code>
 @property (nonatomic) enum MiSnapFacialCaptureLowLightSensitivity lowLightSensitivity;
+/// Indicates whether navigation bar should be hidden when a view controller is embedded into navigation controller
+/// Default: <code>false</code>
+@property (nonatomic) BOOL navigationBarHidden;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// Creates and returns default UX parameters for a provided flow
@@ -701,6 +741,7 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 @end
 
 
+@class NSNumber;
 
 /// Defines an interface for delegates of <code>MiSnapFacialCaptureViewController</code> to receive callbacks
 SWIFT_PROTOCOL("_TtP21MiSnapFacialCaptureUX41MiSnapFacialCaptureViewControllerDelegate_")
@@ -728,6 +769,10 @@ SWIFT_PROTOCOL("_TtP21MiSnapFacialCaptureUX41MiSnapFacialCaptureViewControllerDe
 /// note:
 /// It’s optional
 - (void)miSnapFacialCaptureTimeoutAction;
+/// Delegates receive this callback when a session times out and <code>showTimeoutScreen</code> is overridden to <code>false</code> in <code>MiSnapUxParameters</code>
+/// Implement this callback instead of <code>miSnapFacialCaptureTimeoutAction()</code> if you would like to get an array of dynamic errors happened during a session
+/// This callback returns array of statuses that can be mapped to MiSnapFacialCaptureStatus that in turn can be mapped to a localizable key
+- (void)miSnapFacialCaptureTimeoutAction:(NSArray<NSNumber *> * _Nullable)statuses;
 /// Delegates receive this callback when a camera finishes recording a video when <code>recordVideo</code> is overridden to <code>true</code> in <code>MiSnapCameraParameters</code>
 /// note:
 /// It’s optional

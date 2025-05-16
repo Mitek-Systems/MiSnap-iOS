@@ -16,12 +16,6 @@
 		42A004B727EBAEDC002A598D /* MiSnapFacialCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 42A004B627EBAEDC002A598D /* MiSnapFacialCapture */; };
 		42A004B927EBAEDC002A598D /* MiSnapFacialCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 42A004B827EBAEDC002A598D /* MiSnapFacialCaptureUX */; };
 		42A140D9296E257B007E7252 /* MiSnapFacialCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A140B6296E257B007E7252 /* MiSnapFacialCaptureLocalizable.strings */; };
-		42A140ED296E258D007E7252 /* misnap_facial_capture_instruction_image_hat.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A140E7296E258D007E7252 /* misnap_facial_capture_instruction_image_hat.png */; };
-		42A140EE296E258D007E7252 /* misnap_facial_capture_instruction_image_neutral.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A140E8296E258D007E7252 /* misnap_facial_capture_instruction_image_neutral.png */; };
-		42A140EF296E258D007E7252 /* misnap_facial_capture_instruction_image_mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A140E9296E258D007E7252 /* misnap_facial_capture_instruction_image_mask.png */; };
-		42A140F0296E258D007E7252 /* misnap_facial_capture_instruction_image_smile.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A140EA296E258D007E7252 /* misnap_facial_capture_instruction_image_smile.png */; };
-		42A140F1296E258D007E7252 /* misnap_facial_capture_instruction_manual_with_finger.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A140EB296E258D007E7252 /* misnap_facial_capture_instruction_manual_with_finger.png */; };
-		42A140F2296E258D007E7252 /* misnap_facial_capture_instruction_image_oval.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A140EC296E258D007E7252 /* misnap_facial_capture_instruction_image_oval.png */; };
 		42FF921A27EB723E00E8DD51 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FF921927EB723E00E8DD51 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,12 +43,6 @@
 		421FB61C27EB5F6100F451FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42A140B7296E257B007E7252 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapFacialCaptureLocalizable.strings; sourceTree = "<group>"; };
 		42A140B8296E257B007E7252 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapFacialCaptureLocalizable.strings; sourceTree = "<group>"; };
-		42A140E7296E258D007E7252 /* misnap_facial_capture_instruction_image_hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_image_hat.png; sourceTree = "<group>"; };
-		42A140E8296E258D007E7252 /* misnap_facial_capture_instruction_image_neutral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_image_neutral.png; sourceTree = "<group>"; };
-		42A140E9296E258D007E7252 /* misnap_facial_capture_instruction_image_mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_image_mask.png; sourceTree = "<group>"; };
-		42A140EA296E258D007E7252 /* misnap_facial_capture_instruction_image_smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_image_smile.png; sourceTree = "<group>"; };
-		42A140EB296E258D007E7252 /* misnap_facial_capture_instruction_manual_with_finger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_manual_with_finger.png; sourceTree = "<group>"; };
-		42A140EC296E258D007E7252 /* misnap_facial_capture_instruction_image_oval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_facial_capture_instruction_image_oval.png; sourceTree = "<group>"; };
 		42FF921927EB723E00E8DD51 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,12 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				42A140B6296E257B007E7252 /* MiSnapFacialCaptureLocalizable.strings */,
-				42A140E7296E258D007E7252 /* misnap_facial_capture_instruction_image_hat.png */,
-				42A140E9296E258D007E7252 /* misnap_facial_capture_instruction_image_mask.png */,
-				42A140E8296E258D007E7252 /* misnap_facial_capture_instruction_image_neutral.png */,
-				42A140EC296E258D007E7252 /* misnap_facial_capture_instruction_image_oval.png */,
-				42A140EA296E258D007E7252 /* misnap_facial_capture_instruction_image_smile.png */,
-				42A140EB296E258D007E7252 /* misnap_facial_capture_instruction_manual_with_finger.png */,
 			);
 			path = MiSnapFacialCapture;
 			sourceTree = "<group>";
@@ -243,15 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				421FB61B27EB5F6100F451FF /* LaunchScreen.storyboard in Resources */,
-				42A140ED296E258D007E7252 /* misnap_facial_capture_instruction_image_hat.png in Resources */,
-				42A140F0296E258D007E7252 /* misnap_facial_capture_instruction_image_smile.png in Resources */,
 				421FB61827EB5F6100F451FF /* Assets.xcassets in Resources */,
-				42A140EE296E258D007E7252 /* misnap_facial_capture_instruction_image_neutral.png in Resources */,
 				42A140D9296E257B007E7252 /* MiSnapFacialCaptureLocalizable.strings in Resources */,
-				42A140EF296E258D007E7252 /* misnap_facial_capture_instruction_image_mask.png in Resources */,
 				421FB61627EB5F5E00F451FF /* Main.storyboard in Resources */,
-				42A140F1296E258D007E7252 /* misnap_facial_capture_instruction_manual_with_finger.png in Resources */,
-				42A140F2296E258D007E7252 /* misnap_facial_capture_instruction_image_oval.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +482,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
 			requirement = {
-				branch = feature/5.7.0;
+				branch = feature/5.8.0;
 				kind = branch;
 			};
 		};

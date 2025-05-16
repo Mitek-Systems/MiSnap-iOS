@@ -48,6 +48,7 @@
 "misnap_nfc_sdk_reading_progress_full"                      = "🔵 ";
 "misnap_nfc_sdk_reading_progress_empty"                     = "⚪️ ";
 
+"misnap_nfc_sdk_instruction_start_scan"                     = "Press Start then";
 "misnap_nfc_sdk_instruction_passport_front"                 = "Touch top of iPhone to passport photo page";
 "misnap_nfc_sdk_instruction_passport_back"                  = "Touch top of iPhone to page opposite to passport photo page";
 "misnap_nfc_sdk_instruction_passport_unknown"               = "Touch top of iPhone to passport photo page then slide across slowly";

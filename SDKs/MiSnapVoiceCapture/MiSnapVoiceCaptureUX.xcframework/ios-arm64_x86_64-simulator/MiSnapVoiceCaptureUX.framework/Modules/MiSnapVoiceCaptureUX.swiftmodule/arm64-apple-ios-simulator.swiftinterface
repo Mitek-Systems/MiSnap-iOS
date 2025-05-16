@@ -43,7 +43,10 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCapturePhraseSelectionButtonsConfiguration : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "Use `primary` instead")
   @objc public var proceed: MiSnapLabelConfiguration
+  @objc public var primary: MiSnapLabelConfiguration
+  @objc public var secondary: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -63,7 +66,10 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "Use `primary` instead")
   @objc public var proceed: MiSnapLabelConfiguration
+  @objc public var primary: MiSnapLabelConfiguration
+  @objc public var secondary: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -74,7 +80,9 @@ import _SwiftConcurrencyShims
   @objc public var backgroundColor: UIKit.UIColor
   @objc public var backgroundColorDarkMode: UIKit.UIColor?
   @objc public var message: MiSnapLabelConfiguration
+  @objc public var bullet: MiSnapBulletViewConfiguration
   @objc public var buttons: MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration
+  @objc public var colors: MiSnapColors
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -82,8 +90,12 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapVoiceCaptureRecordingButtonsConfiguration : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "Use `secondary` instead")
   @objc public var cancel: MiSnapLabelConfiguration
+  @available(*, deprecated, message: "Use `primary` instead")
   @objc public var failureAcknowledgment: MiSnapLabelConfiguration
+  @objc public var primary: MiSnapLabelConfiguration
+  @objc public var secondary: MiSnapLabelConfiguration
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -112,6 +124,7 @@ import _SwiftConcurrencyShims
   @objc public var phrase: Swift.String? {
     get
   }
+  @objc public var navigationBarHidden: Swift.Bool
   @objc public init(for flow: MiSnapVoiceCaptureFlow, phrase: Swift.String? = nil)
   @objc override dynamic public var description: Swift.String {
     @objc get

@@ -148,7 +148,6 @@
 | Norway (NOR)                 	| ID               	|
 |                              	| Residence Permit 	|
 | Oman (OMN)                   	| Passport         	|
-| Pakistan (PAK)               	| Passport         	|
 | Panama (PAN)                 	| ID               	|
 | Paraguay (PRY)               	| Passport         	|
 | Peru (PER)                   	| Passport         	|

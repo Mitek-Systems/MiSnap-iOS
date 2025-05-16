@@ -310,6 +310,8 @@ typedef SWIFT_ENUM(NSInteger, BulletType, open) {
   BulletTypeCircle = 1,
 /// Square
   BulletTypeSquare = 2,
+/// Vertical line
+  BulletTypeVerticalLine = 3,
 };
 
 /// Asset style
@@ -329,6 +331,8 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager16MiSnapBulletView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// Creates and returns <code>MiSnapArrowView</code> with a given configuration
 - (nonnull instancetype)initWith:(MiSnapBulletViewConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
+/// Adjusts bullet view for a frame
+- (void)adjustFor:(CGRect)someFrame;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -353,8 +357,12 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager29MiSnapBulletViewConfiguration")
 @property (nonatomic) CGSize size;
 /// Fill color
 @property (nonatomic, strong) UIColor * _Nonnull fillColor;
+/// Fill color in Dark mode
+@property (nonatomic, strong) UIColor * _Nonnull fillColorDarkMode;
 /// Stroke color
 @property (nonatomic, strong) UIColor * _Nonnull strokeColor;
+/// Stroke color in Dark mode
+@property (nonatomic, strong) UIColor * _Nonnull strokeColorDarkMode;
 /// Stroke width
 @property (nonatomic) CGFloat strokeWidth;
 /// Shadow color
@@ -496,6 +504,39 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager29MiSnapCancelViewConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
+@class MiSnapColors;
+
+/// MiSnap SVG View
+SWIFT_CLASS("_TtC18MiSnapAssetManager13MiSnapSVGView")
+@interface MiSnapSVGView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithColors:(MiSnapColors * _Nonnull)colors frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+enum MiSnapDocumentOrientationMode : NSInteger;
+
+/// MiSnap document SVG View
+SWIFT_CLASS("_TtC18MiSnapAssetManager21MiSnapDocumentSVGView")
+@interface MiSnapDocumentSVGView : MiSnapSVGView
+- (nonnull instancetype)initWithOrientation:(UIInterfaceOrientation)orientation orientationMode:(enum MiSnapDocumentOrientationMode)orientationMode colors:(MiSnapColors * _Nonnull)colors frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithColors:(MiSnapColors * _Nonnull)colors frame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+/// Check Back tutorial graphics for all orientations and orientation modes
+SWIFT_CLASS("_TtC18MiSnapAssetManager23MiSnapCheckBackTutorial")
+@interface MiSnapCheckBackTutorial : MiSnapDocumentSVGView
+- (nonnull instancetype)initWithOrientation:(UIInterfaceOrientation)orientation orientationMode:(enum MiSnapDocumentOrientationMode)orientationMode colors:(MiSnapColors * _Nonnull)colors frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+/// Check Front tutorial graphics for all orientations and orientation modes
+SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapCheckFrontTutorial")
+@interface MiSnapCheckFrontTutorial : MiSnapDocumentSVGView
+- (nonnull instancetype)initWithOrientation:(UIInterfaceOrientation)orientation orientationMode:(enum MiSnapDocumentOrientationMode)orientationMode colors:(MiSnapColors * _Nonnull)colors frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
 /// Checkbox state
 typedef SWIFT_ENUM(NSInteger, MiSnapCheckboxState, open) {
 /// Unchecked
@@ -522,6 +563,14 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager18MiSnapCheckboxView")
 @end
 
 
+@interface MiSnapCheckboxView (SWIFT_EXTENSION(MiSnapAssetManager))
+/// Called when the environment’s traits change.
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+@end
+
+
 /// Checkbox view configuration
 SWIFT_CLASS("_TtC18MiSnapAssetManager31MiSnapCheckboxViewConfiguration")
 @interface MiSnapCheckboxViewConfiguration : NSObject
@@ -529,14 +578,24 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager31MiSnapCheckboxViewConfiguration")
 @property (nonatomic) CGSize size;
 /// Checkmark color
 @property (nonatomic, strong) UIColor * _Nonnull color;
+/// Checkmark color in Dark mode
+@property (nonatomic, strong) UIColor * _Nonnull colorDarkMode;
 /// Background color when unchecked
 @property (nonatomic, strong) UIColor * _Nonnull backgroundColorUnchecked;
+/// Background color in Dark mode when unchecked
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColorDarkModeUnchecked;
 /// Background color when checked
 @property (nonatomic, strong) UIColor * _Nonnull backgroundColorChecked;
+/// Background color in Dark mode when checked
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColorDarkModeChecked;
 /// Border color when unchecked
 /// note:
 /// When checked border color is the same as <code>backgroundColorChecked</code>
 @property (nonatomic, strong) UIColor * _Nonnull borderColor;
+/// Border color in Dark mode when unchecked
+/// note:
+/// When checked border color is the same as <code>backgroundColorDarkModeChecked</code>
+@property (nonatomic, strong) UIColor * _Nonnull borderColorDarkMode;
 /// Border width
 @property (nonatomic) CGFloat borderWidth;
 /// Corner radius
@@ -563,6 +622,179 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager31MiSnapCheckboxViewConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_PROTOCOL("_TtP18MiSnapAssetManager19MiSnapColorProvider_")
+@protocol MiSnapColorProvider
+@property (nonatomic, readonly, strong) UIColor * _Nonnull primary;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull onPrimary;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull secondary;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull onSecondary;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull background;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull onBackground;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull surface;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull onSurface;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull defaultHumanSkin;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull defaultHumanSkinShadow;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull defaultHumanHair;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull defaultHumanEyes;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull defaultHumanClothes;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpDocumentHands;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpDocumentHandsShadow;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpDocumentBackground;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpDocumentContent;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpOnDocumentContent;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpDocumentOutline;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpDocumentHighlight;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpDevice;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpDeviceGlare;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpDeviceDocumentBackground;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpFaceHair;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpFaceSkin;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpFaceSkinShadow;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpFaceEyes;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpFaceClothes;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpFaceFeatures;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpFaceFeaturesDetail;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpFaceHandIcon;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpFaceHandIconBorder;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceHair;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceSkin;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceSkinShadow;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceEyes;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceClothes;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceDoNotSymbol;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceDialogBox;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceDialogBoxBorder;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceDialogBoxContents;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceProfileSilhouettes;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceBluetooth;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceBase;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceBaseShadow;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceFeature;
+@property (nonatomic, readonly, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceFeatureShadow;
+@end
+
+
+/// MiSnap colors for Dark mode
+SWIFT_CLASS("_TtC18MiSnapAssetManager19MiSnapColorDarkMode")
+@interface MiSnapColorDarkMode : NSObject <MiSnapColorProvider>
+@property (nonatomic, strong) UIColor * _Nonnull primary;
+@property (nonatomic, strong) UIColor * _Nonnull onPrimary;
+@property (nonatomic, strong) UIColor * _Nonnull secondary;
+@property (nonatomic, strong) UIColor * _Nonnull onSecondary;
+@property (nonatomic, strong) UIColor * _Nonnull background;
+@property (nonatomic, strong) UIColor * _Nonnull onBackground;
+@property (nonatomic, strong) UIColor * _Nonnull surface;
+@property (nonatomic, strong) UIColor * _Nonnull onSurface;
+@property (nonatomic, strong) UIColor * _Nonnull defaultHumanSkin;
+@property (nonatomic, strong) UIColor * _Nonnull defaultHumanSkinShadow;
+@property (nonatomic, strong) UIColor * _Nonnull defaultHumanHair;
+@property (nonatomic, strong) UIColor * _Nonnull defaultHumanEyes;
+@property (nonatomic, strong) UIColor * _Nonnull defaultHumanClothes;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentHands;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentHandsShadow;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentBackground;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentContent;
+@property (nonatomic, strong) UIColor * _Nonnull helpOnDocumentContent;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentOutline;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentHighlight;
+@property (nonatomic, strong) UIColor * _Nonnull helpDevice;
+@property (nonatomic, strong) UIColor * _Nonnull helpDeviceGlare;
+@property (nonatomic, strong) UIColor * _Nonnull helpDeviceDocumentBackground;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceHair;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceSkin;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceSkinShadow;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceEyes;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceClothes;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceFeatures;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceFeaturesDetail;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceHandIcon;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceHandIconBorder;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceHair;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceSkin;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceSkinShadow;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceEyes;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceClothes;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceDoNotSymbol;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceDialogBox;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceDialogBoxBorder;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceDialogBoxContents;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceProfileSilhouettes;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceBluetooth;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceBase;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceBaseShadow;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceFeature;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceFeatureShadow;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+/// MiSnap colors for Light mode
+SWIFT_CLASS("_TtC18MiSnapAssetManager20MiSnapColorLightMode")
+@interface MiSnapColorLightMode : NSObject <MiSnapColorProvider>
+/// Primary
+@property (nonatomic, strong) UIColor * _Nonnull primary;
+@property (nonatomic, strong) UIColor * _Nonnull onPrimary;
+@property (nonatomic, strong) UIColor * _Nonnull secondary;
+@property (nonatomic, strong) UIColor * _Nonnull onSecondary;
+@property (nonatomic, strong) UIColor * _Nonnull background;
+@property (nonatomic, strong) UIColor * _Nonnull onBackground;
+@property (nonatomic, strong) UIColor * _Nonnull surface;
+@property (nonatomic, strong) UIColor * _Nonnull onSurface;
+@property (nonatomic, strong) UIColor * _Nonnull defaultHumanSkin;
+@property (nonatomic, strong) UIColor * _Nonnull defaultHumanSkinShadow;
+@property (nonatomic, strong) UIColor * _Nonnull defaultHumanHair;
+@property (nonatomic, strong) UIColor * _Nonnull defaultHumanEyes;
+@property (nonatomic, strong) UIColor * _Nonnull defaultHumanClothes;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentHands;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentHandsShadow;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentBackground;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentContent;
+@property (nonatomic, strong) UIColor * _Nonnull helpOnDocumentContent;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentOutline;
+@property (nonatomic, strong) UIColor * _Nonnull helpDocumentHighlight;
+@property (nonatomic, strong) UIColor * _Nonnull helpDevice;
+@property (nonatomic, strong) UIColor * _Nonnull helpDeviceGlare;
+@property (nonatomic, strong) UIColor * _Nonnull helpDeviceDocumentBackground;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceHair;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceSkin;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceSkinShadow;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceEyes;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceClothes;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceFeatures;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceFeaturesDetail;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceHandIcon;
+@property (nonatomic, strong) UIColor * _Nonnull helpFaceHandIconBorder;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceHair;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceSkin;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceSkinShadow;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceEyes;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceClothes;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceDoNotSymbol;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceDialogBox;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceDialogBoxBorder;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceDialogBoxContents;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceProfileSilhouettes;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceBluetooth;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceBase;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceBaseShadow;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceFeature;
+@property (nonatomic, strong) UIColor * _Nonnull helpVoiceHeadsetDeviceFeatureShadow;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+/// MiSnap colors
+SWIFT_CLASS("_TtC18MiSnapAssetManager12MiSnapColors")
+@interface MiSnapColors : NSObject
+/// Colors to be used in Light mode
+@property (nonatomic, strong) MiSnapColorLightMode * _Nonnull light;
+/// Colors to be used in Dark mode
+@property (nonatomic, strong) MiSnapColorDarkMode * _Nonnull dark;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIFont;
 
 /// MiSnap label configuration
@@ -575,7 +807,7 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapLabelConfiguration")
 @property (nonatomic) CGSize size;
 /// Font
 /// Default: system font of size 18.0 and regular font weight
-@property (nonatomic, strong) UIFont * _Nonnull font;
+@property (nonatomic, strong) UIFont * _Nullable font;
 /// Text alignment
 /// Default: <code>.center</code>
 @property (nonatomic) NSTextAlignment textAlignment;
@@ -602,9 +834,10 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapLabelConfiguration")
 /// Default: <code>.byTruncatingTail</code>
 @property (nonatomic) NSLineBreakMode lineBreakMode;
 /// Corner radius
+/// When set to 0.5 a corner radius is a half of a height. Otherwise, an absolute pixel value is applied
 /// Default: <code>0.0</code>
 @property (nonatomic) CGFloat cornerRadius;
-/// Indicates whether corners should be rounded
+/// Indicates whether corners should be rounded (i.e. corner radius is a half of a height)
 /// Default: <code>false</code>
 /// When overridden to <code>true</code> value of <code>cornerRadius</code> is ignored
 @property (nonatomic) BOOL roundCorners;
@@ -614,6 +847,10 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapLabelConfiguration")
 /// Border color
 /// Default: <code>.clear</code>
 @property (nonatomic, strong) UIColor * _Nonnull borderColor;
+/// Border color in Dark mode
+/// Default: not set
+/// When this color is set then it’s used in Dark mode
+@property (nonatomic, strong) UIColor * _Nullable borderColorDarkMode;
 /// Shadow color
 /// Default: <code>.clear</code>
 @property (nonatomic, strong) UIColor * _Nonnull shadowColor;
@@ -642,8 +879,14 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapLabelConfiguration")
 @property (nonatomic) CGFloat heightPadding;
 /// Indicates whether a label is hidden
 @property (nonatomic) BOOL isHidden;
+/// Minimum size of a label
+/// Default: <code>.zero</code> (not used)
+@property (nonatomic) CGSize minSize;
 /// Creates and returns configuration with default values
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// A helper function that indicates an auto scaling font with the text style and weight
+/// should be used instead of the one specified in <code>font</code> property
+- (void)setWithTextStyle:(UIFontTextStyle _Nonnull)textStyle weight:(UIFontWeight)weight;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
@@ -661,6 +904,14 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager32MiSnapDocumentLabelConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+/// MiSnap document orientation mode
+typedef SWIFT_ENUM(NSInteger, MiSnapDocumentOrientationMode, open) {
+  MiSnapDocumentOrientationModeUnknown = 0,
+  MiSnapDocumentOrientationModeDeviceLandscapeDocumentLandscape = 1,
+  MiSnapDocumentOrientationModeDevicePortraitDocumentPortrait = 2,
+  MiSnapDocumentOrientationModeDevicePortraitDocumentLandscape = 3,
+};
 
 enum MiSnapGuideAlignment : NSInteger;
 
@@ -709,6 +960,7 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager34MiSnapDocumentOutlineConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 /// Countdown style
 typedef SWIFT_ENUM(NSInteger, MiSnapFacialCaptureCountdownStyle, open) {
@@ -860,6 +1112,13 @@ typedef SWIFT_ENUM(NSInteger, MiSnapFacialCaptureOutlineState, open) {
 /// Frame passed all IQA checks
   MiSnapFacialCaptureOutlineStateGood = 1,
 };
+
+
+/// Face tutorial graphics
+SWIFT_CLASS("_TtC18MiSnapAssetManager27MiSnapFacialCaptureTutorial")
+@interface MiSnapFacialCaptureTutorial : MiSnapSVGView
+- (nonnull instancetype)initWithColors:(MiSnapColors * _Nonnull)colors frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
 
 enum MiSnapFacialCaptureVignetteStyle : NSInteger;
 
@@ -1054,7 +1313,7 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager14MiSnapHintView")
 /// Creates and returns <code>MiSnapHintView</code> with a given configuration
 - (nonnull instancetype)initWith:(MiSnapHintViewConfiguration * _Nullable)configuration OBJC_DESIGNATED_INITIALIZER;
 /// Animates hint view
-- (void)animateWith:(NSString * _Nonnull)hintMessage transition:(NSTimeInterval)transition display:(NSTimeInterval)display;
+- (void)animateWith:(NSString * _Nonnull)hintMessage transition:(NSTimeInterval)transition display:(NSTimeInterval)display maxRect:(CGRect)maxRect;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -1092,7 +1351,7 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager27MiSnapHintViewConfiguration")
 /// Text color
 @property (nonatomic, strong) UIColor * _Nonnull textColor;
 /// Font
-@property (nonatomic, strong) UIFont * _Nonnull font;
+@property (nonatomic, strong) UIFont * _Nullable font;
 /// Indicates whether a view is hidden
 @property (nonatomic) BOOL isHidden;
 /// A location configuration for a Portrait orientation
@@ -1103,6 +1362,20 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager27MiSnapHintViewConfiguration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 /// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+/// ID Back tutorial graphics for all orientations and orientation modes
+SWIFT_CLASS("_TtC18MiSnapAssetManager20MiSnapIDBackTutorial")
+@interface MiSnapIDBackTutorial : MiSnapDocumentSVGView
+- (nonnull instancetype)initWithOrientation:(UIInterfaceOrientation)orientation orientationMode:(enum MiSnapDocumentOrientationMode)orientationMode colors:(MiSnapColors * _Nonnull)colors frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+/// ID Front tutorial graphics for all orientations and orientation modes
+SWIFT_CLASS("_TtC18MiSnapAssetManager21MiSnapIDFrontTutorial")
+@interface MiSnapIDFrontTutorial : MiSnapDocumentSVGView
+- (nonnull instancetype)initWithOrientation:(UIInterfaceOrientation)orientation orientationMode:(enum MiSnapDocumentOrientationMode)orientationMode colors:(MiSnapColors * _Nonnull)colors frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -1123,6 +1396,20 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager11MiSnapLabel")
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
 
+
+
+/// Passport QR tutorial graphics for all orientations and orientation modes
+SWIFT_CLASS("_TtC18MiSnapAssetManager24MiSnapPassportQRTutorial")
+@interface MiSnapPassportQRTutorial : MiSnapDocumentSVGView
+- (nonnull instancetype)initWithOrientation:(UIInterfaceOrientation)orientation orientationMode:(enum MiSnapDocumentOrientationMode)orientationMode colors:(MiSnapColors * _Nonnull)colors frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+/// Passport tutorial graphics for all orientations and orientation modes
+SWIFT_CLASS("_TtC18MiSnapAssetManager22MiSnapPassportTutorial")
+@interface MiSnapPassportTutorial : MiSnapDocumentSVGView
+- (nonnull instancetype)initWithOrientation:(UIInterfaceOrientation)orientation orientationMode:(enum MiSnapDocumentOrientationMode)orientationMode colors:(MiSnapColors * _Nonnull)colors frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class MiSnapRecordingIndicatorViewConfiguration;
 
@@ -1151,6 +1438,12 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager41MiSnapRecordingIndicatorViewConfiguration
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 /// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@interface MiSnapSVGView (SWIFT_EXTENSION(MiSnapAssetManager))
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
 
 enum MiSnapViewState : NSInteger;
@@ -1448,6 +1741,13 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager42MiSnapVoiceCaptureSuccessViewConfiguratio
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
+
+/// Voice tutorial graphics
+SWIFT_CLASS("_TtC18MiSnapAssetManager26MiSnapVoiceCaptureTutorial")
+@interface MiSnapVoiceCaptureTutorial : MiSnapSVGView
+- (nonnull instancetype)initWithColors:(MiSnapColors * _Nonnull)colors frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
 /// A view status
 typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureViewStatus, open) {
 /// Neutral
@@ -1457,6 +1757,23 @@ typedef SWIFT_ENUM(NSInteger, MiSnapVoiceCaptureViewStatus, open) {
 /// Failure
   MiSnapVoiceCaptureViewStatusFailure = 2,
 };
+
+
+
+@interface UIColor (SWIFT_EXTENSION(MiSnapAssetManager))
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull miSnapPrimaryColorLightMode;)
++ (UIColor * _Nonnull)miSnapPrimaryColorLightMode SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull miSnapPrimaryColorDarkMode;)
++ (UIColor * _Nonnull)miSnapPrimaryColorDarkMode SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull miSnapSecondaryColorLightMode;)
++ (UIColor * _Nonnull)miSnapSecondaryColorLightMode SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull miSnapSecondaryColorDarkMode;)
++ (UIColor * _Nonnull)miSnapSecondaryColorDarkMode SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithMiSnapHexString:(NSString * _Nonnull)hexString;
+@end
+
+
+
 
 
 

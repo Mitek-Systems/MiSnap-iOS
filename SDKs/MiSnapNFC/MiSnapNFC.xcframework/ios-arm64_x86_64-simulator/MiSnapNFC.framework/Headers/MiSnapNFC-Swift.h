@@ -379,6 +379,7 @@ SWIFT_CLASS("_TtC9MiSnapNFC34MiSnapNFCLocalizationConfiguration")
 @end
 
 @class MiSnapLogConfiguration;
+enum MiSnapNFCProgressIndicator : NSInteger;
 
 /// Parameters used during chip scanning process
 SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
@@ -410,10 +411,24 @@ SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
 /// Indicates whether reading of portrait image should be skipped
 /// Default: <code>false</code>
 @property (nonatomic) BOOL skipPortrait;
+/// Progress indicator
+/// Default: <code>percentBeforeMessage</code> (starting with 5.8.0)
+@property (nonatomic) enum MiSnapNFCProgressIndicator progressIndicator;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+/// Progress indicator during a reading session
+typedef SWIFT_ENUM(NSInteger, MiSnapNFCProgressIndicator, open) {
+/// Emoji
+/// Uses emojis set in <code>misnap_nfc_sdk_reading_progress_full</code> and <code>misnap_nfc_sdk_reading_progress_empty</code> localizable keys
+  MiSnapNFCProgressIndicatorEmoji = 0,
+/// Percent before the message
+  MiSnapNFCProgressIndicatorPercentBeforeMessage = 1,
+/// Percent after the message
+  MiSnapNFCProgressIndicatorPercentAfterMessage = 2,
+};
 
 
 /// Chip reader
@@ -827,6 +842,7 @@ SWIFT_CLASS("_TtC9MiSnapNFC34MiSnapNFCLocalizationConfiguration")
 @end
 
 @class MiSnapLogConfiguration;
+enum MiSnapNFCProgressIndicator : NSInteger;
 
 /// Parameters used during chip scanning process
 SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
@@ -858,10 +874,24 @@ SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
 /// Indicates whether reading of portrait image should be skipped
 /// Default: <code>false</code>
 @property (nonatomic) BOOL skipPortrait;
+/// Progress indicator
+/// Default: <code>percentBeforeMessage</code> (starting with 5.8.0)
+@property (nonatomic) enum MiSnapNFCProgressIndicator progressIndicator;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+/// Progress indicator during a reading session
+typedef SWIFT_ENUM(NSInteger, MiSnapNFCProgressIndicator, open) {
+/// Emoji
+/// Uses emojis set in <code>misnap_nfc_sdk_reading_progress_full</code> and <code>misnap_nfc_sdk_reading_progress_empty</code> localizable keys
+  MiSnapNFCProgressIndicatorEmoji = 0,
+/// Percent before the message
+  MiSnapNFCProgressIndicatorPercentBeforeMessage = 1,
+/// Percent after the message
+  MiSnapNFCProgressIndicatorPercentAfterMessage = 2,
+};
 
 
 /// Chip reader

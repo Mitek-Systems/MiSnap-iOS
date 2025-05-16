@@ -364,8 +364,11 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX31MiSnapVoiceCaptureConfiguration")
 /// An introductory instruction screen buttons configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX61MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration")
 @interface MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration : NSObject
-/// Configuration for a Start recording button at the bottom
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed SWIFT_DEPRECATED_MSG("Use `primary` instead");
+/// Configuration for the Start recording button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull primary;
+/// Configuration for the Cancel button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull secondary;
 /// Creates and returns a phrase selection configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -373,6 +376,8 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX61MiSnapVoiceCaptureIntroductoryInstructi
 @end
 
 @class UIColor;
+@class MiSnapBulletViewConfiguration;
+@class MiSnapColors;
 
 /// An introductory instruction screen configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX54MiSnapVoiceCaptureIntroductoryInstructionConfiguration")
@@ -387,8 +392,12 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX54MiSnapVoiceCaptureIntroductoryInstructi
 @property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
 /// Configuration for instructions presented underneath an image
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull message;
+/// Bullet configuration
+@property (nonatomic, strong) MiSnapBulletViewConfiguration * _Nonnull bullet;
 /// Configuration for buttons
 @property (nonatomic, strong) MiSnapVoiceCaptureIntroductoryInstructionButtonsConfiguration * _Nonnull buttons;
+/// Colors for instruction graphics
+@property (nonatomic, strong) MiSnapColors * _Nonnull colors;
 /// Creates and returns tutorial configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -412,8 +421,11 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX43MiSnapVoiceCaptureLocalizationConfigura
 /// A phrase selection buttons configuration
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX53MiSnapVoiceCapturePhraseSelectionButtonsConfiguration")
 @interface MiSnapVoiceCapturePhraseSelectionButtonsConfiguration : NSObject
-/// Configuration for a Continue button at the bottom
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull proceed SWIFT_DEPRECATED_MSG("Use `primary` instead");
+/// Configuration for the Continue button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull primary;
+/// Configuration for the Cancel button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull secondary;
 /// Creates and returns a phrase selection configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -449,9 +461,13 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX46MiSnapVoiceCapturePhraseSelectionConfig
 SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX47MiSnapVoiceCaptureRecordingButtonsConfiguration")
 @interface MiSnapVoiceCaptureRecordingButtonsConfiguration : NSObject
 /// Configuration for Cancel button at the top
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel SWIFT_DEPRECATED_MSG("Use `secondary` instead");
 /// Configuration for Failure acknowledgment button
-@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureAcknowledgment;
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull failureAcknowledgment SWIFT_DEPRECATED_MSG("Use `primary` instead");
+/// Configuration for Failure acknowledgment button
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull primary;
+/// Configuration for Cancel button at the top
+@property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull secondary;
 /// Creates and returns a phrase selection configuration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// Description
@@ -506,6 +522,9 @@ SWIFT_CLASS("_TtC20MiSnapVoiceCaptureUX30MiSnapVoiceCaptureUXParameters")
 @property (nonatomic) BOOL autoDismiss;
 /// A phrase to be used in a flow
 @property (nonatomic, readonly, copy) NSString * _Nullable phrase;
+/// Indicates whether navigation bar should be hidden when a view controller is embedded into navigation controller
+/// Default: <code>false</code>
+@property (nonatomic) BOOL navigationBarHidden;
 /// Initializes parameters for a flow (see <code>MiSnapVoiceCaptureFlow</code>) with an optional phrase
 /// note:
 /// a <code>phrase</code> is required for <code>verification</code> flow. A <code>miSnapVoiceCaptureError(_:)</code> callback is returned if it’s not provided.
@@ -624,6 +643,8 @@ SWIFT_PROTOCOL("_TtP20MiSnapVoiceCaptureUX40MiSnapVoiceCaptureViewControllerDele
 /// It’s optional
 - (void)miSnapVoiceCaptureShouldBeDismissed;
 @end
+
+
 
 #endif
 #if __has_attribute(external_source_symbol)

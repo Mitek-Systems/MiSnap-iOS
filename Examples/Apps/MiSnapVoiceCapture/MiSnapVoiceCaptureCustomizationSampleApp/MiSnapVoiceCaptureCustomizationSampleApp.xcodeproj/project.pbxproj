@@ -18,7 +18,6 @@
 		4271F151290094FD00120D0B /* MiSnapVoiceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 4271F150290094FD00120D0B /* MiSnapVoiceCapture */; };
 		4271F153290094FD00120D0B /* MiSnapVoiceCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 4271F152290094FD00120D0B /* MiSnapVoiceCaptureUX */; };
 		42A141C9296E2864007E7252 /* MiSnapVoiceCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A141AC296E2864007E7252 /* MiSnapVoiceCaptureLocalizable.strings */; };
-		42A141CA296E2864007E7252 /* misnap_voice_capture_instruction_distance.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A141AF296E2864007E7252 /* misnap_voice_capture_instruction_distance.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 		4271F14D2900948F00120D0B /* RecordingPlaybackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingPlaybackView.swift; sourceTree = "<group>"; };
 		42A141AD296E2864007E7252 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapVoiceCaptureLocalizable.strings; sourceTree = "<group>"; };
 		42A141AE296E2864007E7252 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapVoiceCaptureLocalizable.strings; sourceTree = "<group>"; };
-		42A141AF296E2864007E7252 /* misnap_voice_capture_instruction_distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_voice_capture_instruction_distance.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				42A141AC296E2864007E7252 /* MiSnapVoiceCaptureLocalizable.strings */,
-				42A141AF296E2864007E7252 /* misnap_voice_capture_instruction_distance.png */,
 			);
 			path = MiSnapVoiceCapture;
 			sourceTree = "<group>";
@@ -209,7 +206,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				42A141C9296E2864007E7252 /* MiSnapVoiceCaptureLocalizable.strings in Resources */,
-				42A141CA296E2864007E7252 /* misnap_voice_capture_instruction_distance.png in Resources */,
 				4271F13F2900943200120D0B /* LaunchScreen.storyboard in Resources */,
 				4271F13C2900943200120D0B /* Assets.xcassets in Resources */,
 				4271F13A2900943000120D0B /* Main.storyboard in Resources */,
@@ -462,7 +458,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
 			requirement = {
-				branch = feature/5.7.0;
+				branch = feature/5.8.0;
 				kind = branch;
 			};
 		};

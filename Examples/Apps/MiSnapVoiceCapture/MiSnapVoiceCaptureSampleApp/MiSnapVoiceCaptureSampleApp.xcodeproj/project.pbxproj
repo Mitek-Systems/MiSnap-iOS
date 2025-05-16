@@ -18,7 +18,6 @@
 		4284E53028D2564400031A25 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4284E52F28D2564400031A25 /* ResultViewController.swift */; };
 		4284E53228D25F4F00031A25 /* RecordingPlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4284E53128D25F4F00031A25 /* RecordingPlaybackView.swift */; };
 		42A14185296E2789007E7252 /* MiSnapVoiceCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A14168296E2789007E7252 /* MiSnapVoiceCaptureLocalizable.strings */; };
-		42A14186296E2789007E7252 /* misnap_voice_capture_instruction_distance.png in Resources */ = {isa = PBXBuildFile; fileRef = 42A1416B296E2789007E7252 /* misnap_voice_capture_instruction_distance.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +33,6 @@
 		4284E53128D25F4F00031A25 /* RecordingPlaybackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingPlaybackView.swift; sourceTree = "<group>"; };
 		42A14169296E2789007E7252 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapVoiceCaptureLocalizable.strings; sourceTree = "<group>"; };
 		42A1416A296E2789007E7252 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapVoiceCaptureLocalizable.strings; sourceTree = "<group>"; };
-		42A1416B296E2789007E7252 /* misnap_voice_capture_instruction_distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = misnap_voice_capture_instruction_distance.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				42A14168296E2789007E7252 /* MiSnapVoiceCaptureLocalizable.strings */,
-				42A1416B296E2789007E7252 /* misnap_voice_capture_instruction_distance.png */,
 			);
 			path = MiSnapVoiceCapture;
 			sourceTree = "<group>";
@@ -212,7 +209,6 @@
 				4284E51B28D254F800031A25 /* Assets.xcassets in Resources */,
 				42A14185296E2789007E7252 /* MiSnapVoiceCaptureLocalizable.strings in Resources */,
 				4284E51928D254F600031A25 /* Main.storyboard in Resources */,
-				42A14186296E2789007E7252 /* misnap_voice_capture_instruction_distance.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

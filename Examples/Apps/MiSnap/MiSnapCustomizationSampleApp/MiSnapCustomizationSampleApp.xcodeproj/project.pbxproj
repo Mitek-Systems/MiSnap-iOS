@@ -18,18 +18,6 @@
 		421FB5F827E9FF5C00F451FF /* MiSnapUX in Frameworks */ = {isa = PBXBuildFile; productRef = 421FB5F727E9FF5C00F451FF /* MiSnapUX */; };
 		421FB5FA27EB2F8300F451FF /* CustomTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FB5F927EB2F8300F451FF /* CustomTutorialViewController.swift */; };
 		42A14070296E1948007E7252 /* MiSnapLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A14049296E1948007E7252 /* MiSnapLocalizable.strings */; };
-		42A14097296E1958007E7252 /* misnap_tutorial_passport_qr_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A1408B296E1958007E7252 /* misnap_tutorial_passport_qr_portrait.jpg */; };
-		42A14098296E1958007E7252 /* misnap_tutorial_id_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A1408C296E1958007E7252 /* misnap_tutorial_id_portrait.jpg */; };
-		42A14099296E1958007E7252 /* misnap_tutorial_passport_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A1408D296E1958007E7252 /* misnap_tutorial_passport_portrait_2.jpg */; };
-		42A1409A296E1958007E7252 /* misnap_tutorial_id_back_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A1408E296E1958007E7252 /* misnap_tutorial_id_back_portrait.jpg */; };
-		42A1409B296E1958007E7252 /* misnap_tutorial_id_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A1408F296E1958007E7252 /* misnap_tutorial_id_back.jpg */; };
-		42A1409C296E1958007E7252 /* misnap_tutorial_id_back_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A14090296E1958007E7252 /* misnap_tutorial_id_back_portrait_2.jpg */; };
-		42A1409D296E1958007E7252 /* misnap_tutorial_passport_qr_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A14091296E1958007E7252 /* misnap_tutorial_passport_qr_portrait_2.jpg */; };
-		42A1409E296E1958007E7252 /* misnap_tutorial_passport_qr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A14092296E1958007E7252 /* misnap_tutorial_passport_qr.jpg */; };
-		42A1409F296E1958007E7252 /* misnap_tutorial_id.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A14093296E1958007E7252 /* misnap_tutorial_id.jpg */; };
-		42A140A0296E1958007E7252 /* misnap_tutorial_passport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A14094296E1958007E7252 /* misnap_tutorial_passport.jpg */; };
-		42A140A1296E1958007E7252 /* misnap_tutorial_passport_portrait.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A14095296E1958007E7252 /* misnap_tutorial_passport_portrait.jpg */; };
-		42A140A2296E1958007E7252 /* misnap_tutorial_id_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42A14096296E1958007E7252 /* misnap_tutorial_id_portrait_2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,18 +34,6 @@
 		42A1404A296E1948007E7252 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
 		42A1404B296E1948007E7252 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
 		42A14053296E1948007E7252 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
-		42A1408B296E1958007E7252 /* misnap_tutorial_passport_qr_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport_qr_portrait.jpg; sourceTree = "<group>"; };
-		42A1408C296E1958007E7252 /* misnap_tutorial_id_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_portrait.jpg; sourceTree = "<group>"; };
-		42A1408D296E1958007E7252 /* misnap_tutorial_passport_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport_portrait_2.jpg; sourceTree = "<group>"; };
-		42A1408E296E1958007E7252 /* misnap_tutorial_id_back_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_back_portrait.jpg; sourceTree = "<group>"; };
-		42A1408F296E1958007E7252 /* misnap_tutorial_id_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_back.jpg; sourceTree = "<group>"; };
-		42A14090296E1958007E7252 /* misnap_tutorial_id_back_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_back_portrait_2.jpg; sourceTree = "<group>"; };
-		42A14091296E1958007E7252 /* misnap_tutorial_passport_qr_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport_qr_portrait_2.jpg; sourceTree = "<group>"; };
-		42A14092296E1958007E7252 /* misnap_tutorial_passport_qr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport_qr.jpg; sourceTree = "<group>"; };
-		42A14093296E1958007E7252 /* misnap_tutorial_id.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id.jpg; sourceTree = "<group>"; };
-		42A14094296E1958007E7252 /* misnap_tutorial_passport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport.jpg; sourceTree = "<group>"; };
-		42A14095296E1958007E7252 /* misnap_tutorial_passport_portrait.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_passport_portrait.jpg; sourceTree = "<group>"; };
-		42A14096296E1958007E7252 /* misnap_tutorial_id_portrait_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = misnap_tutorial_id_portrait_2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,18 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				42A14049296E1948007E7252 /* MiSnapLocalizable.strings */,
-				42A14090296E1958007E7252 /* misnap_tutorial_id_back_portrait_2.jpg */,
-				42A1408E296E1958007E7252 /* misnap_tutorial_id_back_portrait.jpg */,
-				42A1408F296E1958007E7252 /* misnap_tutorial_id_back.jpg */,
-				42A14096296E1958007E7252 /* misnap_tutorial_id_portrait_2.jpg */,
-				42A1408C296E1958007E7252 /* misnap_tutorial_id_portrait.jpg */,
-				42A14093296E1958007E7252 /* misnap_tutorial_id.jpg */,
-				42A1408D296E1958007E7252 /* misnap_tutorial_passport_portrait_2.jpg */,
-				42A14095296E1958007E7252 /* misnap_tutorial_passport_portrait.jpg */,
-				42A14091296E1958007E7252 /* misnap_tutorial_passport_qr_portrait_2.jpg */,
-				42A1408B296E1958007E7252 /* misnap_tutorial_passport_qr_portrait.jpg */,
-				42A14092296E1958007E7252 /* misnap_tutorial_passport_qr.jpg */,
-				42A14094296E1958007E7252 /* misnap_tutorial_passport.jpg */,
 			);
 			path = MiSnap;
 			sourceTree = "<group>";
@@ -242,22 +206,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42A1409B296E1958007E7252 /* misnap_tutorial_id_back.jpg in Resources */,
-				42A14099296E1958007E7252 /* misnap_tutorial_passport_portrait_2.jpg in Resources */,
 				421FB5E627E9FE8700F451FF /* LaunchScreen.storyboard in Resources */,
-				42A14098296E1958007E7252 /* misnap_tutorial_id_portrait.jpg in Resources */,
-				42A140A2296E1958007E7252 /* misnap_tutorial_id_portrait_2.jpg in Resources */,
-				42A1409F296E1958007E7252 /* misnap_tutorial_id.jpg in Resources */,
-				42A140A0296E1958007E7252 /* misnap_tutorial_passport.jpg in Resources */,
 				421FB5E327E9FE8700F451FF /* Assets.xcassets in Resources */,
-				42A140A1296E1958007E7252 /* misnap_tutorial_passport_portrait.jpg in Resources */,
 				421FB5E127E9FE8400F451FF /* Main.storyboard in Resources */,
-				42A1409E296E1958007E7252 /* misnap_tutorial_passport_qr.jpg in Resources */,
-				42A1409D296E1958007E7252 /* misnap_tutorial_passport_qr_portrait_2.jpg in Resources */,
 				42A14070296E1948007E7252 /* MiSnapLocalizable.strings in Resources */,
-				42A1409A296E1958007E7252 /* misnap_tutorial_id_back_portrait.jpg in Resources */,
-				42A14097296E1958007E7252 /* misnap_tutorial_passport_qr_portrait.jpg in Resources */,
-				42A1409C296E1958007E7252 /* misnap_tutorial_id_back_portrait_2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -63,6 +63,8 @@ To obtain a license key, please contact your Mitek Solutions Provider or select 
 
 Refer to [Integration Guides](#integration-guides) for setting the license key in your application.
 
+:warning: Avoid hard-coding the license in your application. Instead, fetch it from your application server before invoking the SDK. This will allow you to easily switch the license in the future without requiring you to roll out a new version of your app.
+
 - - -
 
 # Integration Guides
@@ -76,7 +78,9 @@ Refer to [Integration Guides](#integration-guides) for setting the license key i
 
 # Migration Guide
 
-It is recommended to use [this migration guide](Docs/Guides/Common/migration_guide.md) for the integrators upgrading from the earlier versions.
+Use [this migration guide](Docs/Guides/Common/migration_guide.md) when upgrading from the earlier versions.
+
+Use [Swift 6.x migration guide](Docs/Guides/Common/migration_guide_swift_6.x.md) when migrating from Swift 5.x.
 
 - - -
 

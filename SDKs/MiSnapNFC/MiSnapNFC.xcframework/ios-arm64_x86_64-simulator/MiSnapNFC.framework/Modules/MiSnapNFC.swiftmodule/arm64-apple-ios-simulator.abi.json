@@ -10930,196 +10930,196 @@
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 23522,
+      "offset": 23599,
       "length": 34,
       "value": "\"Tag response error \/ no response\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 23667,
+      "offset": 23746,
       "length": 21,
       "value": "\"Session invalidated\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 24444,
+      "offset": 24523,
       "length": 4,
       "value": "0x90"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 24463,
+      "offset": 24542,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 24578,
+      "offset": 24657,
       "length": 108,
       "value": "\"\tError: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 24630,
+      "offset": 24709,
       "length": 1,
       "value": "\" (0x\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 24657,
+      "offset": 24736,
       "length": 1,
       "value": "\", 0x\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 24684,
+      "offset": 24763,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 24774,
+      "offset": 24853,
       "length": 4,
       "value": "0x63"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 24793,
+      "offset": 24872,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 24898,
+      "offset": 24977,
       "length": 4,
       "value": "0x6A"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 24917,
+      "offset": 24996,
       "length": 4,
       "value": "0x82"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 25014,
+      "offset": 25093,
       "length": 4,
       "value": "0x67"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 25033,
+      "offset": 25112,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 25129,
+      "offset": 25208,
       "length": 4,
       "value": "0x69"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 25148,
+      "offset": 25227,
       "length": 4,
       "value": "0x82"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "Dictionary",
-      "offset": 25693,
+      "offset": 25772,
       "length": 2660,
       "value": "[(0x62, [(0x00, \"No information given\"), (0x81, \"Part of returned data may be corrupted\"), (0x82, \"End of file\/record reached before reading Le bytes\"), (0x83, \"Selected file invalidated\"), (0x84, \"FCI not formatted according to ISO7816-4 section 5.1.5\")]), (0x63, [(0x00, \"Authentication failed\"), (0x81, \"File filled up by the last write\"), (0x82, \"Card Key not supported\"), (0x83, \"Reader Key not supported\"), (0x84, \"Plain transmission not supported\"), (0x85, \"Secured Transmission not supported\"), (0x86, \"Volatile memory not available\"), (0x87, \"Non Volatile memory not available\"), (0x88, \"Key number not valid\"), (0x89, \"Key length is not correct\"), (0xC, \"Counter provided by X (valued from 0 to 15) (exact meaning depending on the command)\")]), (0x65, [(0x00, \"No information given\"), (0x81, \"Memory failure\")]), (0x67, [(0x00, \"Wrong length\")]), (0x68, [(0x00, \"No information given\"), (0x81, \"Logical channel not supported\"), (0x82, \"Secure messaging not supported\")]), (0x69, [(0x00, \"No information given\"), (0x81, \"Command incompatible with file structure\"), (0x82, \"Security condition not satisfied\"), (0x83, \"Authentication method blocked\"), (0x84, \"Referenced data invalidated\"), (0x85, \"Conditions of use not satisfied\"), (0x86, \"Command not allowed (no current EF)\"), (0x87, \"Expected SM data objects missing\"), (0x88, \"SM data objects incorrect\")]), (0x6A, [(0x00, \"No information given\"), (0x80, \"Incorrect parameters in command data field\"), (0x81, \"Function not supported\"), (0x82, \"File not found\"), (0x83, \"Record not found\"), (0x84, \"Not enough memory space in the file\"), (0x85, \"Lc inconsistent with TLV structure\"), (0x86, \"Incorrect parameters P1-P2\"), (0x87, \"Lc inconsistent with P1-P2\"), (0x88, \"Referenced data not found\")]), (0x6B, [(0x00, \"Wrong parameter(s) P1-P2]\")]), (0x6D, [(0x00, \"Instruction code not supported or invalid\")]), (0x6E, [(0x00, \"Class not supported\")]), (0x6F, [(0x00, \"No precise diagnosis\")]), (0x90, [(0x00, \"Success\")])]"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 28454,
+      "offset": 28533,
       "length": 4,
       "value": "0x61"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 28480,
+      "offset": 28559,
       "length": 93,
       "value": "\"SW2 indicates the number of response bytes still available - (\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 28549,
+      "offset": 28628,
       "length": 5,
       "value": "\" bytes still available)\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 28599,
+      "offset": 28678,
       "length": 4,
       "value": "0x64"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 28625,
+      "offset": 28704,
       "length": 71,
       "value": "\"State of non-volatile memory unchanged (SW2=00, other values are RFU)\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "IntegerLiteral",
-      "offset": 28722,
+      "offset": 28801,
       "length": 4,
       "value": "0x6C"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 28748,
+      "offset": 28827,
       "length": 74,
       "value": "\"Wrong length Le: SW2 indicates the exact length - (exact length :\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 28820,
+      "offset": 28899,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 28958,
+      "offset": 29037,
       "length": 73,
       "value": "\"Unknown error - sw1: 0x\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 29001,
+      "offset": 29080,
       "length": 1,
       "value": "\", sw2 - 0x\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCTagReader.swift",
       "kind": "StringLiteral",
-      "offset": 29030,
+      "offset": 29109,
       "length": 1,
       "value": "\"\""
     },
@@ -15382,7 +15382,7 @@
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapNFC\/MiSnapNFC\/MiSnapNFC\/MiSnapNFCChipLocator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2847,
+      "offset": 2743,
       "length": 2,
       "value": "30"
     },

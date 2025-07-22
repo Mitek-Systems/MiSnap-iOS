@@ -63,6 +63,8 @@ To obtain a license key, please contact your Mitek Solutions Provider or select 
 
 Refer to [Integration Guides](#integration-guides) for setting the license key in your application.
 
+:warning: Avoid hard-coding the license in your application. Instead, fetch it from your application server before invoking the SDK. This will allow you to easily switch the license in the future without requiring you to roll out a new version of your app.
+
 - - -
 
 # Integration Guides

@@ -119,7 +119,7 @@ import _SwiftConcurrencyShims
   }
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureTutorialButtonsConfiguration : ObjectiveC.NSObject {
-  @available(*, deprecated, message: "Starting with 5.8.0 the only supported layout is vertical which is needed to support Larger Text for compliance with accessibility regulation")
+  @available(*, deprecated, message: "Starting with 5.8.1 the only supported layout is vertical which is needed to support Larger Text for compliance with accessibility regulation")
   @objc public var layout: MiSnapFacialCaptureTutorialButtonLayout
   @available(*, deprecated, message: "Use `primary` and `secondary` instead")
   @objc public var cancel: MiSnapLabelConfiguration

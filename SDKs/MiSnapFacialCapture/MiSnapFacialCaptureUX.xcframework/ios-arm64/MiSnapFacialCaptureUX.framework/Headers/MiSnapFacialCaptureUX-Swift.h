@@ -448,7 +448,7 @@ typedef SWIFT_ENUM(NSInteger, MiSnapFacialCaptureTutorialButtonLayout, open) {
 SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX47MiSnapFacialCaptureTutorialButtonsConfiguration")
 @interface MiSnapFacialCaptureTutorialButtonsConfiguration : NSObject
 /// Layout
-@property (nonatomic) enum MiSnapFacialCaptureTutorialButtonLayout layout SWIFT_DEPRECATED_MSG("Starting with 5.8.0 the only supported layout is vertical which is needed to support Larger Text for compliance with accessibility regulation");
+@property (nonatomic) enum MiSnapFacialCaptureTutorialButtonLayout layout SWIFT_DEPRECATED_MSG("Starting with 5.8.1 the only supported layout is vertical which is needed to support Larger Text for compliance with accessibility regulation");
 /// Configuration for Cancel button for all tutroial screens
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull cancel SWIFT_DEPRECATED_MSG("Use `primary` and `secondary` instead");
 /// Configuration for:

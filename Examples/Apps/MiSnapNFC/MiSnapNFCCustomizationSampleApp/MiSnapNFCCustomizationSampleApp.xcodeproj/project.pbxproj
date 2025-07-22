@@ -484,7 +484,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
 			requirement = {
-				branch = feature/5.8.0;
+				branch = feature/5.8.1;
 				kind = branch;
 			};
 		};

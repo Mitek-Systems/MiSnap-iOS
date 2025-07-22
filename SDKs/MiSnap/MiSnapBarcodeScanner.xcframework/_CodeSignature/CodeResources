@@ -18,11 +18,11 @@
 		</data>
 		<key>ios-arm64/MiSnapBarcodeScanner.framework/Info.plist</key>
 		<data>
-		3wfWFNKJy7bdZgtouwICsGYuTD8=
+		vl06fqXBRuCX3kq5i7ZtrmQdqOI=
 		</data>
 		<key>ios-arm64/MiSnapBarcodeScanner.framework/MiSnapBarcodeScanner</key>
 		<data>
-		gxqvDot6E+3YBbJkU65Gy+Po2Xw=
+		mpWMQS9pjihrJWU4c4Ktx7s9hos=
 		</data>
 		<key>ios-arm64/MiSnapBarcodeScanner.framework/Modules/module.modulemap</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>ios-arm64/MiSnapBarcodeScanner.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Qxmr0Ygqr0pu/6OkCyQ318ymG/g=
+		vvcTYVTC4XfnptQOdYbgnE6HDf0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapBarcodeScanner.framework/Headers/MiSnapBarcodeScanner.h</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapBarcodeScanner.framework/Info.plist</key>
 		<data>
-		a1C4zHcePhJN8Iwd6XkpUiaYN5I=
+		hJBkj7mslzfpPyPTHX9PwmaoTHw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapBarcodeScanner.framework/MiSnapBarcodeScanner</key>
 		<data>
-		Mmw5e4ZE/DSjHrfA3TL2hJO9FcY=
+		23hGbXzhtXp5VuNY3h+8OVyJyw8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapBarcodeScanner.framework/Modules/module.modulemap</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapBarcodeScanner.framework/_CodeSignature/CodeResources</key>
 		<data>
-		LqvHxVizLgOLTAV7fPEe6DmnCfU=
+		jTUHnT2PHNhhqdkd94O8d3q9yEo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -108,22 +108,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3wfWFNKJy7bdZgtouwICsGYuTD8=
+			vl06fqXBRuCX3kq5i7ZtrmQdqOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			5ok/5/PW7FOLcPQJMVJzdH8WzZbzuV7zLy76+q2oL1Y=
+			lnKkpzZj8/pL40ChOCc7/p2rbBhGMMW2X0KyFY+Bcv0=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapBarcodeScanner.framework/MiSnapBarcodeScanner</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gxqvDot6E+3YBbJkU65Gy+Po2Xw=
+			mpWMQS9pjihrJWU4c4Ktx7s9hos=
 			</data>
 			<key>hash2</key>
 			<data>
-			uO/FVUg6PVeAyCBfTO5K9ESUUxi6KJstdxni8JSEK1k=
+			zN0HPA15v7chJq0m/88a5ZFwNJgZtgn6dGeAfMoyqmE=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapBarcodeScanner.framework/Modules/module.modulemap</key>
@@ -152,11 +152,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qxmr0Ygqr0pu/6OkCyQ318ymG/g=
+			vvcTYVTC4XfnptQOdYbgnE6HDf0=
 			</data>
 			<key>hash2</key>
 			<data>
-			eUoH62YZXf5EsSwJ3SFmAteVKWPHBKSOXKvgLfiRfk8=
+			aYQcCayOMbJjX2ZEDZBuTDTyNAP7JUj5/YxHWjr0Smk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapBarcodeScanner.framework/Headers/MiSnapBarcodeScanner.h</key>
@@ -196,22 +196,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a1C4zHcePhJN8Iwd6XkpUiaYN5I=
+			hJBkj7mslzfpPyPTHX9PwmaoTHw=
 			</data>
 			<key>hash2</key>
 			<data>
-			UY9uqgruOAVnJVPPK8m2BDXF08qf6nPZnYfjVow92gs=
+			Hb4afcphggvvDxdv2akLvxpWwDjLJCk70ob66RIZTpM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapBarcodeScanner.framework/MiSnapBarcodeScanner</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Mmw5e4ZE/DSjHrfA3TL2hJO9FcY=
+			23hGbXzhtXp5VuNY3h+8OVyJyw8=
 			</data>
 			<key>hash2</key>
 			<data>
-			/HNPty8Ychk5emEgOjwozSBmjTgdDgJrWGWE0slLqEA=
+			0gKOE4w6nx9Nm9bA1zl1s00bnoR5K150NpJJiwAF6xY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapBarcodeScanner.framework/Modules/module.modulemap</key>
@@ -240,11 +240,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LqvHxVizLgOLTAV7fPEe6DmnCfU=
+			jTUHnT2PHNhhqdkd94O8d3q9yEo=
 			</data>
 			<key>hash2</key>
 			<data>
-			LnBsvOYBVrG6NdZQxcnEUyexBXhp9kx5Xlna81h77hA=
+			TuEYKXV1D6B7xMMVbJbeCRd5P8rr3NPn4ANK4MGmGJ4=
 			</data>
 		</dict>
 	</dict>

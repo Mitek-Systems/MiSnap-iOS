@@ -101,14 +101,14 @@ See [this guide](Docs/Guides/Common/workflow.md) for `MiSnapWorkflow` integratio
 | :------------------------------- | :------------: | :--------------: |
 | MiSnap                           |  1.50          |  3.80            |
 | MiSnap + MiSnapUX                |  2.40          |  5.60            |
-| NFC                              |  1.30          |  3.00            |
-| NFC + NFCUX                      |  1.70          |  3.90            |
+| NFC                              |  1.90          |  4.80            |
+| NFC + NFCUX                      |  2.40          |  6.10            |
 | FacialCapture                    |  0.24          |  0.76            |
 | FacialCapture + FacialCaptureUX  |  0.61          |  1.70            |
 | VoiceCapture                     |  0.95          |  2.40            |
 | VoiceCapture + VoiceCaptureUX    |  1.20          |  3.20            |
-| All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture)                   |  3.50          |  8.60            |
-| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  5.00          |  11.60           |
+| All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture)                   |  4.00          |  10.40            |
+| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  4.90          |  12.70           |
 
 </center>
 

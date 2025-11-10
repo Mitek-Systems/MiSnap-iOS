@@ -14,15 +14,15 @@
 		</data>
 		<key>ios-arm64/MiSnapNFCUX.framework/Info.plist</key>
 		<data>
-		FxIMRFP+AV7l7I0GUfAY3Za4APs=
+		URkGzrSesCBBGaIE+VGgn4aDJ4w=
 		</data>
 		<key>ios-arm64/MiSnapNFCUX.framework/MiSnapNFCUX</key>
 		<data>
-		F8dPfP+h5mf6B0E35p5Pd3rtUVA=
+		zECP7Q4bKKLE/ObK7GZwPnc3rkA=
 		</data>
 		<key>ios-arm64/MiSnapNFCUX.framework/Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		8q9moE2DVo2KZ/p9uaR9aJwkanA=
+		4buP7W1vLoFXgBC/+PJj59JRW/g=
 		</data>
 		<key>ios-arm64/MiSnapNFCUX.framework/Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64/MiSnapNFCUX.framework/_CodeSignature/CodeResources</key>
 		<data>
-		EU9W8lpIX5jPfmpKSRoy2o90jIk=
+		IxyimiolPiIovMRe1fdfY135KJA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/Headers/MiSnapNFCUX-Swift.h</key>
 		<data>
@@ -66,15 +66,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/Info.plist</key>
 		<data>
-		GXK30YGlv6o53hZnQnqhSrJh4Jg=
+		sliXDvGrenzftfcz2p6TtcI+fiM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/MiSnapNFCUX</key>
 		<data>
-		BNFpc4rAzLFJhd3I98HQoa88l7g=
+		QVaNk0DeL4D6mXZFZMgxRg45LEo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		8q9moE2DVo2KZ/p9uaR9aJwkanA=
+		4buP7W1vLoFXgBC/+PJj59JRW/g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/Modules/MiSnapNFCUX.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8q9moE2DVo2KZ/p9uaR9aJwkanA=
+		4buP7W1vLoFXgBC/+PJj59JRW/g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/Modules/MiSnapNFCUX.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/_CodeSignature/CodeResources</key>
 		<data>
-		VF4bZuGtZBPZDGITm6tx574IW8A=
+		S1QnVj2sjU/fQk5xPFZ0XjV3//E=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -161,33 +161,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FxIMRFP+AV7l7I0GUfAY3Za4APs=
+			URkGzrSesCBBGaIE+VGgn4aDJ4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			CPOCWygCcVK9Kl52DMOMT7o5ZbauUhq0nLK3JXSWb2I=
+			8rIQUNzfWt/G7odc6CHM6M7cvfFLNRQVlvH4Ss+iceo=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapNFCUX.framework/MiSnapNFCUX</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F8dPfP+h5mf6B0E35p5Pd3rtUVA=
+			zECP7Q4bKKLE/ObK7GZwPnc3rkA=
 			</data>
 			<key>hash2</key>
 			<data>
-			QKeVeTboJgexDLUdOQbpQG2jCc/Avq/WRj6nlRwifeI=
+			/IZHfFhJMXvzXGCOcGJeivZFnptnfAhPjMp9LB4CFqA=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapNFCUX.framework/Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8q9moE2DVo2KZ/p9uaR9aJwkanA=
+			4buP7W1vLoFXgBC/+PJj59JRW/g=
 			</data>
 			<key>hash2</key>
 			<data>
-			+Fh78c2Aqa/NHQUtMD1WGG8v+cRP03v/9Cc6OosgzBM=
+			MAEPqRqli+9yntAoX5zsZGRNo+Z/s06fpculsxPbe2o=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapNFCUX.framework/Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -271,11 +271,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EU9W8lpIX5jPfmpKSRoy2o90jIk=
+			IxyimiolPiIovMRe1fdfY135KJA=
 			</data>
 			<key>hash2</key>
 			<data>
-			8GM/AMeS3rXKk8mzWvH+n41YZ923qncosCJG58A7nCs=
+			VmNZwiOUop4+Lji94ZZK44DSPtQ3JBO7PXLYXjrP9W4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/Headers/MiSnapNFCUX-Swift.h</key>
@@ -304,33 +304,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GXK30YGlv6o53hZnQnqhSrJh4Jg=
+			sliXDvGrenzftfcz2p6TtcI+fiM=
 			</data>
 			<key>hash2</key>
 			<data>
-			6Z7CJhdX5ijxH9DOlwM6tKGzg3lS4L7/WH4sGVDVKWE=
+			owLp4sdmYzBmdJqIRxmYua57ZOlZ3m3IxKU/dx+Yt+0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/MiSnapNFCUX</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BNFpc4rAzLFJhd3I98HQoa88l7g=
+			QVaNk0DeL4D6mXZFZMgxRg45LEo=
 			</data>
 			<key>hash2</key>
 			<data>
-			c0WPZ+5JKE4+w4nqUKUjTVv42rxcBbMlSD7S1dadKT8=
+			PIosd7FBQy+8jEuAf/WIAsoBke23uPx0JuwKWNsyWgs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8q9moE2DVo2KZ/p9uaR9aJwkanA=
+			4buP7W1vLoFXgBC/+PJj59JRW/g=
 			</data>
 			<key>hash2</key>
 			<data>
-			+Fh78c2Aqa/NHQUtMD1WGG8v+cRP03v/9Cc6OosgzBM=
+			MAEPqRqli+9yntAoX5zsZGRNo+Z/s06fpculsxPbe2o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/Modules/MiSnapNFCUX.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -392,11 +392,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8q9moE2DVo2KZ/p9uaR9aJwkanA=
+			4buP7W1vLoFXgBC/+PJj59JRW/g=
 			</data>
 			<key>hash2</key>
 			<data>
-			+Fh78c2Aqa/NHQUtMD1WGG8v+cRP03v/9Cc6OosgzBM=
+			MAEPqRqli+9yntAoX5zsZGRNo+Z/s06fpculsxPbe2o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapNFCUX.framework/Modules/MiSnapNFCUX.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -480,11 +480,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VF4bZuGtZBPZDGITm6tx574IW8A=
+			S1QnVj2sjU/fQk5xPFZ0XjV3//E=
 			</data>
 			<key>hash2</key>
 			<data>
-			qXh+vLMaUcGzbQgTlQOU70dE0kYG765mwExGi4rJ16k=
+			5KFXqB+NHm3saIDKHafDp3VLv7P4TC0jgEx836c6y/k=
 			</data>
 		</dict>
 	</dict>

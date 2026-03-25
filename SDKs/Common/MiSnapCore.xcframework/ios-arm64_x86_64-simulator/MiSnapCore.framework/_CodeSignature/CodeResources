@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapCore-Swift.h</key>
 		<data>
-		fFxq+yGdI4rvxcf/WnPhb+RLcyQ=
+		YY03K4eyIwph/fhszS1Nro0Dpr4=
 		</data>
 		<key>Headers/MiSnapCore.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2zKYOmfulQAiZkOW159JlqZUiX4=
+		NSFsAXuQoaJs3UbjkmjZLm5QXng=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		vBFrqwu0PftD6ma3uXJ7cyBiJgE=
+		9zeeN9nTJf56a9pknQ5cq7leXQ4=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		o8uA8odRX7W/sNducyWkMRlGBsg=
+		q7n1MdSLF4Jrb24zNEZrNybKV/g=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		o8uA8odRX7W/sNducyWkMRlGBsg=
+		q7n1MdSLF4Jrb24zNEZrNybKV/g=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ysf47HqmWbWLMBEHNinCrYjUJOo=
+		SNBeqlUYgiFNQoX+Arfg621oXCo=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		vBFrqwu0PftD6ma3uXJ7cyBiJgE=
+		9zeeN9nTJf56a9pknQ5cq7leXQ4=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		VakxhiE5ysN/xoBaD23IIPX/3hk=
+		BxIL9j1mpubu88R0sLGupLnyIOs=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VakxhiE5ysN/xoBaD23IIPX/3hk=
+		BxIL9j1mpubu88R0sLGupLnyIOs=
 		</data>
 		<key>Modules/MiSnapCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8n8URNPIZeM9NBpDI96o+5+jfnU=
+		lsy9WeFeDfyqWbRVgUn30pkJLwk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rVFuOYOYt8di7l+QQ7iVs42yLAe4Fcb67ok0GWyxwYY=
+			lXlqD/Kvs2tTvxOmgEn8rVv4Gn8n5XUvgMS9e3s2jN0=
 			</data>
 		</dict>
 		<key>Headers/MiSnapCore.h</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GTDW6RtMvXg3uNHGAPWipVnNsEUCYtEHTfgJBNuF9H0=
+			VLOTxq8TSiS1HSokg8lzqn44VqJH2yKsJFbBKWkrTTQ=
 			</data>
 		</dict>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jQSaqt6FHPrRAbFTtLyosPE/9/xfHTp/6Qqw9LaMC6A=
+			xCR6DsvQhRvYcww6HRCC532dnaWh3kCgF/lLetnHGRc=
 			</data>
 		</dict>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jQSaqt6FHPrRAbFTtLyosPE/9/xfHTp/6Qqw9LaMC6A=
+			xCR6DsvQhRvYcww6HRCC532dnaWh3kCgF/lLetnHGRc=
 			</data>
 		</dict>
 		<key>Modules/MiSnapCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			liBV7ZNSJVAM32hUJuBBZAZsRmH11HG7ru4AheeWEjE=
+			QWuXROy6GDKHDJJx/vzdjfz6Vy1Uw8xnES0g+mqmywo=
 			</data>
 		</dict>
 		<key>Modules/MiSnapCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GTDW6RtMvXg3uNHGAPWipVnNsEUCYtEHTfgJBNuF9H0=
+			VLOTxq8TSiS1HSokg8lzqn44VqJH2yKsJFbBKWkrTTQ=
 			</data>
 		</dict>
 		<key>Modules/MiSnapCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b5ecFivGCkheIZOr+RD4iuxl09mIRgJGKcAZGD8Aa74=
+			wHYu8jZZqWgwuyIz0NLDfiyqdahV0ovzP7gB27xIbXA=
 			</data>
 		</dict>
 		<key>Modules/MiSnapCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b5ecFivGCkheIZOr+RD4iuxl09mIRgJGKcAZGD8Aa74=
+			wHYu8jZZqWgwuyIz0NLDfiyqdahV0ovzP7gB27xIbXA=
 			</data>
 		</dict>
 		<key>Modules/MiSnapCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zjRLz5Alr4/FRZGDzCbAxY6XBpb1ZOc3hNp/OcqVUYU=
+			fcAqlZgFpo/p2TTRR93PVQA9AakAUMdy+bQBV7Vq5/c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

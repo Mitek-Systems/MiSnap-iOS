@@ -1,0 +1,116 @@
+/* 
+  Localizable.strings
+  MiSnap
+
+  Copyright (c) 2014 Mitek Systems, Inc. All rights reserved.
+*/
+
+// Document label
+"Any ID"                                = "Any ID";
+"Passport"                              = "Passport";
+"ID Front"                              = "Front of ID";
+"ID Back"                               = "Back of ID";
+"DL Front"                              = "Front of License";
+"DL Back"                               = "Back of License";
+"QR Code"                               = "QR Code";
+"Check Front"                           = "Front of Check";
+"Check Back"                            = "Back of Check";
+"Generic"                               = "Document";
+
+"dialog_success"                        = "Success!";
+"dialog_cancel_title"                   = "Are you sure you want to leave?";
+"dialog_cancel_message"                 = "You will have to start the process from the beginning.";
+"dialog_cancel_abort"                   = "Stay";
+"dialog_cancel_proceed"                 = "Leave";
+
+"misnap_overlay_cancel_button"          = "Cancel";
+"misnap_overlay_help_button"            = "Help";
+"misnap_overlay_capture_button"         = "Camera shutter";
+"misnap_overlay_flash_on"               = "Flash is on";
+"misnap_overlay_flash_off"              = "Flash is off";
+"misnap_overlay_flash_auto"             = "Flash is in auto mode";
+"misnap_overlay_record"                 = "Recording";
+"misnap_torch_on"                       = "On";
+"misnap_torch_off"                      = "Off";
+
+// Hint Messages
+"misnap_status_none"                        = "";
+"misnap_status_too_much_glare"              = "Glare detected";
+"misnap_status_not_identity_front"          = "Use front of identity document";
+"misnap_status_not_identity_back"           = "Use back of identity document";
+"misnap_status_not_passport"                = "Use the passport photo page";
+"misnap_status_mrz_obstructed"              = "Bottom text should be visible";
+"misnap_status_low_contrast"                = "Not enough contrast";
+"misnap_status_busy_background"             = "Background too busy";
+"misnap_status_not_check_front"             = "Use front of check";
+"misnap_status_not_check_back"              = "Use back of check";
+"misnap_status_document_not_found"          = "Not enough contrast";
+"misnap_status_document_not_found_mrz"      = "Bottom text should be visible";
+"misnap_status_not_sharp"                   = "Focusing";
+"misnap_status_too_rotated"                 = "Document not aligned";
+"misnap_status_too_skewed"                  = "Document not aligned";
+"misnap_status_too_far"                     = "Too far away";
+"misnap_status_too_close"                   = "Too close";
+"misnap_status_too_dark"                    = "Not enough light";
+"misnap_status_too_bright"                  = "Too bright";
+"misnap_status_wrong_aspect_ratio"          = "Background too busy";
+"misnap_status_classification_in_progress"  = "Document found, wait";
+"misnap_status_good"                        = "Document found, wait";
+"misnap_status_good_manual"                 = "Tap now";
+
+// Tutorial
+"misnap_tutorial_do_not_show_again"     = "Don't show this screen again";
+"misnap_checkbox_checked"               = "Checkbox checked";
+"misnap_checkbox_unchecked"             = "Checkbox unchecked";
+
+"misnap_tutorial_cancel"                = "Cancel";
+"misnap_tutorial_back"                  = "Back";
+"misnap_tutorial_continue"              = "Continue";
+"misnap_tutorial_try_again"             = "Retry Auto";
+"misnap_tutorial_capture_manually"      = "Take manually";
+"misnap_tutorial_retake"                = "Retake";
+"misnap_tutorial_continue_review"       = "Looks Good";
+
+"misnap_tutorial_check_front"           = "Place front of check on a dark surface with enough light. Align it with guide.";
+"misnap_tutorial_check_back"            = "Place back of check on a dark surface with enough light. Align it with guide.";
+"misnap_tutorial_id_front"              = "Place front of ID on a dark surface with enough light. Align it with guide.";
+"misnap_tutorial_id_back"               = "Place back of ID on a dark surface with enough light. Align it with guide.";
+"misnap_tutorial_dl_front"              = "Place front of license on a dark surface with enough. Align it with guide.";
+"misnap_tutorial_dl_back"               = "Place back of license on a dark surface with enough light. Align it with guide.";
+"misnap_tutorial_passport"              = "Place passport on a dark surface with enough light. Align it with guide.";
+"misnap_tutorial_document"              = "Place document on a dark surface with enough light. Align it with guide.";
+"misnap_tutorial_qr"                    = "Flip photo page and locate the QR code.";
+
+"misnap_tutorial_auto"                  = "We will take the photo for you.";
+"misnap_tutorial_manual"                = "Tap the camera shutter button when ready.";
+"misnap_tutorial_tip"                   = "Here's a tip";
+"misnap_tutorial_tips"                  = "Here are a few tips";
+
+"misnap_tutorial_timeout_header"        = "Time's up, we couldn't take your photo…";
+
+"misnap_tutorial_review_check"          = "Image of the check is on the screen. Seek assistance if you would like the image reviewed, or accept with the button.";
+"misnap_tutorial_review_document"       = "Image of the document is on the screen. Seek assistance if you would like the image reviewed, or accept with the button.";
+
+// Failover Reasons
+"misnap_status_too_dark_timeout"                = "Place the document in a well-lit area";
+"misnap_status_too_bright_timeout"              = "Place the document in an area with less light";
+"misnap_status_low_contrast_timeout"            = "Place document on a dark surface";
+"misnap_status_busy_background_timeout"         = "Place document on a plain surface";
+"misnap_status_too_much_glare_timeout"          = "Tilt or move to avoid reflections";
+"misnap_status_not_identity_front_timeout"      = "Use front of identity document";
+"misnap_status_not_identity_back_timeout"       = "Use back of identity document";
+"misnap_status_not_passport_timeout"            = "Use the passport photo page";
+"misnap_status_not_check_front_timeout"         = "Use front of the check with all numbers visible";
+"misnap_status_not_check_back_timeout"          = "Flip check over to the back";
+"misnap_status_too_skewed_timeout"              = "Hold the device directly over the document";
+"misnap_status_too_rotated_timeout"             = "Hold the device directly over the document";
+"misnap_status_too_close_timeout"               = "Move the device farther away from the document";
+"misnap_status_too_far_timeout"                 = "Move the device closer to the document";
+"misnap_status_not_sharp_timeout"               = "Hold the device still";
+"misnap_status_document_not_found_timeout"      = "Place document on a dark surface";
+"misnap_status_document_not_found_mrz_timeout"  = "The bottom text should be fully visible";
+"misnap_status_wrong_aspect_ratio_timeout"      = "Place document on a dark surface";
+
+"misnap_session_interruption_multiple_foreground_apps" = "Full screen is required";
+"misnap_session_interruption_microphone_in_use"        = "Microphone is in use by another application";
+"misnap_session_interruption_camera_in_use"            = "Camera is in use by another application";

@@ -51,6 +51,7 @@ import _SwiftConcurrencyShims
   case readVerbose
   case restartPollingVerbose
   case unknownTagVerbose
+  case invalidDateVerbose
   case paceSupportVerbose
   case caSupportVerbose
   case aaSupportVerbose

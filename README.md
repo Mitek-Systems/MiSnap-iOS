@@ -74,7 +74,7 @@ Refer to [Integration Guides](#integration-guides) for setting the license key i
 * [MiSnapFacialCapture](Docs/Guides/MiSnapFacialCapture/integration_guide.md)
 * [MiSnapVoiceCapture](Docs/Guides/MiSnapVoiceCapture/integration_guide.md)
 
-For SwiftUI integration examples, see [MiSnapSampleAppSwiftUI](Examples/Apps/SwiftUI/MiSnapSampleAppSwiftUI).
+For integration examples, see [MiSnapSampleApp](Examples/Apps/MiSnapSampleApp).
 
 - - -
 

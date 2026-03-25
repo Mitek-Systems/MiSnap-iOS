@@ -642,6 +642,10 @@ extension MiSnapAssetManager.MiSnapBulletView {
   @objc public var vignette: MiSnapAssetManager.MiSnapVignetteConfiguration
   @objc public var outline: MiSnapAssetManager.MiSnapDocumentOutlineConfiguration
   @objc public var hideOnSuccess: Swift.Bool
+  @objc public var isHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc override dynamic public var description: Swift.String {
     @objc get
   }

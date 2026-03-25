@@ -28,59 +28,127 @@ import MiSnapVoiceCapture
 /**
  Workflow step
  */
-enum MiSnapWorkflowStep : String, Equatable {
+enum MiSnapWorkflowStep: Equatable, Hashable {
     /**
      Not set
      */
-    case none = "None"
+    case none
     #if canImport(MiSnapUX) && canImport(MiSnap)
     /**
      Any identity document (ID/DL/RP Front or Back, Passport)
      */
-    case anyId = "Any_ID"
+    case anyId
     /**
      ID/DL/RP Front
      */
-    case idFront = "ID_Front"
+    case idFront
     /**
      ID/DL/RP Back
      */
-    case idBack = "ID_Back"
+    case idBack
     /**
      Passport
      */
-    case passport = "Passport"
+    case passport
     /**
      Passport QR
      */
-    case passportQr = "Passport_QR"
+    case passportQr
     /**
      Check Front
      */
-    case checkFront = "Check_Front"
+    case checkFront
     /**
      Check Back
      */
-    case checkBack = "Check_Back"
+    case checkBack
+    /**
+     Barcode
+     */
+    case barcode(types: [MiSnapWorkflowBarcodeType], name: String)
     #endif
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
     /**
      NFC
      */
-    case nfc = "NFC"
+    case nfc
     #endif
     #if canImport(MiSnapFacialCaptureUX) && canImport(MiSnapFacialCapture)
     /**
      Face
      */
-    case face = "Face"
+    case face
     #endif
     #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
     /**
      Voice
      */
-    case voice = "Voice"
+    case voice
     #endif
+    
+    var stringValue: String {
+        switch self {
+        case .none:             return "None"
+        #if canImport(MiSnapUX) && canImport(MiSnap)
+        case .anyId:            return "Any_ID"
+        case .idFront:          return "ID_Front"
+        case .idBack:           return "ID_Back"
+        case .passport:         return "Passport"
+        case .passportQr:       return "Passport_QR"
+        case .checkFront:       return "Check_Front"
+        case .checkBack:        return "Check_Back"
+        case .barcode(_, _):    return "Barcode"
+        #endif
+        #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
+        case .nfc:              return "NFC"
+        #endif
+        #if canImport(MiSnapFacialCaptureUX) && canImport(MiSnapFacialCapture)
+        case .face:             return "Face"
+        #endif
+        #if canImport(MiSnapVoiceCaptureUX) && canImport(MiSnapVoiceCapture)
+        case .voice:            return "Voice"
+        #endif
+        }
+    }
+}
+/**
+ Barcode type
+ */
+enum MiSnapWorkflowBarcodeType {
+    /**
+     PDF417
+     */
+    case pdf417
+    /**
+     QR
+     */
+    case qr
+    /**
+     Aztec
+     */
+    case aztec
+    /**
+     String representation
+     */
+    var stringValue: String {
+        switch self {
+        case .pdf417:   return "PDF417"
+        case .qr:       return "QR"
+        case .aztec:    return "Aztec"
+        }
+    }
+    /**
+     Integer representation
+     
+     - Note, mapped to `MiSnapScienceBarcodeType` integer value
+     */
+    var intValue: Int {
+        switch self {
+        case .pdf417:   return 0
+        case .qr:       return 1
+        case .aztec:    return 2
+        }
+    }
 }
 /**
  Flow
@@ -189,6 +257,10 @@ class MiSnapWorkflowResult: NSObject {
      Check Back result
      */
     var checkBack: MiSnapResult?
+    /**
+     Barcode result
+     */
+    var barcode: MiSnapResult?
     #endif
     #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
     /**
@@ -223,6 +295,7 @@ class MiSnapWorkflowResult: NSObject {
         passportQr = nil
         checkFront = nil
         checkBack = nil
+        barcode = nil
         #endif
         #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
         nfc = nil
@@ -308,7 +381,7 @@ class MiSnapWorkflowController: NSObject {
         viewController = UIViewController.init()
         switch step {
         #if canImport(MiSnapUX) && canImport(MiSnap)
-        case .idFront, .idBack, .passport, .passportQr, .checkFront, .checkBack:
+        case .idFront, .idBack, .passport, .passportQr, .checkFront, .checkBack, .barcode(_, _):
             viewController = controllerFactory.buildMiSnapVC(for: step, delegate: self)
         #endif
         #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
@@ -365,13 +438,14 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
         }
         
         switch completedStep {
-        case .idFront:      self.result.idFront = result
-        case .idBack:       self.result.idBack = result
-        case .passport:     self.result.passport = result
-        case .passportQr:   self.result.passportQr = result
-        case .checkFront:   self.result.checkFront = result
-        case .checkBack:    self.result.checkBack = result
-        default:            break
+        case .idFront:          self.result.idFront = result
+        case .idBack:           self.result.idBack = result
+        case .passport:         self.result.passport = result
+        case .passportQr:       self.result.passportQr = result
+        case .checkFront:       self.result.checkFront = result
+        case .checkBack:        self.result.checkBack = result
+        case .barcode(_, _):    self.result.barcode = result
+        default:                break
         }
         
         delegate?.miSnapWorkflowControllerIntermediate(result, step: completedStep)
@@ -428,13 +502,14 @@ extension MiSnapWorkflowController: MiSnapViewControllerDelegate {
         // Send cancellation workflow result only for a step that was cancelled by resetting results for all previous successful steps
         self.result.reset()
         switch step {
-        case .idFront:      self.result.idFront = result
-        case .idBack:       self.result.idBack = result
-        case .passport:     self.result.passport = result
-        case .passportQr:   self.result.passportQr = result
-        case .checkFront:   self.result.checkFront = result
-        case .checkBack:    self.result.checkBack = result
-        default:            break
+        case .idFront:          self.result.idFront = result
+        case .idBack:           self.result.idBack = result
+        case .passport:         self.result.passport = result
+        case .passportQr:       self.result.passportQr = result
+        case .checkFront:       self.result.checkFront = result
+        case .checkBack:        self.result.checkBack = result
+        case .barcode(_, _):    self.result.barcode = result
+        default:                break
         }
         
         cleanup(cancelled: true)

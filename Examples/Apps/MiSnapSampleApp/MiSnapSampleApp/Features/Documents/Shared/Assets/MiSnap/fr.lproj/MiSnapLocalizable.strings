@@ -1,0 +1,117 @@
+/* 
+  Localizable.strings
+  MiSnap
+
+  Copyright (c) 2014 Mitek Systems, Inc. All rights reserved.
+*/
+
+// Document label
+"Any ID"                                = "Tout document d'identité";
+"Passport"                              = "Passeport";
+"ID Front"                              = "Recto de la pièce d'identité";
+"ID Back"                               = "Verso de la pièce d'identité";
+"DL Front"                              = "Recto du permis";
+"DL Back"                               = "Dos de permis";
+"QR Code"                               = "Code QR";
+"Check Front"                           = "Recto du chèque";
+"Check Back"                            = "Verso du chèque";
+"Generic"                               = "Document";
+
+"dialog_success"                        = "Succès!";
+"dialog_cancel_title"                   = "Êtes-vous sûr de vouloir partir?";
+"dialog_cancel_message"                 = "Vous devrez recommencer le processus depuis le début.";
+"dialog_cancel_abort"                   = "Reste";
+"dialog_cancel_proceed"                 = "Partir";
+
+"misnap_overlay_cancel_button"          = "Annuler";
+"misnap_overlay_help_button"            = "d\’aide";
+"misnap_overlay_capture_button"         = "Bouton de l’obturateur";
+"misnap_overlay_flash_on"               = "Flash est activé";
+"misnap_overlay_flash_off"              = "Flash est désactivé";
+"misnap_overlay_flash_auto"             = "Flash est en mode automatique";
+"misnap_overlay_record"                 = "Enregistrer";
+"misnap_torch_on"                       = "Allumer";
+"misnap_torch_off"                      = "Étteindre";
+
+// Hint Messages
+"misnap_status_none"                        = "";
+"misnap_status_too_much_glare"              = "Reflet détecté";
+"misnap_status_not_identity_front"          = "Utiliser le recto d'une pièce d'identité valide";
+"misnap_status_not_identity_back"           = "Utiliser le dos d'une pièce d'identité valide";
+"misnap_status_not_passport"                = "Utiliser la page bio du passeport";
+"misnap_status_mrz_obstructed"              = "Le texte en bas doit être visible";
+"misnap_status_low_contrast"                = "Contraste insuffisant";
+"misnap_status_busy_background"             = "Arrière-plan trop chargé";
+"misnap_status_not_check_front"             = "Utilisez le recto du chèque";
+"misnap_status_not_check_back"              = "Utilisez le verso du chèque";
+"misnap_status_document_not_found"          = "Contraste insuffisant";
+"misnap_status_document_not_found_mrz"      = "Le texte en bas doit être visible";
+"misnap_status_not_sharp"                   = "Mise au point";
+"misnap_status_too_rotated"                 = "Document non aligné";
+"misnap_status_too_skewed"                  = "Document non aligné";
+"misnap_status_too_far"                     = "Trop éloigné";
+"misnap_status_too_close"                   = "Trop proche";
+"misnap_status_too_dark"                    = "Pas assez de lumière";
+"misnap_status_too_bright"                  = "Trop lumineux";
+"misnap_status_wrong_aspect_ratio"          = "Arrière-plan trop chargé";
+"misnap_status_classification_in_progress"  = "Document détecté, veuillez patienter";
+"misnap_status_good"                        = "Document détecté, veuillez patienter";
+"misnap_status_good_manual"                 = "Appuyer";
+
+// Tutorial
+"misnap_tutorial_do_not_show_again"     = "Ne plus afficher ce même écran";
+"misnap_checkbox_checked"               = "Case cochée";
+"misnap_checkbox_unchecked"             = "Case décochée";
+
+"misnap_tutorial_cancel"                = "Annuler";
+"misnap_tutorial_back"                  = "Retour";
+"misnap_tutorial_continue"              = "Continuer";
+"misnap_tutorial_try_again"             = "Réessayer Automatiquement";
+"misnap_tutorial_capture_manually"      = "Prendre manuellement";
+"misnap_tutorial_retake"                = "Reprendre";
+"misnap_tutorial_continue_review"       = "Cela semble bon";
+
+"misnap_tutorial_check_front"           = "Placez le recto du chèque sur une surface sombre avec suffisamment de lumière. Alignez-le avec le guide.";
+"misnap_tutorial_check_back"            = "Placez le verso du chèque sur une surface sombre avec suffisamment de lumière. Alignez-le avec le guide.";
+"misnap_tutorial_id_front"              = "Placez le recto de la pièce d'identité sur une surface sombre avec suffisamment de lumière. Alignez-le avec le guide.";
+"misnap_tutorial_id_back"               = "Placez le verso de la pièce d'identité sur une surface sombre avec suffisamment de lumière. Alignez-le avec le guide.";
+"misnap_tutorial_dl_front"              = "Placez le recto du permis sur une surface sombre avec suffisamment de lumière. Alignez-le avec le guide.";
+"misnap_tutorial_dl_back"               = "Placez le verso du permis sur une surface sombre avec suffisamment de lumière. Alignez-le avec le guide.";
+"misnap_tutorial_passport"              = "Placez le passeport sur une surface sombre avec suffisamment de lumière. Alignez-le avec le guide.";
+"misnap_tutorial_document"              = "Placez le document sur une surface sombre avec suffisamment de lumière. Alignez-le avec le guide.";
+"misnap_tutorial_qr"                    = "Retournez la page de la photo et localisez le QRCode.";
+
+"misnap_tutorial_auto"                  = "Nous allons prendre la photo pour vous.";
+"misnap_tutorial_manual"                = "Appuyez sur le bouton de l’obturateur lorsque vous êtes prêt.";
+"misnap_tutorial_tip"                   = "Voici un conseil";
+"misnap_tutorial_tips"                  = "Voici quelques conseils";
+
+"misnap_tutorial_timeout_header"        = "Le temps est écoulé, nous n\'avons pas pu prendre votre photo…";
+
+
+"misnap_tutorial_review_check"          = "L'image du chèque est affichée à l'écran. Demandez de l'aide si vous souhaitez que l'image soit vérifiée ou acceptez-la en cliquant sur le bouton.";
+"misnap_tutorial_review_document"       = "L'image du document est affichée à l'écran. Demandez de l'aide si vous souhaitez la consulter ou acceptez en cliquant sur le bouton.";
+
+// Failover Reasons
+"misnap_status_too_dark_timeout"                = "Placez le document sur une surface bien éclairée";
+"misnap_status_too_bright_timeout"              = "Placez le document sur une surface avec moins de lumière";
+"misnap_status_low_contrast_timeout"            = "Placez le document sur une surface sombre";
+"misnap_status_busy_background_timeout"         = "Placez le document sur une surface unie";
+"misnap_status_too_much_glare_timeout"          = "Inclinez ou déplacez pour éviter les reflets";
+"misnap_status_not_identity_front_timeout"      = "Utiliser le recto d'une pièce d'identité valide";
+"misnap_status_not_identity_back_timeout"       = "Utiliser le dos d'une pièce d'identité valide";
+"misnap_status_not_passport_timeout"            = "Utilisez la page photo du passeport";
+"misnap_status_not_check_front_timeout"         = "Utilisiez le recto du chèque avec tous le numéros visibles";
+"misnap_status_not_check_back_timeout"          = "Retournez le chèque au verso";
+"misnap_status_too_skewed_timeout"              = "Tenez le dispositif directement sur le document";
+"misnap_status_too_rotated_timeout"             = "Tenez le dispositif directement sur le document";
+"misnap_status_too_close_timeout"               = "Éloignez-vous du document";
+"misnap_status_too_far_timeout"                 = "Approchez-vous du document";
+"misnap_status_not_sharp_timeout"               = "Tenez le dispositif fermement";
+"misnap_status_document_not_found_timeout"      = "Placez le document sur une surface sombre";
+"misnap_status_document_not_found_mrz_timeout"  = "Le texte en bas doit être entièrement visible";
+"misnap_status_wrong_aspect_ratio_timeout"      = "Placez le document sur une surface sombre";
+
+"misnap_session_interruption_multiple_foreground_apps" = "Le mode plein écran est nécessaire";
+"misnap_session_interruption_microphone_in_use"        = "Le microphone est utilisé par une autre application";
+"misnap_session_interruption_camera_in_use"            = "L'appareil photo est utilisé par une autre application";

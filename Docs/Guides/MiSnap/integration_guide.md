@@ -2,9 +2,7 @@
 
 :warning: MiSnap 5.x has breaking API changes therefore to migrate from 3.x and 4.x series, remove all old MiSnap references from your project.
 
-[MiSnapSampleApp](../../../Examples/Apps/UIKit/MiSnap/MiSnapSampleApp) was created by following steps below. Please refer to this project as a working example.
-
-For SwiftUI integration, refer to [MiSnapSampleAppSwiftUI](../../../Examples/Apps/SwiftUI/MiSnapSampleAppSwiftUI).
+Please refer to [MiSnapSampleApp](../../../Examples/Apps/MiSnapSampleApp) as a working example. The sample app is a single workspace with two targets: use the `MiSnapSampleAppUIKit` scheme for UIKit-first integration and `MiSnapSampleAppSwiftUI` for SwiftUI-first integration.
 
 ## 1. Obtain the SDK(s)
 MiSnap 5.x is distributed through CocoaPods and Swift Package Manager. For detailed installation instructions refer to:
@@ -184,5 +182,33 @@ func miSnapShouldBeDismissed() {
 }
 ```
 For advanced tutorial customization including analytics tracking and selective custom tutorials, implement the optional `miSnapCustomTutorial(_:tutorialMode:mode:statuses:image:)` callback. See [Tutorial Callbacks](customization_guide.md#tutorial-callbacks) in the Customization Guide for detailed usage examples.
+
+## 5. Handle Visible Digital Seal (VDS) result (optional)
+
+When the scanned document contains an ICAO 9303-13 compliant barcode (Visible Digital Seal), the VDS result is available on the extraction result after a successful session:
+
+```Swift
+func miSnapSuccess(_ result: MiSnapResult) {
+    // Query an optional Visible Digital Seal (VDS) result
+    guard let vds = result.extraction?.vds, vds.isVds else {
+        // Handle a case where a user scanned a barcode that's not ICAO-compliant VDS
+        return
+    }
+
+    // Handle the VDS result here
+    let countryId = vds.header.countryId
+    let featureDefinitionReference = vds.header.featureDefinitionReference
+    let category = vds.header.category
+
+    // Query an optional VDS payload
+    guard let payload = vds.payload else {
+        // Payload wasn't created. Restart a session
+        return
+    }
+    // Handle VDS payload (i.e. send to Mitek for processing)
 }
 ```
+
+:warning: The `vds` property is non-nil only when both the `barcode` and `ode` features are licensed in your key **and** the scanned barcode is ICAO 9303-13 compliant. For non-VDS barcode flows it remains `nil`.
+
+:warning: Always submit `vds.payload` to your server — the payload is encrypted by the SDK and intended for server-side verification only.

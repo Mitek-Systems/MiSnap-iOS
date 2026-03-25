@@ -423,7 +423,7 @@ SWIFT_CLASS("_TtC9MiSnapNFC19MiSnapNFCParameters")
 /// Default: <code>false</code>
 @property (nonatomic) BOOL skipPortrait;
 /// Progress indicator
-/// Default: <code>percentBeforeMessage</code> (starting with 5.10.0)
+/// Default: <code>percentBeforeMessage</code> (starting with 5.8.0)
 @property (nonatomic) enum MiSnapNFCProgressIndicator progressIndicator;
 /// Description of <code>MiSnapNFCUxParameters</code>
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;

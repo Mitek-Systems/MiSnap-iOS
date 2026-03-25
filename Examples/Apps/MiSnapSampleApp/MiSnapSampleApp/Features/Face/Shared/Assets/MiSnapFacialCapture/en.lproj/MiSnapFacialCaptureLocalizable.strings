@@ -1,0 +1,78 @@
+/* 
+  MiSnapFacialCaptureLocalizable.strings
+  MiSnapFacialCaptureSampleApp
+
+  Created by Stas Tsuprenko on 4/29/20.
+  Copyright © 2020 miteksystems. All rights reserved.
+*/
+
+// Hints
+"misnap_facial_capture_status_none"                                     = "";
+"misnap_facial_capture_status_face_not_found"                           = "Center face in the oval";
+"misnap_facial_capture_status_more_than_one_face"                       = "Only one face is allowed";
+"misnap_facial_capture_status_not_centered"                             = "Center face in the oval";
+"misnap_facial_capture_status_move_closer"                              = "Slowly move closer";
+"misnap_facial_capture_status_too_close"                                = "Slowly move farther away";
+"misnap_facial_capture_status_face_roll"                                = "Straighten your face";
+"misnap_facial_capture_status_face_pitch"                               = "Straighten your face";
+"misnap_facial_capture_status_face_yaw"                                 = "Straighten your face";
+"misnap_facial_capture_status_hold_still"                               = "Hold still";
+"misnap_facial_capture_status_countdown"                                = "Hold still";
+"misnap_facial_capture_status_stop_smiling"                             = "Stop smiling";
+"misnap_facial_capture_status_good_frame_auto"                          = "Smile";
+"misnap_facial_capture_status_good_frame_manual"                        = "Press shutter button when ready";
+
+// Failover Reasons
+"misnap_facial_capture_status_face_not_found_timeout"                   = "Avoid things covering your face";
+"misnap_facial_capture_status_more_than_one_face_timeout"               = "Make sure only one face is visible";
+"misnap_facial_capture_status_not_centered_timeout"                     = "Center face in the oval";
+"misnap_facial_capture_status_move_closer_timeout"                      = "Move device closer to face";
+"misnap_facial_capture_status_too_close_timeout"                        = "Move device farther from face";
+"misnap_facial_capture_status_face_roll_timeout"                        = "Hold device in front of you and keep face straight";
+"misnap_facial_capture_status_face_pitch_timeout"                       = "Hold device in front of you and keep face straight";
+"misnap_facial_capture_status_face_yaw_timeout"                         = "Hold device in front of you and keep face straight";
+"misnap_facial_capture_status_hold_still_timeout"                       = "Remain still when in the oval";
+"misnap_facial_capture_status_countdown_timeout"                        = "Remain still when in the oval";
+"misnap_facial_capture_status_stop_smiling_timeout"                     = "Stop smiling when prompted";
+
+// Buttons
+"misnap_facial_capture_ux_tutorial_button_cancel"                       = "Cancel";
+"misnap_facial_capture_ux_tutorial_button_help"                         = "Help";
+"misnap_facial_capture_ux_tutorial_button_continue"                     = "Continue";
+"misnap_facial_capture_ux_tutorial_button_continue_review"              = "Looks Good";
+"misnap_facial_capture_ux_tutorial_button_retake"                       = "Retake";
+"misnap_facial_capture_ux_tutorial_button_auto"                         = "Auto";
+"misnap_facial_capture_ux_tutorial_button_manual"                       = "Manual";
+"misnap_facial_capture_ux_tutorial_button_select_frame"                 = "Camera shutter";
+
+// Recording UI
+"misnap_facial_capture_ux_record"                                       = "Recording";
+
+// Instruction and Help tutorials
+"misnap_facial_capture_ux_tutorial_instruction_center"                  = "Center face in the oval";
+"misnap_facial_capture_ux_tutorial_instruction_no_hat"                  = "Avoid things covering your face";
+
+// Timeout tutorial
+"misnap_facial_capture_ux_tutorial_timeout_message_1"                   = "Time's up, we couldn't take your photo…";
+"misnap_facial_capture_ux_tutorial_timeout_message_2"                   = "How would you like to try again?";
+
+// Review screen
+"misnap_facial_capture_ux_tutorial_review_voiceover"                    = "Are you happy with your selfie or would you like to retake it?";
+"misnap_facial_capture_ux_tutorial_review_voiceover_2"                  = "Image of the selfie is on the screen. Seek assistance if you would like the image reviewed, or accept with the button.";
+"misnap_facial_capture_ux_tutorial_review_message"                      = "Are you happy with your selfie?";
+
+// Common tutorial
+"misnap_facial_capture_ux_tutorial_tip"                                 = "Here's a tip";
+"misnap_facial_capture_ux_tutorial_tips"                                = "Here are a few tips";
+
+// Success
+"misnap_facial_capture_ux_countdown_three"                              = "Three";
+"misnap_facial_capture_ux_countdown_two"                                = "Two";
+"misnap_facial_capture_ux_countdown_one"                                = "One";
+
+"misnap_facial_capture_ux_success"                                      = "Thank you,\nwe just took your photo";
+
+// Session interruption
+"misnap_facial_capture_ux_interruption_microphone_in_use"               = "Microphone is in use by another application";
+"misnap_facial_capture_ux_interruption_camera_in_use"                   = "Camera is in use by another application";
+"misnap_facial_capture_ux_interruption_multiple_foreground_apps"        = "Full screen is required";

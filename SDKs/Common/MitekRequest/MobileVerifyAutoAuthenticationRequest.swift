@@ -27,6 +27,10 @@ public enum MobileVerifyRequestError: Error {
      */
     case backEvidenceDataNotSet
     /**
+     eID evidence payload is not set
+     */
+    case eidEvidencePayloadNotSet
+    /**
      Selfie evidence is not set
      */
     case selfieEvidenceNotSet
@@ -71,16 +75,22 @@ public enum MobileVerifyRequestError: Error {
      */
     case emptyAiBasedRts
     /**
+     Front or back evidence is set along with VSD evidence
+     */
+    case frontOrBackEvidenceWithEidEvidenceSet
+    /**
      Description
      */
     var description: String {
         switch self {
         case .frontEvidenceNotSet:
-            return "Front evidence is required. Call `addFrontEvidence(withData:, qrcode:, customerReferenceId:)`"
+            return "Front evidence is required. Call `addFrontEvidence(withData:, :, :)`"
         case .frontEvidenceDataNotSet:
-            return "Provide a valid base64 encoded image data when `addFrontEvidence(withData:, qrcode:, rts:, customerReferenceId:)` is called"
+            return "Provide a valid base64 encoded image data when `addFrontEvidence(withData:, :, :, :)` is called"
         case .backEvidenceDataNotSet:
-            return "Provide a valid base64 encoded image data when `addBackEvidence(withData:, pdf417:, rts:, customerReferenceId:)` is called"
+            return "Provide a valid base64 encoded image data when `addBackEvidence(withData:, :, :, :)` is called"
+        case .eidEvidencePayloadNotSet:
+            return "Provide a valid base64 encoded payload when `addEidEvidence(for:, payload:)` is called"
         case .selfieEvidenceNotSet:
             return "`addSelfieEvidence(withData:)` should be called when `addVerifications(_:)` is called with `faceComparison` and `faceComparison` or `faceBlocklist`"
         case .selfieEvidenceDataNotSet:
@@ -103,6 +113,8 @@ public enum MobileVerifyRequestError: Error {
             return "When optional parameter `rts` is set it should be a valid non-empty string"
         case .emptyAiBasedRts:
             return "When optional parameter `aiBasedRts` is set it should be a valid non-empty string"
+        case .frontOrBackEvidenceWithEidEvidenceSet:
+            return "Front or back evidence is set along with eID evidence"
         }
     }
 }
@@ -241,6 +253,21 @@ private class MobileVerifyRequestEvidenceIdDocumentBack: NSObject {
     var pdf417: String?
 }
 
+public enum MobileVerifyRequestEvidenceType {
+    case vds
+    
+    var stringValue: String {
+        switch self {
+        case .vds: return "icao_9303_vds"
+        }
+    }
+}
+
+private class MobileVerifyRequestEvidenceEid: NSObject {
+    var type: MobileVerifyRequestEvidenceType = .vds
+    var payload: String = ""
+}
+
 private class MobileVerifyRequestEvidenceIdDocumentNfc: NSObject {
     var sod: String = ""
     var com: String = ""
@@ -297,6 +324,7 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
     private var dossierMetadata = MobileVerifyRequestDossierMetadata()
     private var frontEvidence = MobileVerifyRequestEvidenceIdDocumentFront()
     private var backEvidence = MobileVerifyRequestEvidenceIdDocumentBack()
+    private var eidEvidence = MobileVerifyRequestEvidenceEid()
     private var nfcEvidence = MobileVerifyRequestEvidenceIdDocumentNfc()
     private var selfieEvidence = MobileVerifyRequestEvidenceBiometricSelfie()
     private var verifications: [MobileVerifyRequestVerification] = []
@@ -305,6 +333,7 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
     private var dossierMetadataSet: Bool = false
     private var frontEvidenceSet: Bool = false
     private var backEvidenceSet: Bool = false
+    private var eidEvidenceSet: Bool = false
     private var nfcEvidenceSet: Bool = false
     private var selfieEvidenceSet: Bool = false
     private var verificationsSet: Bool = false
@@ -351,6 +380,14 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
         #endif
         backEvidence.customerReferenceId = customerReferenceId
         backEvidence.pdf417 = pdf417
+    }
+    /**
+     Adds eID evidence
+     */
+    public func addEidEvidence(for type: MobileVerifyRequestEvidenceType, payload: String) {
+        eidEvidenceSet = true
+        eidEvidence.type = type
+        eidEvidence.payload = payload
     }
     /**
      Adds NFC evidence from individual properties (pre-5.x)
@@ -429,7 +466,7 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
             if let rts = frontEvidence.rts, rts.isEmpty {
                 errors.append(.emptyRts)
             }
-        } else {
+        } else if !eidEvidenceSet {
             errors.append(.frontEvidenceNotSet)
         }
         
@@ -442,6 +479,16 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
             }
             if let rts = backEvidence.rts, rts.isEmpty {
                 errors.append(.emptyRts)
+            }
+        }
+        
+        if eidEvidenceSet {
+            if eidEvidence.payload.isEmpty {
+                errors.append(.eidEvidencePayloadNotSet)
+            }
+            
+            if frontEvidenceSet || backEvidenceSet {
+                errors.append(.frontOrBackEvidenceWithEidEvidenceSet)
             }
         }
         
@@ -497,6 +544,8 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
             dictionary["dossierMetadata"] = ["customerReferenceId" : dossierMetadata.customerReferenceId]
         }
         
+        var configurationDictionary: [String : Any] = [:]
+        
         var evidence: [[String : Any]] = []
         
         var idDocumentDictionary: [String : Any] = ["type": "IdDocument"]
@@ -533,6 +582,18 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
         
         if !images.isEmpty {
             idDocumentDictionary["images"] = images
+        }
+        
+        if eidEvidenceSet {
+            let eidDict: [String : String] = [
+                "payload": eidEvidence.payload,
+                "dataFormat": eidEvidence.type.stringValue
+            ]
+            
+            idDocumentDictionary["eid"] = eidDict
+            
+            let eidConfig = ["midniVerificationLevels": ["age", "simple", "complete"]]
+            configurationDictionary["eid"] = eidConfig
         }
         
         if nfcEvidenceSet {
@@ -581,8 +642,6 @@ public class MobileVerifyAutoAuthenticationRequest: NSObject {
         if !evidence.isEmpty {
             dictionary["evidence"] = evidence
         }
-        
-        var configurationDictionary: [String : Any] = [:]
         
         if !verifications.isEmpty {
             var verificationsDictionary: [String : Bool] = [:]

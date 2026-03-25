@@ -1,0 +1,116 @@
+/* 
+  Localizable.strings
+  MiSnap
+
+  Copyright (c) 2014 Mitek Systems, Inc. All rights reserved.
+*/
+
+// Document label
+"Any ID"                                = "Cualquier documento de identidad";
+"Passport"                              = "Pasaporte";
+"ID Front"                              = "Anverso de la identificación";
+"ID Back"                               = "Parte posterior de la identificación";
+"DL Front"                              = "Frente de la licencia";
+"DL Back"                               = "Reverso de la licencia";
+"QR Code"                               = "El código QR";
+"Check Front"                           = "Frente del cheque";
+"Check Back"                            = "Reverso del cheque";
+"Generic"                               = "Documento";
+
+"dialog_success"                        = "Éxito!";
+"dialog_cancel_title"                   = "¿Estás seguro de que quieres salir?";
+"dialog_cancel_message"                 = "Tendrás que comenzar el proceso desde el principio.";
+"dialog_cancel_abort"                   = "Quédate";
+"dialog_cancel_proceed"                 = "Salir";
+
+"misnap_overlay_cancel_button"          = "Cancelar";
+"misnap_overlay_help_button"            = "Ayuda";
+"misnap_overlay_capture_button"         = "Botón de disparo";
+"misnap_overlay_flash_on"               = "Flash está activo";
+"misnap_overlay_flash_off"              = "Flash está apagado";
+"misnap_overlay_flash_auto"             = "Flash está en modo automático";
+"misnap_overlay_record"                 = "Grabando";
+"misnap_torch_on"                       = "Encendido";
+"misnap_torch_off"                      = "Apagado";
+
+// Hint Messages
+"misnap_status_none"                        = "";
+"misnap_status_too_much_glare"              = "Reflejo detectado";
+"misnap_status_not_identity_front"          = "Utilice el frente de un documento de identidad válido";
+"misnap_status_not_identity_back"           = "Utilice el reverso de un documento de identidad válido";
+"misnap_status_not_passport"                = "Usar la página de biografía del pasaporte";
+"misnap_status_mrz_obstructed"              = "El texto inferior debe ser visible";
+"misnap_status_low_contrast"                = "No hay suficiente contraste";
+"misnap_status_busy_background"             = "Demasiado contenido en el fondo";
+"misnap_status_not_check_front"             = "Usa el frente del cheque";
+"misnap_status_not_check_back"              = "Usa el reverso del cheque";
+"misnap_status_document_not_found"          = "No hay suficiente contraste";
+"misnap_status_document_not_found_mrz"      = "El texto inferior debe ser visible";
+"misnap_status_not_sharp"                   = "Enfocando";
+"misnap_status_too_rotated"                 = "Documento no alineado";
+"misnap_status_too_skewed"                  = "Documento no alineado";
+"misnap_status_too_far"                     = "Demasiado lejos";
+"misnap_status_too_close"                   = "Demasiado cerca";
+"misnap_status_too_dark"                    = "No hay suficiente luz";
+"misnap_status_too_bright"                  = "Demasiado brillo";
+"misnap_status_wrong_aspect_ratio"          = "Demasiado contenido en el fondo";
+"misnap_status_classification_in_progress"  = "Documento detectado, espera";
+"misnap_status_good"                        = "Documento detectado, espera";
+"misnap_status_good_manual"                 = "Pulse ahora";
+
+// Tutorial
+"misnap_tutorial_do_not_show_again"     = "No use esta misma pantalla de nuevo";
+"misnap_checkbox_checked"               = "Casilla marcada";
+"misnap_checkbox_unchecked"             = "Casilla desmarcada";
+
+"misnap_tutorial_cancel"                = "Cancelar";
+"misnap_tutorial_back"                  = "Volver";
+"misnap_tutorial_continue"              = "Continuar";
+"misnap_tutorial_try_again"             = "Reintentar En Automático";
+"misnap_tutorial_capture_manually"      = "Tomar Manualmente";
+"misnap_tutorial_retake"                = "Volver A Tomar";
+"misnap_tutorial_continue_review"       = "Se Ve Bien";
+
+"misnap_tutorial_check_front"           = "Coloca el frente del cheque sobre una superficie oscura con suficiente luz. Alinea con la guía.";
+"misnap_tutorial_check_back"            = "Coloca el frente del cheque sobre una superficie oscura con suficiente luz. Alinea con la guía.";
+"misnap_tutorial_id_front"              = "Coloca el frente de la identificación sobre una superficie oscura con suficiente luz. Alinea con la guía.";
+"misnap_tutorial_id_back"               = "Coloca el reverso de la identificación sobre una superficie oscura con suficiente luz. Alinea con la guía.";
+"misnap_tutorial_dl_front"              = "Coloca el frente de la licencia sobre una superficie oscura con suficiente luz. Alinea con la guía.";
+"misnap_tutorial_dl_back"               = "Coloca el reverso de la licencia sobre una superficie oscura con suficiente luz. Alinea con la guía.";
+"misnap_tutorial_passport"              = "Coloca el pasaporte sobre una superficie oscura con suficiente luz. Alinea con la guía.";
+"misnap_tutorial_document"              = "Coloca el documento sobre una superficie oscura con suficiente luz. Alinea con la guía.";
+"misnap_tutorial_qr"                    = "Voltea la página de la foto y localiza el código QR.";
+
+"misnap_tutorial_auto"                  = "Captaremos la foto por usted.";
+"misnap_tutorial_manual"                = "Toca el botón de disparo cuando estés listo.";
+"misnap_tutorial_tip"                   = "Aquí hay un consejo";
+"misnap_tutorial_tips"                  = "Aquí hay algunos consejos";
+
+"misnap_tutorial_timeout_header"        = "Se acabó el tiempo, no pudimos tomar su foto…";
+
+"misnap_tutorial_review_check"          = "La imagen del cheque está en la pantalla. Solicita ayuda si deseas que se revise la imagen, o acéptala con el botón.";
+"misnap_tutorial_review_document"       = "La imagen del documento está en la pantalla. Solicita ayuda si deseas que se revise la imagen, o acéptala con el botón.";
+
+// Failover Reasons
+"misnap_status_too_dark_timeout"                = "Coloca el documento en una superficie bien iluminada";
+"misnap_status_too_bright_timeout"              = "Coloca el documento en una superficie con menos luz";
+"misnap_status_low_contrast_timeout"            = "Coloca el documento sobre una superficie oscura";
+"misnap_status_busy_background_timeout"         = "Coloca el documento sobre una superficie lisa";
+"misnap_status_too_much_glare_timeout"          = "Inclina o mueve para evitar reflejos";
+"misnap_status_not_identity_front_timeout"      = "Utilice el frente de un documento de identidad válido";
+"misnap_status_not_identity_back_timeout"       = "Utilice el reverso de un documento de identidad válido";
+"misnap_status_not_passport_timeout"            = "Usa la página de la foto del pasaporte";
+"misnap_status_not_check_front_timeout"         = "Utilice el frente del cheque con todos los números visibles";
+"misnap_status_not_check_back_timeout"          = "Voltea el cheque al reverso";
+"misnap_status_too_skewed_timeout"              = "Sujeta el dispositivo directamente sobre el documento";
+"misnap_status_too_rotated_timeout"             = "Sujeta el dispositivo directamente sobre el documento";
+"misnap_status_too_close_timeout"               = "Aleje el dispositivo del documento ";
+"misnap_status_too_far_timeout"                 = "Acerca el dispositivo al documento";
+"misnap_status_not_sharp_timeout"               = "Sujeta el dispositivo firmemente";
+"misnap_status_document_not_found_timeout"      = "Coloca el documento sobre una superficie oscura";
+"misnap_status_document_not_found_mrz_timeout"  = "El texto inferior debe ser completamente visible";
+"misnap_status_wrong_aspect_ratio_timeout"      = "Coloca el documento sobre una superficie oscura";
+
+"misnap_session_interruption_multiple_foreground_apps" = "Se requiere el modo de pantalla completa";
+"misnap_session_interruption_microphone_in_use"        = "El micrófono está siendo usado por otra aplicación";
+"misnap_session_interruption_camera_in_use"            = "La cámara está siendo usada por otra aplicación";

@@ -30,6 +30,7 @@ Please refer to [MiSnapCustomizationSampleApp](../../../Examples/Apps/UIKit/MiSn
     * [Trigger](#trigger)
         * [MRZ only](#mrz-only)
         * [Barcode only](#barcode-only)
+        * [Visible Digital Seal (VDS)](#visible-digital-seal-vds)
     * [Other](#other)
 
 # Overview
@@ -543,6 +544,35 @@ Here's how to configure a trigger for MRZ only flow that significantly reduces f
     parameters.science.documentTypeName = // your name for a specific barcode
 }
 ```
+
+### Visible Digital Seal (VDS)
+
+Visible Digital Seal (VDS) is an ICAO 9303-13 compliant 2D barcode carried on certain identity documents. When a VDS barcode is detected during document capture, the SDK parses its header, validates its structure, and returns an encrypted payload for server-side verification.
+
+VDS support requires:
+* `barcode` and `ode` features licensed in your key
+* A document type configuration that enables barcode scanning
+
+To configure a session that will detect and process a VDS barcode, combine barcode-only trigger settings with a QR barcode type:
+
+```Swift
+let configuration = MiSnapConfiguration(for: .idBack)
+    .withCustomParameters { parameters in
+        parameters.science.supportedBarcodeTypes = [MiSnapScienceBarcodeType.QR.rawValue]
+        parameters.science.documentTypeName = "MiDNI QR"
+        parameters.science.iqaRequired = false
+        parameters.science.barcodeRequired = true
+    }
+    .withCustomGuide { guide in
+        guide.isHidden = true
+    }
+```
+
+After a successful session, read the VDS result from the extraction result (see the [Integration Guide](integration_guide.md#5-handle-visible-digital-seal-vds-result-optional) for result handling).
+
+:warning: Always use `vds.payload` — it is an RSA-3072/OAEP-SHA256 encrypted value produced by the SDK and intended for server-side verification only.
+
+:warning: `vds.isVds` will be `false` and `vds.payload` will be `nil` if the barcode is not ICAO 9303-13 compliant, even when barcode scanning is enabled.
 
 ## Other
 

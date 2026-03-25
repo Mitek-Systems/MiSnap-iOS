@@ -25262,6 +25262,100 @@
           },
           {
             "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapGuideViewConfiguration(py)isHidden",
+            "mangledName": "$s18MiSnapAssetManager0aB22GuideViewConfigurationC8isHiddenSbvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapGuideViewConfiguration(im)isHidden",
+                "mangledName": "$s18MiSnapAssetManager0aB22GuideViewConfigurationC8isHiddenSbvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapGuideViewConfiguration(im)setIsHidden:",
+                "mangledName": "$s18MiSnapAssetManager0aB22GuideViewConfigurationC8isHiddenSbvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB22GuideViewConfigurationC8isHiddenSbvM",
+                "mangledName": "$s18MiSnapAssetManager0aB22GuideViewConfigurationC8isHiddenSbvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -56359,1584 +56453,1542 @@
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2392,
+      "offset": 2419,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2560,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 2500,
+      "offset": 2901,
       "length": 33,
       "value": "\"MiSnapGuideViewConfiguration:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 2549,
+      "offset": 2950,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 2602,
+      "offset": 3003,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 2614,
+      "offset": 3015,
       "length": 6,
       "value": "\"\t\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 2637,
+      "offset": 3038,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 2689,
+      "offset": 3090,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 2701,
+      "offset": 3102,
       "length": 6,
       "value": "\"\t\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2882,
+      "offset": 3283,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2940,
+      "offset": 3341,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3009,
+      "offset": 3410,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2882,
+      "offset": 3283,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2940,
+      "offset": 3341,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3009,
+      "offset": 3410,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3419,
+      "offset": 3820,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3429,
+      "offset": 3830,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3438,
+      "offset": 3839,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3448,
+      "offset": 3849,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 3470,
+      "offset": 3871,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 3668,
+      "offset": 4069,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 3953,
+      "offset": 4354,
       "length": 32,
       "value": "\"MiSnapVignetteConfiguration:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 4001,
+      "offset": 4402,
       "length": 41,
       "value": "\"\tstyle: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 4039,
+      "offset": 4440,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 4143,
+      "offset": 4544,
       "length": 58,
       "value": "\"\tblurStyle: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 4198,
+      "offset": 4599,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 4241,
+      "offset": 4642,
       "length": 41,
       "value": "\"\tcolor: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 4279,
+      "offset": 4680,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 4308,
+      "offset": 4709,
       "length": 41,
       "value": "\"\talpha: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 4346,
+      "offset": 4747,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4502,
+      "offset": 4903,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4555,
+      "offset": 4956,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4611,
+      "offset": 5012,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4502,
+      "offset": 4903,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4555,
+      "offset": 4956,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4611,
+      "offset": 5012,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5247,
+      "offset": 5648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 5628,
+      "offset": 6029,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5738,
+      "offset": 6139,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5748,
+      "offset": 6149,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5757,
+      "offset": 6158,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5767,
+      "offset": 6168,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5886,
+      "offset": 6287,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5896,
+      "offset": 6297,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5905,
+      "offset": 6306,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5915,
+      "offset": 6316,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 6005,
+      "offset": 6406,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 6106,
+      "offset": 6507,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6381,
+      "offset": 6782,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
-      "kind": "FloatLiteral",
-      "offset": 6497,
-      "length": 3,
-      "value": "0.5"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
       "offset": 6898,
       "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
+      "kind": "FloatLiteral",
+      "offset": 7299,
+      "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 7275,
+      "offset": 7676,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7382,
+      "offset": 7783,
       "length": 39,
       "value": "\"MiSnapDocumentOutlineConfiguration:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7437,
+      "offset": 7838,
       "length": 41,
       "value": "\"\talpha: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7475,
+      "offset": 7876,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7494,
+      "offset": 7895,
       "length": 61,
       "value": "\"\tmainBorderColor: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7552,
+      "offset": 7953,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7571,
+      "offset": 7972,
       "length": 71,
       "value": "\"\tsecondaryBorderColor: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7639,
+      "offset": 8040,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7658,
+      "offset": 8059,
       "length": 61,
       "value": "\"\tmainBorderWidth: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7716,
+      "offset": 8117,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7735,
+      "offset": 8136,
       "length": 71,
       "value": "\"\tsecondaryBorderWidth: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7803,
+      "offset": 8204,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7822,
+      "offset": 8223,
       "length": 43,
       "value": "\"\thorizontalOffset: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7862,
+      "offset": 8263,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7881,
+      "offset": 8282,
       "length": 39,
       "value": "\"\tverticalOffset: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7917,
+      "offset": 8318,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 8675,
+      "offset": 9076,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 8739,
+      "offset": 9140,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 8884,
+      "offset": 9285,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 8939,
+      "offset": 9340,
       "length": 4,
       "value": "1.42"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 8995,
+      "offset": 9396,
       "length": 4,
       "value": "1.59"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 9051,
+      "offset": 9452,
       "length": 4,
       "value": "2.17"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 9107,
+      "offset": 9508,
       "length": 4,
       "value": "1.28"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 9294,
+      "offset": 9695,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 11100,
+      "offset": 11501,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11463,
+      "offset": 11864,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12026,
+      "offset": 12427,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 7987,
+      "offset": 8388,
       "length": 15,
       "value": "\"MiSnapAssetManager.MiSnapGuideView\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12809,
+      "offset": 13210,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12836,
+      "offset": 13237,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12867,
+      "offset": 13268,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12899,
+      "offset": 13300,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 12940,
+      "offset": 13341,
       "length": 3,
       "value": "1.1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 12985,
+      "offset": 13386,
       "length": 6,
       "value": "0.0001"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 12994,
+      "offset": 13395,
       "length": 6,
       "value": "0.9999"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 13195,
+      "offset": 13596,
       "length": 6,
       "value": "0.0001"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 13204,
+      "offset": 13605,
       "length": 6,
       "value": "0.9999"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13994,
+      "offset": 14395,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14075,
+      "offset": 14476,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14406,
+      "offset": 14807,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14410,
+      "offset": 14811,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14414,
+      "offset": 14815,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14579,
+      "offset": 14980,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14592,
+      "offset": 14993,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14662,
+      "offset": 15063,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14675,
+      "offset": 15076,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14889,
+      "offset": 15290,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15408,
+      "offset": 15809,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 15956,
+      "offset": 16357,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 15984,
+      "offset": 16385,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16478,
+      "offset": 16879,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16571,
+      "offset": 16972,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16782,
+      "offset": 17183,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 17531,
+      "offset": 17932,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17919,
+      "offset": 18320,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 17999,
+      "offset": 18400,
       "length": 3,
       "value": "\"P\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18042,
+      "offset": 18443,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18048,
+      "offset": 18449,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18071,
+      "offset": 18472,
       "length": 5,
       "value": "0.068"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18099,
+      "offset": 18500,
       "length": 5,
       "value": "0.068"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18220,
+      "offset": 18621,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18330,
+      "offset": 18731,
       "length": 4,
       "value": "0.82"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18383,
+      "offset": 18784,
       "length": 5,
       "value": "0.934"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18438,
+      "offset": 18839,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18536,
+      "offset": 18937,
       "length": 4,
       "value": "0.79"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18589,
+      "offset": 18990,
       "length": 5,
       "value": "0.005"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18690,
+      "offset": 19091,
       "length": 4,
       "value": "0.79"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 18743,
+      "offset": 19144,
       "length": 5,
       "value": "0.995"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18791,
+      "offset": 19192,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18797,
+      "offset": 19198,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19015,
+      "offset": 19416,
       "length": 4,
       "value": "0.06"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19068,
+      "offset": 19469,
       "length": 4,
       "value": "0.82"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19106,
+      "offset": 19507,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19195,
+      "offset": 19596,
       "length": 5,
       "value": "0.005"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19249,
+      "offset": 19650,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19339,
+      "offset": 19740,
       "length": 5,
       "value": "0.995"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 19393,
+      "offset": 19794,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19935,
+      "offset": 20336,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19938,
+      "offset": 20339,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19941,
+      "offset": 20342,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20236,
+      "offset": 20637,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20654,
+      "offset": 21055,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20683,
+      "offset": 21084,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20737,
+      "offset": 21138,
       "length": 5,
       "value": "0.016"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20769,
+      "offset": 21170,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20773,
+      "offset": 21174,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20859,
+      "offset": 21260,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20888,
+      "offset": 21289,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 20996,
+      "offset": 21397,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21040,
+      "offset": 21441,
       "length": 6,
       "value": "0.0111"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21133,
+      "offset": 21534,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21162,
+      "offset": 21563,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21206,
+      "offset": 21607,
       "length": 6,
       "value": "0.0222"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21291,
+      "offset": 21692,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21320,
+      "offset": 21721,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21468,
+      "offset": 21869,
       "length": 5,
       "value": "0.065"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21501,
+      "offset": 21902,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21505,
+      "offset": 21906,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21591,
+      "offset": 21992,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21620,
+      "offset": 22021,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21728,
+      "offset": 22129,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21772,
+      "offset": 22173,
       "length": 6,
       "value": "0.0111"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21865,
+      "offset": 22266,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21894,
+      "offset": 22295,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 21938,
+      "offset": 22339,
       "length": 6,
       "value": "0.0222"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22023,
+      "offset": 22424,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22052,
+      "offset": 22453,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22196,
+      "offset": 22597,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22249,
+      "offset": 22650,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22279,
+      "offset": 22680,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22313,
+      "offset": 22714,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22317,
+      "offset": 22718,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22419,
+      "offset": 22820,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22449,
+      "offset": 22850,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22543,
+      "offset": 22944,
       "length": 6,
       "value": "0.0111"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22588,
+      "offset": 22989,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22682,
+      "offset": 23083,
       "length": 6,
       "value": "0.0222"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22727,
+      "offset": 23128,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22757,
+      "offset": 23158,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22858,
+      "offset": 23259,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22888,
+      "offset": 23289,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 22997,
+      "offset": 23398,
       "length": 5,
       "value": "0.085"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23055,
+      "offset": 23456,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23059,
+      "offset": 23460,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23161,
+      "offset": 23562,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23191,
+      "offset": 23592,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23285,
+      "offset": 23686,
       "length": 6,
       "value": "0.0111"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23330,
+      "offset": 23731,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23424,
+      "offset": 23825,
       "length": 6,
       "value": "0.0222"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23469,
+      "offset": 23870,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23499,
+      "offset": 23900,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23600,
+      "offset": 24001,
       "length": 6,
       "value": "0.0187"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23630,
+      "offset": 24031,
       "length": 6,
       "value": "0.0105"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 23789,
+      "offset": 24190,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 24203,
+      "offset": 24604,
       "length": 32,
       "value": "\"#########  ############  #####\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24275,
+      "offset": 24676,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24281,
+      "offset": 24682,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 24304,
+      "offset": 24705,
       "length": 4,
       "value": "0.71"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 24331,
+      "offset": 24732,
       "length": 5,
       "value": "0.058"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24452,
+      "offset": 24853,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 24577,
+      "offset": 24978,
       "length": 4,
       "value": "0.17"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 24630,
+      "offset": 25031,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24683,
+      "offset": 25084,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 24784,
+      "offset": 25185,
       "length": 4,
       "value": "0.21"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 24837,
+      "offset": 25238,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 24940,
+      "offset": 25341,
       "length": 4,
       "value": "0.21"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 24993,
+      "offset": 25394,
       "length": 4,
       "value": "0.40"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25098,
+      "offset": 25499,
       "length": 4,
       "value": "0.21"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25151,
+      "offset": 25552,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25254,
+      "offset": 25655,
       "length": 4,
       "value": "0.21"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25307,
+      "offset": 25708,
       "length": 4,
       "value": "0.95"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25528,
+      "offset": 25929,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25581,
+      "offset": 25982,
       "length": 4,
       "value": "0.84"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25619,
+      "offset": 26020,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25711,
+      "offset": 26112,
       "length": 4,
       "value": "0.04"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25764,
+      "offset": 26165,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25857,
+      "offset": 26258,
       "length": 4,
       "value": "0.40"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 25910,
+      "offset": 26311,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 26005,
+      "offset": 26406,
       "length": 4,
       "value": "0.45"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 26058,
+      "offset": 26459,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 26151,
+      "offset": 26552,
       "length": 4,
       "value": "0.95"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 26204,
+      "offset": 26605,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26628,
+      "offset": 27029,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26634,
+      "offset": 27035,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26754,
+      "offset": 27155,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26757,
+      "offset": 27158,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26760,
+      "offset": 27161,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 27127,
+      "offset": 27528,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "StringLiteral",
-      "offset": 27406,
+      "offset": 27807,
       "length": 9,
       "value": "\"ENDORSE\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27455,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27461,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
-      "kind": "FloatLiteral",
-      "offset": 27485,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
-      "kind": "FloatLiteral",
-      "offset": 27512,
-      "length": 4,
-      "value": "0.11"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27632,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
-      "kind": "FloatLiteral",
-      "offset": 27757,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
-      "kind": "FloatLiteral",
-      "offset": 27809,
-      "length": 4,
-      "value": "0.16"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
@@ -57947,176 +57999,225 @@
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27862,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 27954,
+      "offset": 27886,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
+      "kind": "FloatLiteral",
+      "offset": 27913,
+      "length": 4,
+      "value": "0.11"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28033,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
+      "kind": "FloatLiteral",
+      "offset": 28158,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 28006,
+      "offset": 28210,
+      "length": 4,
+      "value": "0.16"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28257,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
+      "kind": "FloatLiteral",
+      "offset": 28355,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
+      "kind": "FloatLiteral",
+      "offset": 28407,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 28106,
+      "offset": 28507,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 28158,
+      "offset": 28559,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 28379,
+      "offset": 28780,
       "length": 4,
       "value": "0.84"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 28432,
+      "offset": 28833,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 28475,
+      "offset": 28876,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 28564,
+      "offset": 28965,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 28617,
+      "offset": 29018,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 28707,
+      "offset": 29108,
       "length": 4,
       "value": "0.85"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 28760,
+      "offset": 29161,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 29184,
+      "offset": 29585,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 29190,
+      "offset": 29591,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 29310,
+      "offset": 29711,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 29313,
+      "offset": 29714,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 29316,
+      "offset": 29717,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 29578,
+      "offset": 29979,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "BooleanLiteral",
-      "offset": 29958,
+      "offset": 30359,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30210,
+      "offset": 30611,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30214,
+      "offset": 30615,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "IntegerLiteral",
-      "offset": 30302,
+      "offset": 30703,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "BooleanLiteral",
-      "offset": 30629,
+      "offset": 31030,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "BooleanLiteral",
-      "offset": 31241,
+      "offset": 31642,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 31713,
+      "offset": 32114,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapGuideView.swift",
       "kind": "FloatLiteral",
-      "offset": 31779,
+      "offset": 32180,
       "length": 3,
       "value": "2.0"
     },

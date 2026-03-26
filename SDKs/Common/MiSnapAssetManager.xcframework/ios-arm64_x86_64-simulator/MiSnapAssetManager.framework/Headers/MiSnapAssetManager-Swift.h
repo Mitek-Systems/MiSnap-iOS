@@ -1270,7 +1270,11 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapGuideViewConfiguration")
 /// Outline configuration
 @property (nonatomic, strong) MiSnapDocumentOutlineConfiguration * _Nonnull outline;
 /// Indicates whether a guide should be hidden on success
+/// Default: <code>true</code>
 @property (nonatomic) BOOL hideOnSuccess;
+/// Indicates whether both vignette and outline are hidden
+/// Default: <code>false</code>
+@property (nonatomic) BOOL isHidden;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -3057,7 +3061,11 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapGuideViewConfiguration")
 /// Outline configuration
 @property (nonatomic, strong) MiSnapDocumentOutlineConfiguration * _Nonnull outline;
 /// Indicates whether a guide should be hidden on success
+/// Default: <code>true</code>
 @property (nonatomic) BOOL hideOnSuccess;
+/// Indicates whether both vignette and outline are hidden
+/// Default: <code>false</code>
+@property (nonatomic) BOOL isHidden;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

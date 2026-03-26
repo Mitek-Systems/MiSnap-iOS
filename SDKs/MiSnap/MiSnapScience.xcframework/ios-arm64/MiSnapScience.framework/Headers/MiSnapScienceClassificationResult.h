@@ -77,7 +77,11 @@ typedef NS_ENUM(NSInteger, MiSnapScienceClassificationDocumentType) {
     /**
      Some Health Insurance Cards
      */
-    MiSnapScienceDetectedDocumentTypeHealthInsurance
+    MiSnapScienceDetectedDocumentTypeHealthInsurance,
+    /**
+     Visible Digital Seal
+     */
+    MiSnapScienceDetectedDocumentTypeVDS
 };
 
 NS_ASSUME_NONNULL_BEGIN

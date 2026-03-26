@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MiSnapScience/MiSnapScienceParameters.h>
+#import <MiSnapScience/MiSnapScienceVDSResult.h>
 
 /**
  Expiration status
@@ -276,6 +277,14 @@ NS_ASSUME_NONNULL_BEGIN
  Indicates whether redaction was made to an image (i.e. some data was covered by black boxes)
  */
 @property (nonatomic, readonly) BOOL didRedact;
+/**
+ Visible Digital Seal result
+ 
+ - Note, it's non-null when all conditions are met:
+ * `barcode` and `ode` features are licensed in your key
+ * scanned barcode is ICAO 9303-13 compliant
+ */
+@property (nonatomic, readonly) MiSnapScienceVDSResult * _Nullable vds;
 /**
  A string representation of `MiSnapScienceExtractionResult`
  */

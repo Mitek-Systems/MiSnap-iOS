@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MiSnapNFC-Swift.h</key>
 		<data>
-		q1waEsnU2Y23ntJF/Gr/NkD2m20=
+		ynqY4n2A6bHBIlPTNTRA5+jw+7k=
 		</data>
 		<key>Headers/MiSnapNFC.h</key>
 		<data>
@@ -582,11 +582,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LuNISPhrj5w8bKrQCdAq3yFXhAo=
+		zS1XesJCHwJhLGpWu6x0npGqZwY=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		DS4r9vWQYBVh/AdKrASPn8zdowc=
+		KWavEN78wD+qjaU4kGK1mKYlLgk=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -594,7 +594,7 @@
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		AT3AcpqFYkI4DG0JXDLtHFp6OnQ=
+		Au9seQgjGD3V8yaEgXoUbZDzLxA=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -602,11 +602,11 @@
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fTM9BHJVSYnNi6XA3I/knrhXyIs=
+		vjzrTZ+MzpB97OG6Y584lW1V8BY=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		DS4r9vWQYBVh/AdKrASPn8zdowc=
+		KWavEN78wD+qjaU4kGK1mKYlLgk=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -614,7 +614,7 @@
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		cmCD92MERVIkCQotH3cn3klqCR8=
+		e6Ig/AX3RgH6YGPfhdAh8cmfkwo=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -622,7 +622,7 @@
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		029wt1PkfjKRV+qdzckGA/qFkFE=
+		CtibJo1eV5ylJRZ8LIzSUsXhMDk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -634,7 +634,7 @@
 		</data>
 		<key>geos</key>
 		<data>
-		iAFD/OE3LKzOadwvHHGT0r425w0=
+		SCUC1Jf1rtXaQFHRqO7LQ3Tp/2k=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -643,7 +643,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/zBtZpAmwsBZ5tKQddNlQg421YQ/P7JphODOuYi+SME=
+			168zcEFXKo394y6K8B1FPleK9yewQTNdaP7LQT1YGlA=
 			</data>
 		</dict>
 		<key>Headers/MiSnapNFC.h</key>
@@ -1651,7 +1651,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2MI24dCVJ53q30P6w0FIqjhDYlg1kU2cgLcUw+A/USI=
+			vAX5i3wHY7kkZ0h14ceL46lBc9GOtWoahEV+FtjN9es=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1665,7 +1665,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l5wCCKDvkV9/Ma8jxwHMyiWTExhv2uMmuLtpOsjwxx0=
+			0f1Jtyyf9wS6GC7InS2tlsoyurqZUTTxZohDee2veng=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -1679,14 +1679,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EdSreS2Z8xI/DJTuV5RBAMw4xo64AwKWojNQ3j7R94Q=
+			PVCajy7m7M/1vHe1/cDgsNgfwL+Db/qBk3z9xeYUx4g=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2MI24dCVJ53q30P6w0FIqjhDYlg1kU2cgLcUw+A/USI=
+			vAX5i3wHY7kkZ0h14ceL46lBc9GOtWoahEV+FtjN9es=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1700,7 +1700,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2qsQUYCcIvwSDFsPMeA7lt74lNardThP+Bgc6k9CRJA=
+			PkZ/JujQUak3S7pMz6byWVOQ8AR8byTtQxhd042rWtc=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
@@ -1714,7 +1714,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7zXZp/QcP/oWZgTDwRJI+2TaialG+BbG5iNVzvf6KDM=
+			khD+/EKh/Fl5lU2E6uYpghUCR2PtBiRsNzA0R980Sk0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1735,7 +1735,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lNjciCuF36vJeB+GXlz9ciNF7iP2x1u7J+G8o9OCfYM=
+			Pqxq6jwqx2VpuUHCrWmZg6wU+2c6yfUovWDn33Pb/3A=
 			</data>
 		</dict>
 	</dict>

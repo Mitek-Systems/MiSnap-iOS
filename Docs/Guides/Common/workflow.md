@@ -1,10 +1,8 @@
 # MiSnapWorkflow Integration and Customization Guide
 
-Please refer to [MiSnapWorkflowSampleApp](../../../Examples/Apps/UIKit/Common/MiSnapWorkflowSampleApp) as a working example created by following steps below. 
+Please refer to [MiSnapSampleApp](../../../Examples/Apps/MiSnapSampleApp) as a working example. The sample app is a single workspace with two targets: use the `MiSnapSampleAppUIKit` scheme for UIKit-first integration and `MiSnapSampleAppSwiftUI` for SwiftUI-first integration.
 
-For SwiftUI integration, refer to [MiSnapSampleAppSwiftUI](../../../Examples/Apps/SwiftUI/MiSnapSampleAppSwiftUI).
-
-Specifically, `ViewController.swift` shows how with a few lines of code you can setup and launch `MiSnapWorkflowViewController` for:
+The Workflow feature is demonstrated in `Features/Workflow/` inside the sample app. `WorkflowViewModel.swift` shows how to configure and launch `MiSnapWorkflowViewController` for common flows including:
 * MobileVerify:
     * Passport --> (optional) NFC --> Face
     * ID/DL/RP Front --> ID/DL/RP Back --> (optional) NFC --> Face
@@ -30,7 +28,18 @@ let miSnapWorkflowVC = MiSnapWorkflowViewController(with: steps, delegate: self)
 ```
 where,
 
-`steps` is an array of `MiSnapWorkflowStep`.
+`steps` is an array of `MiSnapWorkflowStep`. Common examples:
+
+```Swift
+// Passport → (optional) NFC → Face
+let steps: [MiSnapWorkflowStep] = [.passport, .face]
+
+// ID/DL/RP Front → Back → (optional) NFC → Face
+let steps: [MiSnapWorkflowStep] = [.idFront, .idBack, .face]
+
+// Face + Voice biometric enrollment
+let steps: [MiSnapWorkflowStep] = [.face, .voice]
+```
 
 :warning: Do not add `nfc` step as it's automatically added when the workflow determines that a given document is in a list of supported documents and has a chip.
 

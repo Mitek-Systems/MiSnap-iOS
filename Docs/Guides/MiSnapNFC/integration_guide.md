@@ -2,7 +2,7 @@
 
 :warning: MiSnapNFC 5.x has breaking API changes therefore to migrate from 1.x series, remove all old MiSnap references from your project.
 
-[MiSnapNFCSampleApp](../../../Examples/Apps/UIKit/MiSnapNFC/MiSnapNFCSampleApp) was created by following steps below. Please refer to this project as a working example.
+Please refer to [MiSnapSampleApp](../../../Examples/Apps/MiSnapSampleApp) as a working example. The sample app is a single workspace with two targets: use the `MiSnapSampleAppUIKit` scheme for UIKit-first integration and `MiSnapSampleAppSwiftUI` for SwiftUI-first integration.
 
 ## 1. Obtain the SDK(s)
 MiSnapNFC 5.x is distributed through CocoaPods and Swift Package Manager. For detailed installation instructions refer to:

@@ -1,0 +1,1458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D22B3C02F4CA8A7002F0BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D22B3B72F4CA8A7002F0BC7 /* Assets.xcassets */; };
+		7D22B3C42F4CA8A7002F0BC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22B3B62F4CA8A7002F0BC7 /* AppDelegate.swift */; };
+		7D22B3C52F4CA8A7002F0BC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22B3BD2F4CA8A7002F0BC7 /* SceneDelegate.swift */; };
+		7D22B40A2F4DBCA9002F0BC7 /* WorkflowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75198C2EB8CF43002C05C2 /* WorkflowViewModel.swift */; };
+		7D22B40B2F4DBCA9002F0BC7 /* NFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75197C2EB8CF43002C05C2 /* NFCViewModel.swift */; };
+		7D22B40C2F4DBCA9002F0BC7 /* VoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519822EB8CF43002C05C2 /* VoiceViewModel.swift */; };
+		7D22B40D2F4DBCA9002F0BC7 /* DocumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75196F2EB8CF43002C05C2 /* DocumentsViewModel.swift */; };
+		7D22B40E2F4DBCA9002F0BC7 /* FaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519752EB8CF43002C05C2 /* FaceViewModel.swift */; };
+		7D22B40F2F4DBCDB002F0BC7 /* NFCResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75197A2EB8CF43002C05C2 /* NFCResult.swift */; };
+		7D22B4102F4DBCDB002F0BC7 /* FaceCaptureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519722EB8CF43002C05C2 /* FaceCaptureResult.swift */; };
+		7D22B4112F4DBCDB002F0BC7 /* MiSnapVoiceCaptureFlow+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519802EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift */; };
+		7D22B4122F4DBCDB002F0BC7 /* WorkflowResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75198A2EB8CF43002C05C2 /* WorkflowResult.swift */; };
+		7D22B4132F4DBCDB002F0BC7 /* MiSnapNFCDocumentType+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519792EB8CF43002C05C2 /* MiSnapNFCDocumentType+Ext.swift */; };
+		7D22B4142F4DBCDB002F0BC7 /* DocumentPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75196D2EB8CF43002C05C2 /* DocumentPreset.swift */; };
+		7D22B4152F4DBCDB002F0BC7 /* VoiceCaptureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75197F2EB8CF43002C05C2 /* VoiceCaptureResult.swift */; };
+		7D22B4162F4DBCDB002F0BC7 /* FacePreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519732EB8CF43002C05C2 /* FacePreset.swift */; };
+		7D22B4172F4DBCDB002F0BC7 /* WorkflowPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519892EB8CF43002C05C2 /* WorkflowPreset.swift */; };
+		7D22B4182F4DBCDB002F0BC7 /* DocumentCaptureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75196C2EB8CF43002C05C2 /* DocumentCaptureResult.swift */; };
+		7D22B4192F4DBD07002F0BC7 /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75195F2EB8CF43002C05C2 /* AlertConfig.swift */; };
+		7D22B41A2F4DBD07002F0BC7 /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D751A072EBA1FA1002C05C2 /* OrientationManager.swift */; };
+		7D22B41B2F4DBD07002F0BC7 /* LicenseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519452EB8CF43002C05C2 /* LicenseKey.swift */; };
+		7D22B41C2F4DBD07002F0BC7 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519682EB8CF43002C05C2 /* AppLogger.swift */; };
+		7D22B41D2F4DBD07002F0BC7 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519692EB8CF43002C05C2 /* AudioPlayer.swift */; };
+		7D22B41E2F4DBD1C002F0BC7 /* CustomTutorialHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5097A62EC4EFAA00BE7A38 /* CustomTutorialHandler.swift */; };
+		7D22B41F2F4DBD1C002F0BC7 /* CustomTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5095422EC496DC00BE7A38 /* CustomTutorialViewController.swift */; };
+		7D22B4212F4DC003002F0BC7 /* MiSnapWorkflowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519F82EB8D3C9002C05C2 /* MiSnapWorkflowController.swift */; };
+		7D22B4222F4DC003002F0BC7 /* MiSnapWorkflowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519FA2EB8D3C9002C05C2 /* MiSnapWorkflowViewControllerFactory.swift */; };
+		7D22B4232F4DC003002F0BC7 /* MiSnapWorkflowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519F92EB8D3C9002C05C2 /* MiSnapWorkflowViewController.swift */; };
+		7D22B4242F4DCC2F002F0BC7 /* MiSnapLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D75194C2EB8CF43002C05C2 /* MiSnapLocalizable.strings */; };
+		7D22B4252F4DCC34002F0BC7 /* MiSnapFacialCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519502EB8CF43002C05C2 /* MiSnapFacialCaptureLocalizable.strings */; };
+		7D22B4262F4DCC3F002F0BC7 /* passport.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519572EB8CF43002C05C2 /* passport.png */; };
+		7D22B4272F4DCC3F002F0BC7 /* target.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519582EB8CF43002C05C2 /* target.png */; };
+		7D22B4282F4DCC3F002F0BC7 /* id.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519532EB8CF43002C05C2 /* id.png */; };
+		7D22B4292F4DCC3F002F0BC7 /* device.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519522EB8CF43002C05C2 /* device.png */; };
+		7D22B42A2F4DCC46002F0BC7 /* MiSnapVoiceCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D75195C2EB8CF43002C05C2 /* MiSnapVoiceCaptureLocalizable.strings */; };
+		7D22B42B2F4DCC46002F0BC7 /* MiSnapNFCLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519562EB8CF43002C05C2 /* MiSnapNFCLocalizable.strings */; };
+		7D22B42F2F4DE70D002F0BC7 /* AudioPlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22B42E2F4DE70D002F0BC7 /* AudioPlayerCardView.swift */; };
+		7D22B4312F4DFF60002F0BC7 /* MonospacedInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D22B4302F4DFF60002F0BC7 /* MonospacedInputField.swift */; };
+		7D22B4322F4E2C05002F0BC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519912EB8CF43002C05C2 /* LaunchScreen.storyboard */; };
+		7D5095432EC496DC00BE7A38 /* CustomTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5095422EC496DC00BE7A38 /* CustomTutorialViewController.swift */; };
+		7D5097A72EC4EFAA00BE7A38 /* CustomTutorialHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5097A62EC4EFAA00BE7A38 /* CustomTutorialHandler.swift */; };
+		7D6049112F51EEC700FDE41E /* MiSnap in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049102F51EEC700FDE41E /* MiSnap */; };
+		7D6049132F51EEC700FDE41E /* MiSnapCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049122F51EEC700FDE41E /* MiSnapCore */; };
+		7D6049152F51EEC700FDE41E /* MiSnapFacialCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049142F51EEC700FDE41E /* MiSnapFacialCapture */; };
+		7D6049172F51EEC700FDE41E /* MiSnapFacialCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049162F51EEC700FDE41E /* MiSnapFacialCaptureUX */; };
+		7D6049192F51EEC700FDE41E /* MiSnapIAD in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049182F51EEC700FDE41E /* MiSnapIAD */; };
+		7D60491B2F51EEC700FDE41E /* MiSnapNFC in Frameworks */ = {isa = PBXBuildFile; productRef = 7D60491A2F51EEC700FDE41E /* MiSnapNFC */; };
+		7D60491D2F51EEC700FDE41E /* MiSnapNFCUX in Frameworks */ = {isa = PBXBuildFile; productRef = 7D60491C2F51EEC700FDE41E /* MiSnapNFCUX */; };
+		7D60491F2F51EEC700FDE41E /* MiSnapUX in Frameworks */ = {isa = PBXBuildFile; productRef = 7D60491E2F51EEC700FDE41E /* MiSnapUX */; };
+		7D6049212F51EED400FDE41E /* MiSnap in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049202F51EED400FDE41E /* MiSnap */; };
+		7D6049232F51EED400FDE41E /* MiSnapCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049222F51EED400FDE41E /* MiSnapCore */; };
+		7D6049252F51EED400FDE41E /* MiSnapFacialCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049242F51EED400FDE41E /* MiSnapFacialCapture */; };
+		7D6049272F51EED400FDE41E /* MiSnapFacialCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049262F51EED400FDE41E /* MiSnapFacialCaptureUX */; };
+		7D6049292F51EED400FDE41E /* MiSnapIAD in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049282F51EED400FDE41E /* MiSnapIAD */; };
+		7D60492B2F51EED400FDE41E /* MiSnapNFC in Frameworks */ = {isa = PBXBuildFile; productRef = 7D60492A2F51EED400FDE41E /* MiSnapNFC */; };
+		7D60492D2F51EED400FDE41E /* MiSnapNFCUX in Frameworks */ = {isa = PBXBuildFile; productRef = 7D60492C2F51EED400FDE41E /* MiSnapNFCUX */; };
+		7D60492F2F51EED400FDE41E /* MiSnapUX in Frameworks */ = {isa = PBXBuildFile; productRef = 7D60492E2F51EED400FDE41E /* MiSnapUX */; };
+		7D6049312F51EED400FDE41E /* MiSnapVoiceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049302F51EED400FDE41E /* MiSnapVoiceCapture */; };
+		7D6049332F51EED400FDE41E /* MiSnapVoiceCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049322F51EED400FDE41E /* MiSnapVoiceCaptureUX */; };
+		7D6049352F51EF4100FDE41E /* MiSnapVoiceCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049342F51EF4100FDE41E /* MiSnapVoiceCapture */; };
+		7D6049372F51EF4100FDE41E /* MiSnapVoiceCaptureUX in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049362F51EF4100FDE41E /* MiSnapVoiceCaptureUX */; };
+		7D7519942EB8CF43002C05C2 /* device.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519522EB8CF43002C05C2 /* device.png */; };
+		7D7519952EB8CF43002C05C2 /* MiSnapLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D75194C2EB8CF43002C05C2 /* MiSnapLocalizable.strings */; };
+		7D7519972EB8CF43002C05C2 /* MiSnapNFCLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519562EB8CF43002C05C2 /* MiSnapNFCLocalizable.strings */; };
+		7D7519982EB8CF43002C05C2 /* MiSnapFacialCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519502EB8CF43002C05C2 /* MiSnapFacialCaptureLocalizable.strings */; };
+		7D7519992EB8CF43002C05C2 /* MiSnapVoiceCaptureLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D75195C2EB8CF43002C05C2 /* MiSnapVoiceCaptureLocalizable.strings */; };
+		7D75199A2EB8CF43002C05C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D75198F2EB8CF43002C05C2 /* Assets.xcassets */; };
+		7D75199B2EB8CF43002C05C2 /* id.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519532EB8CF43002C05C2 /* id.png */; };
+		7D75199C2EB8CF43002C05C2 /* target.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519582EB8CF43002C05C2 /* target.png */; };
+		7D75199D2EB8CF43002C05C2 /* passport.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519572EB8CF43002C05C2 /* passport.png */; };
+		7D75199E2EB8CF43002C05C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519912EB8CF43002C05C2 /* LaunchScreen.storyboard */; };
+		7D75199F2EB8CF43002C05C2 /* FaceCaptureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519722EB8CF43002C05C2 /* FaceCaptureResult.swift */; };
+		7D7519A02EB8CF43002C05C2 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519692EB8CF43002C05C2 /* AudioPlayer.swift */; };
+		7D7519A12EB8CF43002C05C2 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519742EB8CF43002C05C2 /* FaceView.swift */; };
+		7D7519A22EB8CF43002C05C2 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519652EB8CF43002C05C2 /* ResultView.swift */; };
+		7D7519A32EB8CF43002C05C2 /* View+ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519662EB8CF43002C05C2 /* View+ClearButton.swift */; };
+		7D7519A42EB8CF43002C05C2 /* CapturePresetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519622EB8CF43002C05C2 /* CapturePresetCard.swift */; };
+		7D7519A52EB8CF43002C05C2 /* VoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519812EB8CF43002C05C2 /* VoiceView.swift */; };
+		7D7519A62EB8CF43002C05C2 /* WorkflowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75198C2EB8CF43002C05C2 /* WorkflowViewModel.swift */; };
+		7D7519A72EB8CF43002C05C2 /* CustomRoundedTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519632EB8CF43002C05C2 /* CustomRoundedTextFieldStyle.swift */; };
+		7D7519A82EB8CF43002C05C2 /* PillShapedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519642EB8CF43002C05C2 /* PillShapedLabel.swift */; };
+		7D7519A92EB8CF43002C05C2 /* WorkflowResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75198A2EB8CF43002C05C2 /* WorkflowResult.swift */; };
+		7D7519AB2EB8CF43002C05C2 /* FacePreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519732EB8CF43002C05C2 /* FacePreset.swift */; };
+		7D7519AC2EB8CF43002C05C2 /* MiSnapSampleSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519462EB8CF43002C05C2 /* MiSnapSampleSwiftUIApp.swift */; };
+		7D7519AD2EB8CF43002C05C2 /* VoiceCaptureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75197F2EB8CF43002C05C2 /* VoiceCaptureResult.swift */; };
+		7D7519AE2EB8CF43002C05C2 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519442EB8CF43002C05C2 /* LaunchScreenView.swift */; };
+		7D7519AF2EB8CF43002C05C2 /* DocumentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75196F2EB8CF43002C05C2 /* DocumentsViewModel.swift */; };
+		7D7519B02EB8CF43002C05C2 /* DocumentPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75196D2EB8CF43002C05C2 /* DocumentPreset.swift */; };
+		7D7519B12EB8CF43002C05C2 /* MiSnapWorkflowViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519882EB8CF43002C05C2 /* MiSnapWorkflowViewControllerRepresentable.swift */; };
+		7D7519B22EB8CF43002C05C2 /* MiSnapFacialCaptureViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519762EB8CF43002C05C2 /* MiSnapFacialCaptureViewControllerRepresentable.swift */; };
+		7D7519B42EB8CF43002C05C2 /* VoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519822EB8CF43002C05C2 /* VoiceViewModel.swift */; };
+		7D7519B52EB8CF43002C05C2 /* LicenseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519452EB8CF43002C05C2 /* LicenseKey.swift */; };
+		7D7519B62EB8CF43002C05C2 /* NFCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75197C2EB8CF43002C05C2 /* NFCViewModel.swift */; };
+		7D7519B72EB8CF43002C05C2 /* WorkflowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75198B2EB8CF43002C05C2 /* WorkflowView.swift */; };
+		7D7519B82EB8CF43002C05C2 /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75195F2EB8CF43002C05C2 /* AlertConfig.swift */; };
+		7D7519B92EB8CF43002C05C2 /* MiSnapNFCViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519782EB8CF43002C05C2 /* MiSnapNFCViewControllerRepresentable.swift */; };
+		7D7519BA2EB8CF43002C05C2 /* DocumentCaptureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75196C2EB8CF43002C05C2 /* DocumentCaptureResult.swift */; };
+		7D7519BB2EB8CF43002C05C2 /* MiSnapNFCDocumentType+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519792EB8CF43002C05C2 /* MiSnapNFCDocumentType+Ext.swift */; };
+		7D7519BC2EB8CF43002C05C2 /* NFCResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75197A2EB8CF43002C05C2 /* NFCResult.swift */; };
+		7D7519BD2EB8CF43002C05C2 /* WorkflowPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519892EB8CF43002C05C2 /* WorkflowPreset.swift */; };
+		7D7519BE2EB8CF43002C05C2 /* FaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519752EB8CF43002C05C2 /* FaceViewModel.swift */; };
+		7D7519BF2EB8CF43002C05C2 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519472EB8CF43002C05C2 /* RootTabView.swift */; };
+		7D7519C02EB8CF43002C05C2 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519612EB8CF43002C05C2 /* AudioPlayerView.swift */; };
+		7D7519C12EB8CF43002C05C2 /* MiSnapViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519702EB8CF43002C05C2 /* MiSnapViewControllerRepresentable.swift */; };
+		7D7519C22EB8CF43002C05C2 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519682EB8CF43002C05C2 /* AppLogger.swift */; };
+		7D7519C32EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519802EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift */; };
+		7D7519C42EB8CF43002C05C2 /* MiSnapVoiceCaptureViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75197E2EB8CF43002C05C2 /* MiSnapVoiceCaptureViewControllerRepresentable.swift */; };
+		7D7519C52EB8CF43002C05C2 /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75196E2EB8CF43002C05C2 /* DocumentsView.swift */; };
+		7D7519C62EB8CF43002C05C2 /* NFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75197B2EB8CF43002C05C2 /* NFCView.swift */; };
+		7D7519FC2EB8D3C9002C05C2 /* MiSnapWorkflowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519FA2EB8D3C9002C05C2 /* MiSnapWorkflowViewControllerFactory.swift */; };
+		7D7519FD2EB8D3C9002C05C2 /* MiSnapWorkflowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519F82EB8D3C9002C05C2 /* MiSnapWorkflowController.swift */; };
+		7D7519FE2EB8D3C9002C05C2 /* MiSnapWorkflowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519F92EB8D3C9002C05C2 /* MiSnapWorkflowViewController.swift */; };
+		7D751A032EB91D4B002C05C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D751A022EB91D4B002C05C2 /* AppDelegate.swift */; };
+		7D751A082EBA1FA1002C05C2 /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D751A072EBA1FA1002C05C2 /* OrientationManager.swift */; };
+		7DCAB2D72EB25C13008AE24B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7DCAB2D62EB25C13008AE24B /* README.md */; };
+		8A1100112F600000A0A00011 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100012F600000A0A00001 /* RootTabBarController.swift */; };
+		8A1100122F600000A0A00012 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100022F600000A0A00002 /* UIViewController+Alert.swift */; };
+		8A1100132F600000A0A00013 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100032F600000A0A00003 /* ResultViewController.swift */; };
+		8A1100142F600000A0A00014 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100042F600000A0A00004 /* DocumentsViewController.swift */; };
+		8A1100152F600000A0A00015 /* PresetCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100052F600000A0A00005 /* PresetCardCell.swift */; };
+		8A1100162F600000A0A00016 /* NFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100062F600000A0A00006 /* NFCViewController.swift */; };
+		8A1100172F600000A0A00017 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100072F600000A0A00007 /* FaceViewController.swift */; };
+		8A1100182F600000A0A00018 /* VoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100082F600000A0A00008 /* VoiceViewController.swift */; };
+		8A1100192F600000A0A00019 /* WorkflowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100092F600000A0A00009 /* WorkflowViewController.swift */; };
+		8A11001B2F600000A0A0001B /* NFCInputsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11001A2F600000A0A0001A /* NFCInputsHeaderView.swift */; };
+		BB1100022F700000B0B00002 /* FaceControlsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1100012F700000B0B00001 /* FaceControlsHeaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7D22B3E72F4CAAD7002F0BC7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7519EE2EB8D1B4002C05C2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7D22B3A12F4CA833002F0BC7 /* MiSnapSampleAppUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiSnapSampleAppUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D22B3B62F4CA8A7002F0BC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D22B3B72F4CA8A7002F0BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D22B3B82F4CA8A7002F0BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D22B3BD2F4CA8A7002F0BC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7D22B4202F4DBE63002F0BC7 /* MiSnapSampleAppUIKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiSnapSampleAppUIKit.entitlements; sourceTree = "<group>"; };
+		7D22B42E2F4DE70D002F0BC7 /* AudioPlayerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerCardView.swift; sourceTree = "<group>"; };
+		7D22B4302F4DFF60002F0BC7 /* MonospacedInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonospacedInputField.swift; sourceTree = "<group>"; };
+		7D4CDF362EA6421C00CBBB24 /* MiSnapSampleAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiSnapSampleAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D5095422EC496DC00BE7A38 /* CustomTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTutorialViewController.swift; path = ../../../../../../../Snippets/MiSnap/CustomTutorialViewController.swift; sourceTree = "<group>"; };
+		7D5097A62EC4EFAA00BE7A38 /* CustomTutorialHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTutorialHandler.swift; sourceTree = "<group>"; };
+		7D7519442EB8CF43002C05C2 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		7D7519452EB8CF43002C05C2 /* LicenseKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseKey.swift; sourceTree = "<group>"; };
+		7D7519462EB8CF43002C05C2 /* MiSnapSampleSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapSampleSwiftUIApp.swift; sourceTree = "<group>"; };
+		7D7519472EB8CF43002C05C2 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		7D7519492EB8CF43002C05C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
+		7D75194A2EB8CF43002C05C2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
+		7D75194B2EB8CF43002C05C2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MiSnapLocalizable.strings; sourceTree = "<group>"; };
+		7D75194E2EB8CF43002C05C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapFacialCaptureLocalizable.strings; sourceTree = "<group>"; };
+		7D75194F2EB8CF43002C05C2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapFacialCaptureLocalizable.strings; sourceTree = "<group>"; };
+		7D7519522EB8CF43002C05C2 /* device.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device.png; sourceTree = "<group>"; };
+		7D7519532EB8CF43002C05C2 /* id.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id.png; sourceTree = "<group>"; };
+		7D7519542EB8CF43002C05C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapNFCLocalizable.strings; sourceTree = "<group>"; };
+		7D7519552EB8CF43002C05C2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapNFCLocalizable.strings; sourceTree = "<group>"; };
+		7D7519572EB8CF43002C05C2 /* passport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = passport.png; sourceTree = "<group>"; };
+		7D7519582EB8CF43002C05C2 /* target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = target.png; sourceTree = "<group>"; };
+		7D75195A2EB8CF43002C05C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapVoiceCaptureLocalizable.strings; sourceTree = "<group>"; };
+		7D75195B2EB8CF43002C05C2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MiSnapVoiceCaptureLocalizable.strings; sourceTree = "<group>"; };
+		7D75195F2EB8CF43002C05C2 /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
+		7D7519612EB8CF43002C05C2 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
+		7D7519622EB8CF43002C05C2 /* CapturePresetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePresetCard.swift; sourceTree = "<group>"; };
+		7D7519632EB8CF43002C05C2 /* CustomRoundedTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedTextFieldStyle.swift; sourceTree = "<group>"; };
+		7D7519642EB8CF43002C05C2 /* PillShapedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillShapedLabel.swift; sourceTree = "<group>"; };
+		7D7519652EB8CF43002C05C2 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		7D7519662EB8CF43002C05C2 /* View+ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ClearButton.swift"; sourceTree = "<group>"; };
+		7D7519682EB8CF43002C05C2 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		7D7519692EB8CF43002C05C2 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		7D75196C2EB8CF43002C05C2 /* DocumentCaptureResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCaptureResult.swift; sourceTree = "<group>"; };
+		7D75196D2EB8CF43002C05C2 /* DocumentPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPreset.swift; sourceTree = "<group>"; };
+		7D75196E2EB8CF43002C05C2 /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
+		7D75196F2EB8CF43002C05C2 /* DocumentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewModel.swift; sourceTree = "<group>"; };
+		7D7519702EB8CF43002C05C2 /* MiSnapViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		7D7519722EB8CF43002C05C2 /* FaceCaptureResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceCaptureResult.swift; sourceTree = "<group>"; };
+		7D7519732EB8CF43002C05C2 /* FacePreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacePreset.swift; sourceTree = "<group>"; };
+		7D7519742EB8CF43002C05C2 /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		7D7519752EB8CF43002C05C2 /* FaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewModel.swift; sourceTree = "<group>"; };
+		7D7519762EB8CF43002C05C2 /* MiSnapFacialCaptureViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapFacialCaptureViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		7D7519782EB8CF43002C05C2 /* MiSnapNFCViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapNFCViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		7D7519792EB8CF43002C05C2 /* MiSnapNFCDocumentType+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MiSnapNFCDocumentType+Ext.swift"; sourceTree = "<group>"; };
+		7D75197A2EB8CF43002C05C2 /* NFCResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCResult.swift; sourceTree = "<group>"; };
+		7D75197B2EB8CF43002C05C2 /* NFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCView.swift; sourceTree = "<group>"; };
+		7D75197C2EB8CF43002C05C2 /* NFCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewModel.swift; sourceTree = "<group>"; };
+		7D75197E2EB8CF43002C05C2 /* MiSnapVoiceCaptureViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapVoiceCaptureViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		7D75197F2EB8CF43002C05C2 /* VoiceCaptureResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCaptureResult.swift; sourceTree = "<group>"; };
+		7D7519802EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MiSnapVoiceCaptureFlow+Ext.swift"; sourceTree = "<group>"; };
+		7D7519812EB8CF43002C05C2 /* VoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceView.swift; sourceTree = "<group>"; };
+		7D7519822EB8CF43002C05C2 /* VoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceViewModel.swift; sourceTree = "<group>"; };
+		7D7519882EB8CF43002C05C2 /* MiSnapWorkflowViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapWorkflowViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		7D7519892EB8CF43002C05C2 /* WorkflowPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowPreset.swift; sourceTree = "<group>"; };
+		7D75198A2EB8CF43002C05C2 /* WorkflowResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowResult.swift; sourceTree = "<group>"; };
+		7D75198B2EB8CF43002C05C2 /* WorkflowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowView.swift; sourceTree = "<group>"; };
+		7D75198C2EB8CF43002C05C2 /* WorkflowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowViewModel.swift; sourceTree = "<group>"; };
+		7D75198F2EB8CF43002C05C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D7519912EB8CF43002C05C2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D7519922EB8CF43002C05C2 /* MiSnapSampleAppSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiSnapSampleAppSwiftUI.entitlements; sourceTree = "<group>"; };
+		7D7519C82EB8D0A3002C05C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7D7519F82EB8D3C9002C05C2 /* MiSnapWorkflowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapWorkflowController.swift; sourceTree = "<group>"; };
+		7D7519F92EB8D3C9002C05C2 /* MiSnapWorkflowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapWorkflowViewController.swift; sourceTree = "<group>"; };
+		7D7519FA2EB8D3C9002C05C2 /* MiSnapWorkflowViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapWorkflowViewControllerFactory.swift; sourceTree = "<group>"; };
+		7D751A022EB91D4B002C05C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D751A072EBA1FA1002C05C2 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
+		7DCAB2D62EB25C13008AE24B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8A1100012F600000A0A00001 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		8A1100022F600000A0A00002 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		8A1100032F600000A0A00003 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		8A1100042F600000A0A00004 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
+		8A1100052F600000A0A00005 /* PresetCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetCardCell.swift; sourceTree = "<group>"; };
+		8A1100062F600000A0A00006 /* NFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewController.swift; sourceTree = "<group>"; };
+		8A1100072F600000A0A00007 /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
+		8A1100082F600000A0A00008 /* VoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceViewController.swift; sourceTree = "<group>"; };
+		8A1100092F600000A0A00009 /* WorkflowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowViewController.swift; sourceTree = "<group>"; };
+		8A11001A2F600000A0A0001A /* NFCInputsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCInputsHeaderView.swift; sourceTree = "<group>"; };
+		BB1100012F700000B0B00001 /* FaceControlsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceControlsHeaderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D22B39E2F4CA833002F0BC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D60492B2F51EED400FDE41E /* MiSnapNFC in Frameworks */,
+				7D6049312F51EED400FDE41E /* MiSnapVoiceCapture in Frameworks */,
+				7D6049212F51EED400FDE41E /* MiSnap in Frameworks */,
+				7D60492D2F51EED400FDE41E /* MiSnapNFCUX in Frameworks */,
+				7D6049232F51EED400FDE41E /* MiSnapCore in Frameworks */,
+				7D6049292F51EED400FDE41E /* MiSnapIAD in Frameworks */,
+				7D60492F2F51EED400FDE41E /* MiSnapUX in Frameworks */,
+				7D6049272F51EED400FDE41E /* MiSnapFacialCaptureUX in Frameworks */,
+				7D6049252F51EED400FDE41E /* MiSnapFacialCapture in Frameworks */,
+				7D6049332F51EED400FDE41E /* MiSnapVoiceCaptureUX in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4CDF332EA6421C00CBBB24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D60491B2F51EEC700FDE41E /* MiSnapNFC in Frameworks */,
+				7D6049352F51EF4100FDE41E /* MiSnapVoiceCapture in Frameworks */,
+				7D6049112F51EEC700FDE41E /* MiSnap in Frameworks */,
+				7D60491D2F51EEC700FDE41E /* MiSnapNFCUX in Frameworks */,
+				7D6049132F51EEC700FDE41E /* MiSnapCore in Frameworks */,
+				7D6049192F51EEC700FDE41E /* MiSnapIAD in Frameworks */,
+				7D60491F2F51EEC700FDE41E /* MiSnapUX in Frameworks */,
+				7D6049172F51EEC700FDE41E /* MiSnapFacialCaptureUX in Frameworks */,
+				7D6049152F51EEC700FDE41E /* MiSnapFacialCapture in Frameworks */,
+				7D6049372F51EF4100FDE41E /* MiSnapVoiceCaptureUX in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D4CDF2D2EA6421C00CBBB24 = {
+			isa = PBXGroup;
+			children = (
+				7D7519932EB8CF43002C05C2 /* MiSnapSampleApp */,
+				7DCAB2D62EB25C13008AE24B /* README.md */,
+				7D7519C92EB8D1B4002C05C2 /* Frameworks */,
+				7D4CDF372EA6421C00CBBB24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D4CDF372EA6421C00CBBB24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D4CDF362EA6421C00CBBB24 /* MiSnapSampleAppSwiftUI.app */,
+				7D22B3A12F4CA833002F0BC7 /* MiSnapSampleAppUIKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D5095462EC4AB4000BE7A38 /* CustomTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				7D5095422EC496DC00BE7A38 /* CustomTutorialViewController.swift */,
+				7D5097A62EC4EFAA00BE7A38 /* CustomTutorialHandler.swift */,
+			);
+			path = CustomTutorial;
+			sourceTree = "<group>";
+		};
+		7D7519482EB8CF43002C05C2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519452EB8CF43002C05C2 /* LicenseKey.swift */,
+				8A1200012F700000A0A00001 /* SwiftUI */,
+				8A12000E2F700000A0A0000E /* UIKit */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7D75194D2EB8CF43002C05C2 /* MiSnap */ = {
+			isa = PBXGroup;
+			children = (
+				7D75194C2EB8CF43002C05C2 /* MiSnapLocalizable.strings */,
+			);
+			path = MiSnap;
+			sourceTree = "<group>";
+		};
+		7D7519512EB8CF43002C05C2 /* MiSnapFacialCapture */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519502EB8CF43002C05C2 /* MiSnapFacialCaptureLocalizable.strings */,
+			);
+			path = MiSnapFacialCapture;
+			sourceTree = "<group>";
+		};
+		7D7519592EB8CF43002C05C2 /* MiSnapNFC */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519522EB8CF43002C05C2 /* device.png */,
+				7D7519532EB8CF43002C05C2 /* id.png */,
+				7D7519562EB8CF43002C05C2 /* MiSnapNFCLocalizable.strings */,
+				7D7519572EB8CF43002C05C2 /* passport.png */,
+				7D7519582EB8CF43002C05C2 /* target.png */,
+			);
+			path = MiSnapNFC;
+			sourceTree = "<group>";
+		};
+		7D75195D2EB8CF43002C05C2 /* MiSnapVoiceCapture */ = {
+			isa = PBXGroup;
+			children = (
+				7D75195C2EB8CF43002C05C2 /* MiSnapVoiceCaptureLocalizable.strings */,
+			);
+			path = MiSnapVoiceCapture;
+			sourceTree = "<group>";
+		};
+		7D7519602EB8CF43002C05C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D75195F2EB8CF43002C05C2 /* AlertConfig.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7D7519672EB8CF43002C05C2 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519612EB8CF43002C05C2 /* AudioPlayerView.swift */,
+				7D7519622EB8CF43002C05C2 /* CapturePresetCard.swift */,
+				7D7519632EB8CF43002C05C2 /* CustomRoundedTextFieldStyle.swift */,
+				7D7519642EB8CF43002C05C2 /* PillShapedLabel.swift */,
+				7D7519652EB8CF43002C05C2 /* ResultView.swift */,
+				7D7519662EB8CF43002C05C2 /* View+ClearButton.swift */,
+				7D22B4302F4DFF60002F0BC7 /* MonospacedInputField.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		7D75196A2EB8CF43002C05C2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519682EB8CF43002C05C2 /* AppLogger.swift */,
+				7D7519692EB8CF43002C05C2 /* AudioPlayer.swift */,
+				7D751A072EBA1FA1002C05C2 /* OrientationManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7D75196B2EB8CF43002C05C2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8A1200022F700000A0A00002 /* Shared */,
+				7D7519672EB8CF43002C05C2 /* SwiftUI */,
+				8A1200102F700000A0A00010 /* UIKit */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7D7519712EB8CF43002C05C2 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				7D75196F2EB8CF43002C05C2 /* DocumentsViewModel.swift */,
+				8A1200032F700000A0A00003 /* SwiftUI */,
+				8A1200172F700000A0A00017 /* UIKit */,
+				8A1200042F700000A0A00004 /* Shared */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		7D7519772EB8CF43002C05C2 /* Face */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519752EB8CF43002C05C2 /* FaceViewModel.swift */,
+				8A1200052F700000A0A00005 /* SwiftUI */,
+				8A1200182F700000A0A00018 /* UIKit */,
+				8A1200062F700000A0A00006 /* Shared */,
+			);
+			path = Face;
+			sourceTree = "<group>";
+		};
+		7D75197D2EB8CF43002C05C2 /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+				7D75197C2EB8CF43002C05C2 /* NFCViewModel.swift */,
+				8A1200072F700000A0A00007 /* SwiftUI */,
+				8A1200192F700000A0A00019 /* UIKit */,
+				8A1200082F700000A0A00008 /* Shared */,
+			);
+			path = NFC;
+			sourceTree = "<group>";
+		};
+		7D7519832EB8CF43002C05C2 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519822EB8CF43002C05C2 /* VoiceViewModel.swift */,
+				8A1200092F700000A0A00009 /* SwiftUI */,
+				8A12001A2F700000A0A0001A /* UIKit */,
+				8A12000A2F700000A0A0000A /* Shared */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+		7D75198D2EB8CF43002C05C2 /* Workflow */ = {
+			isa = PBXGroup;
+			children = (
+				7D75198C2EB8CF43002C05C2 /* WorkflowViewModel.swift */,
+				8A12000B2F700000A0A0000B /* SwiftUI */,
+				8A12001B2F700000A0A0001B /* UIKit */,
+				8A12000C2F700000A0A0000C /* Shared */,
+			);
+			path = Workflow;
+			sourceTree = "<group>";
+		};
+		7D75198E2EB8CF43002C05C2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519712EB8CF43002C05C2 /* Documents */,
+				7D7519772EB8CF43002C05C2 /* Face */,
+				7D75197D2EB8CF43002C05C2 /* NFC */,
+				7D7519832EB8CF43002C05C2 /* Voice */,
+				7D75198D2EB8CF43002C05C2 /* Workflow */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		7D7519932EB8CF43002C05C2 /* MiSnapSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519482EB8CF43002C05C2 /* App */,
+				7D75196B2EB8CF43002C05C2 /* Common */,
+				7D75198E2EB8CF43002C05C2 /* Features */,
+			);
+			path = MiSnapSampleApp;
+			sourceTree = "<group>";
+		};
+		7D7519C92EB8D1B4002C05C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D7519FB2EB8D3C9002C05C2 /* MiSnapWorkflow */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519F82EB8D3C9002C05C2 /* MiSnapWorkflowController.swift */,
+				7D7519F92EB8D3C9002C05C2 /* MiSnapWorkflowViewController.swift */,
+				7D7519FA2EB8D3C9002C05C2 /* MiSnapWorkflowViewControllerFactory.swift */,
+			);
+			name = MiSnapWorkflow;
+			path = ../../../../../../../SDKs/Common/MiSnapWorkflow;
+			sourceTree = "<group>";
+		};
+		8A1200012F700000A0A00001 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519462EB8CF43002C05C2 /* MiSnapSampleSwiftUIApp.swift */,
+				7D751A022EB91D4B002C05C2 /* AppDelegate.swift */,
+				7D7519472EB8CF43002C05C2 /* RootTabView.swift */,
+				7D7519442EB8CF43002C05C2 /* LaunchScreenView.swift */,
+				7D7519C82EB8D0A3002C05C2 /* Info.plist */,
+				7D75198F2EB8CF43002C05C2 /* Assets.xcassets */,
+				7D7519922EB8CF43002C05C2 /* MiSnapSampleAppSwiftUI.entitlements */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		8A1200022F700000A0A00002 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519602EB8CF43002C05C2 /* Models */,
+				7D75196A2EB8CF43002C05C2 /* Utilities */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8A1200032F700000A0A00003 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7D75196E2EB8CF43002C05C2 /* DocumentsView.swift */,
+				7D7519702EB8CF43002C05C2 /* MiSnapViewControllerRepresentable.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		8A1200042F700000A0A00004 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7D75196D2EB8CF43002C05C2 /* DocumentPreset.swift */,
+				7D75196C2EB8CF43002C05C2 /* DocumentCaptureResult.swift */,
+				AA1200012F700000C0C00001 /* Assets */,
+				7D5095462EC4AB4000BE7A38 /* CustomTutorial */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8A1200052F700000A0A00005 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519742EB8CF43002C05C2 /* FaceView.swift */,
+				7D7519762EB8CF43002C05C2 /* MiSnapFacialCaptureViewControllerRepresentable.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		8A1200062F700000A0A00006 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519722EB8CF43002C05C2 /* FaceCaptureResult.swift */,
+				7D7519732EB8CF43002C05C2 /* FacePreset.swift */,
+				AA1200022F700000C0C00002 /* Assets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8A1200072F700000A0A00007 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7D75197B2EB8CF43002C05C2 /* NFCView.swift */,
+				7D7519782EB8CF43002C05C2 /* MiSnapNFCViewControllerRepresentable.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		8A1200082F700000A0A00008 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519792EB8CF43002C05C2 /* MiSnapNFCDocumentType+Ext.swift */,
+				7D75197A2EB8CF43002C05C2 /* NFCResult.swift */,
+				AA1200032F700000C0C00003 /* Assets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8A1200092F700000A0A00009 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519812EB8CF43002C05C2 /* VoiceView.swift */,
+				7D75197E2EB8CF43002C05C2 /* MiSnapVoiceCaptureViewControllerRepresentable.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		8A12000A2F700000A0A0000A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519802EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift */,
+				7D75197F2EB8CF43002C05C2 /* VoiceCaptureResult.swift */,
+				AA1200042F700000C0C00004 /* Assets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8A12000B2F700000A0A0000B /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				7D75198B2EB8CF43002C05C2 /* WorkflowView.swift */,
+				7D7519882EB8CF43002C05C2 /* MiSnapWorkflowViewControllerRepresentable.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		8A12000C2F700000A0A0000C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519892EB8CF43002C05C2 /* WorkflowPreset.swift */,
+				7D75198A2EB8CF43002C05C2 /* WorkflowResult.swift */,
+				7D7519FB2EB8D3C9002C05C2 /* MiSnapWorkflow */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8A12000E2F700000A0A0000E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				7D22B3B62F4CA8A7002F0BC7 /* AppDelegate.swift */,
+				7D22B3BD2F4CA8A7002F0BC7 /* SceneDelegate.swift */,
+				8A1100012F600000A0A00001 /* RootTabBarController.swift */,
+				7D7519912EB8CF43002C05C2 /* LaunchScreen.storyboard */,
+				7D22B4202F4DBE63002F0BC7 /* MiSnapSampleAppUIKit.entitlements */,
+				7D22B3B72F4CA8A7002F0BC7 /* Assets.xcassets */,
+				7D22B3B82F4CA8A7002F0BC7 /* Info.plist */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8A1200102F700000A0A00010 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				7D22B42E2F4DE70D002F0BC7 /* AudioPlayerCardView.swift */,
+				8A1100052F600000A0A00005 /* PresetCardCell.swift */,
+				8A1100032F600000A0A00003 /* ResultViewController.swift */,
+				8A1100022F600000A0A00002 /* UIViewController+Alert.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8A1200172F700000A0A00017 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8A1100042F600000A0A00004 /* DocumentsViewController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8A1200182F700000A0A00018 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8A1100072F600000A0A00007 /* FaceViewController.swift */,
+				BB1100012F700000B0B00001 /* FaceControlsHeaderView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8A1200192F700000A0A00019 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8A1100062F600000A0A00006 /* NFCViewController.swift */,
+				8A11001A2F600000A0A0001A /* NFCInputsHeaderView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8A12001A2F700000A0A0001A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8A1100082F600000A0A00008 /* VoiceViewController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8A12001B2F700000A0A0001B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8A1100092F600000A0A00009 /* WorkflowViewController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		AA1200012F700000C0C00001 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7D75194D2EB8CF43002C05C2 /* MiSnap */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		AA1200022F700000C0C00002 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519512EB8CF43002C05C2 /* MiSnapFacialCapture */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		AA1200032F700000C0C00003 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7D7519592EB8CF43002C05C2 /* MiSnapNFC */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		AA1200042F700000C0C00004 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7D75195D2EB8CF43002C05C2 /* MiSnapVoiceCapture */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D22B3A02F4CA833002F0BC7 /* MiSnapSampleAppUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D22B3B52F4CA835002F0BC7 /* Build configuration list for PBXNativeTarget "MiSnapSampleAppUIKit" */;
+			buildPhases = (
+				7D22B39D2F4CA833002F0BC7 /* Sources */,
+				7D22B39E2F4CA833002F0BC7 /* Frameworks */,
+				7D22B39F2F4CA833002F0BC7 /* Resources */,
+				7D22B3E72F4CAAD7002F0BC7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiSnapSampleAppUIKit;
+			packageProductDependencies = (
+				7D6049202F51EED400FDE41E /* MiSnap */,
+				7D6049222F51EED400FDE41E /* MiSnapCore */,
+				7D6049242F51EED400FDE41E /* MiSnapFacialCapture */,
+				7D6049262F51EED400FDE41E /* MiSnapFacialCaptureUX */,
+				7D6049282F51EED400FDE41E /* MiSnapIAD */,
+				7D60492A2F51EED400FDE41E /* MiSnapNFC */,
+				7D60492C2F51EED400FDE41E /* MiSnapNFCUX */,
+				7D60492E2F51EED400FDE41E /* MiSnapUX */,
+				7D6049302F51EED400FDE41E /* MiSnapVoiceCapture */,
+				7D6049322F51EED400FDE41E /* MiSnapVoiceCaptureUX */,
+			);
+			productName = MiSnapSampleAppUIKit;
+			productReference = 7D22B3A12F4CA833002F0BC7 /* MiSnapSampleAppUIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D4CDF352EA6421C00CBBB24 /* MiSnapSampleAppSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D4CDF412EA6421E00CBBB24 /* Build configuration list for PBXNativeTarget "MiSnapSampleAppSwiftUI" */;
+			buildPhases = (
+				7D4CDF322EA6421C00CBBB24 /* Sources */,
+				7D4CDF332EA6421C00CBBB24 /* Frameworks */,
+				7D4CDF342EA6421C00CBBB24 /* Resources */,
+				7D7519EE2EB8D1B4002C05C2 /* Embed Frameworks */,
+				7D751A062EB92933002C05C2 /* Run SwiftLint */,
+				7D3004972EC7611900CE4B1B /* Check Internal and Public project sync */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiSnapSampleAppSwiftUI;
+			packageProductDependencies = (
+				7D6049102F51EEC700FDE41E /* MiSnap */,
+				7D6049122F51EEC700FDE41E /* MiSnapCore */,
+				7D6049142F51EEC700FDE41E /* MiSnapFacialCapture */,
+				7D6049162F51EEC700FDE41E /* MiSnapFacialCaptureUX */,
+				7D6049182F51EEC700FDE41E /* MiSnapIAD */,
+				7D60491A2F51EEC700FDE41E /* MiSnapNFC */,
+				7D60491C2F51EEC700FDE41E /* MiSnapNFCUX */,
+				7D60491E2F51EEC700FDE41E /* MiSnapUX */,
+				7D6049342F51EF4100FDE41E /* MiSnapVoiceCapture */,
+				7D6049362F51EF4100FDE41E /* MiSnapVoiceCaptureUX */,
+			);
+			productName = MiSnapSampleAppSwiftUI;
+			productReference = 7D4CDF362EA6421C00CBBB24 /* MiSnapSampleAppSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D4CDF2E2EA6421C00CBBB24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 1640;
+				ORGANIZATIONNAME = "Mitek Systems Inc.";
+				TargetAttributes = {
+					7D22B3A02F4CA833002F0BC7 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					7D4CDF352EA6421C00CBBB24 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 7D4CDF312EA6421C00CBBB24 /* Build configuration list for PBXProject "MiSnapSampleApp-Public" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+				fr,
+			);
+			mainGroup = 7D4CDF2D2EA6421C00CBBB24;
+			packageReferences = (
+				7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */,
+			);
+			productRefGroup = 7D4CDF372EA6421C00CBBB24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D4CDF352EA6421C00CBBB24 /* MiSnapSampleAppSwiftUI */,
+				7D22B3A02F4CA833002F0BC7 /* MiSnapSampleAppUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D22B39F2F4CA833002F0BC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D22B3C02F4CA8A7002F0BC7 /* Assets.xcassets in Resources */,
+				7D22B42A2F4DCC46002F0BC7 /* MiSnapVoiceCaptureLocalizable.strings in Resources */,
+				7D22B42B2F4DCC46002F0BC7 /* MiSnapNFCLocalizable.strings in Resources */,
+				7D22B4252F4DCC34002F0BC7 /* MiSnapFacialCaptureLocalizable.strings in Resources */,
+				7D22B4262F4DCC3F002F0BC7 /* passport.png in Resources */,
+				7D22B4272F4DCC3F002F0BC7 /* target.png in Resources */,
+				7D22B4282F4DCC3F002F0BC7 /* id.png in Resources */,
+				7D22B4292F4DCC3F002F0BC7 /* device.png in Resources */,
+				7D22B4322F4E2C05002F0BC7 /* LaunchScreen.storyboard in Resources */,
+				7D22B4242F4DCC2F002F0BC7 /* MiSnapLocalizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4CDF342EA6421C00CBBB24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7519942EB8CF43002C05C2 /* device.png in Resources */,
+				7D7519952EB8CF43002C05C2 /* MiSnapLocalizable.strings in Resources */,
+				7D7519972EB8CF43002C05C2 /* MiSnapNFCLocalizable.strings in Resources */,
+				7D7519982EB8CF43002C05C2 /* MiSnapFacialCaptureLocalizable.strings in Resources */,
+				7D7519992EB8CF43002C05C2 /* MiSnapVoiceCaptureLocalizable.strings in Resources */,
+				7D75199A2EB8CF43002C05C2 /* Assets.xcassets in Resources */,
+				7D75199B2EB8CF43002C05C2 /* id.png in Resources */,
+				7D75199C2EB8CF43002C05C2 /* target.png in Resources */,
+				7D75199D2EB8CF43002C05C2 /* passport.png in Resources */,
+				7D75199E2EB8CF43002C05C2 /* LaunchScreen.storyboard in Resources */,
+				7DCAB2D72EB25C13008AE24B /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D3004972EC7611900CE4B1B /* Check Internal and Public project sync */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Check Internal and Public project sync";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#python3 \"${SRCROOT}/../../../../Tools/check_xcodeproj_sync.py\" \"${SRCROOT}\"\n";
+		};
+		7D751A062EB92933002C05C2 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D22B39D2F4CA833002F0BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D22B40A2F4DBCA9002F0BC7 /* WorkflowViewModel.swift in Sources */,
+				7D22B40B2F4DBCA9002F0BC7 /* NFCViewModel.swift in Sources */,
+				7D22B41E2F4DBD1C002F0BC7 /* CustomTutorialHandler.swift in Sources */,
+				7D22B4212F4DC003002F0BC7 /* MiSnapWorkflowController.swift in Sources */,
+				7D22B4222F4DC003002F0BC7 /* MiSnapWorkflowViewControllerFactory.swift in Sources */,
+				7D22B4232F4DC003002F0BC7 /* MiSnapWorkflowViewController.swift in Sources */,
+				7D22B41F2F4DBD1C002F0BC7 /* CustomTutorialViewController.swift in Sources */,
+				7D22B40C2F4DBCA9002F0BC7 /* VoiceViewModel.swift in Sources */,
+				7D22B40D2F4DBCA9002F0BC7 /* DocumentsViewModel.swift in Sources */,
+				7D22B40F2F4DBCDB002F0BC7 /* NFCResult.swift in Sources */,
+				7D22B4102F4DBCDB002F0BC7 /* FaceCaptureResult.swift in Sources */,
+				7D22B4112F4DBCDB002F0BC7 /* MiSnapVoiceCaptureFlow+Ext.swift in Sources */,
+				7D22B4122F4DBCDB002F0BC7 /* WorkflowResult.swift in Sources */,
+				7D22B4132F4DBCDB002F0BC7 /* MiSnapNFCDocumentType+Ext.swift in Sources */,
+				7D22B4192F4DBD07002F0BC7 /* AlertConfig.swift in Sources */,
+				7D22B41A2F4DBD07002F0BC7 /* OrientationManager.swift in Sources */,
+				7D22B41B2F4DBD07002F0BC7 /* LicenseKey.swift in Sources */,
+				7D22B41C2F4DBD07002F0BC7 /* AppLogger.swift in Sources */,
+				7D22B41D2F4DBD07002F0BC7 /* AudioPlayer.swift in Sources */,
+				7D22B4142F4DBCDB002F0BC7 /* DocumentPreset.swift in Sources */,
+				7D22B4152F4DBCDB002F0BC7 /* VoiceCaptureResult.swift in Sources */,
+				7D22B4162F4DBCDB002F0BC7 /* FacePreset.swift in Sources */,
+				7D22B4172F4DBCDB002F0BC7 /* WorkflowPreset.swift in Sources */,
+				7D22B4182F4DBCDB002F0BC7 /* DocumentCaptureResult.swift in Sources */,
+				7D22B40E2F4DBCA9002F0BC7 /* FaceViewModel.swift in Sources */,
+				7D22B3C42F4CA8A7002F0BC7 /* AppDelegate.swift in Sources */,
+				7D22B3C52F4CA8A7002F0BC7 /* SceneDelegate.swift in Sources */,
+				8A1100112F600000A0A00011 /* RootTabBarController.swift in Sources */,
+				8A1100122F600000A0A00012 /* UIViewController+Alert.swift in Sources */,
+				8A1100132F600000A0A00013 /* ResultViewController.swift in Sources */,
+				7D22B42F2F4DE70D002F0BC7 /* AudioPlayerCardView.swift in Sources */,
+				8A1100142F600000A0A00014 /* DocumentsViewController.swift in Sources */,
+				8A1100152F600000A0A00015 /* PresetCardCell.swift in Sources */,
+				8A1100162F600000A0A00016 /* NFCViewController.swift in Sources */,
+				8A11001B2F600000A0A0001B /* NFCInputsHeaderView.swift in Sources */,
+				8A1100172F600000A0A00017 /* FaceViewController.swift in Sources */,
+				BB1100022F700000B0B00002 /* FaceControlsHeaderView.swift in Sources */,
+				8A1100182F600000A0A00018 /* VoiceViewController.swift in Sources */,
+				8A1100192F600000A0A00019 /* WorkflowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D4CDF322EA6421C00CBBB24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D75199F2EB8CF43002C05C2 /* FaceCaptureResult.swift in Sources */,
+				7D7519A02EB8CF43002C05C2 /* AudioPlayer.swift in Sources */,
+				7D7519A12EB8CF43002C05C2 /* FaceView.swift in Sources */,
+				7D7519A22EB8CF43002C05C2 /* ResultView.swift in Sources */,
+				7D7519A32EB8CF43002C05C2 /* View+ClearButton.swift in Sources */,
+				7D7519A42EB8CF43002C05C2 /* CapturePresetCard.swift in Sources */,
+				7D7519A52EB8CF43002C05C2 /* VoiceView.swift in Sources */,
+				7D7519A62EB8CF43002C05C2 /* WorkflowViewModel.swift in Sources */,
+				7D7519A72EB8CF43002C05C2 /* CustomRoundedTextFieldStyle.swift in Sources */,
+				7D7519A82EB8CF43002C05C2 /* PillShapedLabel.swift in Sources */,
+				7D7519A92EB8CF43002C05C2 /* WorkflowResult.swift in Sources */,
+				7D7519AB2EB8CF43002C05C2 /* FacePreset.swift in Sources */,
+				7D7519AC2EB8CF43002C05C2 /* MiSnapSampleSwiftUIApp.swift in Sources */,
+				7D7519AD2EB8CF43002C05C2 /* VoiceCaptureResult.swift in Sources */,
+				7D7519AE2EB8CF43002C05C2 /* LaunchScreenView.swift in Sources */,
+				7D5095432EC496DC00BE7A38 /* CustomTutorialViewController.swift in Sources */,
+				7D7519AF2EB8CF43002C05C2 /* DocumentsViewModel.swift in Sources */,
+				7D7519B02EB8CF43002C05C2 /* DocumentPreset.swift in Sources */,
+				7D7519B12EB8CF43002C05C2 /* MiSnapWorkflowViewControllerRepresentable.swift in Sources */,
+				7D751A032EB91D4B002C05C2 /* AppDelegate.swift in Sources */,
+				7D7519FC2EB8D3C9002C05C2 /* MiSnapWorkflowViewControllerFactory.swift in Sources */,
+				7D7519FD2EB8D3C9002C05C2 /* MiSnapWorkflowController.swift in Sources */,
+				7D7519FE2EB8D3C9002C05C2 /* MiSnapWorkflowViewController.swift in Sources */,
+				7D7519B22EB8CF43002C05C2 /* MiSnapFacialCaptureViewControllerRepresentable.swift in Sources */,
+				7D7519B42EB8CF43002C05C2 /* VoiceViewModel.swift in Sources */,
+				7D7519B52EB8CF43002C05C2 /* LicenseKey.swift in Sources */,
+				7D7519B62EB8CF43002C05C2 /* NFCViewModel.swift in Sources */,
+				7D7519B72EB8CF43002C05C2 /* WorkflowView.swift in Sources */,
+				7D7519B82EB8CF43002C05C2 /* AlertConfig.swift in Sources */,
+				7D7519B92EB8CF43002C05C2 /* MiSnapNFCViewControllerRepresentable.swift in Sources */,
+				7D7519BA2EB8CF43002C05C2 /* DocumentCaptureResult.swift in Sources */,
+				7D7519BB2EB8CF43002C05C2 /* MiSnapNFCDocumentType+Ext.swift in Sources */,
+				7D7519BC2EB8CF43002C05C2 /* NFCResult.swift in Sources */,
+				7D7519BD2EB8CF43002C05C2 /* WorkflowPreset.swift in Sources */,
+				7D7519BE2EB8CF43002C05C2 /* FaceViewModel.swift in Sources */,
+				7D7519BF2EB8CF43002C05C2 /* RootTabView.swift in Sources */,
+				7D7519C02EB8CF43002C05C2 /* AudioPlayerView.swift in Sources */,
+				7D7519C12EB8CF43002C05C2 /* MiSnapViewControllerRepresentable.swift in Sources */,
+				7D22B4312F4DFF60002F0BC7 /* MonospacedInputField.swift in Sources */,
+				7D5097A72EC4EFAA00BE7A38 /* CustomTutorialHandler.swift in Sources */,
+				7D7519C22EB8CF43002C05C2 /* AppLogger.swift in Sources */,
+				7D7519C32EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift in Sources */,
+				7D7519C42EB8CF43002C05C2 /* MiSnapVoiceCaptureViewControllerRepresentable.swift in Sources */,
+				7D7519C52EB8CF43002C05C2 /* DocumentsView.swift in Sources */,
+				7D751A082EBA1FA1002C05C2 /* OrientationManager.swift in Sources */,
+				7D7519C62EB8CF43002C05C2 /* NFCView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D75194C2EB8CF43002C05C2 /* MiSnapLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D7519492EB8CF43002C05C2 /* en */,
+				7D75194A2EB8CF43002C05C2 /* es */,
+				7D75194B2EB8CF43002C05C2 /* fr */,
+			);
+			name = MiSnapLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		7D7519502EB8CF43002C05C2 /* MiSnapFacialCaptureLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D75194E2EB8CF43002C05C2 /* en */,
+				7D75194F2EB8CF43002C05C2 /* es */,
+			);
+			name = MiSnapFacialCaptureLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		7D7519562EB8CF43002C05C2 /* MiSnapNFCLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D7519542EB8CF43002C05C2 /* en */,
+				7D7519552EB8CF43002C05C2 /* es */,
+			);
+			name = MiSnapNFCLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		7D75195C2EB8CF43002C05C2 /* MiSnapVoiceCaptureLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D75195A2EB8CF43002C05C2 /* en */,
+				7D75195B2EB8CF43002C05C2 /* es */,
+			);
+			name = MiSnapVoiceCaptureLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D22B3B22F4CA835002F0BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MiSnapSampleApp/App/UIKit/MiSnapSampleAppUIKit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43FZQWCCUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiSnapSampleApp/App/UIKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MiSnapUIKit;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC is required to read electronic documents.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required to capture documents and faces.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone is used for voice capture.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteksystems.MiSnapSampleAppUIKit.MiSnapSampleAppUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D22B3B32F4CA835002F0BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MiSnapSampleApp/App/UIKit/MiSnapSampleAppUIKit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43FZQWCCUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiSnapSampleApp/App/UIKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MiSnapUIKit;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC is required to read electronic documents.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required to capture documents and faces.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone is used for voice capture.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteksystems.MiSnapSampleAppUIKit.MiSnapSampleAppUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7D4CDF3F2EA6421E00CBBB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 43FZQWCCUM;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D4CDF402EA6421E00CBBB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 43FZQWCCUM;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D4CDF422EA6421E00CBBB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MiSnapSampleApp/App/SwiftUI/MiSnapSampleAppSwiftUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 43FZQWCCUM;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiSnapSampleApp/App/SwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MiSnapSwiftUI;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC is required to read electronic documents.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required to capture documents and faces.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone is used for voice capture.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteksystems.MiSnapSampleAppSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D4CDF432EA6421E00CBBB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MiSnapSampleApp/App/SwiftUI/MiSnapSampleAppSwiftUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 43FZQWCCUM;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MiSnapSampleApp/App/SwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MiSnapSwiftUI;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC is required to read electronic documents.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required to capture documents and faces.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone is used for voice capture.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miteksystems.MiSnapSampleAppSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D22B3B52F4CA835002F0BC7 /* Build configuration list for PBXNativeTarget "MiSnapSampleAppUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D22B3B22F4CA835002F0BC7 /* Debug */,
+				7D22B3B32F4CA835002F0BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D4CDF312EA6421C00CBBB24 /* Build configuration list for PBXProject "MiSnapSampleApp-Public" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D4CDF3F2EA6421E00CBBB24 /* Debug */,
+				7D4CDF402EA6421E00CBBB24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D4CDF412EA6421E00CBBB24 /* Build configuration list for PBXNativeTarget "MiSnapSampleAppSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D4CDF422EA6421E00CBBB24 /* Debug */,
+				7D4CDF432EA6421E00CBBB24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
+			requirement = {
+				branch = release/5.11.0;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D6049102F51EEC700FDE41E /* MiSnap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnap;
+		};
+		7D6049122F51EEC700FDE41E /* MiSnapCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapCore;
+		};
+		7D6049142F51EEC700FDE41E /* MiSnapFacialCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapFacialCapture;
+		};
+		7D6049162F51EEC700FDE41E /* MiSnapFacialCaptureUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapFacialCaptureUX;
+		};
+		7D6049182F51EEC700FDE41E /* MiSnapIAD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapIAD;
+		};
+		7D60491A2F51EEC700FDE41E /* MiSnapNFC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapNFC;
+		};
+		7D60491C2F51EEC700FDE41E /* MiSnapNFCUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapNFCUX;
+		};
+		7D60491E2F51EEC700FDE41E /* MiSnapUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapUX;
+		};
+		7D6049202F51EED400FDE41E /* MiSnap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnap;
+		};
+		7D6049222F51EED400FDE41E /* MiSnapCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapCore;
+		};
+		7D6049242F51EED400FDE41E /* MiSnapFacialCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapFacialCapture;
+		};
+		7D6049262F51EED400FDE41E /* MiSnapFacialCaptureUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapFacialCaptureUX;
+		};
+		7D6049282F51EED400FDE41E /* MiSnapIAD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapIAD;
+		};
+		7D60492A2F51EED400FDE41E /* MiSnapNFC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapNFC;
+		};
+		7D60492C2F51EED400FDE41E /* MiSnapNFCUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapNFCUX;
+		};
+		7D60492E2F51EED400FDE41E /* MiSnapUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapUX;
+		};
+		7D6049302F51EED400FDE41E /* MiSnapVoiceCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapVoiceCapture;
+		};
+		7D6049322F51EED400FDE41E /* MiSnapVoiceCaptureUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapVoiceCaptureUX;
+		};
+		7D6049342F51EF4100FDE41E /* MiSnapVoiceCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapVoiceCapture;
+		};
+		7D6049362F51EF4100FDE41E /* MiSnapVoiceCaptureUX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D60490F2F51EEC700FDE41E /* XCRemoteSwiftPackageReference "MiSnap-iOS" */;
+			productName = MiSnapVoiceCaptureUX;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7D4CDF2E2EA6421C00CBBB24 /* Project object */;
+}

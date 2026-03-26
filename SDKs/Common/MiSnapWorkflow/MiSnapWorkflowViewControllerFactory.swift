@@ -7,9 +7,10 @@
 //
 
 import UIKit
-#if canImport(MiSnapUX) && canImport(MiSnap)
+#if canImport(MiSnapUX) && canImport(MiSnap) && canImport(MiSnapAssetManager)
 import MiSnapUX
 import MiSnap
+import MiSnapAssetManager
 #endif
 #if canImport(MiSnapNFCUX) && canImport(MiSnapNFC)
 import MiSnapNFCUX
@@ -92,6 +93,18 @@ class MiSnapWorkflowViewControllerFactory {
                 .applying(depositTemplate)
                 .withCustomParameters { parameters in
                     parameters.science.orientationMode = .devicePortraitGuidePortrait
+                }
+        case .barcode(let types, let name):
+            configuration = MiSnapConfiguration(for: .idBack)
+                .applying(template)
+                .withCustomParameters { parameters in
+                    parameters.science.supportedBarcodeTypes = types.map { $0.intValue }
+                    parameters.science.documentTypeName = name
+                    parameters.science.iqaRequired = false
+                    parameters.science.barcodeRequired = true
+                }
+                .withCustomGuide { guide in
+                    guide.isHidden = true
                 }
         default:
             fatalError("\(step) is not handled in MiSnapWorkflowViewControllerFactory.buildMiSnapVC(_:delegate:)")

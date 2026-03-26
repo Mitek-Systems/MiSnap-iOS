@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MiSnapBarcodeScanner/MiSnapBarcodeScannerVDSResult.h>
 
 typedef NS_ENUM(NSInteger, MiSnapBarcodeScannerType) {
     MiSnapBarcodeScannerTypePDF417              = 0,
@@ -54,6 +55,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) MiSnapBarcodeScannerType type;
 
 @property (nonatomic, readonly) NSArray * _Nullable points;
+
+@property (nonatomic, readonly) MiSnapBarcodeScannerVDSResult * _Nullable vds;
 
 @end
 

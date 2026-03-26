@@ -1,0 +1,15 @@
+{
+  "originHash" : "47abb4cba188a281eed9ae5747838e497d4f359a87f085a1c98b0cdf9daf6484",
+  "pins" : [
+    {
+      "identity" : "misnap-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Mitek-Systems/MiSnap-iOS.git",
+      "state" : {
+        "branch" : "release/5.11.0",
+        "revision" : "cdbec49272cfae58e588dfef20907f80393227aa"
+      }
+    }
+  ],
+  "version" : 3
+}

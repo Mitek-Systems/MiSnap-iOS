@@ -23,6 +23,7 @@ Please refer to [MiSnapFacialCaptureCustomizationSampleApp](../../../Examples/Ap
 * [Parameters](#parameters)
     * [Enable Smile](#enable-smile)
     * [Video Recording](#video-recording)
+    * [Camera Position](#camera-position)
     * [AI-based RTS](#ai-based-rts)
     * [Other](#other)
 
@@ -316,6 +317,19 @@ let configuration = MiSnapFacialCaptureConfiguration()
         parameters.camera.recordAudio = true 
     }
 ```
+
+## Camera Position
+
+By default, facial capture uses the front camera. To use the rear (back) camera instead:
+
+```Swift
+let configuration = MiSnapFacialCaptureConfiguration()
+    .withCustomParameters { parameters in
+        parameters.camera.position = .back
+    }
+```
+
+:warning: When [AI-based RTS](#ai-based-rts) is enabled, the SDK requires the front camera and will override `position` to front. Your `position` setting is ignored in that case.
 
 ## AI-based RTS
 Create a configuration (if it doesn't exist) and chain `.withCustomParameters`. Refer to a snippet below:

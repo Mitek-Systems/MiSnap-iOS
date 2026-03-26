@@ -6,7 +6,7 @@
 //  Copyright © 2021 miteksystems. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -48,6 +48,12 @@ NS_ASSUME_NONNULL_BEGIN
  - Note: Only used  when `recordVideo` parameter is `TRUE`
  */
 @property (nonatomic) BOOL showRecordingUI;
+/**
+ Sets the camera position (front or back).
+ 
+ Default: AVCaptureDevicePositionFront
+ */
+@property (nonatomic) AVCaptureDevicePosition position;
 /**
  RTS enabled
  

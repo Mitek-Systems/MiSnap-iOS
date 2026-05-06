@@ -56,8 +56,8 @@ final class VoiceViewController: UIViewController {
         viewModel.$shouldShowCapture
             .receive(on: DispatchQueue.main)
             .sink { [weak self] shouldShowCapture in
-                guard let self, shouldShowCapture, let flow = self.viewModel.selectedFlow else { return }
-                self.presentCapture(for: flow)
+                guard let self, shouldShowCapture, let preset = self.viewModel.selectedPreset else { return }
+                self.presentCapture(for: preset)
             }
             .store(in: &cancellables)
 
@@ -108,8 +108,8 @@ final class VoiceViewController: UIViewController {
         viewModel.resetEnrollment()
     }
 
-    private func presentCapture(for flow: MiSnapVoiceCaptureFlow) {
-        let configuration = viewModel.makeConfiguration(for: flow)
+    private func presentCapture(for preset: VoicePreset) {
+        let configuration = viewModel.makeConfiguration(for: preset)
         let controller = MiSnapVoiceCaptureViewController(with: configuration, delegate: self)
         controller.modalPresentationStyle = .fullScreen
         activeCaptureController = controller
@@ -140,32 +140,11 @@ final class VoiceViewController: UIViewController {
         }
     }
 
-    private func displayName(for flow: MiSnapVoiceCaptureFlow) -> String {
-        switch flow {
-        case .enrollment:
-            return "Enrollment"
-        case .verification:
-            return "Verification"
-        @unknown default:
-            return "Unknown"
-        }
-    }
-
-    private func symbolName(for flow: MiSnapVoiceCaptureFlow) -> String {
-        switch flow {
-        case .enrollment:
-            return "waveform.badge.plus"
-        case .verification:
-            return "waveform"
-        @unknown default:
-            return "questionmark"
-        }
-    }
 }
 
 extension VoiceViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        viewModel.availableFlows.count
+        viewModel.availablePresets.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -176,9 +155,9 @@ extension VoiceViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
 
-        let flow = viewModel.availableFlows[indexPath.item]
-        let isEnabled = viewModel.isEnabled(flow)
-        cell.configure(symbolName: symbolName(for: flow), title: displayName(for: flow), isEnabled: isEnabled)
+        let preset = viewModel.availablePresets[indexPath.item]
+        let isEnabled = viewModel.isEnabled(preset)
+        cell.configure(symbolName: preset.symbolName, title: preset.rawValue, isEnabled: isEnabled)
         cell.isUserInteractionEnabled = isEnabled
         cell.accessibilityTraits = isEnabled ? .button : [.button, .notEnabled]
         return cell
@@ -187,13 +166,13 @@ extension VoiceViewController: UICollectionViewDataSource {
 
 extension VoiceViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        let flow = viewModel.availableFlows[indexPath.item]
-        return viewModel.isEnabled(flow)
+        let preset = viewModel.availablePresets[indexPath.item]
+        return viewModel.isEnabled(preset)
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let flow = viewModel.availableFlows[indexPath.item]
-        viewModel.select(flow)
+        let preset = viewModel.availablePresets[indexPath.item]
+        viewModel.select(preset)
     }
 }
 

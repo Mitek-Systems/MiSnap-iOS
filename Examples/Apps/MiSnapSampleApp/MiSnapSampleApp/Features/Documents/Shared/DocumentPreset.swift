@@ -17,19 +17,21 @@ enum DocumentPreset: String, CaseIterable, Identifiable {
     case checkBack = "Check Back"
     case generic = "Generic"
     case customIDFront = "Custom ID Front"
+    case customDocument = "Custom Document"
     
     var id: String { rawValue }
     
     var symbolName: String {
         switch self {
-        case .anyId:     return "person.text.rectangle.fill"
-        case .passport:  return "book"
-        case .idFront:   return "person.text.rectangle"
-        case .idBack:    return "creditcard"
-        case .checkFront:return "banknote"
-        case .checkBack: return "banknote"
-        case .generic:   return "rectangle.dashed"
-        case .customIDFront:    return "circle.rectangle.filled.pattern.diagonalline"
+        case .anyId:          return "person.text.rectangle.fill"
+        case .passport:       return "book"
+        case .idFront:        return "person.text.rectangle"
+        case .idBack:         return "creditcard"
+        case .checkFront:     return "banknote"
+        case .checkBack:      return "banknote"
+        case .generic:        return "rectangle.dashed"
+        case .customIDFront:  return "circle.rectangle.filled.pattern.diagonalline"
+        case .customDocument: return "doc.badge.gearshape.fill"
         }
     }
 }
@@ -46,6 +48,7 @@ extension DocumentPreset {
         case .checkBack:        return .checkBack
         case .generic:          return .generic
         case .customIDFront:    return .idFront
+        case .customDocument:   return .anyId
         }
     }
 }

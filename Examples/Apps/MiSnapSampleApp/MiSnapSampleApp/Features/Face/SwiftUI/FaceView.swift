@@ -6,23 +6,22 @@
 //
 
 import SwiftUI
+import MiSnapFacialCapture
+import MiSnapFacialCaptureUX
 
 struct FaceView: View {
     @StateObject var viewModel: FaceViewModel
-    
     private let columns = [
         GridItem(.adaptive(minimum: 140), spacing: 16)
     ]
     
     var body: some View {
         NavigationStack {
-            ZStack(alignment: .bottom) {
-                ScrollView {
-                    VStack(spacing: 16) {
-                        aiBasedRtsToggle
-                        cameraPositionPicker
-                        captureTypesGrid
-                    }
+            ScrollView {
+                VStack(spacing: 16) {
+                    aiBasedRtsToggle
+                    cameraPositionPicker
+                    captureTypesGrid
                 }
             }
             .navigationTitle("Face")
@@ -85,17 +84,45 @@ struct FaceView: View {
     
     private func captureView(for preset: FacePreset) -> some View {
         let configuration = viewModel.makeConfiguration(for: preset)
-        
+        var onHelpAction: ((MiSnapFacialCaptureViewController) -> Void)?
+        var onTimeoutAction: ((MiSnapFacialCaptureViewController) -> Void)?
+
+        if preset == .customSelfie {
+            onHelpAction = { captureVC in
+                presentTutorial(mode: .help, captureVC: captureVC)
+            }
+            onTimeoutAction = { captureVC in
+                presentTutorial(mode: .timeout, captureVC: captureVC)
+            }
+        }
+
         return MiSnapFacialCaptureViewControllerRepresentable(
             configuration: configuration,
             onLicenseStatus: viewModel.handleLicenseStatus,
             onSuccess: viewModel.handleSuccessfulCapture,
             onCancelled: viewModel.handleCancellation,
             onException: viewModel.handleException,
-            onShouldBeDismissed: viewModel.handleDismiss
+            onShouldBeDismissed: viewModel.handleDismiss,
+            onHelpAction: onHelpAction,
+            onTimeoutAction: onTimeoutAction
         )
         .background(Color.black)
         .ignoresSafeArea()
+    }
+
+    // Wraps CustomFacialCaptureTutorialView in a UIHostingController and presents it
+    // above the active capture session using the SDK's presentVC(_:) method.
+    private func presentTutorial(mode: MiSnapFacialCaptureTutorialMode, captureVC: MiSnapFacialCaptureViewController) {
+        let tutorialView = CustomFacialCaptureTutorialView(
+            mode: mode,
+            onCancel: { captureVC.tutorialCancelButtonAction() },
+            onContinue: { captureVC.tutorialContinueButtonAction(for: mode) },
+            onRetry: mode == .timeout ? { captureVC.tutorialRetryButtonAction() } : nil
+        )
+        let hostingController = UIHostingController(rootView: tutorialView)
+        hostingController.modalPresentationStyle = .fullScreen
+        hostingController.modalTransitionStyle = .crossDissolve
+        captureVC.presentVC(hostingController)
     }
     
     private func resultView(for result: FaceCaptureResult) -> some View {

@@ -2,7 +2,7 @@
 
 :warning: This guide is only applicable if you've integrated `MiSnapUX`. Use this [starter custom view controller](../../../Examples/Snippets/MiSnap/CustomViewController.swift) when building your own UX/UI.
 
-Please refer to [MiSnapCustomizationSampleApp](../../../Examples/Apps/UIKit/MiSnap/MiSnapCustomizationSampleApp) as a working customization example.
+Please refer to [DocumentsViewModel.swift](../../../Examples/Apps/MiSnapSampleApp/MiSnapSampleApp/Features/Documents/DocumentsViewModel.swift) in `MiSnapSampleApp` as a working customization example.
 
 ## Table of Contents
 * [Overview](#overview)

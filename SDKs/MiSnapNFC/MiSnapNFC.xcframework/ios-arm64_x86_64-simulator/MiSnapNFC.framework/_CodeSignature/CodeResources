@@ -582,11 +582,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zS1XesJCHwJhLGpWu6x0npGqZwY=
+		LmrM77DuVFhv0tzqRb70KqdHdBE=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		KWavEN78wD+qjaU4kGK1mKYlLgk=
+		hhBHn0q4UeBnpl5St8CNOXH5UIg=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -602,11 +602,11 @@
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vjzrTZ+MzpB97OG6Y584lW1V8BY=
+		XWBYJLcTGwmt2LpatjLNYGSBuFg=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		KWavEN78wD+qjaU4kGK1mKYlLgk=
+		hhBHn0q4UeBnpl5St8CNOXH5UIg=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -622,7 +622,7 @@
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CtibJo1eV5ylJRZ8LIzSUsXhMDk=
+		wKF6Phhfontb292D1ps/0PGjXDY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -634,7 +634,7 @@
 		</data>
 		<key>geos</key>
 		<data>
-		SCUC1Jf1rtXaQFHRqO7LQ3Tp/2k=
+		/CdcKxXSq/mBXgFMwQDyFLlLqqk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1651,7 +1651,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vAX5i3wHY7kkZ0h14ceL46lBc9GOtWoahEV+FtjN9es=
+			bgLTYsRxyZ47WxZifaDOwzyF1000mOiUbQoVmOzoWBs=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1679,14 +1679,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PVCajy7m7M/1vHe1/cDgsNgfwL+Db/qBk3z9xeYUx4g=
+			g0LODk1KoDT7hSlom1NqYjQ/Yf6NlJcRwjdJ4ZMRDZM=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vAX5i3wHY7kkZ0h14ceL46lBc9GOtWoahEV+FtjN9es=
+			bgLTYsRxyZ47WxZifaDOwzyF1000mOiUbQoVmOzoWBs=
 			</data>
 		</dict>
 		<key>Modules/MiSnapNFC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1714,7 +1714,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			khD+/EKh/Fl5lU2E6uYpghUCR2PtBiRsNzA0R980Sk0=
+			PTbVbx2IDdmpl5tZ4cVIgj+Qxpxyvl07Tet0acNhI2E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1735,7 +1735,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pqxq6jwqx2VpuUHCrWmZg6wU+2c6yfUovWDn33Pb/3A=
+			eGfmeBAcw73BrpySpl4FAz34Af9jY71sZd6S/gNjJYI=
 			</data>
 		</dict>
 	</dict>

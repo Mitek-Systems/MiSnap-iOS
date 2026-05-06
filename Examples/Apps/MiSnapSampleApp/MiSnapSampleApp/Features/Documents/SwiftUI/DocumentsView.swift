@@ -53,7 +53,6 @@ struct DocumentsView: View {
     
     private func captureView(for preset: DocumentPreset) -> some View {
         let configuration = viewModel.makeConfiguration(for: preset)
-        
         return MiSnapViewControllerRepresentable(
             configuration: configuration,
             onLicenseStatus: viewModel.handleLicenseStatus,
@@ -66,7 +65,7 @@ struct DocumentsView: View {
         .background(Color.black)
         .ignoresSafeArea()
     }
-    
+
     private func resultView(for result: DocumentCaptureResult) -> some View {
         let text = result.mibiString ?? "Failed to extract MIBI data."
         return ResultView(response: text, image: result.image)

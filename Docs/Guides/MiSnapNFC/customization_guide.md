@@ -2,7 +2,7 @@
 
 :warning: This guide is only applicable if you've integrated `MiSnapNFCUX`. Use this [starter custom view controller](../../../Examples/Snippets/MiSnapNFC/CustomNFCViewController.swift) when building your own UX/UI.
 
-Please refer to [MiSnapNFCCustomizationSampleApp](../../../Examples/Apps/UIKit/MiSnapNFC/MiSnapNFCCustomizationSampleApp) as a working customization example.
+Please refer to [NFCViewModel.swift](../../../Examples/Apps/MiSnapSampleApp/MiSnapSampleApp/Features/NFC/NFCViewModel.swift) in `MiSnapSampleApp` as a working customization example.
 
 ## Table of Contents
 * [Overview](#overview)

@@ -11,16 +11,17 @@ import os
 import MiSnapCore
 import MiSnapVoiceCapture
 import MiSnapVoiceCaptureUX
+import MiSnapAssetManager
 
 @MainActor
 class VoiceViewModel: ObservableObject {
-    @Published var selectedFlow: MiSnapVoiceCaptureFlow?
+    @Published var selectedPreset: VoicePreset?
     @Published var captureResult: VoiceCaptureResult?
     @Published var alert: AlertConfig?
     @Published var shouldShowCapture = false
     @Published private(set) var hasEnrolledPhrase = false
-    
-    let availableFlows: [MiSnapVoiceCaptureFlow] = [.enrollment, .verification]
+
+    let availablePresets = VoicePreset.allCases
     private var selectedPhrase: String?
     private var pendingResult: VoiceCaptureResult?
     
@@ -39,27 +40,25 @@ class VoiceViewModel: ObservableObject {
     }
     
     var currentConfiguration: MiSnapVoiceCaptureConfiguration? {
-        guard let selectedFlow else { return nil }
-        return makeConfiguration(for: selectedFlow)
+        guard let selectedPreset else { return nil }
+        return makeConfiguration(for: selectedPreset)
     }
-    
+
     // MARK: - Preset Availability
-    func isEnabled(_ flow: MiSnapVoiceCaptureFlow) -> Bool {
-        switch flow {
+    func isEnabled(_ preset: VoicePreset) -> Bool {
+        switch preset {
         case .verification:
-            // Verification requires a saved phrase from enrollment
+            // Verification requires a saved phrase from a prior enrollment
             return hasEnrolledPhrase
-        case .enrollment:
+        case .enrollment, .customEnrollment:
             return true
-        @unknown default:
-            return false
         }
     }
-    
+
     // MARK: - Integration Flow Entry Point
-    func select(_ flow: MiSnapVoiceCaptureFlow) {
-        selectedFlow = flow
-        AppLogger.info("Selected voice flow: \(flow.displayName)")
+    func select(_ preset: VoicePreset) {
+        selectedPreset = preset
+        AppLogger.info("Selected voice preset: \(preset.rawValue)")
         
         // Start the validation and presentation flow
         Task {
@@ -90,7 +89,7 @@ class VoiceViewModel: ObservableObject {
         guard licenseStatus == .valid else {
             AppLogger.error("🔑 License is not valid: \(licenseStatus.stringValue)")
             showLicenseAlert(message: "MiSnap license status: \(licenseStatus.stringValue)")
-            selectedFlow = nil
+            selectedPreset = nil
             return false
         }
         
@@ -105,7 +104,7 @@ class VoiceViewModel: ObservableObject {
                     if !granted {
                         AppLogger.warning("❌ Microphone permission denied")
                         self.showPermissionDeniedAlert()
-                        self.selectedFlow = nil
+                        self.selectedPreset = nil
                     }
                     continuation.resume(returning: granted)
                 }
@@ -120,7 +119,7 @@ class VoiceViewModel: ObservableObject {
         guard MiSnapVoiceCaptureViewController.hasMinDiskSpace(minDiskSpace) else {
             AppLogger.warning("⚠️ Not enough disk space available")
             showDiskSpaceAlert(minDiskSpace: minDiskSpace)
-            selectedFlow = nil
+            selectedPreset = nil
             return false
         }
         
@@ -128,33 +127,95 @@ class VoiceViewModel: ObservableObject {
     }
     
     // MARK: - Build MiSnapVoiceCaptureConfiguration
-    func makeConfiguration(for flow: MiSnapVoiceCaptureFlow) -> MiSnapVoiceCaptureConfiguration {
-        let configuration: MiSnapVoiceCaptureConfiguration
-        
-        switch flow {
+    func makeConfiguration(for preset: VoicePreset) -> MiSnapVoiceCaptureConfiguration {
+        switch preset {
         case .enrollment:
-            // Create enrollment configuration
-            configuration = MiSnapVoiceCaptureConfiguration(for: .enrollment)
-            
+            return MiSnapVoiceCaptureConfiguration(for: .enrollment)
+                .withCustomUxParameters { parameters in
+                    // IMPORTANT: When autoDismiss is false, you must implement the optional
+                    // miSnapVoiceCaptureShouldBeDismissed() delegate callback to properly dismiss
+                    // the SDK after it completes its internal cleanup.
+                    // See handleDismiss() and MiSnapVoiceCaptureViewControllerRepresentable.onShouldBeDismissed
+                    parameters.autoDismiss = false
+                }
+
         case .verification:
-            // Create verification configuration with previously enrolled phrase
-            // The phrase must match the one used during enrollment
+            // The phrase must match exactly the one selected during enrollment.
             let phrase = UserDefaults.standard.object(forKey: "phrase") as? String ?? ""
-            configuration = MiSnapVoiceCaptureConfiguration(for: .verification, phrase: phrase)
-        @unknown default:
-            fatalError("Unsupported voice capture flow type: \(flow)")
+            return MiSnapVoiceCaptureConfiguration(for: .verification, phrase: phrase)
+                .withCustomUxParameters { parameters in
+                    parameters.autoDismiss = false
+                }
+
+        case .customEnrollment:
+            // Template + .applying() pattern — same approach as customDocument.
+            // All UX/UI customization lives in the template so it can be reused across
+            // enrollment and verification without duplicating code.
+            // SDK parameters (snrMin) go on the per-flow configuration, not the template.
+            let accent = UIColor(red: 0.20, green: 0.60, blue: 0.40, alpha: 1)
+
+            let template = MiSnapVoiceCaptureConfiguration()
+                .withCustomUxParameters { parameters in
+                    parameters.autoDismiss = false
+                }
+                // Provide a custom phrase list instead of the SDK's built-in defaults.
+                // The SDK reads misnap_voice_capture_ux_phrase_1...N from the specified
+                // .strings file, stopping at the first missing or empty value.
+                .withCustomLocalization { localization in
+                    localization.stringsName = "MiSnapVoiceCaptureCustomLocalizable"
+                }
+                // Phrase selection screen — the user picks their passphrase before recording
+                .withCustomPhraseSelection { phraseSelection in
+                    phraseSelection.message.color = accent
+                    phraseSelection.phrase.font = .systemFont(ofSize: 21, weight: .bold)
+                    phraseSelection.buttons.primary.backgroundColor = accent
+                    phraseSelection.buttons.primary.backgroundColorDarkMode = accent
+                    phraseSelection.buttons.secondary.color = accent
+                    phraseSelection.buttons.secondary.colorDarkMode = accent
+                    phraseSelection.buttons.secondary.borderColor = accent
+                    phraseSelection.buttons.secondary.borderColorDarkMode = accent
+                }
+                // Introductory instruction screen shown before recording begins
+                .withCustomIntroductoryInstruction { introductoryInstruction in
+                    introductoryInstruction.message.font = .systemFont(ofSize: 22, weight: .thin)
+                    introductoryInstruction.buttons.primary.backgroundColor = accent
+                    introductoryInstruction.buttons.primary.backgroundColorDarkMode = accent
+                    introductoryInstruction.buttons.secondary.color = accent
+                    introductoryInstruction.buttons.secondary.colorDarkMode = accent
+                    introductoryInstruction.buttons.secondary.borderColor = accent
+                    introductoryInstruction.buttons.secondary.borderColorDarkMode = accent
+                }
+                // Recording screen — covers success, neutral, and failure states
+                .withCustomRecording { recording in
+                    recording.success.color = .white
+                    recording.success.backgroundColor = accent
+                    recording.neutral.color = accent
+                    recording.neutral.backgroundColor = accent.withAlphaComponent(0.12)
+                    recording.failure.color = .white
+                    recording.failure.backgroundColor = .systemRed
+                    
+                    recording.buttons.primary.backgroundColor = accent
+                    recording.buttons.primary.backgroundColorDarkMode = accent
+                    recording.buttons.secondary.color = accent
+                    recording.buttons.secondary.colorDarkMode = accent
+                    recording.buttons.secondary.borderColor = accent
+                    recording.buttons.secondary.borderColorDarkMode = accent
+                    
+                    recording.message.color = accent
+                    recording.phrase.backgroundColor = accent.withAlphaComponent(0.10)
+                    recording.failureMessage.font = .systemFont(ofSize: 22, weight: .bold)
+                    
+                }
+
+            return MiSnapVoiceCaptureConfiguration(for: .enrollment)
+                .withCustomParameters { parameters in
+                    // Minimum signal-to-noise ratio for an accepted recording.
+                    // Higher values = stricter quality requirement.
+                    // Default is ~5.0; 7.1 matches the legacy customization example.
+                    parameters.snrMin = 7.1
+                }
+                .applying(template)
         }
-        
-        // Apply common UX parameters
-        return configuration
-            .withCustomUxParameters { parameters in
-                // Disable auto-dismiss to manually control dismissal timing
-                // IMPORTANT: When autoDismiss is false, you must implement the optional
-                // miSnapVoiceCaptureShouldBeDismissed() delegate callback to properly dismiss
-                // the SDK after it completes its internal cleanup.
-                // See handleDismiss() and MiSnapVoiceCaptureViewControllerRepresentable.onShouldBeDismissed
-                parameters.autoDismiss = false
-            }
     }
     
     // MARK: - Handle Delegate Callbacks
@@ -198,7 +259,7 @@ class VoiceViewModel: ObservableObject {
         // SDK signals it's safe to dismiss after completing internal cleanup
         // Now we can safely remove the capture view from SwiftUI hierarchy
         shouldShowCapture = false
-        selectedFlow = nil
+        selectedPreset = nil
         
         // Publish the result to trigger the result screen (if capture was successful)
         if let result = pendingResult {
@@ -210,7 +271,6 @@ class VoiceViewModel: ObservableObject {
                 if let selectedPhrase = selectedPhrase {
                     // Save the enrolled phrase for future verification
                     UserDefaults.standard.set(selectedPhrase, forKey: "phrase")
-                    UserDefaults.standard.synchronize()
                     AppLogger.info("Phrase saved to UserDefaults: \(selectedPhrase)")
                     updateEnrollmentStatus()
                 }
@@ -232,7 +292,6 @@ class VoiceViewModel: ObservableObject {
     
     func resetEnrollment() {
         UserDefaults.standard.removeObject(forKey: "phrase")
-        UserDefaults.standard.synchronize()
         AppLogger.info("Voice enrollment reset - phrase removed from UserDefaults")
         updateEnrollmentStatus()
     }

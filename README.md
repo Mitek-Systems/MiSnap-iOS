@@ -42,9 +42,9 @@ See [here](https://github.com/Mitek-Systems/MiSnap-iOS/releases).
 
 `*` when AI based RTS feature is enabled min iOS version is 13.0
 
-Min OS/device combination offers coverage level of 99.89%.
+Min OS/device combination offers coverage level of 99.9996% as of Q2 2026.
 
-__Note__, `On-Device Classification (ODC)` `beta` feature is only available on devices running iOS 13.0 or newer and powered by A11 or newer chip (iPhone 8 or newer, iPad Mini 5th generation or newer) which offers coverage level of 95.92% as of Q2 2023. `Any ID` document type heavily relies on this feature therefore its support has the same constraints.
+__Note__, `On-Device Classification (ODC)` `beta` feature is only available on devices running iOS 13.0 or newer and powered by A11 or newer chip (iPhone 8 or newer, iPad Mini 5th generation or newer) which offers coverage level of 99.4% as of Q2 2026. `Any ID` document type heavily relies on this feature therefore its support has the same constraints.
 
 __Note__, for `MiSnapNFC` functionality, supported devices are all iPhone 7 and newer that support iOS 13.0 and above.
 
@@ -143,16 +143,32 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 | Device                           | Version      |
 | :-----                           | :-----:      |
 | iPhone 17 Air                    | 26.0         |
-| iPhone 16 Plus                   | 18.1         |
+| iPhone 17                        | 26.0         |
+| iPhone 17e                       | 26.4         |
+| iPhone 16 Pro                    | 26.1         |
+| iPhone 16 Plus                   | 18.7.7       |
+| iPhone 16                        | 18.2.1       |
 | iPhone 16e                       | 18.3         |
-| iPhone 15 Pro                    | 26.0         |
+| iPhone 15 Pro                    | 26.3.1       |
+| iPhone 15 Plus                   | 17.5.1       |
 | iPhone 14 Pro Max                | 17.0.3       |
-| iPhone 13                        | 17.3         |
-| iPhone 12 mini                   | 14.2         |
-| iPhone SE (2nd gen)              | 14.0         |
+| iPhone 14 Plus                   | 16.5.1       |
+| iPhone 13                        | 26.3.1       |
+| iPhone 13 mini                   | 16.4.1       |
+| iPhone 12 Pro Max                | 16.4         |
+| iPhone 12 mini                   | 26.2         |
+| iPhone 11 Pro                    | 16.0         |
 | iPhone 11                        | 18.4         |
+| iPhone XR                        | 16.3.1       |
 | iPhone 8                         | 16.4.1       |
+| iPhone 7                         | 15.7.3       |
+| iPhone 5s                        | 12.5.7       |
+| iPhone SE (3rd gen)              | 17.7.1       |
+| iPhone SE (2nd gen)              | 18.6.1       |
+| iPhone SE (1st gen)              | 15.8.5       |
 | iPad Air (4th gen)               | 26.0         |
+| iPad Air (11th gen)              | 18.5         |
+| iPad Pro (2nd gen)               | 26.1         |
 
 </center>
 

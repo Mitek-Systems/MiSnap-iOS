@@ -227,4 +227,19 @@ extension FaceViewController: MiSnapFacialCaptureViewControllerDelegate {
         activeCaptureController?.dismiss(animated: true)
         activeCaptureController = nil
     }
+
+    // Optional callbacks — only called when showHelpScreen / showTimeoutScreen are false in
+    // MiSnapFacialCaptureUxParameters. This is the case for the customSelfie preset, which
+    // disables the SDK's built-in screens so we can present our own tutorial UI instead.
+    func miSnapFacialCaptureHelpAction() {
+        guard let captureVC = activeCaptureController else { return }
+        let tutorialVC = CustomFacialCaptureTutorialViewController(for: .help, delegate: captureVC)
+        captureVC.presentVC(tutorialVC)
+    }
+
+    func miSnapFacialCaptureTimeoutAction() {
+        guard let captureVC = activeCaptureController else { return }
+        let tutorialVC = CustomFacialCaptureTutorialViewController(for: .timeout, delegate: captureVC)
+        captureVC.presentVC(tutorialVC)
+    }
 }

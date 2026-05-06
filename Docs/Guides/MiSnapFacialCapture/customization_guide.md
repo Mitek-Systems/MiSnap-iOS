@@ -2,7 +2,7 @@
 
 :warning: This guide is only applicable if you've integrated `MiSnapFacialCaptureUX`. Use this [starter custom view controller](../../../Examples/Snippets/MiSnapFacialCapture/CustomFacialCaptureViewController.swift) when building your own UX/UI.
 
-Please refer to [MiSnapFacialCaptureCustomizationSampleApp](../../../Examples/Apps/UIKit/MiSnapFacialCapture/MiSnapFacialCaptureCustomizationSampleApp) as a working customization example.
+Please refer to [FaceViewModel.swift](../../../Examples/Apps/MiSnapSampleApp/MiSnapSampleApp/Features/Face/FaceViewModel.swift) in `MiSnapSampleApp` as a working customization example.
 
 ## Table of Contents
 * [Overview](#overview)

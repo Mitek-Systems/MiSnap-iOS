@@ -110,50 +110,109 @@ class DocumentsViewModel: ObservableObject {
                 parameters.science.orientationMode = .devicePortraitGuidePortrait
             }
         case .customIDFront:
+            let symbolConfig = UIImage.SymbolConfiguration(pointSize: 24, weight: .regular, scale: .default)
             return configuration
-                // Use custom tutorials
-                // See `CustomTutorialViewController` for implementation
                 .withCustomUxParameters { uxParameters in
+                    // Disable SDK's built-in tutorial screens and drive all four modes
+                    // through the miSnapCustomTutorial(_:tutorialMode:mode:statuses:image:) delegate callback.
                     uxParameters.useCustomTutorials = true
                 }
-                // Customize cancel button
-                .withCustomCancel { element in
-                    let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .regular, scale: .default)
-                    element.image = UIImage(systemName: "xmark.app.fill", withConfiguration: config)
-                    element.imageTintColor = .red
-                    element.size = CGSize(width: 48, height: 48)
+                .withCustomCancel { cancel in
+                    cancel.image = UIImage(systemName: "xmark.app.fill", withConfiguration: symbolConfig)
+                    cancel.imageTintColor = .systemRed
+                    cancel.size = CGSize(width: 48, height: 48)
                 }
-                // Customize help button
-                .withCustomHelp { element in
-                    let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .regular, scale: .default)
-                    element.image = UIImage(systemName: "questionmark.app.fill", withConfiguration: config)
-                    element.imageTintColor = .green
-                    element.size = CGSize(width: 48, height: 48)
+                .withCustomHelp { help in
+                    help.image = UIImage(systemName: "questionmark.app.fill", withConfiguration: symbolConfig)
+                    help.imageTintColor = .systemGreen
+                    help.size = CGSize(width: 48, height: 48)
                 }
-                // Customize camera shutter button (manual mode)
-                .withCustomCameraShutter { element in
-                    let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .regular, scale: .default)
-                    element.image = UIImage(systemName: "camera.circle.fill", withConfiguration: config)
-                    element.size = CGSize(width: 48, height: 48)
+                .withCustomTorch { torch in
+                    torch.colorEnabled = .systemBlue
+                    torch.colorDisabled = .systemGray
                 }
-                // Customize guide (vignette and outline)
-                .withCustomGuide { element in
-                    // Vignette (darkened area around the guide)
-                    element.vignette.style = .semitransparent
-                    element.vignette.color = .black
-                    element.vignette.alpha = 0.8
-                    
-                    // Outline (border around the document area)
-                    element.outline.alpha = 0.7
-                    element.outline.mainBorderWidth = 5
-                    element.outline.mainBorderColor = .blue
+                .withCustomCameraShutter { cameraShutter in
+                    cameraShutter.image = UIImage(systemName: "camera.circle.fill", withConfiguration: symbolConfig)
+                    cameraShutter.size = CGSize(width: 48, height: 48)
                 }
-                // Customize hint text
+                .withCustomGuide { guide in
+                    guide.vignette.style = .semitransparent
+                    guide.vignette.color = .black
+                    guide.vignette.alpha = 0.8
+                    guide.outline.mainBorderWidth = 5
+                    guide.outline.mainBorderColor = .systemBlue
+                }
+                .withCustomGlare { glare in
+                    glare.borderColor = .systemOrange
+                    glare.backgroundColor = UIColor.systemOrange.withAlphaComponent(0.35)
+                }
                 .withCustomHint { hint in
                     hint.backgroundColor = .black
                     hint.textColor = .white
                     hint.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
                 }
+                .withCustomRecordingIndicator { recordingIndicator in
+                    recordingIndicator.alpha = 0.85
+                }
+                .withCustomSuccess { success in
+                    success.checkmark.color = .systemGreen
+                    success.checkmark.cutoutFillColor = UIColor.systemGreen.withAlphaComponent(0.4)
+                }
+
+        case .customDocument:
+            let accent = UIColor(red: 0.35, green: 0.30, blue: 0.85, alpha: 1)
+
+            let template = MiSnapConfiguration()
+                .withCustomUxParameters { uxParameters in
+                    // IMPORTANT: When autoDismiss is false, implement miSnapShouldBeDismissed()
+                    // and dismiss from SwiftUI. See handleDismiss() and MiSnapViewControllerRepresentable.
+                    uxParameters.autoDismiss = false
+                }
+                // Style the SDK's built-in instruction / help / timeout / review screens
+                .withCustomTutorial { tutorial in
+                    tutorial.backgroundColor = .secondarySystemBackground
+                }
+                .withCustomGuide { guide in
+                    guide.vignette.style = .blur
+                    guide.vignette.alpha = 0.9
+                    guide.outline.mainBorderColor = accent
+                }
+                .withCustomGlare { glare in
+                    glare.borderColor = accent
+                    glare.backgroundColor = accent.withAlphaComponent(0.3)
+                }
+                .withCustomDocumentLabel { label in
+                    label.font = .systemFont(ofSize: 17, weight: .medium)
+                }
+                .withCustomCancel { cancel in
+                    cancel.color = accent
+                }
+                .withCustomHelp { help in
+                    help.color = accent
+                }
+                .withCustomTorch { torch in
+                    torch.colorEnabled = accent
+                    torch.colorDisabled = UIColor(white: 0.5, alpha: 1)
+                }
+                .withCustomCameraShutter { cameraShutter in
+                    cameraShutter.color = accent
+                    cameraShutter.size = cameraShutter.size.scaled(by: 0.9)
+                }
+                .withCustomHint { hint in
+                    hint.backgroundColor = accent.withAlphaComponent(0.9)
+                    hint.textColor = .white
+                }
+                .withCustomRecordingIndicator { recordingIndicator in
+                    recordingIndicator.alpha = 0.85
+                }
+                .withCustomSuccess { success in
+                    success.checkmark.color = accent
+                    success.checkmark.cutoutFillColor = accent.withAlphaComponent(0.4)
+                }
+            
+            return configuration
+                .applying(template)
+
         default:
             return configuration
         }
@@ -181,12 +240,13 @@ class DocumentsViewModel: ObservableObject {
     }
     
     func handleCustomTutorial(for preset: DocumentPreset) -> CustomTutorialHandler? {
-        // Return custom tutorial handler for `.customIDFront` preset or nil otherwise
-        guard preset == .customIDFront else { return nil }
-        return presentCustomTutorial
+        switch preset {
+        case .customIDFront:   return presentCustomTutorial
+        case .customDocument:  return presentSelectiveTutorial
+        default:               return nil
+        }
     }
-    
-    // swiftlint:disable:next function_parameter_count
+    // swiftlint:disable function_parameter_count
     private func presentCustomTutorial(
         _ documentType: MiSnapScienceDocumentType,
         _ tutorialMode: MiSnapUxTutorialMode,
@@ -196,9 +256,7 @@ class DocumentsViewModel: ObservableObject {
         _ viewController: MiSnapViewController?
     ) {
         guard let miSnapVC = viewController else { return }
-        
-        // Create custom tutorial view controller with current capture context
-        let customTutorialVC = CustomTutorialViewController(
+        let tutorialVC = CustomTutorialViewController(
             for: documentType,
             tutorialMode: tutorialMode,
             mode: mode,
@@ -206,10 +264,36 @@ class DocumentsViewModel: ObservableObject {
             image: image,
             delegate: miSnapVC
         )
-        
-        // Present the custom tutorial over MiSnap capture screen
-        miSnapVC.present(customTutorialVC, animated: false)
+        miSnapVC.present(tutorialVC, animated: false)
     }
+
+    private func presentSelectiveTutorial(
+        _ documentType: MiSnapScienceDocumentType,
+        _ tutorialMode: MiSnapUxTutorialMode,
+        _ mode: MiSnapMode,
+        _ statuses: [NSNumber]?,
+        _ image: UIImage?,
+        _ viewController: MiSnapViewController?
+    ) {
+        guard tutorialMode == .timeout, let miSnapVC = viewController else {
+            // Instruction, help, and review — do nothing here.
+            // The SDK will present its default built-in screen for these modes.
+            return
+        }
+        // Suppress the SDK's default timeout screen before presenting our own.
+        // Without this call, both screens would appear.
+        miSnapVC.skipDefaultTutorial()
+        let tutorialVC = CustomTutorialViewController(
+            for: documentType,
+            tutorialMode: tutorialMode,
+            mode: mode,
+            statuses: statuses,
+            image: image,
+            delegate: miSnapVC
+        )
+        miSnapVC.present(tutorialVC, animated: true)
+    }
+    // swiftlint:enable function_parameter_count
     
     // MARK: - Dismiss Capture Controller
     func handleDismiss() {

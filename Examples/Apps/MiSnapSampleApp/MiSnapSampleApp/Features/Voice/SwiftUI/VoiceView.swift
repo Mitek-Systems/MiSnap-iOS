@@ -16,10 +16,8 @@ struct VoiceView: View {
     
     var body: some View {
         NavigationStack {
-            ZStack(alignment: .bottom) {
-                ScrollView {
-                    captureTypesGrid
-                }
+            ScrollView {
+                captureTypesGrid
             }
             .navigationTitle("Voice")
             .toolbar {
@@ -61,12 +59,12 @@ struct VoiceView: View {
     
     private var captureTypesGrid: some View {
         LazyVGrid(columns: columns, spacing: 16) {
-            ForEach(viewModel.availableFlows, id: \.self) { flow in
+            ForEach(viewModel.availablePresets) { preset in
                 CapturePresetCard(
-                    symbolName: flow.symbolName,
-                    title: flow.displayName,
-                    isEnabled: viewModel.isEnabled(flow),
-                    action: { viewModel.select(flow) }
+                    symbolName: preset.symbolName,
+                    title: preset.rawValue,
+                    isEnabled: viewModel.isEnabled(preset),
+                    action: { viewModel.select(preset) }
                 )
             }
         }
@@ -89,11 +87,6 @@ struct VoiceView: View {
     }
 }
 
-// MARK: - Previews
-
-struct VoiceView_Previews: PreviewProvider {
-    static var previews: some View {
-        VoiceView(viewModel: VoiceViewModel())
-            .previewDisplayName("Voice")
-    }
+#Preview("Voice") {
+    VoiceView(viewModel: VoiceViewModel())
 }

@@ -17,7 +17,6 @@
 		7D22B40E2F4DBCA9002F0BC7 /* FaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519752EB8CF43002C05C2 /* FaceViewModel.swift */; };
 		7D22B40F2F4DBCDB002F0BC7 /* NFCResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75197A2EB8CF43002C05C2 /* NFCResult.swift */; };
 		7D22B4102F4DBCDB002F0BC7 /* FaceCaptureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519722EB8CF43002C05C2 /* FaceCaptureResult.swift */; };
-		7D22B4112F4DBCDB002F0BC7 /* MiSnapVoiceCaptureFlow+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519802EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift */; };
 		7D22B4122F4DBCDB002F0BC7 /* WorkflowResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75198A2EB8CF43002C05C2 /* WorkflowResult.swift */; };
 		7D22B4132F4DBCDB002F0BC7 /* MiSnapNFCDocumentType+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519792EB8CF43002C05C2 /* MiSnapNFCDocumentType+Ext.swift */; };
 		7D22B4142F4DBCDB002F0BC7 /* DocumentPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75196D2EB8CF43002C05C2 /* DocumentPreset.swift */; };
@@ -48,6 +47,9 @@
 		7D22B4322F4E2C05002F0BC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D7519912EB8CF43002C05C2 /* LaunchScreen.storyboard */; };
 		7D5095432EC496DC00BE7A38 /* CustomTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5095422EC496DC00BE7A38 /* CustomTutorialViewController.swift */; };
 		7D5097A72EC4EFAA00BE7A38 /* CustomTutorialHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5097A62EC4EFAA00BE7A38 /* CustomTutorialHandler.swift */; };
+		7D5645342F87EC9B005CCF9A /* CustomTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5645332F87EC9B005CCF9A /* CustomTutorialViewController.swift */; };
+		7D58B9612F7E928D008265E9 /* CustomFacialCaptureTutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58B9602F7E928D008265E9 /* CustomFacialCaptureTutorialView.swift */; };
+		7D58B9632F7E929A008265E9 /* CustomFacialCaptureTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58B9622F7E929A008265E9 /* CustomFacialCaptureTutorialViewController.swift */; };
 		7D6049112F51EEC700FDE41E /* MiSnap in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049102F51EEC700FDE41E /* MiSnap */; };
 		7D6049132F51EEC700FDE41E /* MiSnapCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049122F51EEC700FDE41E /* MiSnapCore */; };
 		7D6049152F51EEC700FDE41E /* MiSnapFacialCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6049142F51EEC700FDE41E /* MiSnapFacialCapture */; };
@@ -112,7 +114,6 @@
 		7D7519C02EB8CF43002C05C2 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519612EB8CF43002C05C2 /* AudioPlayerView.swift */; };
 		7D7519C12EB8CF43002C05C2 /* MiSnapViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519702EB8CF43002C05C2 /* MiSnapViewControllerRepresentable.swift */; };
 		7D7519C22EB8CF43002C05C2 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519682EB8CF43002C05C2 /* AppLogger.swift */; };
-		7D7519C32EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519802EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift */; };
 		7D7519C42EB8CF43002C05C2 /* MiSnapVoiceCaptureViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75197E2EB8CF43002C05C2 /* MiSnapVoiceCaptureViewControllerRepresentable.swift */; };
 		7D7519C52EB8CF43002C05C2 /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75196E2EB8CF43002C05C2 /* DocumentsView.swift */; };
 		7D7519C62EB8CF43002C05C2 /* NFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D75197B2EB8CF43002C05C2 /* NFCView.swift */; };
@@ -122,6 +123,10 @@
 		7D751A032EB91D4B002C05C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D751A022EB91D4B002C05C2 /* AppDelegate.swift */; };
 		7D751A082EBA1FA1002C05C2 /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D751A072EBA1FA1002C05C2 /* OrientationManager.swift */; };
 		7DCAB2D72EB25C13008AE24B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7DCAB2D62EB25C13008AE24B /* README.md */; };
+		7DCD40212F8D2ADD0037FF8E /* VoicePreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCD40202F8D2ADD0037FF8E /* VoicePreset.swift */; };
+		7DCD40222F8D2ADD0037FF8E /* VoicePreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCD40202F8D2ADD0037FF8E /* VoicePreset.swift */; };
+		7DCD40292F8D36B50037FF8E /* MiSnapVoiceCaptureCustomLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DCD40272F8D36B50037FF8E /* MiSnapVoiceCaptureCustomLocalizable.strings */; };
+		7DCD402A2F8D36B50037FF8E /* MiSnapVoiceCaptureCustomLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DCD40272F8D36B50037FF8E /* MiSnapVoiceCaptureCustomLocalizable.strings */; };
 		8A1100112F600000A0A00011 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100012F600000A0A00001 /* RootTabBarController.swift */; };
 		8A1100122F600000A0A00012 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100022F600000A0A00002 /* UIViewController+Alert.swift */; };
 		8A1100132F600000A0A00013 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1100032F600000A0A00003 /* ResultViewController.swift */; };
@@ -170,6 +175,9 @@
 		7D4CDF362EA6421C00CBBB24 /* MiSnapSampleAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiSnapSampleAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D5095422EC496DC00BE7A38 /* CustomTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTutorialViewController.swift; path = ../../../../../../../Snippets/MiSnap/CustomTutorialViewController.swift; sourceTree = "<group>"; };
 		7D5097A62EC4EFAA00BE7A38 /* CustomTutorialHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTutorialHandler.swift; sourceTree = "<group>"; };
+		7D5645332F87EC9B005CCF9A /* CustomTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTutorialViewController.swift; sourceTree = "<group>"; };
+		7D58B9602F7E928D008265E9 /* CustomFacialCaptureTutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFacialCaptureTutorialView.swift; sourceTree = "<group>"; };
+		7D58B9622F7E929A008265E9 /* CustomFacialCaptureTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFacialCaptureTutorialViewController.swift; sourceTree = "<group>"; };
 		7D7519442EB8CF43002C05C2 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		7D7519452EB8CF43002C05C2 /* LicenseKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseKey.swift; sourceTree = "<group>"; };
 		7D7519462EB8CF43002C05C2 /* MiSnapSampleSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapSampleSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -213,7 +221,6 @@
 		7D75197C2EB8CF43002C05C2 /* NFCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCViewModel.swift; sourceTree = "<group>"; };
 		7D75197E2EB8CF43002C05C2 /* MiSnapVoiceCaptureViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapVoiceCaptureViewControllerRepresentable.swift; sourceTree = "<group>"; };
 		7D75197F2EB8CF43002C05C2 /* VoiceCaptureResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCaptureResult.swift; sourceTree = "<group>"; };
-		7D7519802EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MiSnapVoiceCaptureFlow+Ext.swift"; sourceTree = "<group>"; };
 		7D7519812EB8CF43002C05C2 /* VoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceView.swift; sourceTree = "<group>"; };
 		7D7519822EB8CF43002C05C2 /* VoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceViewModel.swift; sourceTree = "<group>"; };
 		7D7519882EB8CF43002C05C2 /* MiSnapWorkflowViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiSnapWorkflowViewControllerRepresentable.swift; sourceTree = "<group>"; };
@@ -231,6 +238,8 @@
 		7D751A022EB91D4B002C05C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D751A072EBA1FA1002C05C2 /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
 		7DCAB2D62EB25C13008AE24B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7DCD40202F8D2ADD0037FF8E /* VoicePreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicePreset.swift; sourceTree = "<group>"; };
+		7DCD40282F8D36B50037FF8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MiSnapVoiceCaptureCustomLocalizable.strings; sourceTree = "<group>"; };
 		8A1100012F600000A0A00001 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		8A1100022F600000A0A00002 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		8A1100032F600000A0A00003 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -351,6 +360,7 @@
 		7D75195D2EB8CF43002C05C2 /* MiSnapVoiceCapture */ = {
 			isa = PBXGroup;
 			children = (
+				7DCD40272F8D36B50037FF8E /* MiSnapVoiceCaptureCustomLocalizable.strings */,
 				7D75195C2EB8CF43002C05C2 /* MiSnapVoiceCaptureLocalizable.strings */,
 			);
 			path = MiSnapVoiceCapture;
@@ -540,6 +550,7 @@
 			isa = PBXGroup;
 			children = (
 				7D7519742EB8CF43002C05C2 /* FaceView.swift */,
+				7D58B9602F7E928D008265E9 /* CustomFacialCaptureTutorialView.swift */,
 				7D7519762EB8CF43002C05C2 /* MiSnapFacialCaptureViewControllerRepresentable.swift */,
 			);
 			path = SwiftUI;
@@ -586,8 +597,8 @@
 		8A12000A2F700000A0A0000A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				7D7519802EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift */,
 				7D75197F2EB8CF43002C05C2 /* VoiceCaptureResult.swift */,
+				7DCD40202F8D2ADD0037FF8E /* VoicePreset.swift */,
 				AA1200042F700000C0C00004 /* Assets */,
 			);
 			path = Shared;
@@ -641,6 +652,7 @@
 			isa = PBXGroup;
 			children = (
 				8A1100042F600000A0A00004 /* DocumentsViewController.swift */,
+				7D5645332F87EC9B005CCF9A /* CustomTutorialViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -649,6 +661,7 @@
 			isa = PBXGroup;
 			children = (
 				8A1100072F600000A0A00007 /* FaceViewController.swift */,
+				7D58B9622F7E929A008265E9 /* CustomFacialCaptureTutorialViewController.swift */,
 				BB1100012F700000B0B00001 /* FaceControlsHeaderView.swift */,
 			);
 			path = UIKit;
@@ -826,6 +839,7 @@
 			files = (
 				7D22B3C02F4CA8A7002F0BC7 /* Assets.xcassets in Resources */,
 				7D22B42A2F4DCC46002F0BC7 /* MiSnapVoiceCaptureLocalizable.strings in Resources */,
+				7DCD40292F8D36B50037FF8E /* MiSnapVoiceCaptureCustomLocalizable.strings in Resources */,
 				7D22B42B2F4DCC46002F0BC7 /* MiSnapNFCLocalizable.strings in Resources */,
 				7D22B4252F4DCC34002F0BC7 /* MiSnapFacialCaptureLocalizable.strings in Resources */,
 				7D22B4262F4DCC3F002F0BC7 /* passport.png in Resources */,
@@ -843,6 +857,7 @@
 			files = (
 				7D7519942EB8CF43002C05C2 /* device.png in Resources */,
 				7D7519952EB8CF43002C05C2 /* MiSnapLocalizable.strings in Resources */,
+				7DCD402A2F8D36B50037FF8E /* MiSnapVoiceCaptureCustomLocalizable.strings in Resources */,
 				7D7519972EB8CF43002C05C2 /* MiSnapNFCLocalizable.strings in Resources */,
 				7D7519982EB8CF43002C05C2 /* MiSnapFacialCaptureLocalizable.strings in Resources */,
 				7D7519992EB8CF43002C05C2 /* MiSnapVoiceCaptureLocalizable.strings in Resources */,
@@ -905,6 +920,7 @@
 				7D22B40B2F4DBCA9002F0BC7 /* NFCViewModel.swift in Sources */,
 				7D22B41E2F4DBD1C002F0BC7 /* CustomTutorialHandler.swift in Sources */,
 				7D22B4212F4DC003002F0BC7 /* MiSnapWorkflowController.swift in Sources */,
+				7D5645342F87EC9B005CCF9A /* CustomTutorialViewController.swift in Sources */,
 				7D22B4222F4DC003002F0BC7 /* MiSnapWorkflowViewControllerFactory.swift in Sources */,
 				7D22B4232F4DC003002F0BC7 /* MiSnapWorkflowViewController.swift in Sources */,
 				7D22B41F2F4DBD1C002F0BC7 /* CustomTutorialViewController.swift in Sources */,
@@ -912,9 +928,9 @@
 				7D22B40D2F4DBCA9002F0BC7 /* DocumentsViewModel.swift in Sources */,
 				7D22B40F2F4DBCDB002F0BC7 /* NFCResult.swift in Sources */,
 				7D22B4102F4DBCDB002F0BC7 /* FaceCaptureResult.swift in Sources */,
-				7D22B4112F4DBCDB002F0BC7 /* MiSnapVoiceCaptureFlow+Ext.swift in Sources */,
 				7D22B4122F4DBCDB002F0BC7 /* WorkflowResult.swift in Sources */,
 				7D22B4132F4DBCDB002F0BC7 /* MiSnapNFCDocumentType+Ext.swift in Sources */,
+				7DCD40222F8D2ADD0037FF8E /* VoicePreset.swift in Sources */,
 				7D22B4192F4DBD07002F0BC7 /* AlertConfig.swift in Sources */,
 				7D22B41A2F4DBD07002F0BC7 /* OrientationManager.swift in Sources */,
 				7D22B41B2F4DBD07002F0BC7 /* LicenseKey.swift in Sources */,
@@ -937,6 +953,7 @@
 				8A1100162F600000A0A00016 /* NFCViewController.swift in Sources */,
 				8A11001B2F600000A0A0001B /* NFCInputsHeaderView.swift in Sources */,
 				8A1100172F600000A0A00017 /* FaceViewController.swift in Sources */,
+				7D58B9632F7E929A008265E9 /* CustomFacialCaptureTutorialViewController.swift in Sources */,
 				BB1100022F700000B0B00002 /* FaceControlsHeaderView.swift in Sources */,
 				8A1100182F600000A0A00018 /* VoiceViewController.swift in Sources */,
 				8A1100192F600000A0A00019 /* WorkflowViewController.swift in Sources */,
@@ -968,6 +985,7 @@
 				7D7519B12EB8CF43002C05C2 /* MiSnapWorkflowViewControllerRepresentable.swift in Sources */,
 				7D751A032EB91D4B002C05C2 /* AppDelegate.swift in Sources */,
 				7D7519FC2EB8D3C9002C05C2 /* MiSnapWorkflowViewControllerFactory.swift in Sources */,
+				7DCD40212F8D2ADD0037FF8E /* VoicePreset.swift in Sources */,
 				7D7519FD2EB8D3C9002C05C2 /* MiSnapWorkflowController.swift in Sources */,
 				7D7519FE2EB8D3C9002C05C2 /* MiSnapWorkflowViewController.swift in Sources */,
 				7D7519B22EB8CF43002C05C2 /* MiSnapFacialCaptureViewControllerRepresentable.swift in Sources */,
@@ -986,9 +1004,9 @@
 				7D7519C02EB8CF43002C05C2 /* AudioPlayerView.swift in Sources */,
 				7D7519C12EB8CF43002C05C2 /* MiSnapViewControllerRepresentable.swift in Sources */,
 				7D22B4312F4DFF60002F0BC7 /* MonospacedInputField.swift in Sources */,
+				7D58B9612F7E928D008265E9 /* CustomFacialCaptureTutorialView.swift in Sources */,
 				7D5097A72EC4EFAA00BE7A38 /* CustomTutorialHandler.swift in Sources */,
 				7D7519C22EB8CF43002C05C2 /* AppLogger.swift in Sources */,
-				7D7519C32EB8CF43002C05C2 /* MiSnapVoiceCaptureFlow+Ext.swift in Sources */,
 				7D7519C42EB8CF43002C05C2 /* MiSnapVoiceCaptureViewControllerRepresentable.swift in Sources */,
 				7D7519C52EB8CF43002C05C2 /* DocumentsView.swift in Sources */,
 				7D751A082EBA1FA1002C05C2 /* OrientationManager.swift in Sources */,
@@ -1036,6 +1054,14 @@
 			name = MiSnapVoiceCaptureLocalizable.strings;
 			sourceTree = "<group>";
 		};
+		7DCD40272F8D36B50037FF8E /* MiSnapVoiceCaptureCustomLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DCD40282F8D36B50037FF8E /* en */,
+			);
+			name = MiSnapVoiceCaptureCustomLocalizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1046,7 +1072,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MiSnapSampleApp/App/UIKit/MiSnapSampleAppUIKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 43FZQWCCUM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MiSnapSampleApp/App/UIKit/Info.plist;
@@ -1082,7 +1108,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MiSnapSampleApp/App/UIKit/MiSnapSampleAppUIKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 43FZQWCCUM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MiSnapSampleApp/App/UIKit/Info.plist;
@@ -1241,7 +1267,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MiSnapSampleApp/App/SwiftUI/MiSnapSampleAppSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 43FZQWCCUM;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1278,7 +1304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MiSnapSampleApp/App/SwiftUI/MiSnapSampleAppSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 43FZQWCCUM;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1345,7 +1371,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Mitek-Systems/MiSnap-iOS.git";
 			requirement = {
-				branch = release/5.11.0;
+				branch = release/5.10.0;
 				kind = branch;
 			};
 		};

@@ -5,12 +5,14 @@
 //  Copyright © 2026 Mitek Systems Inc. All rights reserved.
 //
 
+import UIKit
 import SwiftUI
 import Combine
 import os
 import MiSnapCore
 import MiSnapNFC
 import MiSnapNFCUX
+import MiSnapAssetManager
 
 @MainActor
 class NFCViewModel: ObservableObject {
@@ -120,26 +122,17 @@ class NFCViewModel: ObservableObject {
     
     // MARK: - Build MiSnapNFC Configuration
     func makeConfiguration(for documentType: MiSnapNFCDocumentType) -> MiSnapNFCConfiguration {
-        // Determine chip location from document data
         let chipLocation = MiSnapNFCChipLocator.chipLocation(
             mrzString: mrzString,
             documentNumber: documentNumber,
             dateOfBirth: dateOfBirth,
             dateOfExpiry: dateOfExpiry
         )
-        
-        // Build configuration with document inputs
-        let configuration = MiSnapNFCConfiguration()
-            .withCustomUxParameters { parameters in
-                // Disable auto-dismiss to manually control dismissal timing
-                // IMPORTANT: When autoDismiss is false, you must implement the optional
-                // miSnapNfcShouldBeDismissed() delegate callback to properly dismiss
-                // the SDK after it completes its internal cleanup.
-                // See `handleDismiss()` and `MiSnapNFCViewControllerRepresentable.onShouldBeDismissed`
-                parameters.autoDismiss = false
-            }
+
+        let accent = UIColor(red: 0.15, green: 0.55, blue: 0.35, alpha: 1)
+
+        return MiSnapNFCConfiguration()
             .withInputs { inputs in
-                // Provide document data for NFC chip authentication
                 inputs.documentNumber = self.documentNumber
                 inputs.dateOfBirth = self.dateOfBirth
                 inputs.dateOfExpiry = self.dateOfExpiry
@@ -147,8 +140,33 @@ class NFCViewModel: ObservableObject {
                 inputs.documentType = documentType
                 inputs.chipLocation = chipLocation
             }
-        
-        return configuration
+            .withCustomUxParameters { parameters in
+                // IMPORTANT: When autoDismiss is false, you must implement the optional
+                // miSnapNfcShouldBeDismissed() delegate callback to properly dismiss
+                // the SDK after it completes its internal cleanup.
+                // See handleDismiss() and MiSnapNFCViewControllerRepresentable.onShouldBeDismissed
+                parameters.autoDismiss = false
+            }
+            .withCustomParameters { parameters in
+                // Maximum time (sec) the SDK waits for a chip before timing out.
+                parameters.timeout = 20.0
+                // How reading progress is displayed during the scan.
+                parameters.progressIndicator = .percentBeforeMessage
+            }
+            .withCustomScan { scan in
+                // Status message shown during chip detection and reading
+                scan.message.color = accent
+                // Error message shown when reading fails
+                scan.failureMessage.color = accent
+                // Start button — initiates the NFC reading session
+                scan.buttons.primary.backgroundColor = accent
+                scan.buttons.primary.backgroundColorDarkMode = accent
+                // Cancel and Skip buttons — outlined style with accent color
+                scan.buttons.secondary.color = accent
+                scan.buttons.secondary.colorDarkMode = accent
+                scan.buttons.secondary.borderColor = accent
+                scan.buttons.secondary.borderColorDarkMode = accent
+            }
     }
     
     // MARK: - Handle Delegate Callbacks and Process Result

@@ -9,6 +9,7 @@ import SwiftUI
 import Combine
 import os
 import AVFoundation
+import MiSnapAssetManager
 import MiSnapFacialCapture
 import MiSnapFacialCaptureUX
 
@@ -142,6 +143,85 @@ class FaceViewModel: ObservableObject {
             return configuration
                 .withCustomParameters { parameters in
                     parameters.countdownTime = 0
+                }
+
+        case .customSelfie:
+            let accent = UIColor(white: 0.90, alpha: 1)
+            let dark   = UIColor(white: 0.08, alpha: 1)
+            return configuration
+                .withCustomUxParameters { uxParameters in
+                    uxParameters.timeout = 25.0
+                    // Disable built-in help and timeout screens so the app can present
+                    // its own custom tutorial UI via the optional delegate callbacks:
+                    // miSnapFacialCaptureHelpAction() and miSnapFacialCaptureTimeoutAction()
+                    uxParameters.showHelpScreen = false
+                    uxParameters.showTimeoutScreen = false
+                }
+                .withCustomTutorial { tutorial in
+                    // Applies to all SDK-managed tutorial screens: instruction, help, timeout, review.
+                    tutorial.backgroundColor = dark
+                    tutorial.backgroundColorDarkMode = dark
+
+                    // Primary action button (Continue / Retry / Looks good)
+                    tutorial.buttons.primary.backgroundColor = accent
+                    tutorial.buttons.primary.backgroundColorDarkMode = accent
+                    tutorial.buttons.primary.color = dark
+                    tutorial.buttons.primary.colorDarkMode = dark
+
+                    // Secondary action button (Cancel / Manual / Retake)
+                    tutorial.buttons.secondary.color = accent
+                    tutorial.buttons.secondary.colorDarkMode = accent
+                    tutorial.buttons.secondary.borderColor = accent
+                    tutorial.buttons.secondary.borderColorDarkMode = accent
+
+                    // Instruction messages and tips
+                    tutorial.message.color = accent
+                    tutorial.message.colorDarkMode = accent
+                    tutorial.messageSecondary.color = accent
+                    tutorial.messageSecondary.colorDarkMode = accent
+                }
+                .withCustomGuide { guide in
+                    guide.vignette.style = .blur
+                    guide.vignette.alpha = 0.925
+                    guide.outline.colorGood = accent
+                    guide.outline.colorBad = UIColor(red: 0.937, green: 0.349, blue: 0.192, alpha: 1)
+                }
+                .withCustomHint { hint in
+                    // Feedback text shown during capture — inverted to match the dark vignette
+                    hint.color = accent
+                    hint.backgroundColor = dark.withAlphaComponent(0.8)
+                }
+                .withCustomHelp { help in
+                    // Replace the SDK's drawn "?" circle with an SF Symbol
+                    help.image = UIImage(
+                        systemName: "questionmark.circle",
+                        withConfiguration: UIImage.SymbolConfiguration(weight: .light)
+                    )
+                    help.imageTintColor = accent
+                }
+                .withCustomCancel { cancel in
+                    // Replace the SDK's drawn "✕" circle with an SF Symbol
+                    cancel.image = UIImage(
+                        systemName: "xmark.circle",
+                        withConfiguration: UIImage.SymbolConfiguration(weight: .light)
+                    )
+                    cancel.imageTintColor = accent
+                }
+                .withCustomCameraShutter { cameraShutter in
+                    cameraShutter.color = accent
+                    cameraShutter.size = cameraShutter.size.scaled(by: 1.15)
+                }
+                .withCustomCountdown { countdown in
+                    countdown.burnupColor = accent
+                    countdown.burnupLineWidth = 5
+                    countdown.fontSize = 35.0
+                    countdown.textColor = accent
+                }
+                .withCustomSuccess { success in
+                    success.backgroundColor = dark.withAlphaComponent(0.92)
+                    success.checkmark.color = accent
+                    success.checkmark.cutoutFillColor = accent.withAlphaComponent(0.45)
+                    success.message.color = accent
                 }
         }
         

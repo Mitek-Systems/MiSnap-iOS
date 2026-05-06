@@ -30,7 +30,6 @@
 		7D22B41C2F4DBD07002F0BC7 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519682EB8CF43002C05C2 /* AppLogger.swift */; };
 		7D22B41D2F4DBD07002F0BC7 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519692EB8CF43002C05C2 /* AudioPlayer.swift */; };
 		7D22B41E2F4DBD1C002F0BC7 /* CustomTutorialHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5097A62EC4EFAA00BE7A38 /* CustomTutorialHandler.swift */; };
-		7D22B41F2F4DBD1C002F0BC7 /* CustomTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5095422EC496DC00BE7A38 /* CustomTutorialViewController.swift */; };
 		7D22B4212F4DC003002F0BC7 /* MiSnapWorkflowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519F82EB8D3C9002C05C2 /* MiSnapWorkflowController.swift */; };
 		7D22B4222F4DC003002F0BC7 /* MiSnapWorkflowViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519FA2EB8D3C9002C05C2 /* MiSnapWorkflowViewControllerFactory.swift */; };
 		7D22B4232F4DC003002F0BC7 /* MiSnapWorkflowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7519F92EB8D3C9002C05C2 /* MiSnapWorkflowViewController.swift */; };
@@ -808,7 +807,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7D4CDF312EA6421C00CBBB24 /* Build configuration list for PBXProject "MiSnapSampleApp-Public" */;
+			buildConfigurationList = 7D4CDF312EA6421C00CBBB24 /* Build configuration list for PBXProject "MiSnapSampleApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -923,7 +922,6 @@
 				7D5645342F87EC9B005CCF9A /* CustomTutorialViewController.swift in Sources */,
 				7D22B4222F4DC003002F0BC7 /* MiSnapWorkflowViewControllerFactory.swift in Sources */,
 				7D22B4232F4DC003002F0BC7 /* MiSnapWorkflowViewController.swift in Sources */,
-				7D22B41F2F4DBD1C002F0BC7 /* CustomTutorialViewController.swift in Sources */,
 				7D22B40C2F4DBCA9002F0BC7 /* VoiceViewModel.swift in Sources */,
 				7D22B40D2F4DBCA9002F0BC7 /* DocumentsViewModel.swift in Sources */,
 				7D22B40F2F4DBCDB002F0BC7 /* NFCResult.swift in Sources */,
@@ -1346,7 +1344,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D4CDF312EA6421C00CBBB24 /* Build configuration list for PBXProject "MiSnapSampleApp-Public" */ = {
+		7D4CDF312EA6421C00CBBB24 /* Build configuration list for PBXProject "MiSnapSampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D4CDF3F2EA6421E00CBBB24 /* Debug */,

@@ -36,7 +36,9 @@
     </header>
 
     <p class="breadcrumbs">
-      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <a class="breadcrumb" href="../index.html">Index</a>
+      <img class="carat" src="../img/carat.png" alt=""/>
+      <a class="breadcrumb" href="../Protocols.html">Protocols</a>
       <img class="carat" src="../img/carat.png" alt=""/>
       MiSnapFacialCaptureCameraDelegate Protocol Reference
     </p>
@@ -180,6 +182,83 @@
                               <td>
                                 <div>
                                   <p>A <code>CMSampleBuffer</code> object containing the video frame data and additional information about the frame, such as its format and presentation time.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)MiSnapFacialCaptureCameraDelegate(im)didReceiveSampleBuffer:fromOutput:connection:"></a>
+                    <a name="//apple_ref/objc/Method/-didReceiveSampleBuffer:fromOutput:connection:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)MiSnapFacialCaptureCameraDelegate(im)didReceiveSampleBuffer:fromOutput:connection:">-didReceiveSampleBuffer:<wbr>fromOutput:<wbr>connection:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called whenever a <code><a href="../Classes/MiSnapFacialCaptureCamera.html">MiSnapFacialCaptureCamera</a></code> instance outputs a new video frame with capture context</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didReceiveSampleBuffer</span><span class="p">:(</span><span class="n">CMSampleBufferRef</span> <span class="n">_Nullable</span><span class="p">)</span><span class="nv">sampleBuffer</span>
+                    <span class="nf">fromOutput</span><span class="p">:(</span><span class="n">AVCaptureOutput</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">output</span>
+                    <span class="nf">connection</span><span class="p">:(</span><span class="n">AVCaptureConnection</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">connection</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didReceive</span><span class="p">(</span><span class="n">_</span> <span class="nv">sampleBuffer</span><span class="p">:</span> <span class="kt">CMSampleBuffer</span><span class="p">?,</span> <span class="n">from</span> <span class="nv">output</span><span class="p">:</span> <span class="kt">AVCaptureOutput</span><span class="p">?,</span> <span class="nv">connection</span><span class="p">:</span> <span class="kt">AVCaptureConnection</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleBuffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>CMSampleBuffer</code> object containing the video frame data</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>output</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>AVCaptureOutput</code> that produced the sample buffer</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>connection</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>AVCaptureConnection</code> from which the sample buffer was received</p>
                                 </div>
                               </td>
                             </tr>
@@ -376,7 +455,7 @@
     </div>
     <section class="footer">
       <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>

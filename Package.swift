@@ -47,7 +47,7 @@ let package = Package(
         ),
         .library(
             name: "MiSnapIAD",
-            targets: ["MiSnapIAD"]
+            targets: ["MiSnapIAD", "IADCommon"]
         )
     ],
     targets: [
@@ -113,7 +113,11 @@ let package = Package(
         ),
         .binaryTarget(
             name: "MiSnapIAD",
-            path: "SDKs/Common/IDLiveFaceIAD.xcframework"
+            path: "SDKs/Common/MiSnapIAD.xcframework"
+        ),
+        .binaryTarget(
+            name: "IADCommon",
+            path: "SDKs/Common/IADCommon.xcframework"
         )
     ]
 )

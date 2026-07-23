@@ -36,9 +36,7 @@
     </header>
 
     <p class="breadcrumbs">
-      <a class="breadcrumb" href="../index.html">Index</a>
-      <img class="carat" src="../img/carat.png" alt=""/>
-      <a class="breadcrumb" href="../Classes.html">Classes</a>
+      <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" alt=""/>
       MiSnapFacialCaptureParameters Class Reference
     </p>
@@ -615,7 +613,7 @@ sending <code>startCountdown</code> callback</p>
     if overridden to <code>TRUE</code>:
 
 </div><ul>
-<li><code>IADCommon.xcframework</code> has to be added to a project</li>
+<li><code>IDLiveFaceIAD.xcframework</code> has to be added to a project</li>
 <li>No other parameters should be modified unless advised by a Mitek representative</li>
 </ul>
 
@@ -630,164 +628,6 @@ sending <code>startCountdown</code> callback</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">aiBasedRtsEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsPayloadSize"></a>
-                    <a name="//apple_ref/objc/Property/aiBasedRtsPayloadSize" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsPayloadSize">aiBasedRtsPayloadSize</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>AI-based RTS payload size</p>
-
-<p>Default: <code>.small</code></p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Only has effect when <code><a href="../Classes/MiSnapFacialCaptureParameters.html#/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsEnabled">aiBasedRtsEnabled</a></code> is <code>TRUE</code>
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/MiSnapFacialCaptureAiBasedRtsPayloadSize.html">MiSnapFacialCaptureAiBasedRtsPayloadSize</a></span> <span class="n">aiBasedRtsPayloadSize</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">aiBasedRtsPayloadSize</span><span class="p">:</span> <span class="kt"><a href="../Enums/MiSnapFacialCaptureAiBasedRtsPayloadSize.html">MiSnapFacialCaptureAiBasedRtsPayloadSize</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsEncryptionKey"></a>
-                    <a name="//apple_ref/objc/Property/aiBasedRtsEncryptionKey" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsEncryptionKey">aiBasedRtsEncryptionKey</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Base64-encoded AI-based RTS payload encryption key</p>
-
-<p>When <code>nil</code> (default), a preconfigured key is used.</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Only has effect when <code><a href="../Classes/MiSnapFacialCaptureParameters.html#/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsEnabled">aiBasedRtsEnabled</a></code> is <code>TRUE</code>
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">aiBasedRtsEncryptionKey</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">aiBasedRtsEncryptionKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsKeyId"></a>
-                    <a name="//apple_ref/objc/Property/aiBasedRtsKeyId" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsKeyId">aiBasedRtsKeyId</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Identifier passed to the server to indicate which key was used to encrypt the payload</p>
-
-<p>Only needed when the server manages multiple keys.</p>
-
-<p>Default: <code>nil</code> (field is omitted from the payload)</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Only has effect when <code><a href="../Classes/MiSnapFacialCaptureParameters.html#/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsEnabled">aiBasedRtsEnabled</a></code> is <code>TRUE</code>
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">aiBasedRtsKeyId</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">aiBasedRtsKeyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsExternalMeta"></a>
-                    <a name="//apple_ref/objc/Property/aiBasedRtsExternalMeta" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsExternalMeta">aiBasedRtsExternalMeta</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>External metadata string included in the AI-based RTS payload</p>
-
-<p>Default: <code>nil</code> (field is omitted from the payload)</p>
-<div class="aside aside-note">
-    <p class="aside-title">Note</p>
-    Only has effect when <code><a href="../Classes/MiSnapFacialCaptureParameters.html#/c:objc(cs)MiSnapFacialCaptureParameters(py)aiBasedRtsEnabled">aiBasedRtsEnabled</a></code> is <code>TRUE</code>
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">aiBasedRtsExternalMeta</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">aiBasedRtsExternalMeta</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -934,7 +774,7 @@ sending <code>startCountdown</code> callback</p>
     </div>
     <section class="footer">
       <p>(c) 2022 Mitek Systems Inc. All Rights Reserved.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>

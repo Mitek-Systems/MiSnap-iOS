@@ -344,9 +344,61 @@ let configuration = MiSnapFacialCaptureConfiguration()
 Note, this feature has a dependency on an optional library. You'll get an exception with a verbose explanation if you attempt to run the application without the library. To add this library:
 * SPM: add `MiSnapIAD` package
 * CocoaPods: add `pod 'MiSnapIAD'` to your Podfile
-* Manual: add `IDLiveFaceIAD.xcframework` to your Xcode project:
+* Manual: add `MiSnapIAD.xcframework` and `IADCommon.xcframework` to your Xcode project:
     * Under `Frameworks, Libraries, and Embedded Content` with `Embed & Sign` option in `General` tab
     * Add a valid path to the library in `Framework Search Paths` in `Build Settings` tab
+
+### Payload size
+
+Controls how much biometric data is collected. Default is `.small`.
+
+```Swift
+let configuration = MiSnapFacialCaptureConfiguration()
+    .withCustomParameters { parameters in
+        parameters.aiBasedRtsEnabled = true
+        parameters.aiBasedRtsPayloadSize = .normal  // .small (default) or .normal
+    }
+```
+
+> ⚠️ **Deployment compatibility:** The following features (custom encryption key, encryption key ID, and external metadata) are intended for on-prem deployments only. They are **not** compatible with MiVIP or Mobile Verify SaaS back-ends — the payload will fail to decrypt on the server side and will not be accepted. If you are unsure which deployment model you are using, contact your Mitek account team before enabling any of these parameters.
+
+### Custom encryption key
+
+Overrides the default public key used to encrypt the payload. Pass a Base64-encoded DER public key:
+
+```Swift
+let configuration = MiSnapFacialCaptureConfiguration()
+    .withCustomParameters { parameters in
+        parameters.aiBasedRtsEnabled = true
+        parameters.aiBasedRtsEncryptionKey = "<base64-encoded-public-key>"
+    }
+```
+
+If the string is not valid Base64, an exception is raised at the time the property is set. If the key is valid Base64 but cryptographically incorrect, an exception is raised when the RTS bundle is created at the end of the capture.
+
+### Encryption key ID
+
+An identifier sent to the server to indicate which key was used to encrypt the payload. Only needed when the server manages multiple keys:
+
+```Swift
+let configuration = MiSnapFacialCaptureConfiguration()
+    .withCustomParameters { parameters in
+        parameters.aiBasedRtsEnabled = true
+        parameters.aiBasedRtsKeyId = "key-2025-01"
+    }
+```
+
+### External metadata
+
+An arbitrary string embedded verbatim inside the payload (e.g. a session or request identifier):
+
+```Swift
+let configuration = MiSnapFacialCaptureConfiguration()
+    .withCustomParameters { parameters in
+        parameters.aiBasedRtsEnabled = true
+        parameters.aiBasedRtsExternalMeta = "{\"sessionId\":\"abc123\"}"
+    }
+```
 
 ## Other
 

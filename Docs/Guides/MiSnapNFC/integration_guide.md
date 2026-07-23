@@ -117,12 +117,18 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 3.1. `Privacy - NFC Scan Usage Description` with a reasonable description on why your app needs access to an NFC antenna.
 
 3.2. `ISO7816 application identifiers for NFC Tag Reader Session` with the following items:
+* `A000000247`
 * `A0000002471001`
 * `A00000045645444C2D3031`
 
 ## 4. Add a required capability
 
 In Xcode go to "Signing & Capabilities" tab, click "+ Capability", type "Near Field Communication Tag Reading" in a search field and select the capability.
+
+Ensure that generated `YourAppName.entitlements` file has `Near Field Communication Tag Reader Session Formats` key with the following 3 items:
+* `NFC Data Exchange Format (NDEF)`
+* `Tag-Specific Data Protocol (TAG)`
+* `Password Authenticated Connection Establishment (PACE)`
 
 ## 5. Setup and launch MiSnapNFCViewController (optional)
 

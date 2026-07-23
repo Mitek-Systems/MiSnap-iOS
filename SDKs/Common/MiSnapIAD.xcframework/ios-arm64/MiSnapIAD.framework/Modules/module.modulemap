@@ -1,0 +1,4 @@
+framework module MiSnapIAD {
+  header "MiSnapIAD-Swift.h"
+  requires objc
+}

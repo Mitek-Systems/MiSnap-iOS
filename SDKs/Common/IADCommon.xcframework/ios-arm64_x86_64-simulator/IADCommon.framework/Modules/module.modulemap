@@ -1,0 +1,10 @@
+framework module IADCommon {
+  umbrella header "IADCommon.h"
+  export *
+
+  module * { export * }
+}
+
+module IADCommon.Swift {
+  header "IADCommon-Swift.h"
+}

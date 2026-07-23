@@ -189,10 +189,44 @@ MiSnapFacialCaptureParameters is a class that defines an interface for controlli
  Default: `FALSE`
  
  - Note: if overridden to `TRUE`:
- - `IDLiveFaceIAD.xcframework` has to be added to a project
+ - `IADCommon.xcframework` has to be added to a project
  - No other parameters should be modified unless advised by a Mitek representative
  */
 @property (nonatomic) BOOL aiBasedRtsEnabled;
+/**
+ AI-based RTS payload size
+ 
+ Default: `.small`
+ 
+ - Note: Only has effect when `aiBasedRtsEnabled` is `TRUE`
+ */
+@property (nonatomic, readwrite) MiSnapFacialCaptureAiBasedRtsPayloadSize aiBasedRtsPayloadSize;
+/**
+ Base64-encoded AI-based RTS payload encryption key
+ 
+ When `nil` (default), a preconfigured key is used.
+ 
+ - Note: Only has effect when `aiBasedRtsEnabled` is `TRUE`
+ */
+@property (nonatomic, readwrite) NSString * _Nullable aiBasedRtsEncryptionKey;
+/**
+ Identifier passed to the server to indicate which key was used to encrypt the payload
+ 
+ Only needed when the server manages multiple keys.
+ 
+ Default: `nil` (field is omitted from the payload)
+ 
+ - Note: Only has effect when `aiBasedRtsEnabled` is `TRUE`
+ */
+@property (nonatomic, readwrite) NSString * _Nullable aiBasedRtsKeyId;
+/**
+ External metadata string included in the AI-based RTS payload
+ 
+ Default: `nil` (field is omitted from the payload)
+ 
+ - Note: Only has effect when `aiBasedRtsEnabled` is `TRUE`
+ */
+@property (nonatomic, readwrite) NSString * _Nullable aiBasedRtsExternalMeta;
 /**
  An object that configures camera specific parameters
  */

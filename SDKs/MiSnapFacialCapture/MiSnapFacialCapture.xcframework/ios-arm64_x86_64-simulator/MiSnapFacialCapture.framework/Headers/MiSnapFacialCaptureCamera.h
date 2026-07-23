@@ -34,6 +34,17 @@
 @optional
 
 /**
+ Called whenever a `MiSnapFacialCaptureCamera` instance outputs a new video frame with capture context
+ 
+ @param sampleBuffer A `CMSampleBuffer` object containing the video frame data
+ @param output The `AVCaptureOutput` that produced the sample buffer
+ @param connection The `AVCaptureConnection` from which the sample buffer was received
+*/
+- (void)didReceiveSampleBuffer:(CMSampleBufferRef _Nullable)sampleBuffer
+                    fromOutput:(AVCaptureOutput *_Nullable)output
+                    connection:(AVCaptureConnection *_Nullable)connection;
+
+/**
  @param sampleBuffer
  A CMSampleBuffer object containing information about the dropped frame, such as its format and presentation time. This sample buffer will contain none of the original video data.
  

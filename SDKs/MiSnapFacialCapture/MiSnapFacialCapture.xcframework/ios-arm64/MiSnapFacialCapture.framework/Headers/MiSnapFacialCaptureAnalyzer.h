@@ -122,9 +122,24 @@ MiSnapFacialCaptureAnalyzer is a class that defines an interface for controlling
 */
 - (void)cancel;
 /**
+ Analyzes a provided `CMSampleBuffer` with full capture context for AI based RTS processing
+ 
+ @param sampleBuffer A `CMSampleBuffer` object containing the video frame data
+ @param output The `AVCaptureOutput` that produced the sample buffer (nullable for backward compatibility)
+ @param connection The `AVCaptureConnection` from which the sample buffer was received (nullable for backward compatibility)
+ 
+ @note When output and connection are nil, AI based RTS processing is skipped but IQA analysis proceeds normally.
+ */
+- (void)analyzeSampleBuffer:(CMSampleBufferRef)sampleBuffer
+                 fromOutput:(AVCaptureOutput * _Nullable)output
+                 connection:(AVCaptureConnection * _Nullable)connection;
+/**
  Analyzes a provided `CMSampleBuffer`
  
  @param sampleBuffer  A `CMSampleBuffer` object containing the video frame data and additional information about the frame, such as its format and presentation time.
+ 
+ @note This method is provided for backward compatibility.
+ Use `analyzeSampleBuffer:fromOutput:connection:` instead.
 */
 - (void)analyzeSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 /**

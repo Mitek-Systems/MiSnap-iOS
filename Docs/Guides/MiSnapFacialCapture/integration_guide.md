@@ -57,7 +57,8 @@ From [Common](../../../SDKs/Common) copy:
 * MiSnapAssetManager.xcframework
 
 If AI-based RTS feature is required then additionally copy:
-* IDLiveFaceIAD.xcframework
+* MiSnapIAD.xcframework
+* IADCommon.xcframework
 
 From [MiSnapFacialCapture](../../../SDKs/MiSnapFacialCapture) copy:
 * MiSnapFacialCapture.xcframework
@@ -104,10 +105,11 @@ pod 'MiSnapIAD'
 ### Manual integration
 
 From [Common](../../../SDKs/Common) copy:
-* MiSnaCore.xcframework
+* MiSnapCore.xcframework
 
 If AI-based RTS feature is required then additionally copy:
-* IDLiveFaceIAD.xcframework
+* MiSnapIAD.xcframework
+* IADCommon.xcframework
 
 From [MiSnapFacialCapture](../../../SDKs/MiSnapFacialCapture) copy:
 * MiSnapFacialCapture.xcframework

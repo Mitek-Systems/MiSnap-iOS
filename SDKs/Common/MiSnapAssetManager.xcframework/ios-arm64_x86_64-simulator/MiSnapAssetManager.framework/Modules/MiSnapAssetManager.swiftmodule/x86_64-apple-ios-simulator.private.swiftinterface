@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapAssetManager
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MiSnapAssetManager
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 @_exported import MiSnapAssetManager
 import Swift
 import UIKit
@@ -21,15 +21,19 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapGlareView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapGlareViewConfiguration? = nil)
-  @objc @_Concurrency.MainActor(unsafe) public func animate(with glareBoundingBox: CoreFoundation.CGRect, transition: Foundation.TimeInterval, display: Foundation.TimeInterval)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapGlareView : UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapGlareViewConfiguration? = nil)
+  #endif
+  @objc @_Concurrency.MainActor @preconcurrency public func animate(with glareBoundingBox: CoreFoundation.CGRect, transition: Foundation.TimeInterval, display: Foundation.TimeInterval)
   @objc deinit
 }
 @objc public enum MiSnapAssetStyle : Swift.Int {
   case fill = 0
   case stroke = 1
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -38,7 +42,9 @@ import _SwiftConcurrencyShims
 @objc public enum MiSnapViewState : Swift.Int {
   case enabled = 0
   case disabled = 1
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -88,20 +94,26 @@ import _SwiftConcurrencyShims
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapViewConfiguration? = nil)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapView : UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapViewConfiguration? = nil)
+  #endif
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapStatelessView : MiSnapView {
-  @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapStatelessViewConfiguration? = nil)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapStatelessView : MiSnapView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapStatelessViewConfiguration? = nil)
+  #endif
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapStatefulView : MiSnapView {
-  @objc @_Concurrency.MainActor(unsafe) public var state: MiSnapViewState {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapStatefulView : MiSnapView {
+  @objc @_Concurrency.MainActor @preconcurrency public var state: MiSnapViewState {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapStatefulViewConfiguration? = nil)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapStatefulViewConfiguration? = nil)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapHelpViewConfiguration : MiSnapStatelessViewConfiguration {
@@ -111,12 +123,14 @@ import _SwiftConcurrencyShims
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapHelpView : MiSnapStatelessView {
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapHelpViewConfiguration? = nil)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapHelpView : MiSnapStatelessView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapHelpViewConfiguration? = nil)
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCheckBackTutorial : MiSnapDocumentSVGView {
-  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapCheckBackTutorial : MiSnapDocumentSVGView {
+  @_Concurrency.MainActor @preconcurrency @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapRecordingIndicatorViewConfiguration : ObjectiveC.NSObject {
@@ -134,8 +148,10 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapRecordingIndicatorView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapRecordingIndicatorViewConfiguration? = nil, text: Swift.String)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapRecordingIndicatorView : UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapRecordingIndicatorViewConfiguration? = nil, text: Swift.String)
+  #endif
   @objc deinit
 }
 @objc public enum MiSnapFacialCaptureCountdownStyle : Swift.Int {
@@ -143,7 +159,9 @@ import _SwiftConcurrencyShims
   case pulsate = 1
   case infinity = 2
   case burndUp = 3
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -164,9 +182,11 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapFacialCaptureCountdownView : UIKit.UILabel {
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapFacialCaptureCountdownViewConfiguration? = nil, countdownTime: Swift.Double, frame: CoreFoundation.CGRect)
-  @objc @_Concurrency.MainActor(unsafe) public func update(with value: Swift.Int)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapFacialCaptureCountdownView : UIKit.UILabel {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapFacialCaptureCountdownViewConfiguration? = nil, countdownTime: Swift.Double, frame: CoreFoundation.CGRect)
+  #endif
+  @objc @_Concurrency.MainActor @preconcurrency public func update(with value: Swift.Int)
   @objc deinit
 }
 extension CoreFoundation.CGSize {
@@ -188,18 +208,18 @@ extension UIKit.UIEdgeInsets {
   @objc convenience dynamic public init(miSnapHexString hexString: Swift.String)
 }
 extension UIKit.UIScreen {
-  @_Concurrency.MainActor(unsafe) public var shortSide: CoreFoundation.CGFloat {
+  @_Concurrency.MainActor @preconcurrency public var shortSide: CoreFoundation.CGFloat {
     get
   }
-  @_Concurrency.MainActor(unsafe) public var longSide: CoreFoundation.CGFloat {
+  @_Concurrency.MainActor @preconcurrency public var longSide: CoreFoundation.CGFloat {
     get
   }
 }
 extension UIKit.UIFont {
   public class func preferredMiSnapFont(forTextStyle style: UIKit.UIFont.TextStyle, weight: UIKit.UIFont.Weight = .regular) -> UIKit.UIFont
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapPassportQRTutorial : MiSnapDocumentSVGView {
-  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapPassportQRTutorial : MiSnapDocumentSVGView {
+  @_Concurrency.MainActor @preconcurrency @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureGuideConfiguration : ObjectiveC.NSObject {
@@ -215,7 +235,9 @@ extension UIKit.UIFont {
   case none = 0
   case blur = 1
   case semitransparent = 2
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -230,7 +252,9 @@ extension UIKit.UIFont {
   @objc public static var supportsSecureCoding: Swift.Bool {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init?(coder: Foundation.NSCoder)
+  #endif
   @objc public func encode(with coder: Foundation.NSCoder)
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -243,7 +267,9 @@ extension UIKit.UIFont {
 @objc public enum MiSnapFacialCaptureOutlineColorStyle : Swift.Int {
   case dynamic = 0
   case fixed = 1
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -252,7 +278,9 @@ extension UIKit.UIFont {
 @objc public enum MiSnapFacialCaptureOutlineState : Swift.Int {
   case bad = 0
   case good = 1
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -271,17 +299,19 @@ extension UIKit.UIFont {
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapFacialCaptureGuideView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public var outlineRect: CoreFoundation.CGRect {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapFacialCaptureGuideView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public var outlineRect: CoreFoundation.CGRect {
     get
   }
-  @objc @_Concurrency.MainActor(unsafe) public var state: MiSnapFacialCaptureOutlineState {
+  @objc @_Concurrency.MainActor @preconcurrency public var state: MiSnapFacialCaptureOutlineState {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapFacialCaptureGuideConfiguration? = nil, fill: CoreFoundation.CGFloat, orientation: UIKit.UIInterfaceOrientation = .portrait, frame: CoreFoundation.CGRect)
-  @objc @_Concurrency.MainActor(unsafe) public func adjustForLowLight()
-  @objc @_Concurrency.MainActor(unsafe) public func removeLowLightAdjustment()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapFacialCaptureGuideConfiguration? = nil, fill: CoreFoundation.CGFloat, orientation: UIKit.UIInterfaceOrientation = .portrait, frame: CoreFoundation.CGRect)
+  #endif
+  @objc @_Concurrency.MainActor @preconcurrency public func adjustForLowLight()
+  @objc @_Concurrency.MainActor @preconcurrency public func removeLowLightAdjustment()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapSuccessConfiguration : ObjectiveC.NSObject {
@@ -304,8 +334,10 @@ extension UIKit.UIFont {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapSuccessCheckmarkView : MiSnapStatelessView {
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapSuccessCheckmarkViewConfiguration? = nil)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapSuccessCheckmarkView : MiSnapStatelessView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapSuccessCheckmarkViewConfiguration? = nil)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapLabelConfiguration : ObjectiveC.NSObject {
@@ -355,33 +387,39 @@ extension UIKit.UIFont {
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapLabel : UIKit.UILabel {
-  @objc @_Concurrency.MainActor(unsafe) public init(withText: Swift.String, configuration: MiSnapLabelConfiguration, in parentFrame: CoreFoundation.CGRect)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapLabel : UIKit.UILabel {
+  @objc @_Concurrency.MainActor @preconcurrency public init(withText: Swift.String, configuration: MiSnapLabelConfiguration, in parentFrame: CoreFoundation.CGRect)
   @objc deinit
 }
 extension MiSnapLabel {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  #endif
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapSVGView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public init(colors: MiSnapColors, frame: CoreFoundation.CGRect)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapSVGView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public init(colors: MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 extension MiSnapSVGView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  #endif
 }
 @objc public enum MiSnapDocumentOrientationMode : Swift.Int {
   case unknown = 0
   case deviceLandscapeDocumentLandscape = 1
   case devicePortraitDocumentPortrait = 2
   case devicePortraitDocumentLandscape = 3
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapDocumentSVGView : MiSnapSVGView {
-  @objc @_Concurrency.MainActor(unsafe) public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapDocumentSVGView : MiSnapSVGView {
+  @objc @_Concurrency.MainActor @preconcurrency public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapCameraShutterViewConfiguration : MiSnapStatelessViewConfiguration {
@@ -391,8 +429,10 @@ extension MiSnapSVGView {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCameraShutterView : MiSnapStatelessView {
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapCameraShutterViewConfiguration? = nil)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapCameraShutterView : MiSnapStatelessView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapCameraShutterViewConfiguration? = nil)
+  #endif
   @objc deinit
 }
 @objc public enum MiSnapViewHorizontalAlignment : Swift.Int {
@@ -402,7 +442,9 @@ extension MiSnapSVGView {
   public var stringValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -415,7 +457,9 @@ extension MiSnapSVGView {
   public var stringValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -427,7 +471,9 @@ extension MiSnapSVGView {
   public var stringValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -452,7 +498,9 @@ extension MiSnapSVGView {
   case neutral
   case success
   case failure
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -497,22 +545,24 @@ extension MiSnapSVGView {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapVoiceCaptureStatusView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public var diameter: CoreFoundation.CGFloat {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapVoiceCaptureStatusView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public var diameter: CoreFoundation.CGFloat {
     @objc get
   }
-  @objc @_Concurrency.MainActor(unsafe) public var animationColor: UIKit.UIColor {
+  @objc @_Concurrency.MainActor @preconcurrency public var animationColor: UIKit.UIColor {
     @objc get
   }
-  @objc @_Concurrency.MainActor(unsafe) public var animationTime: CoreFoundation.CGFloat {
+  @objc @_Concurrency.MainActor @preconcurrency public var animationTime: CoreFoundation.CGFloat {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) public init(with status: MiSnapVoiceCaptureViewStatus, neutralConfiguration: MiSnapVoiceCaptureNeutralViewConfiguration? = nil, successConfiguration: MiSnapVoiceCaptureSuccessViewConfiguration? = nil, failureConfiguration: MiSnapVoiceCaptureFailureViewConfiguration? = nil, for step: Swift.Int? = nil)
-  @objc @_Concurrency.MainActor(unsafe) public func update(for status: MiSnapVoiceCaptureViewStatus)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(with status: MiSnapVoiceCaptureViewStatus, neutralConfiguration: MiSnapVoiceCaptureNeutralViewConfiguration? = nil, successConfiguration: MiSnapVoiceCaptureSuccessViewConfiguration? = nil, failureConfiguration: MiSnapVoiceCaptureFailureViewConfiguration? = nil, for step: Swift.Int? = nil)
+  #endif
+  @objc @_Concurrency.MainActor @preconcurrency public func update(for status: MiSnapVoiceCaptureViewStatus)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCheckFrontTutorial : MiSnapDocumentSVGView {
-  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapCheckFrontTutorial : MiSnapDocumentSVGView {
+  @_Concurrency.MainActor @preconcurrency @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 @objc public enum BulletType : Swift.Int {
@@ -520,7 +570,9 @@ extension MiSnapSVGView {
   case circle
   case square
   case verticalLine
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -548,22 +600,28 @@ extension MiSnapSVGView {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapBulletView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapBulletViewConfiguration? = nil)
-  @objc @_Concurrency.MainActor(unsafe) public func adjust(for someFrame: CoreFoundation.CGRect)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapBulletView : UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapBulletViewConfiguration? = nil)
+  #endif
+  @objc @_Concurrency.MainActor @preconcurrency public func adjust(for someFrame: CoreFoundation.CGRect)
   @objc deinit
 }
 extension MiSnapBulletView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  #endif
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapFacialCaptureTutorial : MiSnapSVGView {
-  @_Concurrency.MainActor(unsafe) @objc override public init(colors: MiSnapColors, frame: CoreFoundation.CGRect)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapFacialCaptureTutorial : MiSnapSVGView {
+  @_Concurrency.MainActor @preconcurrency @objc override public init(colors: MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 @objc public enum MiSnapHintStyle : Swift.Int {
   case semitransparent = 0
   case blur = 1
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -588,13 +646,15 @@ extension MiSnapBulletView {
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapHintView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapHintViewConfiguration? = nil)
-  @objc @_Concurrency.MainActor(unsafe) public func animate(with hintMessage: Swift.String, transition: Foundation.TimeInterval, display: Foundation.TimeInterval, maxRect: CoreFoundation.CGRect = CGRect(x: 0, y: 0, width: 320, height: 100))
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapHintView : UIKit.UIView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapHintViewConfiguration? = nil)
+  #endif
+  @objc @_Concurrency.MainActor @preconcurrency public func animate(with hintMessage: Swift.String, transition: Foundation.TimeInterval, display: Foundation.TimeInterval, maxRect: CoreFoundation.CGRect = CGRect(x: 0, y: 0, width: 320, height: 100))
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapIDFrontTutorial : MiSnapDocumentSVGView {
-  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapIDFrontTutorial : MiSnapDocumentSVGView {
+  @_Concurrency.MainActor @preconcurrency @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapCancelViewConfiguration : MiSnapStatelessViewConfiguration {
@@ -604,12 +664,14 @@ extension MiSnapBulletView {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCancelView : MiSnapStatelessView {
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapCancelViewConfiguration? = nil)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapCancelView : MiSnapStatelessView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapCancelViewConfiguration? = nil)
+  #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapIDBackTutorial : MiSnapDocumentSVGView {
-  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapIDBackTutorial : MiSnapDocumentSVGView {
+  @_Concurrency.MainActor @preconcurrency @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 @objc public enum MiSnapGuideDocumentType : Swift.Int {
@@ -621,7 +683,9 @@ extension MiSnapBulletView {
   case checkFront = 5
   case checkBack = 6
   case generic = 7
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -632,7 +696,9 @@ extension MiSnapBulletView {
   case deviceLandscapeGuideLandscape = 1
   case devicePortraitGuidePortrait = 2
   case devicePortraitGuideLandscape = 3
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -656,7 +722,9 @@ extension MiSnapBulletView {
   case none = 0
   case blur = 1
   case semitransparent = 2
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -677,7 +745,9 @@ extension MiSnapBulletView {
   case center = 0
   case top = 1
   case bottom = 2
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -705,20 +775,26 @@ extension MiSnapBulletView {
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapGuideView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public var outlineRect: CoreFoundation.CGRect {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapGuideView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public var outlineRect: CoreFoundation.CGRect {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Call init(for:,configuration:,orientationMode:,orientation:,portraitFill:,landscapeFill:,previewFrame:,frame:) instead")
-  @objc @_Concurrency.MainActor(unsafe) convenience public init(for documentType: MiSnapGuideDocumentType, configuration: MiSnapGuideViewConfiguration? = nil, orientationMode: MiSnapGuideOrientationMode, portraitFill: CoreFoundation.CGFloat, landscapeFill: CoreFoundation.CGFloat, orientation: UIKit.UIInterfaceOrientation, frame: CoreFoundation.CGRect)
-  @objc @_Concurrency.MainActor(unsafe) public init(for documentType: MiSnapGuideDocumentType, configuration: MiSnapGuideViewConfiguration? = nil, orientationMode: MiSnapGuideOrientationMode, orientation: UIKit.UIInterfaceOrientation, portraitFill: CoreFoundation.CGFloat, landscapeFill: CoreFoundation.CGFloat, previewFrame: CoreFoundation.CGRect, frame: CoreFoundation.CGRect)
-  @objc @_Concurrency.MainActor(unsafe) public func update(_ orientation: UIKit.UIInterfaceOrientation)
+  @objc @_Concurrency.MainActor @preconcurrency convenience public init(for documentType: MiSnapGuideDocumentType, configuration: MiSnapGuideViewConfiguration? = nil, orientationMode: MiSnapGuideOrientationMode, portraitFill: CoreFoundation.CGFloat, landscapeFill: CoreFoundation.CGFloat, orientation: UIKit.UIInterfaceOrientation, frame: CoreFoundation.CGRect)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(for documentType: MiSnapGuideDocumentType, configuration: MiSnapGuideViewConfiguration? = nil, orientationMode: MiSnapGuideOrientationMode, orientation: UIKit.UIInterfaceOrientation, portraitFill: CoreFoundation.CGFloat, landscapeFill: CoreFoundation.CGFloat, previewFrame: CoreFoundation.CGRect, frame: CoreFoundation.CGRect)
+  #endif
+  @objc @_Concurrency.MainActor @preconcurrency public func update(_ orientation: UIKit.UIInterfaceOrientation)
   @objc deinit
 }
 @objc public enum MiSnapCheckboxState : Swift.Int {
   case unchecked
   case checked
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -747,18 +823,22 @@ extension MiSnapBulletView {
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapCheckboxView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public var state: MiSnapCheckboxState {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapCheckboxView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var state: MiSnapCheckboxState {
     get
   }
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapCheckboxViewConfiguration? = nil, for state: MiSnapCheckboxState = .unchecked)
-  @objc @_Concurrency.MainActor(unsafe) public func check()
-  @objc @_Concurrency.MainActor(unsafe) public func uncheck()
-  @objc @_Concurrency.MainActor(unsafe) public func toggle()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapCheckboxViewConfiguration? = nil, for state: MiSnapCheckboxState = .unchecked)
+  #endif
+  @objc @_Concurrency.MainActor @preconcurrency public func check()
+  @objc @_Concurrency.MainActor @preconcurrency public func uncheck()
+  @objc @_Concurrency.MainActor @preconcurrency public func toggle()
   @objc deinit
 }
 extension MiSnapCheckboxView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  #endif
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapTorchViewConfiguration : MiSnapStatefulViewConfiguration {
   @objc override dynamic public init()
@@ -768,8 +848,10 @@ extension MiSnapCheckboxView {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapTorchView : MiSnapStatefulView {
-  @objc @_Concurrency.MainActor(unsafe) public init(with configuration: MiSnapTorchViewConfiguration? = nil)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapTorchView : MiSnapStatefulView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapTorchViewConfiguration? = nil)
+  #endif
   @objc deinit
 }
 @objc public protocol MiSnapColorProvider {
@@ -965,12 +1047,12 @@ extension MiSnapCheckboxView {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapPassportTutorial : MiSnapDocumentSVGView {
-  @_Concurrency.MainActor(unsafe) @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapPassportTutorial : MiSnapDocumentSVGView {
+  @_Concurrency.MainActor @preconcurrency @objc override public init(orientation: UIKit.UIInterfaceOrientation, orientationMode: MiSnapDocumentOrientationMode, colors: MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class MiSnapVoiceCaptureTutorial : MiSnapSVGView {
-  @_Concurrency.MainActor(unsafe) @objc override public init(colors: MiSnapColors, frame: CoreFoundation.CGRect)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class MiSnapVoiceCaptureTutorial : MiSnapSVGView {
+  @_Concurrency.MainActor @preconcurrency @objc override public init(colors: MiSnapColors, frame: CoreFoundation.CGRect)
   @objc deinit
 }
 extension MiSnapAssetStyle : Swift.Equatable {}

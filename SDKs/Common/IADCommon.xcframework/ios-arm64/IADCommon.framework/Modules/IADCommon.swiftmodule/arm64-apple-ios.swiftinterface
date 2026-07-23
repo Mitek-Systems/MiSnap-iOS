@@ -1,0 +1,157 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name IADCommon
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+import AVFoundation
+import CommonCrypto
+import CoreGraphics
+import CoreImage
+import CoreMedia
+import CryptoKit
+import Darwin
+import Dispatch
+import Foundation
+@_exported import IADCommon
+import MachO
+import MobileCoreServices
+import Security
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+@_hasMissingDesignatedInitializers final public class DocIADController : @unchecked Swift.Sendable {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class FaceIADController : @unchecked Swift.Sendable {
+  @objc deinit
+}
+public enum CreateBundleError : Foundation.LocalizedError {
+  case notEnoughImages
+  case invalidFormatType
+  case imageBinaryRepresentation
+  case cameraIsNotReady
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (a: IADCommon.CreateBundleError, b: IADCommon.CreateBundleError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum PayloadType : Swift.Int {
+  case unspecified
+  case face
+  case document
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension IADCommon.DocIADController {
+  final public func createIADBundleResult(payloadSize: IADCommon.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> IADCommon.IADBundleResult
+}
+extension IADCommon.DocIADController {
+  public typealias BundleResultCompletion = (Swift.Result<IADCommon.IADBundleResult, any Swift.Error>) -> Swift.Void
+  final public func createIADBundleResult(payloadSize: IADCommon.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) async throws -> IADCommon.IADBundleResult
+  final public func createIADBundleResult(payloadSize: IADCommon.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil, completion: @escaping IADCommon.DocIADController.BundleResultCompletion)
+}
+extension IADCommon.DocIADController {
+  public typealias Completion = (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void
+  convenience public init(ciContext: CoreImage.CIContext = CIContext(), dispatchQueue: Dispatch.DispatchQueue = DocIADController.defaultDispatchQueue())
+  final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  final public func isReady(qualifiedImage: any IADCommon.DocumentImageProtocol, completion: @escaping (Swift.Bool) -> Swift.Void)
+  final public func reset()
+  final public func createIADBundle(payloadSize: IADCommon.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> Foundation.Data
+  final public func isReady(qualifiedImage: any IADCommon.DocumentImageProtocol) async -> Swift.Bool
+  final public func createIADBundle(payloadSize: IADCommon.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil, completion: @escaping IADCommon.DocIADController.Completion)
+  final public func createIADBundle(key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) async throws -> Foundation.Data
+}
+extension IADCommon.DocIADController {
+  final public class func defaultDispatchQueue() -> Dispatch.DispatchQueue
+}
+public protocol DocumentImageProtocol : AnyObject, IADCommon.Timestampable {
+  var timestamp: Foundation.Date { get }
+  var dimensions: CoreFoundation.CGSize { get }
+  var type: IADCommon.DocumentType { get }
+  var corners: Swift.Array<CoreFoundation.CGPoint> { get }
+  func jpegData(compressionQuality: Swift.Float) -> Foundation.Data?
+  func pngData() -> Foundation.Data?
+}
+public enum DocumentType {
+  case idFront
+  case idBack
+  case checkFront
+  case checkBack
+  case passport
+  case generic
+  case unknown
+  public static func == (a: IADCommon.DocumentType, b: IADCommon.DocumentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension IADCommon.FaceIADController {
+  public typealias BundleResultCompletion = (Swift.Result<IADCommon.IADBundleResult, any Swift.Error>) -> Swift.Void
+  final public func createIADBundleResult(payloadSize: IADCommon.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> IADCommon.IADBundleResult
+  final public func createIADBundleResult(payloadSize: IADCommon.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil, completion: @escaping IADCommon.FaceIADController.BundleResultCompletion)
+  final public func createIADBundleResult(payloadSize: IADCommon.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) async throws -> IADCommon.IADBundleResult
+}
+extension IADCommon.FaceIADController {
+  public typealias Completion = (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void
+  convenience public init(ciContext: CoreImage.CIContext = CIContext(), dispatchQueue: Dispatch.DispatchQueue = FaceIADController.defaultDispatchQueue())
+  final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  final public func isReady(qualifiedImage: any IADCommon.ImageProtocol, completion: @escaping (Swift.Bool) -> Swift.Void)
+  final public func reset()
+  final public func createIADBundle(payloadSize: IADCommon.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> Foundation.Data
+  final public func createIADBundle(payloadSize: IADCommon.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) async throws -> Foundation.Data
+  final public func createIADBundle(payloadSize: IADCommon.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil, completion: @escaping IADCommon.FaceIADController.Completion)
+  final public func isReady(qualifiedImage: any IADCommon.ImageProtocol) async -> Swift.Bool
+}
+extension IADCommon.FaceIADController {
+  final public class func defaultDispatchQueue() -> Dispatch.DispatchQueue
+}
+public protocol ImageProtocol : AnyObject, IADCommon.Timestampable {
+  var timestamp: Foundation.Date { get }
+  var dimensions: CoreFoundation.CGSize { get }
+  func jpegData(compressionQuality: Swift.Float) -> Foundation.Data?
+  func pngData() -> Foundation.Data?
+}
+public struct IADBundleResult : Swift.Sendable {
+  public let encryptedBundle: Foundation.Data
+  public let qualifiedPhotoData: Foundation.Data
+  public init(encryptedBundle: Foundation.Data, qualifiedPhotoData: Foundation.Data)
+}
+@_inheritsConvenienceInitializers @available(*, deprecated, message: "Use Face/Doc IADController.createIADBundle(...) instead")
+@objc public class IADCallReceiverHelper : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "Use Face/Doc IADController.createIADBundle(...) instead")
+  @objc public static func call(_ params: [Swift.String : Any]) -> Any
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum PayloadSize : Swift.String, Swift.Sendable {
+  case normal
+  case small
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol Timestampable {
+  var timestamp: Foundation.Date { get }
+}
+extension IADCommon.CreateBundleError : Swift.Equatable {}
+extension IADCommon.CreateBundleError : Swift.Hashable {}
+extension IADCommon.PayloadType : Swift.Equatable {}
+extension IADCommon.PayloadType : Swift.Hashable {}
+extension IADCommon.PayloadType : Swift.RawRepresentable {}
+extension IADCommon.DocumentType : Swift.Equatable {}
+extension IADCommon.DocumentType : Swift.Hashable {}
+extension IADCommon.PayloadSize : Swift.Equatable {}
+extension IADCommon.PayloadSize : Swift.Hashable {}
+extension IADCommon.PayloadSize : Swift.RawRepresentable {}

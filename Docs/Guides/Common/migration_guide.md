@@ -1,6 +1,25 @@
 # Migration Guide
 
 Depending on the version you’re upgrading from, you might need to review several sections below.
+
+## Migration guide for 5.12.0 and newer versions
+### 1. Update Info.plist and YourAppName.entitlements to add new required entries for specific NFC documents
+To enable support for French ID card, add the following entry to `Near Field Communication Tag Reader Session Formats` in YourAppName.entitlements:
+* `Password Authenticated Connection Establishment (PACE)`
+
+so that the entire list looks like this:
+* `NFC Data Exchange Format (NDEF)`
+* `Tag-Specific Data Protocol (TAG)`
+* `Password Authenticated Connection Establishment (PACE)`
+
+To enable support for the latest templates of Greek Passport and ID Card add the following entry to `ISO7816 application identifiers for NFC Tag Reader Session` in Info.plist:
+* `A000000247`
+
+so that the entire list looks like this:
+* `A000000247`
+* `A0000002471001`
+* `A00000045645444C2D3031`
+
 ## Migration guide for 5.10.0 and newer versions
 
 ### 1. Accessibility improvements for visually impaired users

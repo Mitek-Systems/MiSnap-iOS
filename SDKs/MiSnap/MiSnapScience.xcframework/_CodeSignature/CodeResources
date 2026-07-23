@@ -42,11 +42,11 @@
 		</data>
 		<key>ios-arm64/MiSnapScience.framework/Info.plist</key>
 		<data>
-		kjIwKbV1qSjI5vDXbk5S7OnGEH0=
+		Mcx6HHLF2ZOwYv1kPrQrPG0j628=
 		</data>
 		<key>ios-arm64/MiSnapScience.framework/MiSnapScience</key>
 		<data>
-		7vJxJFTxdBhuEbOv1m52CPQea+E=
+		BObcpYaO6/Zxq4uU5ToydigWHGA=
 		</data>
 		<key>ios-arm64/MiSnapScience.framework/Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64/MiSnapScience.framework/_CodeSignature/CodeResources</key>
 		<data>
-		+I0IcU6JIyxA5ZJrqdWLHY/zaQE=
+		8Ez4ogPR6RdOa7RA2eOk88NHuUA=
 		</data>
 		<key>ios-arm64/MiSnapScience.framework/rules</key>
 		<data>
@@ -102,11 +102,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Info.plist</key>
 		<data>
-		GgBt2rR5XKrU2Ve/87xIVZdniHA=
+		nAlcSPN2BVbVme62YZLwpwB8voY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/MiSnapScience</key>
 		<data>
-		tHdRUyY5UO9rhdSem/W2fOvF2KU=
+		ozkpNKq10xU82n8u7yVprD+AggQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Modules/module.modulemap</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/_CodeSignature/CodeResources</key>
 		<data>
-		kA6BeS4KJ/O6LhHBtGTLdHwQhjM=
+		6cydaSV91ZPU0rNI/Nc4jfYK+5g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/rules</key>
 		<data>
@@ -129,10 +129,6 @@
 	<dict>
 		<key>ios-arm64/MiSnapScience.framework/Headers/MiSnapScience.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yOZAVA0qCkoWXr+CaNlzntLO/N4=
-			</data>
 			<key>hash2</key>
 			<data>
 			DnJ80LTehknJLoqPBTPO0d6jfUnKloWdotlk4rgW/Do=
@@ -140,10 +136,6 @@
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/Headers/MiSnapScienceClassificationResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ZWXn7HvSUHLBAdSCb66mQoro5fA=
-			</data>
 			<key>hash2</key>
 			<data>
 			05NRUVJpXvwTO9bemDuAbiEbNgSZWKhd+3bCMiCnruc=
@@ -151,10 +143,6 @@
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/Headers/MiSnapScienceExtractionResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			w+5ljFzjtfQ4erF6j74feA464Bc=
-			</data>
 			<key>hash2</key>
 			<data>
 			m4KqoHwsRRj0sL8OLg5BsD2SD9wZI0VHQyc+FxWAF04=
@@ -162,10 +150,6 @@
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/Headers/MiSnapScienceIQAResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iCVUuXJqXXGpKp6VOF+HZJiyTQ8=
-			</data>
 			<key>hash2</key>
 			<data>
 			vuwrdKbtJ0ollvFpzQk4nZ+GWUw5t0av7BtVEdWF3/k=
@@ -173,10 +157,6 @@
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/Headers/MiSnapScienceMrz.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IyL0sAU4qq08zZEMeNQDqk/5By8=
-			</data>
 			<key>hash2</key>
 			<data>
 			MWVpQKOKf1gZGBrKeggupIwlt3GPIkN+UMW3OZh4Koc=
@@ -184,10 +164,6 @@
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/Headers/MiSnapScienceParameters.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/LMF7Wbau8dSbBmBLq84ICX6x9k=
-			</data>
 			<key>hash2</key>
 			<data>
 			lpUgesDTv5FGmMojdUNtE9L40KFQSqwWuzk70VJwrOo=
@@ -195,10 +171,6 @@
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/Headers/MiSnapScienceResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			acrZLyYPkmoaimjAyhWQFRDJ44c=
-			</data>
 			<key>hash2</key>
 			<data>
 			1+RHmIRYtENXKGc4qKxt2YHDbLpXFn2Cib7cVrO9mUE=
@@ -206,10 +178,6 @@
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/Headers/MiSnapScienceVDSHeader.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/rlB/qQ49Wo13s6ilLzwKfCAsa0=
-			</data>
 			<key>hash2</key>
 			<data>
 			YDXQP3yPaRFmXSFzSvIJipRxnUTC+79/FiDXYMBy0Yc=
@@ -217,10 +185,6 @@
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/Headers/MiSnapScienceVDSResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SSQhLzmXreMEWR7V6ljokEk/pp0=
-			</data>
 			<key>hash2</key>
 			<data>
 			W656qtip3jXTedtYASBmD84BdgkLykwKv10mv0xEg3M=
@@ -228,32 +192,20 @@
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kjIwKbV1qSjI5vDXbk5S7OnGEH0=
-			</data>
 			<key>hash2</key>
 			<data>
-			FG5BO7pFVOOO3NQtywUhLCbqP9m5S4cEJaKO60uw4OQ=
+			v4CdmVo2SakK6074tSebWnaCF2fzqbwcNDkeYU1+x2E=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/MiSnapScience</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7vJxJFTxdBhuEbOv1m52CPQea+E=
-			</data>
 			<key>hash2</key>
 			<data>
-			dgtcVHJjkE+KSVzKpk3JIix87pg+ztybP0xFadPOgQE=
+			rD3ilhKoz/oA0g5JBBNR6oZt+/WdADktDKqr9YALiCI=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			P2whnJMGdJEU7QQSml4rvlmiZyE=
-			</data>
 			<key>hash2</key>
 			<data>
 			7EQfhAptqjCvn6z56L5UykjljwNMgBlh5vXDonjg2uY=
@@ -261,10 +213,6 @@
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2YoRHNXRkGrFl+BRGIONA0qe6e4=
-			</data>
 			<key>hash2</key>
 			<data>
 			+THqni8bkcloLZHCjOwLkcbqgUKmDF5b5CPI121UkK0=
@@ -272,21 +220,13 @@
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+I0IcU6JIyxA5ZJrqdWLHY/zaQE=
-			</data>
 			<key>hash2</key>
 			<data>
-			omQ/+NBUVRFDJwA8ymjXp60PVS3jS+ax+vi8WqNoD9s=
+			vmq8+PcVt3f1SzeFHXi8G6RwVgGbJ8iv82Gs0mf8vbA=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapScience.framework/rules</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3dhby0iNb54X+ATxuiCcOxdzqBE=
-			</data>
 			<key>hash2</key>
 			<data>
 			2dt47iFGowgWBCLE6TNQUFAZBFQq07uIGwPxgK6Cwtg=
@@ -294,10 +234,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Headers/MiSnapScience.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yOZAVA0qCkoWXr+CaNlzntLO/N4=
-			</data>
 			<key>hash2</key>
 			<data>
 			DnJ80LTehknJLoqPBTPO0d6jfUnKloWdotlk4rgW/Do=
@@ -305,10 +241,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Headers/MiSnapScienceClassificationResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ZWXn7HvSUHLBAdSCb66mQoro5fA=
-			</data>
 			<key>hash2</key>
 			<data>
 			05NRUVJpXvwTO9bemDuAbiEbNgSZWKhd+3bCMiCnruc=
@@ -316,10 +248,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Headers/MiSnapScienceExtractionResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			w+5ljFzjtfQ4erF6j74feA464Bc=
-			</data>
 			<key>hash2</key>
 			<data>
 			m4KqoHwsRRj0sL8OLg5BsD2SD9wZI0VHQyc+FxWAF04=
@@ -327,10 +255,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Headers/MiSnapScienceIQAResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iCVUuXJqXXGpKp6VOF+HZJiyTQ8=
-			</data>
 			<key>hash2</key>
 			<data>
 			vuwrdKbtJ0ollvFpzQk4nZ+GWUw5t0av7BtVEdWF3/k=
@@ -338,10 +262,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Headers/MiSnapScienceMrz.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IyL0sAU4qq08zZEMeNQDqk/5By8=
-			</data>
 			<key>hash2</key>
 			<data>
 			MWVpQKOKf1gZGBrKeggupIwlt3GPIkN+UMW3OZh4Koc=
@@ -349,10 +269,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Headers/MiSnapScienceParameters.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/LMF7Wbau8dSbBmBLq84ICX6x9k=
-			</data>
 			<key>hash2</key>
 			<data>
 			lpUgesDTv5FGmMojdUNtE9L40KFQSqwWuzk70VJwrOo=
@@ -360,10 +276,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Headers/MiSnapScienceResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			acrZLyYPkmoaimjAyhWQFRDJ44c=
-			</data>
 			<key>hash2</key>
 			<data>
 			1+RHmIRYtENXKGc4qKxt2YHDbLpXFn2Cib7cVrO9mUE=
@@ -371,10 +283,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Headers/MiSnapScienceVDSHeader.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/rlB/qQ49Wo13s6ilLzwKfCAsa0=
-			</data>
 			<key>hash2</key>
 			<data>
 			YDXQP3yPaRFmXSFzSvIJipRxnUTC+79/FiDXYMBy0Yc=
@@ -382,10 +290,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Headers/MiSnapScienceVDSResult.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SSQhLzmXreMEWR7V6ljokEk/pp0=
-			</data>
 			<key>hash2</key>
 			<data>
 			W656qtip3jXTedtYASBmD84BdgkLykwKv10mv0xEg3M=
@@ -393,32 +297,20 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GgBt2rR5XKrU2Ve/87xIVZdniHA=
-			</data>
 			<key>hash2</key>
 			<data>
-			8xp4sHZNU7CHRlwjFInmJD1S5TxTFJmns6cQPYasJ6I=
+			Pq9Ab7a2BX7i2V4afEpd0LFSDHQ9mdxUxkJlt4zEotU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/MiSnapScience</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tHdRUyY5UO9rhdSem/W2fOvF2KU=
-			</data>
 			<key>hash2</key>
 			<data>
-			CjBwyy1xPQ+IGTCWhcXbnpRK3yVptayJteWyyCiuxdY=
+			YzQB1zvlnR3nBebfVmgSzBzeEcNvSPJTjTPqB3Y3Rn4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			P2whnJMGdJEU7QQSml4rvlmiZyE=
-			</data>
 			<key>hash2</key>
 			<data>
 			7EQfhAptqjCvn6z56L5UykjljwNMgBlh5vXDonjg2uY=
@@ -426,10 +318,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2YoRHNXRkGrFl+BRGIONA0qe6e4=
-			</data>
 			<key>hash2</key>
 			<data>
 			+THqni8bkcloLZHCjOwLkcbqgUKmDF5b5CPI121UkK0=
@@ -437,21 +325,13 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kA6BeS4KJ/O6LhHBtGTLdHwQhjM=
-			</data>
 			<key>hash2</key>
 			<data>
-			AD+cr5BRXmHJVHSC9PAtUkowOan11VfHKsyM0qM2oIs=
+			IPu2JRN4dtcBmHYHH3/2ibat82WdVzE8IZRsJNEVYlA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapScience.framework/rules</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3dhby0iNb54X+ATxuiCcOxdzqBE=
-			</data>
 			<key>hash2</key>
 			<data>
 			2dt47iFGowgWBCLE6TNQUFAZBFQq07uIGwPxgK6Cwtg=

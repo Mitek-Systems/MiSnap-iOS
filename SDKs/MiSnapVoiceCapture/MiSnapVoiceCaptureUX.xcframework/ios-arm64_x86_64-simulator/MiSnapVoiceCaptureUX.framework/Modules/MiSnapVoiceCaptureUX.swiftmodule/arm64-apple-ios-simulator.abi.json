@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "MiSnapVoiceCaptureUX",
+    "printedName": "MiSnapVoiceCaptureUX",
     "children": [
       {
         "kind": "Import",
@@ -786,6 +786,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1222,6 +1236,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1869,6 +1897,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2305,6 +2347,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3046,6 +3102,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3583,6 +3653,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4606,6 +4690,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5240,6 +5338,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5555,6 +5667,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -5579,6 +5707,7 @@
             "mangledName": "$s20MiSnapVoiceCaptureUX0abcD14ViewControllerC13configurationAA0abcD13ConfigurationCvp",
             "moduleName": "MiSnapVoiceCaptureUX",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "SetterAccess",
@@ -5632,7 +5761,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MiSnapVoiceCaptureViewControllerDelegate",
-                "printedName": "MiSnapVoiceCaptureUX.MiSnapVoiceCaptureViewControllerDelegate",
+                "printedName": "any MiSnapVoiceCaptureUX.MiSnapVoiceCaptureViewControllerDelegate",
                 "usr": "c:@M@MiSnapVoiceCaptureUX@objc(pl)MiSnapVoiceCaptureViewControllerDelegate"
               }
             ],
@@ -5642,6 +5771,7 @@
             "moduleName": "MiSnapVoiceCaptureUX",
             "objc_name": "initWith:delegate:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -5686,6 +5816,7 @@
             "objc_name": "checkMicrophonePermissionWithHandler:",
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -5718,6 +5849,7 @@
             "static": true,
             "declAttributes": [
               "Final",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -5751,6 +5883,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -5779,6 +5912,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -5832,6 +5966,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -5914,6 +6049,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -5944,6 +6080,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -5970,6 +6107,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6002,6 +6140,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6034,6 +6173,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6066,6 +6206,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6098,6 +6239,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6130,6 +6272,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6156,6 +6299,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6188,6 +6332,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -6229,6 +6374,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -6243,6 +6389,7 @@
         "mangledName": "$s20MiSnapVoiceCaptureUX0abcD14ViewControllerC",
         "moduleName": "MiSnapVoiceCaptureUX",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -6258,10 +6405,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "MiSnapVoiceCaptureControllerDelegate",
-            "printedName": "MiSnapVoiceCaptureControllerDelegate",
-            "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate",
-            "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -6321,10 +6475,24 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
             "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MiSnapVoiceCaptureControllerDelegate",
+            "printedName": "MiSnapVoiceCaptureControllerDelegate",
+            "usr": "c:@M@MiSnapVoiceCapture@objc(pl)MiSnapVoiceCaptureControllerDelegate",
+            "mangledName": "$s18MiSnapVoiceCapture0abcD18ControllerDelegateP"
           }
         ]
       },
@@ -6627,6 +6795,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6871,6 +7053,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6940,255 +7136,10 @@
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 499,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 801,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 949,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1020,
-      "length": 2,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 1148,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1181,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1647,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2117,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
       "kind": "BooleanLiteral",
       "offset": 2583,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2853,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2950,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3164,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3547,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3669,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3860,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3938,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4253,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4370,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4401,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4425,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4958,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5137,
-      "length": 4,
-      "value": "1.75"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5146,
-      "length": 4,
-      "value": "1.75"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5177,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5343,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5351,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5381,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5485,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5621,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5690,
-      "length": 12,
-      "value": "0.4250357292"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5711,
-      "length": 12,
-      "value": "0.8324612517"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5731,
-      "length": 12,
-      "value": "0.1516317875"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5752,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "StringLiteral",
-      "offset": 168,
-      "length": 30,
-      "value": "\"MiSnapVoiceCaptureUX.MiSnapVoiceCaptureProgressView\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6089,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureProgressView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6147,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
@@ -7325,27 +7276,6 @@
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5878,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 6351,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6438,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 7738,
       "length": 51,
@@ -7451,20 +7381,6 @@
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8390,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8470,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 9265,
       "length": 66,
@@ -7504,27 +7420,6 @@
       "offset": 9469,
       "length": 4,
       "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9865,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 10338,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10425,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
@@ -7595,13 +7490,6 @@
       "offset": 12123,
       "length": 4,
       "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12362,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
@@ -7679,27 +7567,6 @@
       "offset": 13781,
       "length": 4,
       "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14177,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 14650,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14737,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
@@ -7926,438 +7793,11 @@
       "value": "\"\n\""
     },
     {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17607,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17706,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 17741,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 17776,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 17810,
-      "length": 4,
-      "value": "15.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17846,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 17903,
-      "length": 12,
-      "value": "0.9249185575"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 17924,
-      "length": 12,
-      "value": "0.9249185575"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 17944,
-      "length": 12,
-      "value": "0.9249185575"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17965,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 18028,
-      "length": 12,
-      "value": "0.1275769259"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 18049,
-      "length": 12,
-      "value": "0.1373905344"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "FloatLiteral",
-      "offset": 18069,
-      "length": 12,
-      "value": "0.1511295864"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "IntegerLiteral",
-      "offset": 18090,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureConfiguration.swift",
-      "kind": "BooleanLiteral",
-      "offset": 18200,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
       "kind": "Array",
       "offset": 663,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "StringLiteral",
-      "offset": 997,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1370,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "StringLiteral",
-      "offset": 1943,
-      "length": 19,
-      "value": "\" is deinitialized\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "StringLiteral",
-      "offset": 387,
-      "length": 37,
-      "value": "\"MiSnapVoiceCaptureUX.MiSnapVoiceCapturePhraseSelectionView\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2606,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2612,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2636,
-      "length": 3,
-      "value": "0.9"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2727,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3216,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3220,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3480,
-      "length": 3,
-      "value": "0.7"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3522,
-      "length": 3,
-      "value": "0.7"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3958,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3975,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3988,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "StringLiteral",
-      "offset": 4151,
-      "length": 39,
-      "value": "\"misnap_voice_capture_ux_choose_phrase\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4316,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4322,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "FloatLiteral",
-      "offset": 4346,
-      "length": 3,
-      "value": "0.9"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4739,
-      "length": 3,
-      "value": "-10"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "StringLiteral",
-      "offset": 4903,
-      "length": 39,
-      "value": "\"misnap_voice_capture_ux_button_cancel\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "StringLiteral",
-      "offset": 4969,
-      "length": 41,
-      "value": "\"misnap_voice_capture_ux_button_continue\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6317,
-      "length": 3,
-      "value": "-10"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6507,
-      "length": 3,
-      "value": "-10"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "Array",
-      "offset": 6610,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6630,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6634,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "StringLiteral",
-      "offset": 6726,
-      "length": 37,
-      "value": "\"misnap_voice_capture_ux_phrase_\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "StringLiteral",
-      "offset": 6762,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "StringLiteral",
-      "offset": 6819,
-      "length": 15,
-      "value": "\"misnap_voice_\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7260,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7266,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "FloatLiteral",
-      "offset": 7289,
-      "length": 4,
-      "value": "0.95"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7518,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7524,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7574,
-      "length": 2,
-      "value": "52"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7596,
-      "length": 2,
-      "value": "52"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7853,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "FloatLiteral",
-      "offset": 7902,
-      "length": 4,
-      "value": "0.75"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "FloatLiteral",
-      "offset": 8000,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8592,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "FloatLiteral",
-      "offset": 9030,
-      "length": 3,
-      "value": "3.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9254,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9481,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9487,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCapturePhraseSelectionView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9981,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
@@ -8395,599 +7835,11 @@
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "StringLiteral",
-      "offset": 798,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1172,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "StringLiteral",
-      "offset": 1638,
-      "length": 19,
-      "value": "\" is deinitialized\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "StringLiteral",
-      "offset": 280,
-      "length": 30,
-      "value": "\"MiSnapVoiceCaptureUX.MiSnapVoiceCaptureTutorialView\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1987,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1993,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2017,
-      "length": 3,
-      "value": "0.9"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2045,
-      "length": 4,
-      "value": "0.35"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2267,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2547,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 2635,
-      "length": 3,
-      "value": "0.9"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3257,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "Array",
-      "offset": 3463,
-      "length": 158,
-      "value": "[\"misnap_voice_capture_ux_not_quiet\", \"misnap_voice_capture_ux_too_far\", \"misnap_voice_capture_ux_external_mic\"]"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3751,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3922,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "StringLiteral",
-      "offset": 4157,
-      "length": 4,
-      "value": "\". \""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "StringLiteral",
-      "offset": 4201,
-      "length": 4,
-      "value": "\"..\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "StringLiteral",
-      "offset": 4213,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "StringLiteral",
-      "offset": 4288,
-      "length": 39,
-      "value": "\"misnap_voice_capture_ux_button_cancel\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "StringLiteral",
-      "offset": 4352,
-      "length": 39,
-      "value": "\"misnap_voice_capture_ux_button_record\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5066,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5072,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5564,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5570,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5794,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5859,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5900,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7287,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7372,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7464,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 7530,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7536,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7611,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "StringLiteral",
-      "offset": 7799,
-      "length": 27,
-      "value": "\"misnap_tutorial_red_arrow\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 7875,
-      "length": 4,
-      "value": "10.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 7955,
-      "length": 3,
-      "value": "0.9"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8172,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8178,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8323,
-      "length": 2,
-      "value": "75"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8367,
-      "length": 3,
-      "value": "375"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8401,
-      "length": 2,
-      "value": "50"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8728,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8734,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8857,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 9990,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 9996,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "FloatLiteral",
-      "offset": 10256,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10488,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10520,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10574,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "StringLiteral",
-      "offset": 10997,
-      "length": 43,
-      "value": "\"misnap_voice_capture_instruction_distance\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "StringLiteral",
-      "offset": 11148,
-      "length": 7,
-      "value": "\"_dark\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureTutorialView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11789,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 627,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 767,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
       "kind": "BooleanLiteral",
       "offset": 1082,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1341,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 1740,
-      "length": 4,
-      "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 1752,
-      "length": 6,
-      "value": "\",,\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 2318,
-      "length": 44,
-      "value": "\"misnap_voice_capture_ux_button_acknowledge\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2976,
-      "length": 2,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3022,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3028,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3362,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3403,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3500,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 295,
-      "length": 29,
-      "value": "\"MiSnapVoiceCaptureUX.MiSnapVoiceCaptureMessageView\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 3759,
-      "length": 33,
-      "value": "\"misnap_voice_capture_ux_failure\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 3796,
-      "length": 4,
-      "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 4690,
-      "length": 11,
-      "value": "\"• \""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 4766,
-      "length": 35,
-      "value": "\"misnap_voice_capture_ux_too_short\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 4805,
-      "length": 4,
-      "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 4829,
-      "length": 11,
-      "value": "\"• \""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 4905,
-      "length": 35,
-      "value": "\"misnap_voice_capture_ux_not_quiet\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 4944,
-      "length": 4,
-      "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 4968,
-      "length": 11,
-      "value": "\"• \""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureMessageView.swift",
-      "kind": "StringLiteral",
-      "offset": 5044,
-      "length": 33,
-      "value": "\"misnap_voice_capture_ux_too_far\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureExtensions.swift",
-      "kind": "FloatLiteral",
-      "offset": 496,
-      "length": 4,
-      "value": "60.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureExtensions.swift",
-      "kind": "FloatLiteral",
-      "offset": 530,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureExtensions.swift",
-      "kind": "FloatLiteral",
-      "offset": 616,
-      "length": 3,
-      "value": "0.9"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureExtensions.swift",
-      "kind": "FloatLiteral",
-      "offset": 683,
-      "length": 4,
-      "value": "0.45"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureExtensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1192,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureExtensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1198,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureExtensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2109,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureExtensions.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2238,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUXParameters.swift",
@@ -9044,20 +7896,6 @@
       "offset": 1308,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUXParameters.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1961,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUXParameters.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2007,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUXParameters.swift",
@@ -9137,13 +7975,6 @@
       "value": "\"\n\""
     },
     {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUXParameters.swift",
-      "kind": "StringLiteral",
-      "offset": 240,
-      "length": 30,
-      "value": "\"MiSnapVoiceCaptureUX.MiSnapVoiceCaptureUXParameters\""
-    },
-    {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
       "kind": "BooleanLiteral",
       "offset": 654,
@@ -9180,206 +8011,10 @@
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "StringLiteral",
-      "offset": 1302,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1884,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "StringLiteral",
-      "offset": 2639,
-      "length": 39,
-      "value": "\"misnap_voice_capture_ux_button_cancel\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3443,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3449,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 3473,
-      "length": 3,
-      "value": "0.7"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3486,
-      "length": 2,
-      "value": "70"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3725,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "StringLiteral",
-      "offset": 3745,
-      "length": 49,
-      "value": "\"Expected `phraseHints` to have exactly 3 values\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3835,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4077,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4083,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 4107,
-      "length": 3,
-      "value": "0.9"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4258,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "StringLiteral",
-      "offset": 4321,
-      "length": 3,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "Array",
-      "offset": 4547,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4774,
-      "length": 3,
-      "value": "-10"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5137,
-      "length": 2,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5486,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5642,
-      "length": 2,
-      "value": "70"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5811,
-      "length": 3,
-      "value": "-50"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 6218,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 6248,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 6280,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 6313,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
       "kind": "BooleanLiteral",
       "offset": 6593,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6679,
-      "length": 3,
-      "value": "700"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7097,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7529,
-      "length": 2,
-      "value": "20"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
@@ -9390,332 +8025,10 @@
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7849,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "StringLiteral",
-      "offset": 7869,
-      "length": 49,
-      "value": "\"Expected `phraseHints` to have exactly 3 values\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "StringLiteral",
-      "offset": 8010,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8055,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8083,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8099,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8127,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8172,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "StringLiteral",
-      "offset": 8302,
-      "length": 3,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 8595,
-      "length": 4,
-      "value": "0.75"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 8706,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 8745,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 8786,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
       "kind": "BooleanLiteral",
       "offset": 8896,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 8930,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 8962,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9243,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9372,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9739,
-      "length": 3,
-      "value": "750"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10473,
-      "length": 2,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 10539,
-      "length": 3,
-      "value": "0.9"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 10552,
-      "length": 4,
-      "value": "0.99"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "StringLiteral",
-      "offset": 10838,
-      "length": 43,
-      "value": "\"misnap_voice_capture_ux_microphone_in_use\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11026,
-      "length": 2,
-      "value": "31"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 11055,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 11550,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 11562,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 11665,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12072,
-      "length": 2,
-      "value": "31"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 12133,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 12145,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 12178,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12378,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "Array",
-      "offset": 12891,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12974,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "Array",
-      "offset": 13112,
-      "length": 180,
-      "value": "[\"misnap_voice_capture_ux_say_phrase\", \"misnap_voice_capture_ux_repeat_phrase\", \"misnap_voice_capture_ux_repeat_phrase_one_more_time\"]"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "Array",
-      "offset": 13338,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13919,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13925,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 13949,
-      "length": 3,
-      "value": "0.9"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14178,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14184,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14234,
-      "length": 2,
-      "value": "48"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14256,
-      "length": 2,
-      "value": "48"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "StringLiteral",
-      "offset": 305,
-      "length": 31,
-      "value": "\"MiSnapVoiceCaptureUX.MiSnapVoiceCaptureRecordingView\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 14691,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureRecordingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 14800,
-      "length": 3,
-      "value": "0.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
@@ -9747,339 +8060,10 @@
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2573,
-      "length": 39,
-      "value": "\"init(coder:) has not been implemented\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3708,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3734,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3943,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4004,
-      "length": 4,
-      "value": "1024"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4011,
-      "length": 4,
-      "value": "1024"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4106,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4536,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4552,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 4918,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5372,
-      "length": 56,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5410,
-      "length": 2,
-      "value": "\" is deinitialized\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1762,
-      "length": 32,
-      "value": "\"MiSnapVoiceCaptureUX.MiSnapVoiceCaptureViewController\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5664,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5768,
-      "length": 126,
-      "value": "\"\"MiSnapVoiceCaptureConfiguration\" is initialized for \"verification\" flow but \"phrase\" is not set or an empty string.\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 5922,
-      "length": 73,
-      "value": "\"Call \"init(for flow:, phrase:)\" and provide a valid non-empty string.\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 6068,
-      "length": 20,
-      "value": "\"MiSnapVoiceCapture\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6160,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6381,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6428,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6459,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 7960,
-      "length": 19,
-      "value": "\"Phrase is not set\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 8770,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 8851,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 8863,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 8984,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 9015,
-      "length": 5,
-      "value": "100.0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 9816,
-      "length": 22,
-      "value": "\"MiSnapVoiceCaptureUX\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 9917,
-      "length": 20,
-      "value": "\"MiSnapAssetManager\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11149,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11225,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11486,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 13285,
-      "length": 33,
-      "value": "\"misnap_voice_capture_ux_success\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13450,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13558,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13665,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 14268,
-      "length": 87,
-      "value": "\"MiSnapVoiceCapture error: \""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 14354,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 14419,
-      "length": 69,
-      "value": "\" | speech length: \""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 14455,
-      "length": 9,
-      "value": "\"%.2f ms\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 14487,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 14562,
-      "length": 50,
-      "value": "\" | snr: \""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 14588,
-      "length": 9,
-      "value": "\"%.2f dB\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 14611,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16569,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17021,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17082,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17457,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureResourceLocator.swift",
@@ -10206,13 +8190,6 @@
       "offset": 1905,
       "length": 1,
       "value": "\"\n\""
-    },
-    {
-      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureUX\/MiSnapVoiceCaptureResourceLocator.swift",
-      "kind": "Array",
-      "offset": 3308,
-      "length": 44,
-      "value": "[\"jpg\", \"png\", \"jpeg\", \"JPG\", \"JPEG\", \"PNG\"]"
     }
   ]
 }

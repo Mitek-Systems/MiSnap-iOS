@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MiSnapCore
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MiSnapCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CommonCrypto
 import Foundation
 @_exported import MiSnapCore
@@ -83,7 +83,9 @@ import _SwiftConcurrencyShims
   case startManual
   case orientationLandscape
   case orientationPortrait
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -103,7 +105,9 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc public func start()
   @objc public func addEvent(_ event: MiSnapUxpEvent)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func addEvent(_ event: MiSnapUxpEvent, value: Swift.String?)
+  #endif
   @objc deinit
 }
 @objc public enum MiSnapLogLevel : Swift.Int {
@@ -112,7 +116,9 @@ import _SwiftConcurrencyShims
   case info = 2
   case warning = 3
   case error = 4
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -122,7 +128,9 @@ import _SwiftConcurrencyShims
   case console = 0
   case file = 1
   case consoleAndFile = 2
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -136,7 +144,9 @@ import _SwiftConcurrencyShims
   @objc public static var supportsSecureCoding: Swift.Bool {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init?(coder: Foundation.NSCoder)
+  #endif
   @objc public func encode(with coder: Foundation.NSCoder)
   @objc override dynamic public var description: Swift.String {
     @objc get
@@ -165,24 +175,48 @@ import _SwiftConcurrencyShims
   case sha256
   case sha384
   case sha512
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 @objc public class MiSnapCryptography : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(publicKey: Security.SecKey? = nil, privateKey: Security.SecKey? = nil, algorithm: Security.SecKeyAlgorithm)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func set(publicKey: Security.SecKey? = nil, privateKey: Security.SecKey? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func encryptDictionary(_ dictionary: [Swift.String : Any]) -> [Swift.String]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func decryptToDictionary(_ base64Strings: [Swift.String]) -> [Swift.String : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func encryptData(_ data: Foundation.Data?) -> [Swift.String]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func decryptData(_ base64Strings: [Swift.String]) -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func encrypt(_ data: Foundation.Data) -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func decrypt(_ data: Foundation.Data) -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func hash(_ data: Foundation.Data?, algorithm: MiSnapCryptographyHashingAlgorithm = .sha256) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func secKey(from data: Foundation.Data, parameters: [Swift.String : Any]) -> Security.SecKey?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func generateKeys(parameters: [Swift.String : Any]) -> (privateKey: Security.SecKey?, publicKey: Security.SecKey?)
+  #endif
   @objc deinit
 }
 @objc public enum MiSnapMibiDataElement : Swift.Int, Swift.Codable {
@@ -212,7 +246,9 @@ import _SwiftConcurrencyShims
   case imageHeight
   case orientation
   case classificationDocumentType
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -237,7 +273,9 @@ import _SwiftConcurrencyShims
   @objc public func set(value: Swift.String, for element: MiSnapMibiDataElement)
   @objc public func setParameters(_ parameters: [Swift.String : Any], original: Swift.Bool)
   @objc public func setUXP(_ events: [[Swift.String : Any]])
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func add(to image: UIKit.UIImage?, compression: Swift.Float) -> Foundation.Data?
+  #endif
   @objc public func add(to wavData: Foundation.Data) -> Foundation.Data
   @objc deinit
 }
@@ -248,7 +286,9 @@ import _SwiftConcurrencyShims
   case face
   case voice
   case nfc
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -259,7 +299,9 @@ import _SwiftConcurrencyShims
   case auto
   case manual
   case forcedAuto
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -269,7 +311,9 @@ import _SwiftConcurrencyShims
   case none
   case portrait
   case landscape
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -279,7 +323,9 @@ import _SwiftConcurrencyShims
   case none
   case enrollment
   case verification
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -290,7 +336,9 @@ import _SwiftConcurrencyShims
   case pace
   case ca
   case bac
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -500,23 +548,29 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapDevice : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var id: Swift.String? {
     @objc get
   }
+  #endif
   @objc public var modelName: Swift.String {
     @objc get
   }
   @objc public var osVersion: Swift.String {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var info: Swift.String? {
     @objc get
   }
+  #endif
   @objc deinit
 }
 extension Swift.Array where Element == Swift.UInt8 {
   public func encodeDecodeData(using cipher: [Swift.UInt8]) -> [Swift.UInt8]
+  #if compiler(>=5.3) && $NonescapableTypes
   public func decodedString(using cipher: [Swift.UInt8]) -> Swift.String?
+  #endif
   public var hexRep: Swift.String {
     get
   }
@@ -540,7 +594,9 @@ extension Swift.Array where Element == Swift.UInt8 {
   case face = 8
   case voice = 9
   case enhancedManual = 10
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -558,7 +614,9 @@ extension Swift.Array where Element == Swift.UInt8 {
   public var stringValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -578,7 +636,9 @@ extension Swift.Array where Element == Swift.UInt8 {
   @objc public var expirationDateString: Swift.String? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func setLicenseKey(_ base64LicenseKey: Swift.String?)
+  #endif
   @objc public func featureSupported(_ feature: MiSnapLicenseFeature) -> Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get

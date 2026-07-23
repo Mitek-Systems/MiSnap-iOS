@@ -115,17 +115,17 @@ See [this guide](Docs/Guides/Common/workflow.md) for `MiSnapWorkflow` integratio
 
 | Component                        | Compressed, MB | Uncompressed, MB |
 | :------------------------------- | :------------: | :--------------: |
-| MiSnap                           |  1.50          |  3.80            |
-| MiSnap + MiSnapUX                |  1.90          |  5.10            |
-| NFC                              |  1.90          |  4.80            |
-| NFC + NFCUX                      |  2.40          |  6.10            |
-| FacialCapture                    |  0.25          |  0.78            |
-| FacialCapture + FacialCaptureUX  |  0.63          |  1.90            |
-| VoiceCapture                     |  0.95          |  2.40            |
-| VoiceCapture + VoiceCaptureUX    |  1.30          |  3.50            |
-| All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture)                   |  4.00          |  10.40            |
-| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  4.90          |  12.70           |
-| IDLiveFaceIAD (optional)    |  0.73          |  2.80            |
+| MiSnap                           |  1.47          |  3.68            |
+| MiSnap + MiSnapUX                |  1.87          |  5.08            |
+| NFC                              |  1.87          |  4.78            |
+| NFC + NFCUX                      |  2.37          |  6.08            |
+| FacialCapture                    |  0.21          |  0.65            |
+| FacialCapture + FacialCaptureUX  |  0.63          |  1.98            |
+| VoiceCapture                     |  0.92          |  2.28            |
+| VoiceCapture + VoiceCaptureUX    |  1.37          |  3.48            |
+| All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture)                   |  4.07          |  10.28           |
+| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  4.97          |  12.78           |
+| MiSnapIAD + IADCommon (optional)    |  0.68          |  1.98            |
 </center>
 
 Sizes are taken from "App Thinning Size Report.txt" of an Xcode distribution package for the latest iOS version where `compressed` is your app download size increase, and `uncompressed` size is equivalent to the size increase of your app once installed on the device. 

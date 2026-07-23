@@ -9,14 +9,12 @@
  */
 
 #ifndef OPENSSL_BUFFERERR_H
-# define OPENSSL_BUFFERERR_H
-# pragma once
+#define OPENSSL_BUFFERERR_H
+#pragma once
 
 #include "opensslconf.h"
 #include "symhacks.h"
 #include "cryptoerr_legacy.h"
-
-
 
 /*
  * BUF reason codes.

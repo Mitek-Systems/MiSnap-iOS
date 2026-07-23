@@ -807,7 +807,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7D4CDF312EA6421C00CBBB24 /* Build configuration list for PBXProject "MiSnapSampleApp" */;
+			buildConfigurationList = 7D4CDF312EA6421C00CBBB24 /* Build configuration list for PBXProject "MiSnapSampleApp-Public" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1344,7 +1344,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D4CDF312EA6421C00CBBB24 /* Build configuration list for PBXProject "MiSnapSampleApp" */ = {
+		7D4CDF312EA6421C00CBBB24 /* Build configuration list for PBXProject "MiSnapSampleApp-Public" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D4CDF3F2EA6421E00CBBB24 /* Debug */,

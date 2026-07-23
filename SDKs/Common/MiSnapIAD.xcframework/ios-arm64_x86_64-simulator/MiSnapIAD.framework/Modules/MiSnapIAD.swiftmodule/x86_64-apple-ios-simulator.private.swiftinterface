@@ -1,0 +1,74 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MiSnapIAD
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import AVFoundation
+import CoreImage
+import IADCommon
+import MiSnapCore
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public enum MiSnapIADDocumentType : Swift.Int {
+  case none = 0
+  case anyId = 1
+  case passport = 2
+  case idFront = 3
+  case idBack = 4
+  case checkFront = 5
+  case checkBack = 6
+  case generic = 7
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc final public class MiSnapIADContext : ObjectiveC.NSObject {
+  @objc final public let timestamp: Foundation.Date
+  @objc final public let documentType: MiSnapIAD.MiSnapIADDocumentType
+  @objc final public let cornerPoints: [Foundation.NSValue]
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(timestamp: Foundation.Date, documentType: MiSnapIAD.MiSnapIADDocumentType, cornerPoints: [Foundation.NSValue]?)
+  #endif
+  @objc convenience public init(timestamp: Foundation.Date)
+  @objc deinit
+}
+@objc final public class MiSnapIADBundleResult : ObjectiveC.NSObject {
+  @objc final public let encryptedBundle: Foundation.Data
+  @objc final public let qualifiedPhotoData: Foundation.Data
+  @objc public init(encryptedBundle: Foundation.Data, qualifiedPhotoData: Foundation.Data)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class MiSnapIADBaseController : ObjectiveC.NSObject {
+  @objc final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  @objc final public func reset()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class MiSnapDocIADController : MiSnapIAD.MiSnapIADBaseController {
+  @objc public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func createIADBundleResult(payloadSize: Swift.String, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> MiSnapIAD.MiSnapIADBundleResult
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func isReady(ciImage: CoreImage.CIImage, mibi: MiSnapCore.MiSnapMibi?, frameContext: MiSnapIAD.MiSnapIADContext, completion: @escaping (Swift.Bool) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class MiSnapFaceIADController : MiSnapIAD.MiSnapIADBaseController {
+  @objc public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func createIADBundleResult(payloadSize: Swift.String, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> MiSnapIAD.MiSnapIADBundleResult
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func isReady(ciImage: CoreImage.CIImage, mibi: MiSnapCore.MiSnapMibi?, frameContext: MiSnapIAD.MiSnapIADContext, completion: @escaping (Swift.Bool) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+extension MiSnapIAD.MiSnapIADDocumentType : Swift.Equatable {}
+extension MiSnapIAD.MiSnapIADDocumentType : Swift.Hashable {}
+extension MiSnapIAD.MiSnapIADDocumentType : Swift.RawRepresentable {}

@@ -706,6 +706,73 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)recordedVideo"></a>
+                    <a name="//apple_ref/objc/Property/recordedVideo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)recordedVideo">recordedVideo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>MP4 data recorded during the capture session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSData</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">recordedVideo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">recordedVideo</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)recordedVideoError"></a>
+                    <a name="//apple_ref/objc/Property/recordedVideoError" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)recordedVideoError">recordedVideoError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Video-recording failure. <code>nil</code> when video recording succeeds or was not requested.</p>
+
+<p>Recording finishes after MIBI is finalized, so these errors are not in <code><a href="../Classes/MiSnapFacialCaptureResult.html#/c:objc(cs)MiSnapFacialCaptureResult(py)mibi">mibi</a></code>.
+Log <code>recordedVideoError</code> if you need to share recording failures with Mitek.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="kt">int</span> <span class="o">*</span><span class="n">_Nullable</span> <span class="n">recordedVideoError</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">recordedVideoError</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">Int32</span><span class="o">&gt;</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)MiSnapFacialCaptureResult(py)resultCode"></a>
                     <a name="//apple_ref/objc/Property/resultCode" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)MiSnapFacialCaptureResult(py)resultCode">resultCode</a>

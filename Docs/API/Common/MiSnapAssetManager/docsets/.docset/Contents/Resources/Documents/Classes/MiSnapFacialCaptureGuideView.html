@@ -427,14 +427,67 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"Call init(with:,fill:,orientation:,previewFrame:,frame:﹚ instead"</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">@MainActor</span>
+<span class="kd">convenience</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">with</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapFacialCaptureGuideConfiguration.html">MiSnapFacialCaptureGuideConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                        <span class="nv">fill</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span>
+                        <span class="nv">orientation</span><span class="p">:</span> <span class="kt">UIInterfaceOrientation</span> <span class="o">=</span> <span class="o">.</span><span class="n">portrait</span><span class="p">,</span>
+                        <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureGuideView(im)initWith:fill:orientation:previewFrame:frame:"></a>
+                    <a name="//apple_ref/swift/Method/init(with:fill:orientation:previewFrame:frame:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureGuideView(im)initWith:fill:orientation:previewFrame:frame:">init(with:<wbr>fill:<wbr>orientation:<wbr>previewFrame:<wbr>frame:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and returns <code>MiSnapFacialCaptureGuideView</code> with given parameters</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@objc</span>
 <span class="kd">@MainActor</span>
 <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">with</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/MiSnapFacialCaptureGuideConfiguration.html">MiSnapFacialCaptureGuideConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
             <span class="nv">fill</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span>
             <span class="nv">orientation</span><span class="p">:</span> <span class="kt">UIInterfaceOrientation</span> <span class="o">=</span> <span class="o">.</span><span class="n">portrait</span><span class="p">,</span>
+            <span class="nv">previewFrame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span>
             <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>previewFrame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Rectangle within <code>frame</code> occupied by the camera preview.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>

@@ -3360,6 +3360,100 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "offset",
+            "printedName": "offset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapUX@objc(cs)MiSnapTutorialInstructionConfiguration(py)offset",
+            "mangledName": "$s8MiSnapUX0aB32TutorialInstructionConfigurationC6offset12CoreGraphics7CGFloatVvp",
+            "moduleName": "MiSnapUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapUX@objc(cs)MiSnapTutorialInstructionConfiguration(im)offset",
+                "mangledName": "$s8MiSnapUX0aB32TutorialInstructionConfigurationC6offset12CoreGraphics7CGFloatVvg",
+                "moduleName": "MiSnapUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapUX@objc(cs)MiSnapTutorialInstructionConfiguration(im)setOffset:",
+                "mangledName": "$s8MiSnapUX0aB32TutorialInstructionConfigurationC6offset12CoreGraphics7CGFloatVvs",
+                "moduleName": "MiSnapUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8MiSnapUX0aB32TutorialInstructionConfigurationC6offset14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s8MiSnapUX0aB32TutorialInstructionConfigurationC6offset12CoreGraphics7CGFloatVvM",
+                "moduleName": "MiSnapUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -10348,10 +10442,12 @@
             "moduleName": "MiSnapUX",
             "genericSig": "<τ_0_0 where τ_0_0 : MiSnapUX.MiSnapViewControllerDelegate>",
             "sugared_genericSig": "<Self where Self : MiSnapUX.MiSnapViewControllerDelegate>",
+            "deprecated": true,
             "protocolReq": true,
             "declAttributes": [
               "Optional",
               "ObjC",
+              "Available",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -10597,6 +10693,34 @@
             "moduleName": "MiSnapUX",
             "overriding": true,
             "objc_name": "viewWillTransitionToSize:withTransitionCoordinator:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLayoutSubviews",
+            "printedName": "viewDidLayoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapUX@objc(cs)MiSnapViewController(im)viewDidLayoutSubviews",
+            "mangledName": "$s8MiSnapUX0aB14ViewControllerC21viewDidLayoutSubviewsyyF",
+            "moduleName": "MiSnapUX",
+            "overriding": true,
+            "objc_name": "viewDidLayoutSubviews",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -11462,7 +11586,7 @@
           {
             "kind": "Function",
             "name": "didFinishRecordingVideo",
-            "printedName": "didFinishRecordingVideo(_:)",
+            "printedName": "didFinishRecordingVideo(_:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11482,13 +11606,27 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)didFinishRecordingVideo:",
-            "mangledName": "$s8MiSnapUX0aB14ViewControllerC23didFinishRecordingVideoyy10Foundation4DataVSgF",
+            "usr": "c:@CM@MiSnapUX@objc(cs)MiSnapViewController(im)didFinishRecordingVideo:error:",
+            "mangledName": "$s8MiSnapUX0aB14ViewControllerC23didFinishRecordingVideo_5errory10Foundation4DataVSg_s5Error_pSgtF",
             "moduleName": "MiSnapUX",
-            "objc_name": "didFinishRecordingVideo:",
+            "objc_name": "didFinishRecordingVideo:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -11812,30 +11950,44 @@
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 708,
+      "offset": 652,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1388,
+      "offset": 1332,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapOverlayView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1705,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1603,
+      "offset": 1749,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 1646,
+      "offset": 1792,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapOverlayView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2688,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
@@ -11910,140 +12062,154 @@
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3432,
+      "offset": 2463,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5859,
+      "offset": 3539,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6439,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51461,
+      "offset": 53788,
       "length": 39,
       "value": "\"MiSnapTutorialButtonsConfiguration:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51516,
+      "offset": 53843,
       "length": 27,
       "value": "\"\tbarColor: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51540,
+      "offset": 53867,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51559,
+      "offset": 53886,
       "length": 27,
       "value": "\"\tPrimaryConfiguration:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51602,
+      "offset": 53929,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51654,
+      "offset": 53981,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51666,
+      "offset": 53993,
       "length": 6,
       "value": "\"\t\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51676,
+      "offset": 54003,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51696,
+      "offset": 54023,
       "length": 29,
       "value": "\"\tSecondaryConfiguration:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51741,
+      "offset": 54068,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51793,
+      "offset": 54120,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51805,
+      "offset": 54132,
       "length": 6,
       "value": "\"\t\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51815,
+      "offset": 54142,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 52958,
+      "offset": 55285,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 53028,
+      "offset": 55355,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 57507,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 55780,
+      "offset": 58380,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 55827,
+      "offset": 58427,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 56347,
+      "offset": 58947,
       "length": 4,
       "value": "true"
     },
@@ -13401,133 +13567,175 @@
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8057,
+      "offset": 8164,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8105,
+      "offset": 8212,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8152,
+      "offset": 8259,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8199,
+      "offset": 8306,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8258,
+      "offset": 8365,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9184,
+      "offset": 8541,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10386,
+      "offset": 8588,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10437,
+      "offset": 8644,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14492,
+      "offset": 8700,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8754,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8808,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9699,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10901,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10952,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15288,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14780,
+      "offset": 15576,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14811,
+      "offset": 15607,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 27143,
+      "offset": 27984,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 27171,
+      "offset": 28012,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35124,
+      "offset": 38384,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35129,
+      "offset": 38389,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35199,
+      "offset": 38459,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 35343,
+      "offset": 38603,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 35371,
+      "offset": 38631,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnap\/MiSnapUX\/MiSnapUX\/MiSnapViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 35377,
+      "offset": 38637,
       "length": 3,
       "value": "3.0"
     }

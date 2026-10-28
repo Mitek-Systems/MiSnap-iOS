@@ -12,7 +12,7 @@ import MiSnap
 struct DocumentCaptureResult: Identifiable {
     let id: UUID
     let result: MiSnapResult
-    
+
     var mibiString: String? {
         result.mibi.string
     }

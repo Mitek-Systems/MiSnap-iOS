@@ -64,7 +64,10 @@ final class DocumentsViewController: UIViewController {
             .sink { [weak self] result in
                 guard let self, let result else { return }
                 let response = result.mibiString ?? "Failed to extract MIBI data."
-                let controller = ResultViewController(response: response, image: result.image)
+                let controller = ResultViewController(
+                    response: response,
+                    image: result.image
+                )
                 let nav = UINavigationController(rootViewController: controller)
                 nav.modalPresentationStyle = .pageSheet
                 self.present(nav, animated: true)
@@ -110,7 +113,12 @@ final class DocumentsViewController: UIViewController {
 
             let section = NSCollectionLayoutSection(group: group)
             section.interGroupSpacing = spacing
-            section.contentInsets = NSDirectionalEdgeInsets(top: sectionInset, leading: sectionInset, bottom: sectionInset, trailing: sectionInset)
+            section.contentInsets = NSDirectionalEdgeInsets(
+                top: sectionInset,
+                leading: sectionInset,
+                bottom: sectionInset,
+                trailing: sectionInset
+            )
 
             return section
         }
@@ -162,8 +170,10 @@ extension DocumentsViewController: MiSnapViewControllerDelegate {
 
     func miSnapShouldBeDismissed() {
         viewModel.handleDismiss()
-        activeCaptureController?.dismiss(animated: true)
-        activeCaptureController = nil
+        activeCaptureController?.dismiss(animated: true) { [weak self] in
+            self?.viewModel.handleCaptureCoverDismissed()
+            self?.activeCaptureController = nil
+        }
     }
 
     func miSnapCustomTutorial(

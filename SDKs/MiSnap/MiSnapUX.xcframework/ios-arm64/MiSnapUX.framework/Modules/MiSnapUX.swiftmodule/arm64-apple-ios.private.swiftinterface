@@ -81,6 +81,7 @@ import _SwiftConcurrencyShims
   @objc public var message: MiSnapLabelConfiguration
   @objc public var messageSecondary: MiSnapLabelConfiguration
   @objc public var colors: MiSnapColors
+  @objc public var offset: CoreFoundation.CGFloat
   @objc override dynamic public init()
   @objc deinit
 }
@@ -321,6 +322,7 @@ import _SwiftConcurrencyShims
   @objc optional func miSnapCustomTutorial(_ documentType: MiSnapScienceDocumentType, tutorialMode: MiSnapUxTutorialMode, mode: MiSnapMode, statuses: [Foundation.NSNumber]?, image: UIKit.UIImage?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use recordedVideo and recordedVideoError on MiSnapResult instead")
   @objc optional func miSnapDidFinishRecordingVideo(_ videoData: Foundation.Data?)
   #endif
   @objc optional func miSnapShouldBeDismissed()
@@ -333,6 +335,7 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLayoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
     @objc get
@@ -374,7 +377,7 @@ extension MiSnapViewController : MiSnapCameraDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func didReceive(_ sampleBuffer: CoreMedia.CMSampleBuffer)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func didDecodeBarcode(_ decodedBarcodeString: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func didFinishRecordingVideo(_ videoData: Foundation.Data?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func didFinishRecordingVideo(_ videoData: Foundation.Data?, error: (any Swift.Error)?)
   #endif
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func didFinishConfiguringSession()
 }

@@ -14,6 +14,7 @@ final class FaceControlsHeaderView: UICollectionReusableView {
     var onAiBasedRtsChanged: ((Bool) -> Void)?
     var onCameraPositionChanged: ((FaceCameraPosition) -> Void)?
 
+    private let rootStack = UIStackView()
     private let iconView = UIImageView()
     private let titleLabel = UILabel()
     private let toggleSwitch = UISwitch()
@@ -32,7 +33,10 @@ final class FaceControlsHeaderView: UICollectionReusableView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func configure(isAiBasedRtsEnabled: Bool, cameraPosition: FaceCameraPosition = .front) {
+    func configure(
+        isAiBasedRtsEnabled: Bool,
+        cameraPosition: FaceCameraPosition = .front
+    ) {
         toggleSwitch.setOn(isAiBasedRtsEnabled, animated: false)
         let effectivePosition: FaceCameraPosition = isAiBasedRtsEnabled ? .front : cameraPosition
         cameraMenuButton.setTitle(effectivePosition == .front ? "Front" : "Back", for: .normal)
@@ -41,6 +45,10 @@ final class FaceControlsHeaderView: UICollectionReusableView {
     }
 
     private func setupViews() {
+        rootStack.translatesAutoresizingMaskIntoConstraints = false
+        rootStack.axis = .vertical
+        rootStack.spacing = 16
+
         iconView.translatesAutoresizingMaskIntoConstraints = false
         iconView.image = UIImage(systemName: "sparkles")
         iconView.tintColor = .label
@@ -71,41 +79,50 @@ final class FaceControlsHeaderView: UICollectionReusableView {
         cameraMenuButton.changesSelectionAsPrimaryAction = false
         cameraMenuButton.menu = makeCameraMenu(current: .front)
 
-        addSubview(iconView)
-        addSubview(titleLabel)
-        addSubview(toggleSwitch)
-        addSubview(cameraIconView)
-        addSubview(cameraTitleLabel)
-        addSubview(cameraMenuButton)
+        let rtsRow = UIStackView(arrangedSubviews: [iconView, titleLabel, UIView(), toggleSwitch])
+        rtsRow.axis = .horizontal
+        rtsRow.alignment = .center
+        rtsRow.spacing = 8
+
+        let cameraRow = UIStackView(arrangedSubviews: [cameraIconView, cameraTitleLabel, UIView(), cameraMenuButton])
+        cameraRow.axis = .horizontal
+        cameraRow.alignment = .center
+        cameraRow.spacing = 8
+
+        NSLayoutConstraint.activate([
+            iconView.widthAnchor.constraint(equalToConstant: 20),
+            iconView.heightAnchor.constraint(equalToConstant: 20),
+            cameraIconView.widthAnchor.constraint(equalToConstant: 20),
+            cameraIconView.heightAnchor.constraint(equalToConstant: 20)
+        ])
+
+        rootStack.addArrangedSubview(rtsRow)
+        rootStack.addArrangedSubview(cameraRow)
+        addSubview(rootStack)
     }
 
     private func setupLayout() {
         NSLayoutConstraint.activate([
-            iconView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            iconView.topAnchor.constraint(equalTo: topAnchor, constant: 12),
-            iconView.widthAnchor.constraint(equalToConstant: 20),
-            iconView.heightAnchor.constraint(equalToConstant: 20),
-
-            titleLabel.leadingAnchor.constraint(equalTo: iconView.trailingAnchor, constant: 8),
-            titleLabel.centerYAnchor.constraint(equalTo: iconView.centerYAnchor),
-
-            toggleSwitch.leadingAnchor.constraint(greaterThanOrEqualTo: titleLabel.trailingAnchor, constant: 12),
-            toggleSwitch.trailingAnchor.constraint(equalTo: trailingAnchor),
-            toggleSwitch.centerYAnchor.constraint(equalTo: iconView.centerYAnchor),
-
-            cameraIconView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            cameraIconView.topAnchor.constraint(equalTo: iconView.bottomAnchor, constant: 16),
-            cameraIconView.widthAnchor.constraint(equalToConstant: 20),
-            cameraIconView.heightAnchor.constraint(equalToConstant: 20),
-            cameraIconView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12),
-
-            cameraTitleLabel.leadingAnchor.constraint(equalTo: cameraIconView.trailingAnchor, constant: 8),
-            cameraTitleLabel.centerYAnchor.constraint(equalTo: cameraIconView.centerYAnchor),
-
-            cameraMenuButton.leadingAnchor.constraint(greaterThanOrEqualTo: cameraTitleLabel.trailingAnchor, constant: 12),
-            cameraMenuButton.trailingAnchor.constraint(equalTo: trailingAnchor),
-            cameraMenuButton.centerYAnchor.constraint(equalTo: cameraIconView.centerYAnchor)
+            rootStack.topAnchor.constraint(equalTo: topAnchor),
+            rootStack.leadingAnchor.constraint(equalTo: leadingAnchor),
+            rootStack.trailingAnchor.constraint(equalTo: trailingAnchor),
+            rootStack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16)
         ])
+    }
+
+    override func preferredLayoutAttributesFitting(
+        _ layoutAttributes: UICollectionViewLayoutAttributes
+    ) -> UICollectionViewLayoutAttributes {
+        let attributes = super.preferredLayoutAttributesFitting(layoutAttributes)
+        let width = layoutAttributes.frame.width
+        let target = CGSize(width: width, height: UIView.layoutFittingCompressedSize.height)
+        let size = systemLayoutSizeFitting(
+            target,
+            withHorizontalFittingPriority: .required,
+            verticalFittingPriority: .fittingSizeLevel
+        )
+        attributes.frame.size.height = ceil(size.height)
+        return attributes
     }
 
     @objc private func toggleChanged(_ sender: UISwitch) {

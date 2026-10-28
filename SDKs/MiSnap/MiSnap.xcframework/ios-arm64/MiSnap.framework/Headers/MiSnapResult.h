@@ -161,6 +161,17 @@ typedef NS_ENUM(NSInteger, MiSnapResultCode) {
  */
 @property (nonatomic, readonly) MiSnapMibi * _Nonnull mibi;
 /**
+ MP4 data recorded during the capture session.
+ */
+@property (nonatomic, readonly) NSData * _Nullable recordedVideo;
+/**
+ Video-recording failure. `nil` when video recording succeeds or was not requested.
+
+ Recording finishes after MIBI is finalized, so these errors are not in `mibi`.
+ Log `recordedVideoError` if you need to share recording failures with Mitek.
+ */
+@property (nonatomic, readonly) MiSnapVideoRecordingError * _Nullable recordedVideoError;
+/**
  Image Quality Analysis result
  */
 @property (nonatomic, readonly) MiSnapScienceIQAResult * _Nonnull iqa;
@@ -200,7 +211,6 @@ typedef NS_ENUM(NSInteger, MiSnapResultCode) {
  A convenience method for getting a string code representation of `MiSnapStatus` value
  */
 + (NSString *)codeFromMiSnapStatus:(MiSnapStatus)status;
-
 @end
 
 NS_ASSUME_NONNULL_END

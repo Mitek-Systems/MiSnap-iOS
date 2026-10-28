@@ -917,6 +917,35 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MiSnapUxpEve
 - (void)addEvent:(enum MiSnapUxpEvent)event value:(NSString * _Nullable)value;
 @end
 
+enum MiSnapVideoRecordingErrorCode : NSInteger;
+/// Domain and curated summaries for video-recording <code>NSError</code> values on the capture result.
+/// Analyzers map platform / ring-buffer failures into this type.
+SWIFT_CLASS("_TtC10MiSnapCore25MiSnapVideoRecordingError")
+@interface MiSnapVideoRecordingError : NSError
+/// <code>NSError</code> domain for video-recording failures.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull errorDomain;)
++ (NSString * _Nonnull)errorDomain SWIFT_WARN_UNUSED_RESULT;
+/// Integrator-facing sentence for <code>code</code>, without a trailing period or failure reason.
++ (NSString * _Nonnull)summaryForCode:(enum MiSnapVideoRecordingErrorCode)code SWIFT_WARN_UNUSED_RESULT;
+/// Builds a recording error with a curated summary and optional platform failure detail.
++ (MiSnapVideoRecordingError * _Nonnull)errorWithCode:(enum MiSnapVideoRecordingErrorCode)code platformError:(NSError * _Nullable)platformError SWIFT_WARN_UNUSED_RESULT;
+/// Maps a camera / ring-buffer <code>NSError</code> into a public recording error.
+/// Already-mapped <code>MiSnapVideoRecording</code> errors are returned as-is when possible.
++ (MiSnapVideoRecordingError * _Nonnull)errorFromPlatformError:(NSError * _Nonnull)platformError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithDomain:(NSString * _Nonnull)domain code:(NSInteger)code userInfo:(NSDictionary<NSString *, id> * _Nullable)dict OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// Codes for non-blocking video-recording failures.
+typedef SWIFT_ENUM(NSInteger, MiSnapVideoRecordingErrorCode, open) {
+/// Recording was requested but no usable video is available.
+  MiSnapVideoRecordingErrorCodeUnavailable = 1,
+/// Video encoding failed.
+  MiSnapVideoRecordingErrorCodeEncoderFailed = 2,
+/// The recorded video file could not be created.
+  MiSnapVideoRecordingErrorCodeMuxFailed = 3,
+};
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -1843,6 +1872,35 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MiSnapUxpEve
 - (void)addEvent:(enum MiSnapUxpEvent)event;
 - (void)addEvent:(enum MiSnapUxpEvent)event value:(NSString * _Nullable)value;
 @end
+
+enum MiSnapVideoRecordingErrorCode : NSInteger;
+/// Domain and curated summaries for video-recording <code>NSError</code> values on the capture result.
+/// Analyzers map platform / ring-buffer failures into this type.
+SWIFT_CLASS("_TtC10MiSnapCore25MiSnapVideoRecordingError")
+@interface MiSnapVideoRecordingError : NSError
+/// <code>NSError</code> domain for video-recording failures.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull errorDomain;)
++ (NSString * _Nonnull)errorDomain SWIFT_WARN_UNUSED_RESULT;
+/// Integrator-facing sentence for <code>code</code>, without a trailing period or failure reason.
++ (NSString * _Nonnull)summaryForCode:(enum MiSnapVideoRecordingErrorCode)code SWIFT_WARN_UNUSED_RESULT;
+/// Builds a recording error with a curated summary and optional platform failure detail.
++ (MiSnapVideoRecordingError * _Nonnull)errorWithCode:(enum MiSnapVideoRecordingErrorCode)code platformError:(NSError * _Nullable)platformError SWIFT_WARN_UNUSED_RESULT;
+/// Maps a camera / ring-buffer <code>NSError</code> into a public recording error.
+/// Already-mapped <code>MiSnapVideoRecording</code> errors are returned as-is when possible.
++ (MiSnapVideoRecordingError * _Nonnull)errorFromPlatformError:(NSError * _Nonnull)platformError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithDomain:(NSString * _Nonnull)domain code:(NSInteger)code userInfo:(NSDictionary<NSString *, id> * _Nullable)dict OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// Codes for non-blocking video-recording failures.
+typedef SWIFT_ENUM(NSInteger, MiSnapVideoRecordingErrorCode, open) {
+/// Recording was requested but no usable video is available.
+  MiSnapVideoRecordingErrorCodeUnavailable = 1,
+/// Video encoding failed.
+  MiSnapVideoRecordingErrorCodeEncoderFailed = 2,
+/// The recorded video file could not be created.
+  MiSnapVideoRecordingErrorCodeMuxFailed = 3,
+};
 
 #endif
 #if __has_attribute(external_source_symbol)

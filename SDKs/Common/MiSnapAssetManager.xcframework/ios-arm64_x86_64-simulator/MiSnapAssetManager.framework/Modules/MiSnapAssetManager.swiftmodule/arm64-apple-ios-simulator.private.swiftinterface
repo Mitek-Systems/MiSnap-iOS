@@ -172,10 +172,15 @@ import _SwiftConcurrencyShims
   @objc public var size: CoreFoundation.CGSize
   @objc public var textAlpha: CoreFoundation.CGFloat
   @objc public var textColor: UIKit.UIColor
+  @objc public var textColorDarkMode: UIKit.UIColor?
+  @objc public var backgroundColor: UIKit.UIColor
+  @objc public var backgroundColorDarkMode: UIKit.UIColor?
   @objc public var fontSize: CoreFoundation.CGFloat
   @objc public var burnupAlpha: CoreFoundation.CGFloat
   @objc public var burnupColor: UIKit.UIColor
+  @objc public var burnupColorDarkMode: UIKit.UIColor?
   @objc public var burnupLineWidth: CoreFoundation.CGFloat
+  @objc public var burnupLineOffset: CoreFoundation.CGFloat
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -308,7 +313,11 @@ extension UIKit.UIFont {
     @objc set
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapFacialCaptureGuideConfiguration? = nil, fill: CoreFoundation.CGFloat, orientation: UIKit.UIInterfaceOrientation = .portrait, frame: CoreFoundation.CGRect)
+  @available(*, deprecated, message: "Call init(with:,fill:,orientation:,previewFrame:,frame:) instead")
+  @objc @_Concurrency.MainActor @preconcurrency convenience public init(with configuration: MiSnapFacialCaptureGuideConfiguration? = nil, fill: CoreFoundation.CGFloat, orientation: UIKit.UIInterfaceOrientation = .portrait, frame: CoreFoundation.CGRect)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(with configuration: MiSnapFacialCaptureGuideConfiguration? = nil, fill: CoreFoundation.CGFloat, orientation: UIKit.UIInterfaceOrientation = .portrait, previewFrame: CoreFoundation.CGRect, frame: CoreFoundation.CGRect)
   #endif
   @objc @_Concurrency.MainActor @preconcurrency public func adjustForLowLight()
   @objc @_Concurrency.MainActor @preconcurrency public func removeLowLightAdjustment()
@@ -787,6 +796,7 @@ extension MiSnapBulletView {
   @objc @_Concurrency.MainActor @preconcurrency public init(for documentType: MiSnapGuideDocumentType, configuration: MiSnapGuideViewConfiguration? = nil, orientationMode: MiSnapGuideOrientationMode, orientation: UIKit.UIInterfaceOrientation, portraitFill: CoreFoundation.CGFloat, landscapeFill: CoreFoundation.CGFloat, previewFrame: CoreFoundation.CGRect, frame: CoreFoundation.CGRect)
   #endif
   @objc @_Concurrency.MainActor @preconcurrency public func update(_ orientation: UIKit.UIInterfaceOrientation)
+  @_Concurrency.MainActor @preconcurrency public func update(_ orientation: UIKit.UIInterfaceOrientation, previewFrame: CoreFoundation.CGRect)
   @objc deinit
 }
 @objc public enum MiSnapCheckboxState : Swift.Int {

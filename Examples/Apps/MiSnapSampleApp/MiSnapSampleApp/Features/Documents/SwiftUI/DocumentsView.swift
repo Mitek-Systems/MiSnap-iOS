@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DocumentsView: View {
     @StateObject var viewModel: DocumentsViewModel
-    
+
     private let columns = [
         GridItem(.adaptive(minimum: 140), spacing: 16)
     ]
@@ -22,7 +22,9 @@ struct DocumentsView: View {
                 }
             }
             .navigationTitle("Documents")
-            .fullScreenCover(isPresented: $viewModel.shouldShowCapture) {
+            .fullScreenCover(isPresented: $viewModel.shouldShowCapture, onDismiss: {
+                viewModel.handleCaptureCoverDismissed()
+            }) {
                 if let preset = viewModel.selectedPreset {
                     captureView(for: preset)
                 }
@@ -68,7 +70,10 @@ struct DocumentsView: View {
 
     private func resultView(for result: DocumentCaptureResult) -> some View {
         let text = result.mibiString ?? "Failed to extract MIBI data."
-        return ResultView(response: text, image: result.image)
+        return ResultView(
+            response: text,
+            image: result.image
+        )
     }
 }
 

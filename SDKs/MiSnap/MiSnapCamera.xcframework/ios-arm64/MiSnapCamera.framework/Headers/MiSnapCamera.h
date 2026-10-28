@@ -51,14 +51,28 @@
 - (void)didDecodeBarcode:(NSString *_Nonnull)decodedBarcodeString;
 
 /**
- Delegates receive this message whenever a video is recorded. The NSData object passed to this delegate method contains recorded video.
- 
+ Called only if the delegate does not implement `didFinishRecordingVideo:error:`.
+ Implement `didFinishRecordingVideo:error:` instead.
+
  @param videoData
  A NSData object that represents a recorded video
   
  @note `recordVideo` property of `MiSnapCameraParameters` should be set to TRUE to enable recording videos
  */
 - (void)didFinishRecordingVideo:(NSData *_Nullable)videoData;
+
+/**
+ Delegates receive this message whenever a video is recorded.
+
+ @param videoData
+ A NSData object that represents a recorded video
+ 
+ @param error
+ A NSError object that represents a video recording error, or `nil` on success
+  
+ @note `recordVideo` property of `MiSnapCameraParameters` should be set to TRUE to enable recording videos
+ */
+- (void)didFinishRecordingVideo:(NSData *_Nullable)videoData error:(NSError *_Nullable)error;
 
 @end
 

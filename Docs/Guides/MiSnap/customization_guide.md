@@ -452,15 +452,24 @@ For all available Success Checkmark view customization options see this [API ref
 # Parameters
 
 ## Video Recording
+When `recordVideo` is `true`, the SDK returns the last part of the recorded session rather than the whole session. Use `videoRecordingDuration` to set the target duration.
+
+Use `videoBitrate` to set the target average bitrate in bits per second (bps). Values are clamped to `[1300000, 2200000]` (default `1300000`).
+
+The recorded MP4 is returned in `MiSnapResult.recordedVideo`. If recording fails, capture can still succeed; `recordedVideo` is `nil` and `MiSnapResult.recordedVideoError` describes the failure. See the [MiSnap Integration Guide](integration_guide.md) for result handling.
+
 Create a configuration for a specific document type and chain `.withCustomParameters`. Refer to a snippet below:
 
 ```Swift
 let configuration = MiSnapConfiguration(for: documentType)
     .withCustomParameters { parameters in
         parameters.camera.recordVideo = true
-
-        // Optionally, enable video recording with audio if required
-        parameters.camera.recordAudio = true 
+        // Optional: target duration in seconds (default 5, range [5, 10])
+        parameters.camera.videoRecordingDuration = 5
+        // Optional: target average bitrate in bps (default 1300000, range [1300000, 2200000])
+        parameters.camera.videoBitrate = 1300000
+        // Optional: include microphone audio
+        parameters.camera.recordAudio = true
     }
 ```
 

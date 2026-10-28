@@ -3287,6 +3287,100 @@
           },
           {
             "kind": "Var",
+            "name": "offset",
+            "printedName": "offset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureTutorialConfiguration(py)offset",
+            "mangledName": "$s21MiSnapFacialCaptureUX0abcD21TutorialConfigurationC6offset12CoreGraphics7CGFloatVvp",
+            "moduleName": "MiSnapFacialCaptureUX",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureTutorialConfiguration(im)offset",
+                "mangledName": "$s21MiSnapFacialCaptureUX0abcD21TutorialConfigurationC6offset12CoreGraphics7CGFloatVvg",
+                "moduleName": "MiSnapFacialCaptureUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureTutorialConfiguration(im)setOffset:",
+                "mangledName": "$s21MiSnapFacialCaptureUX0abcD21TutorialConfigurationC6offset12CoreGraphics7CGFloatVvs",
+                "moduleName": "MiSnapFacialCaptureUX",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21MiSnapFacialCaptureUX0abcD21TutorialConfigurationC6offset14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s21MiSnapFacialCaptureUX0abcD21TutorialConfigurationC6offset12CoreGraphics7CGFloatVvM",
+                "moduleName": "MiSnapFacialCaptureUX",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "backgroundColorDarkMode",
             "printedName": "backgroundColorDarkMode",
             "children": [
@@ -7155,10 +7249,12 @@
             "moduleName": "MiSnapFacialCaptureUX",
             "genericSig": "<τ_0_0 where τ_0_0 : MiSnapFacialCaptureUX.MiSnapFacialCaptureViewControllerDelegate>",
             "sugared_genericSig": "<Self where Self : MiSnapFacialCaptureUX.MiSnapFacialCaptureViewControllerDelegate>",
+            "deprecated": true,
             "protocolReq": true,
             "declAttributes": [
               "Optional",
               "ObjC",
+              "Available",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -7562,6 +7658,34 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "viewDidLayoutSubviews",
+            "printedName": "viewDidLayoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureViewController(im)viewDidLayoutSubviews",
+            "mangledName": "$s21MiSnapFacialCaptureUX0abcD14ViewControllerC21viewDidLayoutSubviewsyyF",
+            "moduleName": "MiSnapFacialCaptureUX",
+            "overriding": true,
+            "objc_name": "viewDidLayoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "prefersStatusBarHidden",
             "printedName": "prefersStatusBarHidden",
@@ -7668,6 +7792,66 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "dismiss",
+            "printedName": "dismiss(animated:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureViewController(im)dismissViewControllerAnimated:completion:",
+            "mangledName": "$s21MiSnapFacialCaptureUX0abcD14ViewControllerC7dismiss8animated10completionySb_yycSgtF",
+            "moduleName": "MiSnapFacialCaptureUX",
+            "overriding": true,
+            "objc_name": "dismissViewControllerAnimated:completion:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -8194,7 +8378,7 @@
           {
             "kind": "Function",
             "name": "didFinishRecordingVideo",
-            "printedName": "didFinishRecordingVideo(_:)",
+            "printedName": "didFinishRecordingVideo(_:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8214,13 +8398,27 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureViewController(im)didFinishRecordingVideo:",
-            "mangledName": "$s21MiSnapFacialCaptureUX0abcD14ViewControllerC23didFinishRecordingVideoyy10Foundation4DataVSgF",
+            "usr": "c:@CM@MiSnapFacialCaptureUX@objc(cs)MiSnapFacialCaptureViewController(im)didFinishRecordingVideo:error:",
+            "mangledName": "$s21MiSnapFacialCaptureUX0abcD14ViewControllerC23didFinishRecordingVideo_5errory10Foundation4DataVSg_s5Error_pSgtF",
             "moduleName": "MiSnapFacialCaptureUX",
-            "objc_name": "didFinishRecordingVideo:",
+            "objc_name": "didFinishRecordingVideo:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -9264,105 +9462,119 @@
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2170,
+      "offset": 1661,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2287,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 32629,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31724,
+      "offset": 34960,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31831,
+      "offset": 35067,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33745,
+      "offset": 36981,
       "length": 45,
       "value": "\"MiSnapFacialCaptureTutorialConfiguration:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33806,
+      "offset": 37042,
       "length": 26,
       "value": "\"\tCancelConfiguration:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33848,
+      "offset": 37084,
       "length": 27,
       "value": "\"\tPrimaryConfiguration:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33891,
+      "offset": 37127,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33943,
+      "offset": 37179,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33955,
+      "offset": 37191,
       "length": 6,
       "value": "\"\t\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33965,
+      "offset": 37201,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 33985,
+      "offset": 37221,
       "length": 29,
       "value": "\"\tSecondaryConfiguration:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34030,
+      "offset": 37266,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34082,
+      "offset": 37318,
       "length": 4,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34094,
+      "offset": 37330,
       "length": 6,
       "value": "\"\t\t\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureTutorialViewController.swift",
       "kind": "StringLiteral",
-      "offset": 34104,
+      "offset": 37340,
       "length": 4,
       "value": "\"\n\""
     },
@@ -9383,91 +9595,91 @@
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1435,
+      "offset": 1480,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "StringLiteral",
-      "offset": 1491,
+      "offset": 1536,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1899,
+      "offset": 2243,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "FloatLiteral",
-      "offset": 25140,
+      "offset": 27546,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 25167,
+      "offset": 27573,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "FloatLiteral",
-      "offset": 26441,
+      "offset": 28847,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 26468,
+      "offset": 28874,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "FloatLiteral",
-      "offset": 27318,
+      "offset": 29724,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 27345,
+      "offset": 29751,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "FloatLiteral",
-      "offset": 28485,
+      "offset": 30891,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 28512,
+      "offset": 30918,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "FloatLiteral",
-      "offset": 30646,
+      "offset": 33052,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 30673,
+      "offset": 33079,
       "length": 5,
       "value": "false"
     },
@@ -9789,49 +10001,98 @@
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3979,
+      "offset": 3567,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4020,
+      "offset": 4223,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4213,
+      "offset": 4264,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4256,
+      "offset": 4457,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4500,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4345,
+      "offset": 4589,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4788,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4835,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4891,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4947,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5001,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5055,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 4594,
+      "offset": 5190,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapBiometrics\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureUX\/MiSnapFacialCaptureViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10496,
+      "offset": 11486,
       "length": 4,
       "value": "true"
     }

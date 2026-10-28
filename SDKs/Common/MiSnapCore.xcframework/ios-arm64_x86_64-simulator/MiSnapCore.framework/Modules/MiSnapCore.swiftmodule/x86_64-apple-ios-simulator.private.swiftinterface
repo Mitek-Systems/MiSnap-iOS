@@ -582,6 +582,36 @@ extension Swift.Array where Element == Swift.UInt8 {
   }
   public func chunk(segmentSize: Swift.Int) -> [[Swift.UInt8]]
 }
+@objc public enum MiSnapVideoRecordingErrorCode : Swift.Int {
+  case unavailable = 1
+  case encoderFailed = 2
+  case muxFailed = 3
+  public var stringValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc final public class MiSnapVideoRecordingError : Foundation.NSError, @unchecked Swift.Sendable {
+  @objc public static let errorDomain: Swift.String
+  @objc(summaryForCode:) public static func summary(for code: MiSnapVideoRecordingErrorCode) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(errorWithCode:platformError:) public static func make(code: MiSnapVideoRecordingErrorCode, platformError: Foundation.NSError?) -> MiSnapVideoRecordingError
+  #endif
+  @objc(errorFromPlatformError:) public static func from(platformError: Foundation.NSError) -> MiSnapVideoRecordingError
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override dynamic public init(domain: Swift.String, code: Swift.Int, userInfo dict: [Swift.String : Any]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @objc deinit
+}
 @objc public enum MiSnapLicenseFeature : Swift.Int {
   case none = 0
   case generic = 1
@@ -676,6 +706,9 @@ extension MiSnapMibiSessionInfoFlow : Swift.RawRepresentable {}
 extension MiSnapMibiSessionInfoUnlock : Swift.Equatable {}
 extension MiSnapMibiSessionInfoUnlock : Swift.Hashable {}
 extension MiSnapMibiSessionInfoUnlock : Swift.RawRepresentable {}
+extension MiSnapVideoRecordingErrorCode : Swift.Equatable {}
+extension MiSnapVideoRecordingErrorCode : Swift.Hashable {}
+extension MiSnapVideoRecordingErrorCode : Swift.RawRepresentable {}
 extension MiSnapLicenseFeature : Swift.Equatable {}
 extension MiSnapLicenseFeature : Swift.Hashable {}
 extension MiSnapLicenseFeature : Swift.RawRepresentable {}

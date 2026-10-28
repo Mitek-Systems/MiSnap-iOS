@@ -14384,6 +14384,703 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "MiSnapVideoRecordingErrorCode",
+        "printedName": "MiSnapVideoRecordingErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unavailable",
+            "printedName": "unavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapCore.MiSnapVideoRecordingErrorCode.Type) -> MiSnapCore.MiSnapVideoRecordingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVideoRecordingErrorCode",
+                    "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode",
+                    "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVideoRecordingErrorCode",
+                        "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode",
+                        "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode@MiSnapVideoRecordingErrorCodeUnavailable",
+            "mangledName": "$s10MiSnapCore0aB23VideoRecordingErrorCodeO11unavailableyA2CmF",
+            "moduleName": "MiSnapCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "encoderFailed",
+            "printedName": "encoderFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapCore.MiSnapVideoRecordingErrorCode.Type) -> MiSnapCore.MiSnapVideoRecordingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVideoRecordingErrorCode",
+                    "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode",
+                    "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVideoRecordingErrorCode",
+                        "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode",
+                        "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode@MiSnapVideoRecordingErrorCodeEncoderFailed",
+            "mangledName": "$s10MiSnapCore0aB23VideoRecordingErrorCodeO13encoderFailedyA2CmF",
+            "moduleName": "MiSnapCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "muxFailed",
+            "printedName": "muxFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MiSnapCore.MiSnapVideoRecordingErrorCode.Type) -> MiSnapCore.MiSnapVideoRecordingErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVideoRecordingErrorCode",
+                    "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode",
+                    "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MiSnapVideoRecordingErrorCode",
+                        "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode",
+                        "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode@MiSnapVideoRecordingErrorCodeMuxFailed",
+            "mangledName": "$s10MiSnapCore0aB23VideoRecordingErrorCodeO9muxFailedyA2CmF",
+            "moduleName": "MiSnapCore",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "stringValue",
+            "printedName": "stringValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MiSnapCore0aB23VideoRecordingErrorCodeO11stringValueSSvp",
+            "mangledName": "$s10MiSnapCore0aB23VideoRecordingErrorCodeO11stringValueSSvp",
+            "moduleName": "MiSnapCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MiSnapCore0aB23VideoRecordingErrorCodeO11stringValueSSvg",
+                "mangledName": "$s10MiSnapCore0aB23VideoRecordingErrorCodeO11stringValueSSvg",
+                "moduleName": "MiSnapCore",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVideoRecordingErrorCode",
+                    "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode",
+                    "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MiSnapCore0aB23VideoRecordingErrorCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10MiSnapCore0aB23VideoRecordingErrorCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "MiSnapCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MiSnapCore0aB23VideoRecordingErrorCodeO8rawValueSivp",
+            "mangledName": "$s10MiSnapCore0aB23VideoRecordingErrorCodeO8rawValueSivp",
+            "moduleName": "MiSnapCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MiSnapCore0aB23VideoRecordingErrorCodeO8rawValueSivg",
+                "mangledName": "$s10MiSnapCore0aB23VideoRecordingErrorCodeO8rawValueSivg",
+                "moduleName": "MiSnapCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode",
+        "mangledName": "$s10MiSnapCore0aB23VideoRecordingErrorCodeO",
+        "moduleName": "MiSnapCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MiSnapVideoRecordingError",
+        "printedName": "MiSnapVideoRecordingError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "errorDomain",
+            "printedName": "errorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError(cpy)errorDomain",
+            "mangledName": "$s10MiSnapCore0aB19VideoRecordingErrorC11errorDomainSSvpZ",
+            "moduleName": "MiSnapCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError(cm)errorDomain",
+                "mangledName": "$s10MiSnapCore0aB19VideoRecordingErrorC11errorDomainSSvgZ",
+                "moduleName": "MiSnapCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "summary",
+            "printedName": "summary(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVideoRecordingErrorCode",
+                "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode",
+                "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError(cm)summaryForCode:",
+            "mangledName": "$s10MiSnapCore0aB19VideoRecordingErrorC7summary3forSSAA0abdeF4CodeO_tFZ",
+            "moduleName": "MiSnapCore",
+            "static": true,
+            "objc_name": "summaryForCode:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "make",
+            "printedName": "make(code:platformError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVideoRecordingError",
+                "printedName": "MiSnapCore.MiSnapVideoRecordingError",
+                "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVideoRecordingErrorCode",
+                "printedName": "MiSnapCore.MiSnapVideoRecordingErrorCode",
+                "usr": "c:@M@MiSnapCore@E@MiSnapVideoRecordingErrorCode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError(cm)errorWithCode:platformError:",
+            "mangledName": "$s10MiSnapCore0aB19VideoRecordingErrorC4make4code08platformF0AcA0abdeF4CodeO_So7NSErrorCSgtFZ",
+            "moduleName": "MiSnapCore",
+            "static": true,
+            "objc_name": "errorWithCode:platformError:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "from",
+            "printedName": "from(platformError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVideoRecordingError",
+                "printedName": "MiSnapCore.MiSnapVideoRecordingError",
+                "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSError",
+                "printedName": "Foundation.NSError",
+                "usr": "c:objc(cs)NSError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError(cm)errorFromPlatformError:",
+            "mangledName": "$s10MiSnapCore0aB19VideoRecordingErrorC4from08platformF0ACSo7NSErrorC_tFZ",
+            "moduleName": "MiSnapCore",
+            "static": true,
+            "objc_name": "errorFromPlatformError:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(domain:code:userInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapVideoRecordingError",
+                "printedName": "MiSnapCore.MiSnapVideoRecordingError",
+                "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError(im)initWithDomain:code:userInfo:",
+            "mangledName": "$s10MiSnapCore0aB19VideoRecordingErrorC6domain4code8userInfoACSS_SiSDySSypGSgtcfc",
+            "moduleName": "MiSnapCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithDomain:code:userInfo:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiSnapCore.MiSnapVideoRecordingError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapVideoRecordingError",
+                    "printedName": "MiSnapCore.MiSnapVideoRecordingError",
+                    "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError(im)initWithCoder:",
+            "mangledName": "$s10MiSnapCore0aB19VideoRecordingErrorC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "MiSnapCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MiSnapCore@objc(cs)MiSnapVideoRecordingError",
+        "mangledName": "$s10MiSnapCore0aB19VideoRecordingErrorC",
+        "moduleName": "MiSnapCore",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSError",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "Foundation.NSError",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MiSnapCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "MiSnapLicenseFeature",
         "printedName": "MiSnapLicenseFeature",
         "children": [
@@ -19088,6 +19785,34 @@
       "offset": 3608,
       "length": 1,
       "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapCore\/MiSnapCore\/MiSnapVideoRecordingError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 292,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapCore\/MiSnapCore\/MiSnapVideoRecordingError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 363,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapCore\/MiSnapCore\/MiSnapVideoRecordingError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 453,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapCore\/MiSnapCore\/MiSnapVideoRecordingError.swift",
+      "kind": "StringLiteral",
+      "offset": 1113,
+      "length": 22,
+      "value": "\"MiSnapVideoRecording\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapCore\/MiSnapCore\/MiSnapLicenseManager.swift",

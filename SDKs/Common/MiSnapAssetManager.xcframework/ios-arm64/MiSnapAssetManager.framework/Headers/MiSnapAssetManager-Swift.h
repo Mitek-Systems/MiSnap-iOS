@@ -974,27 +974,78 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager45MiSnapFacialCaptureCountdownViewConfigura
 ///     See: <code>MiSnapFacialCaptureCountdownStyle</code>
 ///   </li>
 /// </ul>
+/// Default: <code>.burndUp</code>
 @property (nonatomic) enum MiSnapFacialCaptureCountdownStyle style;
 /// Size
+/// Default: <code>100 x 100</code> pixels
 @property (nonatomic) CGSize size;
 /// Text alpha
+/// Default: <code>0.8</code>
 @property (nonatomic) CGFloat textAlpha;
-/// Text  color
+/// Text  color in Light mode
+/// note:
+/// it’s reused in Dark mode if <code>textColorDarkMode</code> isn’t set (default)
+/// Default: <code>.black</code>
 @property (nonatomic, strong) UIColor * _Nonnull textColor;
+/// Text  color in Dark mode
+/// note:
+/// <code>textColor</code> is reused if this property is not set explicitly (default)
+/// Default: <code>nil</code> (not set)
+/// since:
+/// 5.13.0
+@property (nonatomic, strong) UIColor * _Nullable textColorDarkMode;
+/// Background color in Light mode
+/// note:
+/// it’s reused in Dark mode if <code>backgroundColorDarkMode</code> isn’t set (default)
+/// Default: <code>.clear</code>
+/// since:
+/// 5.13.0
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Background color in Dark mode
+/// note:
+/// <code>backgroundColor</code> is reused if this property is not set explicitly (default)
+/// Default: <code>nil</code> (not set)
+/// since:
+/// 5.13.0
+@property (nonatomic, strong) UIColor * _Nullable backgroundColorDarkMode;
 /// Font size
 @property (nonatomic) CGFloat fontSize;
 /// Burn up alpha
 /// note:
-/// Used only when <code>style</code> is <code>MiSnapFacialCaptureCountdownStyle.burndUp</code>
+/// Used only when <code>style</code> is <code>MiSnapFacialCaptureCountdownStyle.burndUp</code> (default)
 @property (nonatomic) CGFloat burnupAlpha;
 /// Burn up color
 /// note:
-/// Used only when <code>style</code> is <code>MiSnapFacialCaptureCountdownStyle.burndUp</code>
+///
+/// <ul>
+///   <li>
+///     Used only when <code>style</code> is <code>MiSnapFacialCaptureCountdownStyle.burndUp</code> (default)
+///   </li>
+///   <li>
+///     Reused in Dark mode if <code>burnupColorDarkMode</code> isn’t set (default)
+///   </li>
+/// </ul>
+/// Default: <code>rgb(78, 149, 44) or hex(#4e952c)</code>
 @property (nonatomic, strong) UIColor * _Nonnull burnupColor;
+/// Burn up color in Dark mode
+/// note:
+/// <code>burnupColor</code> is reused if this property is not set explicitly (default)
+/// Default: <code>nil</code> (not set)
+/// since:
+/// 5.13.0
+@property (nonatomic, strong) UIColor * _Nullable burnupColorDarkMode;
 /// Burn up line width
 /// note:
-/// Used only when <code>style</code> is <code>MiSnapFacialCaptureCountdownStyle.burndUp</code>
+/// Used only when <code>style</code> is <code>MiSnapFacialCaptureCountdownStyle.burndUp</code> (default)
+/// Default: <code>10</code> pixels
 @property (nonatomic) CGFloat burnupLineWidth;
+/// Burn up line offset from the countdown’s edge
+/// note:
+/// Used only when <code>style</code> is <code>MiSnapFacialCaptureCountdownStyle.burndUp</code> (default)
+/// Default: <code>5</code> pixels
+/// since:
+/// 5.13.0
+@property (nonatomic) CGFloat burnupLineOffset;
 /// Description
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1029,7 +1080,11 @@ SWIFT_CLASS("_TtC18MiSnapAssetManager28MiSnapFacialCaptureGuideView")
 @property (nonatomic) enum MiSnapFacialCaptureOutlineState state;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// Creates and returns <code>MiSnapFacialCaptureGuideView</code> with given parameters
-- (nonnull instancetype)initWith:(MiSnapFacialCaptureGuideConfiguration * _Nullable)configuration fill:(CGFloat)fill orientation:(UIInterfaceOrientation)orientation frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWith:(MiSnapFacialCaptureGuideConfiguration * _Nullable)configuration fill:(CGFloat)fill orientation:(UIInterfaceOrientation)orientation frame:(CGRect)frame SWIFT_DEPRECATED_MSG("Call init(with:,fill:,orientation:,previewFrame:,frame:) instead");
+/// Creates and returns <code>MiSnapFacialCaptureGuideView</code> with given parameters
+/// \param previewFrame Rectangle within <code>frame</code> occupied by the camera preview.
+///
+- (nonnull instancetype)initWith:(MiSnapFacialCaptureGuideConfiguration * _Nullable)configuration fill:(CGFloat)fill orientation:(UIInterfaceOrientation)orientation previewFrame:(CGRect)previewFrame frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 /// Adjusts look and feel for low light
 - (void)adjustForLowLight;
 - (void)removeLowLightAdjustment;

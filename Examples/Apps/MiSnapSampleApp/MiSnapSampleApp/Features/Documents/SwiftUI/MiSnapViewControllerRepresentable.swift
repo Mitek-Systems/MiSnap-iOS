@@ -8,6 +8,7 @@
 import SwiftUI
 import MiSnap
 import MiSnapUX
+import MiSnapAssetManager
 
 struct MiSnapViewControllerRepresentable: UIViewControllerRepresentable {
     let configuration: MiSnapConfiguration
@@ -69,7 +70,7 @@ struct MiSnapViewControllerRepresentable: UIViewControllerRepresentable {
         func miSnapException(_ exception: NSException) {
             onException(exception)
         }
-        
+
         func miSnapShouldBeDismissed() {
             onShouldBeDismissed()
         }

@@ -173,18 +173,22 @@ func miSnapFacialCaptureLicenseStatus(_ status: MiSnapLicenseStatus) {
 
 func miSnapFacialCaptureSuccess(_ result: MiSnapFacialCaptureResult) {
     // Handle successful session results here
+    if let videoError = result.recordedVideoError {
+        // Capture succeeded, but video recording failed
+        print("Video recording failed: \(videoError.domain) \(videoError.code) \(videoError.localizedDescription)")
+    } else if let videoData = result.recordedVideo {
+        // Handle recorded MP4 data
+    }
 }
 
 func miSnapFacialCaptureCancelled(_ result: MiSnapFacialCaptureResult) {
     // Handle cancelled session results here 
 }
 ```
-Implement the following optional callback if `recordVideo` of `MiSnapFacialCaptureCameraParameters` is overridden to `true`:
-```Swift
-func miSnapFacialCaptureDidFinishRecordingVideo(_ videoData: Data?) {
-    // Handle recorded video data here
-}
-```
+When `recordVideo` is `true`, read `recordedVideo` and `recordedVideoError` from `MiSnapFacialCaptureResult`. Video recording is best-effort: a recording failure does not change a successful capture result. In that case, `recordedVideo` is `nil` and `recordedVideoError` contains a `MiSnapVideoRecordingError`. Recording finishes after MIBI is finalized, so these errors are not in `mibi` — log `recordedVideoError` if you need to share recording failures with Mitek. Configure duration with `videoRecordingDuration` and bitrate with `videoBitrate` (bps); see the [Customization Guide](customization_guide.md#video-recording).
+
+The optional `miSnapFacialCaptureDidFinishRecordingVideo(_:)` callback is deprecated. Use the result properties instead.
+
 Note, if `autoDismiss` of `MiSnapFacialCaptureUXParameters` is overridden to `false`, a parent view controller that presented `MiSnapFacialCaptureViewController` is responsible for dismissing it. Implement the following optional callback to achive this:
 ```Swift
 func miSnapFacialCaptureShouldBeDismissed() {

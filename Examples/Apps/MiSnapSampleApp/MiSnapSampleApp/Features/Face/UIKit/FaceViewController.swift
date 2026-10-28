@@ -70,7 +70,10 @@ final class FaceViewController: UIViewController {
             .sink { [weak self] result in
                 guard let self, let result else { return }
                 let response = result.mibiString ?? "Failed to extract MIBI data."
-                let controller = ResultViewController(response: response, image: result.image)
+                let controller = ResultViewController(
+                    response: response,
+                    image: result.image
+                )
                 let nav = UINavigationController(rootViewController: controller)
                 nav.modalPresentationStyle = .pageSheet
                 self.present(nav, animated: true)
@@ -87,18 +90,20 @@ final class FaceViewController: UIViewController {
 
         viewModel.$aiBasedRtsEnabled
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] isEnabled in
-                guard let self else { return }
-                self.controlsHeaderView?.configure(isAiBasedRtsEnabled: isEnabled, cameraPosition: self.viewModel.cameraPosition)
-            }
+            .sink { [weak self] _ in self?.refreshControlsHeader() }
             .store(in: &cancellables)
 
         viewModel.$cameraPosition
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] position in
-                self?.controlsHeaderView?.configure(isAiBasedRtsEnabled: self?.viewModel.aiBasedRtsEnabled ?? false, cameraPosition: position)
-            }
+            .sink { [weak self] _ in self?.refreshControlsHeader() }
             .store(in: &cancellables)
+    }
+
+    private func refreshControlsHeader() {
+        controlsHeaderView?.configure(
+            isAiBasedRtsEnabled: viewModel.aiBasedRtsEnabled,
+            cameraPosition: viewModel.cameraPosition
+        )
     }
 
     private func presentCapture(for preset: FacePreset) {
@@ -137,7 +142,7 @@ final class FaceViewController: UIViewController {
 
             let headerSize = NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1.0),
-                heightDimension: .estimated(96)
+                heightDimension: .estimated(140)
             )
             let header = NSCollectionLayoutBoundarySupplementaryItem(
                 layoutSize: headerSize,
@@ -186,7 +191,10 @@ extension FaceViewController: UICollectionViewDataSource {
             return UICollectionReusableView()
         }
 
-        header.configure(isAiBasedRtsEnabled: viewModel.aiBasedRtsEnabled, cameraPosition: viewModel.cameraPosition)
+        header.configure(
+            isAiBasedRtsEnabled: viewModel.aiBasedRtsEnabled,
+            cameraPosition: viewModel.cameraPosition
+        )
         header.onAiBasedRtsChanged = { [weak self] isEnabled in
             self?.viewModel.aiBasedRtsEnabled = isEnabled
         }
@@ -224,13 +232,12 @@ extension FaceViewController: MiSnapFacialCaptureViewControllerDelegate {
 
     func miSnapFacialCaptureShouldBeDismissed() {
         viewModel.handleDismiss()
-        activeCaptureController?.dismiss(animated: true)
-        activeCaptureController = nil
+        activeCaptureController?.dismiss(animated: true) { [weak self] in
+            self?.viewModel.handleCaptureCoverDismissed()
+            self?.activeCaptureController = nil
+        }
     }
 
-    // Optional callbacks — only called when showHelpScreen / showTimeoutScreen are false in
-    // MiSnapFacialCaptureUxParameters. This is the case for the customSelfie preset, which
-    // disables the SDK's built-in screens so we can present our own tutorial UI instead.
     func miSnapFacialCaptureHelpAction() {
         guard let captureVC = activeCaptureController else { return }
         let tutorialVC = CustomFacialCaptureTutorialViewController(for: .help, delegate: captureVC)

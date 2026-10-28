@@ -70,11 +70,25 @@
 - (void)didDecodeBarcode:(NSString *_Nullable)decodedBarcodeString;
 
 /**
- Delegates receive this message whenever a video is recorded. The NSData object passed to this delegate method contains recorded video.
- 
+ Called only if the delegate does not implement `didFinishRecordingVideo:error:`.
+ Implement `didFinishRecordingVideo:error:` instead.
+
  - Note: RecordVideo property of MiSnapFacialCaptureCameraParameters should be set to TRUE to enable MiSnapFacialCapture to record videos
  */
 - (void)didFinishRecordingVideo:(NSData *_Nullable)videoData;
+
+/**
+ Delegates receive this message whenever a video is recorded.
+
+ @param videoData
+ A NSData object that represents a recorded video
+ 
+ @param error
+ A NSError object that represents a video recording error, or `nil` on success
+ 
+ - Note: RecordVideo property of MiSnapFacialCaptureCameraParameters should be set to TRUE to enable MiSnapFacialCapture to record videos
+ */
+- (void)didFinishRecordingVideo:(NSData *_Nullable)videoData error:(NSError *_Nullable)error;
 
 @end
 
@@ -118,6 +132,10 @@
  Exposure
  */
 @property (nonatomic, readwrite) MiSnapFacialCaptureCameraExposureResult * _Nonnull exposure;
+/**
+ Rectangle occupied by the camera preview within the view's bounds
+ */
+@property (nonatomic, readonly) CGRect previewRect;
 /**
  Creates an instance of `MiSnapFacialCaptureCamera`
  @param sessionPreset the `AVCaptureSessionPreset` to use

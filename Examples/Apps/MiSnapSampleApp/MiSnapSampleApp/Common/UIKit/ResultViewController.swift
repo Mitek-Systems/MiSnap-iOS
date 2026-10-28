@@ -18,7 +18,12 @@ final class ResultViewController: UIViewController {
     private var overlayView: UIView?
     private var audioPlayerCards: [AudioPlayerCardView] = []
 
-    init(response: String, images: [UIImage] = [], summary: String? = nil, audioData: [Data] = []) {
+    init(
+        response: String,
+        images: [UIImage] = [],
+        summary: String? = nil,
+        audioData: [Data] = []
+    ) {
         self.responseText = JSONFormatter.prettyPrint(response)
         self.images = images
         self.summaryText = summary
@@ -26,8 +31,18 @@ final class ResultViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
 
-    convenience init(response: String, image: UIImage?, summary: String? = nil, audioData: [Data] = []) {
-        self.init(response: response, images: image.map { [$0] } ?? [], summary: summary, audioData: audioData)
+    convenience init(
+        response: String,
+        image: UIImage?,
+        summary: String? = nil,
+        audioData: [Data] = []
+    ) {
+        self.init(
+            response: response,
+            images: image.map { [$0] } ?? [],
+            summary: summary,
+            audioData: audioData
+        )
     }
 
     required init?(coder: NSCoder) {

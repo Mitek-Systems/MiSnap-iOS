@@ -7299,6 +7299,336 @@
           },
           {
             "kind": "Var",
+            "name": "textColorDarkMode",
+            "printedName": "textColorDarkMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(py)textColorDarkMode",
+            "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC17textColorDarkModeSo7UIColorCSgvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(im)textColorDarkMode",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC17textColorDarkModeSo7UIColorCSgvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(im)setTextColorDarkMode:",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC17textColorDarkModeSo7UIColorCSgvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC17textColorDarkModeSo7UIColorCSgvM",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC17textColorDarkModeSo7UIColorCSgvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backgroundColor",
+            "printedName": "backgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(py)backgroundColor",
+            "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC15backgroundColorSo7UIColorCvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(im)backgroundColor",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC15backgroundColorSo7UIColorCvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(im)setBackgroundColor:",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC15backgroundColorSo7UIColorCvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC15backgroundColorSo7UIColorCvM",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC15backgroundColorSo7UIColorCvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backgroundColorDarkMode",
+            "printedName": "backgroundColorDarkMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(py)backgroundColorDarkMode",
+            "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC23backgroundColorDarkModeSo7UIColorCSgvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(im)backgroundColorDarkMode",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC23backgroundColorDarkModeSo7UIColorCSgvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(im)setBackgroundColorDarkMode:",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC23backgroundColorDarkModeSo7UIColorCSgvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC23backgroundColorDarkModeSo7UIColorCSgvM",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC23backgroundColorDarkModeSo7UIColorCSgvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "fontSize",
             "printedName": "fontSize",
             "children": [
@@ -7581,6 +7911,124 @@
           },
           {
             "kind": "Var",
+            "name": "burnupColorDarkMode",
+            "printedName": "burnupColorDarkMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(py)burnupColorDarkMode",
+            "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC19burnupColorDarkModeSo7UIColorCSgvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(im)burnupColorDarkMode",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC19burnupColorDarkModeSo7UIColorCSgvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(im)setBurnupColorDarkMode:",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC19burnupColorDarkModeSo7UIColorCSgvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC19burnupColorDarkModeSo7UIColorCSgvM",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC19burnupColorDarkModeSo7UIColorCSgvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "burnupLineWidth",
             "printedName": "burnupLineWidth",
             "children": [
@@ -7667,6 +8115,100 @@
                 "declKind": "Accessor",
                 "usr": "s:18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC15burnupLineWidth14CoreFoundation7CGFloatVvM",
                 "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC15burnupLineWidth12CoreGraphics7CGFloatVvM",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "burnupLineOffset",
+            "printedName": "burnupLineOffset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(py)burnupLineOffset",
+            "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC16burnupLineOffset12CoreGraphics7CGFloatVvp",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(im)burnupLineOffset",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC16burnupLineOffset12CoreGraphics7CGFloatVvg",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureCountdownViewConfiguration(im)setBurnupLineOffset:",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC16burnupLineOffset12CoreGraphics7CGFloatVvs",
+                "moduleName": "MiSnapAssetManager",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC16burnupLineOffset14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s18MiSnapAssetManager0aB39FacialCaptureCountdownViewConfigurationC16burnupLineOffset12CoreGraphics7CGFloatVvM",
                 "moduleName": "MiSnapAssetManager",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -10975,7 +11517,76 @@
             "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureGuideView(im)initWith:fill:orientation:frame:",
             "mangledName": "$s18MiSnapAssetManager0aB22FacialCaptureGuideViewC4with4fill11orientation5frameAcA0abefG13ConfigurationCSg_12CoreGraphics7CGFloatVSo22UIInterfaceOrientationVSo6CGRectVtcfc",
             "moduleName": "MiSnapAssetManager",
+            "deprecated": true,
             "objc_name": "initWith:fill:orientation:frame:",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Convenience",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(with:fill:orientation:previewFrame:frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MiSnapFacialCaptureGuideView",
+                "printedName": "MiSnapAssetManager.MiSnapFacialCaptureGuideView",
+                "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureGuideView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MiSnapAssetManager.MiSnapFacialCaptureGuideConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MiSnapFacialCaptureGuideConfiguration",
+                    "printedName": "MiSnapAssetManager.MiSnapFacialCaptureGuideConfiguration",
+                    "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureGuideConfiguration"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientation",
+                "printedName": "UIKit.UIInterfaceOrientation",
+                "hasDefaultArg": true,
+                "usr": "c:@E@UIInterfaceOrientation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MiSnapAssetManager@objc(cs)MiSnapFacialCaptureGuideView(im)initWith:fill:orientation:previewFrame:frame:",
+            "mangledName": "$s18MiSnapAssetManager0aB22FacialCaptureGuideViewC4with4fill11orientation12previewFrame5frameAcA0abefG13ConfigurationCSg_12CoreGraphics7CGFloatVSo22UIInterfaceOrientationVSo6CGRectVARtcfc",
+            "moduleName": "MiSnapAssetManager",
+            "objc_name": "initWith:fill:orientation:previewFrame:frame:",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -29451,6 +30062,41 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(_:previewFrame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientation",
+                "printedName": "UIKit.UIInterfaceOrientation",
+                "usr": "c:@E@UIInterfaceOrientation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MiSnapAssetManager0aB9GuideViewC6update_12previewFrameySo22UIInterfaceOrientationV_So6CGRectVtF",
+            "mangledName": "$s18MiSnapAssetManager0aB9GuideViewC6update_12previewFrameySo22UIInterfaceOrientationV_So6CGRectVtF",
+            "moduleName": "MiSnapAssetManager",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(frame:)",
@@ -46593,217 +47239,224 @@
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "FloatLiteral",
-      "offset": 860,
+      "offset": 930,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "FloatLiteral",
-      "offset": 875,
+      "offset": 945,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "FloatLiteral",
-      "offset": 956,
+      "offset": 1052,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1054,
+      "offset": 1280,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1064,
+      "offset": 1290,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1073,
+      "offset": 1299,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1083,
+      "offset": 1309,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "FloatLiteral",
-      "offset": 1158,
+      "offset": 2153,
       "length": 4,
       "value": "65.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "FloatLiteral",
-      "offset": 1331,
+      "offset": 2336,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "FloatLiteral",
-      "offset": 1522,
+      "offset": 2671,
       "length": 12,
       "value": "0.3411764801"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "FloatLiteral",
-      "offset": 1543,
+      "offset": 2692,
       "length": 12,
       "value": "0.6235294342"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "FloatLiteral",
-      "offset": 1563,
+      "offset": 2712,
       "length": 12,
       "value": "0.1686274558"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1584,
+      "offset": 2733,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1764,
+      "offset": 3209,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3485,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 1870,
+      "offset": 3590,
       "length": 50,
       "value": "\"MiSnapFacialCaptureCountdownViewConfiguration:\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 1936,
+      "offset": 3656,
       "length": 41,
       "value": "\"\tstyle: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 1974,
+      "offset": 3694,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 1993,
+      "offset": 3713,
       "length": 39,
       "value": "\"\tsize: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2029,
+      "offset": 3749,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2048,
+      "offset": 3768,
       "length": 49,
       "value": "\"\ttextAlpha: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2094,
+      "offset": 3814,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2113,
+      "offset": 3833,
       "length": 49,
       "value": "\"\ttextColor: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2159,
+      "offset": 3879,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2178,
+      "offset": 3898,
       "length": 47,
       "value": "\"\tfontSize: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2222,
+      "offset": 3942,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2241,
+      "offset": 3961,
       "length": 53,
       "value": "\"\tburnupAlpha: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2291,
+      "offset": 4011,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2310,
+      "offset": 4030,
       "length": 53,
       "value": "\"\tburnupColor: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2360,
+      "offset": 4080,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2379,
+      "offset": 4099,
       "length": 61,
       "value": "\"\tburnupLineWidth: \""
     },
     {
       "filePath": "\/Volumes\/Storage\/jenkins_workspace\/workspace\/MiSnap\/iOS\/iOS_MiSnap_5x\/MiSnapAssetManager\/MiSnapAssetManager\/MiSnapFacialCaptureCountdownView.swift",
       "kind": "StringLiteral",
-      "offset": 2437,
+      "offset": 4157,
       "length": 1,
       "value": "\"\n\""
     },

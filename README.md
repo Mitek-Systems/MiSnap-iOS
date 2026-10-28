@@ -115,16 +115,16 @@ See [this guide](Docs/Guides/Common/workflow.md) for `MiSnapWorkflow` integratio
 
 | Component                        | Compressed, MB | Uncompressed, MB |
 | :------------------------------- | :------------: | :--------------: |
-| MiSnap                           |  1.47          |  3.68            |
-| MiSnap + MiSnapUX                |  1.87          |  5.08            |
+| MiSnap                           |  1.77          |  4.38            |
+| MiSnap + MiSnapUX                |  2.17          |  5.78            |
 | NFC                              |  1.87          |  4.78            |
-| NFC + NFCUX                      |  2.37          |  6.08            |
-| FacialCapture                    |  0.21          |  0.65            |
-| FacialCapture + FacialCaptureUX  |  0.63          |  1.98            |
+| NFC + NFCUX                      |  2.47          |  6.18            |
+| FacialCapture                    |  0.23          |  0.70            |
+| FacialCapture + FacialCaptureUX  |  0.66          |  2.08            |
 | VoiceCapture                     |  0.92          |  2.28            |
-| VoiceCapture + VoiceCaptureUX    |  1.37          |  3.48            |
-| All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture)                   |  4.07          |  10.28           |
-| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  4.97          |  12.78           |
+| VoiceCapture + VoiceCaptureUX    |  1.37          |  3.58            |
+| All SDKs (MiSnap + MiSnapNFC + MiSnapFacialCapture + MiSnapVoiceCapture)                   |  4.37          |  10.98           |
+| All SDKs + UXs (MiSnapUX + MiSnapNFCUX + MiSnapFacialCaptureUX + MiSnapVoiceCaptureUX)              |  5.37          |  13.58           |
 | MiSnapIAD + IADCommon (optional)    |  0.68          |  1.98            |
 </center>
 
@@ -142,33 +142,93 @@ Refer to "Create the App Size Report" section of [this article](https://develope
 
 | Device                           | Version      |
 | :-----                           | :-----:      |
+| iPhone 18 Pro                    | 27.0.1       |
+| iPhone 17 Pro Max                | 27.0.1       |
+|                                  | 27.0         |
+|                                  | 26.6.2       |
+| iPhone 17 Pro                    | 27.2         |
+|                                  | 27.0.1       |
+|                                  | 26.6.2       |
 | iPhone 17 Air                    | 26.0         |
-| iPhone 17                        | 26.0         |
+| iPhone 17                        | 26.7.1       |
+|                                  | 26.0         |
 | iPhone 17e                       | 26.4         |
-| iPhone 16 Pro                    | 26.1         |
-| iPhone 16 Plus                   | 18.7.7       |
-| iPhone 16                        | 18.2.1       |
-| iPhone 16e                       | 18.3         |
-| iPhone 15 Pro                    | 26.3.1       |
+| iPhone 16 Pro Max                | 27.2         |
+|                                  | 27.0.1       |
+|                                  | 26.6         |
+| iPhone 16 Pro                    | 27.0         |
+|                                  | 26.6.2       |
+| iPhone 16 Plus                   | 27.2         |
+|                                  | 27.0.1       |
+|                                  | 27.0         |
+| iPhone 16                        | 27.2         |
+|                                  | 26.6.2       |
+|                                  | 18.2.1       |
+| iPhone 16e                       | 26.6.1       |
+|                                  | 26.6         |
+|                                  | 26.5         |
+|                                  | 18.3         |
+| iPhone 15 Pro Max                | 27.0         |
+|                                  | 26.7.1       |
+|                                  | 26.5.2       |
+| iPhone 15 Pro                    | 27.0.1       |
+|                                  | 27.0         |
+|                                  | 26.5         |
+|                                  | 26.3.1       |
 | iPhone 15 Plus                   | 17.5.1       |
+| iPhone 15                        | 27.0.1       |
+|                                  | 27.0         |
+|                                  | 26.6.2       |
 | iPhone 14 Pro Max                | 17.0.3       |
-| iPhone 14 Plus                   | 16.5.1       |
-| iPhone 13                        | 26.3.1       |
-| iPhone 13 mini                   | 16.4.1       |
-| iPhone 12 Pro Max                | 16.4         |
+| iPhone 14 Pro                    | 27.0.1       |
+|                                  | 27.0         |
+|                                  | 18.7.8       |
+| iPhone 14 Plus                   | 27.0.1       |
+|                                  | 26.7.1       |
+| iPhone 14                        | 27.2         |
+|                                  | 27.0.1       |
+|                                  | 26.6.2       |
+|                                  | 18.5         |
+| iPhone 13 Pro Max                | 27.2         |
+|                                  | 18.7.8       |
+| iPhone 13 Pro                    | 27.0.1       |
+| iPhone 13                        | 27.0.1       |
+|                                  | 26.6.2       |
+|                                  | 26.6.1       |
+|                                  | 26.5.2       |
+|                                  | 26.3.1       |
+|                                  | 26.2.1       |
+| iPhone 13 mini                   | 27.0.1       |
+|                                  | 27.0         |
+| iPhone 12 Pro Max                | 18.3.2       |
+|                                  | 26.6.2       |
+|                                  | 16.4         |
 | iPhone 12 mini                   | 26.2         |
-| iPhone 11 Pro                    | 16.0         |
-| iPhone 11                        | 18.4         |
-| iPhone XR                        | 16.3.1       |
-| iPhone 8                         | 16.4.1       |
+|                                  | 26.5         |
+|                                  | 26.6.2       |
+| iPhone 12                        | 26.7         |
+|                                  | 26.7.1       |
+|                                  | 27.0.1       |
+| iPhone 11 Pro                    | 27.0.1       |
+|                                  | 16.0         |
+| iPhone 11                        | 27.2         |
+|                                  | 18.7.8       |
+| iPhone X                         | 16.7.16      |
+| iPhone XR                        | 18.7.10      |
+|                                  | 16.3.1       |
+| iPhone XS                        | 18.7.9       |
+| iPhone 8                         | 16.7.16      |
 | iPhone 7                         | 15.7.3       |
-| iPhone 5s                        | 12.5.7       |
-| iPhone SE (3rd gen)              | 17.7.1       |
+| iPhone 6s                        | 15.8.8       |
+| iPhone SE (3rd gen)              | 18.7.8       |
+|                                  | 17.1.1       |
 | iPhone SE (2nd gen)              | 18.6.1       |
 | iPhone SE (1st gen)              | 15.8.5       |
-| iPad Air (4th gen)               | 26.0         |
+| iPad Air (4th gen)               | 27.0         |
 | iPad Air (11th gen)              | 18.5         |
 | iPad Pro (2nd gen)               | 26.1         |
+| iPad (5th gen)                   | 16.7.16      |
+| iPad (7th gen)                   | 18.7.9       |
 
 </center>
 

@@ -333,7 +333,8 @@
 			children = (
 				7D75194C2EB8CF43002C05C2 /* MiSnapLocalizable.strings */,
 			);
-			path = MiSnap;
+			name = MiSnap;
+			path = ../../../../../../../../Assets/MiSnap;
 			sourceTree = "<group>";
 		};
 		7D7519512EB8CF43002C05C2 /* MiSnapFacialCapture */ = {
@@ -341,7 +342,8 @@
 			children = (
 				7D7519502EB8CF43002C05C2 /* MiSnapFacialCaptureLocalizable.strings */,
 			);
-			path = MiSnapFacialCapture;
+			name = MiSnapFacialCapture;
+			path = ../../../../../../../../Assets/MiSnapFacialCapture;
 			sourceTree = "<group>";
 		};
 		7D7519592EB8CF43002C05C2 /* MiSnapNFC */ = {
@@ -353,16 +355,17 @@
 				7D7519572EB8CF43002C05C2 /* passport.png */,
 				7D7519582EB8CF43002C05C2 /* target.png */,
 			);
-			path = MiSnapNFC;
+			name = MiSnapNFC;
+			path = ../../../../../../../../Assets/MiSnapNFC;
 			sourceTree = "<group>";
 		};
 		7D75195D2EB8CF43002C05C2 /* MiSnapVoiceCapture */ = {
 			isa = PBXGroup;
 			children = (
-				7DCD40272F8D36B50037FF8E /* MiSnapVoiceCaptureCustomLocalizable.strings */,
 				7D75195C2EB8CF43002C05C2 /* MiSnapVoiceCaptureLocalizable.strings */,
 			);
-			path = MiSnapVoiceCapture;
+			name = MiSnapVoiceCapture;
+			path = ../../../../../../../../Assets/MiSnapVoiceCapture;
 			sourceTree = "<group>";
 		};
 		7D7519602EB8CF43002C05C2 /* Models */ = {
@@ -719,8 +722,18 @@
 			isa = PBXGroup;
 			children = (
 				7D75195D2EB8CF43002C05C2 /* MiSnapVoiceCapture */,
+				AA1200052F700000C0C00005 /* MiSnapVoiceCaptureCustom */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		AA1200052F700000C0C00005 /* MiSnapVoiceCaptureCustom */ = {
+			isa = PBXGroup;
+			children = (
+				7DCD40272F8D36B50037FF8E /* MiSnapVoiceCaptureCustomLocalizable.strings */,
+			);
+			name = MiSnapVoiceCaptureCustom;
+			path = MiSnapVoiceCapture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

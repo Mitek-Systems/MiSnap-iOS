@@ -14,7 +14,7 @@ struct FaceView: View {
     private let columns = [
         GridItem(.adaptive(minimum: 140), spacing: 16)
     ]
-    
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -25,7 +25,9 @@ struct FaceView: View {
                 }
             }
             .navigationTitle("Face")
-            .fullScreenCover(isPresented: $viewModel.shouldShowCapture) {
+            .fullScreenCover(isPresented: $viewModel.shouldShowCapture, onDismiss: {
+                viewModel.handleCaptureCoverDismissed()
+            }) {
                 if let preset = viewModel.selectedPreset {
                     captureView(for: preset)
                 }
@@ -38,9 +40,9 @@ struct FaceView: View {
         // Face capture: portrait only on iPhone, all orientations on iPad
         .onAppear { OrientationManager.shared.setOrientation(iPhone: .portrait, iPad: .all) }
     }
-    
+
     // MARK: - Subviews
-    
+
     private var aiBasedRtsToggle: some View {
         HStack {
             Label("AI-based RTS", systemImage: "sparkles")
@@ -81,7 +83,7 @@ struct FaceView: View {
         }
         .padding()
     }
-    
+
     private func captureView(for preset: FacePreset) -> some View {
         let configuration = viewModel.makeConfiguration(for: preset)
         var onHelpAction: ((MiSnapFacialCaptureViewController) -> Void)?
@@ -124,10 +126,13 @@ struct FaceView: View {
         hostingController.modalTransitionStyle = .crossDissolve
         captureVC.presentVC(hostingController)
     }
-    
+
     private func resultView(for result: FaceCaptureResult) -> some View {
         let text = result.mibiString ?? "Failed to extract MIBI data."
-        return ResultView(response: text, image: result.image)
+        return ResultView(
+            response: text,
+            image: result.image
+        )
     }
 }
 

@@ -184,6 +184,17 @@ An array of outer lip points
  */
 @property (nonatomic, readonly) MiSnapMibi * _Nonnull mibi;
 /**
+ MP4 data recorded during the capture session.
+ */
+@property (nonatomic, readonly) NSData * _Nullable recordedVideo;
+/**
+ Video-recording failure. `nil` when video recording succeeds or was not requested.
+
+ Recording finishes after MIBI is finalized, so these errors are not in `mibi`.
+ Log `recordedVideoError` if you need to share recording failures with Mitek.
+ */
+@property (nonatomic, readonly) MiSnapVideoRecordingError * _Nullable recordedVideoError;
+/**
  A result code of a session
  
  @see `MiSnapFacialCaptureResult`
@@ -202,5 +213,4 @@ An array of outer lip points
  @return A result code in `NSString` format
 */
 + (NSString * _Nonnull)stringFrom:(MiSnapFacialCaptureResultCode)resultCode;
-
 @end

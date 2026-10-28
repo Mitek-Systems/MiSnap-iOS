@@ -21,12 +21,12 @@ class FaceViewModel: ObservableObject {
     @Published var aiBasedRtsEnabled = false
     @Published var cameraPosition: FaceCameraPosition = .front
     @Published var shouldShowCapture = false
-    
+
     let availablePresets = FacePreset.allCases
-    
+
     private var pendingResult: FaceCaptureResult?
     private var cancellables = Set<AnyCancellable>()
-    
+
     // MARK: - Initialization
     init() {
         // Set your MiSnap license key
@@ -38,52 +38,52 @@ class FaceViewModel: ObservableObject {
             .sink { [weak self] _ in self?.cameraPosition = .front }
             .store(in: &cancellables)
     }
-    
+
     // MARK: - Setup License
     private func setupLicense() {
         let licenseKey = LicenseKey.key
         MiSnapLicenseManager.shared.setLicenseKey(licenseKey)
         AppLogger.debug("🔑 MiSnap License: \(MiSnapLicenseManager.shared.description)")
     }
-    
+
     // MARK: - Integration Flow Entry Point
     func selectPreset(_ preset: FacePreset) {
         selectedPreset = preset
         AppLogger.info("Selected face preset: \(preset.rawValue)")
-        
+
         // Start the validation and presentation flow
         Task {
             await presentCapture()
         }
     }
-    
+
     // MARK: - Present Capture Flow
     private func presentCapture() async {
         // Check license
         guard checkLicense() else { return }
-        
+
         // Check camera permission
         guard await checkCameraPermission() else { return }
-        
+
         // All checks passed - present capture
         shouldShowCapture = true
     }
-    
+
     // MARK: - Check License Status
     private func checkLicense() -> Bool {
         let licenseStatus = MiSnapLicenseManager.shared.status
         AppLogger.info("Checking license status: \(licenseStatus.stringValue)")
-        
+
         guard licenseStatus == .valid else {
             AppLogger.error("🔑 License is not valid: \(licenseStatus.stringValue)")
             showLicenseAlert(message: "MiSnap license status: \(licenseStatus.stringValue)")
             selectedPreset = nil
             return false
         }
-        
+
         return true
     }
-    
+
     // MARK: - Check Camera Permission
     private func checkCameraPermission() async -> Bool {
         return await withCheckedContinuation { continuation in
@@ -99,7 +99,7 @@ class FaceViewModel: ObservableObject {
             }
         }
     }
-    
+
     // MARK: - Build MiSnapFacialCapture Configuration
     func makeConfiguration(for preset: FacePreset) -> MiSnapFacialCaptureConfiguration {
         // Create base configuration
@@ -115,7 +115,7 @@ class FaceViewModel: ObservableObject {
             .withCustomParameters { parameters in
                 parameters.camera.position = cameraPosition.avPosition
             }
-        
+
         // Apply AI-based RTS if enabled
         if aiBasedRtsEnabled {
             configuration = configuration
@@ -123,20 +123,20 @@ class FaceViewModel: ObservableObject {
                     parameters.aiBasedRtsEnabled = true
                 }
         }
-        
+
         // Apply preset-specific customizations
         switch preset {
         case .selfieCountdown:
             // Standard selfie capture with default countdown timer
             break
-            
+
         case .selfieSmile:
             // Automatic capture triggered by smile detection
             return configuration
                 .withCustomParameters { parameters in
                     parameters.selectOnSmile = true
                 }
-                
+
         case .selfieGoodIQA:
             // Instant capture mode - no countdown delay
             // Automatically captures when image quality assessment (IQA) criteria are met
@@ -224,52 +224,54 @@ class FaceViewModel: ObservableObject {
                     success.message.color = accent
                 }
         }
-        
+
         return configuration
     }
-    
+
     // MARK: - Handle Delegate Callbacks and Process Result
     func handleLicenseStatus(_ status: MiSnapLicenseStatus) {
         // Handle license status updates if needed
         // Currently handled in checkLicense() during initialization
     }
-    
+
     func handleSuccessfulCapture(_ result: MiSnapFacialCaptureResult) {
-        // Process and store the result until SDK is ready to dismiss
         pendingResult = FaceCaptureResult(result)
     }
-    
+
     func handleCancellation(_ result: MiSnapFacialCaptureResult) {
-        // User cancelled - clean up temporary storage
         pendingResult = nil
     }
-    
+
     func handleException(_ exception: NSException) {
         // Handle exceptions from MiSnap SDK if needed
-        // Log the exception and potentially show an error alert
     }
-    
+
     // MARK: - Dismiss Capture Controller
+    /// SDK finished — only hide the cover here. Defer result presentation until
+    /// `handleCaptureCoverDismissed()` so we don't present a sheet while the cover is tearing down.
     func handleDismiss() {
-        // SDK signals it's safe to dismiss after completing internal cleanup
-        // Remove the capture view from SwiftUI hierarchy
         shouldShowCapture = false
+    }
+
+    /// `fullScreenCover` fully dismissed — safe to clear preset and show the result sheet.
+    func handleCaptureCoverDismissed() {
         selectedPreset = nil
-        
-        // Publish the result to trigger the result screen (if capture was successful)
+        publishPendingResult()
+    }
+
+    private func publishPendingResult() {
         if let result = pendingResult {
             captureResult = result
         }
-        
-        // Clean up temporary storage
+
         pendingResult = nil
     }
-    
+
     // MARK: - Alert Helpers
     private func showPermissionDeniedAlert() {
         alert = .permissionDenied(.camera)
     }
-    
+
     private func showLicenseAlert(message: String) {
         alert = .licenseError(message: message)
     }

@@ -6,19 +6,19 @@
 	<dict>
 		<key>ios-arm64/MiSnapCamera.framework/Headers/MiSnapCamera.h</key>
 		<data>
-		5iOd/u0TXrlw0CVMvYeC0Sp4tic=
+		Om3DQrL4Qd0e/3Rh5NS7T8FtG20=
 		</data>
 		<key>ios-arm64/MiSnapCamera.framework/Headers/MiSnapCameraParameters.h</key>
 		<data>
-		7xIgUyup1t8qSJ2Y9qfYbgHalDc=
+		drKxesRFUkpUXFCTUnSws7l5EhU=
 		</data>
 		<key>ios-arm64/MiSnapCamera.framework/Info.plist</key>
 		<data>
-		9THUC9H6JRZS/nGxiJYO0KwDDSo=
+		Bwwp5Th9upvpXMKYQBoeQ8q5qpA=
 		</data>
 		<key>ios-arm64/MiSnapCamera.framework/MiSnapCamera</key>
 		<data>
-		9Z8EbPQpg/NpeBZYU9vrPaUzeZ8=
+		eAuHXTB2IOMQxey7tyk6Swz9sQY=
 		</data>
 		<key>ios-arm64/MiSnapCamera.framework/Modules/module.modulemap</key>
 		<data>
@@ -30,23 +30,23 @@
 		</data>
 		<key>ios-arm64/MiSnapCamera.framework/_CodeSignature/CodeResources</key>
 		<data>
-		ryAIK/vFXVP7O/yzdEVOZlnUCtA=
+		D9fNAXIpSmY41xISHU5OUKZJPXg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Headers/MiSnapCamera.h</key>
 		<data>
-		5iOd/u0TXrlw0CVMvYeC0Sp4tic=
+		Om3DQrL4Qd0e/3Rh5NS7T8FtG20=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Headers/MiSnapCameraParameters.h</key>
 		<data>
-		7xIgUyup1t8qSJ2Y9qfYbgHalDc=
+		drKxesRFUkpUXFCTUnSws7l5EhU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Info.plist</key>
 		<data>
-		/tWhqVu3/YmCMjCN1jARQufS1BA=
+		FHlCfaI7lxDTmE1ocrCGz+EnpiQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/MiSnapCamera</key>
 		<data>
-		h+BzpdvhxuGxYItVq+wlGR/cowk=
+		8JselaOtvEqRzZ+0A3sIkLheT/8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/_CodeSignature/CodeResources</key>
 		<data>
-		D6ivZRJEeSEmX5LFTHi6+YqJi0E=
+		lpkf+LX+O7MXs0/UMPAcQTlsNYk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,28 +67,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QS0yc1iGg8Yo87pDMNVksx49vP5NH+tAnr+vSJc4Y7U=
+			EiStjaahL+MUaivgKGPbQ6gjBsZLlWoGMoqiGUX6qoQ=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapCamera.framework/Headers/MiSnapCameraParameters.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Mn4wIU8L5K5GmCxBh4v66uYsyZsWMV2RqtqCdTq+X8=
+			Wy/h3XZaXWcGBPCdAzJE9W39bA76TTiWlZwuYkTOifg=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapCamera.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mEh32WQ79vzj4+hKUf4v2eYZUcKUqk9zY385N7CFS7Y=
+			B9OYTpwl+Ykrw3dPGmIhRE7MT3OiBfNPc33J1lw9VWw=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapCamera.framework/MiSnapCamera</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s5fOPj77pDydKU717TX8Bt6KI8YTRctmLXpgGBE8Axw=
+			4mtwR5QplnH6dy6hGWbGpjzc/C92BIm0GtuwczeosSY=
 			</data>
 		</dict>
 		<key>ios-arm64/MiSnapCamera.framework/Modules/module.modulemap</key>
@@ -109,35 +109,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CiTxSu5SEBbmZf48MiBbrWGBnWWNJJ4XYfwDdlE9MIk=
+			ThiRoytxYoFWK21XGSYqdGIrPe+cFJ/QIutXy8uJv6I=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Headers/MiSnapCamera.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QS0yc1iGg8Yo87pDMNVksx49vP5NH+tAnr+vSJc4Y7U=
+			EiStjaahL+MUaivgKGPbQ6gjBsZLlWoGMoqiGUX6qoQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Headers/MiSnapCameraParameters.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Mn4wIU8L5K5GmCxBh4v66uYsyZsWMV2RqtqCdTq+X8=
+			Wy/h3XZaXWcGBPCdAzJE9W39bA76TTiWlZwuYkTOifg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RjLiVm8SbS/+2/u2BAh6ghec0aaGDgfHzpPRdPO+jlU=
+			WMaISCdM5N92XRvjjd6/WaJrRjWSNW7+ro76LeNcTxs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/MiSnapCamera</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f4Vr0IevhPuPplDtRxo56at4HwMn8IjEhjvopz4kWfk=
+			YzsrVm8N/s2GsX8kd6jjviW9rQfmNcywJN+40lozVo4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MiSnapCamera.framework/Modules/module.modulemap</key>
@@ -158,7 +158,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DrjeJXfk1H8V0OQyw8VNgLNlCOwyemc9QekD8wMs4Ls=
+			NPiVzr40TVQ9xsZdQkoyknCZEOvDlwpowH8NlFJGqb4=
 			</data>
 		</dict>
 	</dict>

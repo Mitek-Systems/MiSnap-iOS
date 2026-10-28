@@ -518,6 +518,11 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX40MiSnapFacialCaptureTutorialConfigurati
 /// Default: <code>.systemBackground</code> for iOS >= 13  and <code>.white</code> for the rest
 /// Used in both Light and Dark modes if <code>backgroundColorDarkMode</code> is not set. Otherwise, used in Light mode only
 @property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// Content offset in pixels from top (spacing between content’s top and safe area layout’s top) and bottom (spacing between content’s bottom and buttons stack’s bottom)
+/// Default: <code>10</code>
+/// since:
+/// 5.13.0
+@property (nonatomic) CGFloat offset;
 /// Background color in Dark mode
 /// Default: not set
 /// When this color is set then it’s used in Dark mode
@@ -654,6 +659,10 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
+/// Called after the view lays out its subviews
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)viewDidLayoutSubviews;
 /// Indicates whether a status bar should be hidden
 /// note:
 /// Only exposed due to public status of parent’s property. Do not override it.
@@ -662,22 +671,11 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 /// note:
 /// Only exposed due to public status of parent’s property. Do not override it.
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
+/// Dismisses view controller
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
-@end
-
-@interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX)) <MiSnapFacialCaptureTutorialViewControllerDelegate>
-/// Called when a tutorial view controller’s cancel button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialCancelButtonAction;
-/// Called when a tutorial view controller’s continue button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
-/// Called when a tutorial view controller’s retry button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialRetryButtonAction;
 @end
 
 @class AVCaptureOutput;
@@ -699,7 +697,22 @@ SWIFT_CLASS("_TtC21MiSnapFacialCaptureUX33MiSnapFacialCaptureViewController")
 /// Called when a camera finished recording a video
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)didFinishRecordingVideo:(NSData * _Nullable)videoData;
+- (void)didFinishRecordingVideo:(NSData * _Nullable)videoData error:(NSError * _Nullable)error;
+@end
+
+@interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX)) <MiSnapFacialCaptureTutorialViewControllerDelegate>
+/// Called when a tutorial view controller’s cancel button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialCancelButtonAction;
+/// Called when a tutorial view controller’s continue button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialContinueButtonActionFor:(MiSnapFacialCaptureTutorialMode)tutorialMode;
+/// Called when a tutorial view controller’s retry button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialRetryButtonAction;
 @end
 
 @interface MiSnapFacialCaptureViewController (SWIFT_EXTENSION(MiSnapFacialCaptureUX))
@@ -770,7 +783,7 @@ SWIFT_PROTOCOL("_TtP21MiSnapFacialCaptureUX41MiSnapFacialCaptureViewControllerDe
 /// Delegates receive this callback when a camera finishes recording a video when <code>recordVideo</code> is overridden to <code>true</code> in <code>MiSnapCameraParameters</code>
 /// note:
 /// It’s optional
-- (void)miSnapFacialCaptureDidFinishRecordingVideo:(NSData * _Nullable)videoData;
+- (void)miSnapFacialCaptureDidFinishRecordingVideo:(NSData * _Nullable)videoData SWIFT_DEPRECATED_MSG("Use recordedVideo and recordedVideoError on MiSnapFacialCaptureResult instead");
 /// Delegates receive this callback when a session is completed and ready to be dissmised and <code>autoDismiss</code> is overridden to <code>false</code> in <code>MiSnapUxParameters</code>
 /// note:
 /// It’s optional

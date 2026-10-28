@@ -2,6 +2,29 @@
 
 Depending on the version you’re upgrading from, you might need to review several sections below.
 
+## Migration guide for 5.13.0 and newer versions
+
+### Updated passport and check orientation defaults on iPadOS 26
+
+On iPads running iPadOS 26 or newer, `.passport`, `.checkFront`, and `.checkBack` now default to `.devicePortraitGuidePortrait`. This supports portrait-shaped windows in iPad windowed mode.
+
+iPhones and iPads running earlier OS versions retain the previous `.deviceLandscapeGuideLandscape` default.
+
+### Video recording duration
+
+If `recordVideo` is enabled:
+
+* The returned video now contains the last part of the recorded session rather than the whole session.
+* Use `videoRecordingDuration` to set the target duration (default 5 seconds, range [5, 10]).
+* Read the MP4 data from `recordedVideo` on `MiSnapResult` or `MiSnapFacialCaptureResult`.
+* If recording fails, capture can still succeed. `recordedVideo` is `nil`, and `recordedVideoError` contains a `MiSnapVideoRecordingError`.
+* `miSnapDidFinishRecordingVideo(_:)` and `miSnapFacialCaptureDidFinishRecordingVideo(_:)` are deprecated. Read the result properties instead.
+
+### Video bitrate
+
+* Use `camera.videoBitrate` (bits per second). Range `[1300000, 2200000]`, default `1300000`. Out-of-range values are clamped.
+* `camera.videoQuality` is deprecated. Migrate to `videoBitrate`.
+
 ## Migration guide for 5.12.0 and newer versions
 ### 1. Update Info.plist and YourAppName.entitlements to add new required entries for specific NFC documents
 To enable support for French ID card, add the following entry to `Near Field Communication Tag Reader Session Formats` in YourAppName.entitlements:

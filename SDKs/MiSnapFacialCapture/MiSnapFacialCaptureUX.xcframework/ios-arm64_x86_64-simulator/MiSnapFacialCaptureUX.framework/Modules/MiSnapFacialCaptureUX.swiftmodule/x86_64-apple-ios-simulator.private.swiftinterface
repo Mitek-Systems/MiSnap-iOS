@@ -101,6 +101,7 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc public class MiSnapFacialCaptureTutorialConfiguration : ObjectiveC.NSObject {
   @objc public var backgroundColor: UIKit.UIColor
+  @objc public var offset: CoreFoundation.CGFloat
   @objc public var backgroundColorDarkMode: UIKit.UIColor?
   @objc public var buttons: MiSnapFacialCaptureTutorialButtonsConfiguration
   @objc public var introductoryInstructionMessage: MiSnapLabelConfiguration
@@ -208,6 +209,7 @@ import _SwiftConcurrencyShims
   @objc optional func miSnapFacialCaptureTimeoutAction(_ statuses: [Foundation.NSNumber]?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use recordedVideo and recordedVideoError on MiSnapFacialCaptureResult instead")
   @objc optional func miSnapFacialCaptureDidFinishRecordingVideo(_ videoData: Foundation.Data?)
   #endif
   @objc optional func miSnapFacialCaptureShouldBeDismissed()
@@ -226,12 +228,16 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLayoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
     @objc get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  #endif
   @objc deinit
 }
 extension MiSnapFacialCaptureViewController : MiSnapFacialCaptureAnalyzerDelegate {
@@ -265,7 +271,7 @@ extension MiSnapFacialCaptureViewController : MiSnapFacialCaptureCameraDelegate 
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func didReceive(_ sampleBuffer: CoreMedia.CMSampleBuffer?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func didFinishRecordingVideo(_ videoData: Foundation.Data?)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func didFinishRecordingVideo(_ videoData: Foundation.Data?, error: (any Swift.Error)?)
   #endif
 }
 extension MiSnapFacialCaptureViewController {

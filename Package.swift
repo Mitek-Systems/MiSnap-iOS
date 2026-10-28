@@ -11,7 +11,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "MiSnap",
-            targets: ["MiSnap","MiSnapCamera","MiSnapScience","MobileFlow","MiSnapBarcodeScanner","MiSnapCore"]
+            targets: ["MiSnap","MiSnapCamera","MiSnapScience","MobileFlow","MiSnapBarcodeScanner","Barkoder","MiSnapCore"]
             ),
         .library(
             name: "MiSnapUX",
@@ -118,6 +118,10 @@ let package = Package(
         .binaryTarget(
             name: "IADCommon",
             path: "SDKs/Common/IADCommon.xcframework"
-        )
+        ),
+        .binaryTarget(
+            name: "Barkoder",
+            path: "SDKs/MiSnap/Barkoder.xcframework"
+        ),
     ]
 )

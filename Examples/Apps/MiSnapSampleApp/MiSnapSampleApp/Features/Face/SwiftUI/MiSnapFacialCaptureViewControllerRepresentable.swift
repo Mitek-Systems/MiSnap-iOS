@@ -8,6 +8,7 @@
 import SwiftUI
 import MiSnapFacialCapture
 import MiSnapFacialCaptureUX
+import MiSnapAssetManager
 
 struct MiSnapFacialCaptureViewControllerRepresentable: UIViewControllerRepresentable {
     let configuration: MiSnapFacialCaptureConfiguration
@@ -102,4 +103,8 @@ struct MiSnapFacialCaptureViewControllerRepresentable: UIViewControllerRepresent
     }
 
     func updateUIViewController(_ uiViewController: MiSnapFacialCaptureViewController, context: Context) {}
+
+    func dismantleUIViewController(_ uiViewController: MiSnapFacialCaptureViewController, coordinator: Coordinator) {
+        coordinator.captureViewController = nil
+    }
 }

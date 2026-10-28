@@ -51,6 +51,7 @@ From [Common](../../../SDKs/Common) copy:
 From [MiSnap](../../../SDKs/MiSnap) copy:
 * MiSnap.xcframework
 * MiSnapBarcodeScanner.xcframework
+* Barkoder.xcframework
 * MiSnapCamera.xcframework
 * MiSnapScience.xcframework
 * MobileFlow.xcframework
@@ -94,6 +95,7 @@ From [Common](../../../SDKs/Common) copy:
 From [MiSnap](../../../SDKs/MiSnap) copy:
 * MiSnap.xcframework
 * MiSnapBarcodeScanner.xcframework
+* Barkoder.xcframework
 * MiSnapCamera.xcframework
 * MiSnapScience.xcframework
 * MobileFlow.xcframework
@@ -159,6 +161,12 @@ func miSnapLicenseStatus(_ status: MiSnapLicenseStatus) {
 
 func miSnapSuccess(_ result: MiSnapResult) {
     // Handle successful session results here
+    if let videoError = result.recordedVideoError {
+        // Capture succeeded, but video recording failed
+        print("Video recording failed: \(videoError.domain) \(videoError.code) \(videoError.localizedDescription)")
+    } else if let videoData = result.recordedVideo {
+        // Handle recorded MP4 data
+    }
 }
 
 func miSnapCancelled(_ result: MiSnapResult) {
@@ -169,12 +177,10 @@ func miSnapException(_ exception: NSException) {
     // Handle exception that was caught by the SDK here
 }
 ```
-Implement the following optional callback if `recordVideo` of `MiSnapCameraParameters` is overridden to `true`:
-```Swift
-func miSnapDidFinishRecordingVideo(_ videoData: Data?) {
-    // Handle recorded video data here
-}
-```
+When `recordVideo` is `true`, read `recordedVideo` and `recordedVideoError` from `MiSnapResult`. Video recording is best-effort: a recording failure does not change a successful capture result. In that case, `recordedVideo` is `nil` and `recordedVideoError` contains a `MiSnapVideoRecordingError`. Recording finishes after MIBI is finalized, so these errors are not in `mibi` — log `recordedVideoError` if you need to share recording failures with Mitek. Configure duration with `videoRecordingDuration` and bitrate with `videoBitrate` (bps); see the [Customization Guide](customization_guide.md#video-recording).
+
+The optional `miSnapDidFinishRecordingVideo(_:)` callback is deprecated. Use the result properties instead.
+
 Note, if `autoDismiss` of `MiSnapUXParameters` is overridden to `false`, a parent view controller that presented `MiSnapViewController` is responsible for dismissing it. Implement the following optional callback to achieve this:
 ```Swift
 func miSnapShouldBeDismissed() {

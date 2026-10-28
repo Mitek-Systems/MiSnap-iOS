@@ -29,6 +29,7 @@ import MiSnapFacialCapture
     }
     
     private var shouldProcessFrames = true
+    private var pendingResult: MiSnapFacialCaptureResult?
     /**
      Both `hintLabel` and `countdownLabel` are added for making this custom view controller an MVP.
      Delete or modify them to your liking
@@ -166,10 +167,23 @@ extension CustomFacialCaptureViewController {
         }
     }
     /**
+     A good image is returned:
+     - Return `result` to your application
+     - Update your UI here to reflect this (e.g. run success animation) if needed
+     - Make sure to call `shutdown` to prevent memory leaks
+     - Dismiss or notify a parent that it's ready to be dismissed
+     
+     When `recordVideo` is enabled, recording outcome is on `result.recordedVideo` / `result.recordedVideoError`.
+     */
+    private func deliverSuccess(_ result: MiSnapFacialCaptureResult) {
+        dismiss()
+    }
+    /**
      Call this function only when a user cancels a session
      On success `shutdown` is called
      */
     private func cancel() {
+        pendingResult = nil
         camera?.discardRecording()
         analyzer?.cancel()
     }
@@ -248,15 +262,18 @@ extension CustomFacialCaptureViewController: MiSnapFacialCaptureAnalyzerDelegate
      Called when a frame passed all IQA checks
      */
     public func miSnapFacialCaptureAnalyzerSuccess(_ result: MiSnapFacialCaptureResult!) {
+        shouldProcessFrames = false
+        pendingResult = result
         /**
-         A good image is returned:
-         - Return `result` to your application
-         - Update your UI here to reflect this (e.g. run success animation) if needed
-         - Make sure to call `shutdown` to prevent memory leaks
-         - Dismiss or notify a parent that it's ready to be dismissed
+         A good image was captured. If `recordVideo` is enabled, stop the camera and wait for mux;
+         `deliverSuccess` runs after video is attached to `result`. Otherwise deliver now.
          */
-        
-        dismiss()
+        if parameters.camera.recordVideo {
+            camera?.stop()
+            return
+        }
+        pendingResult = nil
+        deliverSuccess(result)
     }
     /**
      Called when a frame failed one or more IQA checks.
@@ -325,8 +342,14 @@ extension CustomFacialCaptureViewController: MiSnapFacialCaptureCameraDelegate {
         analyzer?.analyze(sampleBuffer)
     }
     
-    public func didFinishRecordingVideo(_ videoData: Data?) {
-        // Handle video data here when `parameters.cameraParameters.recordVideo` is set to `true`
+    public func didFinishRecordingVideo(_ videoData: Data?, error: (any Error)?) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.analyzer?.completeResult(recordedVideo: videoData, error: error as? NSError)
+            guard let result = self.pendingResult else { return }
+            self.pendingResult = nil
+            self.deliverSuccess(result)
+        }
     }
 }
 

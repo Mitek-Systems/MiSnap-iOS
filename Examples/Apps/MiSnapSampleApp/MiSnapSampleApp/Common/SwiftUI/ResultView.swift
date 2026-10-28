@@ -20,7 +20,10 @@ struct ResultView: View {
     private let audioData: [Data]?
     
     // MARK: - Initialization
-    init(response: String, images: [UIImage]? = nil, summary: String? = nil, audioData: [Data]? = nil) {
+    init(response: String,
+         images: [UIImage]? = nil,
+         summary: String? = nil,
+         audioData: [Data]? = nil) {
         self.responseText = JSONFormatter.prettyPrint(response)
         self.images = images ?? []
         self.summaryText = summary
@@ -28,7 +31,10 @@ struct ResultView: View {
     }
     
     // Convenience initializer for single image
-    init(response: String, image: UIImage?, summary: String? = nil, audioData: [Data]? = nil) {
+    init(response: String,
+         image: UIImage?,
+         summary: String? = nil,
+         audioData: [Data]? = nil) {
         self.responseText = JSONFormatter.prettyPrint(response)
         self.images = image.map { [$0] } ?? []
         self.summaryText = summary
@@ -60,32 +66,32 @@ struct ResultView: View {
 // MARK: - View Components
 private extension ResultView {
     var mainContent: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            if !images.isEmpty {
-                Text("Images:")
-                    .fontWeight(.bold)
-                imagesScrollView
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                if !images.isEmpty {
+                    Text("Images:")
+                        .fontWeight(.bold)
+                    imagesScrollView
+                }
+                if let audioData, !audioData.isEmpty {
+                    Text("Recordings:")
+                        .fontWeight(.bold)
+                    audioPlaybackView(audioData: audioData)
+                }
+                if let summaryText, !summaryText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                    Text("Summary:")
+                        .fontWeight(.bold)
+                    summaryView(summaryText)
+                }
+                if !responseText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                    Text("Data:")
+                        .fontWeight(.bold)
+                    textContentView
+                }
             }
-            if let audioData, !audioData.isEmpty {
-                Spacer()
-                Text("Recordings:")
-                    .fontWeight(.bold)
-                audioPlaybackView(audioData: audioData)
-            }
-            if let summaryText, !summaryText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                Spacer()
-                Text("Summary:")
-                    .fontWeight(.bold)
-                summaryView(summaryText)
-            }
-            if !responseText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                Spacer()
-                Text("Data:")
-                    .fontWeight(.bold)
-                textContentView
-            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
         }
-        .padding()
     }
     
     var imagesScrollView: some View {
@@ -137,32 +143,9 @@ private extension ResultView {
     }
     
     func summaryView(_ text: String) -> some View {
-        ScrollView {
-            Text(text)
-                .font(.headline)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.vertical, 2)
-        }
-        .padding()
-        .background(
-            RoundedRectangle(cornerRadius: 8, style: .continuous)
-                .fill(Color(.systemGray6))
-        )
-        .overlay(
-            RoundedRectangle(cornerRadius: 8, style: .continuous)
-                .stroke(Color(.separator), lineWidth: 0.5)
-        )
-    }
-    
-    var textContentView: some View {
-        ZStack(alignment: .topTrailing) {
-            ScrollView {
-                Text(responseText)
-                    .font(.system(.caption, design: .monospaced))
-                    .textSelection(.enabled)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.vertical, 2)
-            }
+        Text(text)
+            .font(.headline)
+            .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
@@ -172,6 +155,23 @@ private extension ResultView {
                 RoundedRectangle(cornerRadius: 8, style: .continuous)
                     .stroke(Color(.separator), lineWidth: 0.5)
             )
+    }
+    
+    var textContentView: some View {
+        ZStack(alignment: .topTrailing) {
+            Text(responseText)
+                .font(.system(.caption, design: .monospaced))
+                .textSelection(.enabled)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .fill(Color(.systemGray6))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .stroke(Color(.separator), lineWidth: 0.5)
+                )
             
             Button {
                 copyToClipboard()

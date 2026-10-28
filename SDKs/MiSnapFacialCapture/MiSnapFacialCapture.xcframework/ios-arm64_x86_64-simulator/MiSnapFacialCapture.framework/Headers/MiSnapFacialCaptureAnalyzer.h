@@ -153,6 +153,23 @@ MiSnapFacialCaptureAnalyzer is a class that defines an interface for controlling
 */
 - (void)selectFrame;
 /**
+ Attaches the completed video-recording outcome to the current result.
+
+ Custom UX implementations should call this after `didFinishRecordingVideo:error:`
+ and before delivering capture success to their delegate.
+
+ @param error Raw camera / ring-buffer failure, or `nil` on success. Mapped to
+ `MiSnapVideoRecordingError`.
+ */
+- (void)completeResultWithRecordedVideo:(NSData * _Nullable)videoData
+                                  error:(NSError * _Nullable)error
+    NS_SWIFT_NAME(completeResult(recordedVideo:error:));
+/**
+ Clears recorded video and recording-error state (e.g. on retake).
+ */
+- (void)resetVideoRecordingResults
+    NS_SWIFT_NAME(resetVideoRecordingResults());
+/**
  Logs module with its name and version in MIBI
  */
 - (void)logModuleWithName:(NSString *)name version:(NSString *)version;

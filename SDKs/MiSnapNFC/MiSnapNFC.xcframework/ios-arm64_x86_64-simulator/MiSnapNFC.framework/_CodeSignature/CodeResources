@@ -138,7 +138,7 @@
 		</data>
 		<key>Headers/core_names.h</key>
 		<data>
-		jgwNU9rz7Rmqxy1h8lCWTLtgolQ=
+		vBnnBEsnEeQg8poascwcJm4FX6w=
 		</data>
 		<key>Headers/core_object.h</key>
 		<data>
@@ -366,7 +366,7 @@
 		</data>
 		<key>Headers/opensslv.h</key>
 		<data>
-		yEbpNK0ojZql72yIoUJDmw35r+w=
+		brFF1iLw1sL89+q6/GLD0nTfK3k=
 		</data>
 		<key>Headers/ossl_typ.h</key>
 		<data>
@@ -482,7 +482,7 @@
 		</data>
 		<key>Headers/ssl.h</key>
 		<data>
-		g/ZkLpontpwpCXJpt6NTYn8Shug=
+		SGazW5liQDQ6Lc8SAZ3/WYL7w4I=
 		</data>
 		<key>Headers/ssl2.h</key>
 		<data>
@@ -570,7 +570,7 @@
 		</data>
 		<key>Headers/x509err.h</key>
 		<data>
-		AME+/T8xBNiB6Lx96Geb4EBusJE=
+		XZFGuwsYqbVh6Cze8tkCYexnHtM=
 		</data>
 		<key>Headers/x509v3.h</key>
 		<data>
@@ -582,7 +582,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q9xxVNzPQXf7dFG3aabRbcQS6ps=
+		4Lj/+Lv9B9r2n3n/KPiZkyRCAmI=
 		</data>
 		<key>Modules/MiSnapNFC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -874,7 +874,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c4OHvTtffVBSKdUO9EyZMiB2mVvD5PFDrumycufDM80=
+			JOvl8x2qjZeRZa6jNKl09yOijnLrZISoYIMumfqK2gY=
 			</data>
 		</dict>
 		<key>Headers/core_object.h</key>
@@ -1273,7 +1273,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DEsh3w30M4jcvAC7KiPTxHzuej8OGenfvnOublnUeA0=
+			PLKZVQ+oBzuHrethEGLfmqvbMrEI0UR5WzqDWnK5bbQ=
 			</data>
 		</dict>
 		<key>Headers/ossl_typ.h</key>
@@ -1476,7 +1476,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WJaZxK+632HlRxlFGZOygxyayWQOkKhlBvhN3LD7+vE=
+			ToXJVPvUWy2uxngqnvWNDuhNXjy8eaksZ/QojqgG/GI=
 			</data>
 		</dict>
 		<key>Headers/ssl2.h</key>
@@ -1630,7 +1630,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yYWV/2VWzzji3A6n7lS52ATb/hvu8SBrppicGzboyQw=
+			ICdNXiV/IkXeMXbcDEZph328Ff9hB2EqNhRInOMrLT4=
 			</data>
 		</dict>
 		<key>Headers/x509v3.h</key>

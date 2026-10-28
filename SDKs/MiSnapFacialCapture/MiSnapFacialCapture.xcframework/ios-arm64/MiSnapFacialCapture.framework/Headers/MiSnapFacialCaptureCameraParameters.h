@@ -13,15 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Camera specific parameters
  */
-@interface MiSnapFacialCaptureCameraParameters : NSObject
+@interface MiSnapFacialCaptureCameraParameters : NSObject <NSSecureCoding>
 /**
- When set to TRUE a video recording of a session (no sound) is returned. When set to FALSE a session is not recorded
+ When set to TRUE, the last part of the recorded session (no sound) is returned. Duration is controlled by `videoRecordingDuration`. When set to FALSE a session is not recorded.
  
  Default: FALSE.
  */
 @property (nonatomic) BOOL recordVideo;
 /**
- When set to TRUE and recordVideo set to TRUE a video recording of a session with sound is returned. When set to FALSE audio is not recorded
+ When set to TRUE and recordVideo set to TRUE the returned clip includes sound. When set to FALSE audio is not recorded.
  
  Default: FALSE.
  */
@@ -36,8 +36,27 @@ NS_ASSUME_NONNULL_BEGIN
  100 - video is recorded with a highest supported bitrate (the biggest size with the best quality)
  
  Default: 10
+ 
+ @deprecated Use `videoBitrate` instead. Setting this property updates `videoBitrate`
+ from the legacy HEVC quality mapping, then clamps it to the supported bitrate range.
  */
-@property (nonatomic) NSInteger videoQuality;
+@property (nonatomic) NSInteger videoQuality DEPRECATED_ATTRIBUTE;
+/**
+ Target average bitrate of a recorded video, in bits per second (bps).
+ 
+ Range: [1300000, 2200000]
+ 
+ Default: 1300000
+ */
+@property (nonatomic) NSInteger videoBitrate;
+/**
+ Target duration, in seconds, of the recorded video returned at the end of a session.
+
+ Range: [5, 10]
+
+ Default: 5
+ */
+@property (nonatomic) NSInteger videoRecordingDuration;
 /**
  Show recording UI
  

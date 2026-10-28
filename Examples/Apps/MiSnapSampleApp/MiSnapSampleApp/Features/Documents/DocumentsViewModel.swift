@@ -296,17 +296,24 @@ class DocumentsViewModel: ObservableObject {
     // swiftlint:enable function_parameter_count
     
     // MARK: - Dismiss Capture Controller
+    /// SDK finished — only hide the cover here. Defer result presentation until
+    /// `handleCaptureCoverDismissed()` so we don't present a sheet while the cover is tearing down.
     func handleDismiss() {
-        // SDK signals it's safe to dismiss after completing internal cleanup
-        // Remove the capture view from SwiftUI hierarchy
         shouldShowCapture = false
+    }
+
+    /// `fullScreenCover` fully dismissed — safe to clear preset and show the result sheet.
+    func handleCaptureCoverDismissed() {
         selectedPreset = nil
-        
+        publishPendingResult()
+    }
+
+    private func publishPendingResult() {
         // Publish the result to trigger the result screen (if capture was successful)
         if let result = pendingResult {
             captureResult = result
         }
-        
+
         // Clean up temporary storage
         pendingResult = nil
     }

@@ -110,6 +110,25 @@
 - (void)selectCurrentFrame;
 
 /**
+ Attaches the completed video-recording outcome to the current result.
+
+ Custom UX implementations should call this after `didFinishRecordingVideo:error:`
+ and before delivering capture success to their delegate.
+
+ @param error Raw camera / ring-buffer failure, or `nil` on success. Mapped to
+ `MiSnapVideoRecordingError`.
+ */
+- (void)completeResultWithRecordedVideo:(NSData * _Nullable)videoData
+                                  error:(NSError * _Nullable)error
+    NS_SWIFT_NAME(completeResult(recordedVideo:error:));
+
+/**
+ Clears recorded video and recording-error state (e.g. on retake).
+ */
+- (void)resetVideoRecordingResults
+    NS_SWIFT_NAME(resetVideoRecordingResults());
+
+/**
  Notifies the analyzer for logging purposes that a torch was turned on
  */
 - (void)turnTorchOn;

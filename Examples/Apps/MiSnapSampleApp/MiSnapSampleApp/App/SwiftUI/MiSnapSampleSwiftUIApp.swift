@@ -6,17 +6,11 @@
 //
 
 import SwiftUI
-import MiSnapCore
 
 @main
 struct MiSnapSampleSwiftUIApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @State private var showLaunchScreen = true
-    
-    init() {
-        // If you prefer to set the MiSnap license globally (instead of in each ViewModel),
-        // you can do it here. See feature ViewModels (e.g., DocumentsViewModel) for license setting code.
-    }
     
     var body: some Scene {
         WindowGroup {

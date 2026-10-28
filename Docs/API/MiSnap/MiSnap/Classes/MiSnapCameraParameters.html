@@ -444,7 +444,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>When set to TRUE a video recording of a session (no sound) is returned. When set to FALSE a session is not recorded</p>
+                        <p>When set to TRUE, the last part of the recorded session (no sound) is returned. Duration is controlled by <code><a href="../Classes/MiSnapCameraParameters.html#/c:objc(cs)MiSnapCameraParameters(py)videoRecordingDuration">videoRecordingDuration</a></code>. When set to FALSE a session is not recorded.</p>
 
 <p>Default: FALSE.</p>
 
@@ -478,7 +478,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>When set to TRUE and recordVideo set to TRUE a video recording of a session with sound is returned. When set to FALSE audio is not recorded</p>
+                        <p>When set to TRUE and recordVideo set to TRUE the returned clip includes sound. When set to FALSE audio is not recorded.</p>
 
 <p>Default: FALSE.</p>
 
@@ -504,13 +504,17 @@
                     <code>
                     <a name="/c:objc(cs)MiSnapCameraParameters(py)videoQuality"></a>
                     <a name="//apple_ref/objc/Property/videoQuality" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)videoQuality">videoQuality</a>
+                    <a class="token discouraged" href="#/c:objc(cs)MiSnapCameraParameters(py)videoQuality">videoQuality</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        
+                      </div>
                       <div class="abstract">
                         <p>Specifies relative quality of a recorded video</p>
 
@@ -521,6 +525,9 @@
 <p>100 - video is recorded with a highest supported bitrate (the biggest size with the best quality)</p>
 
 <p>Default: 10</p>
+
+<p>@deprecated Use <code><a href="../Classes/MiSnapCameraParameters.html#/c:objc(cs)MiSnapCameraParameters(py)videoBitrate">videoBitrate</a></code> instead. Setting this property updates <code><a href="../Classes/MiSnapCameraParameters.html#/c:objc(cs)MiSnapCameraParameters(py)videoBitrate">videoBitrate</a></code>
+from the legacy HEVC quality mapping, then clamps it to the supported bitrate range.</p>
 
                       </div>
                       <div class="declaration">
@@ -533,6 +540,78 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">videoQuality</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)videoBitrate"></a>
+                    <a name="//apple_ref/objc/Property/videoBitrate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)videoBitrate">videoBitrate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Target average bitrate of a recorded video, in bits per second (bps).</p>
+
+<p>Range: [1300000, 2200000]</p>
+
+<p>Default: 1300000</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">videoBitrate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">videoBitrate</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MiSnapCameraParameters(py)videoRecordingDuration"></a>
+                    <a name="//apple_ref/objc/Property/videoRecordingDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MiSnapCameraParameters(py)videoRecordingDuration">videoRecordingDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Target duration, in seconds, of the recorded video returned at the end of a session.</p>
+
+<p>Range: [5, 10]</p>
+
+<p>Default: 5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">videoRecordingDuration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">videoRecordingDuration</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

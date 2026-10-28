@@ -626,6 +626,11 @@ SWIFT_CLASS("_TtC8MiSnapUX38MiSnapTutorialInstructionConfiguration")
 @property (nonatomic, strong) MiSnapLabelConfiguration * _Nonnull messageSecondary;
 /// Colors for instruction graphics
 @property (nonatomic, strong) MiSnapColors * _Nonnull colors;
+/// Content offset from top (spacing between content’s top and safe area layout’s top) and bottom (spacing between content’s bottom and buttons stack’s bottom)
+/// Default: <code>10</code>
+/// since:
+/// 5.13.0
+@property (nonatomic) CGFloat offset;
 /// Default initializer
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -767,6 +772,10 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
+/// Called after subviews have been laid out
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)viewDidLayoutSubviews;
 /// Called when the view is dismissed, covered or otherwise hidden
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
@@ -807,7 +816,7 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 /// Called when a camera finished recording a video
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
-- (void)didFinishRecordingVideo:(NSData * _Nullable)videoData;
+- (void)didFinishRecordingVideo:(NSData * _Nullable)videoData error:(NSError * _Nullable)error;
 /// Called when a camera is configured and ready to be started
 /// note:
 /// Only exposed due to public status of parent’s function. Do not call it.
@@ -839,21 +848,6 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 - (void)miSnapAnalyzerException:(NSException * _Nonnull)exception;
 @end
 
-@interface MiSnapViewController (SWIFT_EXTENSION(MiSnapUX)) <MiSnapTutorialViewControllerDelegate>
-/// Called when a tutorial view controller’s continue button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialContinueButtonActionFor:(enum MiSnapUxTutorialMode)tutorialMode;
-/// Called when a tutorial view controller’s retry button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialRetryButtonAction;
-/// Called when a tutorial view controller’s cancel button is pressed
-/// note:
-/// Only exposed due to public status of parent’s function. Do not call it.
-- (void)tutorialCancelButtonAction;
-@end
-
 @interface MiSnapViewController (SWIFT_EXTENSION(MiSnapUX))
 /// Sets a delegate that’ll be receiving callbacks
 - (void)setWithDelegate:(id <MiSnapViewControllerDelegate> _Nullable)delegate;
@@ -871,6 +865,21 @@ SWIFT_CLASS("_TtC8MiSnapUX20MiSnapViewController")
 + (void)checkMicrophonePermissionWithHandler:(void (^ _Nonnull)(BOOL))handler;
 /// Checks if a device has a given space in MB
 + (BOOL)hasMinDiskSpace:(NSInteger)minDiskSpace SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@interface MiSnapViewController (SWIFT_EXTENSION(MiSnapUX)) <MiSnapTutorialViewControllerDelegate>
+/// Called when a tutorial view controller’s continue button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialContinueButtonActionFor:(enum MiSnapUxTutorialMode)tutorialMode;
+/// Called when a tutorial view controller’s retry button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialRetryButtonAction;
+/// Called when a tutorial view controller’s cancel button is pressed
+/// note:
+/// Only exposed due to public status of parent’s function. Do not call it.
+- (void)tutorialCancelButtonAction;
 @end
 
 @class NSNumber;
@@ -973,7 +982,7 @@ SWIFT_PROTOCOL("_TtP8MiSnapUX28MiSnapViewControllerDelegate_")
 /// Delegates receive this callback when a camera finishes recording a video when <code>recordVideo</code> is overridden to <code>true</code> in <code>MiSnapCameraParameters</code>
 /// note:
 /// It’s optional
-- (void)miSnapDidFinishRecordingVideo:(NSData * _Nullable)videoData;
+- (void)miSnapDidFinishRecordingVideo:(NSData * _Nullable)videoData SWIFT_DEPRECATED_MSG("Use recordedVideo and recordedVideoError on MiSnapResult instead");
 /// Delegates receive this callback when a session is completed and ready to be dissmised and <code>autoDismiss</code> is overridden to <code>false</code> in <code>MiSnapUxParameters</code>
 /// note:
 /// It’s optional
